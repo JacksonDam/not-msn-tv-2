@@ -1,0 +1,389 @@
+@font-face {
+    font-family: Segoe TV Bold;
+    src: url('fonts/SegoeTVBold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Segoe TV;
+    src: url('fonts/SegoeTVRegular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Segoe TV Bold Italic;
+    src: url('fonts/SegoeTVBoldIt.woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Segoe TV Italic;
+    src: url('fonts/SegoeTVItalic.woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    background-color: #000000;
+}
+
+pre {
+    white-space: pre-line;
+    margin-bottom: 2vw !important;
+    line-height: 1.2;
+}
+
+.ui-title-white {
+    background: none;
+    color: white;
+    font-size: 4.36vh;
+    font-family: "Segoe TV";
+    margin-left: 1.8vw;
+    margin-top: 2.85vh;
+}
+
+.ui-title-white-2 {
+    background: none;
+    color: white;
+    font-size: 3.9vh;
+    font-family: "Segoe TV";
+    margin-left: 2.25vw;
+    margin-top: 1.6vh;
+    white-space: nowrap;
+}
+
+.ui-title-white-3 {
+    background: none;
+    color: white;
+    font-size: 3.9vh;
+    font-family: "Segoe TV";
+    width: fit-content;
+    margin-top: 1.5vh;
+    margin-right: 0.5vh;
+}
+
+.ui-title-navy {
+    background: none;
+    color: #254267;
+    font-size: 4.4vh;
+    font-family: "Segoe TV";
+    margin-left: 1.6vw;
+}
+
+.text-gap {
+    background: none;
+    font-size: 3vh;
+}
+
+.ui-title-dark {
+    background: none;
+    color: #0d0f1d;
+    font-size: 4.3vh;
+    font-family: "Segoe TV";
+    margin-left: 1.6vw;
+}
+
+#focus-box.hide-focus {
+    visibility: hidden;
+}
+
+.error-title-dark {
+    background: none;
+    color: #0d0f1d;
+    font-size: 4.3vh;
+    font-family: "Segoe TV Bold";
+    margin-left: 15vh;
+    padding-top: 4vh;
+    opacity: 0;
+}
+
+.error-dialog-icon {
+    max-width: 12vh;
+    margin-top: 5vh;
+    margin-left: 3vh;
+    opacity: 0;
+}
+
+.error-body {
+    background: none;
+    color: #0d0f1d;
+    font-size: 3.8vh;
+    font-family: "Segoe TV";
+    margin-left: 15vh;
+    width: 42vw;
+    margin-right: 4vh;
+    opacity: 0;
+}
+
+.error-title-dark.showing {
+    transition-delay: 0.03s;
+    opacity: 1;
+}
+
+.error-dialog-icon.showing {
+    transition-delay: 0.03s;
+    opacity: 1;
+}
+
+.error-body.showing {
+    transition-delay: 0.03s;
+    opacity: 1;
+}
+
+.btn-pair.showing {
+    transition-delay: 0.03s;
+    opacity: 1;
+}
+
+.ui-title-dark-2 {
+    background: none;
+    color: #0d0f1d;
+    font-size: 3.96vh;
+    font-family: "Segoe TV";
+    margin-left: 0.75vw;
+    width: fit-content;
+    margin-top: 0.5vh;
+}
+
+.panel-title-white {
+    background: none;
+    color: white;
+    font-size: 4.25vh;
+    font-family: "Segoe TV";
+    margin-top: 1.35vw;
+    margin-left: 2vw;
+}
+
+.error-contents {
+    background-image: url('../images/errordialogbg.png');
+    background-size: cover;
+    margin: 0.6vh;
+    border-radius: 12px;
+}
+
+.panel-bg {
+    object-fit: fill;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-top: 6px;
+}
+
+.panel-container {
+    background-image: linear-gradient(#5a5d62 0%, #767676 1%, #222222 2%, #222222 100%);
+    border: 2px solid black;
+    position: relative;
+    height: 20vh;
+}
+
+.error-dialog-container {
+    background-image: linear-gradient(#5a5d62 0%, #767676 1%, #224770 2%, #224770 100%);
+    border: 2px solid #193f68;
+    position: relative;
+    --tw-translate-y: -38.25vh;
+    z-index: 3;
+}
+
+.error-dialog-container.closed {
+    visibility: hidden;
+}
+
+.dialog-bg {
+    object-fit: fill;
+    border-radius: 8px;
+    margin: 3px;
+    height: 20vh;
+}
+
+.btn-pair {
+    margin: 1.5vw;
+    opacity: 0;
+}
+
+.panel-container.closed {
+    transition: 0.1s linear;
+    transform: translateY(100%);
+}
+
+.panel-container.closed-no-anim {
+    transform: translateY(100%);
+}
+
+.panel-container.open {
+    transition: 0.1s linear;
+    transform: translateY(0%);
+}
+
+.panel-container.open-no-anim {
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.network-container {
+    background-image: linear-gradient(#355a8e, #5c84ac) !important;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    opacity: 0.95;
+}
+
+.network-icon {
+    max-width: 10vh;
+    margin-left: 3.6vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+}
+
+input[type="password"]:focus {
+    outline: 0 !important;
+    border: 1px solid #4f4e4f !important;
+    box-shadow: none !important;
+    border-top: #000000 5px solid;
+    border-right: #858989 5px solid;
+    border-bottom: #858989 5px solid;
+    border-left: #000000 5px solid;
+}
+
+.sign-in-btn[type="button"] {
+    background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+    color: #254267;
+    font-size: 3.7vh;
+    font-family: "Segoe TV";
+    margin-left: 1.1vw;
+    padding-left: 3.3vh;
+    padding-right: 3.3vh;
+    padding-bottom: 0.4vh;
+    border: 3px solid #1b1b1b;
+    border-radius: 2px;
+}
+
+.base-btn[type="button"] {
+    background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+    color: #254267;
+    font-size: 3.7vh;
+    font-family: "Segoe TV";
+    margin-left: 1.1vw;
+    padding-left: 3.3vh;
+    padding-right: 3.3vh;
+    padding-bottom: 0.4vh;
+    border: 3px solid #1b1b1b;
+    border-radius: 2px;
+}
+
+.cancel-error-btn[type="button"] {
+    background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+    color: #254267;
+    font-size: 3.7vh;
+    font-family: "Segoe TV";
+    margin-left: 1.1vw;
+    padding-left: 3.3vh;
+    padding-right: 3.3vh;
+    padding-bottom: 0.4vh;
+    border: 3px solid #1b1b1b;
+    border-radius: 2px;
+}
+
+.base-other {
+    background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+    width: 106vh;
+    height: 4vh;
+    margin-left: 1.75vw;
+    margin-top: 1vh;
+    border: 3px solid #1b1b1b;
+    border-radius: 2px;
+}
+
+.custom-checkbox {
+    margin-left: 1.6vw;
+    margin-top: 0.2lh;
+    max-height: 4.2vh;
+}
+
+.progress-bar-fill {
+    object-fit: cover;
+    margin-top: 0.25vh;
+    min-height: 2.85vh;
+}
+
+input[type="password"]::-moz-focus-inner {
+    border: 0;
+    outline: 0 !important;
+    margin-top: 0.15vw;
+    border-top: #000000 5px solid;
+    border-right: #858989 5px solid;
+    border-bottom: #858989 5px solid;
+    border-left: #000000 5px solid;
+}
+
+input[type="password"] {
+    color: #ffffff;
+    font-size: 3.1vh !important;
+    width: 67.5vh;
+    box-shadow: none;
+    border-top: #000000 5px solid;
+    border-right: #858989 5px solid;
+    border-bottom: #858989 5px solid;
+    border-left: #000000 5px solid;
+}
+
+.password-box[type="password"]{
+    background: #4f4e4f !important;
+    font-family: "Segoe TV";
+    margin-left: 1.6vw;
+    margin-top: 0.15vw;
+    border-top: #000000 5px solid;
+    border-right: #858989 5px solid;
+    border-bottom: #858989 5px solid;
+    border-left: #000000 5px solid;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 1;
+    z-index: 100001;
+}
+
+.topbar-img {
+    max-height: 7.5vh;
+    margin-top: 1.45vh;
+    margin-right: 7.5vh;
+}
+
+.help-icon {
+    max-height: 4.8vh;
+    margin-top: 3.2vh;
+    margin-left: 1vh;
+}
+
+.login-container {
+    margin-top: 13.75vh;
+}
+
+.user-icon-large {
+    width: 33.3vh;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+#focus-box {
+  position: absolute;
+  border: 8px solid #ffcb00;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0.5px #0000004d, -1px -1px 0.5px #fffc, inset 1.5px 1.5px 0.5px #0000004d, inset -1px -1px 0.5px #fffc;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+#focus-box.green-border {
+    border: 8px solid #41c521;
+}
