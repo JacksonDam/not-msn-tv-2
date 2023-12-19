@@ -5,7 +5,7 @@ Do:
 pip install -r requirements.txt
 ```
 
-Then:
+then:
 ```
 python manage.py runserver
 ```
