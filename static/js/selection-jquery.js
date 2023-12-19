@@ -82,8 +82,12 @@ $(document).ready(function() {
         updateSelection(selected);
     }
     $(document).keydown(function(e) {
-        console.log(e.which);
-        if (e.which == 13) {
+        const pressed = e.code;
+        if (pressed === 'Tab') {
+            e.preventDefault();
+            return;
+        }
+        else if (pressed === 'Enter') {
             if ($(selected).hasClass("custom-checkbox")) {
                 controlFeedback.currentTime = 0;
                 controlFeedback.play();
@@ -97,24 +101,25 @@ $(document).ready(function() {
                 focusBox.removeClass("green-border");
                 selected.click();
             }, 100);
+            return;
         }
-        else if (e.which == 37) {
+        else if (pressed === 'ArrowLeft') {
             if (posInHeight > 0) {
                 posInHeight--;
             }
         }
-        else if (e.which == 39) {
+        else if (pressed === 'ArrowRight') {
             if (posInHeight + 1 < selectionContainer[layer][height].length) {
                 posInHeight++;
             }
         }
-        else if (e.which == 38) {
+        else if (pressed === 'ArrowUp') {
             if (height > 0) {
                 height--;
                 posInHeight = 0;
             }
         }
-        else if (e.which == 40) {
+        else if (pressed === 'ArrowDown') {
             if (height + 1 < Object.keys(selectionContainer[layer]).length) {
                 height++;
                 posInHeight = 0;
