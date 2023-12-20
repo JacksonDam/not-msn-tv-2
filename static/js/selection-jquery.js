@@ -7,6 +7,7 @@ var focusBox;
 var lastLayer = -1;
 var lastHeight = -1;
 var lastPosInHeight = -1;
+var selectables;
 function updateSelection(){
     if (selected) {
         var elementRect = selected.getBoundingClientRect();
@@ -55,14 +56,20 @@ function goToSpecific(newLayer, newHeight, newPosInHeight) {
     updateSelection();
 }
 
-$(document).ready(function() {
-    $('#scrollbar').css('display', 'block');
-    $('body').css('overflow', 'hidden');
-    const selectSound = $('#select-sound').get(0);
-    const controlFeedback = $('#control-feedback-sound').get(0);
-    focusBox = $("#focus-box");
-    var selectables = $('.selectable');
+function initialiseSelectables(divObj) {
+    console.log("INIT");
+    layer = -1;
+    height = -1;
+    posInHeight = -1;
+    selected;
+    selectionContainer = {};
+    lastLayer = -1;
+    lastHeight = -1;
+    lastPosInHeight = -1;
+    selectables = divObj.find('.selectable');
+    console.log(selectables);
     $.each(selectables, function(name, val) {
+        console.log(val);
         var itemLayer = parseInt($(val).attr("select-layer"));
         var itemHeight = parseInt($(val).attr("select-height"));
         if (!(itemLayer in selectionContainer)) {
@@ -81,6 +88,25 @@ $(document).ready(function() {
         posInHeight = 0;
         updateSelection(selected);
     }
+}
+
+$(document).ready(function() {
+    $('#scrollbar').css('display', 'block');
+    $('body').css('overflow', 'hidden');
+    const selectSound = $('#select-sound').get(0);
+    const controlFeedback = $('#control-feedback-sound').get(0);
+    focusBox = $("#focus-box");
+    initialiseSelectables($('#main-page'));
+    $("#start-btn").on( "click", function(e) {
+        start();
+        selectSound.currentTime = 0;
+        selectSound.play();
+        $(e.target).animate({ opacity: 0 }, { duration: 200, queue: false });
+        $(e.target).animate({ "font-size": "200px" }, { duration: 300, queue: false });
+        setTimeout(function() {
+            $(e.target).remove();
+        }, 500)
+    });
     $(document).keydown(function(e) {
         const pressed = e.code;
         if (pressed === 'Tab') {
@@ -131,5 +157,5 @@ $(document).ready(function() {
     });
     $(window).on( "resize", function() {
         updateSelection(selected);
-    } );
+    });
 });

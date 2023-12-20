@@ -22,8 +22,14 @@
         <audio id="select-sound" src="{% static 'audio/Select.mp3' %}"></audio>
         <audio id="control-feedback-sound" src="{% static 'audio/ControlFeedback.mp3' %}"></audio>
         <audio id="error-sound" src="{% static 'audio/Error.mp3' %}"></audio>
-	    {% block contextual %}
-		{% endblock %}
+        <div id="cur-page absolute top-0 left-0 right-0 bottom-0 h-screen w-screen">
+            {% block cur_page %}
+            {% endblock %}
+        </div>
+        <div id="main-page">
+            {% block contextual %}
+		    {% endblock %}
+        </div>
 		<script src="{% static 'js/jquery-3.7.1.min.js' %}" crossorigin="anonymous"></script>
         <script src="{% static 'js/selection-jquery.js' %}" crossorigin="anonymous"></script>
 		{% block contextual_js %}

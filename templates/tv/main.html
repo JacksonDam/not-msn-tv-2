@@ -7,7 +7,9 @@
 {% endblock %}
 
 {% block contextual %}
-    <div class="overlay"></div>
+    <div class="flex overlay items-center justify-center">
+        <button type="button" class="base-btn" id="start-btn">Start MSN TV 2</button>
+    </div>
     <audio id="startup" src="{% static 'audio/Power_On.mp3' %}"></audio>
     <audio id="connecting" src="{% static 'audio/Connecting.mp3' %}"></audio>
     <audio id="disconnect" src="{% static 'audio/Disconnect.mp3' %}"></audio>
@@ -122,5 +124,5 @@
 {% endblock %}
 
 {% block contextual_js %}
-	<script src="{% static 'js/signin-jquery.js' %}" crossorigin="anonymous"></script>
+	<script src="{% static 'js/main-jquery.js' %}" crossorigin="anonymous"></script>
 {% endblock %}

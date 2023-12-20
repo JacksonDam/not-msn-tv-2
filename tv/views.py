@@ -7,4 +7,4 @@ def index(request):
     return redirect(reverse('tv'))
 
 def tv(request):
-    return render(request, 'tv/signin.html', context={})
+    return render(request, 'tv/main.html', context={})

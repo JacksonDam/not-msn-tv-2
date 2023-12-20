@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function start() {
     const startup = $('#startup').get(0);
     const connecting = $('#connecting').get(0);
     const disconnect = $('#disconnect').get(0);
@@ -108,4 +108,4 @@ $(document).ready(function() {
                .attr('data-checked', 'false');
         }
     });
-});
+}
