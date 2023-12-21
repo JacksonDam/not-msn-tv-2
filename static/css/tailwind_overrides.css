@@ -52,6 +52,7 @@ pre {
     font-family: "Segoe TV";
     margin-left: 1.8vw;
     margin-top: 2.85vh;
+    white-space: nowrap;
 }
 
 .ui-title-white-2 {
@@ -240,6 +241,7 @@ pre {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     opacity: 0.95;
+    padding-left: 1.481vh;
 }
 
 .network-icon {
