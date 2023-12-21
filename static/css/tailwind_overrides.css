@@ -246,9 +246,12 @@ pre {
 
 .network-icon {
     max-width: 10vh;
-    margin-left: 3.6vw;
-    margin-right: 0.5vw;
+    margin-right: 4%;
     margin-top: 0.5vh;
+}
+
+.network-flex {
+    gap: 6.6%;
 }
 
 input[type="password"]:focus {
