@@ -1,3 +1,6 @@
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
 function start() {
     const startup = $('#startup').get(0);
     const connecting = $('#connecting').get(0);
