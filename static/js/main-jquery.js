@@ -160,6 +160,6 @@ function start() {
         var date = new Date();
         const hours = date.getHours();
         const mins = date.getMinutes();
-        $('#status-bar-clock').html(hours + ":" + (mins < 10 ? '0' : '') + mins + (hours >= 12 ? 'pm' : 'am'));
+        $('#status-bar-clock').html((hours % 12 || 12) + ":" + (mins < 10 ? '0' : '') + mins + (hours >= 12 ? 'pm' : 'am'));
     }, 1000);
 }
