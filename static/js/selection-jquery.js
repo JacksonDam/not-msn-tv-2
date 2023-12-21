@@ -1,6 +1,3 @@
-const AudioContext = window.AudioContext || window.webkitAudioContext;
-const audioCtx = new AudioContext();
-
 var layer = -1;
 var height= -1;
 var posInHeight = -1;
