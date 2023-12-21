@@ -31,6 +31,7 @@ function start() {
         spinner.removeClass('hidden');
         statusBar.find('.scroll-arrow-down').addClass("hidden");
         statusBar.find('.sb-overlay').removeClass('overlaying');
+        spinner.css('transform', 'rotate(0deg)');
         signInPanel.addClass("open-no-anim");
     }
 
