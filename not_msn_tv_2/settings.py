@@ -17,6 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = '/home/msntv2/assets'
 STATICFILES_DIRS = [STATIC_DIR, ]
 
 NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
@@ -25,12 +26,12 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-e(_9&=a%#a=hht=!+&j_!^tt0*v(n+hzavvzywb)(g#=((n*p3'
+SECRET_KEY = os.environ.get("SECRET_KEY", "insecure-default-changed-in-prod")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'msntv2.eu.pythonanywhere.com']
 
 TAILWIND_APP_NAME = 'theme'
 
