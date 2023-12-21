@@ -230,6 +230,11 @@ pre {
     transform: translateY(0%);
 }
 
+.panel-container.open-status-no-anim {
+    visibility: visible;
+    transform: translateY(-42%);
+}
+
 .network-container {
     background-image: linear-gradient(#355a8e, #5c84ac) !important;
     padding-top: 0.4rem;
@@ -255,6 +260,19 @@ input[type="password"]:focus {
 }
 
 .sign-in-btn[type="button"] {
+    background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+    color: #254267;
+    font-size: 3.7vh;
+    font-family: "Segoe TV";
+    margin-left: 1.1vw;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 0.4vh;
+    border: 3px solid #1b1b1b;
+    border-radius: 2px;
+}
+
+.sign-in-btn.sign-in-btn-variant[type="button"] {
     background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
     color: #254267;
     font-size: 3.7vh;
@@ -328,7 +346,7 @@ input[type="password"]::-moz-focus-inner {
 input[type="password"] {
     color: #ffffff;
     font-size: 3.1vh !important;
-    width: 67.5vh;
+    width: 64.5vh;
     box-shadow: none;
     border-top: #000000 5px solid;
     border-right: #858989 5px solid;
@@ -395,4 +413,62 @@ input[type="password"] {
 
 #focus-box.green-border {
     border: 8px solid #41c521;
+}
+
+#status-bar {
+    z-index: 4;
+}
+
+.status-bar-bg {
+    height: 9vh;
+}
+
+.scroll-arrow-down {
+    width: 4.5vh;
+    right: 0;
+    bottom: 9.6vh;
+}
+
+.sb-overlay.overlaying {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    opacity: 1;
+    z-index: 6;
+}
+
+.status-bar-logo {
+    right: 1.5vh;
+    width: 22.75vh;
+    margin-top: 2vh;
+}
+
+#status-bar-spinner {
+    right: 47.5vh;
+    width: 5vh;
+    margin-top: 2vh;
+}
+
+#status-bar-clock {
+    right: 27vh;
+    margin-top: 2vh;
+    background: none;
+    color: white;
+    font-size: 3.9vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+}
+
+#status-bar-user-tile {
+    left: 1.5vh;
+    width: 7vh;
+    margin-top: 1.2vh;
+}
+
+#cur-page {
+    background: white;
+    height: 91vh;
+    z-index: 5;
 }

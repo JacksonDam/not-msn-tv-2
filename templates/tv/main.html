@@ -54,6 +54,24 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute bottom-0 left-0 right-0 flex items-center hidden" id="status-bar">
+                <div class="absolute sb-overlay overlaying"></div>
+                <img class="status-bar-bg" src="{% static 'images/statusbarbg.png' %}">
+                <img class="absolute" id="status-bar-user-tile" src="{% static 'images/tile22_s.png' %}">
+                <img class="absolute scroll-arrow-down hidden" src="{% static 'images/scrollindicatordown.png' %}">
+                <h3 class="absolute" id="status-bar-clock"></h3>
+                <img class="absolute" id="status-bar-spinner" src="{% static 'images/loadpage.png' %}">
+                <img class="absolute status-bar-logo" src="{% static 'images/msntvlogo.png' %}">
+                <div class="absolute flex flex-wrap">
+                    <div class="flex-shrink">
+                    </div>
+                    <div class="flex-grow-1 flex items-start">
+                    </div>
+                </div>
+            </div>
+            <div id="cur-page" class="absolute top-0 left-0 right-0 flex hidden">
+                <h3 class="ui-title-dark-2">Hello! This is a page.</h3>
+            </div>
             <img class="object-cover h-screen" src="{% static 'images/bg.png' %}">
             <div class="absolute bottom-0 left-0 right-0 px-4 network-container flex">
                 <div class="flex items-center">
@@ -114,7 +132,7 @@
                     </pre>
                     <div class="flex btn-pair">
                         <div class="flex-grow"></div>
-                        <button type="button" class="sign-in-btn selectable" select-x="0" select-height="0" select-layer="2">Sign In</button>
+                        <button type="button" class="sign-in-btn sign-in-btn-variant selectable" select-x="0" select-height="0" select-layer="2">Sign In</button>
                         <button type="button" class="cancel-error-btn selectable" select-x="1" select-height="0" select-layer="2">Cancel</button>
                     </div>
                 </div>

@@ -22,10 +22,7 @@
         <audio id="select-sound" src="{% static 'audio/Select.mp3' %}"></audio>
         <audio id="control-feedback-sound" src="{% static 'audio/ControlFeedback.mp3' %}"></audio>
         <audio id="error-sound" src="{% static 'audio/Error.mp3' %}"></audio>
-        <div id="cur-page absolute top-0 left-0 right-0 bottom-0 h-screen w-screen">
-            {% block cur_page %}
-            {% endblock %}
-        </div>
+        <audio id="home-brand" src="{% static 'audio/Home_brand.mp3' %}"></audio>
         <div id="main-page">
             {% block contextual %}
 		    {% endblock %}

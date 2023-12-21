@@ -30,6 +30,15 @@ function tempHideFocusBox() {
     }, 250);
 }
 
+function hideFocusBox() {
+    focusBox.addClass("hide-focus");
+}
+
+function unHideFocusBox() {
+    focusBox.removeClass("hide-focus");
+    updateSelection();
+}
+
 function setLast() {
     lastLayer = layer;
     lastHeight = height;
@@ -45,7 +54,7 @@ function goToLayer(newLayer) {
     height = 0;
     posInHeight = 0;
     selected = selectionContainer[layer][height][posInHeight];
-    updateSelection();
+    updateSelection(selected);
 }
 
 function goToSpecific(newLayer, newHeight, newPosInHeight) {
@@ -53,7 +62,7 @@ function goToSpecific(newLayer, newHeight, newPosInHeight) {
     height = newHeight;
     posInHeight = newPosInHeight;
     selected = selectionContainer[layer][height][posInHeight];
-    updateSelection();
+    updateSelection(selected);
 }
 
 function initialiseSelectables(divObj) {
@@ -98,13 +107,13 @@ $(document).ready(function() {
     focusBox = $("#focus-box");
     initialiseSelectables($('#main-page'));
     $("#start-btn").on( "click", function(e) {
-        start();
         selectSound.currentTime = 0;
         selectSound.play();
         $(e.target).animate({ opacity: 0 }, { duration: 200, queue: false });
         $(e.target).animate({ "font-size": "200px" }, { duration: 300, queue: false });
         setTimeout(function() {
             $(e.target).remove();
+            start();
         }, 500)
     });
     $(document).keydown(function(e) {
