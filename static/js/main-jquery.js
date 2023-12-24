@@ -35,6 +35,15 @@ function start() {
         signInPanel.addClass("open-no-anim");
     }
 
+    function getPage() {
+        $.get('/tv/request-page',
+            {'query': 'home'},
+              function(data) {
+                  console.log(data);
+                  curPage.html(data);
+        });
+    }
+
     function signInClose() {
         curPage.removeClass("hidden");
         signInPanel.removeClass("open-status-no-anim");
@@ -97,6 +106,7 @@ function start() {
         }, 6075));
         timeouts.push(setTimeout(function () {
             spinner.addClass('hidden');
+            getPage();
         }, 6175));
         timeouts.push(setTimeout(function () {
             signInClose();
