@@ -1,3 +1,4 @@
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 function start() {
     const startup = $('#startup').get(0);
     const connecting = $('#connecting').get(0);
@@ -40,7 +41,14 @@ function start() {
             {'query': 'home'},
               function(data) {
                   console.log(data);
-                  curPage.html(data);
+                  curPage.html(data)
+        })
+        .done(function() {
+            var date = new Date();
+            const month = date.getMonth();
+            const day = date.getDate();
+            const year = date.getFullYear();
+            $('.today-pane-date').html(months[month] + " " + day + ", " + year);
         });
     }
 

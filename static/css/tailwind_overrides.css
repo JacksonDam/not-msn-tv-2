@@ -85,6 +85,16 @@ pre {
     white-space: nowrap;
 }
 
+.holiday-text {
+    background: none;
+    color: white;
+    font-size: 3.9vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+    left: 39.5%;
+    bottom: 7%;
+}
+
 .ui-title-navy {
     background: none;
     color: #254267;
@@ -527,4 +537,80 @@ input[type="password"] {
     height: 18.5vh;
     min-width: -moz-available;
     min-width: -webkit-fill-available;
+}
+
+.promo-img {
+    top: 8vh;
+    border: 0.5vh solid white;
+    max-width: 43vh;
+}
+
+.today-pane {
+    top: 8vh;
+    left: 43vh;
+}
+
+.using-msn-tv-pane {
+    top: 40vh;
+    left: 43vh;
+}
+
+.today-pane-title {
+    background: none;
+    color: #824107;
+    font-size: 5.2vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+    margin-top: 0.75vh;
+    margin-left: 1.75vh;
+    margin-bottom: -1vh;
+}
+
+.using-msn-tv-pane-title {
+    background: none;
+    color: #1D704C;
+    font-size: 5.2vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+    margin-top: 0.75vh;
+    margin-left: 1.75vh;
+    margin-bottom: -2vh;
+}
+
+.today-pane-date {
+    background: none;
+    color: #000000;
+    font-size: 3.75vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+    margin-top: 2vh;
+    margin-left: 27.5vh;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.today-pane-headline {
+    background: none;
+    color: #000000;
+    font-size: 4.25vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+    margin-left: 1.75vh;
+}
+
+.today-pane-text {
+    background: none;
+    color: #0B1D60;
+    font-size: 4.25vh;
+    font-family: "Segoe TV";
+    white-space: nowrap;
+    margin-left: 0.85vh;
+}
+
+.dropdown-right-arrow {
+    max-height: 3vh;
+    margin-left: 40vh;
 }
