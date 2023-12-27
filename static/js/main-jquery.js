@@ -49,6 +49,7 @@ function start() {
             const day = date.getDate();
             const year = date.getFullYear();
             $('.today-pane-date').html(months[month] + " " + day + ", " + year);
+            initialiseSelectables(curPage);
         });
     }
 
@@ -123,6 +124,7 @@ function start() {
             homeBrand.currentTime = 0;
             homeBrand.play();
             spinner.removeClass('hidden');
+            unHideFocusBox();
         }, 8250));
         timeouts.push(setTimeout(function () {
             spinner.addClass('hidden');

@@ -91,6 +91,7 @@ function initialiseSelectables(divObj) {
         curLayer[itemHeight].push(val);
     });
     if (0 in selectionContainer && !(selectionContainer[0].length === 0)) {
+        console.log("GOOD");
         selected = selectionContainer[0][0][0];
         layer = 0;
         height = 0;
