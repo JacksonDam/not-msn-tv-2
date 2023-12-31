@@ -2,7 +2,6 @@ from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
-import threading
 import feedparser
 import ssl
 import time
@@ -20,8 +19,12 @@ current_headlines = {
     "three": {"title": "Headline 3"},
 }
 
+info = {'last_updated': 0.0}
+
 def update_news():
-    while True:
+    cur = time.time()
+    if not info['last_updated'] or cur - info['last_updated'] >= 10800:
+        info['last_updated'] = cur
         NewsFeed = feedparser.parse("http://feeds.nbcnews.com/feeds/worldnews")
         if NewsFeed.entries:
             for i in range(0, 3):
@@ -43,7 +46,6 @@ def update_news():
                 )
                 current_headlines[num_keys[i]]['title'] = headline.choices[0].message.content
             print("UPDATE SUCCESS", current_headlines)
-        time.sleep(10800)
 
 pages = {
     'home': 'tv/home.html',
@@ -61,10 +63,9 @@ class RequestPage(View):
         requested_page = request.GET['query']
         if requested_page in pages:
             if requested_page == 'home':
+                update_news()
                 return render(request, pages[requested_page], context=current_headlines)
             else:
                 return render(request, pages[requested_page], context={})
         else:
             return HttpResponseNotFound("<h1>Page not found</h1>")
-
-threading.Thread(target=update_news, args=()).start()
