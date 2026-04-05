@@ -3,38 +3,44 @@ import { useRef, useCallback } from 'react'
 export default function useAudio() {
   const ctxRef = useRef(null)
   const buffersRef = useRef({})
-  const loadingRef = useRef({})
+  const pendingRef = useRef({})
 
   const getCtx = useCallback(() => {
     if (!ctxRef.current) {
       ctxRef.current = new (window.AudioContext || window.webkitAudioContext)()
     }
-    const ctx = ctxRef.current
-    if (ctx.state === 'suspended') ctx.resume()
-    return ctx
+    return ctxRef.current
   }, [])
 
   const register = useCallback((name, url) => {
-    if (buffersRef.current[name] || loadingRef.current[name]) return
-    loadingRef.current[name] = true
-    fetch(url)
+    if (buffersRef.current[name] || pendingRef.current[name]) return
+    pendingRef.current[name] = fetch(url)
       .then((res) => res.arrayBuffer())
-      .then((data) => {
-        const ctx = getCtx()
-        return ctx.decodeAudioData(data)
+      .catch((err) => {
+        console.warn(`Failed to load sound "${name}":`, err)
+        return null
       })
-      .then((buffer) => {
-        buffersRef.current[name] = buffer
-      })
-      .catch((err) => console.warn(`Failed to load sound "${name}":`, err))
-  }, [getCtx])
+  }, [])
 
-  const play = useCallback((name) => {
-    const buffer = buffersRef.current[name]
-    if (!buffer) return
+  const play = useCallback(async (name) => {
     const ctx = getCtx()
+
+    if (ctx.state === 'suspended') {
+      await ctx.resume()
+    }
+
+    if (!buffersRef.current[name]) {
+      const raw = await pendingRef.current[name]
+      if (!raw) return
+      try {
+        buffersRef.current[name] = await ctx.decodeAudioData(raw.slice(0))
+      } catch {
+        return
+      }
+    }
+
     const source = ctx.createBufferSource()
-    source.buffer = buffer
+    source.buffer = buffersRef.current[name]
     source.connect(ctx.destination)
     source.start(0)
   }, [getCtx])
