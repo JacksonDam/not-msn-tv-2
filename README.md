@@ -1,7 +1,7 @@
 # not-msn-tv-2
 
 Try it out:
-[deployed on GitHub Pages](https://not-msn-tv-2.github.io/)
+[deployed on GitHub Pages](https://jacksondam.com/not-msn-tv-2/)
 
 <br/>
 
