@@ -1,0 +1,660 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Segoe TV Bold;
+    src: url('/fonts/SegoeTVBold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Segoe TV;
+    src: url('/fonts/SegoeTVRegular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Segoe TV Bold Italic;
+    src: url('/fonts/SegoeTVBoldIt.woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Segoe TV Italic;
+    src: url('/fonts/SegoeTVItalic.woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@layer base {
+    [type='text'],
+    input:where(:not([type])),
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        appearance: none;
+        background-color: #fff;
+        border-color: #6b7280;
+        border-width: 1px;
+        border-radius: 0px;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        --tw-shadow: 0 0 #0000;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        background-color: #000000;
+    }
+
+    pre {
+        white-space: pre-line;
+        margin-bottom: 2vw !important;
+        line-height: 1.2;
+    }
+}
+
+@layer components {
+    .tv-frame {
+        aspect-ratio: 4 / 3;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #main-page {
+        overflow: hidden;
+    }
+
+    #start-btn {
+        text-wrap: none;
+        white-space: nowrap;
+    }
+
+    .ui-title-white {
+        background: none;
+        color: white;
+        font-size: 4.36vh;
+        font-family: "Segoe TV";
+        margin-left: 1.8vw;
+        margin-top: 2.85vh;
+        white-space: nowrap;
+    }
+
+    .ui-title-white-2 {
+        background: none;
+        color: white;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        margin-left: 2.25vw;
+        margin-top: 1.6vh;
+        white-space: nowrap;
+    }
+
+    .ui-title-white-3 {
+        background: none;
+        color: white;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        width: fit-content;
+        margin-top: 1.5vh;
+        margin-right: 0.5vh;
+    }
+
+    .ui-title-white-4 {
+        background: none;
+        color: white;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        margin-left: 1.75vh;
+        margin-top: 1vh;
+        white-space: nowrap;
+    }
+
+    .holiday-text {
+        background: none;
+        color: white;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+        left: 39.5%;
+        bottom: 7%;
+    }
+
+    .ui-title-navy {
+        background: none;
+        color: #254267;
+        font-size: 4.4vh;
+        font-family: "Segoe TV";
+        margin-left: 1.6vw;
+    }
+
+    .text-gap {
+        background: none;
+        font-size: 3vh;
+    }
+
+    .ui-title-dark {
+        background: none;
+        color: #0d0f1d;
+        font-size: 4.3vh;
+        font-family: "Segoe TV";
+        margin-left: 1.6vw;
+    }
+
+    #focus-box.hide-focus {
+        visibility: hidden;
+    }
+
+    .error-title-dark {
+        background: none;
+        color: #0d0f1d;
+        font-size: 4.3vh;
+        font-family: "Segoe TV Bold";
+        margin-left: 15vh;
+        padding-top: 4vh;
+        opacity: 0;
+    }
+
+    .error-dialog-icon {
+        max-width: 12vh;
+        margin-top: 5vh;
+        margin-left: 3vh;
+        opacity: 0;
+    }
+
+    .error-body {
+        background: none;
+        color: #0d0f1d;
+        font-size: 3.8vh;
+        font-family: "Segoe TV";
+        margin-left: 15vh;
+        width: 75vh;
+        margin-right: 4vh;
+        opacity: 0;
+    }
+
+    .error-title-dark.showing {
+        transition-delay: 0.03s;
+        opacity: 1;
+    }
+
+    .error-dialog-icon.showing {
+        transition-delay: 0.03s;
+        opacity: 1;
+    }
+
+    .error-body.showing {
+        transition-delay: 0.03s;
+        opacity: 1;
+    }
+
+    .btn-pair.showing {
+        transition-delay: 0.03s;
+        opacity: 1;
+    }
+
+    .ui-title-dark-2 {
+        background: none;
+        color: #0d0f1d;
+        font-size: 3.96vh;
+        font-family: "Segoe TV";
+        margin-left: 0.75vw;
+        width: fit-content;
+        margin-top: 0.5vh;
+    }
+
+    .panel-title-white {
+        background: none;
+        color: white;
+        font-size: 4.25vh;
+        font-family: "Segoe TV";
+        margin-top: 1.35vw;
+        margin-left: 2vw;
+    }
+
+    .error-contents {
+        background-image: url('/images/errordialogbg.png');
+        background-size: cover;
+        margin: 0.6vh;
+        border-radius: 12px;
+    }
+
+    .panel-bg {
+        object-fit: fill;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-top: 6px;
+    }
+
+    .panel-container {
+        background-image: linear-gradient(#5a5d62 0%, #767676 1%, #222222 2%, #222222 100%);
+        border: 2px solid black;
+        position: relative;
+        height: 20vh;
+    }
+
+    .error-dialog-container {
+        background-image: linear-gradient(#5a5d62 0%, #767676 1%, #224770 2%, #224770 100%);
+        border: 2px solid #193f68;
+        position: relative;
+        --tw-translate-y: -38.25vh;
+        z-index: 3;
+    }
+
+    .error-dialog-container.closed {
+        visibility: hidden;
+    }
+
+    .dialog-bg {
+        object-fit: fill;
+        border-radius: 8px;
+        margin: 3px;
+        height: 20vh;
+    }
+
+    .btn-pair {
+        margin: 1.5vw;
+        opacity: 0;
+    }
+
+    .panel-container.closed {
+        transition: 0.1s linear;
+        transform: translateY(100%);
+    }
+
+    .panel-container.closed-no-anim {
+        transform: translateY(100%);
+    }
+
+    .panel-container.open {
+        transition: 0.1s linear;
+        transform: translateY(0%);
+    }
+
+    .panel-container.open-no-anim {
+        visibility: visible;
+        transform: translateY(0%);
+    }
+
+    .panel-container.open-status-no-anim {
+        visibility: visible;
+        transform: translateY(-42%);
+    }
+
+    .network-container {
+        background-image: linear-gradient(#355a8e, #5c84ac) !important;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        opacity: 0.95;
+        padding-left: 1.481vh;
+    }
+
+    .settings-container {
+        background-image: url('/images/settingsheaderbg.png');
+        background-size: cover;
+        padding-bottom: 1vh;
+        border-bottom: 0.5vh solid white;
+    }
+
+    .buffer {
+        margin-right: 9vh;
+    }
+
+    .buffer-2 {
+        margin-right: 8vh;
+    }
+
+    .page-outer {
+        min-width: -moz-available;
+        min-width: -webkit-fill-available;
+    }
+
+    .network-icon {
+        max-width: 10vh;
+        margin-right: 4%;
+        margin-top: 0.5vh;
+    }
+
+    .network-flex {
+        gap: 6.6%;
+    }
+
+    input[type="password"]:focus {
+        outline: 0 !important;
+        border: 1px solid #4f4e4f !important;
+        box-shadow: none !important;
+        border-top: #000000 5px solid;
+        border-right: #858989 5px solid;
+        border-bottom: #858989 5px solid;
+        border-left: #000000 5px solid;
+    }
+
+    .sign-in-btn {
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+        color: #254267;
+        font-size: 3.7vh;
+        font-family: "Segoe TV";
+        margin-left: 1.1vw;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 0.4vh;
+        border: 3px solid #1b1b1b;
+        border-radius: 2px;
+    }
+
+    .sign-in-btn.sign-in-btn-variant {
+        padding-left: 3.3vh;
+        padding-right: 3.3vh;
+    }
+
+    .base-btn {
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+        color: #254267;
+        font-size: 3.7vh;
+        font-family: "Segoe TV";
+        margin-left: 1.1vw;
+        padding-left: 3.3vh;
+        padding-right: 3.3vh;
+        padding-bottom: 0.4vh;
+        border: 3px solid #1b1b1b;
+        border-radius: 2px;
+    }
+
+    .cancel-error-btn {
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+        color: #254267;
+        font-size: 3.7vh;
+        font-family: "Segoe TV";
+        margin-left: 1.1vw;
+        padding-left: 3.3vh;
+        padding-right: 3.3vh;
+        padding-bottom: 0.4vh;
+        border: 3px solid #1b1b1b;
+        border-radius: 2px;
+    }
+
+    .base-other {
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+        width: 106vh;
+        height: 4vh;
+        margin-left: 1.75vw;
+        margin-top: 1vh;
+        border: 3px solid #1b1b1b;
+        border-radius: 2px;
+    }
+
+    .custom-checkbox {
+        margin-left: 1.6vw;
+        margin-top: 0.2lh;
+        max-height: 4.2vh;
+    }
+
+    .progress-bar-fill {
+        object-fit: cover;
+        margin-top: 0.25vh;
+        min-height: 2.85vh;
+    }
+
+    input[type="password"]::-moz-focus-inner {
+        border: 0;
+        outline: 0 !important;
+        margin-top: 0.15vw;
+        border-top: #000000 5px solid;
+        border-right: #858989 5px solid;
+        border-bottom: #858989 5px solid;
+        border-left: #000000 5px solid;
+    }
+
+    input[type="password"] {
+        color: #ffffff;
+        font-size: 3.1vh !important;
+        width: 64.5vh;
+        box-shadow: none;
+        border-top: #000000 5px solid;
+        border-right: #858989 5px solid;
+        border-bottom: #858989 5px solid;
+        border-left: #000000 5px solid;
+    }
+
+    .password-box {
+        background: #4f4e4f !important;
+        font-family: "Segoe TV";
+        margin-left: 1.6vw;
+        margin-top: 0.15vw;
+        border-top: #000000 5px solid;
+        border-right: #858989 5px solid;
+        border-bottom: #858989 5px solid;
+        border-left: #000000 5px solid;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        opacity: 1;
+        z-index: 100001;
+    }
+
+    .overlay.fade-out {
+        opacity: 0;
+        transition: opacity 0.1s;
+        pointer-events: none;
+    }
+
+    .topbar-img {
+        max-height: 7.5vh;
+        margin-top: 1.45vh;
+        margin-right: 7.5vh;
+    }
+
+    .help-icon {
+        max-height: 4.8vh;
+        margin-top: 3.2vh;
+        margin-left: 1vh;
+    }
+
+    .help-icon-sml {
+        max-height: 4.8vh;
+        margin-top: 1.5vh;
+        margin-left: 2vh;
+    }
+
+    .login-container {
+        margin-top: 13.75vh;
+    }
+
+    .user-icon-large {
+        width: 33.3vh;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    #focus-box {
+        position: absolute;
+        border: 8px solid #ffcb00;
+        border-radius: 8px;
+        box-shadow: 2px 2px 0.5px #0000004d, -1px -1px 0.5px #fffc, inset 1.5px 1.5px 0.5px #0000004d, inset -1px -1px 0.5px #fffc;
+        box-sizing: border-box;
+        pointer-events: none;
+        z-index: 99999;
+    }
+
+    #focus-box.green-border {
+        border: 8px solid #41c521;
+    }
+
+    #status-bar {
+        z-index: 8;
+    }
+
+    .status-bar-bg {
+        height: 9vh;
+    }
+
+    .scroll-arrow-down {
+        width: 4.5vh;
+        right: 0;
+        bottom: 9.6vh;
+    }
+
+    .sb-overlay.overlaying {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        opacity: 1;
+        z-index: 6;
+    }
+
+    .status-bar-logo {
+        right: 1.5vh;
+        width: 22.75vh;
+        margin-top: 2vh;
+    }
+
+    #status-bar-spinner {
+        right: 47.5vh;
+        width: 5vh;
+        margin-top: 2vh;
+    }
+
+    #status-bar-clock {
+        right: 27vh;
+        margin-top: 2vh;
+        background: none;
+        color: white;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+    }
+
+    #status-bar-user-tile {
+        left: 1.5vh;
+        width: 7vh;
+        margin-top: 1.2vh;
+    }
+
+    #cur-page {
+        background: white;
+        height: 91vh;
+        z-index: 5;
+        align-items: start;
+    }
+
+    #search-div {
+        background-color: #1381E0;
+        min-width: -moz-available;
+        min-width: -webkit-fill-available;
+        height: 8vh;
+    }
+
+    #placeholder-bar {
+        background: linear-gradient(180deg, #0f3c8f 0%, #2466ff 100%);
+        height: 18.5vh;
+        min-width: -moz-available;
+        min-width: -webkit-fill-available;
+    }
+
+    .promo-img {
+        top: 8vh;
+        border: 0.5vh solid white;
+        max-width: 43vh;
+    }
+
+    .today-pane {
+        top: 8vh;
+        left: 43vh;
+    }
+
+    .using-msn-tv-pane {
+        top: 40vh;
+        left: 43vh;
+    }
+
+    .today-pane-title {
+        background: none;
+        color: #824107;
+        font-size: 5.2vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+        margin-top: 0.75vh;
+        margin-left: 1.75vh;
+        margin-bottom: -1vh;
+    }
+
+    .using-msn-tv-pane-title {
+        background: none;
+        color: #1D704C;
+        font-size: 5.2vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+        margin-top: 0.75vh;
+        margin-left: 1.75vh;
+        margin-bottom: -2vh;
+    }
+
+    .today-pane-date {
+        background: none;
+        color: #000000;
+        font-size: 3.75vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+        margin-top: 2vh;
+        margin-left: 27.5vh;
+    }
+
+    .today-pane-headline {
+        background: none;
+        color: #000000;
+        font-size: 4.25vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+        margin-left: 1.75vh;
+    }
+
+    .today-pane-text {
+        background: none;
+        color: #0B1D60;
+        font-size: 4.25vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+        margin-left: 0.85vh;
+    }
+
+    .dropdown-right-arrow {
+        max-height: 3vh;
+        margin-left: 40vh;
+    }
+
+    /* Start button animation */
+    .start-btn-fading {
+        opacity: 0;
+        font-size: 200px !important;
+        transition: opacity 0.2s, font-size 0.3s;
+    }
+}

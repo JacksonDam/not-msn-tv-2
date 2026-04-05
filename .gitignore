@@ -1,10 +1,5 @@
+node_modules
+dist
 .DS_Store
 ._*
-/.idea
-*.pyc
-*/__pycache__
-/venv
-package.json
-package-lock.json
-db.sqlite3
-/node_modules
+.env
