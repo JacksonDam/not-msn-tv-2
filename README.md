@@ -1,22 +1,18 @@
 # not-msn-tv-2
 
 Try it out:
-[deployed on PythonAnywhere](https://msntv2.eu.pythonanywhere.com/)
+[deployed on GitHub Pages](https://not-msn-tv-2.github.io/)
 
 <br/>
 
 To run locally:
 
-Do:
+Do this step only if you want real news headlines (shortened from NBC RSS):
 ```
-pip install -r requirements.txt
+npm run server (if you have an OPENAI_API_KEY for news headline shortening, I will probably rework this to use a local model)
 ```
 
 then:
 ```
-python manage.py runserver
-```
-or on Windows:
-```
-py manage.py runserver
+npm run dev
 ```
