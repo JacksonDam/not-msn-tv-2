@@ -2,28 +2,28 @@
 
 @font-face {
     font-family: Segoe TV Bold;
-    src: url('/fonts/SegoeTVBold.woff2');
+    src: url('./assets/SegoeTVBold.woff2');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: Segoe TV;
-    src: url('/fonts/SegoeTVRegular.woff2');
+    src: url('./assets/SegoeTVRegular.woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: Segoe TV Bold Italic;
-    src: url('/fonts/SegoeTVBoldIt.woff2');
+    src: url('./assets/SegoeTVBoldIt.woff2');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: Segoe TV Italic;
-    src: url('/fonts/SegoeTVItalic.woff2');
+    src: url('./assets/SegoeTVItalic.woff2');
     font-weight: 400;
     font-style: italic;
 }
@@ -231,7 +231,7 @@
     }
 
     .error-contents {
-        background-image: url('/images/errordialogbg.png');
+        background-image: url('./assets/errordialogbg.png');
         background-size: cover;
         margin: 0.6vh;
         border-radius: 12px;
@@ -308,7 +308,7 @@
     }
 
     .settings-container {
-        background-image: url('/images/settingsheaderbg.png');
+        background-image: url('./assets/settingsheaderbg.png');
         background-size: cover;
         padding-bottom: 1vh;
         border-bottom: 0.5vh solid white;

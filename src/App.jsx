@@ -3,6 +3,8 @@ import useSelection from './hooks/useSelection'
 import useAudio from './hooks/useAudio'
 import HomePage from './components/HomePage'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function App() {
   const [overlayVisible, setOverlayVisible] = useState(true)
   const [overlayGone, setOverlayGone] = useState(false)
@@ -52,13 +54,13 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    audio.register('startup', '/audio/Power_On.mp3')
-    audio.register('connecting', '/audio/Connecting.mp3')
-    audio.register('disconnect', '/audio/Disconnect.mp3')
-    audio.register('select', '/audio/Select.mp3')
-    audio.register('controlFeedback', '/audio/ControlFeedback.mp3')
-    audio.register('error', '/audio/Error.mp3')
-    audio.register('homeBrand', '/audio/Home_brand.mp3')
+    audio.register('startup', `${BASE}audio/Power_On.mp3`)
+    audio.register('connecting', `${BASE}audio/Connecting.mp3`)
+    audio.register('disconnect', `${BASE}audio/Disconnect.mp3`)
+    audio.register('select', `${BASE}audio/Select.mp3`)
+    audio.register('controlFeedback', `${BASE}audio/ControlFeedback.mp3`)
+    audio.register('error', `${BASE}audio/Error.mp3`)
+    audio.register('homeBrand', `${BASE}audio/Home_brand.mp3`)
   }, [audio])
 
   useEffect(() => {
@@ -239,12 +241,12 @@ export default function App() {
       <div id="main-page" ref={mainPageRef}>
         <div className="flex mx-auto justify-center">
           <div className="tv-frame flex relative flex-wrap">
-            <img className="object-cover w-full h-full absolute inset-0" src="/images/bg.png" />
+            <img className="object-cover w-full h-full absolute inset-0" src={`${BASE}images/bg.png`} />
 
             <div className="absolute top-0 left-0 right-0 px-4 py-2">
               <div className="flex items-center">
                 <div className="shrink">
-                  <img className="topbar-img" src="/images/topbarlogo.png" />
+                  <img className="topbar-img" src={`${BASE}images/topbarlogo.png`} />
                 </div>
                 <div className="grow selectable" data-select-x="0" data-select-height="0" data-select-layer="0">
                   <h3 className="ui-title-white">Forgot your password?</h3>
@@ -255,7 +257,7 @@ export default function App() {
                 <div className="grow selectable" data-select-x="2" data-select-height="0" data-select-layer="0">
                   <div className="flex items-center">
                     <h3 className="ui-title-white">Help</h3>
-                    <img className="help-icon" src="/images/helpicon.png" />
+                    <img className="help-icon" src={`${BASE}images/helpicon.png`} />
                   </div>
                 </div>
               </div>
@@ -264,7 +266,7 @@ export default function App() {
             <div className="absolute top-0 left-0 right-0 px-4 py-2 login-container flex">
               <div className="flex">
                 <div className="shrink user-icon-large">
-                  <img src="/images/tile22_l.png" />
+                  <img src={`${BASE}images/tile22_l.png`} />
                 </div>
                 <div className="grow py-2">
                   <div className="grid-rows-4 items-center">
@@ -295,7 +297,7 @@ export default function App() {
                         data-select-x="0"
                         data-select-height="2"
                         data-select-layer="0"
-                        src={checkboxChecked ? '/images/checked.png' : '/images/unchecked.png'}
+                        src={checkboxChecked ? `${BASE}images/checked.png` : `${BASE}images/unchecked.png`}
                         onClick={handleCheckbox}
                       />
                       <h3 className="ui-title-dark-2 ml-2">Save password so I don't need to retype it</h3>
@@ -310,20 +312,20 @@ export default function App() {
               className={`absolute bottom-0 left-0 right-0 flex items-center ${statusBarVisible ? '' : 'hidden'}`}
             >
               <div className={`absolute sb-overlay ${sbOverlaying ? 'overlaying' : ''}`}></div>
-              <img className="status-bar-bg" src="/images/statusbarbg.png" />
-              <img className="absolute" id="status-bar-user-tile" src="/images/tile22_s.png" />
+              <img className="status-bar-bg" src={`${BASE}images/statusbarbg.png`} />
+              <img className="absolute" id="status-bar-user-tile" src={`${BASE}images/tile22_s.png`} />
               <img
                 className={`absolute scroll-arrow-down ${scrollArrowVisible ? '' : 'hidden'}`}
-                src="/images/scrollindicatordown.png"
+                src={`${BASE}images/scrollindicatordown.png`}
               />
               <h3 className="absolute" id="status-bar-clock">{clock}</h3>
               <img
                 className={`absolute ${spinnerHidden ? 'hidden' : ''}`}
                 id="status-bar-spinner"
-                src="/images/loadpage.png"
+                src={`${BASE}images/loadpage.png`}
                 style={{ transform: `rotate(${spinnerRotation}deg)` }}
               />
-              <img className="absolute status-bar-logo" src="/images/msntvlogo.png" />
+              <img className="absolute status-bar-logo" src={`${BASE}images/msntvlogo.png`} />
             </div>
 
             <div
@@ -346,7 +348,7 @@ export default function App() {
                       data-select-x="0"
                       data-select-height="3"
                       data-select-layer="0"
-                      src="/images/photo.png"
+                      src={`${BASE}images/photo.png`}
                       onClick={handleNetworkIcon}
                     />
                     <h3 className="ui-title-white-3">Photos</h3>
@@ -359,7 +361,7 @@ export default function App() {
                       data-select-x="1"
                       data-select-height="3"
                       data-select-layer="0"
-                      src="/images/music.png"
+                      src={`${BASE}images/music.png`}
                       onClick={handleNetworkIcon}
                     />
                     <h3 className="ui-title-white-3">Music</h3>
@@ -372,7 +374,7 @@ export default function App() {
                       data-select-x="2"
                       data-select-height="3"
                       data-select-layer="0"
-                      src="/images/video.png"
+                      src={`${BASE}images/video.png`}
                       onClick={handleNetworkIcon}
                     />
                     <h3 className="ui-title-white-3">Videos</h3>
@@ -385,7 +387,7 @@ export default function App() {
               className={`absolute bottom-0 left-0 right-0 panel-container flex ${panelClass}`}
               id="signin-panel"
             >
-              <img className="panel-bg" src="/images/signinpanelbg.png" />
+              <img className="panel-bg" src={`${BASE}images/signinpanelbg.png`} />
               <div className="absolute flex flex-wrap">
                 <div className="shrink">
                   <h3 className="panel-title-white">{panelText}</h3>
@@ -395,7 +397,7 @@ export default function App() {
                   <div className="base-other">
                     <img
                       className="progress-bar-fill"
-                      src="/images/barfill.png"
+                      src={`${BASE}images/barfill.png`}
                       style={{ width: progressWidth }}
                     />
                   </div>
@@ -420,7 +422,7 @@ export default function App() {
                 <div className="flex items-center">
                   <img
                     className={`absolute error-dialog-icon ${errorShowing ? 'showing' : ''}`}
-                    src="/images/warning.png"
+                    src={`${BASE}images/warning.png`}
                   />
                   <h3 className={`error-title-dark ${errorShowing ? 'showing' : ''}`}>Please sign in</h3>
                 </div>
