@@ -72,7 +72,7 @@ export default function HomePage({ headlines }) {
       </div>
       <div id="search-div"></div>
       <div id="placeholder-bar">
-        <h3 className="absolute holiday-text">Happy holidays!</h3>
+        <h3 className="absolute holiday-text">Coming soon!</h3>
       </div>
     </div>
   )
