@@ -573,11 +573,46 @@
         height: 8vh;
     }
 
-    #placeholder-bar {
+    #dock-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: linear-gradient(180deg, #0f3c8f 0%, #2466ff 100%);
         height: 18.5vh;
         min-width: -moz-available;
         min-width: -webkit-fill-available;
+        border-top: 0.4vh solid #5eafe0;
+    }
+
+    .dock-items {
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .dock-slider {
+        display: flex;
+        align-items: center;
+        transition: transform 0.1s linear;
+        position: relative;
+        top: -0.75vh;
+    }
+
+    .dock-item-img {
+        height: 14.5vh !important;
+        max-width: none !important;
+        flex-shrink: 0;
+    }
+
+
+    .dock-arrow {
+        height: 5vh;
+        width: 5vh;
+        object-fit: contain;
+        margin: 0 0.5vh;
+        image-rendering: pixelated;
     }
 
     .promo-img {

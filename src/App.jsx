@@ -24,6 +24,10 @@ export default function App() {
   const [checkboxChecked, setCheckboxChecked] = useState(true)
   const [clock, setClock] = useState('')
   const [headlines, setHeadlines] = useState(['Headline 1', 'Headline 2', 'Headline 3'])
+  const [dockPos, setDockPos] = useState(0)
+  const [dockViewStart, setDockViewStart] = useState(0)
+  const [dockPixelOffset, setDockPixelOffset] = useState(0)
+  const dockSlidingRef = useRef(false)
 
   const timeoutsRef = useRef([])
   const mainPageRef = useRef(null)
@@ -88,7 +92,60 @@ export default function App() {
         return
       }
       const dirMap = { ArrowLeft: 'left', ArrowRight: 'right', ArrowUp: 'up', ArrowDown: 'down' }
-      if (dirMap[key]) selection.moveSelection(dirMap[key])
+      if (dirMap[key]) {
+        const sel = selection.getSelected()
+        const height = sel?.getAttribute('data-select-height')
+        if (height === '9' && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+
+          const slider = curPageRef.current?.querySelector('.dock-slider')
+          const dockItems = curPageRef.current?.querySelector('.dock-items')
+          if (!slider || !dockItems) return
+
+          const containerRect = dockItems.getBoundingClientRect()
+          const selRect = sel.getBoundingClientRect()
+          const children = Array.from(slider.children)
+          const selIdx = children.indexOf(sel)
+
+          let willSlide = false
+          let pxShift = 0
+          if (key === 'ArrowRight' && selIdx + 1 < children.length) {
+            const nextEl = children[selIdx + 1]
+            const nextRight = selRect.right + nextEl.offsetWidth
+            if (nextRight > containerRect.right) {
+              willSlide = true
+              pxShift = nextRight - containerRect.right
+              const peekEl = children[selIdx + 2]
+              if (peekEl) pxShift += peekEl.offsetWidth / 2
+            }
+          } else if (key === 'ArrowLeft' && selIdx - 1 >= 0) {
+            const prevEl = children[selIdx - 1]
+            const prevLeft = selRect.left - prevEl.offsetWidth
+            if (prevLeft < containerRect.left) {
+              willSlide = true
+              pxShift = prevLeft - containerRect.left
+              const peekEl = children[selIdx - 2]
+              if (peekEl) pxShift -= peekEl.offsetWidth / 2
+            }
+          }
+
+          setDockPos(prev => prev + (key === 'ArrowRight' ? 1 : -1))
+          if (willSlide) {
+            setDockPixelOffset(prev => prev + pxShift)
+            dockSlidingRef.current = true
+            const oldEl = sel
+            const animateBox = () => {
+              if (!dockSlidingRef.current) return
+              selection.updateContainerRef(0, 9, 0, oldEl)
+              requestAnimationFrame(animateBox)
+            }
+            requestAnimationFrame(animateBox)
+          }
+        } else if (height === '9' && key === 'ArrowUp') {
+          selection.moveSelection('up')
+        } else {
+          selection.moveSelection(dirMap[key])
+        }
+      }
     }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
@@ -194,6 +251,28 @@ export default function App() {
       selection.initSelectables(curPageRef.current)
     }
   }, [curPageVisible]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (!curPageVisible || !curPageRef.current) return
+    const dockEl = curPageRef.current.querySelector('[data-select-height="9"]')
+    if (dockEl) {
+      selection.updateContainerRef(0, 9, 0, dockEl)
+      if (!dockSlidingRef.current) {
+        selection.updateFocusBox()
+      }
+    }
+  }, [dockPos, curPageVisible, selection])
+
+  const handleSlideEnd = useCallback(() => {
+    if (dockSlidingRef.current) {
+      dockSlidingRef.current = false
+      const dockEl = curPageRef.current?.querySelector('[data-select-height="9"]')
+      if (dockEl) {
+        selection.updateContainerRef(0, 9, 0, dockEl)
+      }
+      selection.updateFocusBox()
+    }
+  }, [selection])
 
   const handleNetworkIcon = useCallback(() => {
     clearTimeouts()
@@ -333,7 +412,7 @@ export default function App() {
               ref={curPageRef}
               className={`absolute top-0 left-0 right-0 flex ${curPageVisible ? '' : 'hidden'}`}
             >
-              {curPageVisible && <HomePage headlines={headlines} />}
+              {curPageVisible && <HomePage headlines={headlines} dockPos={dockPos} dockViewStart={dockViewStart} dockPixelOffset={dockPixelOffset} onSlideEnd={handleSlideEnd} />}
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 network-container flex">

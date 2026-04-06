@@ -1,9 +1,107 @@
+import { useRef, useLayoutEffect } from 'react'
+
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const BASE = import.meta.env.BASE_URL
 
-export default function HomePage({ headlines }) {
+const DOCK_ITEMS = [
+  { id: 'mail', w: 70 },
+  { id: 'messenger', w: 99 },
+  { id: 'favorites', w: 87 },
+  { id: 'maps', w: 60 },
+  { id: 'photos', w: 70 },
+  { id: 'music', w: 66 },
+  { id: 'news', w: 68 },
+  { id: 'entertainment', w: 125 },
+  { id: 'tvlistings', w: 98 },
+  { id: 'weather', w: 81 },
+  { id: 'sports', w: 82 },
+  { id: 'money', w: 68 },
+  { id: 'shop', w: 62 },
+  { id: 'games', w: 70 },
+  { id: 'encarta', w: 74 },
+  { id: 'chat', w: 55 },
+  { id: 'usingmsntv', w: 127 },
+  { id: 'thingstotry', w: 116 },
+  { id: 'search', w: 84 },
+]
+const IMG_H = 61
+
+const TOTAL = DOCK_ITEMS.length
+const BUFFER = 100
+
+
+function mod(n, m) {
+  return ((n % m) + m) % m
+}
+
+export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, dockPixelOffset = 0, onSlideEnd }) {
   const now = new Date()
   const dateStr = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`
+
+  const renderOriginRef = useRef(dockViewStart - BUFFER)
+  const needsRecenterRef = useRef(false)
+
+  const margin = 10
+  if (dockViewStart - renderOriginRef.current < margin || (renderOriginRef.current + BUFFER * 2 + 7) - (dockViewStart + 7) < margin) {
+    renderOriginRef.current = dockViewStart - BUFFER
+    needsRecenterRef.current = true
+  }
+
+  const renderStart = renderOriginRef.current
+  const renderCount = BUFFER * 2 + 7
+  const renderedItems = []
+  for (let i = 0; i < renderCount; i++) {
+    const pos = renderStart + i
+    renderedItems.push({ ...DOCK_ITEMS[mod(pos, TOTAL)], pos })
+  }
+
+  const sliderRef = useRef(null)
+  const baseOffsetRef = useRef(null)
+  const offsetRef = useRef(0)
+
+  const computeBase = () => {
+    const slider = sliderRef.current
+    if (!slider) return 0
+    const children = slider.children
+    const zeroIdx = 0 - renderStart
+    let px = 0
+    for (let i = 0; i < zeroIdx; i++) {
+      px += children[i].offsetWidth
+    }
+    return px
+  }
+
+  useLayoutEffect(() => {
+    const slider = sliderRef.current
+    if (!slider) return
+
+    let skipTransition = false
+
+    if (needsRecenterRef.current) {
+      baseOffsetRef.current = computeBase()
+      needsRecenterRef.current = false
+      skipTransition = true
+    }
+
+    if (baseOffsetRef.current === null) {
+      baseOffsetRef.current = computeBase()
+      skipTransition = true
+    }
+
+    if (skipTransition) {
+      slider.style.transition = 'none'
+    }
+
+    offsetRef.current = baseOffsetRef.current + dockPixelOffset
+    slider.style.transform = `translateX(-${offsetRef.current}px)`
+
+    if (skipTransition) {
+      slider.offsetHeight // eslint-disable-line no-unused-expressions
+      requestAnimationFrame(() => {
+        slider.style.transition = ''
+      })
+    }
+  }, [dockPos, dockPixelOffset])
 
   return (
     <div className="flex page-outer flex-wrap">
@@ -71,8 +169,34 @@ export default function HomePage({ headlines }) {
         </div>
       </div>
       <div id="search-div"></div>
-      <div id="placeholder-bar">
-        <h3 className="absolute holiday-text">Coming soon!</h3>
+      <div id="dock-area">
+        <img className="dock-arrow" src={`${BASE}images/dock/dock_left.gif`} />
+        <div className="dock-items">
+          <div
+            className="dock-slider"
+            ref={sliderRef}
+            style={{ transform: `translateX(-${offsetRef.current}px)` }}
+            onTransitionEnd={onSlideEnd}
+          >
+            {renderedItems.map((item) => {
+              const isSelected = item.pos === dockPos
+              return (
+                <img
+                  key={item.pos}
+                  className={`dock-item-img${isSelected ? ' selectable' : ''}`}
+                  src={`${BASE}images/dock/${item.id}${isSelected ? '_selected' : ''}.jpg`}
+                  style={{ width: `calc(14.5vh * ${item.w} / ${IMG_H})` }}
+                  {...(isSelected ? {
+                    'data-select-x': '0',
+                    'data-select-height': '9',
+                    'data-select-layer': '0',
+                  } : {})}
+                />
+              )
+            })}
+          </div>
+        </div>
+        <img className="dock-arrow" src={`${BASE}images/dock/dock_right.gif`} />
       </div>
     </div>
   )

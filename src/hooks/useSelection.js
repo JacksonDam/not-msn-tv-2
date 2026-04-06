@@ -122,6 +122,17 @@ export default function useSelection() {
 
   const getSelected = useCallback(() => state.current.selected, [])
 
+  const updateContainerRef = useCallback((layer, height, pos, el) => {
+    const s = state.current
+    if (s.container[layer]?.[height]) {
+      s.container[layer][height][pos] = el
+    }
+    if (s.layer === layer && s.height === height && s.posInHeight === pos) {
+      s.selected = el
+      updateFocusBox()
+    }
+  }, [updateFocusBox])
+
   // Resize handler
   useEffect(() => {
     const handleResize = () => updateFocusBox()
@@ -143,5 +154,6 @@ export default function useSelection() {
     moveSelection,
     getSelected,
     updateFocusBox,
+    updateContainerRef,
   }
 }
