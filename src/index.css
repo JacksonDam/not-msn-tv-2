@@ -637,6 +637,64 @@
         min-width: -moz-available;
         min-width: -webkit-fill-available;
         height: 8vh;
+        position: relative;
+        padding-left: 2vh;
+        padding-right: 0.9vh;
+        border-top: 0.25vh solid #63bceb;
+    }
+
+    .search-label {
+        position: absolute;
+        left: 2vh;
+        top: 50%;
+        transform: translateY(-54%);
+        background: none;
+        color: white;
+        font-size: 4.36vh;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .search-input-stub {
+        position: absolute;
+        left: 44.75vh;
+        right: 15vh;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 5vh;
+        margin: 0;
+        background: #73808c !important;
+        border-top: #4b565e 0.35vh solid;
+        border-right: #d5e4ee 0.35vh solid;
+        border-bottom: #d5e4ee 0.35vh solid;
+        border-left: #4b565e 0.35vh solid;
+        padding: 0 1.2vh;
+        color: #ffffff;
+        font-size: 3.1vh !important;
+        font-family: "Segoe TV";
+        box-sizing: border-box;
+    }
+
+    .search-input-stub:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .search-go-btn {
+        position: absolute;
+        right: 0.9vh;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 11vh;
+        height: 5.4vh;
+        padding: 0 2.2vh;
+        line-height: 1;
+        margin-left: 0;
+        transform: translate(-4px, -50%);
     }
 
     #dock-area {

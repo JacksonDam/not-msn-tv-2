@@ -85,14 +85,44 @@ export default function App() {
         return
       }
 
+      const sel = selection.getSelected()
+      const isSearchInput = sel instanceof HTMLInputElement && sel.classList.contains('search-input-stub')
+
+      if (isSearchInput && sel === document.activeElement && e.code.startsWith('Arrow')) {
+        sel.blur()
+      }
+
+      if (isSearchInput && sel !== document.activeElement) {
+        if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+          e.preventDefault()
+          sel.value += e.key
+          return
+        }
+        if (e.key === 'Backspace') {
+          e.preventDefault()
+          sel.value = sel.value.slice(0, -1)
+          return
+        }
+        if (e.key === 'Delete') {
+          e.preventDefault()
+          sel.value = ''
+          return
+        }
+      }
+
       const key = e.code
       if (key === 'Tab') {
         e.preventDefault()
         return
       }
       if (key === 'Enter') {
-        const sel = selection.getSelected()
         if (!sel) return
+        if (isSearchInput) {
+          audio.play('select')
+          selection.flashGreen()
+          setTimeout(() => sel.focus(), 100)
+          return
+        }
         if (sel?.classList.contains('custom-checkbox')) {
           audio.play('controlFeedback')
         } else {
@@ -106,7 +136,7 @@ export default function App() {
       if (dirMap[key]) {
         const sel = selection.getSelected()
         const height = sel?.getAttribute('data-select-height')
-        if (height === '9' && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+        if (height === '10' && (key === 'ArrowLeft' || key === 'ArrowRight')) {
 
           const slider = curPageRef.current?.querySelector('.dock-slider')
           const dockItems = curPageRef.current?.querySelector('.dock-items')
@@ -154,7 +184,7 @@ export default function App() {
               focusBox.style.visibility = 'hidden'
             }
           }
-        } else if (height === '9' && key === 'ArrowUp') {
+        } else if (height === '10' && key === 'ArrowUp') {
           selection.moveSelection('up')
         } else {
           selection.moveSelection(dirMap[key])
@@ -281,9 +311,9 @@ export default function App() {
   useEffect(() => {
     if (!curPageVisible || !curPageRef.current) return
     if (dockSlidingRef.current) return
-    const dockEl = curPageRef.current.querySelector('[data-select-height="9"]')
+    const dockEl = curPageRef.current.querySelector('[data-select-height="10"]')
     if (dockEl) {
-      selection.updateContainerRef(0, 9, 0, dockEl)
+      selection.updateContainerRef(0, 10, 0, dockEl)
       selection.updateFocusBox()
     }
   }, [dockPos, curPageVisible, selection])
@@ -296,9 +326,9 @@ export default function App() {
       if (focusBox) {
         focusBox.style.visibility = ''
       }
-      const dockEl = curPageRef.current?.querySelector('[data-select-height="9"]')
+      const dockEl = curPageRef.current?.querySelector('[data-select-height="10"]')
       if (dockEl) {
-        selection.updateContainerRef(0, 9, 0, dockEl)
+        selection.updateContainerRef(0, 10, 0, dockEl)
       }
       selection.updateFocusBox()
     }

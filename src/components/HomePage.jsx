@@ -183,7 +183,29 @@ export default function HomePage({
           <h3 className="today-pane-text">Go to Using MSN TV</h3>
         </div>
       </div>
-      <div id="search-div"></div>
+      <div id="search-div">
+        <h3 className="search-label">Search or type www</h3>
+        <input
+          className="search-input-stub selectable"
+          type="text"
+          data-select-x="0"
+          data-select-height="9"
+          data-select-layer="0"
+          aria-label="Search and type www"
+          autoComplete="off"
+          spellCheck={false}
+          onClick={(e) => e.currentTarget.focus()}
+        />
+        <button
+          type="button"
+          className="sign-in-btn search-go-btn selectable"
+          data-select-x="1"
+          data-select-height="9"
+          data-select-layer="0"
+        >
+          Go
+        </button>
+      </div>
       <div id="dock-area">
         <img className="dock-arrow" src={`${BASE}images/dock/dock_left.gif`} />
         <div className="dock-items">
@@ -202,7 +224,7 @@ export default function HomePage({
                   className={`dock-item-slot${isSelected ? ' selectable' : ''}`}
                   {...(isSelected ? {
                     'data-select-x': '0',
-                    'data-select-height': '9',
+                    'data-select-height': '10',
                     'data-select-layer': '0',
                     'data-dock-pos': `${item.pos}`,
                   } : {})}
