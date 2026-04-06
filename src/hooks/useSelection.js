@@ -12,6 +12,7 @@ export default function useSelection() {
     selected: null,
   })
   const focusBoxRef = useRef(null)
+  const greenFlashTimeoutRef = useRef(null)
 
   const updateFocusBox = useCallback(() => {
     const { selected } = state.current
@@ -98,8 +99,12 @@ export default function useSelection() {
   const flashGreen = useCallback(() => {
     const box = focusBoxRef.current
     if (!box) return
-    box.classList.add('green-border')
-    setTimeout(() => box.classList.remove('green-border'), 100)
+    clearTimeout(greenFlashTimeoutRef.current)
+    box.classList.add('green-flash')
+    greenFlashTimeoutRef.current = setTimeout(() => {
+      box.classList.remove('green-flash')
+      greenFlashTimeoutRef.current = null
+    }, 100)
   }, [])
 
   const moveSelection = useCallback((direction) => {
@@ -137,7 +142,10 @@ export default function useSelection() {
   useEffect(() => {
     const handleResize = () => updateFocusBox()
     window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearTimeout(greenFlashTimeoutRef.current)
+    }
   }, [updateFocusBox])
 
   return {

@@ -27,6 +27,7 @@ export default function App() {
   const [dockPos, setDockPos] = useState(0)
   const [dockViewStart, setDockViewStart] = useState(0)
   const [dockPixelOffset, setDockPixelOffset] = useState(0)
+  const [dockSlidingFromPos, setDockSlidingFromPos] = useState(null)
   const dockSlidingRef = useRef(false)
 
   const timeoutsRef = useRef([])
@@ -103,6 +104,7 @@ export default function App() {
 
           const containerRect = dockItems.getBoundingClientRect()
           const selRect = sel.getBoundingClientRect()
+          const selectedPos = parseInt(sel.getAttribute('data-dock-pos') ?? '', 10)
           const children = Array.from(slider.children)
           const selIdx = children.indexOf(sel)
 
@@ -128,17 +130,19 @@ export default function App() {
             }
           }
 
-          setDockPos(prev => prev + (key === 'ArrowRight' ? 1 : -1))
+          setDockPos(prev => {
+            const next = prev + (key === 'ArrowRight' ? 1 : -1)
+            setDockViewStart(next)
+            return next
+          })
           if (willSlide) {
             setDockPixelOffset(prev => prev + pxShift)
+            setDockSlidingFromPos(Number.isNaN(selectedPos) ? null : selectedPos)
             dockSlidingRef.current = true
-            const oldEl = sel
-            const animateBox = () => {
-              if (!dockSlidingRef.current) return
-              selection.updateContainerRef(0, 9, 0, oldEl)
-              requestAnimationFrame(animateBox)
+            const focusBox = selection.focusBoxRef.current
+            if (focusBox) {
+              focusBox.style.visibility = 'hidden'
             }
-            requestAnimationFrame(animateBox)
           }
         } else if (height === '9' && key === 'ArrowUp') {
           selection.moveSelection('up')
@@ -254,18 +258,22 @@ export default function App() {
 
   useEffect(() => {
     if (!curPageVisible || !curPageRef.current) return
+    if (dockSlidingRef.current) return
     const dockEl = curPageRef.current.querySelector('[data-select-height="9"]')
     if (dockEl) {
       selection.updateContainerRef(0, 9, 0, dockEl)
-      if (!dockSlidingRef.current) {
-        selection.updateFocusBox()
-      }
+      selection.updateFocusBox()
     }
   }, [dockPos, curPageVisible, selection])
 
   const handleSlideEnd = useCallback(() => {
     if (dockSlidingRef.current) {
       dockSlidingRef.current = false
+      const focusBox = selection.focusBoxRef.current
+      setDockSlidingFromPos(null)
+      if (focusBox) {
+        focusBox.style.visibility = ''
+      }
       const dockEl = curPageRef.current?.querySelector('[data-select-height="9"]')
       if (dockEl) {
         selection.updateContainerRef(0, 9, 0, dockEl)
@@ -412,7 +420,7 @@ export default function App() {
               ref={curPageRef}
               className={`absolute top-0 left-0 right-0 flex ${curPageVisible ? '' : 'hidden'}`}
             >
-              {curPageVisible && <HomePage headlines={headlines} dockPos={dockPos} dockViewStart={dockViewStart} dockPixelOffset={dockPixelOffset} onSlideEnd={handleSlideEnd} />}
+              {curPageVisible && <HomePage headlines={headlines} dockPos={dockPos} dockViewStart={dockViewStart} dockPixelOffset={dockPixelOffset} dockSlidingFromPos={dockSlidingFromPos} onSlideEnd={handleSlideEnd} />}
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 network-container flex">

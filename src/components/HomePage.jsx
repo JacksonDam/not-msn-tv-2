@@ -34,7 +34,7 @@ function mod(n, m) {
   return ((n % m) + m) % m
 }
 
-export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, dockPixelOffset = 0, onSlideEnd }) {
+export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, dockPixelOffset = 0, dockSlidingFromPos = null, onSlideEnd }) {
   const now = new Date()
   const dateStr = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`
 
@@ -100,6 +100,7 @@ export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, do
       requestAnimationFrame(() => {
         slider.style.transition = ''
       })
+      onSlideEnd?.()
     }
   }, [dockPos, dockPixelOffset])
 
@@ -180,18 +181,25 @@ export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, do
           >
             {renderedItems.map((item) => {
               const isSelected = item.pos === dockPos
+              const isSlidingFrom = item.pos === dockSlidingFromPos
               return (
-                <img
+                <div
                   key={item.pos}
-                  className={`dock-item-img${isSelected ? ' selectable' : ''}`}
-                  src={`${BASE}images/dock/${item.id}${isSelected ? '_selected' : ''}.jpg`}
-                  style={{ width: `calc(14.5vh * ${item.w} / ${IMG_H})` }}
+                  className={`dock-item-slot${isSelected ? ' selectable' : ''}`}
                   {...(isSelected ? {
                     'data-select-x': '0',
                     'data-select-height': '9',
                     'data-select-layer': '0',
+                    'data-dock-pos': `${item.pos}`,
                   } : {})}
-                />
+                >
+                  <img
+                    className="dock-item-img"
+                    src={`${BASE}images/dock/${item.id}${isSelected ? '_selected' : ''}.png`}
+                    style={{ width: `calc(14.5vh * ${item.w} / ${IMG_H})` }}
+                  />
+                  {isSlidingFrom && <div className="dock-slide-selection"></div>}
+                </div>
               )
             })}
           </div>

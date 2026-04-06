@@ -495,16 +495,16 @@
 
     #focus-box {
         position: absolute;
-        border: 8px solid #ffcb00;
-        border-radius: 8px;
-        box-shadow: 2px 2px 0.5px #0000004d, -1px -1px 0.5px #fffc, inset 1.5px 1.5px 0.5px #0000004d, inset -1px -1px 0.5px #fffc;
+        border: 16px solid transparent;
+        border-image: url('/not-msn-tv-2/images/selectionBox.svg') 8 / 16px stretch;
         box-sizing: border-box;
         pointer-events: none;
         z-index: 99999;
+        transition: none;
     }
 
-    #focus-box.green-border {
-        border: 8px solid #41c521;
+    #focus-box.green-flash {
+        border-image-source: url('/not-msn-tv-2/images/selectionBoxGreen.svg');
     }
 
     #status-bar {
@@ -577,7 +577,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(180deg, #0f3c8f 0%, #2466ff 100%);
+        background: linear-gradient(180deg, #102870 0%, #143b98 24%, #1e4dbf 50%, #2558d5 74%, #2459dd 100%);
         height: 18.5vh;
         min-width: -moz-available;
         min-width: -webkit-fill-available;
@@ -600,19 +600,47 @@
         top: -0.75vh;
     }
 
+    .dock-item-slot {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
     .dock-item-img {
         height: 14.5vh !important;
         max-width: none !important;
-        flex-shrink: 0;
+    }
+
+    .dock-slide-selection {
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        border: 16px solid transparent;
+        border-image: url('/not-msn-tv-2/images/selectionBox.svg') 8 / 16px stretch;
+        box-sizing: border-box;
+        pointer-events: none;
     }
 
 
     .dock-arrow {
-        height: 5vh;
-        width: 5vh;
+        height: 8vh;
+        width: 8vh;
         object-fit: contain;
-        margin: 0 0.5vh;
+        margin: 0;
         image-rendering: pixelated;
+        transform: scale(0.525);
+        display: block;
+    }
+
+    #dock-area > .dock-arrow:first-child {
+        transform-origin: left center;
+    }
+
+    #dock-area > .dock-arrow:last-child {
+        transform-origin: right center;
     }
 
     .promo-img {
