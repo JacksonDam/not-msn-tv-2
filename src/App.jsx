@@ -10,6 +10,7 @@ export default function App() {
   const [overlayGone, setOverlayGone] = useState(false)
   const [started, setStarted] = useState(false)
   const [startBtnFading, setStartBtnFading] = useState(false)
+  const [inputLocked, setInputLocked] = useState(false)
   const [statusBarVisible, setStatusBarVisible] = useState(false)
   const [spinnerHidden, setSpinnerHidden] = useState(false)
   const [scrollArrowVisible, setScrollArrowVisible] = useState(false)
@@ -21,6 +22,9 @@ export default function App() {
   const [curPageVisible, setCurPageVisible] = useState(false)
   const [errorDialogOpen, setErrorDialogOpen] = useState(false)
   const [errorShowing, setErrorShowing] = useState(false)
+  const [signOutDialogOpen, setSignOutDialogOpen] = useState(false)
+  const [signOutShowing, setSignOutShowing] = useState(false)
+  const [signInRevealStage, setSignInRevealStage] = useState(2)
   const [checkboxChecked, setCheckboxChecked] = useState(true)
   const [clock, setClock] = useState('')
   const [headlines, setHeadlines] = useState(['Headline 1', 'Headline 2', 'Headline 3'])
@@ -76,6 +80,11 @@ export default function App() {
 
   useEffect(() => {
     const handler = (e) => {
+      if (inputLocked) {
+        e.preventDefault()
+        return
+      }
+
       const key = e.code
       if (key === 'Tab') {
         e.preventDefault()
@@ -83,6 +92,7 @@ export default function App() {
       }
       if (key === 'Enter') {
         const sel = selection.getSelected()
+        if (!sel) return
         if (sel?.classList.contains('custom-checkbox')) {
           audio.play('controlFeedback')
         } else {
@@ -153,7 +163,7 @@ export default function App() {
     }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
-  }, [selection, audio])
+  }, [selection, audio, inputLocked])
 
   const fetchHeadlines = useCallback(async () => {
     try {
@@ -178,9 +188,9 @@ export default function App() {
     }, 500)
   }, [audio, selection, addTimeout])
 
-  const signInReset = useCallback(() => {
+  const resetStatusUi = useCallback((nextPanelClass = 'closed-no-anim') => {
     setPanelText('Please wait while we sign you in to MSN TV.')
-    setPanelClass('open-no-anim')
+    setPanelClass(nextPanelClass)
     setErrorDialogOpen(false)
     setErrorShowing(false)
     setStatusBarVisible(false)
@@ -188,14 +198,26 @@ export default function App() {
     setScrollArrowVisible(false)
     setSbOverlaying(false)
     setSpinnerRotation(0)
+    setProgressWidth('0vh')
+  }, [])
+
+  const resetHomePageState = useCallback(() => {
+    setDockPos(0)
+    setDockViewStart(0)
+    setDockPixelOffset(0)
+    setDockSlidingFromPos(null)
+    dockSlidingRef.current = false
   }, [])
 
   const handleSignIn = useCallback(() => {
     clearTimeouts()
-    signInReset()
+    setInputLocked(false)
+    setSignInRevealStage(2)
+    setSignOutDialogOpen(false)
+    setSignOutShowing(false)
+    resetStatusUi('open-no-anim')
     audio.play('connecting')
     selection.goToLayer(1)
-    setProgressWidth('0vh')
 
     addTimeout(() => setProgressWidth('106vh'), 300)
     addTimeout(() => setProgressWidth('10.6vh'), 400)
@@ -248,7 +270,7 @@ export default function App() {
     }, 8250)
 
     addTimeout(() => setSpinnerHidden(true), 8450)
-  }, [clearTimeouts, signInReset, audio, selection, addTimeout, fetchHeadlines])
+  }, [clearTimeouts, resetStatusUi, audio, selection, addTimeout, fetchHeadlines])
 
   useEffect(() => {
     if (curPageVisible && curPageRef.current) {
@@ -304,6 +326,62 @@ export default function App() {
     setCheckboxChecked((c) => !c)
   }, [])
 
+  const handleOpenSignOutDialog = useCallback(() => {
+    if (inputLocked || signOutDialogOpen) return
+    clearTimeouts()
+    selection.setLast()
+    setSignOutShowing(false)
+    selection.goToSpecific(1, 0, 0)
+    selection.tempHideFocusBox()
+    addTimeout(() => {
+      audio.play('error')
+      setSignOutDialogOpen(true)
+      setSignOutShowing(true)
+    }, 250)
+  }, [inputLocked, signOutDialogOpen, clearTimeouts, selection, addTimeout, audio])
+
+  const handleCancelSignOut = useCallback(() => {
+    if (inputLocked) return
+    setSignOutDialogOpen(false)
+    setSignOutShowing(false)
+    selection.goToLast()
+  }, [inputLocked, selection])
+
+  const handleConfirmSignOut = useCallback(() => {
+    if (inputLocked) return
+
+    clearTimeouts()
+    setInputLocked(true)
+    selection.flashGreen(1000)
+
+    addTimeout(() => {
+      setSignOutDialogOpen(false)
+      setSignOutShowing(false)
+      setSignInRevealStage(0)
+      setCurPageVisible(false)
+      resetHomePageState()
+      resetStatusUi('closed-no-anim')
+      selection.hideFocusBox()
+
+      addTimeout(() => setSignInRevealStage(1), 50)
+
+      addTimeout(() => {
+        setSignInRevealStage(2)
+        addTimeout(() => {
+          if (mainPageRef.current) {
+            selection.initSelectables(mainPageRef.current)
+            selection.goToSpecific(0, 1, 1)
+          }
+          selection.unHideFocusBox()
+          setInputLocked(false)
+        }, 0)
+      }, 100)
+    }, 1000)
+  }, [inputLocked, clearTimeouts, selection, addTimeout, resetHomePageState, resetStatusUi])
+
+  const showSignInShell = signInRevealStage >= 1
+  const showSignInExtras = signInRevealStage >= 2
+
   return (
     <>
       <div id="focus-box" ref={selection.focusBoxRef}></div>
@@ -325,17 +403,22 @@ export default function App() {
         </div>
       )}
 
-      <div id="main-page" ref={mainPageRef}>
+      <div id="main-page" ref={mainPageRef} style={{ pointerEvents: inputLocked ? 'none' : undefined }}>
         <div className="flex mx-auto justify-center">
           <div className="tv-frame flex relative flex-wrap">
             <img className="object-cover w-full h-full absolute inset-0" src={`${BASE}images/bg.png`} />
 
-            <div className="absolute top-0 left-0 right-0 px-4 py-2">
+            <div className={`absolute top-0 left-0 right-0 px-4 py-2 ${showSignInShell ? '' : 'invisible'}`}>
               <div className="flex items-center">
                 <div className="shrink">
                   <img className="topbar-img" src={`${BASE}images/topbarlogo.png`} />
                 </div>
-                <div className="grow selectable" data-select-x="0" data-select-height="0" data-select-layer="0">
+                <div
+                  className={`grow selectable ${showSignInExtras ? '' : 'invisible'}`}
+                  data-select-x="0"
+                  data-select-height="0"
+                  data-select-layer="0"
+                >
                   <h3 className="ui-title-white">Forgot your password?</h3>
                 </div>
                 <div className="grow selectable" data-select-x="1" data-select-height="0" data-select-layer="0">
@@ -350,7 +433,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="absolute top-0 left-0 right-0 px-4 py-2 login-container flex">
+            <div className={`absolute top-0 left-0 right-0 px-4 py-2 login-container flex ${showSignInExtras ? '' : 'invisible'}`}>
               <div className="flex">
                 <div className="shrink user-icon-large">
                   <img src={`${BASE}images/tile22_l.png`} />
@@ -420,10 +503,61 @@ export default function App() {
               ref={curPageRef}
               className={`absolute top-0 left-0 right-0 flex ${curPageVisible ? '' : 'hidden'}`}
             >
-              {curPageVisible && <HomePage headlines={headlines} dockPos={dockPos} dockViewStart={dockViewStart} dockPixelOffset={dockPixelOffset} dockSlidingFromPos={dockSlidingFromPos} onSlideEnd={handleSlideEnd} />}
+              {curPageVisible && (
+                <>
+                  <HomePage
+                    headlines={headlines}
+                    dockPos={dockPos}
+                    dockViewStart={dockViewStart}
+                    dockPixelOffset={dockPixelOffset}
+                    dockSlidingFromPos={dockSlidingFromPos}
+                    onSlideEnd={handleSlideEnd}
+                    onSignOutRequest={handleOpenSignOutDialog}
+                  />
+
+                  <div
+                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 confirm-dialog-container ${signOutDialogOpen ? '' : 'closed'}`}
+                    id="signout-dialog"
+                  >
+                    <div className="confirm-dialog-contents inset-0 flex flex-col">
+                      <div className="flex items-start">
+                        <img
+                          className={`confirm-dialog-icon ${signOutShowing ? 'showing' : ''}`}
+                          src={`${BASE}images/warning.png`}
+                        />
+                        <div className={`confirm-dialog-title ${signOutShowing ? 'showing' : ''}`}>
+                          {'Are you sure you want to\nsign out of the MSN TV\nService?'}
+                        </div>
+                      </div>
+                      <div className={`confirm-dialog-actions ${signOutShowing ? 'showing' : ''}`}>
+                        <button
+                          type="button"
+                          className="sign-in-btn confirm-dialog-btn selectable"
+                          data-select-x="0"
+                          data-select-height="0"
+                          data-select-layer="1"
+                          onClick={handleConfirmSignOut}
+                        >
+                          Sign Out
+                        </button>
+                        <button
+                          type="button"
+                          className="cancel-error-btn confirm-dialog-btn selectable"
+                          data-select-x="1"
+                          data-select-height="0"
+                          data-select-layer="1"
+                          onClick={handleCancelSignOut}
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 network-container flex">
+            <div className={`absolute bottom-0 left-0 right-0 network-container flex ${showSignInShell ? '' : 'invisible'}`}>
               <div className="flex items-center network-flex">
                 <div className="shrink">
                   <h3 className="ui-title-white-2">My home network</h3>

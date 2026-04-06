@@ -263,6 +263,72 @@
         visibility: hidden;
     }
 
+    .confirm-dialog-container {
+        background-image: linear-gradient(#5a5d62 0%, #767676 1%, #224770 2%, #224770 100%);
+        border: 2px solid #193f68;
+        position: relative;
+        margin-top: 3.2vh;
+        width: 78vh;
+        min-height: 49.6vh;
+        z-index: 9;
+    }
+
+    .confirm-dialog-container.closed {
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .confirm-dialog-contents {
+        background-image: url('./assets/errordialogbg.png');
+        background-size: cover;
+        margin: 0.6vh;
+        border-radius: 12px;
+        min-height: calc(49.6vh - 1.2vh);
+    }
+
+    .confirm-dialog-icon {
+        max-width: 12vh;
+        margin-top: 2vh;
+        margin-left: 2.4vh;
+        opacity: 0;
+    }
+
+    .confirm-dialog-title {
+        background: none;
+        color: #0d0f1d;
+        font-size: 4.2vh;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        line-height: 0.95;
+        margin-top: 4.8vh;
+        margin-left: 0.6vh;
+        width: 57vh;
+        opacity: 0;
+        white-space: pre-line;
+    }
+
+    .confirm-dialog-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1vh;
+        margin-top: auto;
+        padding: 0 2.8vh 2.6vh;
+        opacity: 0;
+    }
+
+    .confirm-dialog-icon.showing,
+    .confirm-dialog-title.showing,
+    .confirm-dialog-actions.showing {
+        transition-delay: 0.03s;
+        opacity: 1;
+    }
+
+    .confirm-dialog-btn {
+        min-width: 26vh;
+        text-align: center;
+        margin-left: 0;
+    }
+
     .dialog-bg {
         object-fit: fill;
         border-radius: 8px;

@@ -96,7 +96,7 @@ export default function useSelection() {
     setTimeout(() => focusBoxRef.current?.classList.remove('hide-focus'), 250)
   }, [hideFocusBox])
 
-  const flashGreen = useCallback(() => {
+  const flashGreen = useCallback((duration = 100) => {
     const box = focusBoxRef.current
     if (!box) return
     clearTimeout(greenFlashTimeoutRef.current)
@@ -104,7 +104,7 @@ export default function useSelection() {
     greenFlashTimeoutRef.current = setTimeout(() => {
       box.classList.remove('green-flash')
       greenFlashTimeoutRef.current = null
-    }, 100)
+    }, duration)
   }, [])
 
   const moveSelection = useCallback((direction) => {

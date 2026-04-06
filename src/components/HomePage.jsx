@@ -34,7 +34,15 @@ function mod(n, m) {
   return ((n % m) + m) % m
 }
 
-export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, dockPixelOffset = 0, dockSlidingFromPos = null, onSlideEnd }) {
+export default function HomePage({
+  headlines,
+  dockPos = 0,
+  dockViewStart = 0,
+  dockPixelOffset = 0,
+  dockSlidingFromPos = null,
+  onSlideEnd,
+  onSignOutRequest,
+}) {
   const now = new Date()
   const dateStr = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`
 
@@ -111,7 +119,13 @@ export default function HomePage({ headlines, dockPos = 0, dockViewStart = 0, do
           <div className="shrink text-center buffer selectable" data-select-x="0" data-select-height="0" data-select-layer="0">
             <h3 className="ui-title-white-4">Using MSN TV</h3>
           </div>
-          <div className="grow text-center buffer-2 selectable" data-select-x="1" data-select-height="0" data-select-layer="0">
+          <div
+            className="grow text-center buffer-2 selectable"
+            data-select-x="1"
+            data-select-height="0"
+            data-select-layer="0"
+            onClick={onSignOutRequest}
+          >
             <h3 className="ui-title-white-4">Sign Out</h3>
           </div>
           <div className="grow text-center buffer-2 selectable" data-select-x="2" data-select-height="0" data-select-layer="0">
