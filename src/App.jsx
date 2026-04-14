@@ -2,8 +2,39 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import useSelection from './hooks/useSelection'
 import useAudio from './hooks/useAudio'
 import HomePage from './components/HomePage'
+import DockPage from './components/DockPage'
+import SelectionFrame from './components/SelectionFrame'
+import { DOCK_PAGES } from './data/dockContent'
 
 const BASE = import.meta.env.BASE_URL
+
+function isAtDockPageBoundary(selected, direction) {
+  if (!(selected instanceof Element)) return false
+
+  const scrollContainer = selected.closest('.dock-page-shell [data-selection-scroll]')
+  if (!scrollContainer) return false
+
+  const selectableRects = Array.from(scrollContainer.querySelectorAll('.selectable'))
+    .map((el) => ({ rect: el.getBoundingClientRect() }))
+    .filter(({ rect }) => rect.width > 0 && rect.height > 0)
+
+  if (selectableRects.length === 0) return false
+
+  const selectedRect = selected.getBoundingClientRect()
+  const edgeTolerance = 2
+
+  if (direction === 'up') {
+    const minTop = Math.min(...selectableRects.map(({ rect }) => rect.top))
+    return selectedRect.top <= minTop + edgeTolerance
+  }
+
+  if (direction === 'down') {
+    const maxBottom = Math.max(...selectableRects.map(({ rect }) => rect.bottom))
+    return selectedRect.bottom >= maxBottom - edgeTolerance
+  }
+
+  return false
+}
 
 export default function App() {
   const [overlayVisible, setOverlayVisible] = useState(true)
@@ -20,6 +51,8 @@ export default function App() {
   const [progressWidth, setProgressWidth] = useState('0vh')
   const [spinnerRotation, setSpinnerRotation] = useState(0)
   const [curPageVisible, setCurPageVisible] = useState(false)
+  const [openDockPageId, setOpenDockPageId] = useState(null)
+  const [dockTransitionPhase, setDockTransitionPhase] = useState('idle')
   const [errorDialogOpen, setErrorDialogOpen] = useState(false)
   const [errorShowing, setErrorShowing] = useState(false)
   const [signOutDialogOpen, setSignOutDialogOpen] = useState(false)
@@ -37,9 +70,20 @@ export default function App() {
   const timeoutsRef = useRef([])
   const mainPageRef = useRef(null)
   const curPageRef = useRef(null)
+  const dockPageRef = useRef(null)
+  const dockTransitionRef = useRef(null)
+  const previousDockPageRef = useRef(null)
 
   const selection = useSelection()
   const audio = useAudio()
+
+  const revealFocusBox = useCallback(() => {
+    const focusBox = selection.focusBoxRef.current
+    if (focusBox) {
+      focusBox.style.visibility = ''
+    }
+    selection.unHideFocusBox()
+  }, [selection])
 
   const clearTimeouts = useCallback(() => {
     timeoutsRef.current.forEach(clearTimeout)
@@ -49,6 +93,25 @@ export default function App() {
   const addTimeout = useCallback((fn, ms) => {
     timeoutsRef.current.push(setTimeout(fn, ms))
   }, [])
+
+  const beginDockTransition = useCallback((nextPageId) => {
+    clearTimeouts()
+    dockSlidingRef.current = false
+    setDockSlidingFromPos(null)
+    setInputLocked(true)
+    setDockTransitionPhase('contacting')
+
+    addTimeout(() => {
+      selection.hideFocusBox()
+      setDockTransitionPhase('blank')
+    }, 500)
+
+    addTimeout(() => {
+      setOpenDockPageId(nextPageId)
+      setDockTransitionPhase('idle')
+      setInputLocked(false)
+    }, 1000)
+  }, [clearTimeouts, addTimeout, selection])
 
   useEffect(() => {
     const tick = () => {
@@ -66,6 +129,7 @@ export default function App() {
     audio.register('startup', `${BASE}audio/Power_On.mp3`)
     audio.register('connecting', `${BASE}audio/Connecting.mp3`)
     audio.register('disconnect', `${BASE}audio/Disconnect.mp3`)
+    audio.register('pageBoundary', `${BASE}audio/Page_Boundary.mp3`)
     audio.register('select', `${BASE}audio/Select.mp3`)
     audio.register('controlFeedback', `${BASE}audio/ControlFeedback.mp3`)
     audio.register('error', `${BASE}audio/Error.mp3`)
@@ -115,8 +179,18 @@ export default function App() {
         e.preventDefault()
         return
       }
+      if (key === 'Escape' && openDockPageId) {
+        e.preventDefault()
+        beginDockTransition(null)
+        return
+      }
       if (key === 'Enter') {
         if (!sel) return
+        e.preventDefault()
+        const activeEl = document.activeElement
+        if (activeEl instanceof HTMLElement && activeEl !== sel && activeEl !== document.body) {
+          activeEl.blur()
+        }
         if (isSearchInput) {
           audio.play('select')
           selection.flashGreen()
@@ -134,19 +208,24 @@ export default function App() {
       }
       const dirMap = { ArrowLeft: 'left', ArrowRight: 'right', ArrowUp: 'up', ArrowDown: 'down' }
       if (dirMap[key]) {
+        e.preventDefault()
         const sel = selection.getSelected()
-        const height = sel?.getAttribute('data-select-height')
-        if (height === '10' && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+        const currentDockEl = curPageRef.current?.querySelector('#dock-area [data-select-height="10"]')
+        const isDockSelection = !openDockPageId && sel?.closest('#dock-area')
+
+        if (isDockSelection && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+          const dockSel = currentDockEl ?? sel
+          if (!(dockSel instanceof HTMLElement)) return
 
           const slider = curPageRef.current?.querySelector('.dock-slider')
           const dockItems = curPageRef.current?.querySelector('.dock-items')
           if (!slider || !dockItems) return
 
           const containerRect = dockItems.getBoundingClientRect()
-          const selRect = sel.getBoundingClientRect()
-          const selectedPos = parseInt(sel.getAttribute('data-dock-pos') ?? '', 10)
+          const selRect = dockSel.getBoundingClientRect()
           const children = Array.from(slider.children)
-          const selIdx = children.indexOf(sel)
+          const selIdx = children.indexOf(dockSel)
+          if (selIdx === -1) return
 
           let willSlide = false
           let pxShift = 0
@@ -177,23 +256,31 @@ export default function App() {
           })
           if (willSlide) {
             setDockPixelOffset(prev => prev + pxShift)
-            setDockSlidingFromPos(Number.isNaN(selectedPos) ? null : selectedPos)
+            setDockSlidingFromPos(dockPos)
             dockSlidingRef.current = true
             const focusBox = selection.focusBoxRef.current
             if (focusBox) {
               focusBox.style.visibility = 'hidden'
             }
           }
-        } else if (height === '10' && key === 'ArrowUp') {
+        } else if (isDockSelection && key === 'ArrowUp') {
           selection.moveSelection('up')
         } else {
-          selection.moveSelection(dirMap[key])
+          const moved = selection.moveSelection(dirMap[key])
+          if (
+            !moved
+            && openDockPageId
+            && (key === 'ArrowUp' || key === 'ArrowDown')
+            && isAtDockPageBoundary(sel, dirMap[key])
+          ) {
+            audio.play('pageBoundary')
+          }
         }
       }
     }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
-  }, [selection, audio, inputLocked])
+  }, [selection, audio, inputLocked, openDockPageId, beginDockTransition, dockPos])
 
   const fetchHeadlines = useCallback(async () => {
     try {
@@ -232,6 +319,8 @@ export default function App() {
   }, [])
 
   const resetHomePageState = useCallback(() => {
+    previousDockPageRef.current = null
+    setOpenDockPageId(null)
     setDockPos(0)
     setDockViewStart(0)
     setDockPixelOffset(0)
@@ -303,20 +392,39 @@ export default function App() {
   }, [clearTimeouts, resetStatusUi, audio, selection, addTimeout, fetchHeadlines])
 
   useEffect(() => {
-    if (curPageVisible && curPageRef.current) {
-      selection.initSelectables(curPageRef.current)
+    const previousDockPageId = previousDockPageRef.current
+    previousDockPageRef.current = openDockPageId
+
+    if (!curPageVisible) return
+
+    const root = openDockPageId ? dockPageRef.current : curPageRef.current
+    if (!root) return
+
+    dockSlidingRef.current = false
+    setDockSlidingFromPos(null)
+    selection.initSelectables(root)
+    revealFocusBox()
+
+    if (!openDockPageId && previousDockPageId) {
+      selection.goToSpecific(0, 10, 0)
     }
-  }, [curPageVisible]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [curPageVisible, openDockPageId, selection, revealFocusBox])
 
   useEffect(() => {
-    if (!curPageVisible || !curPageRef.current) return
-    if (dockSlidingRef.current) return
-    const dockEl = curPageRef.current.querySelector('[data-select-height="10"]')
+    if (!curPageVisible || openDockPageId || !curPageRef.current) return
+    const dockEl = curPageRef.current.querySelector('#dock-area [data-select-height="10"]')
     if (dockEl) {
       selection.updateContainerRef(0, 10, 0, dockEl)
       selection.updateFocusBox()
     }
-  }, [dockPos, curPageVisible, selection])
+  }, [dockPos, curPageVisible, openDockPageId, selection])
+
+  useEffect(() => {
+    if (dockTransitionPhase !== 'contacting' || !dockTransitionRef.current) return
+    selection.initSelectables(dockTransitionRef.current)
+    revealFocusBox()
+    selection.goToSpecific(0, 0, 0)
+  }, [dockTransitionPhase, selection, revealFocusBox])
 
   const handleSlideEnd = useCallback(() => {
     if (dockSlidingRef.current) {
@@ -409,13 +517,23 @@ export default function App() {
     }, 1000)
   }, [inputLocked, clearTimeouts, selection, addTimeout, resetHomePageState, resetStatusUi])
 
+  const handleOpenDockPage = useCallback((pageId) => {
+    if (inputLocked || signOutDialogOpen || dockTransitionPhase !== 'idle') return
+    if (!pageId || !DOCK_PAGES[pageId]) return
+    beginDockTransition(pageId)
+  }, [inputLocked, signOutDialogOpen, dockTransitionPhase, beginDockTransition])
+
+  const handleCloseDockPage = useCallback(() => {
+    if (inputLocked || dockTransitionPhase !== 'idle') return
+    beginDockTransition(null)
+  }, [inputLocked, dockTransitionPhase, beginDockTransition])
+
   const showSignInShell = signInRevealStage >= 1
   const showSignInExtras = signInRevealStage >= 2
+  const dockTransitionActive = dockTransitionPhase !== 'idle'
 
   return (
     <>
-      <div id="focus-box" ref={selection.focusBoxRef}></div>
-
       {!overlayGone && (
         <div className={`flex overlay items-center justify-center ${overlayVisible ? '' : 'fade-out'}`}
           onTransitionEnd={() => !overlayVisible && setOverlayGone(true)}
@@ -437,6 +555,9 @@ export default function App() {
         <div className="flex mx-auto justify-center">
           <div className="tv-frame flex relative flex-wrap">
             <img className="object-cover w-full h-full absolute inset-0" src={`${BASE}images/bg.png`} />
+            <div id="focus-box" ref={selection.focusBoxRef}>
+              <SelectionFrame flashable />
+            </div>
 
             <div className={`absolute top-0 left-0 right-0 px-4 py-2 ${showSignInShell ? '' : 'invisible'}`}>
               <div className="flex items-center">
@@ -543,7 +664,18 @@ export default function App() {
                     dockSlidingFromPos={dockSlidingFromPos}
                     onSlideEnd={handleSlideEnd}
                     onSignOutRequest={handleOpenSignOutDialog}
+                    onDockActivate={handleOpenDockPage}
                   />
+
+                  {openDockPageId && (
+                    <DockPage
+                      pageId={openDockPageId}
+                      pageRef={dockPageRef}
+                      onClose={handleCloseDockPage}
+                      selection={selection}
+                      onNavigate={handleOpenDockPage}
+                    />
+                  )}
 
                   <div
                     className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 confirm-dialog-container ${signOutDialogOpen ? '' : 'closed'}`}
@@ -586,6 +718,54 @@ export default function App() {
                 </>
               )}
             </div>
+
+            {dockTransitionActive && (
+              <div ref={dockTransitionRef} className="dock-transition-shell">
+                <div className={`dock-transition-blank ${dockTransitionPhase === 'blank' ? '' : 'hidden'}`}></div>
+
+                <div className="absolute bottom-0 left-0 right-0 flex items-center dock-transition-status">
+                  <img className="status-bar-bg" src={`${BASE}images/statusbarbg.png`} />
+                  <img className="absolute dock-transition-user-tile" src={`${BASE}images/tile22_s.png`} />
+                  <h3 className="absolute dock-transition-clock">{clock}</h3>
+                  <img
+                    className={`absolute dock-transition-spinner ${dockTransitionPhase === 'contacting' ? '' : 'hidden'}`}
+                    src={`${BASE}images/loadpage.png`}
+                    style={{ transform: 'rotate(0deg)' }}
+                  />
+                  <img className="absolute status-bar-logo" src={`${BASE}images/msntvlogo.png`} />
+                </div>
+
+                <div
+                  className={`absolute bottom-0 left-0 right-0 panel-container flex dock-transition-panel ${dockTransitionPhase === 'contacting' ? 'open-status-no-anim' : 'closed-no-anim'}`}
+                >
+                  <img className="panel-bg" src={`${BASE}images/signinpanelbg.png`} />
+                  <div className="absolute flex flex-wrap">
+                    <div className="shrink">
+                      <h3 className="panel-title-white">Contacting MSN TV Service</h3>
+                      <div className="text-gap"></div>
+                    </div>
+                    <div className="grow flex items-start">
+                      <div className="base-other">
+                        <img
+                          className="progress-bar-fill"
+                          src={`${BASE}images/barfill.png`}
+                          style={{ width: '5.3vh' }}
+                        />
+                      </div>
+                      <button
+                        type="button"
+                        className="base-btn selectable ml-2"
+                        data-select-x="0"
+                        data-select-height="0"
+                        data-select-layer="0"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className={`absolute bottom-0 left-0 right-0 network-container flex ${showSignInShell ? '' : 'invisible'}`}>
               <div className="flex items-center network-flex">

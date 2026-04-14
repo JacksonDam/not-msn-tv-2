@@ -1,29 +1,10 @@
 import { useRef, useLayoutEffect } from 'react'
+import { DOCK_ITEMS } from '../data/dockContent'
+import { USING_TIP_TARGETS_BY_LABEL } from '../data/usingTipPages'
+import SelectionFrame from './SelectionFrame'
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const BASE = import.meta.env.BASE_URL
-
-const DOCK_ITEMS = [
-  { id: 'mail', w: 70 },
-  { id: 'messenger', w: 99 },
-  { id: 'favorites', w: 87 },
-  { id: 'maps', w: 60 },
-  { id: 'photos', w: 70 },
-  { id: 'music', w: 66 },
-  { id: 'news', w: 68 },
-  { id: 'entertainment', w: 125 },
-  { id: 'tvlistings', w: 98 },
-  { id: 'weather', w: 81 },
-  { id: 'sports', w: 82 },
-  { id: 'money', w: 68 },
-  { id: 'shop', w: 62 },
-  { id: 'games', w: 70 },
-  { id: 'encarta', w: 74 },
-  { id: 'chat', w: 55 },
-  { id: 'usingmsntv', w: 127 },
-  { id: 'thingstotry', w: 116 },
-  { id: 'search', w: 84 },
-]
 const IMG_H = 61
 
 const TOTAL = DOCK_ITEMS.length
@@ -42,9 +23,12 @@ export default function HomePage({
   dockSlidingFromPos = null,
   onSlideEnd,
   onSignOutRequest,
+  onDockActivate,
 }) {
   const now = new Date()
   const dateStr = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`
+  const audibleDialingTipId = USING_TIP_TARGETS_BY_LABEL['Turn on audible dialing']
+  const printingTipId = USING_TIP_TARGETS_BY_LABEL['Preview before you print']
 
   const renderOriginRef = useRef(dockViewStart - BUFFER)
   const needsRecenterRef = useRef(false)
@@ -116,7 +100,13 @@ export default function HomePage({
     <div className="flex page-outer flex-wrap">
       <div className="top-0 left-0 right-0 page-outer">
         <div className="flex items-center settings-container page-outer">
-          <div className="shrink text-center buffer selectable" data-select-x="0" data-select-height="0" data-select-layer="0">
+          <div
+            className="shrink text-center buffer selectable"
+            data-select-x="0"
+            data-select-height="0"
+            data-select-layer="0"
+            onClick={() => onDockActivate?.('usingmsntv')}
+          >
             <h3 className="ui-title-white-4">Using MSN TV</h3>
           </div>
           <div
@@ -170,15 +160,33 @@ export default function HomePage({
       </div>
       <div className="absolute flex flex-wrap using-msn-tv-pane items-center">
         <h3 className="using-msn-tv-pane-title">In Using MSN TV</h3>
-        <h3 className="today-pane-headline selectable" data-select-x="0" data-select-height="6" data-select-layer="0">
+        <h3
+          className="today-pane-headline selectable"
+          data-select-x="0"
+          data-select-height="6"
+          data-select-layer="0"
+          onClick={() => audibleDialingTipId && onDockActivate?.(audibleDialingTipId)}
+        >
           Tip: Turn on audible dialing
         </h3>
         <div className="break"></div>
-        <h3 className="today-pane-headline selectable" data-select-x="0" data-select-height="7" data-select-layer="0">
+        <h3
+          className="today-pane-headline selectable"
+          data-select-x="0"
+          data-select-height="7"
+          data-select-layer="0"
+          onClick={() => printingTipId && onDockActivate?.(printingTipId)}
+        >
           Get better printing results
         </h3>
         <div className="break"></div>
-        <div className="flex items-center today-end selectable" data-select-x="0" data-select-height="8" data-select-layer="0">
+        <div
+          className="flex items-center today-end selectable"
+          data-select-x="0"
+          data-select-height="8"
+          data-select-layer="0"
+          onClick={() => onDockActivate?.('usingmsntv')}
+        >
           <img className="dropdown-right-arrow" src={`${BASE}images/dropdowncustomrightarrow.png`} />
           <h3 className="today-pane-text">Go to Using MSN TV</h3>
         </div>
@@ -228,13 +236,18 @@ export default function HomePage({
                     'data-select-layer': '0',
                     'data-dock-pos': `${item.pos}`,
                   } : {})}
+                  onClick={() => onDockActivate?.(item.id)}
                 >
                   <img
                     className="dock-item-img"
                     src={`${BASE}images/dock/${item.id}${isSelected ? '_selected' : ''}.png`}
                     style={{ width: `calc(14.5vh * ${item.w} / ${IMG_H})` }}
                   />
-                  {isSlidingFrom && <div className="dock-slide-selection"></div>}
+                  {isSlidingFrom && (
+                    <div className="dock-slide-selection">
+                      <SelectionFrame />
+                    </div>
+                  )}
                 </div>
               )
             })}

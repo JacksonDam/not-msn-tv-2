@@ -75,6 +75,7 @@
     .tv-frame {
         aspect-ratio: 4 / 3;
         height: 100vh;
+        max-width: 100vw;
         position: relative;
         overflow: hidden;
     }
@@ -159,7 +160,8 @@
         margin-left: 1.6vw;
     }
 
-    #focus-box.hide-focus {
+    #focus-box.hide-focus,
+    #focus-box.scroll-hide-focus {
         visibility: hidden;
     }
 
@@ -559,18 +561,110 @@
         height: 0;
     }
 
-    #focus-box {
+    #focus-box,
+    .dock-slide-selection {
         position: absolute;
-        border: 16px solid transparent;
-        border-image: url('/not-msn-tv-2/images/selectionBox.svg') 8 / 16px stretch;
         box-sizing: border-box;
         pointer-events: none;
+    }
+
+    #focus-box {
         z-index: 99999;
         transition: none;
     }
 
-    #focus-box.green-flash {
-        border-image-source: url('/not-msn-tv-2/images/selectionBoxGreen.svg');
+    .selection-frame {
+        position: absolute;
+        inset: 0;
+        overflow: visible;
+    }
+
+    .selection-frame-tone {
+        position: absolute;
+        inset: 0;
+    }
+
+    .selection-frame-piece {
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .selection-frame-piece-svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .selection-frame-piece-top-left,
+    .selection-frame-piece-top-right,
+    .selection-frame-piece-bottom-right,
+    .selection-frame-piece-bottom-left {
+        width: 16px;
+        height: 16px;
+    }
+
+    .selection-frame-piece-top,
+    .selection-frame-piece-bottom {
+        left: 16px;
+        right: 16px;
+        height: 16px;
+    }
+
+    .selection-frame-piece-left,
+    .selection-frame-piece-right {
+        top: 16px;
+        bottom: 16px;
+        width: 16px;
+    }
+
+    .selection-frame-piece-top-left {
+        top: 0;
+        left: 0;
+    }
+
+    .selection-frame-piece-top {
+        top: 0;
+    }
+
+    .selection-frame-piece-top-right {
+        top: 0;
+        right: 0;
+    }
+
+    .selection-frame-piece-right {
+        top: 16px;
+        right: 0;
+    }
+
+    .selection-frame-piece-bottom-right {
+        right: 0;
+        bottom: 0;
+    }
+
+    .selection-frame-piece-bottom {
+        bottom: 0;
+    }
+
+    .selection-frame-piece-bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+
+    .selection-frame-piece-left {
+        top: 16px;
+        left: 0;
+    }
+
+    .selection-frame-flashable .selection-frame-tone-green {
+        opacity: 0;
+    }
+
+    #focus-box.green-flash .selection-frame-tone-yellow {
+        opacity: 0;
+    }
+
+    #focus-box.green-flash .selection-frame-tone-green {
+        opacity: 1;
     }
 
     #status-bar {
@@ -630,6 +724,51 @@
         height: 91vh;
         z-index: 5;
         align-items: start;
+    }
+
+    .dock-transition-shell {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+    }
+
+    .dock-transition-blank {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 9vh;
+        left: 0;
+        background: white;
+    }
+
+    .dock-transition-status {
+        z-index: 1;
+    }
+
+    .dock-transition-panel {
+        z-index: 2;
+    }
+
+    .dock-transition-user-tile {
+        left: 1.5vh;
+        width: 7vh;
+        margin-top: 1.2vh;
+    }
+
+    .dock-transition-clock {
+        right: 27vh;
+        margin-top: 2vh;
+        background: none;
+        color: white;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+    }
+
+    .dock-transition-spinner {
+        right: 47.5vh;
+        width: 5vh;
+        margin-top: 2vh;
     }
 
     #search-div {
@@ -742,10 +881,6 @@
         left: -4px;
         width: calc(100% + 8px);
         height: calc(100% + 8px);
-        border: 16px solid transparent;
-        border-image: url('/not-msn-tv-2/images/selectionBox.svg') 8 / 16px stretch;
-        box-sizing: border-box;
-        pointer-events: none;
     }
 
 
@@ -836,6 +971,1373 @@
     .dropdown-right-arrow {
         max-height: 3vh;
         margin-left: 40vh;
+    }
+
+    .dock-page-shell {
+        --dock-header-height: 11.55vh;
+        --dock-header-bg: linear-gradient(180deg, #3f79bd 0%, #1d4f8d 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d8e8f7 0%, #bdd7ee 100%);
+        --dock-sidebar-border: #7aa2cb;
+        --dock-accent: #224f83;
+        --dock-accent-soft: #dfeaf4;
+        --dock-highlight-bg: rgba(255, 255, 255, 0.78);
+        --dock-highlight-border: rgba(35, 79, 131, 0.18);
+        --dock-sidebar-label: #17355e;
+        position: absolute;
+        inset: 0;
+        z-index: 7;
+        display: flex;
+        flex-direction: column;
+        background: #edf1f5;
+        color: #1d1d1d;
+    }
+
+    .theme-mail {
+        --dock-header-bg: linear-gradient(180deg, #4c81b9 0%, #204f86 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d7e7f7 0%, #bfd7ed 100%);
+        --dock-sidebar-border: #7aa3c9;
+        --dock-accent: #1e5287;
+        --dock-accent-soft: #dae9f6;
+    }
+
+    .theme-messenger {
+        --dock-header-bg: linear-gradient(90deg, rgba(23, 70, 118, 0.92), rgba(56, 119, 170, 0.72)), url('/not-msn-tv-2/images/pages/im-bg.jpg');
+        --dock-sidebar-bg: linear-gradient(180deg, #d8ecf7 0%, #c0ddeb 100%);
+        --dock-sidebar-border: #81a7c0;
+        --dock-accent: #1c4f7d;
+        --dock-accent-soft: #e1edf5;
+    }
+
+    .theme-favorites {
+        --dock-header-bg: linear-gradient(180deg, #4a86a2 0%, #245a6d 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #deeff0 0%, #c7dee1 100%);
+        --dock-sidebar-border: #7ea7ad;
+        --dock-accent: #255c70;
+        --dock-accent-soft: #dbeef0;
+    }
+
+    .theme-maps,
+    .theme-search {
+        --dock-header-bg: linear-gradient(180deg, #5a91cb 0%, #1f578f 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d8e9f8 0%, #c0d8ed 100%);
+        --dock-sidebar-border: #7aa7cf;
+        --dock-accent: #214f84;
+        --dock-accent-soft: #e1ebf7;
+    }
+
+    .theme-photos {
+        --dock-header-bg: linear-gradient(90deg, rgba(92, 72, 72, 0.86), rgba(188, 188, 188, 0.45)), url('/not-msn-tv-2/images/pages/photo-header.jpg');
+        --dock-sidebar-bg: linear-gradient(180deg, #e1e1e1 0%, #cfcfcf 100%);
+        --dock-sidebar-border: #a6a6a6;
+        --dock-accent: #b51f36;
+        --dock-accent-soft: #f6e4e7;
+        --dock-sidebar-label: #4f4f4f;
+    }
+
+    .theme-music {
+        --dock-header-bg: linear-gradient(90deg, rgba(28, 69, 127, 0.88), rgba(129, 193, 235, 0.45)), url('/not-msn-tv-2/images/pages/music-header.jpg');
+        --dock-sidebar-bg: linear-gradient(180deg, #d9ebf8 0%, #c6def2 100%);
+        --dock-sidebar-border: #7ca8cd;
+        --dock-accent: #1e4d84;
+        --dock-accent-soft: #e3edf7;
+    }
+
+    .theme-news {
+        --dock-header-bg: linear-gradient(180deg, #3d6d9f 0%, #224f80 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d7e3ee 0%, #c0d2e2 100%);
+        --dock-sidebar-border: #7f9db8;
+        --dock-accent: #a84c0e;
+        --dock-accent-soft: #f6e6dd;
+    }
+
+    .theme-entertainment {
+        --dock-header-bg: linear-gradient(90deg, rgba(71, 48, 84, 0.9), rgba(155, 106, 53, 0.55)), url('/not-msn-tv-2/images/pages/video-header.jpg');
+        --dock-sidebar-bg: linear-gradient(180deg, #dfebf6 0%, #c6d9ea 100%);
+        --dock-sidebar-border: #889fbd;
+        --dock-accent: #a84c0e;
+        --dock-accent-soft: #f7e8dd;
+    }
+
+    .theme-tvlistings {
+        --dock-header-bg: linear-gradient(180deg, #496d9c 0%, #1d426f 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d9e7f4 0%, #c5d7ea 100%);
+        --dock-sidebar-border: #7e9fbc;
+        --dock-accent: #7b3d06;
+        --dock-accent-soft: #f2e4d8;
+    }
+
+    .theme-weather {
+        --dock-header-bg: linear-gradient(180deg, #5f9dc3 0%, #2c728e 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #dcf0f5 0%, #cae4eb 100%);
+        --dock-sidebar-border: #7eaab5;
+        --dock-accent: #9c4e08;
+        --dock-accent-soft: #f7e6d8;
+    }
+
+    .theme-sports {
+        --dock-header-bg: linear-gradient(180deg, #b95f28 0%, #6f2f0e 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #f4e4d8 0%, #ead2c2 100%);
+        --dock-sidebar-border: #c49473;
+        --dock-accent: #943100;
+        --dock-accent-soft: #f8e9dd;
+    }
+
+    .theme-money {
+        --dock-header-bg: linear-gradient(180deg, #4f8e52 0%, #2f632f 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #deefda 0%, #cadfbe 100%);
+        --dock-sidebar-border: #94b183;
+        --dock-accent: #a74403;
+        --dock-accent-soft: #f5e6da;
+    }
+
+    .theme-shop {
+        --dock-header-bg: linear-gradient(180deg, #8d6bb0 0%, #5b3d7d 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #ebe1f3 0%, #ddd0ea 100%);
+        --dock-sidebar-border: #a48abd;
+        --dock-accent: #a93f26;
+        --dock-accent-soft: #f6e3dd;
+    }
+
+    .theme-games {
+        --dock-header-bg: linear-gradient(180deg, #2f96df 0%, #145d96 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d7eefc 0%, #c0def1 100%);
+        --dock-sidebar-border: #79afd5;
+        --dock-accent: #b4571f;
+        --dock-accent-soft: #f6e8de;
+    }
+
+    .theme-encarta {
+        --dock-header-bg: linear-gradient(180deg, #4f7aa7 0%, #2c4d75 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #dbe7f2 0%, #c7d6e4 100%);
+        --dock-sidebar-border: #88a3bb;
+        --dock-accent: #8f3f0d;
+        --dock-accent-soft: #f3e4db;
+    }
+
+    .theme-chat {
+        --dock-header-bg: linear-gradient(180deg, #4b86a9 0%, #245d72 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #dceef2 0%, #c6dfe4 100%);
+        --dock-sidebar-border: #7ea8af;
+        --dock-accent: #9b4b0d;
+        --dock-accent-soft: #f5e6da;
+    }
+
+    .theme-using {
+        --dock-header-bg: linear-gradient(90deg,
+                rgb(13 148 123) 0%,
+                rgb(21 151 128) 7.1%,
+                rgb(33 157 136) 14.3%,
+                rgb(47 166 139) 21.4%,
+                rgb(64 176 151) 28.6%,
+                rgb(77 185 161) 35.7%,
+                rgb(89 193 170) 42.9%,
+                rgb(95 194 173) 50%,
+                rgb(90 192 170) 57.1%,
+                rgb(75 185 160) 64.3%,
+                rgb(54 172 145) 75.1%,
+                rgb(32 158 136) 85.9%,
+                rgb(18 150 126) 92.9%,
+                rgb(14 149 124) 100%);
+        --dock-sidebar-bg: #d7e2d9;
+        --dock-sidebar-border: #98a89d;
+        --dock-accent: #a06c24;
+        --dock-accent-soft: #dfe7d8;
+    }
+
+    .dock-page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2vh;
+        min-height: 8.6vh;
+        padding: 0 2.6vh;
+        background: var(--dock-header-bg);
+        background-size: cover;
+        background-position: center;
+        border-bottom: 0.35vh solid rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+    }
+
+    .dock-page-header-title-wrap {
+        display: flex;
+        align-items: baseline;
+        gap: 1.6vh;
+        min-width: 0;
+    }
+
+    .dock-page-header-title {
+        color: #ffffff;
+        font-size: 5.6vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    .dock-page-header-subtitle {
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 3.4vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .dock-page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .dock-page-help-btn {
+        appearance: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        min-height: 0;
+        padding: 0;
+        background: transparent !important;
+        border: none;
+        border-radius: 0;
+        color: #ffffff;
+        font-size: 3.9vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        flex-shrink: 0;
+        cursor: default;
+    }
+
+    .dock-page-help-icon {
+        width: 4.8vh;
+        height: 4.8vh;
+        object-fit: contain;
+    }
+
+    .dock-page-scroll-region {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .dock-page-scroll-region::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .dock-page-body {
+        display: grid;
+        grid-template-columns: 22vh minmax(0, 1fr);
+        min-height: calc(100% - var(--dock-header-height));
+    }
+
+    .dock-page-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4vh;
+        padding: 2.2vh 1.2vh 1.8vh;
+        background: var(--dock-sidebar-bg);
+        border-right: 0.25vh solid var(--dock-sidebar-border);
+        box-sizing: border-box;
+    }
+
+    .dock-page-sidebar-title {
+        color: var(--dock-sidebar-label);
+        font-size: 3.2vh;
+        font-family: "Segoe TV Bold";
+        margin-left: 0.6vh;
+    }
+
+    .dock-page-sidebar-items {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7vh;
+    }
+
+    .dock-page-content {
+        min-width: 0;
+        padding: 2.2vh 2.4vh 2vh;
+        background: #edf1f4 url('/not-msn-tv-2/images/pages/center-bg.jpg') right top / cover no-repeat;
+        box-sizing: border-box;
+    }
+
+    .dock-page-promo {
+        display: grid;
+        grid-template-columns: minmax(0, 23vh) minmax(0, 1fr);
+        gap: 1.8vh;
+        padding: 1.6vh;
+        background: rgba(255, 255, 255, 0.84);
+        border: 0.2vh solid rgba(34, 79, 131, 0.16);
+        box-shadow: 0 0.3vh 1.4vh rgba(17, 30, 49, 0.08);
+    }
+
+    .dock-page-promo-images {
+        display: flex;
+        gap: 0.8vh;
+        min-height: 17vh;
+    }
+
+    .dock-page-promo-image {
+        width: 100%;
+        min-width: 0;
+        border: 0.15vh solid rgba(15, 27, 46, 0.18);
+        object-fit: cover;
+        box-shadow: 0 0.25vh 0.8vh rgba(15, 27, 46, 0.08);
+    }
+
+    .dock-page-promo-image-primary {
+        flex: 1.3;
+    }
+
+    .dock-page-promo-image-secondary {
+        flex: 1;
+    }
+
+    .dock-page-promo-copy {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.7vh;
+    }
+
+    .dock-page-promo-eyebrow {
+        color: var(--dock-accent);
+        font-size: 2.5vh;
+        font-family: "Segoe TV Bold";
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .dock-page-promo-title {
+        color: #1b2230;
+        font-size: 4.3vh;
+        font-family: "Segoe TV Bold";
+        line-height: 0.95;
+    }
+
+    .dock-page-promo-body {
+        color: #233043;
+        font-size: 3vh;
+        font-family: "Segoe TV";
+        line-height: 1.12;
+    }
+
+    .dock-page-highlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1vh;
+        margin-top: 1.2vh;
+    }
+
+    .dock-page-highlight-card {
+        padding: 1.2vh 1.4vh;
+        background: var(--dock-highlight-bg);
+        border: 0.18vh solid var(--dock-highlight-border);
+        box-shadow: 0 0.25vh 0.8vh rgba(15, 27, 46, 0.05);
+    }
+
+    .dock-page-highlight-label {
+        color: var(--dock-accent);
+        font-size: 2.35vh;
+        font-family: "Segoe TV Bold";
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .dock-page-highlight-value {
+        margin-top: 0.4vh;
+        color: #1c2738;
+        font-size: 3vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+    }
+
+    .dock-page-sections {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2vh;
+        margin-top: 1.2vh;
+        padding-bottom: 0.4vh;
+    }
+
+    .dock-page-section {
+        min-width: 0;
+        padding: 1.2vh 1.3vh 1.1vh;
+        background: rgba(255, 255, 255, 0.8);
+        border: 0.18vh solid rgba(34, 79, 131, 0.14);
+        box-shadow: 0 0.25vh 0.8vh rgba(15, 27, 46, 0.05);
+    }
+
+    .dock-page-section-title {
+        color: var(--dock-accent);
+        font-size: 3.1vh;
+        font-family: "Segoe TV Bold";
+        margin-bottom: 0.9vh;
+    }
+
+    .dock-page-section-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6vh;
+    }
+
+    .dock-page-row {
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+        width: 100%;
+        padding: 0.9vh 1vh;
+        background: rgba(255, 255, 255, 0.84);
+        border: 0.16vh solid rgba(34, 79, 131, 0.12);
+        color: #1d1d1d;
+        text-align: left;
+        font-family: "Segoe TV";
+        box-sizing: border-box;
+    }
+
+    .dock-page-sidebar-row {
+        min-height: 5.2vh;
+        background: rgba(255, 255, 255, 0.58);
+    }
+
+    .dock-page-section-row,
+    .dock-page-resource-row {
+        min-height: 5.4vh;
+    }
+
+    .dock-page-row-copy {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dock-page-row-label {
+        color: #182233;
+        font-size: 2.9vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+    }
+
+    .dock-page-row-description {
+        color: #4b5b70;
+        font-size: 2.2vh;
+        font-family: "Segoe TV";
+        line-height: 1.08;
+        margin-top: 0.3vh;
+    }
+
+    .dock-page-item-icon {
+        width: 3.4vh;
+        height: 3.4vh;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header {
+        min-height: var(--dock-header-height);
+        padding: 0 2vh 0 1.8vh;
+        align-items: flex-end;
+        border-bottom: 0.18vh solid rgba(199, 213, 207, 0.96);
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header-title-wrap {
+        align-items: flex-end;
+        gap: 4.7vh;
+        padding-bottom: 0.8vh;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header-title,
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header-subtitle {
+        color: #ffffff;
+        font-size: 4.95vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.22);
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header-title {
+        opacity: 0.5;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header-subtitle {
+        opacity: 1;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-header-actions {
+        align-self: flex-start;
+        align-items: flex-start;
+        padding-top: 0.55vh;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-help-btn {
+        gap: 1.1vh;
+        font-size: 3.6vh;
+        position: relative;
+        top: 10px;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-help-icon {
+        width: 4.15vh;
+        height: 4.15vh;
+    }
+
+    .dock-page-body {
+        grid-template-columns: 33.3vh minmax(0, 1fr);
+        background: #d7e2d9;
+    }
+
+    .dock-page-sidebar {
+        gap: 0;
+        padding: 2vh 0 1.2vh;
+        background: var(--dock-sidebar-bg);
+        border-right: 0.32vh solid rgba(150, 165, 155, 0.74);
+        position: relative;
+    }
+
+    .dock-page-sidebar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12px;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.42));
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .dock-page-sidebar-title {
+        display: none;
+    }
+
+    .dock-page-sidebar-items {
+        gap: 0;
+        border-top: 0.32vh solid rgba(150, 165, 155, 0.74);
+    }
+
+    .dock-page-sidebar-row {
+        min-height: 64px;
+        padding: 0 1.5vh 0 calc(1.5vh + 5px);
+        background: transparent;
+        border: none;
+        border-bottom: 0.32vh solid rgba(150, 165, 155, 0.74);
+        border-top: 0.32vh solid rgba(255, 255, 255, 0.5);
+        align-items: center;
+        position: relative;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-sidebar-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 3.35vh;
+        line-height: 1.02;
+    }
+
+    .dock-page-sidebar-row-current {
+        background: rgb(233, 233, 233);
+        z-index: 3;
+    }
+
+    .dock-page-sidebar-row-current::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        bottom: 0;
+        right: calc(-0.32vh - 1px);
+        width: calc(0.32vh + 1px);
+        background: rgb(233, 233, 233);
+        z-index: 3;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-sidebar-row-current .dock-page-row-label {
+        color: var(--dock-accent);
+    }
+
+    .dock-page-sidebar-card {
+        margin: 2.2vh 1.6vh 0;
+        padding: 1.1vh 1.25vh 1.3vh;
+        background: #e7eee5;
+        border: 0.18vh solid #9eb59a;
+        box-sizing: border-box;
+    }
+
+    .dock-page-shell-things .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
+    .dock-page-shell-using-main .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
+    .dock-page-shell-using-newsletter .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
+    .dock-page-sidebar-card-title {
+        color: #1d1d1d;
+        font-size: 3.15vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1.02;
+        margin-bottom: 0.95vh;
+    }
+
+    .dock-page-sidebar-card-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6vh;
+    }
+
+    .dock-page-sidebar-card-row {
+        width: fit-content;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0.16vh 0;
+        background: transparent;
+        border: none;
+        align-items: flex-start;
+    }
+
+    .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1c2c42;
+        font-size: 3.05vh;
+        line-height: 1.04;
+    }
+
+    .dock-page-content {
+        position: relative;
+        min-width: 0;
+        padding: 1.45vh 1.8vh 2.2vh;
+        background: rgb(233, 233, 233) url('/not-msn-tv-2/images/pages/center-bg.jpg') right top / contain no-repeat;
+        box-sizing: border-box;
+    }
+
+    .dock-page-shell-using-main .dock-page-content {
+        padding: 1.55vh 0 2vh 1.8vh;
+        background-size: cover;
+    }
+
+    .dock-page-shell-using-tip .dock-page-content {
+        padding: 1.55vh 0 2vh 1.8vh;
+        background-size: contain;
+    }
+
+    .dock-page-promo {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2vh;
+        padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dock-page-promo-images {
+        width: 22vh;
+        min-width: 22vh;
+        min-height: 15.5vh;
+        gap: 0.55vh;
+    }
+
+    .dock-page-promo-image {
+        border: 0.14vh solid rgba(98, 110, 121, 0.45);
+        box-shadow: none;
+    }
+
+    .dock-page-promo-copy {
+        justify-content: flex-start;
+        gap: 0.45vh;
+    }
+
+    .dock-page-promo-eyebrow {
+        color: #6c7276;
+        font-size: 2.25vh;
+        font-family: "Segoe TV";
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .dock-page-promo-title,
+    .dock-page-content-title {
+        color: var(--dock-accent);
+        font-size: 4.7vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1;
+    }
+
+    .dock-page-promo-body {
+        color: #223243;
+        font-size: 3vh;
+        font-family: "Segoe TV";
+        line-height: 1.12;
+        max-width: 69vh;
+    }
+
+    .dock-page-highlight-grid {
+        gap: 1vh;
+        margin-top: 1.25vh;
+    }
+
+    .dock-page-highlight-card {
+        padding: 0.75vh 1.2vh 0.9vh;
+        background: rgba(223, 230, 215, 0.96);
+        border: none;
+        box-shadow: none;
+    }
+
+    .dock-page-highlight-label {
+        color: var(--dock-accent);
+        font-size: 2.4vh;
+        font-family: "Segoe TV Bold";
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .dock-page-highlight-value {
+        margin-top: 0.35vh;
+        color: #1d2736;
+        font-size: 2.95vh;
+        line-height: 1.05;
+    }
+
+    .dock-page-sections,
+    .dock-page-things-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.6vh;
+        margin-top: 40px;
+        align-items: start;
+        padding-bottom: 0.5vh;
+    }
+
+    .dock-page-things-column {
+        min-width: 0;
+    }
+
+    .dock-page-section {
+        min-width: 0;
+        margin-bottom: 1.75vh;
+        padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dock-page-section-title {
+        margin-bottom: 4vh;
+        padding: 0.34vh 1.5vh 0.42vh;
+        background: rgba(222, 229, 214, 0.98);
+        color: var(--dock-accent);
+        font-size: 4.3875vh;
+        font-family: "Segoe TV";
+        line-height: 1.04;
+    }
+
+    .dock-page-section-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.6vh;
+    }
+
+    .dock-page-section-row {
+        width: fit-content;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0.15vh 0;
+        background: none;
+        border: none;
+        align-items: flex-start;
+        gap: 0.9vh;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-row-copy {
+        display: block;
+    }
+
+    .dock-page-classic-bullet {
+        width: 1.4vh;
+        height: 1.4vh;
+        margin-top: 1.35vh;
+        background: #1f3f7f;
+        border-radius: 999px;
+        flex-shrink: 0;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-row-label {
+        color: #1c1c1c;
+        font-size: 3.25vh;
+        font-family: "Segoe TV";
+        line-height: 1.08;
+    }
+
+    .dock-page-shell-things .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-shell-using-main .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-shell-using-newsletter .dock-page-sidebar-card-row .dock-page-row-label,
+    .dock-page-shell-newsletter-section .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-section-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 4.3875vh;
+    }
+
+    .dock-page-shell:not(.dock-page-search-shell) .dock-page-row-description {
+        color: #4b5b70;
+        font-size: 2.25vh;
+        line-height: 1.06;
+        margin-top: 0.22vh;
+    }
+
+    .dock-page-content-title {
+        margin-top: 0.25vh;
+    }
+
+    .dock-page-shell-using-newsletter .dock-page-content-title {
+        margin-top: 3.1vh;
+        margin-bottom: 3.1vh;
+        font-family: "Segoe TV";
+        font-size: 4.3875vh;
+        line-height: 1.02;
+    }
+
+    .dock-page-using-newsletter {
+        width: 92.7%;
+        max-width: 92.7%;
+        min-width: 0;
+    }
+
+    .dock-page-using-newsletter-feature {
+        display: grid;
+        grid-template-columns: 44vh minmax(0, 1fr);
+        column-gap: 3vh;
+        align-items: start;
+    }
+
+    .dock-page-using-newsletter-media {
+        width: 44vh;
+        aspect-ratio: 430 / 320;
+        overflow: hidden;
+        background: #efefef;
+    }
+
+    .dock-page-using-newsletter-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .dock-page-using-newsletter-feature-copy {
+        appearance: none;
+        min-width: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        color: #1d1d1d;
+        text-align: left;
+        cursor: default;
+    }
+
+    .dock-page-using-newsletter-feature-title {
+        color: #1f3f7f;
+        font-size: 4.3875vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1.02;
+    }
+
+    .dock-page-using-newsletter-feature-description {
+        margin-top: 2vh;
+        color: #1d1d1d;
+        font-size: 4vh;
+        font-family: "Segoe TV";
+        line-height: 1.06;
+        max-width: 39vh;
+    }
+
+    .dock-page-using-newsletter-links {
+        margin-top: 2.65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.6vh;
+    }
+
+    .dock-page-using-newsletter-link {
+        width: fit-content;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 1.05vh;
+        color: #1f3f7f;
+    }
+
+    .dock-page-using-newsletter-link-bullet {
+        color: #1d1d1d;
+        font-size: 4.6vh;
+        line-height: 0.9;
+        flex-shrink: 0;
+    }
+
+    .dock-page-shell-using-newsletter .dock-page-using-newsletter-link .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 4vh;
+        font-family: "Segoe TV";
+        line-height: 1.02;
+    }
+
+    .dock-page-using-tip {
+        width: 92.7%;
+        max-width: 92.7%;
+        min-width: 0;
+    }
+
+    .dock-page-shell-using-tip .dock-page-content-title {
+        margin-top: 3.1vh;
+        margin-bottom: 3vh;
+        font-family: "Segoe TV";
+        font-size: 4.3875vh;
+        line-height: 1.02;
+    }
+
+    .dock-page-using-tip-body {
+        max-width: 76vh;
+        color: #1d1d1d;
+        font-size: 3.6vh;
+        font-family: "Segoe TV";
+        line-height: 1.14;
+    }
+
+    .dock-page-using-tip-byline {
+        margin: -1.3vh 0 2vh;
+        color: #2d2d2d;
+        font-size: 3vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+    }
+
+    .dock-page-using-tip-body p {
+        margin: 0 0 1.35vh;
+    }
+
+    .dock-page-using-tip-body ol,
+    .dock-page-using-tip-body ul {
+        margin: 1vh 0 1.35vh 4.6vh;
+        padding: 0;
+    }
+
+    .dock-page-using-tip-body li {
+        margin-bottom: 0.9vh;
+    }
+
+    .dock-page-tip-inline-link {
+        color: #1f3f7f;
+        text-decoration: underline;
+        cursor: default;
+    }
+
+    .dock-page-using-tip-actions {
+        display: flex;
+        gap: 1.7vh;
+        margin-top: 3.2vh;
+        padding-bottom: 1vh;
+    }
+
+    .dock-page-using-tip-action {
+        width: 23vh;
+        min-width: 23vh;
+        max-width: 23vh;
+        min-height: 5.35vh;
+        margin-left: 0;
+        padding: 0 0 0.4vh;
+        justify-content: center;
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+        border: 3px solid #1b1b1b;
+        border-radius: 2px;
+        box-shadow: none;
+        align-items: center;
+    }
+
+    .dock-page-shell-using-tip .dock-page-using-tip-action .dock-page-row-label {
+        color: #254267;
+        font-size: 3.7vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-using-main {
+        width: 92.7%;
+        max-width: 92.7%;
+        min-width: 0;
+    }
+
+    .dock-page-using-main-module {
+        min-width: 0;
+        padding: 0.2vh 0 0;
+    }
+
+    .dock-page-using-main > .dock-page-using-main-module:first-child {
+        margin-top: 40px;
+    }
+
+    .dock-page-using-main-summary {
+        display: grid;
+        grid-template-columns: 108px minmax(0, 1fr);
+        column-gap: 11px;
+        align-items: start;
+    }
+
+    .dock-page-using-main-icon-wrap {
+        width: 108px;
+        min-width: 108px;
+        height: 105px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: flex-start;
+        overflow: visible;
+        padding-top: 10px;
+    }
+
+    .dock-page-using-main-icon-image {
+        width: 42px;
+        height: 43px;
+        transform: scale(2.5);
+        transform-origin: top left;
+        flex-shrink: 0;
+    }
+
+    .dock-page-using-main-copy {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 54px;
+        padding-top: 4px;
+        position: relative;
+        top: -15px;
+    }
+
+    .dock-page-using-main-title {
+        appearance: none;
+        padding: 0;
+        background: none;
+        border: none;
+        color: #9E4701;
+        font-size: 4.3875vh;
+        font-family: "Segoe TV";
+        line-height: 1.04;
+        text-align: left;
+        white-space: nowrap;
+        cursor: default;
+    }
+
+    .dock-page-using-main-description {
+        color: #1D1D1D;
+        font-size: 4.3875vh;
+        font-family: "Segoe TV";
+        line-height: 1.04;
+        white-space: nowrap;
+    }
+
+    .dock-page-using-main-link {
+        appearance: none;
+        margin-top: 0.2907vh;
+        padding: 0 0 0 0.1vh;
+        background: none;
+        border: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.95vh;
+        width: fit-content;
+        max-width: 100%;
+        text-align: left;
+        cursor: default;
+    }
+
+    .dock-page-using-main-link-bullet {
+        color: #1D1D1D;
+        font-size: 4.1vh;
+        line-height: 0.9;
+        flex-shrink: 0;
+    }
+
+    .dock-page-using-main-link-text {
+        color: #1f3f7f;
+        font-size: 4.3875vh;
+        font-family: "Segoe TV";
+        line-height: 1.04;
+        white-space: nowrap;
+    }
+
+    .dock-page-using-main-divider {
+        height: 0.32vh;
+        margin: 4vh 0 4vh;
+        background: #919191;
+        opacity: 0.82;
+    }
+
+    .dock-page-shell-things .dock-page-content-title {
+        font-family: "Segoe TV";
+        font-size: 3.95vh;
+        margin-top: calc(0.25vh + 16px);
+    }
+
+    .dock-page-category-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 4.6vh;
+        margin-top: 2vh;
+        padding: 1.45vh 1.9vh 1.55vh;
+        background: rgba(229, 235, 227, 0.95);
+        border: 0.18vh solid rgba(154, 166, 157, 0.95);
+        box-sizing: border-box;
+    }
+
+    .dock-page-category-column {
+        display: flex;
+        flex-direction: column;
+        gap: 2.52vh;
+    }
+
+    .dock-page-category-link {
+        appearance: none;
+        padding: 0;
+        background: none;
+        border: none;
+        color: #1d2d53;
+        font-size: 3.95vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1.04;
+        text-align: left;
+        cursor: default;
+    }
+
+    .dock-page-scroll-indicator {
+        position: absolute;
+        right: 0.75vh;
+        width: 4.5vh;
+        pointer-events: none;
+        z-index: 4;
+    }
+
+    .dock-page-scroll-indicator-up {
+        top: 0.45vh;
+        transform: rotate(180deg);
+    }
+
+    .dock-page-scroll-indicator-down {
+        bottom: 0.45vh;
+    }
+
+    .dock-page-search-shell {
+        background: #eff2f5;
+    }
+
+    .dock-page-search-shell .dock-page-header {
+        min-height: var(--dock-header-height);
+        padding: 0 2.3vh 0 2.1vh;
+        align-items: flex-end;
+        background: linear-gradient(90deg, #1d5fa8 0%, #5c89c2 24%, #a8bfdf 50%, #5f8bc3 76%, #1b589d 100%);
+        border-bottom: 0.22vh solid rgba(233, 239, 247, 0.92);
+    }
+
+    .dock-page-search-shell .dock-page-header-title-wrap {
+        gap: 4vh;
+        align-items: flex-end;
+        padding-bottom: 0.55vh;
+    }
+
+    .dock-page-search-shell .dock-page-header-title,
+    .dock-page-search-shell .dock-page-header-subtitle {
+        opacity: 0.52;
+        white-space: nowrap;
+    }
+
+    .dock-page-search-shell .dock-page-header-title {
+        font-size: 5.55vh;
+        letter-spacing: -0.02em;
+    }
+
+    .dock-page-search-shell .dock-page-header-subtitle {
+        font-size: 3.05vh;
+        font-family: "Segoe TV Bold";
+        padding-bottom: 0.9vh;
+    }
+
+    .dock-page-search-shell .dock-page-header-actions {
+        align-self: flex-start;
+        padding-top: 0.55vh;
+    }
+
+    .dock-page-search-shell .dock-page-help-btn {
+        gap: 1.6vh;
+        font-size: 3.55vh;
+        position: relative;
+        top: 10px;
+    }
+
+    .dock-page-search-shell .dock-page-help-icon {
+        width: 4.35vh;
+        height: 4.35vh;
+    }
+
+    .dock-page-search-body {
+        min-height: calc(100% - var(--dock-header-height));
+        padding: 5.5vh 2.7vh 1.1vh;
+        background: #f3f4f4 url('/not-msn-tv-2/images/pages/polkadot.jpg') center top / cover no-repeat;
+        box-sizing: border-box;
+    }
+
+    .dock-page-search-copy {
+        color: #1d1d1d;
+        font-size: 3.65vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        margin-bottom: 1.35vh;
+        white-space: nowrap;
+    }
+
+    .dock-page-search-bar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 1.8vh;
+        align-items: center;
+        width: min(105.6vh, 100%);
+        margin-bottom: 2.85vh;
+    }
+
+    .dock-page-search-input.search-input-stub {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        height: 5.08vh;
+        background: #2d3059 !important;
+        border-top: #55567a 0.35vh solid;
+        border-right: #a8b4d4 0.35vh solid;
+        border-bottom: #a8b4d4 0.35vh solid;
+        border-left: #55567a 0.35vh solid;
+        padding: 0 1.5vh;
+        font-size: 3.7vh !important;
+    }
+
+    .dock-page-search-submit {
+        min-width: 14.5vh;
+        min-height: 5.4vh;
+        padding: 0 2.6vh;
+        background-image: linear-gradient(180deg, #fbfbfb 0%, #b7cad8 22%, #dce7ee 100%) !important;
+        border: 0.25vh solid #818d95;
+        color: #254267;
+        font-size: 3.45vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: calc(-0.25vh - 10px);
+        left: 10px;
+    }
+
+    .dock-page-search-tip-lead {
+        color: #1d1d1d;
+        font-size: 3.65vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+        margin-bottom: 0.2vh;
+        max-width: 92vh;
+        white-space: nowrap;
+    }
+
+    .dock-page-search-tip {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.2vh;
+        min-height: 4.6vh;
+        padding: 0.15vh 1vh 0.4vh 0;
+        background: transparent;
+        border: 0;
+        color: #18366b;
+        font-size: 3.55vh;
+        font-family: "Segoe TV";
+        white-space: nowrap;
+    }
+
+    .dock-page-bullet {
+        width: 2.6vh;
+        height: 4.4vh;
+        background: url('/not-msn-tv-2/images/dropdowncustomrightarrow.png') center / contain no-repeat;
+        flex-shrink: 0;
+    }
+
+    .dock-page-divider {
+        height: 0.2vh;
+        margin: 0.2vh 0 0.7vh;
+        background: rgba(92, 104, 118, 0.17);
+    }
+
+    .dock-page-section-title-search {
+        margin-bottom: 3.6vh;
+        padding: 0;
+        background: none;
+        color: #000000;
+        font-size: 4.35vh;
+        white-space: nowrap;
+    }
+
+    .dock-page-resource-list {
+        width: min(62vh, 100%);
+        display: flex;
+        flex-direction: column;
+        gap: 0.2vh;
+    }
+
+    .dock-page-resource-row {
+        min-height: 0;
+        padding-top: 0.14vh;
+        padding-bottom: 0.14vh;
+        padding-left: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .dock-page-resource-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 3.8vh;
+        line-height: 1.02;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 900px) {
+        .dock-page-body {
+            grid-template-columns: 33.3vh minmax(0, 1fr);
+        }
+
+        .dock-page-promo {
+            grid-template-columns: 1fr;
+        }
+
+        .dock-page-highlight-grid,
+        .dock-page-sections {
+            grid-template-columns: 1fr;
+        }
     }
 
     /* Start button animation */
