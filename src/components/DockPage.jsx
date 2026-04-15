@@ -308,6 +308,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
       <SelectableRow
         key={item}
         row={nextRow()}
+        x={-1}
         className="dock-page-sidebar-row"
         {...(tipDetailRightTarget ? { 'data-select-right': tipDetailRightTarget } : {})}
         onClick={() => handleModuleNavigate(targetPageId)}
@@ -356,7 +357,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -396,6 +397,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                       <SelectableRow
                         key={normalized.label}
                         row={nextRow()}
+                        x={-1}
                         className="dock-page-sidebar-card-row"
                         {...(tipDetailRightTarget ? { 'data-select-right': tipDetailRightTarget } : {})}
                         onClick={() => handleModuleNavigate(normalized.targetPage)}
@@ -410,7 +412,57 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
           </aside>
 
           <main className="dock-page-content">
-            {page.variant === 'usingMain' ? (
+            {page.variant === 'gamesCenter' ? (
+              <div className="dock-page-games">
+                <div className="dock-page-games-intro">{page.intro}</div>
+
+                <div className="dock-page-games-list">
+                  {page.gamesItems.map((item) => {
+                    const normalized = normalizeItem(item)
+
+                    return (
+                      <div key={normalized.label}>
+                        <SelectableRow
+                          row={nextRow()}
+                          x={0}
+                          className="dock-page-games-row"
+                          onClick={() => handleModuleNavigate(normalized.targetPage)}
+                        >
+                          {normalized.image ? (
+                            <img
+                              className="dock-page-games-thumb-image"
+                              src={`${BASE}images/pages/${normalized.image}`}
+                              alt=""
+                            />
+                          ) : (
+                            <span
+                              className={`dock-page-games-thumb dock-page-games-thumb-${normalized.stubThumb ?? 'placeholder'}`}
+                              aria-hidden="true"
+                            />
+                          )}
+                          <span className="dock-page-row-label">{normalized.label}</span>
+                        </SelectableRow>
+                        <div className="dock-page-divider"></div>
+                      </div>
+                    )
+                  })}
+
+                  {page.stubLabel && (
+                    <div>
+                      <SelectableRow
+                        row={nextRow()}
+                        x={0}
+                        className="dock-page-games-row dock-page-games-row-stub"
+                      >
+                        <span className="dock-page-games-thumb dock-page-games-thumb-placeholder" aria-hidden="true" />
+                        <span className="dock-page-row-label">{page.stubLabel}</span>
+                      </SelectableRow>
+                      <div className="dock-page-divider"></div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ) : page.variant === 'usingMain' ? (
               <div className="dock-page-using-main">
                 {page.modules.map((module, index) => {
                   const titleRow = nextRow()
@@ -451,7 +503,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                         <span className="dock-page-using-main-link-text">{module.linkText}</span>
                       </button>
 
-                      {index < page.modules.length - 1 && <div className="dock-page-using-main-divider"></div>}
+                      {index < page.modules.length - 1 && <div className="dock-page-divider"></div>}
                     </section>
                   )
                 })}

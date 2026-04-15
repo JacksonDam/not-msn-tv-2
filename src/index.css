@@ -978,6 +978,8 @@
         --dock-header-bg: linear-gradient(180deg, #3f79bd 0%, #1d4f8d 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d8e8f7 0%, #bdd7ee 100%);
         --dock-sidebar-border: #7aa2cb;
+        --dock-sidebar-card-bg: #d8e6f4;
+        --dock-sidebar-card-border: #8fb6d8;
         --dock-accent: #224f83;
         --dock-accent-soft: #dfeaf4;
         --dock-highlight-bg: rgba(255, 255, 255, 0.78);
@@ -996,6 +998,8 @@
         --dock-header-bg: linear-gradient(180deg, #4c81b9 0%, #204f86 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d7e7f7 0%, #bfd7ed 100%);
         --dock-sidebar-border: #7aa3c9;
+        --dock-sidebar-card-bg: #dce8f5;
+        --dock-sidebar-card-border: #88afd1;
         --dock-accent: #1e5287;
         --dock-accent-soft: #dae9f6;
     }
@@ -1004,6 +1008,8 @@
         --dock-header-bg: linear-gradient(90deg, rgba(23, 70, 118, 0.92), rgba(56, 119, 170, 0.72)), url('/not-msn-tv-2/images/pages/im-bg.jpg');
         --dock-sidebar-bg: linear-gradient(180deg, #d8ecf7 0%, #c0ddeb 100%);
         --dock-sidebar-border: #81a7c0;
+        --dock-sidebar-card-bg: #deebf4;
+        --dock-sidebar-card-border: #94b4ca;
         --dock-accent: #1c4f7d;
         --dock-accent-soft: #e1edf5;
     }
@@ -1012,6 +1018,8 @@
         --dock-header-bg: linear-gradient(180deg, #4a86a2 0%, #245a6d 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #deeff0 0%, #c7dee1 100%);
         --dock-sidebar-border: #7ea7ad;
+        --dock-sidebar-card-bg: #deedee;
+        --dock-sidebar-card-border: #8db5b8;
         --dock-accent: #255c70;
         --dock-accent-soft: #dbeef0;
     }
@@ -1021,6 +1029,8 @@
         --dock-header-bg: linear-gradient(180deg, #5a91cb 0%, #1f578f 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d8e9f8 0%, #c0d8ed 100%);
         --dock-sidebar-border: #7aa7cf;
+        --dock-sidebar-card-bg: #dce9f7;
+        --dock-sidebar-card-border: #8bb3d6;
         --dock-accent: #214f84;
         --dock-accent-soft: #e1ebf7;
     }
@@ -1029,6 +1039,8 @@
         --dock-header-bg: linear-gradient(90deg, rgba(92, 72, 72, 0.86), rgba(188, 188, 188, 0.45)), url('/not-msn-tv-2/images/pages/photo-header.jpg');
         --dock-sidebar-bg: linear-gradient(180deg, #e1e1e1 0%, #cfcfcf 100%);
         --dock-sidebar-border: #a6a6a6;
+        --dock-sidebar-card-bg: #ece8e9;
+        --dock-sidebar-card-border: #b7afb2;
         --dock-accent: #b51f36;
         --dock-accent-soft: #f6e4e7;
         --dock-sidebar-label: #4f4f4f;
@@ -1038,6 +1050,8 @@
         --dock-header-bg: linear-gradient(90deg, rgba(28, 69, 127, 0.88), rgba(129, 193, 235, 0.45)), url('/not-msn-tv-2/images/pages/music-header.jpg');
         --dock-sidebar-bg: linear-gradient(180deg, #d9ebf8 0%, #c6def2 100%);
         --dock-sidebar-border: #7ca8cd;
+        --dock-sidebar-card-bg: #dcebf7;
+        --dock-sidebar-card-border: #8db2d2;
         --dock-accent: #1e4d84;
         --dock-accent-soft: #e3edf7;
     }
@@ -1046,6 +1060,8 @@
         --dock-header-bg: linear-gradient(180deg, #3d6d9f 0%, #224f80 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d7e3ee 0%, #c0d2e2 100%);
         --dock-sidebar-border: #7f9db8;
+        --dock-sidebar-card-bg: #dce5ed;
+        --dock-sidebar-card-border: #93abc1;
         --dock-accent: #a84c0e;
         --dock-accent-soft: #f6e6dd;
     }
@@ -1054,6 +1070,8 @@
         --dock-header-bg: linear-gradient(90deg, rgba(71, 48, 84, 0.9), rgba(155, 106, 53, 0.55)), url('/not-msn-tv-2/images/pages/video-header.jpg');
         --dock-sidebar-bg: linear-gradient(180deg, #dfebf6 0%, #c6d9ea 100%);
         --dock-sidebar-border: #889fbd;
+        --dock-sidebar-card-bg: #e2e9f1;
+        --dock-sidebar-card-border: #98aec3;
         --dock-accent: #a84c0e;
         --dock-accent-soft: #f7e8dd;
     }
@@ -1062,6 +1080,8 @@
         --dock-header-bg: linear-gradient(180deg, #496d9c 0%, #1d426f 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d9e7f4 0%, #c5d7ea 100%);
         --dock-sidebar-border: #7e9fbc;
+        --dock-sidebar-card-bg: #dce7f2;
+        --dock-sidebar-card-border: #93abc3;
         --dock-accent: #7b3d06;
         --dock-accent-soft: #f2e4d8;
     }
@@ -1070,6 +1090,8 @@
         --dock-header-bg: linear-gradient(180deg, #5f9dc3 0%, #2c728e 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #dcf0f5 0%, #cae4eb 100%);
         --dock-sidebar-border: #7eaab5;
+        --dock-sidebar-card-bg: #e1f0f3;
+        --dock-sidebar-card-border: #93b9c1;
         --dock-accent: #9c4e08;
         --dock-accent-soft: #f7e6d8;
     }
@@ -1078,6 +1100,8 @@
         --dock-header-bg: linear-gradient(180deg, #b95f28 0%, #6f2f0e 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #f4e4d8 0%, #ead2c2 100%);
         --dock-sidebar-border: #c49473;
+        --dock-sidebar-card-bg: #f3e2d7;
+        --dock-sidebar-card-border: #cf9e7d;
         --dock-accent: #943100;
         --dock-accent-soft: #f8e9dd;
     }
@@ -1086,6 +1110,8 @@
         --dock-header-bg: linear-gradient(180deg, #4f8e52 0%, #2f632f 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #deefda 0%, #cadfbe 100%);
         --dock-sidebar-border: #94b183;
+        --dock-sidebar-card-bg: #e2efdd;
+        --dock-sidebar-card-border: #a5c193;
         --dock-accent: #a74403;
         --dock-accent-soft: #f5e6da;
     }
@@ -1094,14 +1120,32 @@
         --dock-header-bg: linear-gradient(180deg, #8d6bb0 0%, #5b3d7d 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #ebe1f3 0%, #ddd0ea 100%);
         --dock-sidebar-border: #a48abd;
+        --dock-sidebar-card-bg: #eee6f4;
+        --dock-sidebar-card-border: #b69fcb;
         --dock-accent: #a93f26;
         --dock-accent-soft: #f6e3dd;
     }
 
     .theme-games {
-        --dock-header-bg: linear-gradient(180deg, #2f96df 0%, #145d96 100%);
+        --dock-header-bg: linear-gradient(90deg,
+                rgb(27 116 190) 0%,
+                rgb(40 126 197) 7.1%,
+                rgb(56 139 206) 14.3%,
+                rgb(74 153 214) 21.4%,
+                rgb(95 168 223) 28.6%,
+                rgb(115 182 231) 35.7%,
+                rgb(132 193 238) 42.9%,
+                rgb(140 198 241) 50%,
+                rgb(132 193 238) 57.1%,
+                rgb(115 182 231) 64.3%,
+                rgb(95 168 223) 75.1%,
+                rgb(74 153 214) 85.9%,
+                rgb(40 126 197) 92.9%,
+                rgb(27 116 190) 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d7eefc 0%, #c0def1 100%);
         --dock-sidebar-border: #79afd5;
+        --dock-sidebar-card-bg: #d2e0f5;
+        --dock-sidebar-card-border: #6ea8d7;
         --dock-accent: #b4571f;
         --dock-accent-soft: #f6e8de;
     }
@@ -1110,6 +1154,8 @@
         --dock-header-bg: linear-gradient(180deg, #4f7aa7 0%, #2c4d75 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #dbe7f2 0%, #c7d6e4 100%);
         --dock-sidebar-border: #88a3bb;
+        --dock-sidebar-card-bg: #dee7f0;
+        --dock-sidebar-card-border: #99afc4;
         --dock-accent: #8f3f0d;
         --dock-accent-soft: #f3e4db;
     }
@@ -1118,6 +1164,8 @@
         --dock-header-bg: linear-gradient(180deg, #4b86a9 0%, #245d72 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #dceef2 0%, #c6dfe4 100%);
         --dock-sidebar-border: #7ea8af;
+        --dock-sidebar-card-bg: #dfedf0;
+        --dock-sidebar-card-border: #91b3b8;
         --dock-accent: #9b4b0d;
         --dock-accent-soft: #f5e6da;
     }
@@ -1140,6 +1188,8 @@
                 rgb(14 149 124) 100%);
         --dock-sidebar-bg: #d7e2d9;
         --dock-sidebar-border: #98a89d;
+        --dock-sidebar-card-bg: #e1e9df;
+        --dock-sidebar-card-border: #a4b7a4;
         --dock-accent: #a06c24;
         --dock-accent-soft: #dfe7d8;
     }
@@ -1559,8 +1609,8 @@
     .dock-page-sidebar-card {
         margin: 2.2vh 1.6vh 0;
         padding: 1.1vh 1.25vh 1.3vh;
-        background: #e7eee5;
-        border: 0.18vh solid #9eb59a;
+        background: var(--dock-sidebar-card-bg);
+        border: 0.18vh solid var(--dock-sidebar-card-border);
         box-sizing: border-box;
     }
 
@@ -1574,6 +1624,14 @@
 
     .dock-page-shell-using-newsletter .dock-page-sidebar-card {
         margin-top: 13.8vh;
+    }
+
+    .dock-page-shell-games .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
+    .dock-page-shell-games {
+        --dock-header-height: 11.55vh;
     }
 
     .dock-page-sidebar-card-title {
@@ -1785,6 +1843,104 @@
     .dock-page-shell-using-newsletter .dock-page-sidebar-card-row .dock-page-row-label,
     .dock-page-shell-newsletter-section .dock-page-sidebar-card-row .dock-page-row-label {
         color: #1f3f7f;
+    }
+
+    .dock-page-shell-games .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-games {
+        width: 92.7%;
+        max-width: 92.7%;
+        min-width: 0;
+    }
+
+    .dock-page-games-intro {
+        margin-top: 2.75vh;
+        margin-bottom: 2vh;
+        min-width: 100vh;
+        color: #1d1d1d;
+        font-size: 4.35vh;
+        font-family: "Segoe TV";
+        line-height: 1.06;
+    }
+
+    .dock-page-games-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dock-page-games-row {
+        width: 100%;
+        min-height: 15vh;
+        padding: 1.2vh 0;
+        justify-content: flex-start;
+        gap: 1vh;
+        background: transparent;
+        border: none;
+        align-items: center;
+    }
+
+    .dock-page-games-row-stub {
+        min-height: 13.5vh;
+    }
+
+    .dock-page-shell-games .dock-page-games-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 4.2vh;
+        font-family: "Segoe TV";
+        line-height: 1.02;
+    }
+
+    .dock-page-games-thumb,
+    .dock-page-games-thumb-image {
+        width: 135px;
+        height: 121.5px;
+        flex-shrink: 0;
+        display: block;
+    }
+
+    .dock-page-games-thumb-image {
+        object-fit: cover;
+    }
+
+    .dock-page-games-thumb {
+        border: 1px solid rgba(121, 133, 141, 0.45);
+        box-sizing: border-box;
+        background-color: #d6d2c6;
+    }
+
+    .dock-page-games-thumb-blackjack {
+        background:
+            linear-gradient(135deg, rgba(20, 78, 56, 0.92) 0 40%, transparent 40%),
+            linear-gradient(25deg, rgba(194, 41, 36, 0.88) 0 33%, transparent 33%),
+            linear-gradient(0deg, #dfdfdf 0 28%, #6c778b 28% 34%, #bab0a0 34% 100%);
+    }
+
+    .dock-page-games-thumb-chess {
+        background:
+            radial-gradient(circle at 72% 20%, rgba(255, 233, 176, 0.92) 0 12%, transparent 13%),
+            linear-gradient(135deg, rgba(88, 49, 25, 0.95) 0 36%, transparent 36%),
+            linear-gradient(0deg, #d8b789 0 38%, #8c6037 38% 100%);
+    }
+
+    .dock-page-games-thumb-backgammon {
+        background:
+            linear-gradient(90deg,
+                #e7dfcf 0 14%,
+                #7c5a39 14% 28%,
+                #e7dfcf 28% 42%,
+                #7c5a39 42% 56%,
+                #e7dfcf 56% 70%,
+                #7c5a39 70% 84%,
+                #e7dfcf 84% 100%),
+            linear-gradient(0deg, #ccb28d 0%, #ece4d4 100%);
+    }
+
+    .dock-page-games-thumb-placeholder {
+        background:
+            linear-gradient(135deg, rgba(142, 176, 204, 0.45) 0 50%, transparent 50%),
+            linear-gradient(180deg, #dce7ef 0%, #bccddd 100%);
     }
 
     .dock-page-shell:not(.dock-page-search-shell) .dock-page-section-row .dock-page-row-label {
@@ -2083,11 +2239,14 @@
         white-space: nowrap;
     }
 
-    .dock-page-using-main-divider {
+    .dock-page-divider {
         height: 0.32vh;
-        margin: 4vh 0 4vh;
         background: #919191;
         opacity: 0.82;
+    }
+
+    .dock-page-using-main .dock-page-divider {
+        margin: 4vh 0 4vh;
     }
 
     .dock-page-shell-things .dock-page-content-title {
@@ -2286,10 +2445,13 @@
         flex-shrink: 0;
     }
 
-    .dock-page-divider {
-        height: 0.2vh;
+    .dock-page-search-shell .dock-page-divider {
         margin: 0.2vh 0 0.7vh;
-        background: rgba(92, 104, 118, 0.17);
+    }
+
+    .dock-page-games .dock-page-divider {
+        margin: 0;
+        width: calc(100% + 36px);
     }
 
     .dock-page-section-title-search {

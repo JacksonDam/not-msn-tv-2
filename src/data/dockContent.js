@@ -22,7 +22,57 @@ export const DOCK_ITEMS = [
   { id: 'search', label: 'Search', w: 84 },
 ]
 
+const GAMES_SIDEBAR = ['Featured Games', 'Card Games', 'Board Games', 'Casino Games', 'Word/Trivia']
+
+const GAMES_SIDEBAR_TARGETS = {
+  'Featured Games': 'games',
+  'Card Games': 'games-card',
+  'Board Games': 'games-board',
+  'Casino Games': 'games-casino',
+  'Word/Trivia': 'games-word-trivia',
+}
+
+const GAMES_SIDEBAR_BOX = {
+  title: 'Related Links:',
+  items: ['Premium games', 'Lottery results'],
+}
+
+const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
+
+function createGamesPage(subtitle, sidebarCurrent, items, stubLabel) {
+  return {
+    layout: 'center',
+    theme: 'games',
+    title: 'Games',
+    subtitle,
+    headerTitle: 'Games',
+    headerSubtitle: subtitle,
+    variant: 'gamesCenter',
+    sidebar: GAMES_SIDEBAR,
+    sidebarCurrent,
+    sidebarTargets: GAMES_SIDEBAR_TARGETS,
+    sidebarBox: GAMES_SIDEBAR_BOX,
+    intro: GAMES_INTRO,
+    gamesItems: items,
+    stubLabel,
+  }
+}
+
 export const DOCK_PAGES = {
+  games: createGamesPage(
+    'Featured games',
+    'Featured Games',
+    [
+      { label: 'Blackjack', image: 'games-blackjack.png' },
+      { label: 'Chess', image: 'games-chess.jpg' },
+      { label: 'Backgammon', image: 'games-backgammon.png' },
+    ],
+    null,
+  ),
+  'games-card': createGamesPage('Card Games', 'Card Games', [], 'More card games coming soon'),
+  'games-board': createGamesPage('Board Games', 'Board Games', [], 'More board games coming soon'),
+  'games-casino': createGamesPage('Casino Games', 'Casino Games', [], 'More casino games coming soon'),
+  'games-word-trivia': createGamesPage('Word/Trivia', 'Word/Trivia', [], 'More word and trivia games coming soon'),
   usingmsntv: {
     layout: 'center',
     theme: 'using',
