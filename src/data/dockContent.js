@@ -41,14 +41,14 @@ const GAMES_INTRO = 'Choose a game from the list below, or choose a category on 
 const GAMES_BOARD_INTRO = 'Choose a board game from the list below'
 const GAMES_CASINO_INTRO = 'Choose a casino game from the list below'
 
-function createGamesPage(subtitle, sidebarCurrent, items, stubLabel, intro = GAMES_INTRO) {
+function createGamesPage(subtitle, sidebarCurrent, items, stubLabel, intro = GAMES_INTRO, headerSubtitle = subtitle) {
   return {
     layout: 'center',
     theme: 'games',
     title: 'Games',
     subtitle,
     headerTitle: 'Games',
-    headerSubtitle: subtitle,
+    headerSubtitle,
     variant: 'gamesCenter',
     sidebar: GAMES_SIDEBAR,
     sidebarCurrent,
@@ -80,6 +80,8 @@ export const DOCK_PAGES = {
       { label: 'War', image: 'games-war.jpg', imageClassName: 'dock-page-games-thumb-image-square' },
     ],
     null,
+    GAMES_INTRO,
+    'Card games',
   ),
   'games-board': createGamesPage(
     'Board Games',
@@ -93,6 +95,7 @@ export const DOCK_PAGES = {
     ],
     null,
     GAMES_BOARD_INTRO,
+    'Board games',
   ),
   'games-casino': createGamesPage(
     'Casino Games',
@@ -104,6 +107,7 @@ export const DOCK_PAGES = {
     ],
     null,
     GAMES_CASINO_INTRO,
+    'Casino games',
   ),
   'games-word-trivia': createGamesPage(
     'Word/Trivia',
