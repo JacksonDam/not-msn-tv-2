@@ -36,6 +36,28 @@ function isAtDockPageBoundary(selected, direction) {
   return false
 }
 
+function isTypingTextField(el) {
+  if (!(el instanceof HTMLElement)) return false
+  if (el.isContentEditable) return true
+  if (el instanceof HTMLTextAreaElement) return true
+  if (!(el instanceof HTMLInputElement)) return false
+
+  const nonTextTypes = new Set([
+    'button',
+    'checkbox',
+    'color',
+    'file',
+    'hidden',
+    'image',
+    'radio',
+    'range',
+    'reset',
+    'submit',
+  ])
+
+  return !nonTextTypes.has((el.type || '').toLowerCase())
+}
+
 export default function App() {
   const [overlayVisible, setOverlayVisible] = useState(true)
   const [overlayGone, setOverlayGone] = useState(false)
@@ -73,6 +95,7 @@ export default function App() {
   const dockPageRef = useRef(null)
   const dockTransitionRef = useRef(null)
   const previousDockPageRef = useRef(null)
+  const dockHistoryRef = useRef([])
 
   const selection = useSelection()
   const audio = useAudio()
@@ -94,11 +117,43 @@ export default function App() {
     timeoutsRef.current.push(setTimeout(fn, ms))
   }, [])
 
-  const beginDockTransition = useCallback((nextPageId) => {
+  const beginDockTransition = useCallback((
+    nextPageId,
+    {
+      pushHistory = false,
+      completeSound = null,
+      immediateSound = null,
+      showContacting = true,
+    } = {},
+  ) => {
     clearTimeouts()
     dockSlidingRef.current = false
     setDockSlidingFromPos(null)
     setInputLocked(true)
+
+    if (pushHistory && openDockPageId !== nextPageId) {
+      dockHistoryRef.current.push(openDockPageId ?? null)
+    }
+
+    if (immediateSound) {
+      audio.play(immediateSound)
+    }
+
+    if (!showContacting) {
+      selection.hideFocusBox()
+      setDockTransitionPhase('blank')
+
+      addTimeout(() => {
+        setOpenDockPageId(nextPageId)
+        setDockTransitionPhase('idle')
+        setInputLocked(false)
+        if (completeSound) {
+          audio.play(completeSound)
+        }
+      }, 500)
+      return
+    }
+
     setDockTransitionPhase('contacting')
 
     addTimeout(() => {
@@ -110,8 +165,11 @@ export default function App() {
       setOpenDockPageId(nextPageId)
       setDockTransitionPhase('idle')
       setInputLocked(false)
+      if (completeSound) {
+        audio.play(completeSound)
+      }
     }, 1000)
-  }, [clearTimeouts, addTimeout, selection])
+  }, [clearTimeouts, addTimeout, selection, openDockPageId, audio])
 
   useEffect(() => {
     const tick = () => {
@@ -129,12 +187,27 @@ export default function App() {
     audio.register('startup', `${BASE}audio/Power_On.mp3`)
     audio.register('connecting', `${BASE}audio/Connecting.mp3`)
     audio.register('disconnect', `${BASE}audio/Disconnect.mp3`)
+    audio.register('back', `${BASE}audio/Back.mp3`)
     audio.register('pageBoundary', `${BASE}audio/Page_Boundary.mp3`)
     audio.register('select', `${BASE}audio/Select.mp3`)
     audio.register('controlFeedback', `${BASE}audio/ControlFeedback.mp3`)
     audio.register('error', `${BASE}audio/Error.mp3`)
     audio.register('homeBrand', `${BASE}audio/Home_brand.mp3`)
   }, [audio])
+
+  const handleBackNavigation = useCallback(() => {
+    if (!openDockPageId || inputLocked || dockTransitionPhase !== 'idle') return false
+
+    const previousPageId = dockHistoryRef.current.length > 0
+      ? dockHistoryRef.current.pop()
+      : null
+
+    beginDockTransition(previousPageId ?? null, {
+      immediateSound: previousPageId ? 'back' : null,
+      showContacting: false,
+    })
+    return true
+  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition])
 
   useEffect(() => {
     if (mainPageRef.current) {
@@ -151,6 +224,7 @@ export default function App() {
 
       const sel = selection.getSelected()
       const isSearchInput = sel instanceof HTMLInputElement && sel.classList.contains('search-input-stub')
+      const isActiveTextField = isTypingTextField(document.activeElement)
 
       if (isSearchInput && sel === document.activeElement && e.code.startsWith('Arrow')) {
         sel.blur()
@@ -174,6 +248,15 @@ export default function App() {
         }
       }
 
+      if (e.key === 'Backspace') {
+        if (isActiveTextField) return
+        e.preventDefault()
+        if (openDockPageId) {
+          handleBackNavigation()
+        }
+        return
+      }
+
       const key = e.code
       if (key === 'Tab') {
         e.preventDefault()
@@ -181,6 +264,7 @@ export default function App() {
       }
       if (key === 'Escape' && openDockPageId) {
         e.preventDefault()
+        dockHistoryRef.current = []
         beginDockTransition(null)
         return
       }
@@ -280,7 +364,7 @@ export default function App() {
     }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
-  }, [selection, audio, inputLocked, openDockPageId, beginDockTransition, dockPos])
+  }, [selection, audio, inputLocked, openDockPageId, beginDockTransition, dockPos, handleBackNavigation])
 
   const fetchHeadlines = useCallback(async () => {
     try {
@@ -320,6 +404,7 @@ export default function App() {
 
   const resetHomePageState = useCallback(() => {
     previousDockPageRef.current = null
+    dockHistoryRef.current = []
     setOpenDockPageId(null)
     setDockPos(0)
     setDockViewStart(0)
@@ -520,11 +605,13 @@ export default function App() {
   const handleOpenDockPage = useCallback((pageId) => {
     if (inputLocked || signOutDialogOpen || dockTransitionPhase !== 'idle') return
     if (!pageId || !DOCK_PAGES[pageId]) return
-    beginDockTransition(pageId)
-  }, [inputLocked, signOutDialogOpen, dockTransitionPhase, beginDockTransition])
+    if (pageId === openDockPageId) return
+    beginDockTransition(pageId, { pushHistory: true })
+  }, [inputLocked, signOutDialogOpen, dockTransitionPhase, beginDockTransition, openDockPageId])
 
   const handleCloseDockPage = useCallback(() => {
     if (inputLocked || dockTransitionPhase !== 'idle') return
+    dockHistoryRef.current = []
     beginDockTransition(null)
   }, [inputLocked, dockTransitionPhase, beginDockTransition])
 
