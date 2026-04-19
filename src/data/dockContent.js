@@ -38,8 +38,10 @@ const GAMES_SIDEBAR_BOX = {
 }
 
 const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
+const GAMES_BOARD_INTRO = 'Choose a board game from the list below'
+const GAMES_CASINO_INTRO = 'Choose a casino game from the list below'
 
-function createGamesPage(subtitle, sidebarCurrent, items, stubLabel) {
+function createGamesPage(subtitle, sidebarCurrent, items, stubLabel, intro = GAMES_INTRO) {
   return {
     layout: 'center',
     theme: 'games',
@@ -52,7 +54,7 @@ function createGamesPage(subtitle, sidebarCurrent, items, stubLabel) {
     sidebarCurrent,
     sidebarTargets: GAMES_SIDEBAR_TARGETS,
     sidebarBox: GAMES_SIDEBAR_BOX,
-    intro: GAMES_INTRO,
+    intro,
     gamesItems: items,
     stubLabel,
   }
@@ -69,10 +71,50 @@ export const DOCK_PAGES = {
     ],
     null,
   ),
-  'games-card': createGamesPage('Card Games', 'Card Games', [], 'More card games coming soon'),
-  'games-board': createGamesPage('Board Games', 'Board Games', [], 'More board games coming soon'),
-  'games-casino': createGamesPage('Casino Games', 'Casino Games', [], 'More casino games coming soon'),
-  'games-word-trivia': createGamesPage('Word/Trivia', 'Word/Trivia', [], 'More word and trivia games coming soon'),
+  'games-card': createGamesPage(
+    'Card Games',
+    'Card Games',
+    [
+      { label: 'Blackjack', image: 'games-blackjack.png' },
+      { label: 'Poker Solitaire', image: 'games-pokersolitaire.png' },
+      { label: 'War', image: 'games-war.jpg', imageClassName: 'dock-page-games-thumb-image-square' },
+    ],
+    null,
+  ),
+  'games-board': createGamesPage(
+    'Board Games',
+    'Board Games',
+    [
+      { label: 'Connect 4', image: 'games-connect4.png' },
+      { label: 'Chess', image: 'games-chess.jpg' },
+      { label: 'Backgammon', image: 'games-backgammon.png' },
+      { label: 'Checkers', image: 'games-checkers.jpg' },
+      { label: 'Taipei', image: 'games-taipei.jpg' },
+    ],
+    null,
+    GAMES_BOARD_INTRO,
+  ),
+  'games-casino': createGamesPage(
+    'Casino Games',
+    'Casino Games',
+    [
+      { label: 'Video Poker', image: 'games-videopoker.jpg' },
+      { label: 'Slot machines', image: 'games-slotmachines.jpeg' },
+      { label: 'Blackjack', image: 'games-blackjack.png' },
+    ],
+    null,
+    GAMES_CASINO_INTRO,
+  ),
+  'games-word-trivia': createGamesPage(
+    'Word/Trivia',
+    'Word/Trivia',
+    [
+      { label: 'Hangman', image: 'games-hangman.png' },
+      { label: 'Word Scram', image: 'games-wordscram.jpg' },
+      { label: 'Trivia', image: 'games-trivia.jpeg' },
+    ],
+    null,
+  ),
   usingmsntv: {
     layout: 'center',
     theme: 'using',

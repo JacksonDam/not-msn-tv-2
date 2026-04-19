@@ -1904,6 +1904,10 @@
         object-fit: cover;
     }
 
+    .dock-page-games-thumb-image-square {
+        object-fit: fill;
+    }
+
     .dock-page-games-thumb {
         border: 1px solid rgba(121, 133, 141, 0.45);
         box-sizing: border-box;

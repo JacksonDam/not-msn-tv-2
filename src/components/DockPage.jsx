@@ -430,7 +430,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                         >
                           {normalized.image ? (
                             <img
-                              className="dock-page-games-thumb-image"
+                              className={`dock-page-games-thumb-image ${normalized.imageClassName ?? ''}`.trim()}
                               src={`${BASE}images/pages/${normalized.image}`}
                               alt=""
                             />
