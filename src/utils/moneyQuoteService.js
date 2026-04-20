@@ -8,7 +8,7 @@ const MONEY_SYMBOL_ALIASES = {
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url)
+  const response = await fetch(`${url}?_=${Date.now()}`, { cache: 'no-store' })
   if (!response.ok) {
     throw new Error(`Request failed: ${response.status}`)
   }

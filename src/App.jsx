@@ -369,7 +369,7 @@ export default function App() {
 
   const fetchHeadlines = useCallback(async () => {
     try {
-      const res = await fetch(`${BASE}data/headlines.json`)
+      const res = await fetch(`${BASE}data/headlines.json?_=${Date.now()}`, { cache: 'no-store' })
       if (res.ok) {
         const data = await res.json()
         if (data.headlines?.length) setHeadlines(data.headlines)
