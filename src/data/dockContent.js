@@ -33,6 +33,11 @@ const GAMES_SIDEBAR_TARGETS = {
   'Word/Trivia': 'games-word-trivia',
 }
 
+const MONEY_SIDEBAR_TARGETS = {
+  'Personal Finance': 'money',
+  'My Stocks': 'money-stocks',
+}
+
 const GAMES_SIDEBAR_BOX = {
   title: 'Related Links:',
   items: ['Premium games', 'Lottery results'],
@@ -77,6 +82,7 @@ function createMoneyPage() {
     variant: 'moneyCenter',
     sidebar: MONEY_SIDEBAR,
     sidebarCurrent: 'Personal Finance',
+    sidebarTargets: MONEY_SIDEBAR_TARGETS,
     sidebarBox: MONEY_SIDEBAR_BOX,
     contentTitle: 'Feature stories from MSN Money',
     message: 'Personal Finance news is temporarily unavailable',
@@ -84,6 +90,25 @@ function createMoneyPage() {
     lookupPrompt: 'Type stock symbol:',
     lookupButtonLabel: 'Get Quote',
   }
+}
+
+function createMoneyStocksPage(mode, overrides = {}) {
+  const page = {
+    layout: 'center',
+    theme: 'money',
+    title: 'Money',
+    subtitle: 'My Stocks',
+    headerTitle: 'Money',
+    headerSubtitle: 'My stocks',
+    sidebar: MONEY_SIDEBAR,
+    sidebarCurrent: 'My Stocks',
+    sidebarTargets: MONEY_SIDEBAR_TARGETS,
+    sidebarBox: MONEY_SIDEBAR_BOX,
+    variant: mode,
+    ...overrides,
+  }
+
+  return page
 }
 
 export const DOCK_PAGES = {
@@ -146,6 +171,24 @@ export const DOCK_PAGES = {
     null,
   ),
   money: createMoneyPage(),
+  'money-stocks': createMoneyStocksPage('moneyStocks', {
+    sidebarRightTarget: 'money-stocks-row-0',
+    contentTitle: 'Stock Quotes',
+    addPageId: 'money-stocks-add',
+    removePageId: 'money-stocks-remove',
+  }),
+  'money-stocks-add': createMoneyStocksPage('moneyStocksAdd', {
+    sidebarRightTarget: 'money-stocks-add-input',
+    contentTitle: 'Add Stock Quotes',
+    instruction: 'To add a stock, type the name or symbol of the company and choose Add Stock.',
+    cancelPageId: 'money-stocks',
+  }),
+  'money-stocks-remove': createMoneyStocksPage('moneyStocksRemove', {
+    sidebarRightTarget: 'money-stocks-remove-row-0',
+    contentTitle: 'Remove Stock Quotes',
+    instruction: 'To delete stocks, check the box next to the name of the company, then choose Remove.',
+    cancelPageId: 'money-stocks',
+  }),
   usingmsntv: {
     layout: 'center',
     theme: 'using',

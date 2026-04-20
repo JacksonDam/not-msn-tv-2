@@ -1,7 +1,18 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { DOCK_PAGES } from '../data/dockContent'
 import animateScrollTop from '../utils/animateScrollTop'
-import { createEmptyMoneyQuote, fetchMoneyQuote, normalizeMoneySymbol } from '../utils/moneyQuoteService'
+import {
+  createEmptyMoneyQuote,
+  fetchMoneyQuote,
+  fetchMoneyQuoteSnapshot,
+  normalizeMoneySymbol,
+} from '../utils/moneyQuoteService'
+import {
+  getMoneyWatchlistMeta,
+  normalizeMoneyWatchlistInput,
+  readMoneyWatchlistCookie,
+  writeMoneyWatchlistCookie,
+} from '../utils/moneyWatchlist'
 
 const BASE = import.meta.env.BASE_URL
 const CNBC_LOGO_URL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/CNBC_logo.svg/330px-CNBC_logo.svg.png'
@@ -85,6 +96,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   const sectionFirstRowsRef = useRef({})
   const moneyLookupInputRef = useRef(null)
   const moneyQuoteInputRef = useRef(null)
+  const moneyWatchlistInputRef = useRef(null)
   const [canScrollUp, setCanScrollUp] = useState(false)
   const [canScrollDown, setCanScrollDown] = useState(false)
   const [moneyQuoteState, setMoneyQuoteState] = useState({
@@ -92,6 +104,9 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
     data: null,
     error: null,
   })
+  const [moneyWatchlistSymbols, setMoneyWatchlistSymbols] = useState(() => readMoneyWatchlistCookie())
+  const [moneyWatchlistQuotes, setMoneyWatchlistQuotes] = useState({})
+  const [moneyWatchlistSelection, setMoneyWatchlistSelection] = useState({})
 
   if (!page) return null
   sectionFirstRowsRef.current = {}
@@ -199,6 +214,70 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
     if (!normalized) return
     handleModuleNavigate(`money-quote:${encodeURIComponent(normalized.inputSymbol)}`)
   }, [handleModuleNavigate])
+
+  const isMoneyStocksVariant = page.variant === 'moneyStocks'
+    || page.variant === 'moneyStocksAdd'
+    || page.variant === 'moneyStocksRemove'
+
+  useEffect(() => {
+    if (!isMoneyStocksVariant) return
+    const stored = readMoneyWatchlistCookie()
+    setMoneyWatchlistSymbols(stored)
+    setMoneyWatchlistSelection((current) => (
+      Object.fromEntries(stored.map((symbol) => [symbol, current[symbol] ?? false]))
+    ))
+  }, [isMoneyStocksVariant, pageId])
+
+  useEffect(() => {
+    writeMoneyWatchlistCookie(moneyWatchlistSymbols)
+  }, [moneyWatchlistSymbols])
+
+  useEffect(() => {
+    if (!isMoneyStocksVariant) return undefined
+
+    let cancelled = false
+
+    Promise.all(
+      moneyWatchlistSymbols.map(async (symbol) => {
+        const quote = await fetchMoneyQuoteSnapshot(symbol)
+        return [symbol, quote ?? createEmptyMoneyQuote(symbol)]
+      }),
+    ).then((entries) => {
+      if (cancelled) return
+      setMoneyWatchlistQuotes(Object.fromEntries(entries))
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [isMoneyStocksVariant, moneyWatchlistSymbols])
+
+  const handleMoneyWatchlistAdd = useCallback(() => {
+    const symbol = normalizeMoneyWatchlistInput(moneyWatchlistInputRef.current?.value)
+    if (!symbol) return
+
+    setMoneyWatchlistSymbols((current) => (
+      current.includes(symbol) ? current : [...current, symbol]
+    ))
+    setMoneyWatchlistSelection((current) => ({ ...current, [symbol]: false }))
+    if (moneyWatchlistInputRef.current) {
+      moneyWatchlistInputRef.current.value = ''
+    }
+    handleModuleNavigate('money-stocks')
+  }, [handleModuleNavigate])
+
+  const toggleMoneyWatchlistSelection = useCallback((symbol) => {
+    setMoneyWatchlistSelection((current) => ({
+      ...current,
+      [symbol]: !current[symbol],
+    }))
+  }, [])
+
+  const handleMoneyWatchlistRemove = useCallback(() => {
+    setMoneyWatchlistSymbols((current) => current.filter((symbol) => !moneyWatchlistSelection[symbol]))
+    setMoneyWatchlistSelection({})
+    handleModuleNavigate('money-stocks')
+  }, [handleModuleNavigate, moneyWatchlistSelection])
 
   useEffect(() => {
     if (page.layout !== 'moneySite' || !page.symbol) return undefined
@@ -529,11 +608,17 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                   </button>
                 </div>
 
-                <div className="dock-page-money-site-links-row">
-                  <button type="button" className="dock-page-money-site-link selectable" data-select-x="0" data-select-height={nextRow()} data-select-layer="0" onClick={noop}>Find Symbol</button>
-                  <button type="button" className="dock-page-money-site-link selectable" data-select-x="0" data-select-height={nextRow()} data-select-layer="0" onClick={noop}>Add to MSN List</button>
-                  <button type="button" className="dock-page-money-site-link selectable" data-select-x="0" data-select-height={nextRow()} data-select-layer="0" onClick={noop}>Print Report</button>
-                </div>
+                {(() => {
+                  const linksRow = nextRow()
+
+                  return (
+                    <div className="dock-page-money-site-links-row">
+                      <button type="button" className="dock-page-money-site-link selectable" data-select-x="0" data-select-height={linksRow} data-select-layer="0" onClick={noop}>Find Symbol</button>
+                      <button type="button" className="dock-page-money-site-link selectable" data-select-x="1" data-select-height={linksRow} data-select-layer="0" onClick={noop}>Add to MSN List</button>
+                      <button type="button" className="dock-page-money-site-link selectable" data-select-x="2" data-select-height={linksRow} data-select-layer="0" onClick={noop}>Print Report</button>
+                    </div>
+                  )
+                })()}
 
                 <div className="dock-page-money-site-divider"></div>
 
@@ -625,6 +710,14 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   const tipDetailRightTarget = page.variant === 'usingTipDetail'
     ? (tipInlineLinkTarget ?? page.sidebarRightTarget ?? page.actions?.[0]?.selectId ?? 'tip-detail-other')
     : page.sidebarRightTarget
+  const moneyStocksRightTarget = page.variant === 'moneyStocks'
+    ? (moneyWatchlistSymbols.length ? 'money-stocks-row-0' : 'money-stocks-add')
+    : page.variant === 'moneyStocksAdd'
+      ? 'money-stocks-add-input'
+      : page.variant === 'moneyStocksRemove'
+        ? (moneyWatchlistSymbols.length ? 'money-stocks-remove-row-0' : 'money-stocks-remove-cancel')
+        : null
+  const sidebarRightTarget = tipDetailRightTarget ?? moneyStocksRightTarget
 
   const renderSidebarItem = (item) => {
     const targetPageId = page.sidebarTargets?.[item]
@@ -643,7 +736,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
         row={nextRow()}
         x={-1}
         className="dock-page-sidebar-row"
-        {...(tipDetailRightTarget ? { 'data-select-right': tipDetailRightTarget } : {})}
+        {...(sidebarRightTarget ? { 'data-select-right': sidebarRightTarget } : {})}
         onClick={() => handleModuleNavigate(targetPageId)}
       >
         <span className="dock-page-row-label">{item}</span>
@@ -690,7 +783,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -728,13 +821,13 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
 
                     return (
                       <SelectableRow
-                        key={normalized.label}
-                        row={nextRow()}
-                        x={-1}
-                        className="dock-page-sidebar-card-row"
-                        {...(tipDetailRightTarget ? { 'data-select-right': tipDetailRightTarget } : {})}
-                        onClick={() => handleModuleNavigate(normalized.targetPage)}
-                      >
+                      key={normalized.label}
+                      row={nextRow()}
+                      x={-1}
+                      className="dock-page-sidebar-card-row"
+                        {...(sidebarRightTarget ? { 'data-select-right': sidebarRightTarget } : {})}
+                      onClick={() => handleModuleNavigate(normalized.targetPage)}
+                    >
                         <span className="dock-page-row-label">{normalized.label}</span>
                       </SelectableRow>
                     )
@@ -835,6 +928,225 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                   )
                 })()}
               </div>
+            ) : page.variant === 'moneyStocks' ? (
+              (() => {
+                const formatNumber = (value) => (
+                  typeof value === 'number'
+                    ? value.toLocaleString(undefined, {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })
+                    : '0.00'
+                )
+
+                const formatSigned = (value, suffix = '') => {
+                  if (typeof value !== 'number') return `0.00${suffix}`
+                  const absolute = Math.abs(value).toLocaleString(undefined, {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })
+                  const sign = value > 0 ? '+' : value < 0 ? '-' : ''
+                  return `${sign}${absolute}${suffix}`
+                }
+
+                const stockRows = moneyWatchlistSymbols.map((symbol, index) => {
+                  const quote = moneyWatchlistQuotes[symbol] ?? createEmptyMoneyQuote(symbol)
+                  const meta = getMoneyWatchlistMeta(symbol, quote)
+                  const row = nextRow()
+
+                  return {
+                    symbol,
+                    index,
+                    quote,
+                    meta,
+                    row,
+                  }
+                })
+                const actionRow = nextRow()
+
+                return (
+                  <div className="dock-page-money-stocks">
+                    <div className="dock-page-content-title dock-page-money-stocks-title">{page.contentTitle}</div>
+
+                    <div className="dock-page-money-stocks-table">
+                      <div className="dock-page-money-stocks-header">
+                        <div className="dock-page-money-stocks-header-cell dock-page-money-stocks-header-name">Name</div>
+                        <div className="dock-page-money-stocks-header-cell">Last</div>
+                        <div className="dock-page-money-stocks-header-cell">Change</div>
+                        <div className="dock-page-money-stocks-header-cell">%Chg</div>
+                      </div>
+
+                      {stockRows.map(({ symbol, index, quote, meta, row }) => (
+                        <div key={symbol}>
+                          <div className="dock-page-money-stocks-row">
+                            <SelectableRow
+                              row={row}
+                              x={0}
+                              className="dock-page-money-stocks-name-button"
+                              data-select-id={`money-stocks-row-${index}`}
+                              onClick={() => handleMoneyQuoteNavigate(meta.quotePageSymbol)}
+                            >
+                              <span className="dock-page-row-label">{meta.shortLabel}</span>
+                            </SelectableRow>
+                            <div className="dock-page-money-stocks-value">{formatNumber(quote.price)}</div>
+                            <div className={`dock-page-money-stocks-value ${quote.change >= 0 ? 'positive' : 'negative'}`}>{formatSigned(quote.change)}</div>
+                            <div className={`dock-page-money-stocks-value ${quote.changePercent >= 0 ? 'positive' : 'negative'}`}>{formatSigned(quote.changePercent, '%')}</div>
+                          </div>
+                          <div className="dock-page-divider"></div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="dock-page-money-stocks-note">
+                      Quotes supplied by MSN Money
+                      <br />
+                      and are delayed at least 20 minutes.
+                    </div>
+
+                    <div className="dock-page-money-stocks-actions">
+                      <SelectableRow
+                        row={actionRow}
+                        x={0}
+                        className="dock-page-money-stocks-action dock-page-money-stocks-action-add"
+                        data-select-id="money-stocks-add"
+                        onClick={() => handleModuleNavigate(page.addPageId)}
+                      >
+                        <span className="dock-page-row-label">Add Stock</span>
+                      </SelectableRow>
+                      <SelectableRow
+                        row={actionRow}
+                        x={1}
+                        className="dock-page-money-stocks-action dock-page-money-stocks-action-remove"
+                        data-select-id="money-stocks-remove"
+                        onClick={() => handleModuleNavigate(page.removePageId)}
+                      >
+                        <span className="dock-page-row-label">Remove Stocks</span>
+                      </SelectableRow>
+                    </div>
+                  </div>
+                )
+              })()
+            ) : page.variant === 'moneyStocksAdd' ? (
+              (() => {
+                const inputRow = nextRow()
+                const actionRow = nextRow()
+
+                return (
+                  <div className="dock-page-money-stocks dock-page-money-stocks-form">
+                    <div className="dock-page-content-title dock-page-money-stocks-title">{page.contentTitle}</div>
+                    <div className="dock-page-money-stocks-instruction">{page.instruction}</div>
+
+                    <input
+                      ref={moneyWatchlistInputRef}
+                      className="dock-page-money-stocks-input search-input-stub selectable"
+                      type="text"
+                      aria-label="Add stock"
+                      autoComplete="off"
+                      spellCheck={false}
+                      data-select-x="0"
+                      data-select-height={inputRow}
+                      data-select-layer="0"
+                      data-select-id="money-stocks-add-input"
+                    />
+
+                    <div className="dock-page-money-stocks-actions dock-page-money-stocks-form-actions">
+                      <SelectableRow
+                        row={actionRow}
+                        x={0}
+                        className="dock-page-money-stocks-action dock-page-money-stocks-action-cancel"
+                        data-select-id="money-stocks-add-cancel"
+                        onClick={() => handleModuleNavigate(page.cancelPageId)}
+                      >
+                        <span className="dock-page-row-label">Cancel</span>
+                      </SelectableRow>
+                      <SelectableRow
+                        row={actionRow}
+                        x={1}
+                        className="dock-page-money-stocks-action dock-page-money-stocks-action-add"
+                        data-select-id="money-stocks-add-confirm"
+                        onClick={handleMoneyWatchlistAdd}
+                      >
+                        <span className="dock-page-row-label">Add Stock</span>
+                      </SelectableRow>
+                    </div>
+                  </div>
+                )
+              })()
+            ) : page.variant === 'moneyStocksRemove' ? (
+              (() => {
+                const removeRows = moneyWatchlistSymbols.map((symbol, index) => {
+                  const quote = moneyWatchlistQuotes[symbol] ?? createEmptyMoneyQuote(symbol)
+                  const meta = getMoneyWatchlistMeta(symbol, quote)
+                  const checked = Boolean(moneyWatchlistSelection[symbol])
+                  const row = nextRow()
+
+                  return {
+                    symbol,
+                    index,
+                    meta,
+                    checked,
+                    row,
+                  }
+                })
+                const actionRow = nextRow()
+
+                return (
+                  <div className="dock-page-money-stocks dock-page-money-stocks-remove">
+                    <div className="dock-page-content-title dock-page-money-stocks-title">{page.contentTitle}</div>
+                    <div className="dock-page-money-stocks-instruction">
+                      To delete stocks, check the box next to the name of the company, then choose <b>Remove</b>.
+                    </div>
+
+                    <div className="dock-page-money-stocks-remove-list">
+                      <div className="dock-page-divider"></div>
+                      {removeRows.map(({ symbol, index, meta, checked, row }) => (
+                        <div key={symbol}>
+                          <div className={`dock-page-money-stocks-remove-row ${checked ? 'checked' : ''}`}>
+                            <SelectableRow
+                              row={row}
+                              x={0}
+                              className="dock-page-money-stocks-remove-check custom-checkbox"
+                              data-select-id={`money-stocks-remove-row-${index}`}
+                              onClick={() => toggleMoneyWatchlistSelection(symbol)}
+                            >
+                              <img
+                                className="dock-page-money-stocks-checkbox-image"
+                                src={checked ? `${BASE}images/checked.png` : `${BASE}images/unchecked.png`}
+                                alt=""
+                              />
+                            </SelectableRow>
+                            <div className="dock-page-money-stocks-remove-short">{meta.shortLabel}</div>
+                            <div className="dock-page-money-stocks-remove-full">{meta.fullLabel}</div>
+                          </div>
+                          {index < moneyWatchlistSymbols.length - 1 && <div className="dock-page-divider"></div>}
+                        </div>
+                      ))}
+                      <div className="dock-page-divider"></div>
+                    </div>
+
+                    <div className="dock-page-money-stocks-actions dock-page-money-stocks-remove-actions">
+                      <SelectableRow
+                        row={actionRow}
+                        x={0}
+                        className="dock-page-money-stocks-action dock-page-money-stocks-action-cancel"
+                        data-select-id="money-stocks-remove-cancel"
+                        onClick={() => handleModuleNavigate(page.cancelPageId)}
+                      >
+                        <span className="dock-page-row-label">Cancel</span>
+                      </SelectableRow>
+                      <SelectableRow
+                        row={actionRow}
+                        x={1}
+                        className="dock-page-money-stocks-action dock-page-money-stocks-action-confirm"
+                        data-select-id="money-stocks-remove-confirm"
+                        onClick={handleMoneyWatchlistRemove}
+                      >
+                        <span className="dock-page-row-label">Remove</span>
+                      </SelectableRow>
+                    </div>
+                  </div>
+                )
+              })()
             ) : page.variant === 'usingMain' ? (
               <div className="dock-page-using-main">
                 {page.modules.map((module, index) => {

@@ -19,6 +19,16 @@ const MONEY_SYMBOL_ALIASES = {
   '$INDU': { requestSymbol: '^DJI', displaySymbol: '$INDU' },
   '^DJI': { requestSymbol: '^DJI', displaySymbol: '$INDU' },
   DJI: { requestSymbol: '^DJI', displaySymbol: '$INDU' },
+  NASDAQ: { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  '$NASDAQ': { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  IXIC: { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  '^IXIC': { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  SP500: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  'S&P': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  '$S&P': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  GSPC: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  '^GSPC': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  SPX: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
 }
 
 function normalizeMoneySymbol(rawSymbol) {

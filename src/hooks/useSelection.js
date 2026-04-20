@@ -331,7 +331,7 @@ export default function useSelection() {
       if (!neighbor) return false
       s.height = neighbor.height
       s.posInHeight = neighbor.posInHeight
-    } else if ((direction === 'up' || direction === 'down') && current?.closest('.dock-page-shell')) {
+    } else if ((direction === 'up' || direction === 'down') && current?.closest('.dock-page-shell, .dock-page-money-site-shell')) {
       const neighbor = findVerticalNeighbor(direction)
       if (!neighbor) return false
       s.height = neighbor.height

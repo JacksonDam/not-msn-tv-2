@@ -5,6 +5,16 @@ const MONEY_SYMBOL_ALIASES = {
   '$INDU': { requestSymbol: '^DJI', displaySymbol: '$INDU' },
   '^DJI': { requestSymbol: '^DJI', displaySymbol: '$INDU' },
   DJI: { requestSymbol: '^DJI', displaySymbol: '$INDU' },
+  NASDAQ: { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  '$NASDAQ': { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  IXIC: { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  '^IXIC': { requestSymbol: '^IXIC', displaySymbol: '$NASDAQ' },
+  SP500: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  'S&P': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  '$S&P': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  GSPC: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  '^GSPC': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
+  SPX: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
 }
 
 async function fetchJson(url) {
@@ -15,13 +25,17 @@ async function fetchJson(url) {
   return response.json()
 }
 
-async function fetchSnapshotQuote(rawSymbol) {
+export async function fetchMoneyQuoteSnapshot(rawSymbol) {
   const snapshotId = moneyQuoteSnapshotId(rawSymbol)
   if (!snapshotId) {
     return null
   }
 
-  return fetchJson(`${BASE}data/money/quotes/${snapshotId}.json`)
+  try {
+    return await fetchJson(`${BASE}data/money/quotes/${snapshotId}.json`)
+  } catch {
+    return null
+  }
 }
 
 export function normalizeMoneySymbol(rawSymbol) {
@@ -102,7 +116,7 @@ export async function fetchMoneyQuote(rawSymbol) {
   }
 
   try {
-    const snapshot = await fetchSnapshotQuote(symbol.inputSymbol)
+    const snapshot = await fetchMoneyQuoteSnapshot(symbol.inputSymbol)
     if (snapshot) {
       return { ...snapshot, symbol }
     }

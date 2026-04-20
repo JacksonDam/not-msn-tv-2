@@ -97,6 +97,9 @@ export default function App() {
   const dockTransitionRef = useRef(null)
   const previousDockPageRef = useRef(null)
   const dockHistoryRef = useRef([])
+  const chillAudioRef = useRef(null)
+  const shiftHoldTimeoutRef = useRef(null)
+  const shiftHeldRef = useRef(false)
 
   const selection = useSelection()
   const audio = useAudio()
@@ -195,6 +198,64 @@ export default function App() {
     audio.register('error', `${BASE}audio/Error.mp3`)
     audio.register('homeBrand', `${BASE}audio/Home_brand.mp3`)
   }, [audio])
+
+  useEffect(() => {
+    const chillAudio = new Audio(`${BASE}audio/chill-jingle.mp3`)
+    chillAudio.loop = true
+    chillAudioRef.current = chillAudio
+
+    const clearShiftHold = () => {
+      if (shiftHoldTimeoutRef.current) {
+        clearTimeout(shiftHoldTimeoutRef.current)
+        shiftHoldTimeoutRef.current = null
+      }
+    }
+
+    const toggleChillAudio = () => {
+      const audioEl = chillAudioRef.current
+      if (!audioEl) return
+
+      if (!audioEl.paused) {
+        audioEl.pause()
+        audioEl.currentTime = 0
+        return
+      }
+
+      audioEl.currentTime = 0
+      void audioEl.play().catch(() => {})
+    }
+
+    const onKeyDown = (e) => {
+      if (e.key !== 'Shift') return
+      if (shiftHeldRef.current) return
+
+      shiftHeldRef.current = true
+      clearShiftHold()
+      shiftHoldTimeoutRef.current = setTimeout(() => {
+        shiftHoldTimeoutRef.current = null
+        toggleChillAudio()
+      }, 2000)
+    }
+
+    const onKeyUp = (e) => {
+      if (e.key !== 'Shift') return
+      shiftHeldRef.current = false
+      clearShiftHold()
+    }
+
+    window.addEventListener('keydown', onKeyDown, true)
+    window.addEventListener('keyup', onKeyUp, true)
+
+    return () => {
+      window.removeEventListener('keydown', onKeyDown, true)
+      window.removeEventListener('keyup', onKeyUp, true)
+      clearShiftHold()
+      shiftHeldRef.current = false
+      chillAudio.pause()
+      chillAudio.currentTime = 0
+      chillAudioRef.current = null
+    }
+  }, [])
 
   const handleBackNavigation = useCallback(() => {
     if (!openDockPageId || inputLocked || dockTransitionPhase !== 'idle') return false
