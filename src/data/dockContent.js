@@ -23,6 +23,7 @@ export const DOCK_ITEMS = [
 ]
 
 const GAMES_SIDEBAR = ['Featured Games', 'Card Games', 'Board Games', 'Casino Games', 'Word/Trivia']
+const MONEY_SIDEBAR = ['Personal Finance', 'My Stocks', 'Business News', 'Money Experts']
 
 const GAMES_SIDEBAR_TARGETS = {
   'Featured Games': 'games',
@@ -35,6 +36,11 @@ const GAMES_SIDEBAR_TARGETS = {
 const GAMES_SIDEBAR_BOX = {
   title: 'Related Links:',
   items: ['Premium games', 'Lottery results'],
+}
+
+const MONEY_SIDEBAR_BOX = {
+  title: 'Related Links:',
+  items: ['Investing', 'Banking', 'Planning', 'Taxes'],
 }
 
 const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
@@ -57,6 +63,26 @@ function createGamesPage(subtitle, sidebarCurrent, items, stubLabel, intro = GAM
     intro,
     gamesItems: items,
     stubLabel,
+  }
+}
+
+function createMoneyPage() {
+  return {
+    layout: 'center',
+    theme: 'money',
+    title: 'Money',
+    subtitle: 'Personal Finance',
+    headerTitle: 'Money',
+    headerSubtitle: 'Personal finance',
+    variant: 'moneyCenter',
+    sidebar: MONEY_SIDEBAR,
+    sidebarCurrent: 'Personal Finance',
+    sidebarBox: MONEY_SIDEBAR_BOX,
+    contentTitle: 'Feature stories from MSN Money',
+    message: 'Personal Finance news is temporarily unavailable',
+    lookupTitle: 'Quick stock lookup',
+    lookupPrompt: 'Type stock symbol:',
+    lookupButtonLabel: 'Get Quote',
   }
 }
 
@@ -119,6 +145,7 @@ export const DOCK_PAGES = {
     ],
     null,
   ),
+  money: createMoneyPage(),
   usingmsntv: {
     layout: 'center',
     theme: 'using',

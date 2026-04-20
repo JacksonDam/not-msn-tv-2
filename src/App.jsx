@@ -7,6 +7,7 @@ import SelectionFrame from './components/SelectionFrame'
 import { DOCK_PAGES } from './data/dockContent'
 
 const BASE = import.meta.env.BASE_URL
+const isMoneyQuotePageId = (pageId) => typeof pageId === 'string' && pageId.startsWith('money-quote:')
 
 function isAtDockPageBoundary(selected, direction) {
   if (!(selected instanceof Element)) return false
@@ -368,7 +369,7 @@ export default function App() {
 
   const fetchHeadlines = useCallback(async () => {
     try {
-      const res = await fetch('/api/news')
+      const res = await fetch(`${BASE}data/headlines.json`)
       if (res.ok) {
         const data = await res.json()
         if (data.headlines?.length) setHeadlines(data.headlines)
@@ -379,6 +380,7 @@ export default function App() {
   }, [])
 
   const handleStart = useCallback(() => {
+    document.documentElement.requestFullscreen?.().catch(() => {})
     audio.play('select')
     setStartBtnFading(true)
     setTimeout(() => {
@@ -604,7 +606,7 @@ export default function App() {
 
   const handleOpenDockPage = useCallback((pageId) => {
     if (inputLocked || signOutDialogOpen || dockTransitionPhase !== 'idle') return
-    if (!pageId || !DOCK_PAGES[pageId]) return
+    if (!pageId || (!DOCK_PAGES[pageId] && !isMoneyQuotePageId(pageId))) return
     if (pageId === openDockPageId) return
     beginDockTransition(pageId, { pushHistory: true })
   }, [inputLocked, signOutDialogOpen, dockTransitionPhase, beginDockTransition, openDockPageId])

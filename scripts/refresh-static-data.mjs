@@ -1,0 +1,234 @@
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import Parser from 'rss-parser'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const ROOT = path.resolve(__dirname, '..')
+const PUBLIC_DATA_DIR = path.join(ROOT, 'public', 'data')
+const HEADLINES_PATH = path.join(PUBLIC_DATA_DIR, 'headlines.json')
+const MONEY_QUOTES_DIR = path.join(PUBLIC_DATA_DIR, 'money', 'quotes')
+const DEFAULT_SYMBOLS_PATH = path.join(__dirname, 'default-symbols.txt')
+const DEFAULT_SYMBOLS = (await fs.readFile(DEFAULT_SYMBOLS_PATH, 'utf8'))
+  .split('\n')
+  .map((s) => s.trim())
+  .filter(Boolean)
+
+const MONEY_SYMBOL_ALIASES = {
+  INDU: { requestSymbol: '^DJI', displaySymbol: '$INDU' },
+  '$INDU': { requestSymbol: '^DJI', displaySymbol: '$INDU' },
+  '^DJI': { requestSymbol: '^DJI', displaySymbol: '$INDU' },
+  DJI: { requestSymbol: '^DJI', displaySymbol: '$INDU' },
+}
+
+function normalizeMoneySymbol(rawSymbol) {
+  const normalized = String(rawSymbol ?? '').trim().toUpperCase()
+  if (!normalized) return null
+
+  const alias = MONEY_SYMBOL_ALIASES[normalized]
+  if (alias) {
+    return {
+      inputSymbol: normalized,
+      requestSymbol: alias.requestSymbol,
+      displaySymbol: alias.displaySymbol,
+    }
+  }
+
+  return {
+    inputSymbol: normalized,
+    requestSymbol: normalized,
+    displaySymbol: normalized.startsWith('$') ? normalized : `$${normalized}`,
+  }
+}
+
+function moneyQuoteSnapshotId(rawSymbol) {
+  const symbol = normalizeMoneySymbol(rawSymbol)
+  if (!symbol) return null
+
+  const snapshotId = symbol.inputSymbol
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
+  return snapshotId || 'quote'
+}
+
+function createEmptyMoneyQuote(rawSymbol) {
+  const symbol = normalizeMoneySymbol(rawSymbol)
+
+  return {
+    symbol,
+    name: '',
+    price: 0,
+    previousClose: 0,
+    dayHigh: 0,
+    dayLow: 0,
+    change: 0,
+    changePercent: 0,
+    currency: 'USD',
+    exchangeName: '',
+    marketState: '',
+    series: [],
+    news: null,
+    generatedAt: new Date().toISOString(),
+  }
+}
+
+function lastNonNull(values = []) {
+  for (let index = values.length - 1; index >= 0; index -= 1) {
+    if (values[index] != null) return values[index]
+  }
+  return null
+}
+
+function minNonNull(values = []) {
+  const filtered = values.filter((value) => value != null)
+  return filtered.length ? Math.min(...filtered) : null
+}
+
+function maxNonNull(values = []) {
+  const filtered = values.filter((value) => value != null)
+  return filtered.length ? Math.max(...filtered) : null
+}
+
+function shortenHeadline(text, maxLength = 39) {
+  const normalized = String(text ?? '').replace(/\s+/g, ' ').trim()
+  if (normalized.length <= maxLength) return normalized
+  return `${normalized.slice(0, maxLength - 3).trimEnd()}...`
+}
+
+async function fetchJson(url) {
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0',
+      Accept: 'application/json,text/plain,*/*',
+    },
+  })
+
+  if (!response.ok) {
+    throw new Error(`Request failed: ${response.status}`)
+  }
+
+  return response.json()
+}
+
+async function fetchMoneyQuoteSnapshot(rawSymbol) {
+  const symbol = normalizeMoneySymbol(rawSymbol)
+  if (!symbol) {
+    throw new Error('No symbol provided')
+  }
+
+  const chartUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol.requestSymbol)}?interval=5m&range=1d&includePrePost=false&events=div%2Csplits`
+  const searchUrl = `https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(symbol.requestSymbol)}&quotesCount=1&newsCount=3`
+
+  const [chartData, searchData] = await Promise.all([
+    fetchJson(chartUrl),
+    fetchJson(searchUrl).catch(() => null),
+  ])
+
+  const result = chartData?.chart?.result?.[0]
+  if (!result) {
+    throw new Error('Quote data unavailable')
+  }
+
+  const meta = result.meta ?? {}
+  const quote = result.indicators?.quote?.[0] ?? {}
+  const closes = quote.close ?? []
+  const highs = quote.high ?? []
+  const lows = quote.low ?? []
+  const timestamps = result.timestamp ?? []
+  const marketPrice = meta.regularMarketPrice ?? lastNonNull(closes) ?? meta.chartPreviousClose ?? meta.previousClose
+  const previousClose = meta.previousClose ?? meta.chartPreviousClose ?? marketPrice
+  const change = marketPrice != null && previousClose != null ? marketPrice - previousClose : null
+  const changePercent = change != null && previousClose ? (change / previousClose) * 100 : null
+  const series = timestamps
+    .map((timestamp, index) => ({
+      timestamp,
+      close: closes[index],
+    }))
+    .filter((point) => point.close != null)
+
+  const newsItem = searchData?.news?.[0] ?? null
+  const longName = meta.longName ?? meta.shortName ?? symbol.displaySymbol
+
+  return {
+    symbol,
+    name: longName.toUpperCase(),
+    price: marketPrice ?? 0,
+    previousClose: previousClose ?? 0,
+    dayHigh: meta.regularMarketDayHigh ?? maxNonNull(highs) ?? 0,
+    dayLow: meta.regularMarketDayLow ?? minNonNull(lows) ?? 0,
+    change: change ?? 0,
+    changePercent: changePercent ?? 0,
+    currency: meta.currency ?? 'USD',
+    exchangeName: meta.exchangeName ?? '',
+    marketState: meta.marketState ?? '',
+    series,
+    news: newsItem
+      ? {
+          title: newsItem.title,
+          publisher: newsItem.publisher,
+          publishedAt: newsItem.providerPublishTime
+            ? new Date(newsItem.providerPublishTime * 1000).toISOString()
+            : null,
+        }
+      : null,
+    generatedAt: new Date().toISOString(),
+  }
+}
+
+async function writeJson(filePath, value) {
+  await fs.mkdir(path.dirname(filePath), { recursive: true })
+  await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8')
+}
+
+async function refreshHeadlines() {
+  const parser = new Parser()
+
+  try {
+    const feed = await parser.parseURL('https://feeds.nbcnews.com/feeds/worldnews')
+    const headlines = (feed.items ?? [])
+      .slice(0, 3)
+      .map((item) => shortenHeadline(item.title))
+
+    await writeJson(HEADLINES_PATH, {
+      headlines: headlines.length ? headlines : ['Headline 1', 'Headline 2', 'Headline 3'],
+      generatedAt: new Date().toISOString(),
+    })
+  } catch (error) {
+    console.warn('Failed to refresh headlines:', error.message)
+    await writeJson(HEADLINES_PATH, {
+      headlines: ['Headline 1', 'Headline 2', 'Headline 3'],
+      generatedAt: new Date().toISOString(),
+    })
+  }
+}
+
+async function refreshMoneyQuotes() {
+  const symbols = (process.env.MONEY_SNAPSHOT_SYMBOLS || DEFAULT_SYMBOLS.join(','))
+    .split(',')
+    .map((symbol) => symbol.trim())
+    .filter(Boolean)
+
+  await fs.mkdir(MONEY_QUOTES_DIR, { recursive: true })
+
+  for (const rawSymbol of symbols) {
+    const snapshotId = moneyQuoteSnapshotId(rawSymbol)
+    if (!snapshotId) continue
+
+    try {
+      const snapshot = await fetchMoneyQuoteSnapshot(rawSymbol)
+      await writeJson(path.join(MONEY_QUOTES_DIR, `${snapshotId}.json`), snapshot)
+      console.log(`Updated money snapshot for ${rawSymbol}`)
+    } catch (error) {
+      console.warn(`Failed to refresh ${rawSymbol}: ${error.message}`)
+      await writeJson(
+        path.join(MONEY_QUOTES_DIR, `${snapshotId}.json`),
+        createEmptyMoneyQuote(rawSymbol),
+      )
+    }
+  }
+}
+
+await refreshHeadlines()
+await refreshMoneyQuotes()

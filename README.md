@@ -6,13 +6,11 @@ Try it out:
 <br/>
 
 To run locally:
-
-Do this step only if you want real news headlines (shortened from NBC RSS):
-```
-npm run server (if you have an OPENAI_API_KEY for news headline shortening, I will probably rework this to use a local model)
-```
-
-then:
 ```
 npm run dev
+```
+
+To refresh the static headline and Money snapshot files locally:
+```
+npm run refresh:data
 ```

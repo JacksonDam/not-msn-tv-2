@@ -1107,7 +1107,21 @@
     }
 
     .theme-money {
-        --dock-header-bg: linear-gradient(180deg, #4f8e52 0%, #2f632f 100%);
+        --dock-header-bg: linear-gradient(90deg,
+                rgb(37 147 76) 0%,
+                rgb(49 155 83) 7.1%,
+                rgb(64 164 91) 14.3%,
+                rgb(81 174 100) 21.4%,
+                rgb(99 184 110) 28.6%,
+                rgb(115 193 118) 35.7%,
+                rgb(128 200 124) 42.9%,
+                rgb(134 203 128) 50%,
+                rgb(128 200 124) 57.1%,
+                rgb(115 193 118) 64.3%,
+                rgb(99 184 110) 75.1%,
+                rgb(81 174 100) 85.9%,
+                rgb(49 155 83) 92.9%,
+                rgb(37 147 76) 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #deefda 0%, #cadfbe 100%);
         --dock-sidebar-border: #94b183;
         --dock-sidebar-card-bg: #e2efdd;
@@ -1570,7 +1584,7 @@
     }
 
     .dock-page-sidebar-row {
-        min-height: 64px;
+        min-height: 5.93vh;
         padding: 0 1.5vh 0 calc(1.5vh + 5px);
         background: transparent;
         border: none;
@@ -1630,7 +1644,15 @@
         margin-top: 13.8vh;
     }
 
+    .dock-page-shell-money .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
     .dock-page-shell-games {
+        --dock-header-height: 11.55vh;
+    }
+
+    .dock-page-shell-money {
         --dock-header-height: 11.55vh;
     }
 
@@ -1849,10 +1871,549 @@
         color: #1f3f7f;
     }
 
+    .dock-page-shell-money .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
     .dock-page-games {
         width: 92.7%;
         max-width: 92.7%;
         min-width: 0;
+    }
+
+    .dock-page-money {
+        width: 92.7%;
+        max-width: 92.7%;
+        min-width: 0;
+    }
+
+    .dock-page-money-title {
+        margin-top: 2.7vh;
+        margin-bottom: 2vh;
+        font-family: "Segoe TV";
+        font-size: 4.12vh;
+    }
+
+    .dock-page-money > .dock-page-money-title:first-child {
+        margin-top: 1.3vh;
+    }
+
+    .dock-page-money-message {
+        max-width: 76vh;
+        color: #1d1d1d;
+        font-size: 4.2vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+        margin-bottom: 2.35vh;
+    }
+
+    .dock-page-money .dock-page-divider {
+        margin: 0 0 2.1vh;
+        width: calc(100% - 1vh);
+    }
+
+    .dock-page-money-lookup-row {
+        display: flex;
+        align-items: center;
+        gap: 2.2vh;
+        width: 100%;
+        margin-top: 0.2vh;
+    }
+
+    .dock-page-money-prompt {
+        color: #1d1d1d;
+        font-size: 4.05vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .dock-page-money-input.search-input-stub {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 15.2vh;
+        height: 5.08vh;
+        background: #2d3059 !important;
+        border-top: #55567a 0.35vh solid;
+        border-right: #a8b4d4 0.35vh solid;
+        border-bottom: #a8b4d4 0.35vh solid;
+        border-left: #55567a 0.35vh solid;
+        padding: 0 1.2vh;
+        color: #ffffff;
+        font-size: 3.7vh !important;
+        font-family: "Segoe TV";
+        box-sizing: border-box;
+    }
+
+    .dock-page-money-submit {
+        min-width: 22.8vh;
+        min-height: 5.4vh;
+        padding: 0 2.4vh;
+        background-image: linear-gradient(180deg, #fbfbfb 0%, #b7cad8 22%, #dce7ee 100%) !important;
+        border: 0.25vh solid #818d95;
+        color: #254267;
+        font-size: 3.45vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dock-page-money-site-shell {
+        position: absolute;
+        inset: 0;
+        background: #ffffff;
+    }
+
+    .dock-page-money-site-scroll {
+        background: #ffffff;
+    }
+
+    .dock-page-money-site {
+        min-height: 100%;
+        background: #ffffff;
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-money-site-topbar {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto auto auto auto;
+        align-items: center;
+        gap: 1.15vh;
+        padding: 1.35vh 1.9vh 0.95vh;
+        background: #ffffff;
+    }
+
+    .dock-page-money-site-logo-group {
+        display: inline-flex;
+        align-items: center;
+        gap: 1vh;
+        margin-right: 2.8vh;
+    }
+
+    .dock-page-money-site-logo {
+        color: #3b74b7;
+        font-size: 5.2vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-money-site-logo-mark {
+        display: block;
+        width: auto;
+        height: 5.75vh;
+        object-fit: contain;
+    }
+
+    .dock-page-money-site-search-label {
+        color: #8b8f91;
+        font-size: 2.7vh;
+        line-height: 1;
+        white-space: nowrap;
+        justify-self: end;
+        align-self: end;
+    }
+
+    .dock-page-money-site-search-input.search-input-stub {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 31vh;
+        height: 5.1vh;
+        background: #ffffff !important;
+        border-top: #b8c2cc 0.22vh solid;
+        border-right: #b8c2cc 0.22vh solid;
+        border-bottom: #b8c2cc 0.22vh solid;
+        border-left: #b8c2cc 0.22vh solid;
+        padding: 0 1vh;
+        color: #1d1d1d;
+        font-size: 3vh !important;
+    }
+
+    .dock-page-money-site-go,
+    .dock-page-money-site-action {
+        min-height: 5vh;
+        padding: 0 1.45vh;
+        background-image: linear-gradient(180deg, #fbfbfb 0%, #c6d5e4 22%, #eef3f7 100%) !important;
+        border: 0.22vh solid #8b97a2;
+        color: #26476e;
+        font-size: 2.95vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dock-page-money-site-network-logo {
+        display: block;
+        width: auto;
+        height: 6vh;
+        object-fit: contain;
+        margin-left: 0.9vh;
+    }
+
+    .dock-page-money-site-help {
+        appearance: none;
+        padding: 0;
+        background: none;
+        border: none;
+        color: #5f85bc;
+        font-size: 2.85vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        align-self: end;
+    }
+
+    .dock-page-money-site-tabs {
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        padding: 0 0 0 1.9vh;
+        background: #0a6cc8;
+        border-top: 0.15vh solid #7fb2e2;
+    }
+
+    .dock-page-money-site-tab {
+        display: inline-flex;
+        align-items: center;
+        padding: 1.05vh 1.2vh 0.85vh;
+        color: #ffffff;
+        font-size: 2.5vh;
+        line-height: 1;
+        white-space: nowrap;
+        opacity: 0.97;
+    }
+
+    .dock-page-money-site-tab.current {
+        background: #dbe8f8;
+        color: #2b5e9d;
+    }
+
+    .dock-page-money-site-subtabs {
+        display: flex;
+        gap: 1.1vh;
+        padding: 0.8vh 1.9vh 0.9vh 3.2vh;
+        border-bottom: 0.15vh solid #d7dfe7;
+        background: #dbe8f8;
+        color: #5f85bc;
+        font-size: 2.35vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .dock-page-money-site-subtab.current {
+        color: #2f5a98;
+        font-family: "Segoe TV Bold";
+    }
+
+    .dock-page-money-site-main {
+        display: grid;
+        grid-template-columns: 25vh minmax(0, 1fr);
+        min-height: calc(100% - 16vh);
+    }
+
+    .dock-page-money-site-left {
+        padding: 2vh 0 2vh;
+        background: #dbe8f8;
+        border-right: 0.15vh solid #d1d9e1;
+    }
+
+    .dock-page-money-site-left-title,
+    .dock-page-money-site-left-links-title {
+        padding: 0 1.8vh;
+        color: #1d1d1d;
+        font-size: 3.15vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1.05;
+        margin-bottom: 1vh;
+    }
+
+    .dock-page-money-site-left-item {
+        width: 100%;
+        min-height: 5.3vh;
+        padding: 0 1.8vh;
+        background: transparent;
+        border: none;
+        border-top: 0.15vh solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.15vh solid rgba(146, 171, 198, 0.45);
+        color: #294e81;
+        font-size: 2.75vh;
+        font-family: "Segoe TV";
+        text-align: left;
+    }
+
+    .dock-page-money-site-left-item.current {
+        background: linear-gradient(to right, #dbe8f8 0, #dbe8f8 22px, #ffffff 22px, #ffffff 100%);
+        padding-left: calc(1.8vh + 24px);
+    }
+
+    .dock-page-money-site-left-links-title {
+        margin-top: 5.2vh;
+    }
+
+    .dock-page-money-site-link {
+        width: fit-content;
+        max-width: calc(100% - 3.6vh);
+        margin: 0 1.8vh 0.8vh;
+        padding: 0;
+        background: none;
+        border: none;
+        color: #5d86bc;
+        font-size: 2.7vh;
+        line-height: 1.05;
+        text-align: left;
+    }
+
+    .dock-page-money-site-content {
+        padding: 2.1vh 2vh 2vh 1.8vh;
+        background: #ffffff right top / contain no-repeat;
+    }
+
+    .dock-page-money-site-quote-controls {
+        display: flex;
+        align-items: center;
+        gap: 0.75vh;
+        margin-top: 0.6vh;
+    }
+
+    .dock-page-money-site-quote-label {
+        color: #4e4e4e;
+        font-size: 2.75vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .dock-page-money-site-quote-input.search-input-stub {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 22vh;
+        height: 5.7vh;
+        background: #315085 !important;
+        border-top: #4b565e 0.35vh solid;
+        border-right: #d5e4ee 0.35vh solid;
+        border-bottom: #d5e4ee 0.35vh solid;
+        border-left: #4b565e 0.35vh solid;
+        padding: 0 1.1vh;
+        color: #ffffff;
+        font-size: 2.75vh !important;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-money-site-action {
+        justify-content: flex-start;
+        padding-left: 1.4vh;
+        padding-right: 1.4vh;
+        font-size: 2.75vh;
+    }
+
+    .dock-page-money-site-links-row {
+        display: flex;
+        gap: 2vh;
+        margin: 1.4vh 0 1.5vh 5.2vh;
+    }
+
+    .dock-page-money-site-divider {
+        height: 0.18vh;
+        background: #e2e5e8;
+        margin-bottom: 2vh;
+    }
+
+    .dock-page-money-site-columns {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 23vh;
+        gap: 2vh;
+    }
+
+    .dock-page-money-site-company {
+        max-width: 62vh;
+        color: #44a240;
+        font-size: 4.9vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+        text-transform: uppercase;
+        margin-bottom: 1.7vh;
+    }
+
+    .dock-page-money-site-quote-card {
+        width: 100%;
+        border: 0.15vh solid #d4d9df;
+        background: #ffffff;
+    }
+
+    .dock-page-money-site-quote-card-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 2vh;
+        padding: 0.85vh 1.2vh;
+        background: #4f9ad7;
+        color: #ffffff;
+        font-size: 2.6vh;
+        line-height: 1;
+    }
+
+    .dock-page-money-site-quote-card-header-primary {
+        font-family: "Segoe TV Bold";
+    }
+
+    .dock-page-money-site-quote-card-header-secondary {
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-money-site-quote-card-main {
+        padding: 1.3vh 1.4vh 1vh;
+        border-bottom: 0.15vh solid #dfe5ea;
+    }
+
+    .dock-page-money-site-price-row {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        gap: 1.2vh;
+    }
+
+    .dock-page-money-site-price {
+        color: #1d1d1d;
+        font-size: 5.55vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-money-site-change-percent,
+    .dock-page-money-site-change-value {
+        font-size: 3.95vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-money-site-change-value.negative {
+        color: #b33b4f;
+    }
+
+    .dock-page-money-site-change-value.positive {
+        color: #2f8f4d;
+    }
+
+    .dock-page-money-site-change-percent.negative,
+    .dock-page-money-site-change-block.negative {
+        color: #b33b4f;
+    }
+
+    .dock-page-money-site-change-percent.positive,
+    .dock-page-money-site-change-block.positive {
+        color: #2f8f4d;
+    }
+
+    .dock-page-money-site-change-block {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1vh;
+    }
+
+    .dock-page-money-site-change-arrow {
+        font-size: 3.55vh;
+        line-height: 1;
+    }
+
+    .dock-page-money-site-stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        border-bottom: 0.15vh solid #dfe5ea;
+    }
+
+    .dock-page-money-site-stat {
+        padding: 0.95vh 1.2vh 1.1vh;
+        border-right: 0.15vh solid #dfe5ea;
+    }
+
+    .dock-page-money-site-stat:last-child {
+        border-right: none;
+    }
+
+    .dock-page-money-site-stat-label {
+        color: #4a4f55;
+        font-size: 2.45vh;
+        font-family: "Segoe TV";
+        line-height: 1.04;
+    }
+
+    .dock-page-money-site-stat-value {
+        margin-top: 0.55vh;
+        color: #1d1d1d;
+        font-size: 3.25vh;
+        line-height: 1;
+    }
+
+    .dock-page-money-site-chart {
+        padding: 1vh 1.2vh 1.1vh;
+    }
+
+    .dock-page-money-site-chart-title {
+        color: #4b4f56;
+        font-size: 2.8vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        margin-bottom: 0.9vh;
+    }
+
+    .dock-page-money-site-chart-svg {
+        display: block;
+        width: 100%;
+        height: 18vh;
+        background: #f9fafb;
+        border: 0.15vh solid #dfe5ea;
+    }
+
+    .dock-page-money-site-news-brand-row {
+        margin-top: 0.2vh;
+    }
+
+    .dock-page-money-site-news-peacock {
+        display: inline-block;
+        width: auto;
+        height: 3.2vh;
+        object-fit: contain;
+        margin-top: 0;
+        margin-right: 0.25vh;
+        vertical-align: text-top;
+    }
+
+    .dock-page-money-site-news-brand {
+        display: block;
+        color: #1d1d1d;
+        font-size: 3.2vh;
+        font-family: "Segoe TV";
+        line-height: 1.08;
+    }
+
+    .dock-page-money-site-news-meta {
+        display: none;
+    }
+
+    .dock-page-money-site-news-title {
+        margin-top: 1.05vh;
+        color: #3569b1;
+        font-size: 4.05vh;
+        font-family: "Segoe TV";
+        line-height: 1.02;
+    }
+
+    .dock-page-money-site-news-error {
+        margin-top: 1.2vh;
+        color: #666a70;
+        font-size: 2.45vh;
+        line-height: 1.1;
     }
 
     .dock-page-games-intro {
