@@ -5,12 +5,12 @@
     "displaySymbol": "$NWSA"
   },
   "name": "NEWS CORPORATION",
-  "price": 26.015,
+  "price": 25.97,
   "previousClose": 26.01,
   "dayHigh": 26.11,
   "dayLow": 25.84,
-  "change": 0.004999999999999005,
-  "changePercent": 0.01922337562475588,
+  "change": -0.0400000000000027,
+  "changePercent": -0.15378700499808803,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -308,8 +308,28 @@
       "close": 26.014999389648438
     },
     {
-      "timestamp": 1776713675,
-      "close": 26.014999389648438
+      "timestamp": 1776713700,
+      "close": 26.0049991607666
+    },
+    {
+      "timestamp": 1776714000,
+      "close": 25.9950008392334
+    },
+    {
+      "timestamp": 1776714300,
+      "close": 25.985000610351562
+    },
+    {
+      "timestamp": 1776714600,
+      "close": 25.915000915527344
+    },
+    {
+      "timestamp": 1776714900,
+      "close": 25.979999542236328
+    },
+    {
+      "timestamp": 1776715200,
+      "close": 25.969999313354492
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-04-17T22:40:26.000Z"
   },
-  "generatedAt": "2026-04-20T19:34:39.036Z"
+  "generatedAt": "2026-04-20T21:03:07.933Z"
 }

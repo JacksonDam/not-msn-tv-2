@@ -5,12 +5,12 @@
     "displaySymbol": "$FOXA"
   },
   "name": "FOX CORPORATION",
-  "price": 64.785,
+  "price": 64.75,
   "previousClose": 65.07,
   "dayHigh": 65.81,
-  "dayLow": 64.72,
-  "change": -0.2849999999999966,
-  "changePercent": -0.4379898570769888,
+  "dayLow": 64.655,
+  "change": -0.3199999999999932,
+  "changePercent": -0.49177808513907056,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1776713400,
-      "close": 64.77999877929688
+      "close": 64.87999725341797
     },
     {
-      "timestamp": 1776713653,
-      "close": 64.78500366210938
+      "timestamp": 1776713700,
+      "close": 64.73999786376953
+    },
+    {
+      "timestamp": 1776714000,
+      "close": 64.66999816894531
+    },
+    {
+      "timestamp": 1776714300,
+      "close": 64.75
+    },
+    {
+      "timestamp": 1776714600,
+      "close": 64.70999908447266
+    },
+    {
+      "timestamp": 1776714900,
+      "close": 64.7300033569336
+    },
+    {
+      "timestamp": 1776715200,
+      "close": 64.75
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-04-20T16:00:00.000Z"
   },
-  "generatedAt": "2026-04-20T19:34:16.682Z"
+  "generatedAt": "2026-04-20T21:02:32.266Z"
 }

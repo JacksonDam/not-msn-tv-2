@@ -5,12 +5,12 @@
     "displaySymbol": "$MDT"
   },
   "name": "MEDTRONIC PLC",
-  "price": 85.275,
+  "price": 85,
   "previousClose": 86.19,
   "dayHigh": 87.05,
-  "dayLow": 85.27,
-  "change": -0.914999999999992,
-  "changePercent": -1.0616080751827266,
+  "dayLow": 84.991,
+  "change": -1.1899999999999977,
+  "changePercent": -1.3806706114398395,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1776713400,
-      "close": 85.29499816894531
+      "close": 85.29029846191406
     },
     {
-      "timestamp": 1776713671,
-      "close": 85.2750015258789
+      "timestamp": 1776713700,
+      "close": 85.1500015258789
+    },
+    {
+      "timestamp": 1776714000,
+      "close": 85.16999816894531
+    },
+    {
+      "timestamp": 1776714300,
+      "close": 85.37000274658203
+    },
+    {
+      "timestamp": 1776714600,
+      "close": 85.30000305175781
+    },
+    {
+      "timestamp": 1776714900,
+      "close": 85
+    },
+    {
+      "timestamp": 1776715200,
+      "close": 85
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "Medical Device Network",
     "publishedAt": "2026-04-20T15:18:16.000Z"
   },
-  "generatedAt": "2026-04-20T19:34:32.915Z"
+  "generatedAt": "2026-04-20T21:02:57.845Z"
 }
