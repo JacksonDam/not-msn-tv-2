@@ -380,7 +380,6 @@ export default function App() {
   }, [])
 
   const handleStart = useCallback(() => {
-    document.documentElement.requestFullscreen?.().catch(() => {})
     audio.play('select')
     setStartBtnFading(true)
     setTimeout(() => {
