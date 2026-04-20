@@ -232,3 +232,4 @@ async function refreshMoneyQuotes() {
 
 await refreshHeadlines()
 await refreshMoneyQuotes()
+process.exit(0)
