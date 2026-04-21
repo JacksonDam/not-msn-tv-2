@@ -5,12 +5,12 @@
     "displaySymbol": "$PPL"
   },
   "name": "PPL CORPORATION",
-  "price": 38.225,
+  "price": 38.21,
   "previousClose": 38.73,
   "dayHigh": 38.935,
-  "dayLow": 38.195,
-  "change": -0.5049999999999955,
-  "changePercent": -1.3038987864704248,
+  "dayLow": 38.135,
+  "change": -0.519999999999996,
+  "changePercent": -1.3426284533952906,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
+      "close": 38.20500183105469
+    },
+    {
+      "timestamp": 1776800400,
+      "close": 38.154998779296875
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 38.244998931884766
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 38.19499969482422
+    },
+    {
+      "timestamp": 1776801300,
       "close": 38.209999084472656
     },
     {
-      "timestamp": 1776800356,
-      "close": 38.224998474121094
+      "timestamp": 1776801600,
+      "close": 38.209999084472656
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-04-21T13:30:05.000Z"
   },
-  "generatedAt": "2026-04-21T19:39:17.690Z"
+  "generatedAt": "2026-04-21T21:06:13.599Z"
 }

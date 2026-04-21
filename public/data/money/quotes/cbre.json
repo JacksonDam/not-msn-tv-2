@@ -5,12 +5,12 @@
     "displaySymbol": "$CBRE"
   },
   "name": "CBRE GROUP, INC.",
-  "price": 150.14,
+  "price": 149.85,
   "previousClose": 152.6,
   "dayHigh": 153.895,
   "dayLow": 149.03,
-  "change": -2.460000000000008,
-  "changePercent": -1.612057667103544,
+  "change": -2.75,
+  "changePercent": -1.8020969855832243,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 150.2899932861328
+      "close": 150.2550048828125
     },
     {
-      "timestamp": 1776800308,
-      "close": 150.13999938964844
+      "timestamp": 1776800400,
+      "close": 149.63999938964844
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 149.85499572753906
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 149.7899932861328
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 149.88999938964844
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 149.85000610351562
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-04-21T08:04:31.000Z"
   },
-  "generatedAt": "2026-04-21T19:38:30.774Z"
+  "generatedAt": "2026-04-21T21:05:30.152Z"
 }

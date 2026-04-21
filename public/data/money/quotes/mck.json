@@ -5,12 +5,12 @@
     "displaySymbol": "$MCK"
   },
   "name": "MCKESSON CORPORATION",
-  "price": 842.305,
+  "price": 842.25,
   "previousClose": 859.04,
   "dayHigh": 857.63,
   "dayLow": 836.617,
-  "change": -16.735000000000014,
-  "changePercent": -1.9481048612404561,
+  "change": -16.789999999999964,
+  "changePercent": -1.9545073570497258,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 842.969970703125
+      "close": 841.9400024414062
     },
     {
-      "timestamp": 1776800338,
-      "close": 842.3048095703125
+      "timestamp": 1776800400,
+      "close": 840.719970703125
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 842.9099731445312
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 843.5700073242188
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 842.22998046875
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 842.25
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-04-21T11:48:24.000Z"
   },
-  "generatedAt": "2026-04-21T19:39:06.114Z"
+  "generatedAt": "2026-04-21T21:06:02.196Z"
 }

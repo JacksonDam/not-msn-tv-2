@@ -5,12 +5,12 @@
     "displaySymbol": "$USB"
   },
   "name": "U.S. BANCORP",
-  "price": 57.03,
+  "price": 56.84,
   "previousClose": 57,
   "dayHigh": 58.05,
-  "dayLow": 56.84,
-  "change": 0.030000000000001137,
-  "changePercent": 0.05263157894737042,
+  "dayLow": 56.7,
+  "change": -0.1599999999999966,
+  "changePercent": -0.28070175438595896,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 57.025001525878906
+      "close": 57.040000915527344
     },
     {
-      "timestamp": 1776800364,
-      "close": 57.029998779296875
+      "timestamp": 1776800400,
+      "close": 56.744998931884766
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 56.84000015258789
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 56.790000915527344
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 56.849998474121094
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 56.84000015258789
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-04-21T16:21:00.000Z"
   },
-  "generatedAt": "2026-04-21T19:39:31.439Z"
+  "generatedAt": "2026-04-21T21:06:25.940Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$ABNB"
   },
   "name": "AIRBNB, INC.",
-  "price": 143.55,
+  "price": 142.65,
   "previousClose": 143.59,
   "dayHigh": 145.76,
-  "dayLow": 142.55,
-  "change": -0.03999999999999204,
-  "changePercent": -0.027857093112328184,
+  "dayLow": 142.18,
+  "change": -0.9399999999999977,
+  "changePercent": -0.654641688139841,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 143.52000427246094
+      "close": 143.4199981689453
     },
     {
-      "timestamp": 1776800288,
-      "close": 143.5500030517578
+      "timestamp": 1776800400,
+      "close": 142.4949951171875
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 142.72000122070312
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 142.43499755859375
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 142.64999389648438
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 142.64999389648438
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-04-21T10:33:26.000Z"
   },
-  "generatedAt": "2026-04-21T19:38:18.371Z"
+  "generatedAt": "2026-04-21T21:05:19.134Z"
 }

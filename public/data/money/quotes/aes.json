@@ -5,12 +5,12 @@
     "displaySymbol": "$AES"
   },
   "name": "THE AES CORPORATION",
-  "price": 14.5,
+  "price": 14.44,
   "previousClose": 14.48,
   "dayHigh": 14.52,
-  "dayLow": 14.48,
-  "change": 0.019999999999999574,
-  "changePercent": 0.138121546961323,
+  "dayLow": 14.44,
+  "change": -0.040000000000000924,
+  "changePercent": -0.2762430939226583,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 14.5
     },
     {
-      "timestamp": 1776800299,
-      "close": 14.5
+      "timestamp": 1776800400,
+      "close": 14.475000381469727
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 14.475000381469727
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 14.470000267028809
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 14.475000381469727
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 14.4399995803833
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-04-21T13:40:04.000Z"
   },
-  "generatedAt": "2026-04-21T19:38:20.242Z"
+  "generatedAt": "2026-04-21T21:05:20.550Z"
 }

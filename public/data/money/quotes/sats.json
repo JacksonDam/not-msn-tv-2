@@ -5,12 +5,12 @@
     "displaySymbol": "$SATS"
   },
   "name": "ECHOSTAR CORPORATION",
-  "price": 123.875,
+  "price": 123.86,
   "previousClose": 135.11,
   "dayHigh": 137.39,
-  "dayLow": 122.88,
-  "change": -11.235000000000014,
-  "changePercent": -8.315446673081201,
+  "dayLow": 122.79,
+  "change": -11.250000000000014,
+  "changePercent": -8.32654873806529,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 123.79000091552734
+      "close": 123.58499908447266
     },
     {
-      "timestamp": 1776800360,
-      "close": 123.875
+      "timestamp": 1776800400,
+      "close": 123.19999694824219
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 123.9469985961914
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 123.69999694824219
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 123.87010192871094
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 123.86000061035156
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-04-21T00:16:10.000Z"
   },
-  "generatedAt": "2026-04-21T19:39:21.333Z"
+  "generatedAt": "2026-04-21T21:06:16.897Z"
 }

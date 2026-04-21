@@ -5,12 +5,12 @@
     "displaySymbol": "$BALL"
   },
   "name": "BALL CORPORATION",
-  "price": 63.65,
+  "price": 63.36,
   "previousClose": 64.03,
   "dayHigh": 65.07,
   "dayLow": 63.135,
-  "change": -0.38000000000000256,
-  "changePercent": -0.5934718100890248,
+  "change": -0.6700000000000017,
+  "changePercent": -1.0463845072622233,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -297,7 +297,7 @@
     },
     {
       "timestamp": 1776799200,
-      "close": 63.880001068115234
+      "close": 63.89500045776367
     },
     {
       "timestamp": 1776799500,
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 63.65999984741211
+      "close": 63.64500045776367
     },
     {
-      "timestamp": 1776800303,
-      "close": 63.650001525878906
+      "timestamp": 1776800400,
+      "close": 63.43000030517578
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 63.54999923706055
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 63.30500030517578
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 63.3650016784668
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 63.36000061035156
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "The Fly",
     "publishedAt": "2026-04-21T14:03:37.000Z"
   },
-  "generatedAt": "2026-04-21T19:38:26.601Z"
+  "generatedAt": "2026-04-21T21:05:26.334Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$MDT"
   },
   "name": "MEDTRONIC PLC",
-  "price": 82.42,
+  "price": 82,
   "previousClose": 85,
   "dayHigh": 85.35,
-  "dayLow": 82.37,
-  "change": -2.5799999999999983,
-  "changePercent": -3.035294117647057,
+  "dayLow": 81.96,
+  "change": -3,
+  "changePercent": -3.5294117647058822,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776800100,
-      "close": 82.41339874267578
+      "close": 82.38999938964844
     },
     {
-      "timestamp": 1776800344,
-      "close": 82.41999816894531
+      "timestamp": 1776800400,
+      "close": 82.37999725341797
+    },
+    {
+      "timestamp": 1776800700,
+      "close": 82.40499877929688
+    },
+    {
+      "timestamp": 1776801000,
+      "close": 82.42500305175781
+    },
+    {
+      "timestamp": 1776801300,
+      "close": 82
+    },
+    {
+      "timestamp": 1776801600,
+      "close": 82
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Exec Edge",
     "publishedAt": "2026-04-21T15:59:46.000Z"
   },
-  "generatedAt": "2026-04-21T19:39:06.725Z"
+  "generatedAt": "2026-04-21T21:06:02.670Z"
 }
