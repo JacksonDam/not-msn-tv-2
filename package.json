@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "refresh:data": "node scripts/refresh-static-data.mjs"
+    "refresh:data": "node scripts/refresh-static-data.mjs",
+    "data:local-ignore": "node scripts/local-data-tracking.mjs ignore",
+    "data:local-track": "node scripts/local-data-tracking.mjs track"
   },
   "dependencies": {
     "react": "^19.2.4",
