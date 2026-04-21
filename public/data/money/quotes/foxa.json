@@ -5,12 +5,12 @@
     "displaySymbol": "$FOXA"
   },
   "name": "FOX CORPORATION",
-  "price": 64.44,
+  "price": 64.515,
   "previousClose": 64.75,
   "dayHigh": 65.3,
   "dayLow": 64.25,
-  "change": -0.3100000000000023,
-  "changePercent": -0.47876447876448225,
+  "change": -0.23499999999999943,
+  "changePercent": -0.3629343629343621,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -241,11 +241,79 @@
     },
     {
       "timestamp": 1776795000,
+      "close": 64.5
+    },
+    {
+      "timestamp": 1776795300,
+      "close": 64.4000015258789
+    },
+    {
+      "timestamp": 1776795600,
+      "close": 64.44000244140625
+    },
+    {
+      "timestamp": 1776795900,
+      "close": 64.41000366210938
+    },
+    {
+      "timestamp": 1776796200,
+      "close": 64.44000244140625
+    },
+    {
+      "timestamp": 1776796500,
+      "close": 64.33899688720703
+    },
+    {
+      "timestamp": 1776796800,
+      "close": 64.37000274658203
+    },
+    {
+      "timestamp": 1776797100,
+      "close": 64.38999938964844
+    },
+    {
+      "timestamp": 1776797400,
+      "close": 64.51000213623047
+    },
+    {
+      "timestamp": 1776797700,
+      "close": 64.51499938964844
+    },
+    {
+      "timestamp": 1776798000,
       "close": 64.48999786376953
     },
     {
-      "timestamp": 1776795206,
+      "timestamp": 1776798300,
+      "close": 64.45999908447266
+    },
+    {
+      "timestamp": 1776798600,
       "close": 64.44000244140625
+    },
+    {
+      "timestamp": 1776798900,
+      "close": 64.55999755859375
+    },
+    {
+      "timestamp": 1776799200,
+      "close": 64.77999877929688
+    },
+    {
+      "timestamp": 1776799500,
+      "close": 64.62899780273438
+    },
+    {
+      "timestamp": 1776799800,
+      "close": 64.51000213623047
+    },
+    {
+      "timestamp": 1776800100,
+      "close": 64.5199966430664
+    },
+    {
+      "timestamp": 1776800327,
+      "close": 64.51499938964844
     }
   ],
   "news": {
@@ -253,5 +321,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-04-20T19:28:00.000Z"
   },
-  "generatedAt": "2026-04-21T18:14:42.469Z"
+  "generatedAt": "2026-04-21T19:38:48.594Z"
 }
