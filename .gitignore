@@ -3,5 +3,5 @@ dist
 .DS_Store
 ._*
 .env
-public/data/*
-public/data/money/*
+public/data/*.json
+public/data/money/*.json
