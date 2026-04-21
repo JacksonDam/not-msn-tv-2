@@ -1097,7 +1097,21 @@
     }
 
     .theme-sports {
-        --dock-header-bg: linear-gradient(180deg, #b95f28 0%, #6f2f0e 100%);
+        --dock-header-bg: linear-gradient(90deg,
+                rgb(197 126 43) 0%,
+                rgb(207 139 55) 7.1%,
+                rgb(219 154 72) 14.3%,
+                rgb(231 171 94) 21.4%,
+                rgb(240 188 123) 28.6%,
+                rgb(246 204 151) 35.7%,
+                rgb(250 216 171) 42.9%,
+                rgb(252 222 180) 50%,
+                rgb(250 216 171) 57.1%,
+                rgb(246 204 151) 64.3%,
+                rgb(240 188 123) 75.1%,
+                rgb(231 171 94) 85.9%,
+                rgb(207 139 55) 92.9%,
+                rgb(197 126 43) 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #f4e4d8 0%, #ead2c2 100%);
         --dock-sidebar-border: #c49473;
         --dock-sidebar-card-bg: #f3e2d7;
@@ -1884,12 +1898,17 @@
         color: #1f3f7f;
     }
 
+    .dock-page-shell-sports-top-stories .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
     .dock-page-games {
         width: 92.7%;
         max-width: 92.7%;
         min-width: 0;
     }
 
+    .dock-page-sports-top-stories,
     .dock-page-money,
     .dock-page-money-business-news,
     .dock-page-money-experts {
@@ -1923,6 +1942,7 @@
         width: calc(100% - 1vh);
     }
 
+    .dock-page-sports-top-stories-title,
     .dock-page-money-business-news-title {
         margin-top: calc(3.25vh + 15px);
         margin-bottom: 2.5vh;
@@ -1932,6 +1952,7 @@
         line-height: 1;
     }
 
+    .dock-page-sports-top-stories-list,
     .dock-page-money-business-news-list {
         display: flex;
         flex-direction: column;
@@ -1940,6 +1961,7 @@
         max-width: 102vh;
     }
 
+    .dock-page-sports-top-stories-row,
     .dock-page-money-business-news-row {
         width: 100%;
         max-width: 100%;
@@ -1952,6 +1974,7 @@
         text-align: left;
     }
 
+    .dock-page-sports-top-stories-row .dock-page-classic-bullet,
     .dock-page-money-business-news-row .dock-page-classic-bullet {
         width: 1vh;
         height: 1vh;
@@ -1959,6 +1982,7 @@
         background: #1d1d1d;
     }
 
+    .dock-page-sports-top-stories-row .dock-page-row-label,
     .dock-page-money-business-news-row .dock-page-row-label {
         color: #1f3f7f;
         font-size: 4.25vh;
@@ -2959,6 +2983,23 @@
     }
 
     .dock-page-shell-money-business-news .dock-page-money-business-news-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 4.45vh;
+        font-family: "Segoe TV";
+        line-height: 1.13;
+        white-space: normal;
+    }
+
+    .dock-page-shell-sports-top-stories .dock-page-sports-top-stories-title.dock-page-content-title {
+        margin-top: 1.5vh;
+        margin-bottom: 2.5vh;
+        color: var(--dock-accent);
+        font-size: 4.12vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-shell-sports-top-stories .dock-page-sports-top-stories-row .dock-page-row-label {
         color: #1f3f7f;
         font-size: 4.45vh;
         font-family: "Segoe TV";

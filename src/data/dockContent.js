@@ -24,6 +24,7 @@ export const DOCK_ITEMS = [
 
 const GAMES_SIDEBAR = ['Featured Games', 'Card Games', 'Board Games', 'Casino Games', 'Word/Trivia']
 const MONEY_SIDEBAR = ['Personal Finance', 'My Stocks', 'Business News', 'Money Experts']
+const SPORTS_SIDEBAR = ['Main', 'NFL', 'MLB', 'NBA', 'NHL', 'NCAA']
 
 const GAMES_SIDEBAR_TARGETS = {
   'Featured Games': 'games',
@@ -40,6 +41,10 @@ const MONEY_SIDEBAR_TARGETS = {
   'Money Experts': 'money-experts',
 }
 
+const SPORTS_SIDEBAR_TARGETS = {
+  Main: 'sports',
+}
+
 const GAMES_SIDEBAR_BOX = {
   title: 'Related Links:',
   items: ['Premium games', 'Lottery results'],
@@ -48,6 +53,11 @@ const GAMES_SIDEBAR_BOX = {
 const MONEY_SIDEBAR_BOX = {
   title: 'Related Links:',
   items: ['Investing', 'Banking', 'Planning', 'Taxes'],
+}
+
+const SPORTS_SIDEBAR_BOX = {
+  title: 'Related Links:',
+  items: ['Golf', 'Motor Sports', 'Tennis'],
 }
 
 const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
@@ -178,7 +188,26 @@ function createMoneyExpertsPage() {
   }
 }
 
+function createSportsPage() {
+  return {
+    layout: 'center',
+    theme: 'sports',
+    title: 'Sports',
+    subtitle: 'Top stories',
+    headerTitle: 'Sports',
+    headerSubtitle: 'Top stories',
+    variant: 'sportsTopStories',
+    sidebar: SPORTS_SIDEBAR,
+    sidebarCurrent: 'Main',
+    sidebarTargets: SPORTS_SIDEBAR_TARGETS,
+    sidebarBox: SPORTS_SIDEBAR_BOX,
+    sidebarRightTarget: 'sports-top-stories-0',
+    contentTitle: 'Top sports stories from MSNBC',
+  }
+}
+
 export const DOCK_PAGES = {
+  sports: createSportsPage(),
   games: createGamesPage(
     'Featured games',
     'Featured Games',

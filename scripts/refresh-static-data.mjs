@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..')
 const PUBLIC_DATA_DIR = path.join(ROOT, 'public', 'data')
 const HEADLINES_PATH = path.join(PUBLIC_DATA_DIR, 'headlines.json')
 const MONEY_BUSINESS_NEWS_PATH = path.join(PUBLIC_DATA_DIR, 'money', 'business-news.json')
+const SPORTS_TOP_STORIES_PATH = path.join(PUBLIC_DATA_DIR, 'sports', 'top-stories.json')
 const MONEY_QUOTES_DIR = path.join(PUBLIC_DATA_DIR, 'money', 'quotes')
 const DEFAULT_SYMBOLS_PATH = path.join(__dirname, 'default-symbols.txt')
 const DEFAULT_SYMBOLS = (await fs.readFile(DEFAULT_SYMBOLS_PATH, 'utf8'))
@@ -109,6 +110,18 @@ function shortenHeadline(text, maxLength = 39) {
 }
 
 function normalizeBusinessHeadline(item) {
+  const title = String(item?.title ?? '').replace(/\s+/g, ' ').trim()
+  if (!title) return null
+
+  return {
+    title,
+    source: item?.creator || item?.publisher || item?.author || 'MSNBC',
+    link: item?.link || null,
+    publishedAt: item?.isoDate || item?.pubDate || null,
+  }
+}
+
+function normalizeSportsHeadline(item) {
   const title = String(item?.title ?? '').replace(/\s+/g, ' ').trim()
   if (!title) return null
 
@@ -255,6 +268,34 @@ async function refreshBusinessNews() {
   }
 }
 
+async function refreshSportsTopStories() {
+  const parser = new Parser()
+  const fallbackHeadlines = [
+    { title: 'Sports news is temporarily unavailable', source: 'MSNBC', link: null, publishedAt: null },
+  ]
+
+  try {
+    const feed = await parser.parseURL('https://www.nbcsports.com/index.atom')
+    const headlines = (feed.items ?? [])
+      .map(normalizeSportsHeadline)
+      .filter(Boolean)
+      .slice(0, 10)
+
+    await writeJson(SPORTS_TOP_STORIES_PATH, {
+      source: 'MSNBC',
+      headlines: headlines.length ? headlines : fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  } catch (error) {
+    console.warn('Failed to refresh sports top stories:', error.message)
+    await writeJson(SPORTS_TOP_STORIES_PATH, {
+      source: 'MSNBC',
+      headlines: fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  }
+}
+
 async function refreshMoneyQuotes() {
   const symbols = (process.env.MONEY_SNAPSHOT_SYMBOLS || DEFAULT_SYMBOLS.join(','))
     .split(',')
@@ -283,5 +324,6 @@ async function refreshMoneyQuotes() {
 
 await refreshHeadlines()
 await refreshBusinessNews()
+await refreshSportsTopStories()
 await refreshMoneyQuotes()
 process.exit(0)

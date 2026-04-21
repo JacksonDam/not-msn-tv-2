@@ -108,6 +108,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   const [moneyWatchlistQuotes, setMoneyWatchlistQuotes] = useState({})
   const [moneyWatchlistSelection, setMoneyWatchlistSelection] = useState({})
   const [moneyBusinessNews, setMoneyBusinessNews] = useState([])
+  const [sportsTopStories, setSportsTopStories] = useState([])
 
   if (!page) return null
   sectionFirstRowsRef.current = {}
@@ -273,6 +274,34 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
       cancelled = true
     }
   }, [page.variant, pageId])
+
+  useEffect(() => {
+    if (page.variant !== 'sportsTopStories') return undefined
+
+    let cancelled = false
+
+    fetch(`${BASE}data/sports/top-stories.json?_=${Date.now()}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled) return
+        const headlines = Array.isArray(data?.headlines) ? data.headlines.slice(0, 10) : []
+        setSportsTopStories(headlines)
+      })
+      .catch(() => {
+        if (!cancelled) setSportsTopStories([])
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [page.variant, pageId])
+
+  useEffect(() => {
+    if (page.variant !== 'sportsTopStories' && page.variant !== 'moneyBusinessNews') return
+    if (!shellNodeRef.current || !selection) return
+
+    selection.initSelectables(shellNodeRef.current)
+  }, [page.variant, pageId, moneyBusinessNews.length, sportsTopStories.length, selection])
 
   const handleMoneyWatchlistAdd = useCallback(() => {
     const symbol = normalizeMoneyWatchlistInput(moneyWatchlistInputRef.current?.value)
@@ -805,7 +834,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -908,6 +937,30 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                       <div className="dock-page-divider"></div>
                     </div>
                   )}
+                </div>
+              </div>
+            ) : page.variant === 'sportsTopStories' ? (
+              <div className="dock-page-sports-top-stories">
+                <div className="dock-page-content-title dock-page-sports-top-stories-title">{page.contentTitle}</div>
+                <div className="dock-page-sports-top-stories-list">
+                  {(sportsTopStories.length ? sportsTopStories : [{ title: 'Sports news is temporarily unavailable', source: 'MSNBC' }]).slice(0, 10).map((item, index) => {
+                    const title = String(item.title ?? '').trim()
+                    const source = String(item.source ?? '').trim()
+                    const label = source && !title.endsWith(`- ${source}`) ? `${title} - ${source}` : title
+
+                    return (
+                      <SelectableRow
+                        key={`${index}-${label}`}
+                        row={nextRow()}
+                        x={0}
+                        className="dock-page-sports-top-stories-row"
+                        data-select-id={`sports-top-stories-${index}`}
+                      >
+                        <span className="dock-page-classic-bullet"></span>
+                        <span className="dock-page-row-label">{label}</span>
+                      </SelectableRow>
+                    )
+                  })}
                 </div>
               </div>
             ) : page.variant === 'moneyCenter' ? (
