@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 const PUBLIC_DATA_DIR = path.join(ROOT, 'public', 'data')
 const HEADLINES_PATH = path.join(PUBLIC_DATA_DIR, 'headlines.json')
+const MONEY_BUSINESS_NEWS_PATH = path.join(PUBLIC_DATA_DIR, 'money', 'business-news.json')
 const MONEY_QUOTES_DIR = path.join(PUBLIC_DATA_DIR, 'money', 'quotes')
 const DEFAULT_SYMBOLS_PATH = path.join(__dirname, 'default-symbols.txt')
 const DEFAULT_SYMBOLS = (await fs.readFile(DEFAULT_SYMBOLS_PATH, 'utf8'))
@@ -105,6 +106,18 @@ function shortenHeadline(text, maxLength = 39) {
   const normalized = String(text ?? '').replace(/\s+/g, ' ').trim()
   if (normalized.length <= maxLength) return normalized
   return `${normalized.slice(0, maxLength - 3).trimEnd()}...`
+}
+
+function normalizeBusinessHeadline(item) {
+  const title = String(item?.title ?? '').replace(/\s+/g, ' ').trim()
+  if (!title) return null
+
+  return {
+    title,
+    source: item?.creator || item?.publisher || item?.author || 'MSNBC',
+    link: item?.link || null,
+    publishedAt: item?.isoDate || item?.pubDate || null,
+  }
 }
 
 async function fetchJson(url) {
@@ -214,6 +227,34 @@ async function refreshHeadlines() {
   }
 }
 
+async function refreshBusinessNews() {
+  const parser = new Parser()
+  const fallbackHeadlines = [
+    { title: 'Business news is temporarily unavailable', source: 'MSNBC', link: null, publishedAt: null },
+  ]
+
+  try {
+    const feed = await parser.parseURL('https://feeds.nbcnews.com/nbcnews/public/business')
+    const headlines = (feed.items ?? [])
+      .map(normalizeBusinessHeadline)
+      .filter(Boolean)
+      .slice(0, 10)
+
+    await writeJson(MONEY_BUSINESS_NEWS_PATH, {
+      source: 'MSNBC',
+      headlines: headlines.length ? headlines : fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  } catch (error) {
+    console.warn('Failed to refresh business news:', error.message)
+    await writeJson(MONEY_BUSINESS_NEWS_PATH, {
+      source: 'MSNBC',
+      headlines: fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  }
+}
+
 async function refreshMoneyQuotes() {
   const symbols = (process.env.MONEY_SNAPSHOT_SYMBOLS || DEFAULT_SYMBOLS.join(','))
     .split(',')
@@ -241,5 +282,6 @@ async function refreshMoneyQuotes() {
 }
 
 await refreshHeadlines()
+await refreshBusinessNews()
 await refreshMoneyQuotes()
 process.exit(0)

@@ -1843,8 +1843,9 @@
         height: 1.4vh;
         margin-top: 1.35vh;
         background: #1f3f7f;
-        border-radius: 999px;
-        flex-shrink: 0;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        flex: 0 0 auto;
     }
 
     .dock-page-shell:not(.dock-page-search-shell) .dock-page-row-label {
@@ -1875,13 +1876,23 @@
         color: #1f3f7f;
     }
 
+    .dock-page-shell-money-business-news .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-shell-money-experts .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
     .dock-page-games {
         width: 92.7%;
         max-width: 92.7%;
         min-width: 0;
     }
 
-    .dock-page-money {
+    .dock-page-money,
+    .dock-page-money-business-news,
+    .dock-page-money-experts {
         width: 92.7%;
         max-width: 92.7%;
         min-width: 0;
@@ -1910,6 +1921,137 @@
     .dock-page-money .dock-page-divider {
         margin: 0 0 2.1vh;
         width: calc(100% - 1vh);
+    }
+
+    .dock-page-money-business-news-title {
+        margin-top: calc(3.25vh + 15px);
+        margin-bottom: 2.5vh;
+        color: var(--dock-accent);
+        font-size: 4.12vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-money-business-news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 3.1vh;
+        width: calc(100% - 2vh);
+        max-width: 102vh;
+    }
+
+    .dock-page-money-business-news-row {
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        align-items: flex-start;
+        gap: 1.15vh;
+        text-align: left;
+    }
+
+    .dock-page-money-business-news-row .dock-page-classic-bullet {
+        width: 1vh;
+        height: 1vh;
+        margin-top: 2vh;
+        background: #1d1d1d;
+    }
+
+    .dock-page-money-business-news-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 4.25vh;
+        font-family: "Segoe TV";
+        line-height: 1.13;
+        white-space: normal;
+    }
+
+    .dock-page-money-experts-title {
+        margin-top: 2vh !important;
+        margin-bottom: 6.2vh;
+        color: var(--dock-accent);
+        font-size: 4.12vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-money-experts-list {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 2vh);
+        max-width: 103vh;
+    }
+
+    .dock-page-money-experts-item-wrap {
+        width: 100%;
+    }
+
+    .dock-page-money-experts-item-wrap .dock-page-divider {
+        width: 100%;
+        margin: 0 0 3vh;
+    }
+
+    .dock-page-money-experts-item {
+        display: grid;
+        grid-template-columns: 29vh minmax(0, 1fr);
+        align-items: center;
+        min-height: 23.7vh;
+        margin-bottom: 3vh;
+    }
+
+    .dock-page-money-experts-item.no-image {
+        display: block;
+        min-height: 10.2vh;
+        margin-bottom: 3.8vh;
+    }
+
+    .dock-page-money-experts-image-wrap {
+        width: 29vh;
+    }
+
+    .dock-page-money-experts-image {
+        display: block;
+        width: auto;
+        height: 29.7vh;
+        margin-top: -3vh;
+        margin-bottom: -3vh;
+        object-fit: contain;
+        object-position: left center;
+    }
+
+    .dock-page-money-experts-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: fit-content;
+        max-width: 66vh;
+        min-height: 0;
+        padding: 0;
+        margin-left: -3vh;
+        background: none;
+        border: none;
+        text-align: left;
+    }
+
+    .dock-page-money-experts-item.no-image .dock-page-money-experts-copy {
+        margin-left: 0;
+    }
+
+    .dock-page-money-experts-name {
+        color: #1f3f7f;
+        font-size: 4vh;
+        font-family: "Segoe TV";
+        line-height: 1.05;
+    }
+
+    .dock-page-money-experts-headline {
+        margin-top: 0.8vh;
+        color: #1d1d1d;
+        font-size: 3.85vh;
+        font-family: "Segoe TV";
+        line-height: 1.12;
     }
 
     .dock-page-money-lookup-row {
@@ -2805,6 +2947,32 @@
     .dock-page-shell-money-stocks .dock-page-money-stocks-form .dock-page-money-stocks-title,
     .dock-page-shell-money-stocks .dock-page-money-stocks-remove .dock-page-money-stocks-title {
         margin-top: 1.5vh;
+    }
+
+    .dock-page-shell-money-business-news .dock-page-money-business-news-title.dock-page-content-title {
+        margin-top: 1.5vh;
+        margin-bottom: 2.5vh;
+        color: var(--dock-accent);
+        font-size: 4.12vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
+    .dock-page-shell-money-business-news .dock-page-money-business-news-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 4.45vh;
+        font-family: "Segoe TV";
+        line-height: 1.13;
+        white-space: normal;
+    }
+
+    .dock-page-shell-money-experts .dock-page-money-experts-title.dock-page-content-title {
+        margin-top: 3.25vh;
+        margin-bottom: 6.2vh;
+        color: var(--dock-accent);
+        font-size: 4.12vh;
+        font-family: "Segoe TV";
+        line-height: 1;
     }
 
     .dock-page-shell-using-newsletter .dock-page-content-title {

@@ -107,6 +107,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   const [moneyWatchlistSymbols, setMoneyWatchlistSymbols] = useState(() => readMoneyWatchlistCookie())
   const [moneyWatchlistQuotes, setMoneyWatchlistQuotes] = useState({})
   const [moneyWatchlistSelection, setMoneyWatchlistSelection] = useState({})
+  const [moneyBusinessNews, setMoneyBusinessNews] = useState([])
 
   if (!page) return null
   sectionFirstRowsRef.current = {}
@@ -251,6 +252,27 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
       cancelled = true
     }
   }, [isMoneyStocksVariant, moneyWatchlistSymbols])
+
+  useEffect(() => {
+    if (page.variant !== 'moneyBusinessNews') return undefined
+
+    let cancelled = false
+
+    fetch(`${BASE}data/money/business-news.json?_=${Date.now()}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled) return
+        const headlines = Array.isArray(data?.headlines) ? data.headlines.slice(0, 10) : []
+        setMoneyBusinessNews(headlines)
+      })
+      .catch(() => {
+        if (!cancelled) setMoneyBusinessNews([])
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [page.variant, pageId])
 
   const handleMoneyWatchlistAdd = useCallback(() => {
     const symbol = normalizeMoneyWatchlistInput(moneyWatchlistInputRef.current?.value)
@@ -783,7 +805,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -927,6 +949,64 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                     </div>
                   )
                 })()}
+              </div>
+            ) : page.variant === 'moneyBusinessNews' ? (
+              <div className="dock-page-money-business-news">
+                <div className="dock-page-content-title dock-page-money-business-news-title">{page.contentTitle}</div>
+                <div className="dock-page-money-business-news-list">
+                  {(moneyBusinessNews.length ? moneyBusinessNews : [{ title: 'Business news is temporarily unavailable', source: 'MSNBC' }]).slice(0, 10).map((item, index) => {
+                    const title = String(item.title ?? '').trim()
+                    const source = String(item.source ?? '').trim()
+                    const label = source && !title.endsWith(`- ${source}`) ? `${title} - ${source}` : title
+
+                    return (
+                      <SelectableRow
+                        key={`${index}-${label}`}
+                        row={nextRow()}
+                        x={0}
+                        className="dock-page-money-business-news-row"
+                        data-select-id={`money-business-news-${index}`}
+                      >
+                        <span className="dock-page-classic-bullet"></span>
+                        <span className="dock-page-row-label">{label}</span>
+                      </SelectableRow>
+                    )
+                  })}
+                </div>
+              </div>
+            ) : page.variant === 'moneyExperts' ? (
+              <div className="dock-page-money-experts">
+                <div className="dock-page-content-title dock-page-money-experts-title">{page.contentTitle}</div>
+                <div className="dock-page-money-experts-list">
+                  {page.experts.map((expert, index) => (
+                    <div key={`${expert.name}-${expert.headline}`} className="dock-page-money-experts-item-wrap">
+                      {index > 0 && <div className="dock-page-divider"></div>}
+                      <div className={`dock-page-money-experts-item ${expert.image ? 'has-image' : 'no-image'}`}>
+                        {expert.image && (
+                          <div className="dock-page-money-experts-image-wrap">
+                            <img
+                              className="dock-page-money-experts-image"
+                              src={`${BASE}images/pages/${expert.image}`}
+                              alt=""
+                            />
+                          </div>
+                        )}
+                        <button
+                          type="button"
+                          className="dock-page-money-experts-copy selectable"
+                          data-select-x="0"
+                          data-select-height={nextRow()}
+                          data-select-layer="0"
+                          data-select-id={`money-expert-${index}`}
+                          onClick={noop}
+                        >
+                          <span className="dock-page-money-experts-name">{expert.name}</span>
+                          <span className="dock-page-money-experts-headline">{expert.headline}</span>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             ) : page.variant === 'moneyStocks' ? (
               (() => {

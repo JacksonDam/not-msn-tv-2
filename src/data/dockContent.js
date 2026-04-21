@@ -36,6 +36,8 @@ const GAMES_SIDEBAR_TARGETS = {
 const MONEY_SIDEBAR_TARGETS = {
   'Personal Finance': 'money',
   'My Stocks': 'money-stocks',
+  'Business News': 'money-business-news',
+  'Money Experts': 'money-experts',
 }
 
 const GAMES_SIDEBAR_BOX = {
@@ -109,6 +111,71 @@ function createMoneyStocksPage(mode, overrides = {}) {
   }
 
   return page
+}
+
+function createMoneyBusinessNewsPage() {
+  return {
+    layout: 'center',
+    theme: 'money',
+    title: 'Money',
+    subtitle: 'Business News',
+    headerTitle: 'Money',
+    headerSubtitle: 'Business news',
+    variant: 'moneyBusinessNews',
+    sidebar: MONEY_SIDEBAR,
+    sidebarCurrent: 'Business News',
+    sidebarTargets: MONEY_SIDEBAR_TARGETS,
+    sidebarBox: MONEY_SIDEBAR_BOX,
+    sidebarRightTarget: 'money-business-news-0',
+    contentTitle: 'Top business news from MSNBC',
+  }
+}
+
+function createMoneyExpertsPage() {
+  return {
+    layout: 'center',
+    theme: 'money',
+    title: 'Money',
+    subtitle: 'Experts',
+    headerTitle: 'Money',
+    headerSubtitle: 'Experts',
+    variant: 'moneyExperts',
+    sidebar: MONEY_SIDEBAR,
+    sidebarCurrent: 'Money Experts',
+    sidebarTargets: MONEY_SIDEBAR_TARGETS,
+    sidebarBox: MONEY_SIDEBAR_BOX,
+    sidebarRightTarget: 'money-expert-0',
+    contentTitle: 'MSN Money experts',
+    experts: [
+      {
+        name: 'MP Dunleavey',
+        headline: 'Secret lives of breadwinner wives',
+      },
+      {
+        name: 'Michael Brush',
+        headline: '3 turnaround stocks for the holidays',
+        image: 'money-expert-brush.png',
+      },
+      {
+        name: 'Robert Walberg',
+        headline: 'Wal-Mart stuck in neutral',
+        image: 'money-expert-walberg.gif',
+      },
+      {
+        name: 'Bankrate.com',
+        headline: 'A new way to pay off your house',
+      },
+      {
+        name: 'Jim Jubak',
+        headline: '10 global blue chips to own for 2007',
+        image: 'money-expert-jubak.gif',
+      },
+      {
+        name: 'Melinda Fulmer',
+        headline: 'How to win the airline bumping game',
+      },
+    ],
+  }
 }
 
 export const DOCK_PAGES = {
@@ -189,6 +256,8 @@ export const DOCK_PAGES = {
     instruction: 'To delete stocks, check the box next to the name of the company, then choose Remove.',
     cancelPageId: 'money-stocks',
   }),
+  'money-business-news': createMoneyBusinessNewsPage(),
+  'money-experts': createMoneyExpertsPage(),
   usingmsntv: {
     layout: 'center',
     theme: 'using',
