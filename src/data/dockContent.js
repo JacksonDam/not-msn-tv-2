@@ -207,6 +207,11 @@ function createSportsPage() {
 }
 
 export const DOCK_PAGES = {
+  tvlistings: {
+    layout: 'tvListingsSite',
+    title: 'TV Listings',
+    subtitle: 'Home',
+  },
   sports: createSportsPage(),
   games: createGamesPage(
     'Featured games',

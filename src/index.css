@@ -2409,6 +2409,245 @@
         background: #ffffff;
     }
 
+    .dock-page-tv-listings-site-shell {
+        position: absolute;
+        inset: 0;
+        background: #ffffff;
+    }
+
+    .dock-page-tv-listings-site-scroll {
+        background: #ffffff;
+    }
+
+    .dock-page-tv-listings-site {
+        min-height: 100%;
+        background: rgb(222, 222, 222);
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+        font-weight: 400;
+    }
+
+    .dock-page-tv-listings-category-bar {
+        display: flex;
+        align-items: stretch;
+        height: 6.8vh;
+        padding-left: 1.15vh;
+        background: #222222;
+        border-bottom: 0.45vh solid #303030;
+        overflow: hidden;
+    }
+
+    .dock-page-tv-listings-category {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 20.8vh;
+        padding: 0 2.2vh;
+        margin-right: 0.7vh;
+        position: relative;
+        background: url('/not-msn-tv-2/images/pages/tv-listings/btn_slice_vert_off.gif') left top / 100% 100% repeat-x;
+        border: 0.15vh solid #717171;
+        color: #f1f1f1;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 3vh;
+        line-height: 1;
+        text-transform: lowercase;
+        text-shadow: 0 0.18vh 0.3vh rgba(0, 0, 0, 0.8);
+        box-shadow: none;
+    }
+
+    .dock-page-tv-listings-category.current {
+        min-width: 16vh;
+        background: url('/not-msn-tv-2/images/pages/tv-listings/ch_link_select.gif') left top / 100% 100% repeat-x;
+        border-color: #717171;
+        color: #ffffff;
+        text-shadow: 0 0.12vh 0.32vh rgba(0, 0, 0, 0.7);
+    }
+
+    .dock-page-tv-listings-more-arrow {
+        display: block;
+        width: 1.35vh;
+        height: auto;
+        margin-left: 1.1vh;
+    }
+
+    .dock-page-tv-listings-hero {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: center;
+        height: 15.2vh;
+        padding: 0 0 0 4vh;
+        background: #222222 url('/not-msn-tv-2/images/pages/tv-listings/glow.jpg') left center / 100% 100% no-repeat;
+        border-bottom: 0.15vh solid #dedede;
+    }
+
+    .dock-page-tv-listings-brand {
+        display: flex;
+        align-items: center;
+        width: 27.5vh;
+        height: 6.2vh;
+        background: transparent;
+        transform: translateY(2.25vh);
+    }
+
+    .dock-page-tv-listings-msn-logo {
+        display: block;
+        width: auto;
+        height: 8.6vh;
+        margin-right: 3vh;
+        object-fit: contain;
+    }
+
+    .dock-page-tv-listings-tv-word {
+        color: #f1f1f1;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 4.8vh;
+        line-height: 1;
+        text-transform: lowercase;
+    }
+
+    .dock-page-tv-listings-search {
+        display: flex;
+        justify-self: end;
+        align-items: center;
+        width: 60vh;
+        margin-right: -2vh;
+        transform: translateY(2.25vh);
+    }
+
+    .dock-page-tv-listings-search-input {
+        box-sizing: border-box;
+        width: 49vh;
+        height: 5.45vh;
+        padding: 0 1vh;
+        background: #ffffff;
+        border: 0.15vh solid #2f2f2f;
+        border-right: none;
+        color: #1d1d1d;
+        font-size: 3vh;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-tv-listings-search-blend {
+        box-sizing: border-box;
+        width: 0.75vh;
+        height: 5.25vh;
+        background: url('/not-msn-tv-2/images/pages/tv-listings/btn_slice_search_blend.gif') left top / 100% 100% repeat-x;
+    }
+
+    .dock-page-tv-listings-search-button {
+        box-sizing: border-box;
+        height: 5.25vh;
+        min-width: 12.5vh;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: url('/not-msn-tv-2/images/pages/tv-listings/btn_slice_search.gif') left top / 100% 100% repeat-x;
+        border-left: 0.15vh solid #ffffff;
+        border-right: 0.15vh solid #ffffff;
+        border-top: none;
+        border-bottom: none;
+        color: #6b82a2;
+        font-size: 2.85vh;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .dock-page-tv-listings-tabs {
+        display: flex;
+        align-items: flex-end;
+        min-height: 6.3vh;
+        padding-left: 3.55vh;
+        background: url('/not-msn-tv-2/images/pages/tv-listings/horiznav_bg.gif') left top / 100% 100% repeat-x;
+        border-bottom: 0.2vh solid #d6d6d6;
+        overflow: hidden;
+    }
+
+    .dock-page-tv-listings-tab {
+        display: inline-flex;
+        align-items: center;
+        min-height: 5.4vh;
+        padding: 0.9vh 1.95vh 0.8vh;
+        background: none;
+        border: none;
+        color: rgb(7, 81, 154);
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 2.7vh;
+        line-height: 1;
+        white-space: nowrap;
+        position: relative;
+        appearance: none;
+    }
+
+    .dock-page-tv-listings-tab-separator {
+        display: inline-block;
+        width: 0.15vh;
+        height: 1.65vh;
+        margin-left: 1.7vh;
+        vertical-align: -0.2vh;
+    }
+
+    .dock-page-tv-listings-tab.current {
+        z-index: 1;
+        margin-bottom: -0.2vh;
+        padding-top: 0.7vh;
+        padding-bottom: 1vh;
+        background: #e2e2e2;
+        color: rgb(7, 81, 154);
+        border: 0.2vh solid #d1d9dc;
+        border-bottom: none;
+    }
+
+    .dock-page-tv-listings-title-strip {
+        margin: 0 1.05vh;
+        padding: 0.85vh 2.6vh 0.55vh;
+        background: #dedede;
+    }
+
+    .dock-page-tv-listings-title {
+        margin: 0;
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+        font-size: 3.15vh;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .dock-page-tv-listings-content {
+        position: relative;
+        min-height: 70vh;
+        margin: 0 1.05vh;
+        padding: 1.55vh 2.6vh 3vh;
+        background: #ffffff;
+    }
+
+    .dock-page-tv-listings-loading {
+        position: absolute;
+        left: 76%;
+        top: 52%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #595667;
+        font-family: "Segoe TV";
+        font-size: 2.35vh;
+        font-weight: 400;
+        line-height: 0.95;
+        text-align: center;
+    }
+
+    .dock-page-tv-listings-spinner {
+        width: 3.2vh;
+        height: 3.2vh;
+        margin-bottom: 1.6vh;
+        object-fit: contain;
+    }
+
     .dock-page-money-site-scroll {
         background: #ffffff;
     }
