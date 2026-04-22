@@ -5,12 +5,12 @@
     "displaySymbol": "$HSY"
   },
   "name": "THE HERSHEY COMPANY",
-  "price": 188.21,
+  "price": 188.65,
   "previousClose": 188.71,
   "dayHigh": 189.96,
   "dayLow": 187.756,
-  "change": -0.5,
-  "changePercent": -0.26495681203963756,
+  "change": -0.060000000000002274,
+  "changePercent": -0.031794817444757706,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776886500,
-      "close": 188.24000549316406
+      "close": 188.2100067138672
     },
     {
-      "timestamp": 1776886792,
-      "close": 188.2100067138672
+      "timestamp": 1776886800,
+      "close": 188.08999633789062
+    },
+    {
+      "timestamp": 1776887100,
+      "close": 188.55499267578125
+    },
+    {
+      "timestamp": 1776887400,
+      "close": 188.72999572753906
+    },
+    {
+      "timestamp": 1776887700,
+      "close": 188.63999938964844
+    },
+    {
+      "timestamp": 1776888000,
+      "close": 188.64999389648438
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Food Dive",
     "publishedAt": "2026-04-22T09:00:00.000Z"
   },
-  "generatedAt": "2026-04-22T19:40:20.771Z"
+  "generatedAt": "2026-04-22T21:10:23.280Z"
 }

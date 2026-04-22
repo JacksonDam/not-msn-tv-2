@@ -5,12 +5,12 @@
     "displaySymbol": "$STT"
   },
   "name": "STATE STREET CORPORATION",
-  "price": 152.25,
+  "price": 152.4,
   "previousClose": 153.57,
   "dayHigh": 154.62,
   "dayLow": 151.98,
-  "change": -1.3199999999999932,
-  "changePercent": -0.8595428794686418,
+  "change": -1.1699999999999875,
+  "changePercent": -0.7618675522562919,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 152.25
     },
     {
-      "timestamp": 1776886842,
+      "timestamp": 1776886800,
+      "close": 152.1300048828125
+    },
+    {
+      "timestamp": 1776887100,
       "close": 152.25
+    },
+    {
+      "timestamp": 1776887400,
+      "close": 152.17999267578125
+    },
+    {
+      "timestamp": 1776887700,
+      "close": 152.33999633789062
+    },
+    {
+      "timestamp": 1776888000,
+      "close": 152.39999389648438
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-04-22T16:20:02.000Z"
   },
-  "generatedAt": "2026-04-22T19:40:51.774Z"
+  "generatedAt": "2026-04-22T21:11:01.503Z"
 }

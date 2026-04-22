@@ -5,12 +5,12 @@
     "displaySymbol": "$XYZ"
   },
   "name": "BLOCK, INC.",
-  "price": 72.25,
+  "price": 72.5,
   "previousClose": 71.75,
   "dayHigh": 73.43,
   "dayLow": 71.89,
-  "change": 0.5,
-  "changePercent": 0.6968641114982579,
+  "change": 0.75,
+  "changePercent": 1.0452961672473868,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1776886800,
-      "close": 72.26000213623047
+      "close": 72.19999694824219
     },
     {
-      "timestamp": 1776886861,
-      "close": 72.25
+      "timestamp": 1776887100,
+      "close": 72.19499969482422
+    },
+    {
+      "timestamp": 1776887400,
+      "close": 72.33000183105469
+    },
+    {
+      "timestamp": 1776887700,
+      "close": 72.45999908447266
+    },
+    {
+      "timestamp": 1776888000,
+      "close": 72.5
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-04-22T16:08:12.000Z"
   },
-  "generatedAt": "2026-04-22T19:41:06.083Z"
+  "generatedAt": "2026-04-22T21:11:18.322Z"
 }

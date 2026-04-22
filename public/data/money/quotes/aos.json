@@ -5,12 +5,12 @@
     "displaySymbol": "$AOS"
   },
   "name": "A. O. SMITH CORPORATION",
-  "price": 64.98,
+  "price": 64.81,
   "previousClose": 64.99,
   "dayHigh": 65.6,
   "dayLow": 64.27,
-  "change": -0.009999999999990905,
-  "changePercent": -0.015386982612695655,
+  "change": -0.1799999999999926,
+  "changePercent": -0.2769656870287623,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776886500,
-      "close": 65.0199966430664
+      "close": 64.9800033569336
     },
     {
-      "timestamp": 1776886782,
-      "close": 64.9800033569336
+      "timestamp": 1776886800,
+      "close": 64.94999694824219
+    },
+    {
+      "timestamp": 1776887100,
+      "close": 64.93000030517578
+    },
+    {
+      "timestamp": 1776887400,
+      "close": 64.79499816894531
+    },
+    {
+      "timestamp": 1776887700,
+      "close": 64.81500244140625
+    },
+    {
+      "timestamp": 1776888000,
+      "close": 64.80999755859375
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-04-18T02:06:49.000Z"
   },
-  "generatedAt": "2026-04-22T19:39:45.805Z"
+  "generatedAt": "2026-04-22T21:09:40.828Z"
 }

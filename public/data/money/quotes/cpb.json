@@ -5,12 +5,12 @@
     "displaySymbol": "$CPB"
   },
   "name": "THE CAMPBELL'S COMPANY",
-  "price": 20.8,
+  "price": 20.82,
   "previousClose": 20.91,
   "dayHigh": 21.08,
   "dayLow": 20.705,
-  "change": -0.10999999999999943,
-  "changePercent": -0.5260640841702507,
+  "change": -0.08999999999999986,
+  "changePercent": -0.4304160688665703,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1776886500,
+      "close": 20.799999237060547
+    },
+    {
+      "timestamp": 1776886800,
+      "close": 20.764999389648438
+    },
+    {
+      "timestamp": 1776887100,
       "close": 20.795000076293945
     },
     {
-      "timestamp": 1776886796,
-      "close": 20.799999237060547
+      "timestamp": 1776887400,
+      "close": 20.729999542236328
+    },
+    {
+      "timestamp": 1776887700,
+      "close": 20.844999313354492
+    },
+    {
+      "timestamp": 1776888000,
+      "close": 20.81999969482422
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-04-21T18:53:51.000Z"
   },
-  "generatedAt": "2026-04-22T19:39:58.115Z"
+  "generatedAt": "2026-04-22T21:09:57.817Z"
 }
