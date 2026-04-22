@@ -5,12 +5,12 @@
     "displaySymbol": "$CME"
   },
   "name": "CME GROUP INC.",
-  "price": 279.865,
+  "price": 280.88,
   "previousClose": 284.4,
   "dayHigh": 282.925,
   "dayLow": 274.6,
-  "change": -4.534999999999968,
-  "changePercent": -1.5945850914205233,
+  "change": -3.519999999999982,
+  "changePercent": -1.2376933895921176,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -197,7 +197,55 @@
     },
     {
       "timestamp": 1776878100,
-      "close": 279.864990234375
+      "close": 280.6199951171875
+    },
+    {
+      "timestamp": 1776878400,
+      "close": 280.0799865722656
+    },
+    {
+      "timestamp": 1776878700,
+      "close": 280
+    },
+    {
+      "timestamp": 1776879000,
+      "close": 280.489990234375
+    },
+    {
+      "timestamp": 1776879300,
+      "close": 280.4200134277344
+    },
+    {
+      "timestamp": 1776879600,
+      "close": 280.6400146484375
+    },
+    {
+      "timestamp": 1776879900,
+      "close": 280.5450134277344
+    },
+    {
+      "timestamp": 1776880200,
+      "close": 280.7300109863281
+    },
+    {
+      "timestamp": 1776880500,
+      "close": 280.3699951171875
+    },
+    {
+      "timestamp": 1776880800,
+      "close": 280.4800109863281
+    },
+    {
+      "timestamp": 1776881100,
+      "close": 281.2650146484375
+    },
+    {
+      "timestamp": 1776881400,
+      "close": 280.7799987792969
+    },
+    {
+      "timestamp": 1776881619,
+      "close": 280.8800048828125
     }
   ],
   "news": {
@@ -205,5 +253,5 @@
     "publisher": "Moby",
     "publishedAt": "2026-04-22T16:46:23.000Z"
   },
-  "generatedAt": "2026-04-22T17:15:20.566Z"
+  "generatedAt": "2026-04-22T18:13:46.691Z"
 }
