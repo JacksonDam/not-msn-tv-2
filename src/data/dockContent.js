@@ -43,6 +43,11 @@ const MONEY_SIDEBAR_TARGETS = {
 
 const SPORTS_SIDEBAR_TARGETS = {
   Main: 'sports',
+  NFL: 'sports-nfl',
+  MLB: 'sports-mlb',
+  NBA: 'sports-nba',
+  NHL: 'sports-nhl',
+  NCAA: 'sports-ncaa',
 }
 
 const GAMES_SIDEBAR_BOX = {
@@ -206,6 +211,66 @@ function createSportsPage() {
   }
 }
 
+const SPORTS_LEAGUE_COPY = {
+  NFL: {
+    noun: 'football',
+    example: 'New York Jets',
+  },
+  MLB: {
+    noun: 'baseball',
+    example: 'Boston Red Sox',
+  },
+  NBA: {
+    noun: 'basketball',
+    example: 'Sacramento Kings',
+  },
+  NHL: {
+    noun: 'hockey',
+    example: 'San Jose Sharks',
+  },
+}
+
+function createSportsLeaguePage(league) {
+  const copy = SPORTS_LEAGUE_COPY[league]
+
+  return {
+    layout: 'center',
+    theme: 'sports',
+    title: 'Sports',
+    subtitle: league,
+    headerTitle: 'Sports',
+    headerSubtitle: league,
+    variant: 'sportsLeague',
+    sportsLeagueId: league.toLowerCase(),
+    sportsLeagueName: league,
+    sportsLeagueNoun: copy.noun,
+    sportsLeagueExample: copy.example,
+    sidebar: SPORTS_SIDEBAR,
+    sidebarCurrent: league,
+    sidebarTargets: SPORTS_SIDEBAR_TARGETS,
+    sidebarBox: SPORTS_SIDEBAR_BOX,
+    sidebarRightTarget: `sports-${league.toLowerCase()}-story-0`,
+    contentTitle: 'Top stories',
+  }
+}
+
+function createSportsNcaaPage() {
+  return {
+    layout: 'center',
+    theme: 'sports',
+    title: 'Sports',
+    subtitle: 'NCAA',
+    headerTitle: 'Sports',
+    headerSubtitle: 'NCAA',
+    variant: 'sportsNcaa',
+    sidebar: SPORTS_SIDEBAR,
+    sidebarCurrent: 'NCAA',
+    sidebarTargets: SPORTS_SIDEBAR_TARGETS,
+    sidebarBox: SPORTS_SIDEBAR_BOX,
+    sidebarRightTarget: 'sports-ncaa-basketball-story-0',
+  }
+}
+
 export const DOCK_PAGES = {
   tvlistings: {
     layout: 'tvListingsSite',
@@ -213,6 +278,11 @@ export const DOCK_PAGES = {
     subtitle: 'Home',
   },
   sports: createSportsPage(),
+  'sports-nfl': createSportsLeaguePage('NFL'),
+  'sports-mlb': createSportsLeaguePage('MLB'),
+  'sports-nba': createSportsLeaguePage('NBA'),
+  'sports-nhl': createSportsLeaguePage('NHL'),
+  'sports-ncaa': createSportsNcaaPage(),
   games: createGamesPage(
     'Featured games',
     'Featured Games',

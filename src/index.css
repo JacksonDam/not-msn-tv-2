@@ -1898,7 +1898,8 @@
         color: #1f3f7f;
     }
 
-    .dock-page-shell-sports-top-stories .dock-page-sidebar-card-row .dock-page-row-label {
+    .dock-page-shell-sports-top-stories .dock-page-sidebar-card-row .dock-page-row-label,
+    .dock-page-shell-sports-nfl .dock-page-sidebar-card-row .dock-page-row-label {
         color: #1f3f7f;
     }
 
@@ -1909,6 +1910,7 @@
     }
 
     .dock-page-sports-top-stories,
+    .dock-page-sports-nfl,
     .dock-page-money,
     .dock-page-money-business-news,
     .dock-page-money-experts {
@@ -1962,6 +1964,7 @@
     }
 
     .dock-page-sports-top-stories-row,
+    .dock-page-sports-top-stories-more,
     .dock-page-money-business-news-row {
         width: 100%;
         max-width: 100%;
@@ -1983,12 +1986,153 @@
     }
 
     .dock-page-sports-top-stories-row .dock-page-row-label,
+    .dock-page-sports-top-stories-more .dock-page-row-label,
     .dock-page-money-business-news-row .dock-page-row-label {
         color: #1f3f7f;
         font-size: 4.25vh;
         font-family: "Segoe TV";
         line-height: 1.13;
         white-space: normal;
+    }
+
+    .dock-page-sports-top-stories-more {
+        align-items: center;
+        gap: 1.5vh;
+        margin-top: 0.7vh;
+    }
+
+    .dock-page-sports-top-stories-more .dock-page-bullet {
+        width: 2.8vh;
+        height: 4.7vh;
+    }
+
+    .dock-page-sports-nfl {
+        max-width: 103vh;
+        padding-top: 1.5vh;
+    }
+
+    .dock-page-sports-nfl-title {
+        margin: 0 0 2vh;
+        color: var(--dock-accent);
+        font-size: 4.12vh;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .dock-page-sports-nfl-stories {
+        display: flex;
+        flex-direction: column;
+        gap: 1.55vh;
+        margin-bottom: 2.1vh;
+    }
+
+    .dock-page-sports-nfl-story,
+    .dock-page-sports-nfl-more-news,
+    .dock-page-sports-nfl-more-scores {
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        text-align: left;
+    }
+
+    .dock-page-sports-nfl-story {
+        align-items: flex-start;
+        gap: 1.15vh;
+    }
+
+    .dock-page-sports-nfl-story .dock-page-classic-bullet {
+        width: 1vh;
+        height: 1vh;
+        margin-top: 1.95vh;
+        background: #1d1d1d;
+    }
+
+    .dock-page-sports-nfl-story .dock-page-row-label,
+    .dock-page-sports-nfl-more-news .dock-page-row-label,
+    .dock-page-sports-nfl-more-scores .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 3.35vh;
+        font-family: "Segoe TV";
+        line-height: 1.08;
+        white-space: normal;
+    }
+
+    .dock-page-sports-nfl-more-news {
+        align-items: center;
+        gap: 1.5vh;
+        margin-top: 0.5vh;
+    }
+
+    .dock-page-sports-nfl-more-news .dock-page-bullet {
+        width: 2.8vh;
+        height: 4.7vh;
+    }
+
+    .dock-page-sports-nfl .dock-page-divider {
+        width: 100%;
+        margin: 2.4vh 0 2.1vh;
+    }
+
+    .dock-page-sports-nfl-team-row {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 1.25vh;
+        margin: 2.5vh 0 2.4vh;
+    }
+
+    .dock-page-sports-nfl-team-label,
+    .dock-page-sports-nfl-example,
+    .dock-page-sports-nfl-empty {
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+        font-size: 3.35vh;
+        line-height: 1.08;
+    }
+
+    .dock-page-sports-nfl-team-input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 5.2vh;
+        background: #2d2456;
+        border-top: #55567a 0.35vh solid;
+        border-right: #a8b4d4 0.35vh solid;
+        border-bottom: #a8b4d4 0.35vh solid;
+        border-left: #55567a 0.35vh solid;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-size: 3.6vh;
+        padding: 0 1.2vh;
+    }
+
+    .dock-page-sports-nfl-go {
+        min-width: 8.8vh;
+        min-height: 6.1vh;
+        padding: 0 2.1vh;
+        background-image: linear-gradient(180deg, #fbfbfb 0%, #b7cad8 22%, #dce7ee 100%) !important;
+        border: 0.25vh solid #818d95;
+        color: #254267;
+        font-size: 3.45vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dock-page-sports-nfl-more-scores {
+        align-items: center;
+        gap: 1.5vh;
+        margin-top: 3.1vh;
+    }
+
+    .dock-page-sports-nfl-more-scores .dock-page-bullet {
+        width: 2.8vh;
+        height: 4.7vh;
     }
 
     .dock-page-money-experts-title {
@@ -3238,12 +3382,45 @@
         line-height: 1;
     }
 
-    .dock-page-shell-sports-top-stories .dock-page-sports-top-stories-row .dock-page-row-label {
+    .dock-page-shell-sports-top-stories .dock-page-sports-top-stories-row .dock-page-row-label,
+    .dock-page-shell-sports-top-stories .dock-page-sports-top-stories-more .dock-page-row-label {
         color: #1f3f7f;
         font-size: 4.45vh;
         font-family: "Segoe TV";
         line-height: 1.13;
         white-space: normal;
+    }
+
+    .dock-page-shell-sports-nfl {
+        --dock-sports-nfl-text-size: 3.35vh;
+        --dock-sports-nfl-link-color: #1f3f7f;
+    }
+
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-title.dock-page-content-title {
+        color: var(--dock-accent);
+        font-size: var(--dock-sports-nfl-text-size);
+        font-family: "Segoe TV";
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-story .dock-page-row-label,
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-more-news .dock-page-row-label,
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-more-scores .dock-page-row-label {
+        color: var(--dock-sports-nfl-link-color);
+        font-size: var(--dock-sports-nfl-text-size);
+        font-family: "Segoe TV";
+        line-height: 1.08;
+        white-space: normal;
+    }
+
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-team-label,
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-example,
+    .dock-page-shell-sports-nfl .dock-page-sports-nfl-empty {
+        color: #1d1d1d;
+        font-size: var(--dock-sports-nfl-text-size);
+        font-family: "Segoe TV";
+        line-height: 1.08;
     }
 
     .dock-page-shell-money-experts .dock-page-money-experts-title.dock-page-content-title {

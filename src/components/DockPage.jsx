@@ -109,6 +109,8 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   const [moneyWatchlistSelection, setMoneyWatchlistSelection] = useState({})
   const [moneyBusinessNews, setMoneyBusinessNews] = useState([])
   const [sportsTopStories, setSportsTopStories] = useState([])
+  const [sportsLeagueStories, setSportsLeagueStories] = useState([])
+  const [sportsNcaaStories, setSportsNcaaStories] = useState({ basketball: [], football: [] })
 
   if (!page) return null
   sectionFirstRowsRef.current = {}
@@ -297,11 +299,61 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   }, [page.variant, pageId])
 
   useEffect(() => {
-    if (page.variant !== 'sportsTopStories' && page.variant !== 'moneyBusinessNews') return
+    if (page.variant !== 'sportsLeague') return undefined
+
+    let cancelled = false
+    const leagueId = page.sportsLeagueId ?? 'nfl'
+    const leagueName = page.sportsLeagueName ?? 'NFL'
+    setSportsLeagueStories([])
+
+    fetch(`${BASE}data/sports/${leagueId}.json?_=${Date.now()}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled) return
+        const headlines = Array.isArray(data?.headlines) ? data.headlines.slice(0, 10) : []
+        setSportsLeagueStories(headlines)
+      })
+      .catch(() => {
+        if (!cancelled) setSportsLeagueStories([{ title: `${leagueName} news is temporarily unavailable`, source: '' }])
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [page.variant, pageId, page.sportsLeagueId, page.sportsLeagueName])
+
+  useEffect(() => {
+    if (page.variant !== 'sportsNcaa') return undefined
+
+    let cancelled = false
+    setSportsNcaaStories({ basketball: [], football: [] })
+
+    Promise.all([
+      fetch(`${BASE}data/sports/ncaa-basketball.json?_=${Date.now()}`, { cache: 'no-store' })
+        .then((res) => (res.ok ? res.json() : null))
+        .catch(() => null),
+      fetch(`${BASE}data/sports/ncaa-football.json?_=${Date.now()}`, { cache: 'no-store' })
+        .then((res) => (res.ok ? res.json() : null))
+        .catch(() => null),
+    ]).then(([basketballData, footballData]) => {
+      if (cancelled) return
+      setSportsNcaaStories({
+        basketball: Array.isArray(basketballData?.headlines) ? basketballData.headlines.slice(0, 10) : [],
+        football: Array.isArray(footballData?.headlines) ? footballData.headlines.slice(0, 10) : [],
+      })
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [page.variant, pageId])
+
+  useEffect(() => {
+    if (page.variant !== 'sportsTopStories' && page.variant !== 'sportsLeague' && page.variant !== 'sportsNcaa' && page.variant !== 'moneyBusinessNews') return
     if (!shellNodeRef.current || !selection) return
 
     selection.initSelectables(shellNodeRef.current)
-  }, [page.variant, pageId, moneyBusinessNews.length, sportsTopStories.length, selection])
+  }, [page.variant, pageId, moneyBusinessNews.length, sportsTopStories.length, sportsLeagueStories.length, sportsNcaaStories.basketball.length, sportsNcaaStories.football.length, selection])
 
   const handleMoneyWatchlistAdd = useCallback(() => {
     const symbol = normalizeMoneyWatchlistInput(moneyWatchlistInputRef.current?.value)
@@ -946,7 +998,7 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'sportsLeague' || page.variant === 'sportsNcaa' ? 'dock-page-shell-sports-nfl' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -1073,7 +1125,204 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
                       </SelectableRow>
                     )
                   })}
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-top-stories-more"
+                    data-select-id="sports-top-stories-more"
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More sports stories at NBC</span>
+                  </SelectableRow>
                 </div>
+              </div>
+            ) : page.variant === 'sportsLeague' ? (
+              <div className="dock-page-sports-nfl">
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">{page.contentTitle}</div>
+                  <div className="dock-page-sports-nfl-stories">
+                    {(sportsLeagueStories.length ? sportsLeagueStories : [{ title: `${page.sportsLeagueName} news is temporarily unavailable`, source: '' }]).slice(0, 4).map((item, index) => {
+                      const title = String(item.title ?? '').trim()
+                      const source = String(item.source ?? '').trim()
+                      const label = source && !title.endsWith(`- ${source}`) ? `${title} - ${source}` : title
+
+                      return (
+                        <SelectableRow
+                          key={`${index}-${label}`}
+                          row={nextRow()}
+                          x={0}
+                          className="dock-page-sports-nfl-story"
+                          data-select-id={`sports-${page.sportsLeagueId}-story-${index}`}
+                        >
+                          <span className="dock-page-classic-bullet"></span>
+                          <span className="dock-page-row-label">{label}</span>
+                        </SelectableRow>
+                      )
+                    })}
+                  </div>
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-nfl-more-news"
+                    data-select-id={`sports-${page.sportsLeagueId}-more-news`}
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More {page.sportsLeagueNoun} news at MSNBC</span>
+                  </SelectableRow>
+                </section>
+
+                <div className="dock-page-divider"></div>
+
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">Look up news and scores by team</div>
+                  {(() => {
+                    const teamRow = nextRow()
+
+                    return (
+                      <div className="dock-page-sports-nfl-team-row">
+                        <span className="dock-page-sports-nfl-team-label">Team name:</span>
+                        <input
+                          className="dock-page-sports-nfl-team-input selectable"
+                          type="text"
+                          aria-label="Team name"
+                          readOnly
+                          data-select-x="0"
+                          data-select-height={teamRow}
+                          data-select-layer="0"
+                        />
+                        <button
+                          type="button"
+                          className="dock-page-sports-nfl-go selectable"
+                          data-select-x="1"
+                          data-select-height={teamRow}
+                          data-select-layer="0"
+                          onClick={noop}
+                        >
+                          Go
+                        </button>
+                      </div>
+                    )
+                  })()}
+                  <div className="dock-page-sports-nfl-example">Example: {page.sportsLeagueExample}</div>
+                </section>
+
+                <div className="dock-page-divider"></div>
+
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">{page.sportsLeagueName} scoreboard</div>
+                  <div className="dock-page-sports-nfl-empty">There are no recent games.</div>
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-nfl-more-scores"
+                    data-select-id={`sports-${page.sportsLeagueId}-more-scores`}
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More {page.sportsLeagueNoun} scores at MSNBC</span>
+                  </SelectableRow>
+                </section>
+              </div>
+            ) : page.variant === 'sportsNcaa' ? (
+              <div className="dock-page-sports-nfl dock-page-sports-ncaa">
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">Top NCAA basketball stories</div>
+                  <div className="dock-page-sports-nfl-stories">
+                    {(sportsNcaaStories.basketball.length ? sportsNcaaStories.basketball : [{ title: 'NCAA basketball news is temporarily unavailable', source: '' }]).slice(0, 4).map((item, index) => {
+                      const title = String(item.title ?? '').trim()
+                      const source = String(item.source ?? '').trim()
+                      const label = source && !title.endsWith(`- ${source}`) ? `${title} - ${source}` : title
+
+                      return (
+                        <SelectableRow
+                          key={`basketball-${index}-${label}`}
+                          row={nextRow()}
+                          x={0}
+                          className="dock-page-sports-nfl-story"
+                          data-select-id={`sports-ncaa-basketball-story-${index}`}
+                        >
+                          <span className="dock-page-classic-bullet"></span>
+                          <span className="dock-page-row-label">{label}</span>
+                        </SelectableRow>
+                      )
+                    })}
+                  </div>
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-nfl-more-news"
+                    data-select-id="sports-ncaa-basketball-more-news"
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More men's basketball news at MSNBC</span>
+                  </SelectableRow>
+                </section>
+
+                <div className="dock-page-divider"></div>
+
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">NCAA basketball scoreboard</div>
+                  <div className="dock-page-sports-nfl-empty">There are no recent games.</div>
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-nfl-more-scores"
+                    data-select-id="sports-ncaa-basketball-more-scores"
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More basketball scores at MSNBC</span>
+                  </SelectableRow>
+                </section>
+
+                <div className="dock-page-divider"></div>
+
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">Top NCAA football stories</div>
+                  <div className="dock-page-sports-nfl-stories">
+                    {(sportsNcaaStories.football.length ? sportsNcaaStories.football : [{ title: 'NCAA football news is temporarily unavailable', source: '' }]).slice(0, 4).map((item, index) => {
+                      const title = String(item.title ?? '').trim()
+                      const source = String(item.source ?? '').trim()
+                      const label = source && !title.endsWith(`- ${source}`) ? `${title} - ${source}` : title
+
+                      return (
+                        <SelectableRow
+                          key={`football-${index}-${label}`}
+                          row={nextRow()}
+                          x={0}
+                          className="dock-page-sports-nfl-story"
+                          data-select-id={`sports-ncaa-football-story-${index}`}
+                        >
+                          <span className="dock-page-classic-bullet"></span>
+                          <span className="dock-page-row-label">{label}</span>
+                        </SelectableRow>
+                      )
+                    })}
+                  </div>
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-nfl-more-news"
+                    data-select-id="sports-ncaa-football-more-news"
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More men's football news at MSNBC</span>
+                  </SelectableRow>
+                </section>
+
+                <div className="dock-page-divider"></div>
+
+                <section className="dock-page-sports-nfl-section">
+                  <div className="dock-page-content-title dock-page-sports-nfl-title">NCAA football scoreboard</div>
+                  <div className="dock-page-sports-nfl-empty">There are no recent games.</div>
+                  <SelectableRow
+                    row={nextRow()}
+                    x={0}
+                    className="dock-page-sports-nfl-more-scores"
+                    data-select-id="sports-ncaa-football-more-scores"
+                  >
+                    <span className="dock-page-bullet" aria-hidden="true"></span>
+                    <span className="dock-page-row-label">More football scores at MSNBC</span>
+                  </SelectableRow>
+                </section>
               </div>
             ) : page.variant === 'moneyCenter' ? (
               <div className="dock-page-money">

@@ -296,6 +296,74 @@ async function refreshSportsTopStories() {
   }
 }
 
+const SPORTS_LEAGUE_FEEDS = [
+  {
+    id: 'nfl',
+    label: 'NFL',
+    source: 'The Athletic',
+    url: 'https://www.nytimes.com/athletic/rss/nfl/',
+  },
+  {
+    id: 'mlb',
+    label: 'MLB',
+    source: 'MLB.com',
+    url: 'https://www.mlb.com/feeds/news/rss.xml',
+  },
+  {
+    id: 'nba',
+    label: 'NBA',
+    source: 'New York Post',
+    url: 'https://nypost.com/nba/feed/',
+  },
+  {
+    id: 'nhl',
+    label: 'NHL',
+    source: 'NHL News',
+    url: 'https://www.to-rss.xyz/nhl/news/',
+  },
+  {
+    id: 'ncaa-basketball',
+    label: 'NCAA basketball',
+    source: 'The Athletic',
+    url: 'https://www.nytimes.com/athletic/rss/college-basketball/',
+  },
+  {
+    id: 'ncaa-football',
+    label: 'NCAA football',
+    source: 'The Athletic',
+    url: 'https://www.nytimes.com/athletic/rss/college-football/',
+  },
+]
+
+async function refreshSportsLeague({ id, label, source, url }) {
+  const parser = new Parser()
+  const fallbackHeadlines = [
+    { title: `${label} news is temporarily unavailable`, source, link: null, publishedAt: null },
+  ]
+  const outputPath = path.join(PUBLIC_DATA_DIR, 'sports', `${id}.json`)
+
+  try {
+    const feed = await parser.parseURL(url)
+    const headlines = (feed.items ?? [])
+      .map(normalizeSportsHeadline)
+      .filter(Boolean)
+      .slice(0, 10)
+
+    await writeJson(outputPath, {
+      source,
+      headlines: headlines.length ? headlines : fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  } catch (error) {
+    console.warn(`Failed to refresh sports ${label} stories:`, error.message)
+    await writeJson(outputPath, {
+      source,
+      headlines: fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  }
+}
+
 async function refreshMoneyQuotes() {
   const symbols = (process.env.MONEY_SNAPSHOT_SYMBOLS || DEFAULT_SYMBOLS.join(','))
     .split(',')
@@ -325,5 +393,8 @@ async function refreshMoneyQuotes() {
 await refreshHeadlines()
 await refreshBusinessNews()
 await refreshSportsTopStories()
+for (const leagueFeed of SPORTS_LEAGUE_FEEDS) {
+  await refreshSportsLeague(leagueFeed)
+}
 await refreshMoneyQuotes()
 process.exit(0)
