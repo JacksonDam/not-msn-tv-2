@@ -12,15 +12,29 @@ const excludeBlock = `${blockStart}
 ${blockEnd}`
 
 function getTrackedDataJsonFiles() {
+  const unmerged = execFileSync('git', ['ls-files', '-z', '--unmerged', '--', 'public/data'], {
+    cwd: repoRoot,
+    encoding: 'buffer',
+  })
+    .toString('utf8')
+    .split('\0')
+    .filter(Boolean)
+
+  if (unmerged.length > 0) {
+    throw new Error('public/data has unresolved merge conflicts. Resolve or accept the generated data version before running data:local-ignore.')
+  }
+
   const output = execFileSync('git', ['ls-files', '-z', '--', 'public/data'], {
     cwd: repoRoot,
     encoding: 'buffer',
   })
 
-  return output
-    .toString('utf8')
-    .split('\0')
-    .filter((file) => file.endsWith('.json'))
+  return [...new Set(
+    output
+      .toString('utf8')
+      .split('\0')
+      .filter((file) => file.endsWith('.json')),
+  )]
 }
 
 function updateIndex(files, flag) {
