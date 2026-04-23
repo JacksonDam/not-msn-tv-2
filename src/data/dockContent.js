@@ -261,7 +261,7 @@ function createSportsNcaaPage() {
     title: 'Sports',
     subtitle: 'NCAA',
     headerTitle: 'Sports',
-    headerSubtitle: 'NCAA',
+    headerSubtitle: 'NCAA basketball & football',
     variant: 'sportsNcaa',
     sidebar: SPORTS_SIDEBAR,
     sidebarCurrent: 'NCAA',
