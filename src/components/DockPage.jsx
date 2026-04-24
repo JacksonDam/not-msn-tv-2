@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { DOCK_PAGES } from '../data/dockContent'
+import MusicCenter from './MusicCenter'
 import animateScrollTop from '../utils/animateScrollTop'
 import {
   createEmptyMoneyQuote,
@@ -81,7 +82,19 @@ function UsingMainModuleIcon({ icon }) {
   )
 }
 
-export default function DockPage({ pageId, pageRef, onClose, selection, onNavigate = noop }) {
+export default function DockPage({
+  pageId,
+  pageRef,
+  onClose,
+  selection,
+  onNavigate = noop,
+  musicNavPos = 0,
+  musicNavViewStart = 0,
+  musicNavPixelOffset = 0,
+  musicNavSlidingFromPos = null,
+  onMusicNavSlideEnd,
+  mediaPlayer,
+}) {
   const moneyQuoteSymbol = typeof pageId === 'string' && pageId.startsWith('money-quote:')
     ? decodeURIComponent(pageId.slice('money-quote:'.length))
     : null
@@ -441,6 +454,21 @@ export default function DockPage({ pageId, pageRef, onClose, selection, onNaviga
           )}
         </span>
       </>
+    )
+  }
+
+  if (page.layout === 'musicHome') {
+    return (
+      <MusicCenter
+        pageRef={setShellRef}
+        selection={selection}
+        navPos={musicNavPos}
+        navViewStart={musicNavViewStart}
+        navPixelOffset={musicNavPixelOffset}
+        navSlidingFromPos={musicNavSlidingFromPos}
+        onNavSlideEnd={onMusicNavSlideEnd}
+        mediaPlayer={mediaPlayer}
+      />
     )
   }
 

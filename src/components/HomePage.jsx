@@ -1,19 +1,10 @@
-import { useRef, useLayoutEffect } from 'react'
 import { DOCK_ITEMS } from '../data/dockContent'
 import { USING_TIP_TARGETS_BY_LABEL } from '../data/usingTipPages'
-import SelectionFrame from './SelectionFrame'
+import DockCarousel from './DockCarousel'
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const BASE = import.meta.env.BASE_URL
 const IMG_H = 61
-
-const TOTAL = DOCK_ITEMS.length
-const BUFFER = 100
-
-
-function mod(n, m) {
-  return ((n % m) + m) % m
-}
 
 export default function HomePage({
   headlines,
@@ -29,72 +20,6 @@ export default function HomePage({
   const dateStr = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`
   const audibleDialingTipId = USING_TIP_TARGETS_BY_LABEL['Turn on audible dialing']
   const printingTipId = USING_TIP_TARGETS_BY_LABEL['Preview before you print']
-
-  const renderOriginRef = useRef(dockViewStart - BUFFER)
-  const needsRecenterRef = useRef(false)
-
-  const margin = 10
-  if (dockViewStart - renderOriginRef.current < margin || (renderOriginRef.current + BUFFER * 2 + 7) - (dockViewStart + 7) < margin) {
-    renderOriginRef.current = dockViewStart - BUFFER
-    needsRecenterRef.current = true
-  }
-
-  const renderStart = renderOriginRef.current
-  const renderCount = BUFFER * 2 + 7
-  const renderedItems = []
-  for (let i = 0; i < renderCount; i++) {
-    const pos = renderStart + i
-    renderedItems.push({ ...DOCK_ITEMS[mod(pos, TOTAL)], pos })
-  }
-
-  const sliderRef = useRef(null)
-  const baseOffsetRef = useRef(null)
-  const offsetRef = useRef(0)
-
-  const computeBase = () => {
-    const slider = sliderRef.current
-    if (!slider) return 0
-    const children = slider.children
-    const zeroIdx = 0 - renderStart
-    let px = 0
-    for (let i = 0; i < zeroIdx; i++) {
-      px += children[i].offsetWidth
-    }
-    return px
-  }
-
-  useLayoutEffect(() => {
-    const slider = sliderRef.current
-    if (!slider) return
-
-    let skipTransition = false
-
-    if (needsRecenterRef.current) {
-      baseOffsetRef.current = computeBase()
-      needsRecenterRef.current = false
-      skipTransition = true
-    }
-
-    if (baseOffsetRef.current === null) {
-      baseOffsetRef.current = computeBase()
-      skipTransition = true
-    }
-
-    if (skipTransition) {
-      slider.style.transition = 'none'
-    }
-
-    offsetRef.current = baseOffsetRef.current + dockPixelOffset
-    slider.style.transform = `translateX(-${offsetRef.current}px)`
-
-    if (skipTransition) {
-      slider.offsetHeight // eslint-disable-line no-unused-expressions
-      requestAnimationFrame(() => {
-        slider.style.transition = ''
-      })
-      onSlideEnd?.()
-    }
-  }, [dockPos, dockPixelOffset])
 
   return (
     <div className="flex page-outer flex-wrap">
@@ -216,43 +141,23 @@ export default function HomePage({
       </div>
       <div id="dock-area">
         <img className="dock-arrow" src={`${BASE}images/dock/dock_left.gif`} />
-        <div className="dock-items">
-          <div
-            className="dock-slider"
-            ref={sliderRef}
-            style={{ transform: `translateX(-${offsetRef.current}px)` }}
-            onTransitionEnd={onSlideEnd}
-          >
-            {renderedItems.map((item) => {
-              const isSelected = item.pos === dockPos
-              const isSlidingFrom = item.pos === dockSlidingFromPos
-              return (
-                <div
-                  key={item.pos}
-                  className={`dock-item-slot${isSelected ? ' selectable' : ''}`}
-                  {...(isSelected ? {
-                    'data-select-x': '0',
-                    'data-select-height': '10',
-                    'data-select-layer': '0',
-                    'data-dock-pos': `${item.pos}`,
-                  } : {})}
-                  onClick={() => onDockActivate?.(item.id)}
-                >
-                  <img
-                    className="dock-item-img"
-                    src={`${BASE}images/dock/${item.id}${isSelected ? '_selected' : ''}.png`}
-                    style={{ width: `calc(14.5vh * ${item.w} / ${IMG_H})` }}
-                  />
-                  {isSlidingFrom && (
-                    <div className="dock-slide-selection">
-                      <SelectionFrame />
-                    </div>
-                  )}
-                </div>
-              )
-            })}
-          </div>
-        </div>
+        <DockCarousel
+          items={DOCK_ITEMS}
+          pos={dockPos}
+          viewStart={dockViewStart}
+          pixelOffset={dockPixelOffset}
+          slidingFromPos={dockSlidingFromPos}
+          onSlideEnd={onSlideEnd}
+          onActivate={(item) => onDockActivate?.(item.id)}
+          row={10}
+          renderItem={(item, { isSelected }) => (
+            <img
+              className="dock-item-img"
+              src={`${BASE}images/dock/${item.id}${isSelected ? '_selected' : ''}.png`}
+              style={{ width: `calc(14.5vh * ${item.w} / ${IMG_H})` }}
+            />
+          )}
+        />
         <img className="dock-arrow" src={`${BASE}images/dock/dock_right.gif`} />
       </div>
     </div>

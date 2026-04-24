@@ -902,6 +902,695 @@
         transform-origin: right center;
     }
 
+    .music-center-shell {
+        --music-content-left: 4.8vh;
+        height: 100%;
+        overflow: hidden;
+        background: #d7edfe;
+        font-family: "Segoe TV";
+    }
+
+    .music-center-shell button {
+        appearance: none;
+        min-height: 0;
+        margin: 0;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: default;
+        font-family: "Segoe TV";
+    }
+
+    .music-center-header {
+        position: relative;
+        flex: 0 0 14.5%;
+        min-height: 0;
+        background-image: url('/not-msn-tv-2/images/pages/music/MusicHeader.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .music-center-title {
+        position: absolute;
+        z-index: 12;
+        left: var(--music-content-left);
+        bottom: 1.8vh;
+        margin: 0;
+        color: #001b4d;
+        font-family: "Segoe TV";
+        font-size: 5.25vh;
+        font-weight: 400;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .music-center-title.is-hidden-for-panel {
+        visibility: hidden;
+    }
+
+    .music-center-title-panel-overlay {
+        top: calc(14.5% - 7.05vh);
+        bottom: auto;
+        z-index: 18;
+        pointer-events: none;
+    }
+
+    .music-center-header-actions {
+        position: absolute;
+        z-index: 12;
+        top: 2vh;
+        right: 2.2vh;
+        display: flex;
+        align-items: center;
+        gap: 5.4vh;
+    }
+
+    .music-center-header-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.1vh;
+        padding: 0.35vh 0.5vh;
+        color: #001b4d;
+        font-size: 4vh;
+        font-family: "Segoe TV Bold";
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .music-center-help-icon {
+        width: 4.65vh;
+        height: 4.65vh;
+        object-fit: contain;
+    }
+
+    .music-center-quick-row {
+        position: relative;
+        flex: 0 0 56.48%;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 42.86% 57.14%;
+        background-image: url('/not-msn-tv-2/images/pages/music/MusicQuickPlayMusicVideos.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .music-feature-panel {
+        position: relative;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .music-feature-stage {
+        position: absolute;
+        top: 3.55vh;
+        left: var(--music-content-left);
+        right: 1.4vh;
+        height: 40.5vh;
+        overflow: hidden;
+    }
+
+    .music-feature-layer {
+        position: absolute;
+        inset: 0;
+        opacity: 1;
+    }
+
+    .music-feature-layer-incoming {
+        animation: music-feature-in 0.5s linear both;
+    }
+
+    .music-feature-layer-outgoing {
+        animation: music-feature-out 0.5s linear both;
+    }
+
+    .music-feature-heading {
+        height: 6.1vh;
+        padding-left: 0;
+        color: #ffffff;
+        font-family: "Segoe TV Bold";
+        font-size: 4.2vh;
+        line-height: 4.8vh;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+
+    .music-news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.7vh;
+        padding: 1.75vh 1.7vh 0 0;
+        color: #315375;
+        font-family: "Segoe TV";
+        font-size: 3.72vh;
+        font-weight: 400;
+        line-height: 1.06;
+    }
+
+    .music-videos-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        padding-top: 1.35vh;
+    }
+
+    .music-video-row {
+        display: grid;
+        grid-template-columns: 14.4vh 26.8vh;
+        gap: 2.5vh;
+        align-items: start;
+    }
+
+    .music-video-thumb {
+        width: 14.4vh;
+        height: 14.4vh;
+        display: block;
+        overflow: hidden;
+        background: #0d1724;
+        object-fit: contain;
+        box-shadow: inset 0 0 0 0.25vh rgba(67, 89, 106, 0.55);
+    }
+
+    .music-video-title {
+        color: #315375;
+        font-family: "Segoe TV";
+        font-size: 3.55vh;
+        font-weight: 400;
+        line-height: 1.02;
+        width: 26.8vh;
+        max-width: 26.8vh;
+    }
+
+    .music-feature-next {
+        position: absolute;
+        left: var(--music-content-left);
+        bottom: 2.2vh;
+        display: inline-flex;
+        align-items: center;
+        gap: 1.1vh;
+        padding: 0.35vh 0.75vh 0.5vh 0;
+        color: #061537;
+        font-family: "Segoe TV Bold";
+        font-size: 3.45vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .music-feature-next img {
+        width: 4.75vh;
+        height: 4.75vh;
+        object-fit: contain;
+    }
+
+    .music-quick-panel {
+        min-width: 0;
+        padding: 3.7vh 3.55vh 0 4.2vh;
+        box-sizing: border-box;
+        text-align: right;
+        overflow: hidden;
+    }
+
+    .music-quick-title {
+        margin: 0;
+        color: #a93d0d;
+        font-family: "Segoe TV Bold";
+        font-size: 6.45vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .music-caption-fader {
+        position: relative;
+        height: 6.5vh;
+        margin-top: 1.45vh;
+        color: #2c2b29;
+        font-family: "Segoe TV";
+        font-size: 4.2vh;
+        line-height: 1;
+    }
+
+    .music-caption-layer {
+        position: absolute;
+        inset: 0 0 auto 0;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .music-caption-layer-previous {
+        animation: music-caption-out 0.25s linear both;
+    }
+
+    .music-caption-layer-current.is-transitioning {
+        animation: music-caption-in 0.25s linear both;
+    }
+
+    .music-quick-options {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.65vh;
+        margin-top: 5.7vh;
+    }
+
+    .music-quick-option {
+        width: fit-content;
+        max-width: 100%;
+        padding: 0.18vh 0.6vh 0.35vh;
+        color: #061537;
+        font-family: "Segoe TV Bold";
+        font-size: 4.2vh;
+        line-height: 1;
+        text-align: right;
+        white-space: nowrap;
+        text-shadow: 0 0.12vh 0.25vh rgba(255, 255, 255, 0.56);
+    }
+
+    .music-quick-option-primary {
+        font-size: 4.2vh;
+    }
+
+    .music-midi-label {
+        font-size: 2.35vh;
+    }
+
+    .music-now-playing {
+        position: relative;
+        flex: 0 0 17.36%;
+        min-height: 0;
+        background-image: url('/not-msn-tv-2/images/pages/music/MusicHPNowPlaying.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .music-now-playing-promo {
+        position: absolute;
+        top: 50%;
+        right: 3.6vh;
+        transform: translateY(-50%);
+        padding: 0.5vh 0.8vh;
+        color: #1d1d1d;
+        font-size: 4.15vh;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .music-now-playing-promo em {
+        font-style: normal;
+        font-family: "Segoe TV Bold";
+        font-weight: 700;
+    }
+
+    .music-nav-area {
+        position: relative;
+        flex: 0 0 11.66%;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background-image: url('/not-msn-tv-2/images/pages/music/MusicNavBar.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .music-nav-items {
+        height: 100%;
+        align-items: center;
+    }
+
+    .music-nav-slider {
+        height: 100%;
+        top: 0;
+        align-items: center;
+    }
+
+    .music-nav-slot {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .music-nav-label {
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 2.35vh;
+        color: #14224b;
+        font-family: "Segoe TV Bold";
+        font-size: 4.05vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .music-nav-arrow {
+        width: 7.2vh;
+        height: 7.2vh;
+        object-fit: contain;
+        image-rendering: pixelated;
+        transform: scale(0.66);
+        flex: 0 0 7.2vh;
+    }
+
+    .music-home-content {
+        display: contents;
+    }
+
+    .music-media-panel-stage {
+        position: absolute;
+        top: calc(14.5% - 25px);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        display: flex;
+        min-height: 0;
+        pointer-events: none;
+        transform: translateY(100%);
+        transition: transform 0.25s linear;
+        will-change: transform;
+    }
+
+    .music-media-panel-stage.is-open {
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .media-player-panel {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: #afc0cc;
+        font-family: "Segoe TV";
+        box-sizing: border-box;
+        border-top: 1.4vh solid transparent;
+        background-origin: border-box;
+        background-clip: border-box;
+        background-image:
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerTopLeftCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerTopRightCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerTopStretch.jpg'),
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerLargeBG.jpg');
+        background-position: left top, right top, center top, center;
+        background-size: 1.4vh 1.4vh, 1.4vh 1.4vh, calc(100% - 2.8vh) 1.4vh, 100% 100%;
+        background-repeat: no-repeat, no-repeat, repeat-x, no-repeat;
+    }
+
+    .media-player-body {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 73.3vh minmax(0, 1fr);
+        padding: 3.45vh 3.45vh 0;
+        margin: 0 1.5vh;
+        box-sizing: border-box;
+        background:
+            linear-gradient(180deg, transparent 0, transparent 10px, #000000 10px, #000000 100%);
+    }
+
+    .media-player-screen {
+        position: relative;
+        width: 73.3vh;
+        height: 55vh;
+        overflow: hidden;
+        background: #000000;
+    }
+
+    .media-player-default-screen,
+    .media-player-opening img {
+        display: block;
+    }
+
+    .media-player-default-screen {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.95;
+    }
+
+    .media-player-panel-playing .media-player-default-screen,
+    .media-player-panel-paused .media-player-default-screen {
+        opacity: 0;
+    }
+
+    .media-player-opening {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 13.75vh;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.18);
+    }
+
+    .media-player-opening img {
+        width: 23.4vh;
+        height: 24.1vh;
+        image-rendering: pixelated;
+    }
+
+    .media-player-visualizer {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background: #000000;
+    }
+
+    .media-player-vis-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .media-player-info {
+        min-width: 0;
+        height: 55vh;
+        padding: 1.7vh 0 0 3.45vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        color: #afc0cc;
+    }
+
+    .media-player-now-title {
+        color: #ffffff;
+        font-family: "Segoe TV Bold";
+        font-size: 4.45vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .media-player-track-list {
+        margin-top: 2.15vh;
+        font-size: 3.55vh;
+        line-height: 1.02;
+    }
+
+    .media-player-field {
+        margin-bottom: 1.5vh;
+    }
+
+    .media-player-field-label {
+        color: #ffffff;
+        font-family: "Segoe TV Bold";
+        white-space: normal;
+    }
+
+    .media-player-field-copy {
+        color: #6ca4d6;
+        font-family: "Segoe TV";
+    }
+
+    .media-player-change-images {
+        position: absolute;
+        right: 4.2vh;
+        bottom: 8vh;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8vh;
+        padding: 0.3vh 0.4vh;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-size: 2.9vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .media-player-change-images::before {
+        content: "";
+        width: 1.9vh;
+        height: 3vh;
+        background: url('/not-msn-tv-2/images/dropdowncustomrightarrow.png') center / contain no-repeat;
+    }
+
+    .media-player-progress {
+        position: absolute;
+        top: 58.45vh;
+        left: 3.45vh;
+        width: 73.3vh;
+        height: 6vh;
+        display: grid;
+        grid-template-columns: 10vh 19vh 12vh minmax(0, 1fr);
+        align-items: center;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-size: 3vh;
+        line-height: 1;
+        white-space: nowrap;
+        z-index: 2;
+    }
+
+    .media-player-time-current {
+        padding-left: 0.9vh;
+    }
+
+    .media-player-progress-track {
+        display: block;
+        height: 3.2vh;
+        overflow: hidden;
+        border: 2px solid #1b1b1b;
+        border-radius: 2px;
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%);
+        box-sizing: border-box;
+    }
+
+    .media-player-progress-fill {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .media-player-time-total {
+        padding-left: 0.8vh;
+    }
+
+    .media-player-status {
+        text-align: right;
+    }
+
+    .media-player-bottom-bar {
+        position: relative;
+        flex: 0 0 14vh;
+        min-height: 0;
+    }
+
+    .media-player-controls {
+        position: absolute;
+        top: 1.75vh;
+        left: 3.45vh;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.25vh;
+    }
+
+    .media-player-control {
+        width: 7.6vh;
+        height: 9vh;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .media-player-control img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        image-rendering: pixelated;
+    }
+
+    .media-player-preload-controls {
+        display: none;
+    }
+
+    .media-player-actions {
+        position: absolute;
+        top: 0.9vh;
+        right: 3.3vh;
+        width: 26.6vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.55vh 0.8vh;
+    }
+
+    .media-player-action {
+        height: 5.6vh;
+        padding: 0 1.4vh 0.35vh;
+        box-sizing: border-box;
+        border: 0.25vh solid #111111 !important;
+        border-radius: 0.28vh !important;
+        background-image: linear-gradient(180deg, #f4f7fb 0%, #9dbbda 32%, #c0d8f7 100%) !important;
+        box-shadow:
+            inset 0 0.18vh 0 rgba(255, 255, 255, 0.95),
+            inset 0 -0.2vh 0 rgba(66, 91, 119, 0.5);
+        color: #002157 !important;
+        font-family: "Segoe TV";
+        font-size: 3.35vh;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .media-player-action:first-child {
+        grid-column: 1 / 3;
+    }
+
+    @keyframes music-caption-out {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.2;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes music-caption-in {
+        0%,
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes music-feature-out {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.2;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes music-feature-in {
+        0%,
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
     .promo-img {
         top: 8vh;
         border: 0.5vh solid white;

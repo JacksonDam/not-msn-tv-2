@@ -1,12 +1,15 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import useSelection from './hooks/useSelection'
 import useAudio from './hooks/useAudio'
 import HomePage from './components/HomePage'
 import DockPage from './components/DockPage'
+import MediaPlayerPanel from './components/MediaPlayerPanel'
+import { MUSIC_NAV_ROW } from './components/MusicCenter'
 import SelectionFrame from './components/SelectionFrame'
 import { DOCK_PAGES } from './data/dockContent'
 
 const BASE = import.meta.env.BASE_URL
+const MEDIA_PANEL_SLIDE_MS = 250
 const isMoneyQuotePageId = (pageId) => typeof pageId === 'string' && pageId.startsWith('money-quote:')
 
 function isAtDockPageBoundary(selected, direction) {
@@ -88,7 +91,12 @@ export default function App() {
   const [dockViewStart, setDockViewStart] = useState(0)
   const [dockPixelOffset, setDockPixelOffset] = useState(0)
   const [dockSlidingFromPos, setDockSlidingFromPos] = useState(null)
+  const [musicNavPos, setMusicNavPos] = useState(0)
+  const [musicNavViewStart, setMusicNavViewStart] = useState(0)
+  const [musicNavPixelOffset, setMusicNavPixelOffset] = useState(0)
+  const [musicNavSlidingFromPos, setMusicNavSlidingFromPos] = useState(null)
   const dockSlidingRef = useRef(false)
+  const musicNavSlidingRef = useRef(false)
 
   const timeoutsRef = useRef([])
   const mainPageRef = useRef(null)
@@ -97,9 +105,19 @@ export default function App() {
   const dockTransitionRef = useRef(null)
   const previousDockPageRef = useRef(null)
   const dockHistoryRef = useRef([])
-  const chillAudioRef = useRef(null)
-  const shiftHoldTimeoutRef = useRef(null)
-  const shiftHeldRef = useRef(false)
+  const mediaAudioRef = useRef(null)
+  const mediaStartTimeoutRef = useRef(null)
+  const mediaPanelStageRef = useRef(null)
+  const mediaPanelCloseTimeoutRef = useRef(null)
+  const mediaPanelReturnTargetRef = useRef(null)
+
+  const [mediaPlaybackState, setMediaPlaybackState] = useState('stopped')
+  const [mediaMuted, setMediaMuted] = useState(false)
+  const [mediaElapsed, setMediaElapsed] = useState(0)
+  const [mediaDuration, setMediaDuration] = useState(36)
+  const [mediaPanelMounted, setMediaPanelMounted] = useState(false)
+  const [mediaPanelSlideOpen, setMediaPanelSlideOpen] = useState(false)
+  const [mediaPanelKey, setMediaPanelKey] = useState(0)
 
   const selection = useSelection()
   const audio = useAudio()
@@ -197,65 +215,275 @@ export default function App() {
     audio.register('controlFeedback', `${BASE}audio/ControlFeedback.mp3`)
     audio.register('error', `${BASE}audio/Error.mp3`)
     audio.register('homeBrand', `${BASE}audio/Home_brand.mp3`)
+    audio.register('panelUp', `${BASE}sounds/Panel_Up.mp3`)
+    audio.register('panelDown', `${BASE}sounds/Panel_Down.mp3`)
   }, [audio])
 
-  useEffect(() => {
-    const chillAudio = new Audio(`${BASE}audio/chill-jingle.mp3`)
-    chillAudio.loop = true
-    chillAudioRef.current = chillAudio
+  const clearMediaStart = useCallback(() => {
+    clearTimeout(mediaStartTimeoutRef.current)
+    mediaStartTimeoutRef.current = null
+  }, [])
 
-    const clearShiftHold = () => {
-      if (shiftHoldTimeoutRef.current) {
-        clearTimeout(shiftHoldTimeoutRef.current)
-        shiftHoldTimeoutRef.current = null
-      }
+  const playMedia = useCallback(() => {
+    clearMediaStart()
+    const audioEl = mediaAudioRef.current
+    if (!audioEl) return
+
+    if (audioEl.currentTime === 0 || audioEl.ended) {
+      setMediaElapsed(0)
     }
 
-    const toggleChillAudio = () => {
-      const audioEl = chillAudioRef.current
-      if (!audioEl) return
+    setMediaPlaybackState('playing')
+    void audioEl.play().catch(() => {
+      setMediaPlaybackState(audioEl.paused ? 'paused' : 'playing')
+    })
+  }, [clearMediaStart])
 
-      if (!audioEl.paused) {
-        audioEl.pause()
-        audioEl.currentTime = 0
-        return
-      }
+  const pauseMedia = useCallback(() => {
+    clearMediaStart()
+    const audioEl = mediaAudioRef.current
+    audioEl?.pause()
+    setMediaPlaybackState('paused')
+  }, [clearMediaStart])
 
+  const stopMedia = useCallback(() => {
+    clearMediaStart()
+    const audioEl = mediaAudioRef.current
+    if (audioEl) {
+      audioEl.pause()
       audioEl.currentTime = 0
-      void audioEl.play().catch(() => {})
+    }
+    setMediaElapsed(0)
+    setMediaPlaybackState('stopped')
+  }, [clearMediaStart])
+
+  const toggleMediaMute = useCallback(() => {
+    setMediaMuted((current) => {
+      const next = !current
+      if (mediaAudioRef.current) {
+        mediaAudioRef.current.muted = next
+      }
+      return next
+    })
+  }, [])
+
+  const startBackgroundMedia = useCallback(() => {
+    const audioEl = mediaAudioRef.current
+    if (!audioEl) return
+
+    if (!audioEl.paused && mediaPlaybackState === 'playing') {
+      return
     }
 
-    const onKeyDown = (e) => {
-      if (e.key !== 'Shift') return
-      if (shiftHeldRef.current) return
+    clearMediaStart()
 
-      shiftHeldRef.current = true
-      clearShiftHold()
-      shiftHoldTimeoutRef.current = setTimeout(() => {
-        shiftHoldTimeoutRef.current = null
-        toggleChillAudio()
-      }, 2000)
+    if (audioEl.currentTime <= 0.05 || mediaPlaybackState === 'stopped') {
+      audioEl.currentTime = 0
+      setMediaElapsed(0)
+      setMediaPlaybackState('buffering')
+      mediaStartTimeoutRef.current = setTimeout(() => {
+        mediaStartTimeoutRef.current = null
+        playMedia()
+      }, 1650)
+      return
     }
 
-    const onKeyUp = (e) => {
-      if (e.key !== 'Shift') return
-      shiftHeldRef.current = false
-      clearShiftHold()
+    playMedia()
+  }, [clearMediaStart, mediaPlaybackState, playMedia])
+
+  const getActiveSelectionRoot = useCallback(() => {
+    if (signOutDialogOpen) return document.getElementById('signout-dialog')
+    if (dockTransitionPhase !== 'idle') return dockTransitionRef.current
+    if (curPageVisible) return openDockPageId ? dockPageRef.current : curPageRef.current
+    return mainPageRef.current
+  }, [curPageVisible, dockTransitionPhase, openDockPageId, signOutDialogOpen])
+
+  const captureMediaPanelReturnTarget = useCallback(() => {
+    const root = getActiveSelectionRoot()
+    const selected = selection.getSelected()
+    if (!(root instanceof Element) || !(selected instanceof Element) || !root.contains(selected)) {
+      return null
     }
 
-    window.addEventListener('keydown', onKeyDown, true)
-    window.addEventListener('keyup', onKeyUp, true)
+    const layer = Number(selected.getAttribute('data-select-layer'))
+    const height = Number(selected.getAttribute('data-select-height'))
+    if (!Number.isFinite(layer) || !Number.isFinite(height)) return null
+
+    const row = Array.from(root.querySelectorAll(
+      `.selectable[data-select-layer="${layer}"][data-select-height="${height}"]`,
+    ))
+    const pos = row.indexOf(selected)
+    if (pos < 0) return null
+
+    return { element: selected, layer, height, pos }
+  }, [getActiveSelectionRoot, selection])
+
+  const restoreMediaPanelSelection = useCallback(() => {
+    const root = getActiveSelectionRoot()
+    if (!(root instanceof Element)) return
+
+    selection.initSelectables(root)
+
+    const target = mediaPanelReturnTargetRef.current
+    if (target?.element?.isConnected && root.contains(target.element)) {
+      selection.updateContainerRef(target.layer, target.height, target.pos, target.element)
+      selection.goToSpecific(target.layer, target.height, target.pos)
+    } else if (!openDockPageId && curPageVisible) {
+      selection.goToSpecific(0, 10, 0)
+    }
+
+    revealFocusBox()
+  }, [curPageVisible, getActiveSelectionRoot, openDockPageId, revealFocusBox, selection])
+
+  const openMediaPanel = useCallback(({ startBackground = false } = {}) => {
+    if (!curPageVisible || dockTransitionPhase !== 'idle') return
+
+    clearTimeout(mediaPanelCloseTimeoutRef.current)
+    mediaPanelCloseTimeoutRef.current = null
+
+    if (!mediaPanelMounted) {
+      mediaPanelReturnTargetRef.current = captureMediaPanelReturnTarget()
+    }
+
+    setMediaPanelKey((current) => current + 1)
+    setMediaPanelMounted(true)
+    setMediaPanelSlideOpen(false)
+    void audio.play('panelUp')
+
+    if (startBackground) {
+      startBackgroundMedia()
+    }
+
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        setMediaPanelSlideOpen(true)
+      })
+    })
+  }, [
+    audio,
+    captureMediaPanelReturnTarget,
+    curPageVisible,
+    dockTransitionPhase,
+    mediaPanelMounted,
+    startBackgroundMedia,
+  ])
+
+  const closeMediaPanel = useCallback(({ stopBackground = false } = {}) => {
+    clearTimeout(mediaPanelCloseTimeoutRef.current)
+
+    if (stopBackground) {
+      stopMedia()
+    }
+
+    if (!mediaPanelMounted) return
+
+    void audio.play('panelDown')
+    setMediaPanelSlideOpen(false)
+
+    mediaPanelCloseTimeoutRef.current = setTimeout(() => {
+      setMediaPanelMounted(false)
+      mediaPanelCloseTimeoutRef.current = null
+      window.requestAnimationFrame(restoreMediaPanelSelection)
+    }, MEDIA_PANEL_SLIDE_MS)
+  }, [audio, mediaPanelMounted, restoreMediaPanelSelection, stopMedia])
+
+  const toggleMediaPanel = useCallback(() => {
+    if (mediaPanelMounted && mediaPanelSlideOpen) {
+      closeMediaPanel()
+    } else {
+      openMediaPanel()
+    }
+  }, [closeMediaPanel, mediaPanelMounted, mediaPanelSlideOpen, openMediaPanel])
+
+  useEffect(() => {
+    const mediaAudio = new Audio(`${BASE}audio/chill-jingle.mp3`)
+    mediaAudio.loop = true
+    mediaAudio.muted = mediaMuted
+    mediaAudioRef.current = mediaAudio
+
+    const syncDuration = () => {
+      if (Number.isFinite(mediaAudio.duration) && mediaAudio.duration > 0) {
+        setMediaDuration(mediaAudio.duration)
+      }
+    }
+
+    const syncElapsed = () => {
+      setMediaElapsed(mediaAudio.currentTime)
+    }
+
+    const syncPlayState = () => {
+      setMediaPlaybackState('playing')
+    }
+
+    const syncPauseState = () => {
+      if (mediaStartTimeoutRef.current) return
+      setMediaPlaybackState(mediaAudio.currentTime <= 0.05 ? 'stopped' : 'paused')
+    }
+
+    mediaAudio.addEventListener('loadedmetadata', syncDuration)
+    mediaAudio.addEventListener('durationchange', syncDuration)
+    mediaAudio.addEventListener('timeupdate', syncElapsed)
+    mediaAudio.addEventListener('play', syncPlayState)
+    mediaAudio.addEventListener('pause', syncPauseState)
 
     return () => {
-      window.removeEventListener('keydown', onKeyDown, true)
-      window.removeEventListener('keyup', onKeyUp, true)
-      clearShiftHold()
-      shiftHeldRef.current = false
-      chillAudio.pause()
-      chillAudio.currentTime = 0
-      chillAudioRef.current = null
+      clearTimeout(mediaStartTimeoutRef.current)
+      mediaAudio.removeEventListener('loadedmetadata', syncDuration)
+      mediaAudio.removeEventListener('durationchange', syncDuration)
+      mediaAudio.removeEventListener('timeupdate', syncElapsed)
+      mediaAudio.removeEventListener('play', syncPlayState)
+      mediaAudio.removeEventListener('pause', syncPauseState)
+      mediaAudio.pause()
+      mediaAudio.currentTime = 0
+      mediaAudioRef.current = null
     }
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    return () => clearTimeout(mediaPanelCloseTimeoutRef.current)
   }, [])
+
+  useEffect(() => {
+    if (!mediaPanelMounted || !mediaPanelStageRef.current) return undefined
+
+    const frame = window.requestAnimationFrame(() => {
+      selection.initSelectables(mediaPanelStageRef.current)
+      selection.goToSpecific(0, 0, 0)
+      revealFocusBox()
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [mediaPanelKey, mediaPanelMounted, revealFocusBox, selection])
+
+  const mediaPlayer = useMemo(() => ({
+    playbackState: mediaPlaybackState,
+    muted: mediaMuted,
+    elapsed: mediaElapsed,
+    duration: mediaDuration,
+    panelMounted: mediaPanelMounted,
+    startBackground: startBackgroundMedia,
+    openPanel: openMediaPanel,
+    closePanel: closeMediaPanel,
+    togglePanel: toggleMediaPanel,
+    play: playMedia,
+    pause: pauseMedia,
+    stop: stopMedia,
+    toggleMute: toggleMediaMute,
+  }), [
+    mediaPlaybackState,
+    mediaMuted,
+    mediaElapsed,
+    mediaDuration,
+    mediaPanelMounted,
+    startBackgroundMedia,
+    openMediaPanel,
+    closeMediaPanel,
+    toggleMediaPanel,
+    playMedia,
+    pauseMedia,
+    stopMedia,
+    toggleMediaMute,
+  ])
 
   const handleBackNavigation = useCallback(() => {
     if (!openDockPageId || inputLocked || dockTransitionPhase !== 'idle') return false
@@ -279,6 +507,12 @@ export default function App() {
 
   useEffect(() => {
     const handler = (e) => {
+      if (e.code === 'F7') {
+        e.preventDefault()
+        toggleMediaPanel()
+        return
+      }
+
       if (inputLocked) {
         e.preventDefault()
         return
@@ -356,15 +590,18 @@ export default function App() {
       if (dirMap[key]) {
         e.preventDefault()
         const sel = selection.getSelected()
-        const currentDockEl = curPageRef.current?.querySelector('#dock-area [data-select-height="10"]')
-        const isDockSelection = !openDockPageId && sel?.closest('#dock-area')
+        const homeDockArea = !openDockPageId ? sel?.closest('#dock-area') : null
+        const musicNavArea = openDockPageId === 'music' ? sel?.closest('.music-nav-area') : null
+        const isDockSelection = Boolean(homeDockArea)
+        const isMusicNavSelection = Boolean(musicNavArea)
 
-        if (isDockSelection && (key === 'ArrowLeft' || key === 'ArrowRight')) {
-          const dockSel = currentDockEl ?? sel
+        if ((isDockSelection || isMusicNavSelection) && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+          const carouselArea = isMusicNavSelection ? musicNavArea : homeDockArea
+          const dockSel = carouselArea?.querySelector('[data-dock-carousel-selected="true"]') ?? sel
           if (!(dockSel instanceof HTMLElement)) return
 
-          const slider = curPageRef.current?.querySelector('.dock-slider')
-          const dockItems = curPageRef.current?.querySelector('.dock-items')
+          const slider = carouselArea?.querySelector('.dock-slider')
+          const dockItems = carouselArea?.querySelector('.dock-items')
           if (!slider || !dockItems) return
 
           const containerRect = dockItems.getBoundingClientRect()
@@ -395,15 +632,22 @@ export default function App() {
             }
           }
 
-          setDockPos(prev => {
+          const setCarouselPos = isMusicNavSelection ? setMusicNavPos : setDockPos
+          const setCarouselViewStart = isMusicNavSelection ? setMusicNavViewStart : setDockViewStart
+          const setCarouselPixelOffset = isMusicNavSelection ? setMusicNavPixelOffset : setDockPixelOffset
+          const setCarouselSlidingFromPos = isMusicNavSelection ? setMusicNavSlidingFromPos : setDockSlidingFromPos
+          const carouselSlidingRef = isMusicNavSelection ? musicNavSlidingRef : dockSlidingRef
+          const carouselPos = isMusicNavSelection ? musicNavPos : dockPos
+
+          setCarouselPos(prev => {
             const next = prev + (key === 'ArrowRight' ? 1 : -1)
-            setDockViewStart(next)
+            setCarouselViewStart(next)
             return next
           })
           if (willSlide) {
-            setDockPixelOffset(prev => prev + pxShift)
-            setDockSlidingFromPos(dockPos)
-            dockSlidingRef.current = true
+            setCarouselPixelOffset(prev => prev + pxShift)
+            setCarouselSlidingFromPos(carouselPos)
+            carouselSlidingRef.current = true
             const focusBox = selection.focusBoxRef.current
             if (focusBox) {
               focusBox.style.visibility = 'hidden'
@@ -426,7 +670,17 @@ export default function App() {
     }
     document.addEventListener('keydown', handler)
     return () => document.removeEventListener('keydown', handler)
-  }, [selection, audio, inputLocked, openDockPageId, beginDockTransition, dockPos, handleBackNavigation])
+  }, [
+    selection,
+    audio,
+    inputLocked,
+    openDockPageId,
+    beginDockTransition,
+    dockPos,
+    musicNavPos,
+    handleBackNavigation,
+    toggleMediaPanel,
+  ])
 
   const fetchHeadlines = useCallback(async () => {
     try {
@@ -472,7 +726,12 @@ export default function App() {
     setDockViewStart(0)
     setDockPixelOffset(0)
     setDockSlidingFromPos(null)
+    setMusicNavPos(0)
+    setMusicNavViewStart(0)
+    setMusicNavPixelOffset(0)
+    setMusicNavSlidingFromPos(null)
     dockSlidingRef.current = false
+    musicNavSlidingRef.current = false
   }, [])
 
   const handleSignIn = useCallback(() => {
@@ -567,6 +826,15 @@ export default function App() {
   }, [dockPos, curPageVisible, openDockPageId, selection])
 
   useEffect(() => {
+    if (!curPageVisible || openDockPageId !== 'music' || !dockPageRef.current) return
+    const navEl = dockPageRef.current.querySelector(`.music-nav-area [data-select-height="${MUSIC_NAV_ROW}"]`)
+    if (navEl) {
+      selection.updateContainerRef(0, MUSIC_NAV_ROW, 0, navEl)
+      selection.updateFocusBox()
+    }
+  }, [musicNavPos, curPageVisible, openDockPageId, selection])
+
+  useEffect(() => {
     if (dockTransitionPhase !== 'contacting' || !dockTransitionRef.current) return
     selection.initSelectables(dockTransitionRef.current)
     revealFocusBox()
@@ -584,6 +852,22 @@ export default function App() {
       const dockEl = curPageRef.current?.querySelector('[data-select-height="10"]')
       if (dockEl) {
         selection.updateContainerRef(0, 10, 0, dockEl)
+      }
+      selection.updateFocusBox()
+    }
+  }, [selection])
+
+  const handleMusicNavSlideEnd = useCallback(() => {
+    if (musicNavSlidingRef.current) {
+      musicNavSlidingRef.current = false
+      const focusBox = selection.focusBoxRef.current
+      setMusicNavSlidingFromPos(null)
+      if (focusBox) {
+        focusBox.style.visibility = ''
+      }
+      const navEl = dockPageRef.current?.querySelector(`.music-nav-area [data-select-height="${MUSIC_NAV_ROW}"]`)
+      if (navEl) {
+        selection.updateContainerRef(0, MUSIC_NAV_ROW, 0, navEl)
       }
       selection.updateFocusBox()
     }
@@ -823,7 +1107,35 @@ export default function App() {
                       onClose={handleCloseDockPage}
                       selection={selection}
                       onNavigate={handleOpenDockPage}
+                      musicNavPos={musicNavPos}
+                      musicNavViewStart={musicNavViewStart}
+                      musicNavPixelOffset={musicNavPixelOffset}
+                      musicNavSlidingFromPos={musicNavSlidingFromPos}
+                      onMusicNavSlideEnd={handleMusicNavSlideEnd}
+                      mediaPlayer={mediaPlayer}
                     />
+                  )}
+
+                  {mediaPanelMounted && (
+                    <div
+                      ref={mediaPanelStageRef}
+                      className={`music-media-panel-stage${mediaPanelSlideOpen ? ' is-open' : ''}`}
+                      onTransitionEnd={() => selection.updateFocusBox()}
+                    >
+                      <MediaPlayerPanel
+                        key={mediaPanelKey}
+                        playbackState={mediaPlaybackState}
+                        muted={mediaMuted}
+                        elapsed={mediaElapsed}
+                        duration={mediaDuration}
+                        onPlay={playMedia}
+                        onPause={pauseMedia}
+                        onStop={stopMedia}
+                        onToggleMute={toggleMediaMute}
+                        onDone={() => closeMediaPanel({ stopBackground: true })}
+                        onHide={() => closeMediaPanel({ stopBackground: false })}
+                      />
+                    </div>
                   )}
 
                   <div

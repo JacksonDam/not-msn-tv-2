@@ -302,6 +302,11 @@ function createEntertainmentPage(sidebarCurrent, variant = 'entertainmentMissing
 }
 
 export const DOCK_PAGES = {
+  music: {
+    layout: 'musicHome',
+    title: 'Music',
+    subtitle: 'Home',
+  },
   tvlistings: {
     layout: 'tvListingsSite',
     title: 'TV Listings',
