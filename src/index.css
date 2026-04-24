@@ -1067,12 +1067,12 @@
     }
 
     .theme-entertainment {
-        --dock-header-bg: linear-gradient(90deg, rgba(71, 48, 84, 0.9), rgba(155, 106, 53, 0.55)), url('/not-msn-tv-2/images/pages/video-header.jpg');
-        --dock-sidebar-bg: linear-gradient(180deg, #dfebf6 0%, #c6d9ea 100%);
-        --dock-sidebar-border: #889fbd;
-        --dock-sidebar-card-bg: #e2e9f1;
-        --dock-sidebar-card-border: #98aec3;
-        --dock-accent: #a84c0e;
+        --dock-header-bg: linear-gradient(90deg, #5262c8 0%, #9ba4d4 48%, #4f5cc7 100%);
+        --dock-sidebar-bg: linear-gradient(180deg, #d9d3e3 0%, #cbc4d7 100%);
+        --dock-sidebar-border: #9aa2ad;
+        --dock-sidebar-card-bg: #dce7ec;
+        --dock-sidebar-card-border: #83a7b4;
+        --dock-accent: #9a5f22;
         --dock-accent-soft: #f7e8dd;
     }
 
@@ -1658,8 +1658,16 @@
         margin-top: 13.8vh;
     }
 
+    .dock-page-shell-entertainment .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
     .dock-page-shell-money .dock-page-sidebar-card {
         margin-top: 13.8vh;
+    }
+
+    .dock-page-shell-entertainment {
+        --dock-header-height: 11.55vh;
     }
 
     .dock-page-shell-games {
@@ -1886,6 +1894,10 @@
         color: #1f3f7f;
     }
 
+    .dock-page-shell-entertainment .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
     .dock-page-shell-money .dock-page-sidebar-card-row .dock-page-row-label {
         color: #1f3f7f;
     }
@@ -1907,6 +1919,175 @@
         width: 92.7%;
         max-width: 92.7%;
         min-width: 0;
+    }
+
+    .dock-page-entertainment-missing,
+    .dock-page-entertainment-movies {
+        width: 92.7%;
+        max-width: 103vh;
+        min-width: 0;
+    }
+
+    .dock-page-entertainment-missing .dock-page-divider {
+        width: 100%;
+        margin: 3.25vh 0 2.55vh;
+    }
+
+    .dock-page-entertainment-title {
+        color: var(--dock-accent);
+        font-family: "Segoe TV";
+        font-size: 4.12vh;
+        font-weight: 400;
+        line-height: 1.02;
+        margin-top: 1.8vh !important;
+    }
+
+    .dock-page-entertainment-missing p {
+        max-width: 92vh;
+        margin: 2.7vh 0 0;
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+        font-size: 4.05vh;
+        line-height: 1.18;
+    }
+
+    .dock-page-entertainment-movies {
+        padding-top: 2.1vh;
+    }
+
+    .dock-page-entertainment-movies-section {
+        margin: 0;
+    }
+
+    .dock-page-entertainment-movies-showtimes {
+        margin-left: 2.3vh;
+    }
+
+    .dock-page-entertainment-featured-section {
+        margin-left: 2.3vh;
+    }
+
+    .dock-page-entertainment-movies-search-row {
+        display: grid;
+        grid-template-columns: minmax(0, 48vh) 24vh auto;
+        align-items: center;
+        column-gap: 2.8vh;
+        margin-top: 3.45vh;
+    }
+
+    .dock-page-entertainment-movies-label {
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+        font-size: 4.1vh;
+        line-height: 1.05;
+        margin-left: 5px;
+        margin-top: 0.4vh;
+    }
+
+    .dock-page-entertainment-movies-input.search-input-stub {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 24vh;
+        height: 5.2vh;
+        background: #2d3059 !important;
+        border-top: #55567a 0.35vh solid;
+        border-right: #a8b4d4 0.35vh solid;
+        border-bottom: #a8b4d4 0.35vh solid;
+        border-left: #55567a 0.35vh solid;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-size: 3.7vh !important;
+        box-sizing: border-box;
+        padding: 0 1.2vh;
+    }
+
+    .dock-page-entertainment-movies-go {
+        min-width: 11.6vh;
+        min-height: 5.7vh;
+        padding: 0 2.2vh;
+        background-image: linear-gradient(180deg, #fbfbfb 0%, #b7cad8 22%, #dce7ee 100%) !important;
+        border: 0.25vh solid #818d95;
+        color: #254267;
+        font-family: "Segoe TV";
+        font-size: 3.45vh;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dock-page-entertainment-movies .dock-page-divider {
+        width: 100%;
+        margin: 9.2vh 0 4.45vh;
+    }
+
+    .dock-page-entertainment-movies-section + .dock-page-divider {
+        margin-top: 7.3vh;
+    }
+
+    .dock-page-entertainment-featured-list,
+    .dock-page-entertainment-grossing-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2.6vh;
+    }
+
+    .dock-page-entertainment-featured-row,
+    .dock-page-entertainment-grossing-row {
+        width: fit-content;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0.15vh 0;
+        background: none;
+        border: none;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .dock-page-entertainment-featured-row {
+        gap: 1.05vh;
+    }
+
+    .dock-page-entertainment-featured-row .dock-page-classic-bullet {
+        width: 1vh;
+        height: 1vh;
+        margin-top: 1.65vh;
+        background: #1d1d1d;
+    }
+
+    .dock-page-shell-entertainment .dock-page-entertainment-featured-row .dock-page-row-label,
+    .dock-page-shell-entertainment .dock-page-entertainment-grossing-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-family: "Segoe TV";
+        font-size: 4.05vh;
+        line-height: 1.1;
+        white-space: normal;
+    }
+
+    .dock-page-entertainment-featured-list {
+        gap: 1.55vh;
+    }
+
+    .dock-page-entertainment-grossing-list {
+        gap: 0.72vh;
+    }
+
+    .dock-page-entertainment-grossing-row {
+        display: grid;
+        grid-template-columns: 6.2vh minmax(0, auto);
+        gap: 0.8vh;
+    }
+
+    .dock-page-entertainment-grossing-number {
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+        font-size: 4.05vh;
+        line-height: 1.1;
+        text-align: right;
     }
 
     .dock-page-sports-top-stories,

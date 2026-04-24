@@ -25,6 +25,7 @@ export const DOCK_ITEMS = [
 const GAMES_SIDEBAR = ['Featured Games', 'Card Games', 'Board Games', 'Casino Games', 'Word/Trivia']
 const MONEY_SIDEBAR = ['Personal Finance', 'My Stocks', 'Business News', 'Money Experts']
 const SPORTS_SIDEBAR = ['Main', 'NFL', 'MLB', 'NBA', 'NHL', 'NCAA']
+const ENTERTAINMENT_SIDEBAR = ['Main', 'TV', 'Movies', 'Celebrities']
 
 const GAMES_SIDEBAR_TARGETS = {
   'Featured Games': 'games',
@@ -50,6 +51,13 @@ const SPORTS_SIDEBAR_TARGETS = {
   NCAA: 'sports-ncaa',
 }
 
+const ENTERTAINMENT_SIDEBAR_TARGETS = {
+  Main: 'entertainment',
+  TV: 'entertainment-tv',
+  Movies: 'entertainment-movies',
+  Celebrities: 'entertainment-celebrities',
+}
+
 const GAMES_SIDEBAR_BOX = {
   title: 'Related Links:',
   items: ['Premium games', 'Lottery results'],
@@ -63,6 +71,11 @@ const MONEY_SIDEBAR_BOX = {
 const SPORTS_SIDEBAR_BOX = {
   title: 'Related Links:',
   items: ['Golf', 'Motor Sports', 'Tennis'],
+}
+
+const ENTERTAINMENT_SIDEBAR_BOX = {
+  title: 'Related Links:',
+  items: ['Music', 'Radio'],
 }
 
 const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
@@ -271,6 +284,23 @@ function createSportsNcaaPage() {
   }
 }
 
+function createEntertainmentPage(sidebarCurrent, variant = 'entertainmentMissing') {
+  return {
+    layout: 'center',
+    theme: 'entertainment',
+    title: 'Entertainment',
+    subtitle: sidebarCurrent,
+    headerTitle: 'Entertainment',
+    headerSubtitle: sidebarCurrent,
+    variant,
+    sidebar: ENTERTAINMENT_SIDEBAR,
+    sidebarCurrent,
+    sidebarTargets: ENTERTAINMENT_SIDEBAR_TARGETS,
+    sidebarBox: ENTERTAINMENT_SIDEBAR_BOX,
+    sidebarRightTarget: variant === 'entertainmentMovies' ? 'entertainment-movies-zip' : undefined,
+  }
+}
+
 export const DOCK_PAGES = {
   tvlistings: {
     layout: 'tvListingsSite',
@@ -283,6 +313,10 @@ export const DOCK_PAGES = {
   'sports-nba': createSportsLeaguePage('NBA'),
   'sports-nhl': createSportsLeaguePage('NHL'),
   'sports-ncaa': createSportsNcaaPage(),
+  entertainment: createEntertainmentPage('Main'),
+  'entertainment-tv': createEntertainmentPage('TV'),
+  'entertainment-movies': createEntertainmentPage('Movies', 'entertainmentMovies'),
+  'entertainment-celebrities': createEntertainmentPage('Celebrities'),
   games: createGamesPage(
     'Featured games',
     'Featured Games',
