@@ -1,6 +1,7 @@
 import { DOCK_ITEMS } from '../data/dockContent'
 import { USING_TIP_TARGETS_BY_LABEL } from '../data/usingTipPages'
 import DockCarousel from './DockCarousel'
+import PromoWidget from './PromoWidget'
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const BASE = import.meta.env.BASE_URL
@@ -61,6 +62,7 @@ export default function HomePage({
       <div className="absolute promo-img">
         <img className="object-cover" src={`${BASE}images/promotionalimage.png`} />
       </div>
+      <PromoWidget />
       <div className="absolute flex flex-wrap today-pane items-center">
         <h3 className="today-pane-title">Today on MSN</h3>
         <h3 className="today-pane-date selectable" data-select-x="0" data-select-height="1" data-select-layer="0">
