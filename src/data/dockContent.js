@@ -1060,4 +1060,8 @@ export const DOCK_PAGES = {
       'Find a Radio Station',
     ],
   },
+  'navigation-error': {
+    layout: 'navigationError',
+    title: 'Navigation Error',
+  },
 }

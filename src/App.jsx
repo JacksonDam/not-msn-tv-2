@@ -5,6 +5,7 @@ import HomePage from './components/HomePage'
 import DockPage from './components/DockPage'
 import MediaPlayerPanel from './components/MediaPlayerPanel'
 import MessengerPanel from './components/MessengerPanel'
+import TypeWwwPanel from './components/TypeWwwPanel'
 import { MUSIC_NAV_ROW } from './components/MusicCenter'
 import SelectionFrame from './components/SelectionFrame'
 import { DOCK_PAGES } from './data/dockContent'
@@ -117,6 +118,8 @@ export default function App() {
   const mediaPanelReturnTargetRef = useRef(null)
   const messengerPanelStageRef = useRef(null)
   const messengerPanelCloseTimeoutRef = useRef(null)
+  const typeWwwPanelStageRef = useRef(null)
+  const typeWwwPanelCloseTimeoutRef = useRef(null)
 
   const [mediaPlaybackState, setMediaPlaybackState] = useState('stopped')
   const [mediaMuted, setMediaMuted] = useState(false)
@@ -128,6 +131,10 @@ export default function App() {
   const [messengerPanelMounted, setMessengerPanelMounted] = useState(false)
   const [messengerPanelSlideOpen, setMessengerPanelSlideOpen] = useState(false)
   const [messengerPanelKey, setMessengerPanelKey] = useState(0)
+  const [typeWwwPanelMounted, setTypeWwwPanelMounted] = useState(false)
+  const [typeWwwPanelSlideOpen, setTypeWwwPanelSlideOpen] = useState(false)
+  const [typeWwwPanelKey, setTypeWwwPanelKey] = useState(0)
+  const [navigationErrorUrl, setNavigationErrorUrl] = useState('http://www.')
 
   const selection = useSelection()
   const audio = useAudio()
@@ -413,6 +420,29 @@ export default function App() {
     }, MEDIA_PANEL_SLIDE_MS)
   }, [audio, beginDockTransition, messengerPanelMounted, revealFocusBox, selection])
 
+  const closeTypeWwwPanel = useCallback(({ afterClose = null } = {}) => {
+    clearTimeout(typeWwwPanelCloseTimeoutRef.current)
+    if (!typeWwwPanelMounted) {
+      afterClose?.()
+      return
+    }
+
+    void audio.play('panelDown')
+    setTypeWwwPanelSlideOpen(false)
+
+    typeWwwPanelCloseTimeoutRef.current = setTimeout(() => {
+      setTypeWwwPanelMounted(false)
+      typeWwwPanelCloseTimeoutRef.current = null
+      if (afterClose) {
+        afterClose()
+      } else if (curPageRef.current) {
+        selection.initSelectables(curPageRef.current)
+        selection.goToSpecific(0, 10, 0)
+        revealFocusBox()
+      }
+    }, MEDIA_PANEL_SLIDE_MS)
+  }, [audio, revealFocusBox, selection, typeWwwPanelMounted])
+
   const showMediaPanel = useCallback(({ startBackground = false } = {}) => {
     if (!curPageVisible || dockTransitionPhase !== 'idle') return
 
@@ -447,13 +477,18 @@ export default function App() {
   ])
 
   const openMediaPanel = useCallback(({ startBackground = false } = {}) => {
+    if (typeWwwPanelMounted) {
+      closeTypeWwwPanel({ afterClose: () => showMediaPanel({ startBackground }) })
+      return
+    }
+
     if (messengerPanelMounted) {
       closeMessengerPanel({ afterClose: () => showMediaPanel({ startBackground }) })
       return
     }
 
     showMediaPanel({ startBackground })
-  }, [closeMessengerPanel, messengerPanelMounted, showMediaPanel])
+  }, [closeMessengerPanel, closeTypeWwwPanel, messengerPanelMounted, showMediaPanel, typeWwwPanelMounted])
 
   const toggleMediaPanel = useCallback(() => {
     if (mediaPanelMounted && mediaPanelSlideOpen) {
@@ -481,13 +516,18 @@ export default function App() {
   }, [audio, curPageVisible, dockTransitionPhase])
 
   const openMessengerPanel = useCallback(({ silent = false } = {}) => {
+    if (typeWwwPanelMounted) {
+      closeTypeWwwPanel({ afterClose: () => showMessengerPanel({ silent }) })
+      return
+    }
+
     if (mediaPanelMounted) {
       closeMediaPanel({ afterClose: () => showMessengerPanel({ silent }) })
       return
     }
 
     showMessengerPanel({ silent })
-  }, [closeMediaPanel, mediaPanelMounted, showMessengerPanel])
+  }, [closeMediaPanel, closeTypeWwwPanel, mediaPanelMounted, showMessengerPanel, typeWwwPanelMounted])
 
   const toggleMessengerPanel = useCallback(() => {
     if (messengerPanelMounted && messengerPanelSlideOpen) {
@@ -500,6 +540,51 @@ export default function App() {
   const openMessengerSettings = useCallback(() => {
     closeMessengerPanel({ reopenSettings: true })
   }, [closeMessengerPanel])
+
+  const showTypeWwwPanel = useCallback(() => {
+    if (!curPageVisible || dockTransitionPhase !== 'idle') return
+
+    clearTimeout(typeWwwPanelCloseTimeoutRef.current)
+    typeWwwPanelCloseTimeoutRef.current = null
+    setTypeWwwPanelKey((current) => current + 1)
+    setTypeWwwPanelMounted(true)
+    setTypeWwwPanelSlideOpen(false)
+    void audio.play('panelUp')
+
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => setTypeWwwPanelSlideOpen(true))
+    })
+  }, [audio, curPageVisible, dockTransitionPhase])
+
+  const openTypeWwwPanel = useCallback(() => {
+    if (mediaPanelMounted) {
+      closeMediaPanel({ afterClose: showTypeWwwPanel })
+      return
+    }
+
+    if (messengerPanelMounted) {
+      closeMessengerPanel({ afterClose: showTypeWwwPanel })
+      return
+    }
+
+    showTypeWwwPanel()
+  }, [closeMediaPanel, closeMessengerPanel, mediaPanelMounted, messengerPanelMounted, showTypeWwwPanel])
+
+  const toggleTypeWwwPanel = useCallback(() => {
+    if (typeWwwPanelMounted && typeWwwPanelSlideOpen) {
+      closeTypeWwwPanel()
+    } else {
+      openTypeWwwPanel()
+    }
+  }, [closeTypeWwwPanel, openTypeWwwPanel, typeWwwPanelMounted, typeWwwPanelSlideOpen])
+
+  const handleTypeWwwGo = useCallback((url) => {
+    const nextUrl = String(url || 'http://www.').trim() || 'http://www.'
+    setNavigationErrorUrl(nextUrl)
+    closeTypeWwwPanel({
+      afterClose: () => beginDockTransition('navigation-error', { pushHistory: true, showContacting: false }),
+    })
+  }, [beginDockTransition, closeTypeWwwPanel])
 
   useEffect(() => {
     const mediaAudio = new Audio(`${BASE}audio/chill-jingle.mp3`)
@@ -554,6 +639,10 @@ export default function App() {
   }, [])
 
   useEffect(() => {
+    return () => clearTimeout(typeWwwPanelCloseTimeoutRef.current)
+  }, [])
+
+  useEffect(() => {
     if (!mediaPanelMounted || !mediaPanelStageRef.current) return undefined
 
     const frame = window.requestAnimationFrame(() => {
@@ -576,6 +665,18 @@ export default function App() {
 
     return () => window.cancelAnimationFrame(frame)
   }, [messengerPanelKey, messengerPanelMounted, revealFocusBox, selection])
+
+  useEffect(() => {
+    if (!typeWwwPanelMounted || !typeWwwPanelStageRef.current) return undefined
+
+    const frame = window.requestAnimationFrame(() => {
+      selection.initSelectables(typeWwwPanelStageRef.current)
+      selection.goToSpecific(0, 0, 0)
+      revealFocusBox()
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [revealFocusBox, selection, typeWwwPanelKey, typeWwwPanelMounted])
 
   const mediaPlayer = useMemo(() => ({
     playbackState: mediaPlaybackState,
@@ -649,10 +750,17 @@ export default function App() {
         return
       }
 
-      if (e.key === 'Escape' && (mediaPanelMounted || messengerPanelMounted)) {
+      if (e.key === 'Backspace' && e.shiftKey) {
+        e.preventDefault()
+        toggleTypeWwwPanel()
+        return
+      }
+
+      if (e.key === 'Escape' && (mediaPanelMounted || messengerPanelMounted || typeWwwPanelMounted)) {
         e.preventDefault()
         if (mediaPanelMounted) closeMediaPanel()
         if (messengerPanelMounted) closeMessengerPanel()
+        if (typeWwwPanelMounted) closeTypeWwwPanel()
         return
       }
 
@@ -835,10 +943,13 @@ export default function App() {
     handleBackNavigation,
     toggleMediaPanel,
     toggleMessengerPanel,
+    toggleTypeWwwPanel,
     mediaPanelMounted,
     messengerPanelMounted,
+    typeWwwPanelMounted,
     closeMediaPanel,
     closeMessengerPanel,
+    closeTypeWwwPanel,
   ])
 
   const fetchHeadlines = useCallback(async () => {
@@ -1308,6 +1419,7 @@ export default function App() {
                       onMusicNavSlideEnd={handleMusicNavSlideEnd}
                       mediaPlayer={mediaPlayer}
                       onSettingsAction={handleSettingsAction}
+                      navigationErrorUrl={navigationErrorUrl}
                     />
                   )}
 
@@ -1321,6 +1433,20 @@ export default function App() {
                         key={messengerPanelKey}
                         onSettings={openMessengerSettings}
                         selection={selection}
+                      />
+                    </div>
+                  )}
+
+                  {typeWwwPanelMounted && (
+                    <div
+                      ref={typeWwwPanelStageRef}
+                      className={`type-www-panel-stage${typeWwwPanelSlideOpen ? ' is-open' : ''}`}
+                      onTransitionEnd={() => selection.updateFocusBox()}
+                    >
+                      <TypeWwwPanel
+                        key={typeWwwPanelKey}
+                        onGo={handleTypeWwwGo}
+                        onCancel={() => closeTypeWwwPanel()}
                       />
                     </div>
                   )}

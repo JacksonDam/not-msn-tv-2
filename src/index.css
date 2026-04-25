@@ -5988,6 +5988,249 @@
         white-space: nowrap;
     }
 
+    .type-www-panel-stage {
+        position: absolute;
+        top: calc(14.5% - 25px);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        display: flex;
+        min-height: 0;
+        pointer-events: none;
+        transform: translateY(100%);
+        transition: transform 0.25s linear;
+        will-change: transform;
+    }
+
+    .type-www-panel-stage.is-open {
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .type-www-panel {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow: hidden;
+        color: #102b43;
+        font-family: "Segoe TV";
+        background-color: #2f9bf1;
+        background-image:
+            url('/not-msn-tv-2/images/pages/panels/PanelsTopLeftCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsTopRightCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsBottomLeftCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsBottomRightCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsTopStretch.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsBottomStretch.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsLeftStretch.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsRightStretch.jpg'),
+            url('/not-msn-tv-2/images/pages/panels/PanelsLargeBG.jpg');
+        background-position:
+            left top,
+            right top,
+            left bottom,
+            right bottom,
+            center top,
+            center bottom,
+            left center,
+            right center,
+            center center;
+        background-size:
+            1.4vh 1.4vh,
+            1.4vh 1.4vh,
+            1.4vh 1.4vh,
+            1.4vh 1.4vh,
+            calc(100% - 2.8vh) 1.4vh,
+            calc(100% - 2.8vh) 1.4vh,
+            1.4vh calc(100% - 2.8vh),
+            1.4vh calc(100% - 2.8vh),
+            100% 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+    }
+
+    .type-www-panel-content {
+        position: absolute;
+        inset: 0;
+        padding: 4vh 4.75vh;
+        box-sizing: border-box;
+    }
+
+    .type-www-panel h1 {
+        margin: 0 0 2.35vh;
+        color: #ffffff;
+        font-family: "Segoe TV Bold";
+        font-size: 4.7vh;
+        line-height: 1;
+    }
+
+    .type-www-panel p {
+        margin: 0 0 1.55vh;
+        max-width: none;
+        color: #071d31;
+        font-size: 3.62vh;
+        line-height: 1.08;
+    }
+
+    .type-www-form-row {
+        display: flex;
+        align-items: center;
+        gap: 1.5vh;
+        width: 100%;
+    }
+
+    .type-www-input {
+        position: static;
+        right: auto;
+        left: auto;
+        top: auto;
+        transform: none;
+        flex: 1 1 auto;
+        width: auto;
+        min-width: 0;
+        height: 7.05vh;
+        box-sizing: border-box;
+        padding: 0.35vh 1.15vh 0.65vh !important;
+        border-top: #4b565e 0.36vh solid;
+        border-right: #d5e4ee 0.36vh solid;
+        border-bottom: #d5e4ee 0.36vh solid;
+        border-left: #4b565e 0.36vh solid;
+        background: #73808c !important;
+        color: #ffffff !important;
+        font-family: "Segoe TV";
+        font-weight: 400 !important;
+        font-size: 3.85vh !important;
+        line-height: 1;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .type-www-button {
+        flex: 0 0 auto;
+        height: 6.05vh;
+        min-width: 11.4vh;
+        margin-left: 0;
+        padding: 0 2.55vh 0.42vh;
+        font-size: 3.25vh;
+    }
+
+    .type-www-current-link {
+        position: absolute;
+        left: 4.75vh;
+        bottom: 5.95vh;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7vh;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: #183455;
+        font-family: "Segoe TV";
+        font-size: 3.45vh;
+        line-height: 1;
+    }
+
+    .type-www-current-link .dock-page-bullet {
+        flex: 0 0 auto;
+    }
+
+    .type-www-panel-preload {
+        display: none;
+    }
+
+    .navigation-error-shell {
+        z-index: 8;
+        background: #8dc5f0;
+    }
+
+    .navigation-error-body {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        color: #102337;
+        font-family: "Segoe TV";
+        background: #8dc5f0;
+    }
+
+    .navigation-error-icon {
+        position: absolute;
+        left: 10.2vh;
+        top: 14.9vh;
+        width: 12.8vh;
+        height: 12.8vh;
+        object-fit: contain;
+    }
+
+    .navigation-error-copy {
+        position: absolute;
+        top: 16vh;
+        left: 23.5vh;
+        right: 7vh;
+    }
+
+    .navigation-error-copy h1 {
+        margin: 0 0 2.2vh;
+        color: #061b2c;
+        font-family: "Segoe TV Bold";
+        font-size: 5.1vh;
+        line-height: 1;
+    }
+
+    .navigation-error-copy p {
+        margin: 0 0 2.6vh;
+        color: #122b44;
+        font-size: 4vh;
+        line-height: 1.15;
+    }
+
+    .navigation-error-copy .navigation-error-url {
+        max-width: 108vh;
+        color: #061b2c;
+        font-family: "Segoe TV Bold";
+        line-height: 1.07;
+        overflow-wrap: anywhere;
+    }
+
+    .navigation-error-input {
+        position: static;
+        right: auto;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: min(96vh, 100%);
+        height: 6.8vh;
+        box-sizing: border-box;
+        padding: 0 1vh 0.45vh !important;
+        border-top: #4b565e 0.36vh solid;
+        border-right: #d5e4ee 0.36vh solid;
+        border-bottom: #d5e4ee 0.36vh solid;
+        border-left: #4b565e 0.36vh solid;
+        background: #ffffff !important;
+        color: #111111 !important;
+        font-family: "Segoe TV";
+        font-weight: 400 !important;
+        font-size: 4vh !important;
+        line-height: 1;
+        outline: none;
+    }
+
+    .navigation-error-actions {
+        position: absolute;
+        right: 8.5vh;
+        bottom: 5.65vh;
+        display: flex;
+        gap: 0.55vh;
+        align-items: center;
+    }
+
+    .navigation-error-button {
+        height: 6.1vh;
+        min-width: 20.4vh;
+        margin-left: 0;
+        padding: 0 3.3vh 0.45vh;
+        font-size: 3.7vh;
+    }
+
     @media (max-width: 900px) {
         .dock-page-body {
             grid-template-columns: 33.3vh minmax(0, 1fr);
