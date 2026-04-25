@@ -211,7 +211,7 @@ export default function MusicCenter({
     if (captionKind === 'background') return BACKGROUND_CAPTIONS[backgroundCaptionIndex]
     if (captionKind === 'jumble') return 'Play my music at random'
     if (captionKind === 'placeholder') return '...'
-    return 'A fast way to get to fresh'
+    return 'A fast way to get to fresh tracks'
   }, [backgroundCaptionIndex, captionKind])
 
   return (
