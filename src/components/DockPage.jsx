@@ -14,6 +14,13 @@ import {
   readMoneyWatchlistCookie,
   writeMoneyWatchlistCookie,
 } from '../utils/moneyWatchlist'
+import {
+  readWeatherCityCookie,
+  readWeatherExtraCitiesCookie,
+  WEATHER_DEFAULT_CITY_ID,
+  writeWeatherCityCookie,
+  writeWeatherExtraCitiesCookie,
+} from '../utils/weatherPreferences'
 
 const BASE = import.meta.env.BASE_URL
 const CNBC_LOGO_URL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/CNBC_logo.svg/330px-CNBC_logo.svg.png'
@@ -32,6 +39,25 @@ const NEWS_FALLBACKS = {
   local: ['Local headlines are temporarily unavailable'],
 }
 
+const WEATHER_FALLBACK_CITY = {
+  id: 'san-francisco',
+  name: 'San Francisco',
+  country: 'CA',
+  displayName: 'San Francisco, CA',
+  current: {
+    tempC: 14,
+    feelsLikeC: 13,
+    condition: 'Partly cloudy',
+    icon: 'cloudysun',
+  },
+  forecast: [
+    { day: 'Sun', highC: 17, lowC: 11, condition: 'Partly cloudy', icon: 'suncloud' },
+    { day: 'Mon', highC: 18, lowC: 12, condition: 'Partly cloudy', icon: 'cloudysun' },
+    { day: 'Tue', highC: 16, lowC: 11, condition: 'Cloudy', icon: 'cloud' },
+    { day: 'Wed', highC: 17, lowC: 12, condition: 'Clear', icon: 'sun' },
+  ],
+}
+
 function normalizeNewsHeadline(item) {
   const title = String(item?.title ?? item ?? '').replace(/\s+/g, ' ').trim()
   if (!title) return null
@@ -41,6 +67,49 @@ function normalizeNewsHeadline(item) {
     description: String(item?.description ?? '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim(),
     source: item?.source || 'MSNBC',
   }
+}
+
+function normalizeWeatherCity(item) {
+  const name = String(item?.name ?? '').trim()
+  const country = String(item?.country ?? '').trim()
+  if (!name) return null
+
+  return {
+    id: String(item?.id ?? name.toLowerCase().replace(/[^a-z0-9]+/g, '-')).trim(),
+    name,
+    country,
+    displayName: String(item?.displayName ?? `${name}${country ? `, ${country}` : ''}`).trim(),
+    current: {
+      tempC: Math.round(Number(item?.current?.tempC ?? 0)),
+      feelsLikeC: Math.round(Number(item?.current?.feelsLikeC ?? item?.current?.tempC ?? 0)),
+      condition: String(item?.current?.condition ?? 'Unavailable').trim(),
+      icon: String(item?.current?.icon ?? 'cloud').trim(),
+    },
+    forecast: Array.isArray(item?.forecast)
+      ? item.forecast.slice(0, 4).map((forecastItem) => ({
+          day: String(forecastItem?.day ?? '').trim(),
+          highC: Math.round(Number(forecastItem?.highC ?? 0)),
+          lowC: Math.round(Number(forecastItem?.lowC ?? 0)),
+          condition: String(forecastItem?.condition ?? '').trim(),
+          icon: String(forecastItem?.icon ?? 'cloud').trim(),
+        }))
+      : [],
+  }
+}
+
+function fallbackWeatherCities() {
+  return [WEATHER_FALLBACK_CITY]
+}
+
+function usesFahrenheit(city) {
+  const country = String(city?.country ?? '').trim().toUpperCase()
+  return ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY', 'UNITED STATES', 'USA', 'US'].includes(country)
+}
+
+function formatTemp(value, city = null) {
+  const celsius = Number(value ?? 0)
+  const rounded = Math.round(usesFahrenheit(city) ? (celsius * 9 / 5) + 32 : celsius)
+  return `${rounded}°`
 }
 
 function fallbackNews(section) {
@@ -197,6 +266,8 @@ export default function DockPage({
   const moneyLookupInputRef = useRef(null)
   const moneyQuoteInputRef = useRef(null)
   const moneyWatchlistInputRef = useRef(null)
+  const weatherQuickInputRef = useRef(null)
+  const weatherAddInputRef = useRef(null)
   const [canScrollUp, setCanScrollUp] = useState(false)
   const [canScrollDown, setCanScrollDown] = useState(false)
   const [moneyQuoteState, setMoneyQuoteState] = useState({
@@ -209,6 +280,9 @@ export default function DockPage({
   const [moneyWatchlistSelection, setMoneyWatchlistSelection] = useState({})
   const [moneyBusinessNews, setMoneyBusinessNews] = useState([])
   const [newsStories, setNewsStories] = useState([])
+  const [weatherCities, setWeatherCities] = useState(() => fallbackWeatherCities())
+  const [weatherCityId, setWeatherCityId] = useState(() => readWeatherCityCookie())
+  const [weatherExtraCityIds, setWeatherExtraCityIds] = useState(() => readWeatherExtraCitiesCookie())
   const [sportsTopStories, setSportsTopStories] = useState([])
   const [sportsLeagueStories, setSportsLeagueStories] = useState([])
   const [sportsNcaaStories, setSportsNcaaStories] = useState({ basketball: [], football: [] })
@@ -320,6 +394,39 @@ export default function DockPage({
     handleModuleNavigate(`money-quote:${encodeURIComponent(normalized.inputSymbol)}`)
   }, [handleModuleNavigate])
 
+  const findWeatherCity = useCallback((rawQuery) => {
+    const query = String(rawQuery ?? '').trim().toLowerCase()
+    if (!query) return null
+    const normalizedQuery = query.replace(/[^a-z0-9]+/g, ' ').trim()
+
+    if (/^w1\b/.test(normalizedQuery) || normalizedQuery === 'w1 5du') {
+      return weatherCities.find((city) => city.id === 'london') ?? null
+    }
+
+    return weatherCities.find((city) => (
+      city.id.toLowerCase() === query
+      || city.name.toLowerCase() === query
+      || city.displayName.toLowerCase() === query
+      || city.displayName.toLowerCase().includes(query)
+    )) ?? null
+  }, [weatherCities])
+
+  const handleWeatherLookup = useCallback((inputRef, target = 'my-city') => {
+    const city = findWeatherCity(inputRef.current?.value)
+    if (!city) return
+
+    if (target === 'extra') {
+      setWeatherExtraCityIds((current) => (
+        current.includes(city.id) ? current : [...current, city.id].slice(-3)
+      ))
+      handleModuleNavigate('weather-more-cities')
+      return
+    }
+
+    setWeatherCityId(city.id)
+    handleModuleNavigate('weather')
+  }, [findWeatherCity, handleModuleNavigate])
+
   const isMoneyStocksVariant = page.variant === 'moneyStocks'
     || page.variant === 'moneyStocksAdd'
     || page.variant === 'moneyStocksRemove'
@@ -336,6 +443,14 @@ export default function DockPage({
   useEffect(() => {
     writeMoneyWatchlistCookie(moneyWatchlistSymbols)
   }, [moneyWatchlistSymbols])
+
+  useEffect(() => {
+    writeWeatherCityCookie(weatherCityId)
+  }, [weatherCityId])
+
+  useEffect(() => {
+    writeWeatherExtraCitiesCookie(weatherExtraCityIds)
+  }, [weatherExtraCityIds])
 
   useEffect(() => {
     if (!isMoneyStocksVariant) return undefined
@@ -402,6 +517,29 @@ export default function DockPage({
       cancelled = true
     }
   }, [page.variant, pageId, page.newsSection])
+
+  useEffect(() => {
+    if (!String(page.variant ?? '').startsWith('weather')) return undefined
+
+    let cancelled = false
+
+    fetch(`${BASE}data/weather/cities.json?_=${Date.now()}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled) return
+        const cities = Array.isArray(data?.cities)
+          ? data.cities.map(normalizeWeatherCity).filter(Boolean)
+          : []
+        setWeatherCities(cities.length ? cities : fallbackWeatherCities())
+      })
+      .catch(() => {
+        if (!cancelled) setWeatherCities(fallbackWeatherCities())
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [page.variant])
 
   useEffect(() => {
     if (page.variant !== 'sportsTopStories') return undefined
@@ -1139,7 +1277,7 @@ export default function DockPage({
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'newsCenter' || page.variant === 'newsLocalChange' || page.variant === 'newsLottery' ? 'dock-page-shell-news' : ''} ${page.variant === 'newsLocalChange' ? 'dock-page-shell-news-local-change' : ''} ${page.variant === 'newsLottery' ? 'dock-page-shell-news-lottery' : ''} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'entertainmentMissing' || page.variant === 'entertainmentMovies' ? 'dock-page-shell-entertainment' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'sportsLeague' || page.variant === 'sportsNcaa' ? 'dock-page-shell-sports-nfl' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'newsCenter' || page.variant === 'newsLocalChange' || page.variant === 'newsLottery' ? 'dock-page-shell-news' : ''} ${page.variant === 'newsLocalChange' ? 'dock-page-shell-news-local-change' : ''} ${page.variant === 'newsLottery' ? 'dock-page-shell-news-lottery' : ''} ${String(page.variant ?? '').startsWith('weather') ? 'dock-page-shell-weather' : ''} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'entertainmentMissing' || page.variant === 'entertainmentMovies' ? 'dock-page-shell-entertainment' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'sportsLeague' || page.variant === 'sportsNcaa' ? 'dock-page-shell-sports-nfl' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -1516,6 +1654,226 @@ export default function DockPage({
                     >
                       Change State
                     </button>
+                  </div>
+                )
+              })()
+            ) : page.variant === 'weatherCenter' ? (
+              (() => {
+                const city = weatherCities.find((item) => item.id === weatherCityId)
+                  ?? weatherCities.find((item) => item.id === WEATHER_DEFAULT_CITY_ID)
+                  ?? weatherCities[0]
+                  ?? WEATHER_FALLBACK_CITY
+                const forecast = city.forecast.length ? city.forecast : WEATHER_FALLBACK_CITY.forecast
+
+                return (
+                  <div className="dock-page-weather">
+                    <div className="dock-page-content-title dock-page-weather-title">Weather in {city.displayName}</div>
+                    <div className="dock-page-weather-current">
+                      <img
+                        className="dock-page-weather-current-icon"
+                        src={`${BASE}images/pages/weather/${city.current.icon}.png`}
+                        alt=""
+                      />
+                      <div className="dock-page-weather-current-reading">
+                        <div className="dock-page-weather-current-temp">{formatTemp(city.current.tempC, city)}</div>
+                        <div className="dock-page-weather-current-condition">
+                          {city.current.condition}, Feels Like: {formatTemp(city.current.feelsLikeC, city)}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="dock-page-divider"></div>
+                    <div className="dock-page-weather-forecast-title">4 day Forecast:</div>
+                    <div className="dock-page-weather-forecast">
+                      {forecast.map((item, index) => (
+                        <div key={`${item.day}-${index}`} className="dock-page-weather-day">
+                          <div className="dock-page-weather-day-name">{item.day}</div>
+                          <img
+                            className="dock-page-weather-day-icon"
+                            src={`${BASE}images/pages/weather/${item.icon}.png`}
+                            alt=""
+                          />
+                          <div className="dock-page-weather-day-temp">
+                            <span>{formatTemp(item.lowC, city)}</span>
+                            <span className="dock-page-weather-day-temp-secondary">/{formatTemp(item.highC, city)}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <SelectableRow
+                      row={nextRow()}
+                      x={0}
+                      className="dock-page-weather-extended"
+                      data-select-id="weather-extended-forecast"
+                    >
+                      <span className="dock-page-bullet dock-page-weather-link-arrow" aria-hidden="true"></span>
+                      <span className="dock-page-row-label">Extended forecast at MSN Weather</span>
+                    </SelectableRow>
+                    <div className="dock-page-weather-provider">Provided by The Weather Channel ®</div>
+                    <button
+                      type="button"
+                      className="dock-page-news-action dock-page-weather-action dock-page-weather-change-city selectable"
+                      data-select-id="weather-change-city"
+                      data-select-x="1"
+                      data-select-height={nextRow()}
+                      data-select-layer="0"
+                      onClick={() => handleModuleNavigate('weather-quick-lookup')}
+                    >
+                      Change City
+                    </button>
+                  </div>
+                )
+              })()
+            ) : page.variant === 'weatherQuickLookup' ? (
+              (() => {
+                const cityRow = nextRow()
+                const actionRow = nextRow()
+
+                return (
+                  <div className="dock-page-weather dock-page-weather-lookup">
+                    <div className="dock-page-weather-copy">
+                      To see the weather forecast for a city, type the city name or postal code in the box
+                      below, and then choose <b>Get Forecast</b>.
+                    </div>
+                    <input
+                      ref={weatherQuickInputRef}
+                      className="dock-page-weather-input search-input-stub selectable"
+                      type="text"
+                      aria-label="City name or postal code"
+                      autoComplete="off"
+                      spellCheck={false}
+                      data-select-id="weather-quick-city-input"
+                      data-select-x="0"
+                      data-select-height={cityRow}
+                      data-select-layer="0"
+                    />
+                    <div className="dock-page-weather-example">Example: <b>London, England</b> or <b>W1 5DU</b></div>
+                    <div className="dock-page-weather-actions">
+                      <button
+                        type="button"
+                        className="dock-page-news-action dock-page-weather-action selectable"
+                        data-select-id="weather-quick-cancel"
+                        data-select-x="0"
+                        data-select-height={actionRow}
+                        data-select-layer="0"
+                        onClick={() => handleModuleNavigate('weather')}
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="button"
+                        className="dock-page-news-action dock-page-weather-action selectable"
+                        data-select-id="weather-get-forecast"
+                        data-select-x="1"
+                        data-select-height={actionRow}
+                        data-select-layer="0"
+                        onClick={() => handleWeatherLookup(weatherQuickInputRef)}
+                      >
+                        Get Forecast
+                      </button>
+                    </div>
+                  </div>
+                )
+              })()
+            ) : page.variant === 'weatherMoreCities' ? (
+              (() => {
+                const extraCities = weatherExtraCityIds
+                  .map((id) => weatherCities.find((city) => city.id === id))
+                  .filter(Boolean)
+
+                return (
+                  <div className="dock-page-weather dock-page-weather-more">
+                    {extraCities.length ? (
+                      <div className="dock-page-weather-more-list">
+                        {extraCities.map((city) => (
+                          <SelectableRow
+                            key={city.id}
+                            row={nextRow()}
+                            x={0}
+                            className="dock-page-weather-more-city"
+                            onClick={() => {
+                              setWeatherCityId(city.id)
+                              handleModuleNavigate('weather')
+                            }}
+                          >
+                            <img
+                              className="dock-page-weather-more-icon"
+                              src={`${BASE}images/pages/weather/${city.current.icon}.png`}
+                              alt=""
+                            />
+                            <span className="dock-page-row-label">{city.displayName}</span>
+                            <span className="dock-page-weather-more-temp">{formatTemp(city.current.tempC, city)}</span>
+                          </SelectableRow>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="dock-page-weather-copy dock-page-weather-more-copy">
+                        You can get 4-day forecasts for up to 3 additional cities. To add a city to this page,
+                        choose <b>Add City</b>.
+                      </div>
+                    )}
+                    <button
+                      type="button"
+                      className="dock-page-news-action dock-page-weather-action dock-page-weather-add-button selectable"
+                      data-select-id="weather-add-city"
+                      data-select-x="0"
+                      data-select-height={nextRow()}
+                      data-select-layer="0"
+                      onClick={() => handleModuleNavigate('weather-add-city')}
+                    >
+                      Add City
+                    </button>
+                  </div>
+                )
+              })()
+            ) : page.variant === 'weatherAddCity' ? (
+              (() => {
+                const cityRow = nextRow()
+                const actionRow = nextRow()
+
+                return (
+                  <div className="dock-page-weather dock-page-weather-add">
+                    <div className="dock-page-content-title dock-page-weather-title">Add a city</div>
+                    <div className="dock-page-weather-copy">
+                      Type the name or postal code of the city you want to add to your More cities page, and
+                      then choose <b>Add</b>.
+                    </div>
+                    <input
+                      ref={weatherAddInputRef}
+                      className="dock-page-weather-input search-input-stub selectable"
+                      type="text"
+                      aria-label="City name or postal code"
+                      autoComplete="off"
+                      spellCheck={false}
+                      data-select-id="weather-add-city-input"
+                      data-select-x="0"
+                      data-select-height={cityRow}
+                      data-select-layer="0"
+                    />
+                    <div className="dock-page-weather-example">Example: <b>London, England</b> or <b>W1 5DU</b></div>
+                    <div className="dock-page-weather-actions">
+                      <button
+                        type="button"
+                        className="dock-page-news-action dock-page-weather-action selectable"
+                        data-select-id="weather-add-cancel"
+                        data-select-x="0"
+                        data-select-height={actionRow}
+                        data-select-layer="0"
+                        onClick={() => handleModuleNavigate('weather-more-cities')}
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="button"
+                        className="dock-page-news-action dock-page-weather-action selectable"
+                        data-select-id="weather-add"
+                        data-select-x="1"
+                        data-select-height={actionRow}
+                        data-select-layer="0"
+                        onClick={() => handleWeatherLookup(weatherAddInputRef, 'extra')}
+                      >
+                        Add
+                      </button>
+                    </div>
                   </div>
                 )
               })()

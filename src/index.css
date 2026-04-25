@@ -1783,7 +1783,7 @@
     }
 
     .theme-weather {
-        --dock-header-bg: linear-gradient(180deg, #5f9dc3 0%, #2c728e 100%);
+        --dock-header-bg: linear-gradient(90deg, #13838c 0%, #51b1ba 46%, #18818d 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #dcf0f5 0%, #cae4eb 100%);
         --dock-sidebar-border: #7eaab5;
         --dock-sidebar-card-bg: #e1f0f3;
@@ -2366,6 +2366,10 @@
         margin-top: 14.4vh;
     }
 
+    .dock-page-shell-weather .dock-page-sidebar-card {
+        margin-top: 14.4vh;
+    }
+
     .dock-page-shell-entertainment {
         --dock-header-height: 11.55vh;
     }
@@ -2376,6 +2380,10 @@
 
     .dock-page-shell-news {
         --dock-header-height: 12.25vh;
+    }
+
+    .dock-page-shell-weather {
+        --dock-header-height: 11.55vh;
     }
 
     .dock-page-shell-money {
@@ -4523,6 +4531,252 @@
     .dock-page-news-lottery-action {
         margin-top: 2.6vh;
         min-width: 36vh;
+    }
+
+    .dock-page-shell-weather .dock-page-content {
+        padding: 2.15vh 3.1vh 2.2vh 2.2vh;
+    }
+
+    .dock-page-weather {
+        color: #182233;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-weather-title.dock-page-content-title {
+        margin-top: 1.45vh;
+        margin-bottom: 2.2vh;
+        color: var(--dock-accent);
+        font-family: "Segoe TV";
+        font-size: 3.65vh;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .dock-page-weather-current {
+        display: grid;
+        grid-template-columns: 13.5vh minmax(0, 1fr);
+        align-items: center;
+        min-height: 14.4vh;
+        margin-bottom: 1.55vh;
+    }
+
+    .dock-page-weather-current-reading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.1vh;
+        align-self: stretch;
+        padding-top: 0.25vh;
+    }
+
+    .dock-page-weather-current-icon {
+        width: 10.1vh;
+        height: 10.1vh;
+        object-fit: contain;
+        filter: drop-shadow(0.35vh 0.55vh 0.35vh rgba(0, 0, 0, 0.26));
+    }
+
+    .dock-page-weather-current-temp {
+        color: #2b9c91;
+        font-size: 6.7vh;
+        line-height: 0.9;
+    }
+
+    .dock-page-weather-current-condition {
+        color: #202a36;
+        font-size: 3.35vh;
+        line-height: 1.05;
+    }
+
+    .dock-page-weather-forecast-title {
+        margin-top: 2.05vh;
+        margin-bottom: 1.2vh;
+        color: #171717;
+        font-family: "Segoe TV Bold";
+        font-size: 3.45vh;
+        line-height: 1;
+    }
+
+    .dock-page-weather-forecast {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        max-width: 76vh;
+        margin-left: 1.5vh;
+        margin-bottom: 2.05vh;
+    }
+
+    .dock-page-weather-day {
+        min-height: 20.2vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        justify-items: center;
+        padding: 0 2.2vh;
+        border-right: 0.25vh solid rgba(70, 70, 70, 0.48);
+    }
+
+    .dock-page-weather-day:last-child {
+        border-right: 0;
+    }
+
+    .dock-page-weather-day-name {
+        color: #363039;
+        font-size: 3.45vh;
+        line-height: 1;
+    }
+
+    .dock-page-weather-day-icon {
+        width: 10.3vh;
+        height: 10.3vh;
+        object-fit: contain;
+        align-self: center;
+        filter: drop-shadow(0.35vh 0.55vh 0.25vh rgba(0, 0, 0, 0.22));
+    }
+
+    .dock-page-weather-day-temp {
+        color: #1d1d1d;
+        font-family: "Segoe TV Bold";
+        font-size: 3.25vh;
+        line-height: 1;
+    }
+
+    .dock-page-weather-day-temp-secondary {
+        color: #6f7379;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-weather-extended {
+        width: fit-content;
+        margin-left: 0;
+        padding: 0;
+        gap: 0.45vh;
+        background: transparent;
+        border: 0;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-shell-weather .dock-page-weather-extended .dock-page-row-label {
+        color: #18366b;
+        font-size: 3.25vh;
+        line-height: 1;
+    }
+
+    .dock-page-weather-link-arrow {
+        width: 2.6vh;
+        height: 4.4vh;
+        margin-top: 0;
+    }
+
+    .dock-page-weather-provider {
+        margin: 0.55vh 0 0 2.2vh;
+        color: #202a36;
+        font-size: 2.62vh;
+        line-height: 1;
+    }
+
+    .dock-page-weather-action {
+        float: none;
+        margin-right: 0;
+        min-width: 15.5vh;
+        min-height: 5.7vh;
+    }
+
+    .dock-page-weather-change-city {
+        float: right;
+        min-width: 25vh;
+        margin-top: 3.25vh;
+    }
+
+    .dock-page-weather-copy,
+    .dock-page-weather-example {
+        color: #182233;
+        font-family: "Segoe TV";
+        font-size: 3.75vh;
+        line-height: 1.12;
+    }
+
+    .dock-page-weather-copy {
+        max-width: 78vh;
+        margin: 1.2vh 0 2.3vh;
+    }
+
+    .dock-page-weather-input.search-input-stub {
+        position: static;
+        transform: none;
+        display: block;
+        width: 79.8vh;
+        height: 5.7vh;
+        margin: 0 0 2.4vh;
+        font-size: 3.7vh !important;
+    }
+
+    .dock-page-weather-example {
+        margin-bottom: 4.4vh;
+    }
+
+    .dock-page-weather-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 3.2vh;
+        padding-right: 1.2vh;
+    }
+
+    .dock-page-weather-actions .dock-page-weather-action:last-child {
+        min-width: 27vh;
+    }
+
+    .dock-page-weather-add .dock-page-weather-actions .dock-page-weather-action:last-child {
+        min-width: 11vh;
+    }
+
+    .dock-page-weather-more-copy {
+        max-width: 72vh;
+    }
+
+    .dock-page-weather-add-button {
+        float: right;
+        min-width: 19vh;
+        margin-top: 2.2vh;
+    }
+
+    .dock-page-weather-add .dock-page-weather-title {
+        margin-top: 1.2vh;
+        margin-bottom: 2.2vh;
+    }
+
+    .dock-page-weather-more-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25vh;
+        margin: 0.6vh 0 2.4vh;
+        max-width: 75vh;
+    }
+
+    .dock-page-weather-more-city {
+        display: grid;
+        grid-template-columns: 7vh minmax(0, 1fr) auto;
+        gap: 1.3vh;
+        min-height: 7.5vh;
+        padding: 0.6vh 1.1vh;
+        align-items: center;
+        background: rgba(220, 229, 232, 0.72);
+        border: 0.16vh solid rgba(130, 149, 156, 0.48);
+    }
+
+    .dock-page-weather-more-city .dock-page-row-label,
+    .dock-page-weather-more-temp {
+        color: #1f3f7f;
+        font-size: 3.75vh;
+        line-height: 1;
+    }
+
+    .dock-page-shell-weather .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-weather-more-icon {
+        width: 6vh;
+        height: 6vh;
+        object-fit: contain;
     }
 
     .dock-page-shell-sports-nfl .dock-page-sports-nfl-team-label,

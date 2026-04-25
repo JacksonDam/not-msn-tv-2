@@ -24,6 +24,7 @@ export const DOCK_ITEMS = [
 
 const GAMES_SIDEBAR = ['Featured Games', 'Card Games', 'Board Games', 'Casino Games', 'Word/Trivia']
 const NEWS_SIDEBAR = ['Top Stories', 'Business', 'Technology', 'Health', 'Travel', 'Opinion', 'Local', 'Lottery']
+const WEATHER_SIDEBAR = ['My City', 'Quick Lookup', 'More Cities']
 const MONEY_SIDEBAR = ['Personal Finance', 'My Stocks', 'Business News', 'Money Experts']
 const SPORTS_SIDEBAR = ['Main', 'NFL', 'MLB', 'NBA', 'NHL', 'NCAA']
 const ENTERTAINMENT_SIDEBAR = ['Main', 'TV', 'Movies', 'Celebrities']
@@ -45,6 +46,12 @@ const NEWS_SIDEBAR_TARGETS = {
   Opinion: 'news-opinion',
   Local: 'news-local',
   Lottery: 'news-lottery',
+}
+
+const WEATHER_SIDEBAR_TARGETS = {
+  'My City': 'weather',
+  'Quick Lookup': 'weather-quick-lookup',
+  'More Cities': 'weather-more-cities',
 }
 
 const MONEY_SIDEBAR_TARGETS = {
@@ -90,6 +97,11 @@ const ENTERTAINMENT_SIDEBAR_BOX = {
   items: ['Music', 'Radio'],
 }
 
+const WEATHER_SIDEBAR_BOX = {
+  title: 'Related Links:',
+  items: [{ label: 'News', targetPage: 'news' }],
+}
+
 const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
 const GAMES_BOARD_INTRO = 'Choose a board game from the list below'
 const GAMES_CASINO_INTRO = 'Choose a casino game from the list below'
@@ -119,6 +131,29 @@ function createNewsPage(sidebarCurrent, newsSection, options = {}) {
     },
     sidebarRightTarget: options.sidebarRightTarget ?? (
       options.variant === 'newsLocalChange' ? 'news-local-city-input' : `news-${newsSection}-story-0`
+    ),
+    ...options,
+  }
+}
+
+function createWeatherPage(sidebarCurrent, variant = 'weatherCenter', options = {}) {
+  return {
+    layout: 'center',
+    theme: 'weather',
+    title: 'Weather',
+    subtitle: sidebarCurrent,
+    headerTitle: 'Weather',
+    headerSubtitle: sidebarCurrent,
+    variant,
+    sidebar: WEATHER_SIDEBAR,
+    sidebarCurrent,
+    sidebarTargets: WEATHER_SIDEBAR_TARGETS,
+    sidebarBox: WEATHER_SIDEBAR_BOX,
+    sidebarRightTarget: options.sidebarRightTarget ?? (
+      variant === 'weatherQuickLookup' ? 'weather-quick-city-input'
+        : variant === 'weatherMoreCities' ? 'weather-add-city'
+          : variant === 'weatherAddCity' ? 'weather-add-city-input'
+            : 'weather-extended-forecast'
     ),
     ...options,
   }
@@ -371,6 +406,21 @@ export const DOCK_PAGES = {
     title: 'TV Listings',
     subtitle: 'Home',
   },
+  weather: createWeatherPage('My City', 'weatherCenter', {
+    headerSubtitle: 'My city',
+  }),
+  'weather-quick-lookup': createWeatherPage('Quick Lookup', 'weatherQuickLookup', {
+    headerSubtitle: 'Quick lookup',
+    sidebarRightTarget: 'weather-quick-city-input',
+  }),
+  'weather-more-cities': createWeatherPage('More Cities', 'weatherMoreCities', {
+    headerSubtitle: 'More cities',
+    sidebarRightTarget: 'weather-add-city',
+  }),
+  'weather-add-city': createWeatherPage('More Cities', 'weatherAddCity', {
+    headerSubtitle: 'More cities',
+    sidebarRightTarget: 'weather-add-city-input',
+  }),
   sports: createSportsPage(),
   'sports-nfl': createSportsLeaguePage('NFL'),
   'sports-mlb': createSportsLeaguePage('MLB'),

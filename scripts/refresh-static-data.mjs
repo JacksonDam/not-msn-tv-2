@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..')
 const PUBLIC_DATA_DIR = path.join(ROOT, 'public', 'data')
 const HEADLINES_PATH = path.join(PUBLIC_DATA_DIR, 'headlines.json')
 const NEWS_DIR = path.join(PUBLIC_DATA_DIR, 'news')
+const WEATHER_DIR = path.join(PUBLIC_DATA_DIR, 'weather')
 const MONEY_BUSINESS_NEWS_PATH = path.join(PUBLIC_DATA_DIR, 'money', 'business-news.json')
 const SPORTS_TOP_STORIES_PATH = path.join(PUBLIC_DATA_DIR, 'sports', 'top-stories.json')
 const MONEY_QUOTES_DIR = path.join(PUBLIC_DATA_DIR, 'money', 'quotes')
@@ -33,6 +34,66 @@ const MONEY_SYMBOL_ALIASES = {
   '^GSPC': { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
   SPX: { requestSymbol: '^GSPC', displaySymbol: '$S&P' },
 }
+
+const WEATHER_CAPITALS = [
+  { id: 'san-francisco', name: 'San Francisco', country: 'CA', latitude: 37.7749, longitude: -122.4194 },
+  { id: 'london', name: 'London', country: 'England', latitude: 51.5072, longitude: -0.1276 },
+  { id: 'washington-dc', name: 'Washington', country: 'DC', latitude: 38.9072, longitude: -77.0369 },
+  { id: 'ottawa', name: 'Ottawa', country: 'Canada', latitude: 45.4215, longitude: -75.6972 },
+  { id: 'mexico-city', name: 'Mexico City', country: 'Mexico', latitude: 19.4326, longitude: -99.1332 },
+  { id: 'brasilia', name: 'Brasilia', country: 'Brazil', latitude: -15.7939, longitude: -47.8828 },
+  { id: 'buenos-aires', name: 'Buenos Aires', country: 'Argentina', latitude: -34.6037, longitude: -58.3816 },
+  { id: 'santiago', name: 'Santiago', country: 'Chile', latitude: -33.4489, longitude: -70.6693 },
+  { id: 'lima', name: 'Lima', country: 'Peru', latitude: -12.0464, longitude: -77.0428 },
+  { id: 'bogota', name: 'Bogota', country: 'Colombia', latitude: 4.711, longitude: -74.0721 },
+  { id: 'caracas', name: 'Caracas', country: 'Venezuela', latitude: 10.4806, longitude: -66.9036 },
+  { id: 'paris', name: 'Paris', country: 'France', latitude: 48.8566, longitude: 2.3522 },
+  { id: 'berlin', name: 'Berlin', country: 'Germany', latitude: 52.52, longitude: 13.405 },
+  { id: 'madrid', name: 'Madrid', country: 'Spain', latitude: 40.4168, longitude: -3.7038 },
+  { id: 'rome', name: 'Rome', country: 'Italy', latitude: 41.9028, longitude: 12.4964 },
+  { id: 'lisbon', name: 'Lisbon', country: 'Portugal', latitude: 38.7223, longitude: -9.1393 },
+  { id: 'dublin', name: 'Dublin', country: 'Ireland', latitude: 53.3498, longitude: -6.2603 },
+  { id: 'amsterdam', name: 'Amsterdam', country: 'Netherlands', latitude: 52.3676, longitude: 4.9041 },
+  { id: 'brussels', name: 'Brussels', country: 'Belgium', latitude: 50.8503, longitude: 4.3517 },
+  { id: 'vienna', name: 'Vienna', country: 'Austria', latitude: 48.2082, longitude: 16.3738 },
+  { id: 'bern', name: 'Bern', country: 'Switzerland', latitude: 46.948, longitude: 7.4474 },
+  { id: 'stockholm', name: 'Stockholm', country: 'Sweden', latitude: 59.3293, longitude: 18.0686 },
+  { id: 'oslo', name: 'Oslo', country: 'Norway', latitude: 59.9139, longitude: 10.7522 },
+  { id: 'copenhagen', name: 'Copenhagen', country: 'Denmark', latitude: 55.6761, longitude: 12.5683 },
+  { id: 'helsinki', name: 'Helsinki', country: 'Finland', latitude: 60.1699, longitude: 24.9384 },
+  { id: 'reykjavik', name: 'Reykjavik', country: 'Iceland', latitude: 64.1466, longitude: -21.9426 },
+  { id: 'warsaw', name: 'Warsaw', country: 'Poland', latitude: 52.2297, longitude: 21.0122 },
+  { id: 'prague', name: 'Prague', country: 'Czechia', latitude: 50.0755, longitude: 14.4378 },
+  { id: 'budapest', name: 'Budapest', country: 'Hungary', latitude: 47.4979, longitude: 19.0402 },
+  { id: 'athens', name: 'Athens', country: 'Greece', latitude: 37.9838, longitude: 23.7275 },
+  { id: 'ankara', name: 'Ankara', country: 'Turkey', latitude: 39.9334, longitude: 32.8597 },
+  { id: 'moscow', name: 'Moscow', country: 'Russia', latitude: 55.7558, longitude: 37.6173 },
+  { id: 'kyiv', name: 'Kyiv', country: 'Ukraine', latitude: 50.4501, longitude: 30.5234 },
+  { id: 'cairo', name: 'Cairo', country: 'Egypt', latitude: 30.0444, longitude: 31.2357 },
+  { id: 'pretoria', name: 'Pretoria', country: 'South Africa', latitude: -25.7479, longitude: 28.2293 },
+  { id: 'nairobi', name: 'Nairobi', country: 'Kenya', latitude: -1.2921, longitude: 36.8219 },
+  { id: 'addis-ababa', name: 'Addis Ababa', country: 'Ethiopia', latitude: 8.9806, longitude: 38.7578 },
+  { id: 'abuja', name: 'Abuja', country: 'Nigeria', latitude: 9.0765, longitude: 7.3986 },
+  { id: 'accra', name: 'Accra', country: 'Ghana', latitude: 5.6037, longitude: -0.187 },
+  { id: 'rabat', name: 'Rabat', country: 'Morocco', latitude: 34.0209, longitude: -6.8416 },
+  { id: 'riyadh', name: 'Riyadh', country: 'Saudi Arabia', latitude: 24.7136, longitude: 46.6753 },
+  { id: 'jerusalem', name: 'Jerusalem', country: 'Israel', latitude: 31.7683, longitude: 35.2137 },
+  { id: 'dubai', name: 'Dubai', country: 'United Arab Emirates', latitude: 25.2048, longitude: 55.2708 },
+  { id: 'new-delhi', name: 'New Delhi', country: 'India', latitude: 28.6139, longitude: 77.209 },
+  { id: 'islamabad', name: 'Islamabad', country: 'Pakistan', latitude: 33.6844, longitude: 73.0479 },
+  { id: 'dhaka', name: 'Dhaka', country: 'Bangladesh', latitude: 23.8103, longitude: 90.4125 },
+  { id: 'beijing', name: 'Beijing', country: 'China', latitude: 39.9042, longitude: 116.4074 },
+  { id: 'tokyo', name: 'Tokyo', country: 'Japan', latitude: 35.6762, longitude: 139.6503 },
+  { id: 'seoul', name: 'Seoul', country: 'South Korea', latitude: 37.5665, longitude: 126.978 },
+  { id: 'bangkok', name: 'Bangkok', country: 'Thailand', latitude: 13.7563, longitude: 100.5018 },
+  { id: 'hanoi', name: 'Hanoi', country: 'Vietnam', latitude: 21.0278, longitude: 105.8342 },
+  { id: 'jakarta', name: 'Jakarta', country: 'Indonesia', latitude: -6.2088, longitude: 106.8456 },
+  { id: 'manila', name: 'Manila', country: 'Philippines', latitude: 14.5995, longitude: 120.9842 },
+  { id: 'kuala-lumpur', name: 'Kuala Lumpur', country: 'Malaysia', latitude: 3.139, longitude: 101.6869 },
+  { id: 'singapore', name: 'Singapore', country: 'Singapore', latitude: 1.3521, longitude: 103.8198 },
+  { id: 'canberra', name: 'Canberra', country: 'Australia', latitude: -35.2809, longitude: 149.13 },
+  { id: 'wellington', name: 'Wellington', country: 'New Zealand', latitude: -41.2865, longitude: 174.7762 },
+]
 
 function normalizeMoneySymbol(rawSymbol) {
   const normalized = String(rawSymbol ?? '').trim().toUpperCase()
@@ -285,6 +346,147 @@ async function refreshBusinessNews() {
   }
 }
 
+function weatherCodeInfo(code, isDay = 1) {
+  const numericCode = Number(code)
+
+  if ([0].includes(numericCode)) {
+    return { condition: 'Clear', icon: isDay ? 'sun' : 'nightclear' }
+  }
+  if ([1].includes(numericCode)) {
+    return { condition: 'Mostly clear', icon: isDay ? 'suncloud' : 'nightcloud' }
+  }
+  if ([2].includes(numericCode)) {
+    return { condition: 'Partly cloudy', icon: isDay ? 'cloudysun' : 'nightcloud' }
+  }
+  if ([3].includes(numericCode)) {
+    return { condition: 'Cloudy', icon: 'cloud' }
+  }
+  if ([45, 48].includes(numericCode)) {
+    return { condition: 'Fog', icon: 'fog' }
+  }
+  if ([51, 53, 55, 56, 57].includes(numericCode)) {
+    return { condition: 'Drizzle', icon: 'cloud' }
+  }
+  if ([61, 63, 65, 66, 67, 80, 81, 82].includes(numericCode)) {
+    return { condition: 'Rain', icon: 'cloud' }
+  }
+  if ([71, 73, 75, 77, 85, 86].includes(numericCode)) {
+    return { condition: 'Snow', icon: 'cloud' }
+  }
+  if ([95, 96, 99].includes(numericCode)) {
+    return { condition: 'Thunderstorms', icon: 'cloud' }
+  }
+
+  return { condition: 'Hazy', icon: 'haze' }
+}
+
+function weatherDisplayName(city) {
+  return `${city.name}, ${city.country}`
+}
+
+function weatherDayName(isoDate) {
+  const date = new Date(`${isoDate}T12:00:00Z`)
+  return new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'UTC' }).format(date)
+}
+
+function createFallbackWeatherCity(city, index = 0) {
+  const now = new Date()
+  const baseTemp = Math.round(12 + Math.sin((now.getDate() + index) / 4) * 10 - Math.abs(city.latitude) / 12)
+  const info = weatherCodeInfo(index % 5 === 0 ? 61 : index % 4 === 0 ? 3 : index % 3 === 0 ? 2 : 0)
+  const forecast = Array.from({ length: 4 }, (_, forecastIndex) => {
+    const date = new Date(now)
+    date.setDate(now.getDate() + forecastIndex)
+    const high = baseTemp + 4 + (forecastIndex % 3)
+    const low = baseTemp - 2 + (forecastIndex % 2)
+    const dayInfo = weatherCodeInfo((index + forecastIndex) % 4 === 0 ? 61 : (index + forecastIndex) % 3 === 0 ? 3 : 1)
+
+    return {
+      date: date.toISOString().slice(0, 10),
+      day: weatherDayName(date.toISOString().slice(0, 10)),
+      highC: high,
+      lowC: low,
+      condition: dayInfo.condition,
+      icon: dayInfo.icon,
+    }
+  })
+
+  return {
+    ...city,
+    displayName: weatherDisplayName(city),
+    current: {
+      tempC: baseTemp,
+      feelsLikeC: baseTemp - 2,
+      condition: info.condition,
+      icon: info.icon,
+    },
+    forecast,
+  }
+}
+
+async function fetchWeatherCity(city, index) {
+  const url = new URL('https://api.open-meteo.com/v1/forecast')
+  url.searchParams.set('latitude', city.latitude)
+  url.searchParams.set('longitude', city.longitude)
+  url.searchParams.set('current', 'temperature_2m,apparent_temperature,is_day,weather_code')
+  url.searchParams.set('daily', 'weather_code,temperature_2m_max,temperature_2m_min')
+  url.searchParams.set('timezone', 'auto')
+  url.searchParams.set('forecast_days', '4')
+
+  const response = await fetch(url)
+  if (!response.ok) throw new Error(`Open-Meteo ${response.status}`)
+  const data = await response.json()
+  const currentInfo = weatherCodeInfo(data.current?.weather_code, data.current?.is_day)
+  const dates = data.daily?.time ?? []
+  const highs = data.daily?.temperature_2m_max ?? []
+  const lows = data.daily?.temperature_2m_min ?? []
+  const codes = data.daily?.weather_code ?? []
+
+  return {
+    ...city,
+    displayName: weatherDisplayName(city),
+    current: {
+      tempC: Math.round(data.current?.temperature_2m ?? 0),
+      feelsLikeC: Math.round(data.current?.apparent_temperature ?? data.current?.temperature_2m ?? 0),
+      condition: currentInfo.condition,
+      icon: currentInfo.icon,
+    },
+    forecast: dates.slice(0, 4).map((date, forecastIndex) => {
+      const info = weatherCodeInfo(codes[forecastIndex], 1)
+
+      return {
+        date,
+        day: weatherDayName(date),
+        highC: Math.round(highs[forecastIndex] ?? 0),
+        lowC: Math.round(lows[forecastIndex] ?? 0),
+        condition: info.condition,
+        icon: info.icon,
+      }
+    }),
+  }
+}
+
+async function refreshWeather() {
+  const cities = []
+
+  for (let index = 0; index < WEATHER_CAPITALS.length; index += 1) {
+    const city = WEATHER_CAPITALS[index]
+
+    try {
+      cities.push(await fetchWeatherCity(city, index))
+    } catch (error) {
+      console.warn(`Failed to refresh weather for ${city.name}:`, error.message)
+      cities.push(createFallbackWeatherCity(city, index))
+    }
+  }
+
+  await writeJson(path.join(WEATHER_DIR, 'cities.json'), {
+    source: 'Open-Meteo',
+    sourceUrl: 'https://open-meteo.com/',
+    cities,
+    generatedAt: new Date().toISOString(),
+  })
+}
+
 async function refreshSportsTopStories() {
   const parser = new Parser()
   const fallbackHeadlines = [
@@ -522,6 +724,7 @@ await refreshHeadlines()
 for (const newsFeed of NEWS_FEEDS) {
   await refreshNewsFeed(newsFeed)
 }
+await refreshWeather()
 await refreshBusinessNews()
 await refreshSportsTopStories()
 for (const leagueFeed of SPORTS_LEAGUE_FEEDS) {
