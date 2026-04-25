@@ -28,6 +28,7 @@ const WEATHER_SIDEBAR = ['My City', 'Quick Lookup', 'More Cities']
 const MONEY_SIDEBAR = ['Personal Finance', 'My Stocks', 'Business News', 'Money Experts']
 const SPORTS_SIDEBAR = ['Main', 'NFL', 'MLB', 'NBA', 'NHL', 'NCAA']
 const ENTERTAINMENT_SIDEBAR = ['Main', 'TV', 'Movies', 'Celebrities']
+const SHOP_SIDEBAR = ['Special Offers', 'Departments']
 
 const GAMES_SIDEBAR_TARGETS = {
   'Featured Games': 'games',
@@ -75,6 +76,16 @@ const ENTERTAINMENT_SIDEBAR_TARGETS = {
   TV: 'entertainment-tv',
   Movies: 'entertainment-movies',
   Celebrities: 'entertainment-celebrities',
+}
+
+const SHOP_SIDEBAR_TARGETS = {
+  'Special Offers': 'shop',
+  Departments: 'shop-departments',
+}
+
+const SHOP_SIDEBAR_BOX = {
+  title: 'Related Links:',
+  items: ['Bargains', 'Customer Service'],
 }
 
 const GAMES_SIDEBAR_BOX = {
@@ -361,6 +372,22 @@ function createSportsNcaaPage() {
   }
 }
 
+function createShopPage(sidebarCurrent, variant = 'shopSpecialOffers') {
+  return {
+    layout: 'center',
+    theme: 'shop',
+    title: 'Shopping',
+    subtitle: sidebarCurrent,
+    headerTitle: 'Shopping',
+    headerSubtitle: sidebarCurrent,
+    variant,
+    sidebar: SHOP_SIDEBAR,
+    sidebarCurrent,
+    sidebarTargets: SHOP_SIDEBAR_TARGETS,
+    sidebarBox: SHOP_SIDEBAR_BOX,
+  }
+}
+
 function createEntertainmentPage(sidebarCurrent, variant = 'entertainmentMissing') {
   return {
     layout: 'center',
@@ -431,6 +458,8 @@ export const DOCK_PAGES = {
   'entertainment-tv': createEntertainmentPage('TV'),
   'entertainment-movies': createEntertainmentPage('Movies', 'entertainmentMovies'),
   'entertainment-celebrities': createEntertainmentPage('Celebrities'),
+  shop: createShopPage('Special Offers'),
+  'shop-departments': createShopPage('Departments', 'shopMissing'),
   games: createGamesPage(
     'Featured games',
     'Featured Games',

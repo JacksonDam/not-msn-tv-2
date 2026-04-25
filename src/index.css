@@ -2002,7 +2002,7 @@
     }
 
     .theme-shop {
-        --dock-header-bg: linear-gradient(180deg, #8d6bb0 0%, #5b3d7d 100%);
+        --dock-header-bg: linear-gradient(90deg, #5262c8 0%, #9ba4d4 48%, #4f5cc7 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #ebe1f3 0%, #ddd0ea 100%);
         --dock-sidebar-border: #a48abd;
         --dock-sidebar-card-bg: #eee6f4;
@@ -2535,6 +2535,67 @@
         --dock-header-height: 11.55vh;
     }
 
+    .dock-page-shell-shop {
+        --dock-header-height: 11.55vh;
+    }
+
+    .dock-page-shell-shop .dock-page-sidebar-card {
+        margin-top: 13.8vh;
+    }
+
+    .dock-page-shop-special {
+        padding: 0 2vh 2vh 2vh;
+    }
+
+    .dock-page-shop-section {
+        margin-top: 1.2vh;
+    }
+
+    .dock-page-shop-section + .dock-page-shop-section {
+        margin-top: 5vh;
+    }
+
+    .dock-page-shell-shop .dock-page-shop-row {
+        padding-top: 0.3vh;
+        padding-bottom: 0.3vh;
+    }
+
+    .dock-page-shell-shop .dock-page-shop-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9vh;
+    }
+
+    .dock-page-shop-section-row {
+        display: flex;
+        align-items: center;
+        gap: 2.4vh;
+    }
+
+    .dock-page-shop-photo {
+        flex: 0 0 auto;
+        width: 16.5vh;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .dock-page-shop-section-text {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .dock-page-shop-list {
+        margin-top: 0.6vh;
+    }
+
+    .dock-page-shop-title {
+        color: #1f3f7f !important;
+    }
+
+    .dock-page-shell-shop .dock-page-shop-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
     .dock-page-shell-games {
         --dock-header-height: 11.55vh;
     }
@@ -2768,6 +2829,10 @@
     }
 
     .dock-page-shell-entertainment .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+    }
+
+    .dock-page-shell-shop .dock-page-sidebar-card-row .dock-page-row-label {
         color: #1f3f7f;
     }
 

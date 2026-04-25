@@ -1277,7 +1277,7 @@ export default function DockPage({
   return (
     <div
       ref={setShellRef}
-      className={`dock-page-shell theme-${page.theme} ${page.variant === 'newsCenter' || page.variant === 'newsLocalChange' || page.variant === 'newsLottery' ? 'dock-page-shell-news' : ''} ${page.variant === 'newsLocalChange' ? 'dock-page-shell-news-local-change' : ''} ${page.variant === 'newsLottery' ? 'dock-page-shell-news-lottery' : ''} ${String(page.variant ?? '').startsWith('weather') ? 'dock-page-shell-weather' : ''} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'entertainmentMissing' || page.variant === 'entertainmentMovies' ? 'dock-page-shell-entertainment' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'sportsLeague' || page.variant === 'sportsNcaa' ? 'dock-page-shell-sports-nfl' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
+      className={`dock-page-shell theme-${page.theme} ${page.variant === 'newsCenter' || page.variant === 'newsLocalChange' || page.variant === 'newsLottery' ? 'dock-page-shell-news' : ''} ${page.variant === 'newsLocalChange' ? 'dock-page-shell-news-local-change' : ''} ${page.variant === 'newsLottery' ? 'dock-page-shell-news-lottery' : ''} ${String(page.variant ?? '').startsWith('weather') ? 'dock-page-shell-weather' : ''} ${page.variant === 'gamesCenter' ? 'dock-page-shell-games' : ''} ${page.variant === 'entertainmentMissing' || page.variant === 'entertainmentMovies' ? 'dock-page-shell-entertainment' : ''} ${page.variant === 'shopSpecialOffers' || page.variant === 'shopMissing' ? 'dock-page-shell-shop' : ''} ${page.variant === 'sportsTopStories' ? 'dock-page-shell-sports-top-stories' : ''} ${page.variant === 'sportsLeague' || page.variant === 'sportsNcaa' ? 'dock-page-shell-sports-nfl' : ''} ${page.variant === 'moneyCenter' ? 'dock-page-shell-money' : ''} ${page.variant === 'moneyBusinessNews' ? 'dock-page-shell-money-business-news' : ''} ${page.variant === 'moneyExperts' ? 'dock-page-shell-money-experts' : ''} ${page.variant?.startsWith('moneyStocks') ? 'dock-page-shell-money-stocks' : ''} ${page.variant === 'thingsToTry' ? 'dock-page-shell-things' : ''} ${page.variant === 'usingMain' ? 'dock-page-shell-using-main' : ''} ${page.variant === 'usingNewsletter' ? 'dock-page-shell-using-newsletter' : ''} ${page.variant === 'usingTipDetail' ? 'dock-page-shell-using-tip' : ''} ${page.sidebarCurrent === 'Newsletter' ? 'dock-page-shell-newsletter-section' : ''}`.trim()}
     >
       <div ref={bodyScrollRef} className="dock-page-scroll-region" data-selection-scroll>
         <div className="dock-page-header">
@@ -1332,12 +1332,55 @@ export default function DockPage({
           </aside>
 
           <main className="dock-page-content">
-            {page.variant === 'entertainmentMissing' ? (
+            {page.variant === 'entertainmentMissing' || page.variant === 'shopMissing' ? (
               <div className="dock-page-entertainment-missing">
                 <div className="dock-page-divider"></div>
                 <div className="dock-page-content-title dock-page-entertainment-title">Page missing</div>
                 <p>Unfortunately, this page is missing.</p>
                 <p>You can help by retrieving any Cached items from your MSNTV2 if it hasn&apos;t been wiped clean.</p>
+              </div>
+            ) : page.variant === 'shopSpecialOffers' ? (
+              <div className="dock-page-shop-special">
+                <section className="dock-page-shop-section">
+                  <div className="dock-page-shop-section-row">
+                    <img className="dock-page-shop-photo" src={`${BASE}images/pages/shop/sale.png`} alt="" />
+                    <div className="dock-page-shop-section-text">
+                      <div className="dock-page-content-title dock-page-shop-title">MSN Shopping</div>
+                      <div className="dock-page-shop-list">
+                        {['Clothing & shoes', "Editors' picks", 'Deals & clearance', 'Electronics & photo', 'Jewelry & watches'].map((item, index) => (
+                          <SelectableRow
+                            key={item}
+                            row={nextRow()}
+                            x={0}
+                            className="dock-page-section-row dock-page-shop-row"
+                            data-select-id={`shop-special-top-${index}`}
+                          >
+                            <span className="dock-page-classic-bullet"></span>
+                            <span className="dock-page-row-label">{item}</span>
+                          </SelectableRow>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="dock-page-shop-section">
+                  <div className="dock-page-content-title dock-page-shop-title">MSN Shopping</div>
+                  <div className="dock-page-shop-list">
+                    {["Editors' picks", 'Deals & clearance', 'Gift center'].map((item, index) => (
+                      <SelectableRow
+                        key={item}
+                        row={nextRow()}
+                        x={0}
+                        className="dock-page-section-row dock-page-shop-row"
+                        data-select-id={`shop-special-bottom-${index}`}
+                      >
+                        <span className="dock-page-classic-bullet"></span>
+                        <span className="dock-page-row-label">{item}</span>
+                      </SelectableRow>
+                    ))}
+                  </div>
+                </section>
               </div>
             ) : page.variant === 'entertainmentMovies' ? (
               <div className="dock-page-entertainment-movies">
