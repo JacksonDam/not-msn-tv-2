@@ -23,6 +23,7 @@ export const DOCK_ITEMS = [
 ]
 
 const GAMES_SIDEBAR = ['Featured Games', 'Card Games', 'Board Games', 'Casino Games', 'Word/Trivia']
+const NEWS_SIDEBAR = ['Top Stories', 'Business', 'Technology', 'Health', 'Travel', 'Opinion', 'Local', 'Lottery']
 const MONEY_SIDEBAR = ['Personal Finance', 'My Stocks', 'Business News', 'Money Experts']
 const SPORTS_SIDEBAR = ['Main', 'NFL', 'MLB', 'NBA', 'NHL', 'NCAA']
 const ENTERTAINMENT_SIDEBAR = ['Main', 'TV', 'Movies', 'Celebrities']
@@ -33,6 +34,17 @@ const GAMES_SIDEBAR_TARGETS = {
   'Board Games': 'games-board',
   'Casino Games': 'games-casino',
   'Word/Trivia': 'games-word-trivia',
+}
+
+const NEWS_SIDEBAR_TARGETS = {
+  'Top Stories': 'news',
+  Business: 'news-business',
+  Technology: 'news-technology',
+  Health: 'news-health',
+  Travel: 'news-travel',
+  Opinion: 'news-opinion',
+  Local: 'news-local',
+  Lottery: 'news-lottery',
 }
 
 const MONEY_SIDEBAR_TARGETS = {
@@ -81,6 +93,36 @@ const ENTERTAINMENT_SIDEBAR_BOX = {
 const GAMES_INTRO = 'Choose a game from the list below, or choose a category on the left for more options.'
 const GAMES_BOARD_INTRO = 'Choose a board game from the list below'
 const GAMES_CASINO_INTRO = 'Choose a casino game from the list below'
+
+function createNewsPage(sidebarCurrent, newsSection, options = {}) {
+  const isTopStories = sidebarCurrent === 'Top Stories'
+
+  return {
+    layout: 'center',
+    theme: 'news',
+    title: 'News',
+    subtitle: isTopStories ? 'Top Stories from MSNBC' : sidebarCurrent,
+    headerTitle: 'News',
+    headerSubtitle: isTopStories ? 'Top Stories from MSNBC' : sidebarCurrent,
+    variant: options.variant ?? 'newsCenter',
+    newsSection,
+    sidebar: NEWS_SIDEBAR,
+    sidebarCurrent,
+    sidebarTargets: NEWS_SIDEBAR_TARGETS,
+    sidebarBox: {
+      title: 'Related Links:',
+      items: [
+        { label: 'Weather', targetPage: 'weather' },
+        { label: 'Sports', targetPage: 'sports' },
+        { label: 'Newsweek' },
+      ],
+    },
+    sidebarRightTarget: options.sidebarRightTarget ?? (
+      options.variant === 'newsLocalChange' ? 'news-local-city-input' : `news-${newsSection}-story-0`
+    ),
+    ...options,
+  }
+}
 
 function createGamesPage(subtitle, sidebarCurrent, items, stubLabel, intro = GAMES_INTRO, headerSubtitle = subtitle) {
   return {
@@ -307,6 +349,23 @@ export const DOCK_PAGES = {
     title: 'Music',
     subtitle: 'Home',
   },
+  news: createNewsPage('Top Stories', 'top-stories'),
+  'news-business': createNewsPage('Business', 'business'),
+  'news-technology': createNewsPage('Technology', 'technology'),
+  'news-health': createNewsPage('Health', 'health'),
+  'news-travel': createNewsPage('Travel', 'travel'),
+  'news-opinion': createNewsPage('Opinion', 'opinion'),
+  'news-local': createNewsPage('Local', 'local', {
+    sidebarRightTarget: 'news-local-change-city',
+  }),
+  'news-local-change': createNewsPage('Local', 'local', {
+    variant: 'newsLocalChange',
+    sidebarRightTarget: 'news-local-city-input',
+  }),
+  'news-lottery': createNewsPage('Lottery', 'lottery', {
+    variant: 'newsLottery',
+    sidebarRightTarget: 'news-lottery-change-state',
+  }),
   tvlistings: {
     layout: 'tvListingsSite',
     title: 'TV Listings',

@@ -37,10 +37,30 @@ function getTrackedDataJsonFiles() {
   )]
 }
 
+function getLocalDataJsonFiles(directory = path.join(repoRoot, 'public', 'data')) {
+  if (!fs.existsSync(directory)) return []
+
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = path.join(directory, entry.name)
+
+    if (entry.isDirectory()) return getLocalDataJsonFiles(entryPath)
+    if (!entry.isFile() || !entry.name.endsWith('.json')) return []
+
+    return [path.relative(repoRoot, entryPath)]
+  })
+}
+
 function updateIndex(files, flag) {
   for (let index = 0; index < files.length; index += 100) {
     const chunk = files.slice(index, index + 100)
     execFileSync('git', ['update-index', flag, '--', ...chunk], { cwd: repoRoot })
+  }
+}
+
+function addFiles(files) {
+  for (let index = 0; index < files.length; index += 100) {
+    const chunk = files.slice(index, index + 100)
+    execFileSync('git', ['add', '--force', '--', ...chunk], { cwd: repoRoot })
   }
 }
 
@@ -68,6 +88,7 @@ if (mode === 'ignore') {
   updateIndex(files, '--skip-worktree')
   setLocalExclude(true)
 } else {
-  updateIndex(files, '--no-skip-worktree')
   setLocalExclude(false)
+  addFiles(getLocalDataJsonFiles())
+  updateIndex(getTrackedDataJsonFiles(), '--no-skip-worktree')
 }

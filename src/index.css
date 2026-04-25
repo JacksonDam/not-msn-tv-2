@@ -1746,7 +1746,14 @@
     }
 
     .theme-news {
-        --dock-header-bg: linear-gradient(180deg, #3d6d9f 0%, #224f80 100%);
+        --dock-header-bg: linear-gradient(90deg,
+                #0c5a9b 0%,
+                #2f70a8 16%,
+                #75a1ca 34%,
+                #a7beda 50%,
+                #75a1ca 66%,
+                #2f70a8 84%,
+                #0c5a9b 100%);
         --dock-sidebar-bg: linear-gradient(180deg, #d7e3ee 0%, #c0d2e2 100%);
         --dock-sidebar-border: #7f9db8;
         --dock-sidebar-card-bg: #dce5ed;
@@ -2355,12 +2362,20 @@
         margin-top: 13.8vh;
     }
 
+    .dock-page-shell-news .dock-page-sidebar-card {
+        margin-top: 14.4vh;
+    }
+
     .dock-page-shell-entertainment {
         --dock-header-height: 11.55vh;
     }
 
     .dock-page-shell-games {
         --dock-header-height: 11.55vh;
+    }
+
+    .dock-page-shell-news {
+        --dock-header-height: 12.25vh;
     }
 
     .dock-page-shell-money {
@@ -4282,6 +4297,232 @@
         font-family: "Segoe TV";
         line-height: 1.08;
         white-space: normal;
+    }
+
+    .dock-page-shell-news .dock-page-content {
+        padding: 1.75vh 3.1vh 2.2vh 2.2vh;
+    }
+
+    .dock-page-shell-news .dock-page-header-title {
+        opacity: 1;
+    }
+
+    .dock-page-shell-news .dock-page-sidebar-row {
+        min-height: 5.92vh;
+    }
+
+    .dock-page-shell-news .dock-page-sidebar-card-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-size: 3.35vh;
+    }
+
+    .dock-page-news {
+        color: #182233;
+        font-family: "Segoe TV";
+    }
+
+    .dock-page-news-title.dock-page-content-title {
+        margin-top: 1.45vh;
+        margin-bottom: 2.5vh;
+        color: var(--dock-accent);
+        font-family: "Segoe TV";
+        font-size: 4.12vh;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .dock-page-news-lead,
+    .dock-page-news-row {
+        width: 100%;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        align-items: flex-start;
+        color: #182233;
+        font-family: "Segoe TV";
+        text-align: left;
+    }
+
+    .dock-page-news-lead {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2vh;
+        margin-top: 1.75vh;
+        margin-bottom: 2.45vh;
+    }
+
+    .dock-page-news-lead-title {
+        color: #1f3f7f;
+        font-family: "Segoe TV Bold";
+        font-size: 4.05vh;
+        line-height: 1.03;
+    }
+
+    .dock-page-news-lead-copy {
+        max-width: 82vh;
+        color: #1b2433;
+        font-family: "Segoe TV";
+        font-size: 3.75vh;
+        line-height: 1.08;
+    }
+
+    .dock-page-news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.95vh;
+    }
+
+    .dock-page-news-row {
+        gap: 1.25vh;
+    }
+
+    .dock-page-news-row .dock-page-classic-bullet {
+        flex: 0 0 auto;
+        margin-top: 1.35vh;
+    }
+
+    .dock-page-shell-news .dock-page-news-row .dock-page-row-label {
+        color: #1f3f7f;
+        font-family: "Segoe TV";
+        font-size: 3.75vh;
+        line-height: 1.13;
+        white-space: normal;
+    }
+
+    .dock-page-shell-news .dock-page-news-local .dock-page-news-row .dock-page-row-label {
+        font-size: 3.75vh;
+    }
+
+    .dock-page-news-local-change {
+        margin-top: 3.2vh;
+    }
+
+    .dock-page-news-local-change .dock-page-divider {
+        margin-bottom: 2.6vh;
+    }
+
+    .dock-page-news-local-copy,
+    .dock-page-news-change-copy,
+    .dock-page-news-example,
+    .dock-page-news-lottery-note,
+    .dock-page-news-lottery-copy {
+        color: #182233;
+        font-family: "Segoe TV";
+        font-size: 3.5vh;
+        line-height: 1.12;
+    }
+
+    .dock-page-news-local-copy {
+        max-width: 77vh;
+        margin-bottom: 2.8vh;
+    }
+
+    .dock-page-news-action {
+        min-width: 21vh;
+        min-height: 5.7vh;
+        padding: 0 2.4vh 0.3vh;
+        background-image: linear-gradient(180deg, #fbfbfb 0%, #b7cad8 22%, #dce7ee 100%) !important;
+        border: 0.25vh solid #818d95;
+        color: #254267;
+        font-size: 3.5vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        margin-right: 3vh;
+    }
+
+    .dock-page-news-change-copy {
+        max-width: 79vh;
+        margin: 2.1vh 0 2.3vh;
+    }
+
+    .dock-page-news-city-input.search-input-stub {
+        position: static;
+        transform: none;
+        display: block;
+        width: 77vh;
+        height: 5.7vh;
+        margin: 0 0 3.7vh;
+        font-size: 3.7vh !important;
+    }
+
+    .dock-page-news-example {
+        margin-bottom: 6vh;
+        font-size: 3.05vh;
+    }
+
+    .dock-page-news-change-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2vh;
+        padding-right: 2vh;
+    }
+
+    .dock-page-news-change-actions .dock-page-news-action {
+        float: none;
+        margin-right: 0;
+        min-width: 14vh;
+    }
+
+    .dock-page-news-lottery-table {
+        display: grid;
+        grid-template-columns: 27vh 28vh minmax(0, 1fr);
+        column-gap: 2.3vh;
+        font-size: 3.55vh;
+        line-height: 1.05;
+    }
+
+    .dock-page-news-lottery-header {
+        padding: 1.2vh 1.7vh;
+        background: rgba(171, 191, 200, 0.68);
+        color: #172033;
+        font-family: "Segoe TV";
+        font-size: 3.85vh;
+    }
+
+    .dock-page-news-lottery-row {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 27vh 28vh minmax(0, 1fr);
+        column-gap: 2.3vh;
+        border-bottom: 0.25vh solid rgba(76, 91, 96, 0.55);
+    }
+
+    .dock-page-news-lottery-row > div {
+        min-height: 10.2vh;
+        display: flex;
+        align-items: center;
+        padding: 1vh 1.7vh;
+        white-space: pre-line;
+        box-sizing: border-box;
+    }
+
+    .dock-page-news-lottery-row:last-of-type {
+        border-bottom: 0;
+    }
+
+    .dock-page-news-lottery-row:nth-child(odd) {
+        background: rgba(214, 214, 214, 0.68);
+    }
+
+    .dock-page-news-lottery-note {
+        color: #1f3f7f;
+        font-size: 3.35vh;
+        line-height: 1.13;
+        margin-top: 2.2vh;
+        margin-bottom: 2.2vh;
+    }
+
+    .dock-page-news-lottery-copy {
+        max-width: 73vh;
+    }
+
+    .dock-page-news-lottery-action {
+        margin-top: 2.6vh;
+        min-width: 36vh;
     }
 
     .dock-page-shell-sports-nfl .dock-page-sports-nfl-team-label,

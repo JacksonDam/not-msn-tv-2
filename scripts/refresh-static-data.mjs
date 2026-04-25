@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 const PUBLIC_DATA_DIR = path.join(ROOT, 'public', 'data')
 const HEADLINES_PATH = path.join(PUBLIC_DATA_DIR, 'headlines.json')
+const NEWS_DIR = path.join(PUBLIC_DATA_DIR, 'news')
 const MONEY_BUSINESS_NEWS_PATH = path.join(PUBLIC_DATA_DIR, 'money', 'business-news.json')
 const SPORTS_TOP_STORIES_PATH = path.join(PUBLIC_DATA_DIR, 'sports', 'top-stories.json')
 const MONEY_QUOTES_DIR = path.join(PUBLIC_DATA_DIR, 'money', 'quotes')
@@ -127,6 +128,22 @@ function normalizeSportsHeadline(item) {
 
   return {
     title,
+    source: item?.creator || item?.publisher || item?.author || 'MSNBC',
+    link: item?.link || null,
+    publishedAt: item?.isoDate || item?.pubDate || null,
+  }
+}
+
+function normalizeNewsHeadline(item) {
+  const title = String(item?.title ?? '').replace(/\s+/g, ' ').trim()
+  if (!title) return null
+
+  return {
+    title,
+    description: String(item?.contentSnippet ?? item?.content ?? item?.summary ?? '')
+      .replace(/<[^>]*>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim(),
     source: item?.creator || item?.publisher || item?.author || 'MSNBC',
     link: item?.link || null,
     publishedAt: item?.isoDate || item?.pubDate || null,
@@ -296,6 +313,117 @@ async function refreshSportsTopStories() {
   }
 }
 
+const NEWS_FEEDS = [
+  {
+    id: 'top-stories',
+    label: 'Top stories',
+    urls: [
+      'https://feeds.nbcnews.com/nbcnews/public/news',
+      'https://feeds.nbcnews.com/feeds/topstories',
+      'https://feeds.nbcnews.com/feeds/worldnews',
+    ],
+  },
+  {
+    id: 'business',
+    label: 'Business',
+    urls: [
+      'https://feeds.nbcnews.com/nbcnews/public/business',
+    ],
+  },
+  {
+    id: 'technology',
+    label: 'Technology',
+    urls: [
+      'https://feeds.nbcnews.com/nbcnews/public/tech',
+      'https://feeds.nbcnews.com/nbcnews/public/tech-media',
+      'https://feeds.nbcnews.com/nbcnews/public/science',
+    ],
+  },
+  {
+    id: 'health',
+    label: 'Health',
+    urls: [
+      'https://feeds.nbcnews.com/nbcnews/public/health',
+    ],
+  },
+  {
+    id: 'travel',
+    label: 'Travel',
+    urls: [
+      'https://feeds.nbcnews.com/nbcnews/public/travel',
+      'https://www.nbcnews.com/id/3032118/device/rss/rss.xml',
+      'https://feeds.nbcnews.com/nbcnews/public/news',
+    ],
+  },
+  {
+    id: 'opinion',
+    label: 'Opinion',
+    urls: [
+      'https://feeds.nbcnews.com/nbcnews/public/opinion',
+      'https://www.msnbc.com/feeds/latest',
+      'https://feeds.nbcnews.com/nbcnews/public/politics',
+    ],
+  },
+  {
+    id: 'local',
+    label: 'Local',
+    urls: [
+      'https://www.nbcbayarea.com/news/local/?rss=y',
+      'https://feeds.nbcnews.com/nbcnews/public/us-news',
+      'https://feeds.nbcnews.com/nbcnews/public/news',
+    ],
+  },
+]
+
+async function parseFirstAvailableFeed(parser, urls) {
+  let lastError = null
+
+  for (const url of urls) {
+    try {
+      const feed = await parser.parseURL(url)
+      const headlines = (feed.items ?? [])
+        .map(normalizeNewsHeadline)
+        .filter(Boolean)
+        .slice(0, 12)
+
+      if (headlines.length) {
+        return { sourceUrl: url, headlines }
+      }
+    } catch (error) {
+      lastError = error
+    }
+  }
+
+  if (lastError) throw lastError
+  throw new Error('No headlines found')
+}
+
+async function refreshNewsFeed({ id, label, urls }) {
+  const parser = new Parser()
+  const fallbackHeadlines = [
+    { title: `${label} news is temporarily unavailable`, description: '', source: 'MSNBC', link: null, publishedAt: null },
+  ]
+  const outputPath = path.join(NEWS_DIR, `${id}.json`)
+
+  try {
+    const { sourceUrl, headlines } = await parseFirstAvailableFeed(parser, urls)
+    await writeJson(outputPath, {
+      source: 'MSNBC',
+      sourceUrl,
+      headlines,
+      generatedAt: new Date().toISOString(),
+    })
+  } catch (error) {
+    console.warn(`Failed to refresh news ${label}:`, error.message)
+    await writeJson(outputPath, {
+      source: 'MSNBC',
+      sourceUrl: urls[0],
+      headlines: fallbackHeadlines,
+      generatedAt: new Date().toISOString(),
+    })
+  }
+}
+
 const SPORTS_LEAGUE_FEEDS = [
   {
     id: 'nfl',
@@ -391,6 +519,9 @@ async function refreshMoneyQuotes() {
 }
 
 await refreshHeadlines()
+for (const newsFeed of NEWS_FEEDS) {
+  await refreshNewsFeed(newsFeed)
+}
 await refreshBusinessNews()
 await refreshSportsTopStories()
 for (const leagueFeed of SPORTS_LEAGUE_FEEDS) {
