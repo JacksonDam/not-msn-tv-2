@@ -9,8 +9,22 @@ const STOCK_SOURCES = [
   { id: 'sp500', label: 'S&P' },
 ]
 
-function cToF(celsius) {
-  return Math.round((Number(celsius) || 0) * 9 / 5 + 32)
+const FAHRENHEIT_COUNTRIES = new Set([
+  'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'HI', 'IA', 'ID',
+  'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC',
+  'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD',
+  'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY',
+  'UNITED STATES', 'USA', 'US',
+])
+
+function usesFahrenheit(city) {
+  const country = String(city?.country ?? '').trim().toUpperCase()
+  return FAHRENHEIT_COUNTRIES.has(country)
+}
+
+function formatTemp(celsius, city) {
+  const c = Number(celsius) || 0
+  return Math.round(usesFahrenheit(city) ? (c * 9 / 5) + 32 : c)
 }
 
 function formatChange(value) {
@@ -21,7 +35,8 @@ function formatChange(value) {
 
 export default function PromoWidget() {
   const [mode, setMode] = useState('weather')
-  const [weather, setWeather] = useState(null)
+  const [cities, setCities] = useState([])
+  const [cityId, setCityId] = useState(() => readWeatherCityCookie() || WEATHER_DEFAULT_CITY_ID)
   const [stocks, setStocks] = useState([])
 
   useEffect(() => {
@@ -32,21 +47,29 @@ export default function PromoWidget() {
   }, [])
 
   useEffect(() => {
+    const id = setInterval(() => {
+      const next = readWeatherCityCookie() || WEATHER_DEFAULT_CITY_ID
+      setCityId((current) => (current === next ? current : next))
+    }, 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  useEffect(() => {
     let cancelled = false
-    const cityId = readWeatherCityCookie() || WEATHER_DEFAULT_CITY_ID
 
     fetch(`${BASE}data/weather/cities.json?_=${Date.now()}`, { cache: 'no-store' })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (cancelled || !data) return
-        const cities = Array.isArray(data.cities) ? data.cities : []
-        const city = cities.find((c) => c.id === cityId) || cities[0]
-        if (city) setWeather(city)
+        const list = Array.isArray(data.cities) ? data.cities : []
+        if (list.length) setCities(list)
       })
       .catch(() => {})
 
     return () => { cancelled = true }
   }, [])
+
+  const weather = cities.find((c) => c.id === cityId) || cities[0] || null
 
   useEffect(() => {
     let cancelled = false
@@ -66,9 +89,9 @@ export default function PromoWidget() {
   const showWeather = mode === 'weather' && weather
   const showStocks = mode === 'stocks' && stocks.length > 0
 
-  const currentTempF = weather ? cToF(weather.current?.tempC) : 0
-  const lowTempF = weather
-    ? cToF(weather.forecast?.[0]?.lowC ?? weather.current?.tempC)
+  const currentTemp = weather ? formatTemp(weather.current?.tempC, weather) : 0
+  const lowTemp = weather
+    ? formatTemp(weather.forecast?.[0]?.lowC ?? weather.current?.tempC, weather)
     : 0
 
   return (
@@ -76,7 +99,7 @@ export default function PromoWidget() {
       {showWeather && (
         <div className="promo-widget-inner promo-widget-weather">
           <h3 className="promo-widget-city">{weather.name || weather.displayName}</h3>
-          <h3 className="promo-widget-temp">{`${currentTempF}°/${lowTempF}`}</h3>
+          <h3 className="promo-widget-temp">{`${currentTemp}°/${lowTemp}`}</h3>
           <h3 className="promo-widget-cond">{weather.current?.condition || ''}</h3>
           <h3 className="promo-widget-source">The Weather Channel &reg;</h3>
           {weather.current?.icon && (
