@@ -209,6 +209,20 @@ export default function useSelection() {
     }, duration)
   }, [])
 
+  const holdGreen = useCallback(() => {
+    const box = focusBoxRef.current
+    if (!box) return
+    clearTimeout(greenFlashTimeoutRef.current)
+    greenFlashTimeoutRef.current = null
+    box.classList.add('green-flash')
+  }, [])
+
+  const releaseGreen = useCallback(() => {
+    clearTimeout(greenFlashTimeoutRef.current)
+    greenFlashTimeoutRef.current = null
+    focusBoxRef.current?.classList.remove('green-flash')
+  }, [])
+
   const findExplicitNeighbor = useCallback((direction) => {
     const current = state.current.selected
     const targetId = current?.getAttribute(`data-select-${direction}`)
@@ -398,6 +412,8 @@ export default function useSelection() {
     unHideFocusBox,
     tempHideFocusBox,
     flashGreen,
+    holdGreen,
+    releaseGreen,
     moveSelection,
     getSelected,
     updateFocusBox,
@@ -412,6 +428,8 @@ export default function useSelection() {
     unHideFocusBox,
     tempHideFocusBox,
     flashGreen,
+    holdGreen,
+    releaseGreen,
     moveSelection,
     getSelected,
     updateFocusBox,

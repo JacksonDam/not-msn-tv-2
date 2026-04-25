@@ -4,6 +4,7 @@ import useAudio from './hooks/useAudio'
 import HomePage from './components/HomePage'
 import DockPage from './components/DockPage'
 import MediaPlayerPanel from './components/MediaPlayerPanel'
+import MessengerPanel from './components/MessengerPanel'
 import { MUSIC_NAV_ROW } from './components/MusicCenter'
 import SelectionFrame from './components/SelectionFrame'
 import { DOCK_PAGES } from './data/dockContent'
@@ -11,6 +12,10 @@ import { DOCK_PAGES } from './data/dockContent'
 const BASE = import.meta.env.BASE_URL
 const MEDIA_PANEL_SLIDE_MS = 250
 const isMoneyQuotePageId = (pageId) => typeof pageId === 'string' && pageId.startsWith('money-quote:')
+const isMessengerSettingsPageId = (pageId) => (
+  typeof pageId === 'string'
+  && (pageId.startsWith('messenger-settings') || pageId === 'settings-control-alerts')
+)
 
 function isAtDockPageBoundary(selected, direction) {
   if (!(selected instanceof Element)) return false
@@ -110,6 +115,8 @@ export default function App() {
   const mediaPanelStageRef = useRef(null)
   const mediaPanelCloseTimeoutRef = useRef(null)
   const mediaPanelReturnTargetRef = useRef(null)
+  const messengerPanelStageRef = useRef(null)
+  const messengerPanelCloseTimeoutRef = useRef(null)
 
   const [mediaPlaybackState, setMediaPlaybackState] = useState('stopped')
   const [mediaMuted, setMediaMuted] = useState(false)
@@ -118,6 +125,9 @@ export default function App() {
   const [mediaPanelMounted, setMediaPanelMounted] = useState(false)
   const [mediaPanelSlideOpen, setMediaPanelSlideOpen] = useState(false)
   const [mediaPanelKey, setMediaPanelKey] = useState(0)
+  const [messengerPanelMounted, setMessengerPanelMounted] = useState(false)
+  const [messengerPanelSlideOpen, setMessengerPanelSlideOpen] = useState(false)
+  const [messengerPanelKey, setMessengerPanelKey] = useState(0)
 
   const selection = useSelection()
   const audio = useAudio()
@@ -146,6 +156,7 @@ export default function App() {
       completeSound = null,
       immediateSound = null,
       showContacting = true,
+      deferOnly = false,
     } = {},
   ) => {
     clearTimeouts()
@@ -161,6 +172,19 @@ export default function App() {
       audio.play(immediateSound)
     }
 
+    if (deferOnly) {
+      addTimeout(() => {
+        setOpenDockPageId(nextPageId)
+        setDockTransitionPhase('idle')
+        setInputLocked(false)
+        selection.releaseGreen()
+        if (completeSound) {
+          audio.play(completeSound)
+        }
+      }, 500)
+      return
+    }
+
     if (!showContacting) {
       selection.hideFocusBox()
       setDockTransitionPhase('blank')
@@ -169,6 +193,7 @@ export default function App() {
         setOpenDockPageId(nextPageId)
         setDockTransitionPhase('idle')
         setInputLocked(false)
+        selection.releaseGreen()
         if (completeSound) {
           audio.play(completeSound)
         }
@@ -187,6 +212,7 @@ export default function App() {
       setOpenDockPageId(nextPageId)
       setDockTransitionPhase('idle')
       setInputLocked(false)
+      selection.releaseGreen()
       if (completeSound) {
         audio.play(completeSound)
       }
@@ -217,6 +243,7 @@ export default function App() {
     audio.register('homeBrand', `${BASE}audio/Home_brand.mp3`)
     audio.register('panelUp', `${BASE}sounds/Panel_Up.mp3`)
     audio.register('panelDown', `${BASE}sounds/Panel_Down.mp3`)
+    audio.register('taskComplete', `${BASE}sounds/task_complete.mp3`)
   }, [audio])
 
   const clearMediaStart = useCallback(() => {
@@ -335,7 +362,58 @@ export default function App() {
     revealFocusBox()
   }, [curPageVisible, getActiveSelectionRoot, openDockPageId, revealFocusBox, selection])
 
-  const openMediaPanel = useCallback(({ startBackground = false } = {}) => {
+  const closeMediaPanel = useCallback(({ stopBackground = false, afterClose = null } = {}) => {
+    clearTimeout(mediaPanelCloseTimeoutRef.current)
+
+    if (stopBackground) {
+      stopMedia()
+    }
+
+    if (!mediaPanelMounted) {
+      afterClose?.()
+      return
+    }
+
+    void audio.play('panelDown')
+    setMediaPanelSlideOpen(false)
+
+    mediaPanelCloseTimeoutRef.current = setTimeout(() => {
+      setMediaPanelMounted(false)
+      mediaPanelCloseTimeoutRef.current = null
+      if (afterClose) {
+        afterClose()
+      } else {
+        window.requestAnimationFrame(restoreMediaPanelSelection)
+      }
+    }, MEDIA_PANEL_SLIDE_MS)
+  }, [audio, mediaPanelMounted, restoreMediaPanelSelection, stopMedia])
+
+  const closeMessengerPanel = useCallback(({ reopenSettings = false, afterClose = null } = {}) => {
+    clearTimeout(messengerPanelCloseTimeoutRef.current)
+    if (!messengerPanelMounted) {
+      afterClose?.()
+      return
+    }
+
+    void audio.play('panelDown')
+    setMessengerPanelSlideOpen(false)
+
+    messengerPanelCloseTimeoutRef.current = setTimeout(() => {
+      setMessengerPanelMounted(false)
+      messengerPanelCloseTimeoutRef.current = null
+      if (afterClose) {
+        afterClose()
+      } else if (reopenSettings) {
+        beginDockTransition('messenger-settings', { pushHistory: true, showContacting: false })
+      } else if (curPageRef.current) {
+        selection.initSelectables(curPageRef.current)
+        selection.goToSpecific(0, 10, 0)
+        revealFocusBox()
+      }
+    }, MEDIA_PANEL_SLIDE_MS)
+  }, [audio, beginDockTransition, messengerPanelMounted, revealFocusBox, selection])
+
+  const showMediaPanel = useCallback(({ startBackground = false } = {}) => {
     if (!curPageVisible || dockTransitionPhase !== 'idle') return
 
     clearTimeout(mediaPanelCloseTimeoutRef.current)
@@ -368,24 +446,14 @@ export default function App() {
     startBackgroundMedia,
   ])
 
-  const closeMediaPanel = useCallback(({ stopBackground = false } = {}) => {
-    clearTimeout(mediaPanelCloseTimeoutRef.current)
-
-    if (stopBackground) {
-      stopMedia()
+  const openMediaPanel = useCallback(({ startBackground = false } = {}) => {
+    if (messengerPanelMounted) {
+      closeMessengerPanel({ afterClose: () => showMediaPanel({ startBackground }) })
+      return
     }
 
-    if (!mediaPanelMounted) return
-
-    void audio.play('panelDown')
-    setMediaPanelSlideOpen(false)
-
-    mediaPanelCloseTimeoutRef.current = setTimeout(() => {
-      setMediaPanelMounted(false)
-      mediaPanelCloseTimeoutRef.current = null
-      window.requestAnimationFrame(restoreMediaPanelSelection)
-    }, MEDIA_PANEL_SLIDE_MS)
-  }, [audio, mediaPanelMounted, restoreMediaPanelSelection, stopMedia])
+    showMediaPanel({ startBackground })
+  }, [closeMessengerPanel, messengerPanelMounted, showMediaPanel])
 
   const toggleMediaPanel = useCallback(() => {
     if (mediaPanelMounted && mediaPanelSlideOpen) {
@@ -394,6 +462,44 @@ export default function App() {
       openMediaPanel()
     }
   }, [closeMediaPanel, mediaPanelMounted, mediaPanelSlideOpen, openMediaPanel])
+
+  const showMessengerPanel = useCallback(({ silent = false } = {}) => {
+    if (!curPageVisible || dockTransitionPhase !== 'idle') return
+
+    clearTimeout(messengerPanelCloseTimeoutRef.current)
+    messengerPanelCloseTimeoutRef.current = null
+    setMessengerPanelKey((current) => current + 1)
+    setMessengerPanelMounted(true)
+    setMessengerPanelSlideOpen(false)
+    if (!silent) {
+      void audio.play('panelUp')
+    }
+
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => setMessengerPanelSlideOpen(true))
+    })
+  }, [audio, curPageVisible, dockTransitionPhase])
+
+  const openMessengerPanel = useCallback(({ silent = false } = {}) => {
+    if (mediaPanelMounted) {
+      closeMediaPanel({ afterClose: () => showMessengerPanel({ silent }) })
+      return
+    }
+
+    showMessengerPanel({ silent })
+  }, [closeMediaPanel, mediaPanelMounted, showMessengerPanel])
+
+  const toggleMessengerPanel = useCallback(() => {
+    if (messengerPanelMounted && messengerPanelSlideOpen) {
+      closeMessengerPanel()
+    } else {
+      openMessengerPanel()
+    }
+  }, [closeMessengerPanel, messengerPanelMounted, messengerPanelSlideOpen, openMessengerPanel])
+
+  const openMessengerSettings = useCallback(() => {
+    closeMessengerPanel({ reopenSettings: true })
+  }, [closeMessengerPanel])
 
   useEffect(() => {
     const mediaAudio = new Audio(`${BASE}audio/chill-jingle.mp3`)
@@ -444,6 +550,10 @@ export default function App() {
   }, [])
 
   useEffect(() => {
+    return () => clearTimeout(messengerPanelCloseTimeoutRef.current)
+  }, [])
+
+  useEffect(() => {
     if (!mediaPanelMounted || !mediaPanelStageRef.current) return undefined
 
     const frame = window.requestAnimationFrame(() => {
@@ -454,6 +564,18 @@ export default function App() {
 
     return () => window.cancelAnimationFrame(frame)
   }, [mediaPanelKey, mediaPanelMounted, revealFocusBox, selection])
+
+  useEffect(() => {
+    if (!messengerPanelMounted || !messengerPanelStageRef.current) return undefined
+
+    const frame = window.requestAnimationFrame(() => {
+      selection.initSelectables(messengerPanelStageRef.current)
+      selection.goToSpecific(0, 0, 0)
+      revealFocusBox()
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [messengerPanelKey, messengerPanelMounted, revealFocusBox, selection])
 
   const mediaPlayer = useMemo(() => ({
     playbackState: mediaPlaybackState,
@@ -488,6 +610,13 @@ export default function App() {
   const handleBackNavigation = useCallback(() => {
     if (!openDockPageId || inputLocked || dockTransitionPhase !== 'idle') return false
 
+    if (String(openDockPageId).startsWith('messenger-settings')) {
+      dockHistoryRef.current = []
+      beginDockTransition(null, { immediateSound: 'back', showContacting: false })
+      setTimeout(() => openMessengerPanel({ silent: true }), 560)
+      return true
+    }
+
     const previousPageId = dockHistoryRef.current.length > 0
       ? dockHistoryRef.current.pop()
       : null
@@ -497,7 +626,7 @@ export default function App() {
       showContacting: false,
     })
     return true
-  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition])
+  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, openMessengerPanel])
 
   useEffect(() => {
     if (mainPageRef.current) {
@@ -507,9 +636,23 @@ export default function App() {
 
   useEffect(() => {
     const handler = (e) => {
+      if (e.code === 'F2') {
+        e.preventDefault()
+        if (isMessengerSettingsPageId(openDockPageId)) return
+        toggleMessengerPanel()
+        return
+      }
+
       if (e.code === 'F7') {
         e.preventDefault()
         toggleMediaPanel()
+        return
+      }
+
+      if (e.key === 'Escape' && (mediaPanelMounted || messengerPanelMounted)) {
+        e.preventDefault()
+        if (mediaPanelMounted) closeMediaPanel()
+        if (messengerPanelMounted) closeMessengerPanel()
         return
       }
 
@@ -567,6 +710,7 @@ export default function App() {
       if (key === 'Enter') {
         if (!sel) return
         e.preventDefault()
+        if (sel instanceof HTMLButtonElement && sel.disabled) return
         const activeEl = document.activeElement
         if (activeEl instanceof HTMLElement && activeEl !== sel && activeEl !== document.body) {
           activeEl.blur()
@@ -577,12 +721,22 @@ export default function App() {
           setTimeout(() => sel.focus(), 100)
           return
         }
-        if (sel?.classList.contains('custom-checkbox')) {
+        if (sel?.classList.contains('custom-checkbox') || sel?.classList.contains('settings-control-feedback')) {
           audio.play('controlFeedback')
         } else {
           audio.play('select')
         }
-        selection.flashGreen()
+        const holdSettingsNavigation = Boolean(
+          openDockPageId
+          && isMessengerSettingsPageId(openDockPageId)
+          && sel.closest('.settings-page-shell')
+          && !sel.classList.contains('settings-control-feedback')
+        )
+        if (holdSettingsNavigation) {
+          selection.holdGreen()
+        } else {
+          selection.flashGreen()
+        }
         setTimeout(() => sel?.click(), 100)
         return
       }
@@ -680,6 +834,11 @@ export default function App() {
     musicNavPos,
     handleBackNavigation,
     toggleMediaPanel,
+    toggleMessengerPanel,
+    mediaPanelMounted,
+    messengerPanelMounted,
+    closeMediaPanel,
+    closeMessengerPanel,
   ])
 
   const fetchHeadlines = useCallback(async () => {
@@ -950,16 +1109,51 @@ export default function App() {
 
   const handleOpenDockPage = useCallback((pageId) => {
     if (inputLocked || signOutDialogOpen || dockTransitionPhase !== 'idle') return
+    if (pageId === 'messenger') {
+      openMessengerPanel()
+      return
+    }
     if (!pageId || (!DOCK_PAGES[pageId] && !isMoneyQuotePageId(pageId))) return
     if (pageId === openDockPageId) return
+    if (isMessengerSettingsPageId(openDockPageId) && isMessengerSettingsPageId(pageId)) {
+      beginDockTransition(pageId, { pushHistory: true, showContacting: false, deferOnly: true })
+      return
+    }
     beginDockTransition(pageId, { pushHistory: true })
-  }, [inputLocked, signOutDialogOpen, dockTransitionPhase, beginDockTransition, openDockPageId])
+  }, [inputLocked, signOutDialogOpen, dockTransitionPhase, openMessengerPanel, beginDockTransition, openDockPageId])
 
   const handleCloseDockPage = useCallback(() => {
     if (inputLocked || dockTransitionPhase !== 'idle') return
     dockHistoryRef.current = []
     beginDockTransition(null)
   }, [inputLocked, dockTransitionPhase, beginDockTransition])
+
+  const handleSettingsAction = useCallback((action) => {
+    if (!action) return
+
+    if (action.action === 'exit') {
+      dockHistoryRef.current = []
+      beginDockTransition(null, { showContacting: false })
+      setTimeout(() => openMessengerPanel({ silent: true }), 560)
+      return
+    }
+
+    if (action.action === 'save') {
+      void audio.play('taskComplete').finally(() => {
+        beginDockTransition(action.targetPage ?? 'messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
+      })
+      return
+    }
+
+    if (action.action === 'settings-home') {
+      beginDockTransition('messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
+      return
+    }
+
+    if (action.action === 'messenger-settings') {
+      beginDockTransition(action.targetPage ?? 'messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
+    }
+  }, [audio, beginDockTransition, openMessengerPanel])
 
   const showSignInShell = signInRevealStage >= 1
   const showSignInExtras = signInRevealStage >= 2
@@ -1113,7 +1307,22 @@ export default function App() {
                       musicNavSlidingFromPos={musicNavSlidingFromPos}
                       onMusicNavSlideEnd={handleMusicNavSlideEnd}
                       mediaPlayer={mediaPlayer}
+                      onSettingsAction={handleSettingsAction}
                     />
+                  )}
+
+                  {messengerPanelMounted && (
+                    <div
+                      ref={messengerPanelStageRef}
+                      className={`messenger-panel-stage${messengerPanelSlideOpen ? ' is-open' : ''}`}
+                      onTransitionEnd={() => selection.updateFocusBox()}
+                    >
+                      <MessengerPanel
+                        key={messengerPanelKey}
+                        onSettings={openMessengerSettings}
+                        selection={selection}
+                      />
+                    </div>
                   )}
 
                   {mediaPanelMounted && (

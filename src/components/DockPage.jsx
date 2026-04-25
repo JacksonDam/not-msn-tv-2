@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { DOCK_PAGES } from '../data/dockContent'
 import MusicCenter from './MusicCenter'
+import SettingsPage from './SettingsPage'
 import animateScrollTop from '../utils/animateScrollTop'
 import {
   createEmptyMoneyQuote,
@@ -250,6 +251,7 @@ export default function DockPage({
   musicNavSlidingFromPos = null,
   onMusicNavSlideEnd,
   mediaPlayer,
+  onSettingsAction,
 }) {
   const moneyQuoteSymbol = typeof pageId === 'string' && pageId.startsWith('money-quote:')
     ? decodeURIComponent(pageId.slice('money-quote:'.length))
@@ -705,6 +707,18 @@ export default function DockPage({
           )}
         </span>
       </>
+    )
+  }
+
+  if (page.layout === 'settings') {
+    return (
+      <div ref={setShellRef} className="dock-page-shell settings-dock-shell">
+        <SettingsPage
+          page={page}
+          onNavigate={handleModuleNavigate}
+          onAction={onSettingsAction}
+        />
+      </div>
     )
   }
 

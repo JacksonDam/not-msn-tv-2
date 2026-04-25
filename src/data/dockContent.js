@@ -1,4 +1,5 @@
 import { USING_TIP_DETAIL_PAGES, linkTipItems } from './usingTipPages'
+import { MESSENGER_SETTINGS_PAGES } from './settingsPages'
 
 export const DOCK_ITEMS = [
   { id: 'mail', label: 'Mail', w: 70 },
@@ -406,6 +407,7 @@ function createEntertainmentPage(sidebarCurrent, variant = 'entertainmentMissing
 }
 
 export const DOCK_PAGES = {
+  ...MESSENGER_SETTINGS_PAGES,
   music: {
     layout: 'musicHome',
     title: 'Music',

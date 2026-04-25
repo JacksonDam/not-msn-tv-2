@@ -200,18 +200,22 @@ export default function useAudio() {
     source.buffer = buffer
     source.connect(ctx.destination)
     sourcesRef.current.add(source)
-    source.onended = () => {
-      source.disconnect()
-      sourcesRef.current.delete(source)
-    }
+    return await new Promise((resolve) => {
+      source.onended = () => {
+        source.disconnect()
+        sourcesRef.current.delete(source)
+        resolve(true)
+      }
 
-    try {
-      source.start(0)
-    } catch {
-      source.onended = null
-      source.disconnect()
-      sourcesRef.current.delete(source)
-    }
+      try {
+        source.start(0)
+      } catch {
+        source.onended = null
+        source.disconnect()
+        sourcesRef.current.delete(source)
+        resolve(false)
+      }
+    })
   }, [ensureRunningCtx, getBuffer])
 
   useEffect(() => {

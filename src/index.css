@@ -1276,6 +1276,178 @@
         transform: translateY(0);
     }
 
+    .messenger-panel-stage {
+        position: absolute;
+        top: calc(14.5% - 25px);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        display: flex;
+        min-height: 0;
+        pointer-events: none;
+        transform: translateY(100%);
+        transition: transform 0.25s linear;
+        will-change: transform;
+    }
+
+    .messenger-panel-stage.is-open {
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .messenger-panel {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: #18324c;
+        font-family: "Segoe TV";
+        box-sizing: border-box;
+        background: #33bde8;
+    }
+
+    .messenger-panel-header {
+        position: relative;
+        flex: 0 0 17.1vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3.45vh 5.15vh 0 3.15vh;
+        box-sizing: border-box;
+        border-bottom: 0.35vh solid rgba(255, 255, 255, 0.45);
+        background: linear-gradient(180deg, #0577fc 0%, #0577fc 12%, #1684fd 52%, #319ef6 100%);
+    }
+
+    .messenger-panel-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 1.4vh;
+        pointer-events: none;
+        background-image:
+            url('/not-msn-tv-2/images/pages/messenger/IM_TopLeftCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/messenger/IM_TopRightCorner.jpg'),
+            url('/not-msn-tv-2/images/pages/messenger/IM_Top.jpg');
+        background-position: left top, right top, center top;
+        background-size: 1.4vh 7vh, 1.4vh 7vh, calc(100% - 2.8vh) 7vh;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+    }
+
+    .messenger-panel-header > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .messenger-panel-header h1 {
+        color: rgba(220, 249, 255, 0.78);
+        font-family: "Segoe TV";
+        font-size: 4.8vh;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .messenger-panel-actions {
+        display: flex;
+        gap: 2vh;
+        align-items: center;
+    }
+
+    .messenger-panel-header-button {
+        appearance: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7vh;
+        min-height: 4.5vh;
+        padding: 0 0.5vh 0.35vh;
+        color: #043f86;
+        font-family: "Segoe TV";
+        font-size: 3.7vh;
+        line-height: 1;
+        background: transparent;
+        border: 0;
+    }
+
+    .messenger-panel-header-button img {
+        width: 4.15vh;
+        height: 4.15vh;
+        object-fit: contain;
+    }
+
+    .messenger-panel-body {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        background-image: url('/not-msn-tv-2/images/pages/messenger/IM_BG.jpg');
+        background-position: center top;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .messenger-panel-connecting {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 6vh;
+        box-sizing: border-box;
+    }
+
+    .messenger-panel-connecting.is-hidden,
+    .messenger-panel-error.is-hidden {
+        visibility: hidden;
+    }
+
+    .messenger-panel-connecting img {
+        width: 24vh;
+        height: 24vh;
+        object-fit: contain;
+        image-rendering: pixelated;
+    }
+
+    .messenger-panel-error {
+        position: absolute;
+        inset: 0;
+        padding: 4.65vh 3.25vh;
+        box-sizing: border-box;
+    }
+
+    .messenger-panel-error h2 {
+        margin: 0 0 3.25vh;
+        color: #102b43;
+        font-family: "Segoe TV Bold";
+        font-size: 3.75vh;
+        line-height: 1;
+    }
+
+    .messenger-panel-error p {
+        max-width: 118vh;
+        margin: 0 0 4vh;
+        color: #102b43;
+        font-size: 3.35vh;
+        line-height: 1.12;
+    }
+
+    .messenger-panel-button {
+        position: absolute;
+        right: 5.35vh;
+        bottom: 5vh;
+        min-width: 22.3vh;
+        min-height: 5.55vh;
+        padding: 0 2.2vh 0.28vh;
+        background-image: linear-gradient(180deg, #f1f3f5 0%, #87abcb 20%, #a9c8ef 100%) !important;
+        border: 0.3vh solid #1b1b1b;
+        border-radius: 2px;
+        color: #254267;
+        font-size: 3.1vh;
+        font-family: "Segoe TV";
+        line-height: 1;
+    }
+
     .media-player-panel {
         flex: 1 1 auto;
         min-height: 0;
@@ -1309,6 +1481,9 @@
         box-sizing: border-box;
         background:
             linear-gradient(180deg, transparent 0, transparent 10px, #000000 10px, #000000 100%);
+        background-position: 2px 0;
+        background-size: calc(100% - 4px) 100%;
+        background-repeat: no-repeat;
     }
 
     .media-player-screen {
@@ -1433,7 +1608,7 @@
     .media-player-progress {
         position: absolute;
         top: 58.45vh;
-        left: 3.45vh;
+        left: calc(3.45vh - 15px);
         width: 73.3vh;
         height: 6vh;
         display: grid;
@@ -1862,6 +2037,10 @@
         --dock-sidebar-card-border: #94b4ca;
         --dock-accent: #1c4f7d;
         --dock-accent-soft: #e1edf5;
+    }
+
+    .theme-settings {
+        --dock-header-bg: url('/not-msn-tv-2/images/pages/settings/SettingsHeaderBG.jpg') center / cover no-repeat;
     }
 
     .theme-favorites {
@@ -5012,6 +5191,264 @@
         font-size: var(--dock-sports-nfl-text-size);
         font-family: "Segoe TV";
         line-height: 1.08;
+    }
+
+    .settings-dock-shell {
+        background: #9fbed0;
+    }
+
+    .settings-page-shell {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        color: #102f4c;
+        font-family: "Segoe TV";
+        background: #9bbdd0;
+    }
+
+    .settings-page-header {
+        flex: 0 0 12.4vh;
+        display: flex;
+        align-items: center;
+        gap: 4.2vh;
+        padding: 0 4.1vh 0 3.7vh;
+        box-sizing: border-box;
+        font-family: "Segoe TV Bold";
+        font-size: 5.05vh;
+        line-height: 1;
+        background: url('/not-msn-tv-2/images/pages/settings/SettingsHeaderBG.jpg') center / cover no-repeat;
+        border-bottom: 0.35vh solid rgba(255, 255, 255, 0.65);
+    }
+
+    .settings-page-header span {
+        transform: translateY(1.35vh);
+    }
+
+    .settings-page-header span:first-child {
+        color: #abc1cf;
+        font-family: "Segoe TV Bold";
+    }
+
+    .settings-page-header span + span {
+        color: #ffffff;
+        font-family: "Segoe TV";
+    }
+
+    .settings-page-main {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 35vh;
+    }
+
+    .settings-page-content {
+        padding: 4vh 3.7vh;
+        box-sizing: border-box;
+        background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 42%),
+            linear-gradient(90deg, #98bacd 0%, #a4c6d7 58%, #abcbd9 100%);
+    }
+
+    .settings-page-actions {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        padding: 4.1vh 2.3vh;
+        box-sizing: border-box;
+        background: #b7d7e5;
+    }
+
+    .settings-action {
+        min-height: 6.6vh;
+        width: 100%;
+        padding: 0 1.3vh 0.35vh;
+        text-align: left;
+        background-image: linear-gradient(180deg, #f3f8fa 0%, #b5cfdb 19%, #d7e8ef 100%) !important;
+        border: 0.24vh solid #7f9099;
+        color: #244464;
+        font-family: "Segoe TV";
+        font-size: 3.85vh;
+        line-height: 1;
+    }
+
+    .settings-action-bottom {
+        position: absolute;
+        right: 2.3vh;
+        bottom: 2.5vh;
+        width: calc(100% - 4.6vh);
+    }
+
+    .settings-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.1vh;
+        max-width: 92vh;
+    }
+
+    .settings-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        text-align: left;
+        color: #102f4c;
+        font-family: "Segoe TV";
+        line-height: 1.06;
+    }
+
+    .settings-list-title-button {
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: 0;
+        text-align: left;
+    }
+
+    .settings-list-title,
+    .settings-body-heading,
+    .settings-body-strong {
+        color: #0b3157;
+        font-family: "Segoe TV Bold";
+        font-size: 4.25vh;
+        line-height: 1.02;
+    }
+
+    .settings-list-description,
+    .settings-body-copy {
+        color: #102f4c;
+        font-family: "Segoe TV";
+        font-size: 4vh;
+        line-height: 1.08;
+    }
+
+    .settings-list-description {
+        white-space: pre-line;
+    }
+
+    .settings-body {
+        max-width: 92vh;
+    }
+
+    .settings-body-copy {
+        margin: 0 0 4.2vh;
+        white-space: pre-line;
+    }
+
+    .settings-body-copy strong {
+        font-family: "Segoe TV Bold";
+    }
+
+    .settings-body-heading {
+        margin: 3.4vh 0 3.1vh;
+    }
+
+    .settings-body-strong {
+        margin-top: 3.3vh;
+    }
+
+    .settings-choice,
+    .settings-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.3vh;
+        min-height: 5.6vh;
+        padding: 0.1vh 0;
+        margin: 0 0 1.4vh;
+        background: transparent;
+        border: 0;
+        color: #0b3157;
+        font-family: "Segoe TV";
+        font-size: 4vh;
+        line-height: 1;
+        text-align: left;
+    }
+
+    .settings-control-icon {
+        appearance: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.6vh;
+        height: 4.6vh;
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: 0;
+    }
+
+    .settings-radio-row {
+        display: flex;
+        gap: 10vh;
+        margin-top: 3vh;
+    }
+
+    .settings-radio-choice img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .settings-checkbox-icon {
+        width: 3.9vh;
+        height: 3.9vh;
+    }
+
+    .settings-checkbox-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .settings-link {
+        color: #1f3f7f;
+        max-width: 75vh;
+        align-items: flex-start;
+        line-height: 1.05;
+    }
+
+    .settings-page-full .settings-page-main {
+        position: relative;
+        display: block;
+        background: #b7d7e5;
+    }
+
+    .settings-page-full .settings-page-content {
+        min-height: 100%;
+        padding-right: 36vh;
+        background: #b7d7e5;
+    }
+
+    .settings-page-full .settings-body {
+        max-width: none;
+    }
+
+    .settings-page-full .settings-page-actions {
+        position: absolute;
+        inset: 0 0 0 auto;
+        width: 35vh;
+        padding: 0;
+        background: transparent;
+        pointer-events: none;
+    }
+
+    .settings-page-full .settings-action {
+        pointer-events: auto;
+    }
+
+    .settings-page-full .settings-action-bottom {
+        right: 2.3vh;
+        bottom: 2.5vh;
     }
 
     .dock-page-shell-money-experts .dock-page-money-experts-title.dock-page-content-title {
