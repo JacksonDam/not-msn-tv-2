@@ -73,7 +73,7 @@ export default function HomePage({
       </div>
       <img className="object-cover" src={`${BASE}images/infodivbg.png`} />
       <div className="absolute promo-img">
-        <img className="object-cover" src={`${BASE}images/promotionalimage.png`} />
+        <img className="object-cover" src={`${BASE}images/promotionalimage.webp`} />
       </div>
       <PromoWidget onActivate={onDockActivate} />
       <div className="absolute flex flex-wrap today-pane items-center">
