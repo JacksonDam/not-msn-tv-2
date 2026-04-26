@@ -106,7 +106,7 @@ const SPORTS_SIDEBAR_BOX = {
 
 const ENTERTAINMENT_SIDEBAR_BOX = {
   title: 'Related Links:',
-  items: ['Music', 'Radio'],
+  items: [{ label: 'Music', targetPage: 'music' }, 'Radio'],
 }
 
 const WEATHER_SIDEBAR_BOX = {

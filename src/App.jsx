@@ -111,6 +111,7 @@ export default function App() {
   const [curPageVisible, setCurPageVisible] = useState(false)
   const [openDockPageId, setOpenDockPageId] = useState(null)
   const [dockTransitionPhase, setDockTransitionPhase] = useState('idle')
+  const [musicCrossfadeActive, setMusicCrossfadeActive] = useState(false)
   const [errorDialogOpen, setErrorDialogOpen] = useState(false)
   const [errorShowing, setErrorShowing] = useState(false)
   const [signOutDialogOpen, setSignOutDialogOpen] = useState(false)
@@ -135,6 +136,7 @@ export default function App() {
   const mainPageRef = useRef(null)
   const curPageRef = useRef(null)
   const dockPageRef = useRef(null)
+  const musicCrossfadePageRef = useRef(null)
   const dockTransitionRef = useRef(null)
   const previousDockPageRef = useRef(null)
   const dockHistoryRef = useRef([])
@@ -198,6 +200,9 @@ export default function App() {
       immediateSound = null,
       showContacting = true,
       deferOnly = false,
+      crossfade = false,
+      crossfadeDelay = 0,
+      crossfadeAfterContacting = false,
     } = {},
   ) => {
     clearTimeouts()
@@ -211,6 +216,56 @@ export default function App() {
 
     if (immediateSound) {
       audio.play(immediateSound)
+    }
+
+    if (crossfade) {
+      if (crossfadeDelay > 0) {
+        selection.holdGreen()
+      } else {
+        selection.hideFocusBox()
+        setMusicCrossfadeActive(true)
+        setDockTransitionPhase('idle')
+      }
+
+      addTimeout(() => {
+        if (crossfadeDelay > 0) {
+          selection.hideFocusBox()
+          setMusicCrossfadeActive(true)
+          setDockTransitionPhase('idle')
+        }
+
+        addTimeout(() => {
+          setOpenDockPageId(nextPageId)
+          setMusicCrossfadeActive(false)
+          setInputLocked(false)
+          selection.releaseGreen()
+          if (completeSound) {
+            audio.play(completeSound)
+          }
+        }, 200)
+      }, crossfadeDelay)
+      return
+    }
+
+    if (crossfadeAfterContacting) {
+      setDockTransitionPhase('contacting')
+
+      addTimeout(() => {
+        selection.hideFocusBox()
+        setDockTransitionPhase('idle')
+        setMusicCrossfadeActive(true)
+      }, 500)
+
+      addTimeout(() => {
+        setOpenDockPageId(nextPageId)
+        setMusicCrossfadeActive(false)
+        setInputLocked(false)
+        selection.releaseGreen()
+        if (completeSound) {
+          audio.play(completeSound)
+        }
+      }, 700)
+      return
     }
 
     if (deferOnly) {
@@ -1316,7 +1371,7 @@ export default function App() {
     }, 1000)
   }, [inputLocked, clearTimeouts, selection, addTimeout, resetHomePageState, resetStatusUi])
 
-  const handleOpenDockPage = useCallback((pageId) => {
+  const handleOpenDockPage = useCallback((pageId, options = {}) => {
     if (inputLocked || signOutDialogOpen || dockTransitionPhase !== 'idle') return
     if (pageId === 'messenger') {
       openMessengerPanel()
@@ -1328,7 +1383,12 @@ export default function App() {
       beginDockTransition(pageId, { pushHistory: true, showContacting: false, deferOnly: true })
       return
     }
-    beginDockTransition(pageId, { pushHistory: true })
+    beginDockTransition(pageId, {
+      pushHistory: true,
+      crossfade: Boolean(options.crossfade),
+      crossfadeDelay: options.crossfadeDelay ?? 0,
+      crossfadeAfterContacting: pageId === 'music' && !options.crossfade,
+    })
   }, [inputLocked, signOutDialogOpen, dockTransitionPhase, openMessengerPanel, beginDockTransition, openDockPageId])
 
   const handleCloseDockPage = useCallback(() => {
@@ -1497,10 +1557,11 @@ export default function App() {
                         dockViewStart={dockViewStart}
                     dockPixelOffset={dockPixelOffset}
                     dockSlidingFromPos={dockSlidingFromPos}
-                    onSlideEnd={handleSlideEnd}
-                    onSignOutRequest={handleOpenSignOutDialog}
-                    onDockActivate={handleOpenDockPage}
-                  />
+                        onSlideEnd={handleSlideEnd}
+                        onSignOutRequest={handleOpenSignOutDialog}
+                        onDockActivate={handleOpenDockPage}
+                        onAddressGo={handleTypeWwwGo}
+                      />
 
                   {openDockPageId && (
                     <DockPage
@@ -1550,10 +1611,10 @@ export default function App() {
                     </div>
                   )}
 
-                  {mediaPanelMounted && (
-                    <div
-                      ref={mediaPanelStageRef}
-                      className={`music-media-panel-stage${mediaPanelSlideOpen ? ' is-open' : ''}`}
+	                  {mediaPanelMounted && (
+	                    <div
+	                      ref={mediaPanelStageRef}
+	                      className={`music-media-panel-stage${mediaPanelSlideOpen ? ' is-open' : ''}`}
                       onTransitionEnd={() => selection.updateFocusBox()}
                     >
                       <MediaPlayerPanel
@@ -1570,11 +1631,32 @@ export default function App() {
                         onHide={() => closeMediaPanel({ stopBackground: false })}
                       />
                     </div>
-                  )}
+	                  )}
 
-                  <div
-                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 confirm-dialog-container ${signOutDialogOpen ? '' : 'closed'}`}
-                    id="signout-dialog"
+	                  {musicCrossfadeActive && openDockPageId !== 'music' && (
+	                    <div className="music-center-crossfade">
+	                      <DockPage
+	                        key={`music-crossfade-${currentPageReloadKey}`}
+	                        pageId="music"
+	                        pageRef={musicCrossfadePageRef}
+	                        onClose={handleCloseDockPage}
+	                        selection={selection}
+	                        onNavigate={handleOpenDockPage}
+	                        musicNavPos={musicNavPos}
+	                        musicNavViewStart={musicNavViewStart}
+	                        musicNavPixelOffset={musicNavPixelOffset}
+	                        musicNavSlidingFromPos={musicNavSlidingFromPos}
+	                        onMusicNavSlideEnd={handleMusicNavSlideEnd}
+	                        mediaPlayer={mediaPlayer}
+	                        onSettingsAction={handleSettingsAction}
+	                        navigationErrorUrl={navigationErrorUrl}
+	                      />
+	                    </div>
+	                  )}
+
+	                  <div
+	                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 confirm-dialog-container ${signOutDialogOpen ? '' : 'closed'}`}
+	                    id="signout-dialog"
                   >
                     <div className="confirm-dialog-contents inset-0 flex flex-col">
                       <div className="flex items-start">

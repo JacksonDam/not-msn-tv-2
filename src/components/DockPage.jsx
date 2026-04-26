@@ -386,9 +386,9 @@ export default function DockPage({
     window.requestAnimationFrame(updateScrollIndicators)
   }, [selection, updateScrollIndicators])
 
-  const handleModuleNavigate = useCallback((targetPageId) => {
+  const handleModuleNavigate = useCallback((targetPageId, options) => {
     if (!targetPageId) return
-    onNavigate(targetPageId)
+    onNavigate(targetPageId, options)
   }, [onNavigate])
 
   const handleMoneyQuoteNavigate = useCallback((rawSymbol, fallbackSymbol = '') => {
@@ -1390,10 +1390,13 @@ export default function DockPage({
                       key={normalized.label}
                       row={nextRow()}
                       x={-1}
-                      className="dock-page-sidebar-card-row"
-                        {...(sidebarRightTarget ? { 'data-select-right': sidebarRightTarget } : {})}
-                      onClick={() => handleModuleNavigate(normalized.targetPage)}
-                    >
+	                      className="dock-page-sidebar-card-row"
+	                        {...(sidebarRightTarget ? { 'data-select-right': sidebarRightTarget } : {})}
+	                      onClick={() => handleModuleNavigate(normalized.targetPage, {
+	                        crossfade: page.title === 'Entertainment' && normalized.targetPage === 'music',
+	                        crossfadeDelay: page.title === 'Entertainment' && normalized.targetPage === 'music' ? 500 : 0,
+	                      })}
+	                    >
                         <span className="dock-page-row-label">{normalized.label}</span>
                       </SelectableRow>
                     )

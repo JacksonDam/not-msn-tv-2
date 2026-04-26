@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { DOCK_ITEMS } from '../data/dockContent'
 import { USING_TIP_TARGETS_BY_LABEL } from '../data/usingTipPages'
 import DockCarousel from './DockCarousel'
@@ -16,11 +17,16 @@ export default function HomePage({
   onSlideEnd,
   onSignOutRequest,
   onDockActivate,
+  onAddressGo,
 }) {
+  const searchInputRef = useRef(null)
   const now = new Date()
   const dateStr = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`
   const audibleDialingTipId = USING_TIP_TARGETS_BY_LABEL['Turn on audible dialing']
   const printingTipId = USING_TIP_TARGETS_BY_LABEL['Preview before you print']
+  const submitAddress = () => {
+    onAddressGo?.(searchInputRef.current?.value ?? 'http://www.')
+  }
 
   return (
     <div className="flex page-outer flex-wrap">
@@ -68,19 +74,43 @@ export default function HomePage({
         <h3 className="today-pane-date selectable" data-select-x="0" data-select-height="1" data-select-layer="0">
           {dateStr}
         </h3>
-        <h3 className="today-pane-headline selectable" data-select-x="0" data-select-height="2" data-select-layer="0">
+        <h3
+          className="today-pane-headline selectable"
+          data-select-x="0"
+          data-select-height="2"
+          data-select-layer="0"
+          onClick={() => onDockActivate?.('news')}
+        >
           {headlines[0]}
         </h3>
         <div className="break"></div>
-        <h3 className="today-pane-headline selectable" data-select-x="0" data-select-height="3" data-select-layer="0">
+        <h3
+          className="today-pane-headline selectable"
+          data-select-x="0"
+          data-select-height="3"
+          data-select-layer="0"
+          onClick={() => onDockActivate?.('news')}
+        >
           {headlines[1]}
         </h3>
         <div className="break"></div>
-        <h3 className="today-pane-headline selectable" data-select-x="0" data-select-height="4" data-select-layer="0">
+        <h3
+          className="today-pane-headline selectable"
+          data-select-x="0"
+          data-select-height="4"
+          data-select-layer="0"
+          onClick={() => onDockActivate?.('news')}
+        >
           {headlines[2]}
         </h3>
         <div className="break"></div>
-        <div className="flex items-center today-end selectable" data-select-x="0" data-select-height="5" data-select-layer="0">
+        <div
+          className="flex items-center today-end selectable"
+          data-select-x="0"
+          data-select-height="5"
+          data-select-layer="0"
+          onClick={() => onDockActivate?.('news')}
+        >
           <img className="dropdown-right-arrow" src={`${BASE}images/dropdowncustomrightarrow.png`} />
           <h3 className="today-pane-text">More MSNBC news</h3>
         </div>
@@ -121,6 +151,7 @@ export default function HomePage({
       <div id="search-div">
         <h3 className="search-label">Search or type www</h3>
         <input
+          ref={searchInputRef}
           className="search-input-stub selectable"
           type="text"
           data-select-x="0"
@@ -137,6 +168,7 @@ export default function HomePage({
           data-select-x="1"
           data-select-height="9"
           data-select-layer="0"
+          onClick={submitAddress}
         >
           Go
         </button>
