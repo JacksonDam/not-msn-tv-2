@@ -1320,7 +1320,7 @@ export default function DockPage({
           <main className="mail-center-body mail-center-body-read">
             <section className="mail-center-read-pane">
               <dl className="mail-center-read-meta">
-                <div><dt>To:</dt><dd>z-joe@msn.com</dd></div>
+                <div><dt>To:</dt><dd>lounge01@msn.com</dd></div>
                 <div><dt>From:</dt><dd>{currentMessage.fromAddress}</dd></div>
                 <div><dt>Subject:</dt><dd>{currentMessage.subject}</dd></div>
                 <div><dt>Date:</dt><dd>{currentMessage.longDate}</dd></div>
