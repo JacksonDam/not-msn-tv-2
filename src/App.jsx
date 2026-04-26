@@ -959,6 +959,7 @@ export default function App() {
     }
 
     const clickHandler = (e) => {
+      if (!e.isTrusted) return
       e.preventDefault()
       e.stopImmediatePropagation()
       dispatchKey('Enter', 13)
