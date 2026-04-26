@@ -158,6 +158,8 @@ export default function App() {
   const messengerPanelReturnTargetRef = useRef(null)
   const typeWwwPanelStageRef = useRef(null)
   const typeWwwPanelCloseTimeoutRef = useRef(null)
+  const handleStartRef = useRef(null)
+  const handleBackNavigationRef = useRef(null)
 
   const [mediaPlaybackState, setMediaPlaybackState] = useState('stopped')
   const [mediaMuted, setMediaMuted] = useState(false)
@@ -984,8 +986,6 @@ export default function App() {
     }
   }, [])
 
-  const handleStartRef = useRef(null)
-  const handleBackNavigationRef = useRef(null)
   useEffect(() => {
     const handler = (e) => {
       if (!started) {
