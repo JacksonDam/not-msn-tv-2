@@ -2,7 +2,7 @@ import { useRef } from 'react'
 
 const BASE = import.meta.env.BASE_URL
 
-export default function TypeWwwPanel({ onGo, onCancel }) {
+export default function TypeWwwPanel({ onGo, onCancel, currentAddress }) {
   const inputRef = useRef(null)
 
   const submit = () => {
@@ -11,7 +11,7 @@ export default function TypeWwwPanel({ onGo, onCancel }) {
 
   const showCurrentAddress = () => {
     if (inputRef.current) {
-      inputRef.current.value = 'http://msntv2.theusualplaces.comuk/InitialSetup/Start'
+      inputRef.current.value = currentAddress || 'http://msntv.msn.com/home/home.html'
       inputRef.current.focus()
       inputRef.current.select()
     }

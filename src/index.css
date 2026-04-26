@@ -331,6 +331,22 @@
         margin-left: 0;
     }
 
+    #signout-dialog .confirm-dialog-actions {
+        gap: 0.45vh;
+    }
+
+    #signout-dialog .cancel-error-btn.confirm-dialog-btn {
+        min-width: 0;
+        padding-left: 2.25vh;
+        padding-right: 2.25vh;
+    }
+
+    #signout-dialog .sign-in-btn.confirm-dialog-btn {
+        min-width: 0;
+        padding-left: 2.5vh;
+        padding-right: 2.5vh;
+    }
+
     .dialog-bg {
         object-fit: fill;
         border-radius: 8px;
@@ -6216,8 +6232,8 @@
 
     .navigation-error-actions {
         position: absolute;
-        right: 8.5vh;
-        bottom: 5.65vh;
+        right: calc(8.5vh - 40px);
+        bottom: calc(5.65vh - 24px);
         display: flex;
         gap: 0.55vh;
         align-items: center;
@@ -6229,6 +6245,11 @@
         margin-left: 0;
         padding: 0 3.3vh 0.45vh;
         font-size: 3.7vh;
+    }
+
+    .navigation-error-button:last-child {
+        padding-left: calc(3.3vh - 15px);
+        padding-right: calc(3.3vh - 15px);
     }
 
     @media (max-width: 900px) {

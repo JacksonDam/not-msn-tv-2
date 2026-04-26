@@ -8,15 +8,41 @@ import MessengerPanel from './components/MessengerPanel'
 import TypeWwwPanel from './components/TypeWwwPanel'
 import { MUSIC_NAV_ROW } from './components/MusicCenter'
 import SelectionFrame from './components/SelectionFrame'
-import { DOCK_PAGES } from './data/dockContent'
+import { DOCK_ITEMS, DOCK_PAGES } from './data/dockContent'
 
 const BASE = import.meta.env.BASE_URL
 const MEDIA_PANEL_SLIDE_MS = 250
+const HOME_WEB_ADDRESS = 'http://msntv.msn.com/home/home.html'
+const CENTER_WEB_ADDRESS_BASE = 'http://msntv.msn.com'
+const USING_MSN_TV_PAGE_IDS = new Set(['tips', 'newsletter'])
 const isMoneyQuotePageId = (pageId) => typeof pageId === 'string' && pageId.startsWith('money-quote:')
 const isMessengerSettingsPageId = (pageId) => (
   typeof pageId === 'string'
   && (pageId.startsWith('messenger-settings') || pageId === 'settings-control-alerts')
 )
+const getDockCenterId = (pageId) => {
+  if (!pageId) return null
+  if (isMoneyQuotePageId(pageId)) return 'money'
+  if (isMessengerSettingsPageId(pageId)) return 'messenger'
+  if (USING_MSN_TV_PAGE_IDS.has(pageId) || pageId.startsWith('tip-')) return 'usingmsntv'
+
+  return DOCK_ITEMS
+    .map((item) => item.id)
+    .find((id) => pageId === id || pageId.startsWith(`${id}-`)) ?? pageId
+}
+const normalizeWebAddressForCompare = (url) => {
+  const value = String(url || '').trim()
+  if (!value) return ''
+
+  const withProtocol = /^[a-z][a-z0-9+.-]*:\/\//i.test(value) ? value : `http://${value}`
+  try {
+    const parsed = new URL(withProtocol)
+    const pathname = parsed.pathname.replace(/\/+$/, '') || '/'
+    return `${parsed.protocol}//${parsed.host}${pathname}`.toLowerCase()
+  } catch {
+    return value.replace(/\/+$/, '').toLowerCase()
+  }
+}
 
 function isAtDockPageBoundary(selected, direction) {
   if (!(selected instanceof Element)) return false
@@ -93,6 +119,7 @@ export default function App() {
   const [checkboxChecked, setCheckboxChecked] = useState(true)
   const [clock, setClock] = useState('')
   const [headlines, setHeadlines] = useState(['Headline 1', 'Headline 2', 'Headline 3'])
+  const [currentPageReloadKey, setCurrentPageReloadKey] = useState(0)
   const [dockPos, setDockPos] = useState(0)
   const [dockViewStart, setDockViewStart] = useState(0)
   const [dockPixelOffset, setDockPixelOffset] = useState(0)
@@ -118,6 +145,7 @@ export default function App() {
   const mediaPanelReturnTargetRef = useRef(null)
   const messengerPanelStageRef = useRef(null)
   const messengerPanelCloseTimeoutRef = useRef(null)
+  const messengerPanelReturnTargetRef = useRef(null)
   const typeWwwPanelStageRef = useRef(null)
   const typeWwwPanelCloseTimeoutRef = useRef(null)
 
@@ -146,6 +174,12 @@ export default function App() {
     }
     selection.unHideFocusBox()
   }, [selection])
+
+  const isNavigationErrorScreenActive = useCallback(() => (
+    openDockPageId === 'navigation-error'
+    || DOCK_PAGES[openDockPageId]?.layout === 'navigationError'
+    || Boolean(document.querySelector('.navigation-error-shell'))
+  ), [openDockPageId])
 
   const clearTimeouts = useCallback(() => {
     timeoutsRef.current.forEach(clearTimeout)
@@ -332,7 +366,7 @@ export default function App() {
     return mainPageRef.current
   }, [curPageVisible, dockTransitionPhase, openDockPageId, signOutDialogOpen])
 
-  const captureMediaPanelReturnTarget = useCallback(() => {
+  const capturePanelReturnTarget = useCallback(() => {
     const root = getActiveSelectionRoot()
     const selected = selection.getSelected()
     if (!(root instanceof Element) || !(selected instanceof Element) || !root.contains(selected)) {
@@ -349,8 +383,8 @@ export default function App() {
     const pos = row.indexOf(selected)
     if (pos < 0) return null
 
-    return { element: selected, layer, height, pos }
-  }, [getActiveSelectionRoot, selection])
+    return { element: selected, layer, height, pos, pageId: openDockPageId ?? null }
+  }, [getActiveSelectionRoot, openDockPageId, selection])
 
   const restoreMediaPanelSelection = useCallback(() => {
     const root = getActiveSelectionRoot()
@@ -362,6 +396,33 @@ export default function App() {
     if (target?.element?.isConnected && root.contains(target.element)) {
       selection.updateContainerRef(target.layer, target.height, target.pos, target.element)
       selection.goToSpecific(target.layer, target.height, target.pos)
+    } else if (!openDockPageId && curPageVisible) {
+      selection.goToSpecific(0, 10, 0)
+    }
+
+    revealFocusBox()
+  }, [curPageVisible, getActiveSelectionRoot, openDockPageId, revealFocusBox, selection])
+
+  const restoreMessengerPanelSelection = useCallback(() => {
+    const root = getActiveSelectionRoot()
+    if (!(root instanceof Element)) return
+
+    selection.initSelectables(root)
+
+    const target = messengerPanelReturnTargetRef.current
+    const isSamePage = target?.pageId === (openDockPageId ?? null)
+    if (isSamePage && target?.element?.isConnected && root.contains(target.element)) {
+      selection.updateContainerRef(target.layer, target.height, target.pos, target.element)
+      selection.goToSpecific(target.layer, target.height, target.pos)
+    } else if (isSamePage && target) {
+      const row = Array.from(root.querySelectorAll(
+        `.selectable[data-select-layer="${target.layer}"][data-select-height="${target.height}"]`,
+      ))
+      const freshTarget = row[target.pos]
+      if (freshTarget) {
+        selection.updateContainerRef(target.layer, target.height, target.pos, freshTarget)
+        selection.goToSpecific(target.layer, target.height, target.pos)
+      }
     } else if (!openDockPageId && curPageVisible) {
       selection.goToSpecific(0, 10, 0)
     }
@@ -412,13 +473,11 @@ export default function App() {
         afterClose()
       } else if (reopenSettings) {
         beginDockTransition('messenger-settings', { pushHistory: true, showContacting: false })
-      } else if (curPageRef.current) {
-        selection.initSelectables(curPageRef.current)
-        selection.goToSpecific(0, 10, 0)
-        revealFocusBox()
+      } else {
+        window.requestAnimationFrame(restoreMessengerPanelSelection)
       }
     }, MEDIA_PANEL_SLIDE_MS)
-  }, [audio, beginDockTransition, messengerPanelMounted, revealFocusBox, selection])
+  }, [audio, beginDockTransition, messengerPanelMounted, restoreMessengerPanelSelection])
 
   const closeTypeWwwPanel = useCallback(({ afterClose = null } = {}) => {
     clearTimeout(typeWwwPanelCloseTimeoutRef.current)
@@ -450,7 +509,7 @@ export default function App() {
     mediaPanelCloseTimeoutRef.current = null
 
     if (!mediaPanelMounted) {
-      mediaPanelReturnTargetRef.current = captureMediaPanelReturnTarget()
+      mediaPanelReturnTargetRef.current = capturePanelReturnTarget()
     }
 
     setMediaPanelKey((current) => current + 1)
@@ -469,7 +528,7 @@ export default function App() {
     })
   }, [
     audio,
-    captureMediaPanelReturnTarget,
+    capturePanelReturnTarget,
     curPageVisible,
     dockTransitionPhase,
     mediaPanelMounted,
@@ -503,6 +562,9 @@ export default function App() {
 
     clearTimeout(messengerPanelCloseTimeoutRef.current)
     messengerPanelCloseTimeoutRef.current = null
+    if (!messengerPanelMounted && !silent) {
+      messengerPanelReturnTargetRef.current = capturePanelReturnTarget()
+    }
     setMessengerPanelKey((current) => current + 1)
     setMessengerPanelMounted(true)
     setMessengerPanelSlideOpen(false)
@@ -513,7 +575,7 @@ export default function App() {
     window.requestAnimationFrame(() => {
       window.requestAnimationFrame(() => setMessengerPanelSlideOpen(true))
     })
-  }, [audio, curPageVisible, dockTransitionPhase])
+  }, [audio, capturePanelReturnTarget, curPageVisible, dockTransitionPhase, messengerPanelMounted])
 
   const openMessengerPanel = useCallback(({ silent = false } = {}) => {
     if (typeWwwPanelMounted) {
@@ -537,12 +599,23 @@ export default function App() {
     }
   }, [closeMessengerPanel, messengerPanelMounted, messengerPanelSlideOpen, openMessengerPanel])
 
+  const exitMessengerSettings = useCallback(({ immediateSound = null } = {}) => {
+    const previousPageId = dockHistoryRef.current.length > 0
+      ? dockHistoryRef.current.pop()
+      : null
+
+    dockHistoryRef.current = []
+    beginDockTransition(previousPageId ?? null, { immediateSound, showContacting: false })
+    setTimeout(() => openMessengerPanel({ silent: true }), 560)
+  }, [beginDockTransition, openMessengerPanel])
+
   const openMessengerSettings = useCallback(() => {
     closeMessengerPanel({ reopenSettings: true })
   }, [closeMessengerPanel])
 
   const showTypeWwwPanel = useCallback(() => {
     if (!curPageVisible || dockTransitionPhase !== 'idle') return
+    if (isNavigationErrorScreenActive()) return
 
     clearTimeout(typeWwwPanelCloseTimeoutRef.current)
     typeWwwPanelCloseTimeoutRef.current = null
@@ -554,7 +627,7 @@ export default function App() {
     window.requestAnimationFrame(() => {
       window.requestAnimationFrame(() => setTypeWwwPanelSlideOpen(true))
     })
-  }, [audio, curPageVisible, dockTransitionPhase])
+  }, [audio, curPageVisible, dockTransitionPhase, isNavigationErrorScreenActive])
 
   const openTypeWwwPanel = useCallback(() => {
     if (mediaPanelMounted) {
@@ -578,13 +651,37 @@ export default function App() {
     }
   }, [closeTypeWwwPanel, openTypeWwwPanel, typeWwwPanelMounted, typeWwwPanelSlideOpen])
 
+  const currentWebAddress = useMemo(() => {
+    const centerId = getDockCenterId(openDockPageId)
+    return centerId ? `${CENTER_WEB_ADDRESS_BASE}/${centerId}` : HOME_WEB_ADDRESS
+  }, [openDockPageId])
+
+  const reloadCurrentPage = useCallback(() => {
+    clearTimeouts()
+    setInputLocked(true)
+    selection.hideFocusBox()
+    setDockTransitionPhase('blank')
+
+    addTimeout(() => {
+      setCurrentPageReloadKey((current) => current + 1)
+      setDockTransitionPhase('idle')
+      setInputLocked(false)
+      selection.releaseGreen()
+    }, 500)
+  }, [addTimeout, clearTimeouts, selection])
+
   const handleTypeWwwGo = useCallback((url) => {
     const nextUrl = String(url || 'http://www.').trim() || 'http://www.'
+    if (normalizeWebAddressForCompare(nextUrl) === normalizeWebAddressForCompare(currentWebAddress)) {
+      closeTypeWwwPanel({ afterClose: reloadCurrentPage })
+      return
+    }
+
     setNavigationErrorUrl(nextUrl)
     closeTypeWwwPanel({
       afterClose: () => beginDockTransition('navigation-error', { pushHistory: true, showContacting: false }),
     })
-  }, [beginDockTransition, closeTypeWwwPanel])
+  }, [beginDockTransition, closeTypeWwwPanel, currentWebAddress, reloadCurrentPage])
 
   useEffect(() => {
     const mediaAudio = new Audio(`${BASE}audio/chill-jingle.mp3`)
@@ -711,10 +808,8 @@ export default function App() {
   const handleBackNavigation = useCallback(() => {
     if (!openDockPageId || inputLocked || dockTransitionPhase !== 'idle') return false
 
-    if (String(openDockPageId).startsWith('messenger-settings')) {
-      dockHistoryRef.current = []
-      beginDockTransition(null, { immediateSound: 'back', showContacting: false })
-      setTimeout(() => openMessengerPanel({ silent: true }), 560)
+    if (isMessengerSettingsPageId(openDockPageId)) {
+      exitMessengerSettings({ immediateSound: 'back' })
       return true
     }
 
@@ -727,7 +822,7 @@ export default function App() {
       showContacting: false,
     })
     return true
-  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, openMessengerPanel])
+  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, exitMessengerSettings])
 
   useEffect(() => {
     if (mainPageRef.current) {
@@ -750,13 +845,15 @@ export default function App() {
         return
       }
 
-      if (e.key === 'Backspace' && e.shiftKey) {
+      if ((e.key === 'Backspace' || e.code === 'Backspace') && e.shiftKey) {
         e.preventDefault()
+        e.stopPropagation()
+        if (isNavigationErrorScreenActive()) return
         toggleTypeWwwPanel()
         return
       }
 
-      if (e.key === 'Escape' && (mediaPanelMounted || messengerPanelMounted || typeWwwPanelMounted)) {
+      if ((e.key === 'Escape' || e.key === 'Backspace') && (mediaPanelMounted || messengerPanelMounted || typeWwwPanelMounted)) {
         e.preventDefault()
         if (mediaPanelMounted) closeMediaPanel()
         if (messengerPanelMounted) closeMessengerPanel()
@@ -938,6 +1035,7 @@ export default function App() {
     inputLocked,
     openDockPageId,
     beginDockTransition,
+    isNavigationErrorScreenActive,
     dockPos,
     musicNavPos,
     handleBackNavigation,
@@ -1081,10 +1179,10 @@ export default function App() {
     selection.initSelectables(root)
     revealFocusBox()
 
-    if (!openDockPageId && previousDockPageId) {
+    if (!openDockPageId && (previousDockPageId || currentPageReloadKey > 0)) {
       selection.goToSpecific(0, 10, 0)
     }
-  }, [curPageVisible, openDockPageId, selection, revealFocusBox])
+  }, [curPageVisible, openDockPageId, currentPageReloadKey, selection, revealFocusBox])
 
   useEffect(() => {
     if (!curPageVisible || openDockPageId || !curPageRef.current) return
@@ -1093,7 +1191,7 @@ export default function App() {
       selection.updateContainerRef(0, 10, 0, dockEl)
       selection.updateFocusBox()
     }
-  }, [dockPos, curPageVisible, openDockPageId, selection])
+  }, [dockPos, curPageVisible, openDockPageId, currentPageReloadKey, selection])
 
   useEffect(() => {
     if (!curPageVisible || openDockPageId !== 'music' || !dockPageRef.current) return
@@ -1102,7 +1200,7 @@ export default function App() {
       selection.updateContainerRef(0, MUSIC_NAV_ROW, 0, navEl)
       selection.updateFocusBox()
     }
-  }, [musicNavPos, curPageVisible, openDockPageId, selection])
+  }, [musicNavPos, curPageVisible, openDockPageId, currentPageReloadKey, selection])
 
   useEffect(() => {
     if (dockTransitionPhase !== 'contacting' || !dockTransitionRef.current) return
@@ -1243,9 +1341,7 @@ export default function App() {
     if (!action) return
 
     if (action.action === 'exit') {
-      dockHistoryRef.current = []
-      beginDockTransition(null, { showContacting: false })
-      setTimeout(() => openMessengerPanel({ silent: true }), 560)
+      exitMessengerSettings()
       return
     }
 
@@ -1264,7 +1360,7 @@ export default function App() {
     if (action.action === 'messenger-settings') {
       beginDockTransition(action.targetPage ?? 'messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
     }
-  }, [audio, beginDockTransition, openMessengerPanel])
+  }, [audio, beginDockTransition, exitMessengerSettings])
 
   const showSignInShell = signInRevealStage >= 1
   const showSignInExtras = signInRevealStage >= 2
@@ -1392,12 +1488,13 @@ export default function App() {
               ref={curPageRef}
               className={`absolute top-0 left-0 right-0 flex ${curPageVisible ? '' : 'hidden'}`}
             >
-              {curPageVisible && (
-                <>
-                  <HomePage
-                    headlines={headlines}
-                    dockPos={dockPos}
-                    dockViewStart={dockViewStart}
+                  {curPageVisible && (
+                    <>
+                      <HomePage
+                        key={`home-${currentPageReloadKey}`}
+                        headlines={headlines}
+                        dockPos={dockPos}
+                        dockViewStart={dockViewStart}
                     dockPixelOffset={dockPixelOffset}
                     dockSlidingFromPos={dockSlidingFromPos}
                     onSlideEnd={handleSlideEnd}
@@ -1407,6 +1504,7 @@ export default function App() {
 
                   {openDockPageId && (
                     <DockPage
+                      key={`${openDockPageId}-${currentPageReloadKey}`}
                       pageId={openDockPageId}
                       pageRef={dockPageRef}
                       onClose={handleCloseDockPage}
@@ -1447,6 +1545,7 @@ export default function App() {
                         key={typeWwwPanelKey}
                         onGo={handleTypeWwwGo}
                         onCancel={() => closeTypeWwwPanel()}
+                        currentAddress={currentWebAddress}
                       />
                     </div>
                   )}
