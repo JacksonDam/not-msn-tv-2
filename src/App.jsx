@@ -1131,8 +1131,27 @@ export default function App() {
         }
       }
     }
+    const mouseOverHandler = (e) => {
+      if (inputLocked) return
+      const target = e.target instanceof Element ? e.target.closest('.selectable') : null
+      if (!target) return
+      const layer = parseInt(target.getAttribute('data-select-layer') ?? '', 10)
+      const height = parseInt(target.getAttribute('data-select-height') ?? '', 10)
+      if (Number.isNaN(layer) || Number.isNaN(height)) return
+      const row = document.querySelectorAll(
+        `.selectable[data-select-layer="${layer}"][data-select-height="${height}"]`,
+      )
+      const pos = Array.from(row).indexOf(target)
+      if (pos < 0) return
+      selection.updateContainerRef(layer, height, pos, target)
+      selection.goToSpecific(layer, height, pos)
+    }
     document.addEventListener('keydown', handler)
-    return () => document.removeEventListener('keydown', handler)
+    document.addEventListener('mouseover', mouseOverHandler)
+    return () => {
+      document.removeEventListener('keydown', handler)
+      document.removeEventListener('mouseover', mouseOverHandler)
+    }
   }, [
     selection,
     audio,
