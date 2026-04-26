@@ -2,7 +2,7 @@ import { useRef } from 'react'
 
 const BASE = import.meta.env.BASE_URL
 
-export default function TypeWwwPanel({ onGo, onCancel, currentAddress }) {
+export default function TypeWwwPanel({ onGo, onCancel, currentAddress, initialUrl }) {
   const inputRef = useRef(null)
 
   const submit = () => {
@@ -32,7 +32,7 @@ export default function TypeWwwPanel({ onGo, onCancel, currentAddress }) {
             ref={inputRef}
             className="type-www-input search-input-stub selectable"
             type="text"
-            defaultValue="http://www."
+            defaultValue={initialUrl || 'http://www.'}
             autoComplete="off"
             spellCheck={false}
             data-select-x="0"

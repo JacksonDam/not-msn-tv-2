@@ -173,6 +173,7 @@ export default function HomePage({
           data-select-x="0"
           data-select-height="9"
           data-select-layer="0"
+          data-home-search="true"
           aria-label="Search and type www"
           autoComplete="off"
           spellCheck={false}

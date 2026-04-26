@@ -144,6 +144,7 @@ export default function App() {
   const mainPageRef = useRef(null)
   const curPageRef = useRef(null)
   const dockPageRef = useRef(null)
+  const dockSubPageBackRef = useRef(null)
   const musicCrossfadePageRef = useRef(null)
   const dockTransitionRef = useRef(null)
   const previousDockPageRef = useRef(null)
@@ -174,6 +175,7 @@ export default function App() {
   const [typeWwwPanelMounted, setTypeWwwPanelMounted] = useState(false)
   const [typeWwwPanelSlideOpen, setTypeWwwPanelSlideOpen] = useState(false)
   const [typeWwwPanelKey, setTypeWwwPanelKey] = useState(0)
+  const [typeWwwInitialUrl, setTypeWwwInitialUrl] = useState(null)
   const [navigationErrorUrl, setNavigationErrorUrl] = useState('http://www.')
   const [signInPressed, setSignInPressed] = useState(false)
 
@@ -693,12 +695,13 @@ export default function App() {
     beginDockTransition('settings-forgot-password', { pushHistory: true, showContacting: false, deferOnly: true })
   }, [beginDockTransition, dockTransitionPhase, inputLocked, openDockPageId, selection])
 
-  const showTypeWwwPanel = useCallback(() => {
+  const showTypeWwwPanel = useCallback((initialUrl = null) => {
     if (!curPageVisible || dockTransitionPhase !== 'idle') return
     if (isNavigationErrorScreenActive()) return
 
     clearTimeout(typeWwwPanelCloseTimeoutRef.current)
     typeWwwPanelCloseTimeoutRef.current = null
+    setTypeWwwInitialUrl(initialUrl)
     setTypeWwwPanelKey((current) => current + 1)
     setTypeWwwPanelMounted(true)
     setTypeWwwPanelSlideOpen(false)
@@ -709,18 +712,18 @@ export default function App() {
     })
   }, [audio, curPageVisible, dockTransitionPhase, isNavigationErrorScreenActive])
 
-  const openTypeWwwPanel = useCallback(() => {
+  const openTypeWwwPanel = useCallback((initialUrl = null) => {
     if (mediaPanelMounted) {
-      closeMediaPanel({ afterClose: showTypeWwwPanel })
+      closeMediaPanel({ afterClose: () => showTypeWwwPanel(initialUrl) })
       return
     }
 
     if (messengerPanelMounted) {
-      closeMessengerPanel({ afterClose: showTypeWwwPanel })
+      closeMessengerPanel({ afterClose: () => showTypeWwwPanel(initialUrl) })
       return
     }
 
-    showTypeWwwPanel()
+    showTypeWwwPanel(initialUrl)
   }, [closeMediaPanel, closeMessengerPanel, mediaPanelMounted, messengerPanelMounted, showTypeWwwPanel])
 
   const toggleTypeWwwPanel = useCallback(() => {
@@ -888,6 +891,11 @@ export default function App() {
   const handleBackNavigation = useCallback(() => {
     if (!openDockPageId || inputLocked || dockTransitionPhase !== 'idle') return false
 
+    if (dockSubPageBackRef.current?.()) {
+      audio.play('back')
+      return true
+    }
+
     if (isMessengerSettingsPageId(openDockPageId)) {
       exitMessengerSettings({ immediateSound: 'back' })
       return true
@@ -904,7 +912,7 @@ export default function App() {
       deferOnly: intraSettings,
     })
     return true
-  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, exitMessengerSettings])
+  }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, exitMessengerSettings, audio])
   handleBackNavigationRef.current = handleBackNavigation
 
   useEffect(() => {
@@ -1099,6 +1107,13 @@ export default function App() {
           activeEl.blur()
         }
         if (isSearchInput) {
+          if (sel.dataset?.homeSearch === 'true') {
+            audio.play('select')
+            selection.flashGreen()
+            const value = sel.value
+            setTimeout(() => openTypeWwwPanel(value || null), 100)
+            return
+          }
           audio.play('select')
           selection.flashGreen()
           setTimeout(() => sel.focus(), 100)
@@ -1222,6 +1237,7 @@ export default function App() {
     toggleMediaPanel,
     toggleMessengerPanel,
     toggleTypeWwwPanel,
+    openTypeWwwPanel,
     mediaPanelMounted,
     messengerPanelMounted,
     typeWwwPanelMounted,
@@ -1714,6 +1730,7 @@ export default function App() {
                   key={`signin-${openDockPageId}-${currentPageReloadKey}`}
                   pageId={openDockPageId}
                   pageRef={dockPageRef}
+                  subPageBackRef={dockSubPageBackRef}
                   onClose={handleCloseDockPage}
                   selection={selection}
                   onNavigate={handleOpenDockPage}
@@ -1749,6 +1766,7 @@ export default function App() {
                       key={`${openDockPageId}-${currentPageReloadKey}`}
                       pageId={openDockPageId}
                       pageRef={dockPageRef}
+                      subPageBackRef={dockSubPageBackRef}
                       onClose={handleCloseDockPage}
                       selection={selection}
                       onNavigate={handleOpenDockPage}
@@ -1788,6 +1806,7 @@ export default function App() {
                         onGo={handleTypeWwwGo}
                         onCancel={() => closeTypeWwwPanel()}
                         currentAddress={currentWebAddress}
+                        initialUrl={typeWwwInitialUrl}
                       />
                     </div>
                   )}

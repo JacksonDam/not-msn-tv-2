@@ -6021,6 +6021,516 @@
         background: #eff2f5;
     }
 
+    .maps-center-shell {
+        background: #e8e9ea;
+        font-family: "Segoe TV";
+        overflow: hidden;
+    }
+
+    .maps-center-header {
+        position: relative;
+        height: 13.2vh;
+        min-height: 13.2vh;
+        background: linear-gradient(90deg,
+                #0c5a9b 0%,
+                #2f70a8 16%,
+                #75a1ca 34%,
+                #a7beda 50%,
+                #75a1ca 66%,
+                #2f70a8 84%,
+                #0c5a9b 100%);
+        border-bottom: 0.28vh solid rgba(255, 255, 255, 0.65);
+        box-sizing: border-box;
+    }
+
+    .maps-center-title {
+        position: absolute;
+        left: 2.35vh;
+        bottom: 2.05vh;
+        color: #ffffff;
+        font-family: "Segoe TV Bold";
+        font-size: 4.95vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .maps-center-subtitle {
+        position: absolute;
+        left: 44vh;
+        bottom: 2.15vh;
+        color: #b6e5fd;
+        font-family: "Segoe TV Bold";
+        font-size: 3.7vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .maps-center-help {
+        position: absolute;
+        right: 2vh;
+        bottom: 1.55vh;
+        display: inline-flex;
+        align-items: center;
+        gap: 1.2vh;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-size: 3.45vh;
+        line-height: 1;
+    }
+
+    .maps-center-help-icon {
+        width: 4.45vh;
+        height: 4.45vh;
+        object-fit: contain;
+    }
+
+    .maps-center-map-stage {
+        position: relative;
+        height: 65.5vh;
+        background: #e8e9ea;
+        overflow: hidden;
+    }
+
+    .maps-center-map-wrapper {
+        position: absolute;
+        inset: 0;
+    }
+
+    .maps-center-map {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-bottom: 0.24vh solid #9c9c9c;
+        background-color: #d8dfd2;
+    }
+
+    .maps-center-map-road {
+        background:
+            linear-gradient(90deg, rgba(255,255,255,0.24) 1px, transparent 1px) 0 0 / 11vh 11vh,
+            linear-gradient(0deg, rgba(255,255,255,0.24) 1px, transparent 1px) 0 0 / 11vh 11vh,
+            linear-gradient(135deg, #e5e0b8 0%, #c7d7b4 44%, #d9ddc9 100%);
+    }
+
+    .maps-center-map-photo {
+        background:
+            radial-gradient(circle at 22% 24%, rgba(52, 92, 61, 0.72), transparent 19%),
+            radial-gradient(circle at 74% 68%, rgba(82, 95, 54, 0.65), transparent 24%),
+            linear-gradient(135deg, #324e3c 0%, #827d58 47%, #40584b 100%);
+    }
+
+    .maps-center-map-birds {
+        background:
+            linear-gradient(115deg, rgba(35, 42, 54, 0.22), transparent 34%),
+            linear-gradient(135deg, #8ea090 0%, #c0b085 42%, #697d74 100%);
+    }
+
+    .maps-center-map-shift {
+        position: absolute;
+        inset: -9vh;
+        transform-origin: center;
+        transition: transform 0.16s linear;
+    }
+
+    .maps-center-road {
+        position: absolute;
+        background: #faf6dc;
+        border: 0.42vh solid rgba(185, 157, 86, 0.72);
+        box-shadow: 0 0 0 0.28vh rgba(255, 255, 255, 0.45) inset;
+    }
+
+    .maps-center-road-main {
+        left: -9vh;
+        top: 35vh;
+        width: 145vh;
+        height: 8.5vh;
+        transform: rotate(-15deg);
+    }
+
+    .maps-center-road-second {
+        left: 35vh;
+        top: -8vh;
+        width: 7vh;
+        height: 98vh;
+        transform: rotate(18deg);
+    }
+
+    .maps-center-road-third {
+        left: 5vh;
+        top: 12vh;
+        width: 118vh;
+        height: 5.5vh;
+        transform: rotate(28deg);
+        opacity: 0.92;
+    }
+
+    .maps-center-water {
+        position: absolute;
+        right: 5vh;
+        top: 6vh;
+        width: 34vh;
+        height: 78vh;
+        background: rgba(74, 137, 176, 0.58);
+        border-radius: 44% 56% 48% 52%;
+        transform: rotate(15deg);
+    }
+
+    .maps-center-gridline {
+        position: absolute;
+        background: rgba(111, 127, 113, 0.18);
+    }
+
+    .maps-center-gridline-h {
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 0.22vh;
+    }
+
+    .maps-center-gridline-v {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 0.22vh;
+    }
+
+    .maps-center-traffic {
+        position: absolute;
+        z-index: 2;
+        height: 1.05vh;
+        border-radius: 999px;
+    }
+
+    .maps-center-traffic-one {
+        left: 23vh;
+        top: 40.8vh;
+        width: 39vh;
+        background: #d41818;
+        transform: rotate(-15deg);
+    }
+
+    .maps-center-traffic-two {
+        left: 62vh;
+        top: 36.6vh;
+        width: 27vh;
+        background: #168a35;
+        transform: rotate(-15deg);
+    }
+
+    .maps-center-pin {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 4.8vh;
+        height: 4.8vh;
+        transform: translate(-50%, -86%);
+        background: #d22d20;
+        border: 0.34vh solid #6f120d;
+        border-radius: 50% 50% 50% 0;
+        rotate: -45deg;
+        box-shadow: 0.35vh 0.35vh 0.7vh rgba(0, 0, 0, 0.28);
+    }
+
+    .maps-center-pin span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1.5vh;
+        height: 1.5vh;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #ffffff;
+    }
+
+    .maps-center-location-card {
+        position: absolute;
+        left: 58.4%;
+        top: 37%;
+        min-width: 30vh;
+        padding: 1vh 1.3vh 1.2vh;
+        background: rgba(255, 255, 235, 0.94);
+        border: 0.24vh solid #736f4c;
+        color: #1b1b1b;
+        font-size: 2.75vh;
+        line-height: 1.03;
+        box-shadow: 0.45vh 0.45vh 0 rgba(0, 0, 0, 0.18);
+    }
+
+    .maps-center-location-card b,
+    .maps-center-location-card span {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .maps-center-view-badge {
+        position: absolute;
+        left: 1.7vh;
+        top: 1.5vh;
+        padding: 0.6vh 1.2vh 0.75vh;
+        background: rgba(255, 255, 255, 0.78);
+        border: 0.2vh solid rgba(65, 65, 65, 0.48);
+        color: #172b43;
+        font-size: 2.75vh;
+        line-height: 1;
+    }
+
+    .maps-center-pan {
+        position: absolute;
+        width: 4.5vh;
+        height: 4.5vh;
+        border: 0;
+        background: transparent;
+        padding: 0;
+    }
+
+    .maps-center-pan::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('/not-msn-tv-2/images/scrollindicatordown.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .maps-center-pan-up {
+        top: 0.65vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .maps-center-pan-up::before {
+        transform: rotate(180deg);
+    }
+
+    .maps-center-pan-down {
+        bottom: 0.65vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .maps-center-pan-left {
+        left: 0.65vh;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .maps-center-pan-left::before {
+        transform: rotate(90deg);
+    }
+
+    .maps-center-pan-right {
+        right: 0.65vh;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .maps-center-pan-right::before {
+        transform: rotate(-90deg);
+    }
+
+    .maps-center-control-bar {
+        position: relative;
+        height: 12.3vh;
+        min-height: 12.3vh;
+        background: linear-gradient(180deg, #7a9fc4 0%, #4d779f 18%, #24466b 100%);
+        border-top: 0.25vh solid #d2d9df;
+        box-sizing: border-box;
+    }
+
+    .maps-center-zoom {
+        position: absolute;
+        left: 2.1vh;
+        top: 1.2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6vh;
+    }
+
+    .maps-center-zoom-label {
+        position: absolute;
+        left: 15.8vh;
+        top: 7.45vh;
+        color: #ffffff;
+        font-size: 2.55vh;
+        line-height: 1;
+        opacity: 0.92;
+        white-space: nowrap;
+        width: 16vh;
+    }
+
+    .maps-center-actions {
+        position: absolute;
+        right: 1.2vh;
+        bottom: 1.65vh;
+        display: flex;
+        gap: 0.35vh;
+        align-items: center;
+    }
+
+    .maps-center-button {
+        min-width: 15.5vh;
+        height: 5.6vh;
+        padding: 0 1.9vh 0.35vh;
+        border: 0.28vh solid #1b1b1b;
+        border-radius: 0.25vh;
+        background-image: linear-gradient(180deg, #f8f8f8 0%, #91b1c9 35%, #d7e7f0 100%);
+        color: #254267;
+        font-family: "Segoe TV";
+        font-size: 3.15vh;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        flex: 0 0 auto;
+    }
+
+    .maps-center-button.maps-center-zoom-button {
+        width: 9.6vh;
+        min-width: 9.6vh;
+        max-width: 9.6vh;
+        height: 4.65vh;
+        min-height: 4.65vh;
+        padding: 0 0 0.18vh;
+        font-size: 3.65vh;
+        font-family: "Segoe TV Bold";
+    }
+
+    .maps-center-action-button {
+        width: 21.9vh;
+        min-width: 21.9vh;
+        max-width: 21.9vh;
+        padding-left: 0.6vh;
+        padding-right: 0.6vh;
+    }
+
+    .maps-center-action-button-wide {
+        width: 26.5vh;
+        min-width: 26.5vh;
+        max-width: 26.5vh;
+        padding-left: 2.4vh;
+        padding-right: 2.4vh;
+    }
+
+    .maps-center-form {
+        position: relative;
+        flex: 1 1 auto;
+        height: calc(100% - 13.2vh);
+        padding: 3.45vh 3.65vh;
+        box-sizing: border-box;
+        background: #e8e9ea;
+        color: #1d1d1d;
+        font-size: 4.15vh;
+        line-height: 1.08;
+    }
+
+    .maps-center-copy {
+        max-width: 124vh;
+        margin: 0 0 4.6vh;
+    }
+
+    .maps-center-field-grid {
+        display: grid;
+        gap: 1.35vh;
+    }
+
+    .maps-center-field-row {
+        display: grid;
+        grid-template-columns: 15vh minmax(0, 1fr);
+        align-items: center;
+        gap: 1.6vh;
+        width: 88vh;
+    }
+
+    .maps-center-field-label {
+        font-size: 4vh;
+        text-align: right;
+    }
+
+    .maps-center-input {
+        height: 5.6vh;
+        box-sizing: border-box;
+        border-top: #4b565e 0.36vh solid;
+        border-right: #d5e4ee 0.36vh solid;
+        border-bottom: #d5e4ee 0.36vh solid;
+        border-left: #4b565e 0.36vh solid;
+        background: #73808c !important;
+        color: #ffffff !important;
+        font-family: "Segoe TV";
+        font-size: 3.6vh !important;
+        padding: 0 1vh 0.35vh !important;
+        outline: none;
+    }
+
+    .maps-center-input-state,
+    .maps-center-input-zip {
+        width: 28vh;
+    }
+
+    .maps-center-button-row {
+        display: flex;
+        gap: 1vh;
+        margin-top: 4.2vh;
+        padding-left: 16.6vh;
+    }
+
+    .maps-center-button-row-directions {
+        padding-left: 3.8vh;
+    }
+
+    .maps-center-directions-label,
+    .maps-center-directions-question,
+    .maps-center-current-location {
+        margin-bottom: 3.4vh;
+    }
+
+    .maps-center-current-location {
+        padding-left: 3.8vh;
+        min-height: 4.5vh;
+        color: #000000;
+    }
+
+    .maps-center-radio-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7vh;
+        padding-left: 3.8vh;
+        margin-top: 2.8vh;
+    }
+
+    .maps-center-radio-row {
+        appearance: none;
+        display: flex;
+        align-items: center;
+        gap: 1.3vh;
+        width: fit-content;
+        min-height: 5.4vh;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: 0;
+        color: #1d1d1d;
+        font-family: inherit;
+        font-size: 4vh;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .maps-center-radio-icon {
+        width: 4.6vh;
+        height: 4.6vh;
+        flex: 0 0 auto;
+        object-fit: contain;
+    }
+
     .dock-page-search-shell .dock-page-header {
         min-height: var(--dock-header-height);
         padding: 0 2.3vh 0 2.1vh;

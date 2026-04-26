@@ -436,6 +436,12 @@ export const DOCK_PAGES = {
     title: 'TV Listings',
     subtitle: 'Home',
   },
+  maps: {
+    layout: 'mapsCenter',
+    theme: 'maps',
+    title: 'Maps & Directions',
+    subtitle: 'Maps & Directions',
+  },
   weather: createWeatherPage('My City', 'weatherCenter', {
     headerSubtitle: 'My city',
   }),
