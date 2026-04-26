@@ -72,6 +72,11 @@
 }
 
 @layer components {
+    html.tv-remote-mode,
+    html.tv-remote-mode * {
+        cursor: none !important;
+    }
+
     .tv-frame {
         aspect-ratio: 4 / 3;
         height: 100vh;

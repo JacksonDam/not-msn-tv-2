@@ -903,6 +903,7 @@ export default function App() {
     })
     return true
   }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, exitMessengerSettings])
+  handleBackNavigationRef.current = handleBackNavigation
 
   useEffect(() => {
     if (mainPageRef.current) {
@@ -910,7 +911,81 @@ export default function App() {
     }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
+  useEffect(() => {
+    const ua = typeof navigator === 'undefined' ? '' : navigator.userAgent
+    if (!/Tizen|SamsungBrowser|SMART-TV/i.test(ua)) return undefined
+
+    document.documentElement.classList.add('tv-remote-mode')
+
+    const dispatchKey = (key, keyCode) => {
+      document.dispatchEvent(new KeyboardEvent('keydown', {
+        key,
+        code: key,
+        keyCode,
+        which: keyCode,
+        bubbles: true,
+        cancelable: true,
+      }))
+    }
+
+    const lastMove = { x: null, y: null, time: 0 }
+    const moveHandler = (e) => {
+      const now = Date.now()
+      if (lastMove.x === null) {
+        lastMove.x = e.clientX
+        lastMove.y = e.clientY
+        lastMove.time = now
+        return
+      }
+      if (now - lastMove.time < 90) return
+
+      const dx = e.clientX - lastMove.x
+      const dy = e.clientY - lastMove.y
+      const absDx = Math.abs(dx)
+      const absDy = Math.abs(dy)
+      if (absDx < 12 && absDy < 12) return
+
+      lastMove.x = e.clientX
+      lastMove.y = e.clientY
+      lastMove.time = now
+
+      if (absDx > absDy) {
+        dispatchKey(dx > 0 ? 'ArrowRight' : 'ArrowLeft', dx > 0 ? 39 : 37)
+      } else {
+        dispatchKey(dy > 0 ? 'ArrowDown' : 'ArrowUp', dy > 0 ? 40 : 38)
+      }
+    }
+
+    const clickHandler = (e) => {
+      e.preventDefault()
+      e.stopImmediatePropagation()
+      dispatchKey('Enter', 13)
+    }
+
+    document.addEventListener('mousemove', moveHandler)
+    document.addEventListener('click', clickHandler, true)
+
+    if (!window.history.state?._tvShellGuard) {
+      window.history.pushState({ _tvShellGuard: true }, '')
+    }
+    const popHandler = () => {
+      handleBackNavigationRef.current?.()
+      if (!window.history.state?._tvShellGuard) {
+        window.history.pushState({ _tvShellGuard: true }, '')
+      }
+    }
+    window.addEventListener('popstate', popHandler)
+
+    return () => {
+      document.documentElement.classList.remove('tv-remote-mode')
+      document.removeEventListener('mousemove', moveHandler)
+      document.removeEventListener('click', clickHandler, true)
+      window.removeEventListener('popstate', popHandler)
+    }
+  }, [])
+
   const handleStartRef = useRef(null)
+  const handleBackNavigationRef = useRef(null)
   useEffect(() => {
     const handler = (e) => {
       if (!started) {
@@ -1131,27 +1206,8 @@ export default function App() {
         }
       }
     }
-    const mouseOverHandler = (e) => {
-      if (inputLocked) return
-      const target = e.target instanceof Element ? e.target.closest('.selectable') : null
-      if (!target) return
-      const layer = parseInt(target.getAttribute('data-select-layer') ?? '', 10)
-      const height = parseInt(target.getAttribute('data-select-height') ?? '', 10)
-      if (Number.isNaN(layer) || Number.isNaN(height)) return
-      const row = document.querySelectorAll(
-        `.selectable[data-select-layer="${layer}"][data-select-height="${height}"]`,
-      )
-      const pos = Array.from(row).indexOf(target)
-      if (pos < 0) return
-      selection.updateContainerRef(layer, height, pos, target)
-      selection.goToSpecific(layer, height, pos)
-    }
     document.addEventListener('keydown', handler)
-    document.addEventListener('mouseover', mouseOverHandler)
-    return () => {
-      document.removeEventListener('keydown', handler)
-      document.removeEventListener('mouseover', mouseOverHandler)
-    }
+    return () => document.removeEventListener('keydown', handler)
   }, [
     selection,
     audio,
