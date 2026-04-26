@@ -442,6 +442,12 @@ export const DOCK_PAGES = {
     title: 'Maps & Directions',
     subtitle: 'Maps & Directions',
   },
+  mail: {
+    layout: 'mailCenter',
+    theme: 'mail',
+    title: 'Mail',
+    subtitle: 'Inbox',
+  },
   weather: createWeatherPage('My City', 'weatherCenter', {
     headerSubtitle: 'My city',
   }),

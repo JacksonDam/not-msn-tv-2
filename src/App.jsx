@@ -353,6 +353,8 @@ export default function App() {
     audio.register('panelUp', `${BASE}sounds/Panel_Up.mp3`)
     audio.register('panelDown', `${BASE}sounds/Panel_Down.mp3`)
     audio.register('taskComplete', `${BASE}sounds/task_complete.mp3`)
+    audio.register('emailDraft', `${BASE}audio/Email_Draft.mp3`)
+    audio.register('emailSent', `${BASE}audio/Email_Sent.mp3`)
   }, [audio])
 
   const clearMediaStart = useCallback(() => {
@@ -922,6 +924,37 @@ export default function App() {
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
+    const handler = () => {
+      const sel = selection.getSelected()
+      const isFocusable = sel instanceof HTMLTextAreaElement
+        || (sel instanceof HTMLInputElement
+          && (!sel.type || ['text', 'email', 'url', 'tel', 'search', 'password'].includes(sel.type))
+          && !sel.classList.contains('search-input-stub'))
+      if (isFocusable) {
+        if (document.activeElement !== sel) {
+          window.requestAnimationFrame(() => {
+            const stillSelected = selection.getSelected()
+            if (stillSelected === sel && document.activeElement !== sel) {
+              sel.focus({ preventScroll: true })
+            }
+          })
+        }
+      } else {
+        const active = document.activeElement
+        if (
+          active instanceof HTMLTextAreaElement
+          || (active instanceof HTMLInputElement
+            && !active.classList.contains('search-input-stub'))
+        ) {
+          active.blur()
+        }
+      }
+    }
+    window.addEventListener('msntv-selection-change', handler)
+    return () => window.removeEventListener('msntv-selection-change', handler)
+  }, [selection])
+
+  useEffect(() => {
     const ua = typeof navigator === 'undefined' ? '' : navigator.userAgent
     if (!/Tizen|SamsungBrowser|SMART-TV/i.test(ua)) return undefined
 
@@ -1100,11 +1133,26 @@ export default function App() {
       }
       if (key === 'Enter') {
         if (!sel) return
+        if (
+          sel instanceof HTMLTextAreaElement
+          && document.activeElement === sel
+        ) {
+          return
+        }
         e.preventDefault()
         if (sel instanceof HTMLButtonElement && sel.disabled) return
         const activeEl = document.activeElement
         if (activeEl instanceof HTMLElement && activeEl !== sel && activeEl !== document.body) {
           activeEl.blur()
+        }
+        const isPlainTextInput = sel instanceof HTMLInputElement
+          && (!sel.type || ['text', 'email', 'url', 'tel', 'search'].includes(sel.type))
+          && !sel.classList.contains('search-input-stub')
+        if (isPlainTextInput || sel instanceof HTMLTextAreaElement) {
+          audio.play('select')
+          selection.flashGreen()
+          setTimeout(() => sel.focus(), 100)
+          return
         }
         if (isSearchInput) {
           if (sel.dataset?.homeSearch === 'true') {
@@ -1142,6 +1190,26 @@ export default function App() {
       }
       const dirMap = { ArrowLeft: 'left', ArrowRight: 'right', ArrowUp: 'up', ArrowDown: 'down' }
       if (dirMap[key]) {
+        const activeEl = document.activeElement
+        if (activeEl instanceof HTMLTextAreaElement) {
+          const value = activeEl.value || ''
+          const start = activeEl.selectionStart ?? 0
+          const end = activeEl.selectionEnd ?? 0
+          let atBoundary = false
+          if (key === 'ArrowLeft' && start === 0 && end === 0) {
+            atBoundary = true
+          } else if (key === 'ArrowRight' && start === value.length && end === value.length) {
+            atBoundary = true
+          } else if (key === 'ArrowUp') {
+            if (!value.substring(0, start).includes('\n')) atBoundary = true
+          } else if (key === 'ArrowDown') {
+            if (!value.substring(end).includes('\n')) atBoundary = true
+          }
+          if (!atBoundary) {
+            return
+          }
+          activeEl.blur()
+        }
         e.preventDefault()
         const sel = selection.getSelected()
         const homeDockArea = !openDockPageId ? sel?.closest('#dock-area') : null
@@ -1736,6 +1804,7 @@ export default function App() {
                   onNavigate={handleOpenDockPage}
                   onSettingsAction={handleSettingsAction}
                   navigationErrorUrl={navigationErrorUrl}
+                  audio={audio}
                 />
               </div>
             )}
@@ -1770,6 +1839,7 @@ export default function App() {
                       onClose={handleCloseDockPage}
                       selection={selection}
                       onNavigate={handleOpenDockPage}
+                      audio={audio}
                       musicNavPos={musicNavPos}
                       musicNavViewStart={musicNavViewStart}
                       musicNavPixelOffset={musicNavPixelOffset}
