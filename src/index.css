@@ -117,6 +117,7 @@
         width: fit-content;
         margin-top: 1.5vh;
         margin-right: 0.5vh;
+        opacity: 0.85;
     }
 
     .ui-title-white-4 {
@@ -389,6 +390,7 @@
         padding-bottom: 0.4rem;
         opacity: 0.95;
         padding-left: 1.481vh;
+        padding-right: 3%;
     }
 
     .settings-container {
@@ -419,6 +421,11 @@
 
     .network-flex {
         gap: 6.6%;
+    }
+
+    .network-trio {
+        gap: 9%;
+        transform: translateX(-4%);
     }
 
     input[type="password"]:focus {
@@ -735,11 +742,16 @@
         margin-top: 1.2vh;
     }
 
-    #cur-page {
+    #cur-page,
+    #signin-dock-page {
         background: white;
         height: 91vh;
         z-index: 5;
         align-items: start;
+    }
+
+    #signin-dock-page {
+        height: 100vh;
     }
 
     .dock-transition-shell {
@@ -5280,10 +5292,83 @@
     .settings-page-content {
         padding: 4vh 3.7vh;
         box-sizing: border-box;
+        min-height: 0;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         background:
             linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 42%),
             linear-gradient(90deg, #98bacd 0%, #a4c6d7 58%, #abcbd9 100%);
     }
+
+    .settings-page-content::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .settings-body-with-side {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 4.5vh;
+        align-items: start;
+    }
+
+    .settings-body-side-image {
+        flex: 0 0 auto;
+        max-width: 32vh;
+        height: auto;
+    }
+
+    .settings-body-side-image-pluge {
+        background: #000;
+        padding: 1.4vh;
+        filter: brightness(2.6) contrast(1.4);
+    }
+
+    .settings-page-main {
+        position: relative;
+    }
+
+    .settings-page-scroll-indicator {
+        position: absolute;
+        right: calc(35vh + 1.4vh);
+        bottom: 1vh;
+        width: 4.5vh;
+        pointer-events: none;
+        z-index: 4;
+    }
+
+    .settings-control-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 8vh);
+        grid-template-rows: repeat(3, 8vh);
+        gap: 1vh;
+        margin: 1vh 0 2vh;
+        justify-content: start;
+    }
+
+    .settings-control-grid-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .settings-control-grid-button img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .settings-control-grid-button.row1col2 { grid-column: 2; grid-row: 1; }
+    .settings-control-grid-button.row2col1 { grid-column: 1; grid-row: 2; }
+    .settings-control-grid-button.row2col2 { grid-column: 2; grid-row: 2; }
+    .settings-control-grid-button.row2col3 { grid-column: 3; grid-row: 2; }
+    .settings-control-grid-button.row3col2 { grid-column: 2; grid-row: 3; }
 
     .settings-page-actions {
         position: relative;
@@ -5381,6 +5466,13 @@
         font-family: "Segoe TV Bold";
     }
 
+    .settings-body-copy.selectable,
+    .settings-body-heading.selectable,
+    .settings-body-strong.selectable {
+        width: fit-content;
+        max-width: 100%;
+    }
+
     .settings-body-heading {
         margin: 3.4vh 0 3.1vh;
     }
@@ -5391,7 +5483,7 @@
 
     .settings-choice,
     .settings-link {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         gap: 1.3vh;
         min-height: 5.6vh;
@@ -5404,6 +5496,7 @@
         font-size: 4vh;
         line-height: 1;
         text-align: left;
+        width: fit-content;
     }
 
     .settings-control-icon {
@@ -5454,14 +5547,17 @@
 
     .settings-page-full .settings-page-main {
         position: relative;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background: #b7d7e5;
     }
 
     .settings-page-full .settings-page-content {
-        min-height: 100%;
-        padding-right: 36vh;
+        flex: 1 1 auto;
+        min-height: 0;
         background: #b7d7e5;
+        display: flex;
+        flex-direction: column;
     }
 
     .settings-page-full .settings-body {
@@ -5469,21 +5565,99 @@
     }
 
     .settings-page-full .settings-page-actions {
-        position: absolute;
-        inset: 0 0 0 auto;
-        width: 35vh;
-        padding: 0;
+        position: static;
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1vh;
+        width: auto;
+        padding: 4vh 0 1vh;
         background: transparent;
-        pointer-events: none;
+        margin-top: auto;
     }
 
     .settings-page-full .settings-action {
-        pointer-events: auto;
+        position: static;
+        width: auto;
+        min-width: 22vh;
+        padding: 0 2.6vh 0.45vh;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .settings-page-full .settings-action-bottom {
-        right: 2.3vh;
-        bottom: 2.5vh;
+        position: static;
+    }
+
+    .settings-page-full .settings-page-scroll-indicator {
+        right: 0.75vh;
+        bottom: 0.45vh;
+    }
+
+    .settings-input.search-input-stub,
+    .settings-input {
+        appearance: none;
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        height: 6.4vh;
+        box-sizing: border-box;
+        padding: 0.35vh 1.15vh 0.65vh;
+        border-top: #4b565e 0.34vh solid;
+        border-right: #d5e4ee 0.34vh solid;
+        border-bottom: #d5e4ee 0.34vh solid;
+        border-left: #4b565e 0.34vh solid;
+        background: #73808c !important;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 3.6vh !important;
+        line-height: 1;
+        outline: none;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .settings-input-text {
+        width: 36vh;
+    }
+
+    .settings-input-octet {
+        width: 11vh;
+        padding: 0.35vh 0.6vh 0.65vh;
+        text-align: left;
+    }
+
+    .settings-field-row {
+        display: flex;
+        align-items: center;
+        gap: 1.4vh;
+        margin: 1vh 0 2.2vh;
+        font-family: "Segoe TV";
+        font-size: 4vh;
+        color: #102f4c;
+    }
+
+    .settings-field-row .settings-field-label {
+        flex: 0 0 auto;
+    }
+
+    .settings-ip-address {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6vh;
+    }
+
+    .settings-ip-dot {
+        font-family: "Segoe TV Bold";
+        font-size: 4.2vh;
+        line-height: 1;
+        padding: 0 0.2vh 0.6vh;
     }
 
     .dock-page-shell-money-experts .dock-page-money-experts-title.dock-page-content-title {

@@ -156,6 +156,19 @@ export default function useSelection() {
       s.height = 0
       s.posInHeight = 0
       updateFocusBox()
+    } else {
+      const first = rootEl.querySelector('.selectable')
+      if (first) {
+        const layer = parseInt(first.getAttribute('data-select-layer')) || 0
+        const height = parseInt(first.getAttribute('data-select-height')) || 0
+        const row = s.container[layer]?.[height]
+        const pos = row ? row.indexOf(first) : 0
+        s.selected = first
+        s.layer = layer
+        s.height = height
+        s.posInHeight = pos >= 0 ? pos : 0
+        updateFocusBox()
+      }
     }
   }, [updateFocusBox])
 

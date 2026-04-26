@@ -33,7 +33,7 @@ function formatChange(value) {
   return `${sign}${Math.abs(n).toFixed(2)}`
 }
 
-export default function PromoWidget() {
+export default function PromoWidget({ onActivate }) {
   const [mode, setMode] = useState('weather')
   const [cities, setCities] = useState([])
   const [cityId, setCityId] = useState(() => readWeatherCityCookie() || WEATHER_DEFAULT_CITY_ID)
@@ -94,8 +94,20 @@ export default function PromoWidget() {
     ? formatTemp(weather.forecast?.[0]?.lowC ?? weather.current?.tempC, weather)
     : 0
 
+  const handleActivate = () => {
+    onActivate?.(mode === 'stocks' ? 'money' : 'weather')
+  }
+
   return (
-    <div className="absolute promo-widget">
+    <div
+      className="absolute promo-widget selectable"
+      data-select-id="promo-widget"
+      data-select-x="5"
+      data-select-height="0"
+      data-select-layer="0"
+      data-select-left="today-date"
+      onClick={handleActivate}
+    >
       {showWeather && (
         <div className="promo-widget-inner promo-widget-weather">
           <h3 className="promo-widget-city">{weather.name || weather.displayName}</h3>

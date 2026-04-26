@@ -18,6 +18,7 @@ export default function HomePage({
   onSignOutRequest,
   onDockActivate,
   onAddressGo,
+  onSettingsRequest,
 }) {
   const searchInputRef = useRef(null)
   const now = new Date()
@@ -53,7 +54,13 @@ export default function HomePage({
           <div className="grow text-center buffer-2 selectable" data-select-x="2" data-select-height="0" data-select-layer="0">
             <h3 className="ui-title-white-4">Account</h3>
           </div>
-          <div className="grow text-center buffer-2 selectable" data-select-x="3" data-select-height="0" data-select-layer="0">
+          <div
+            className="grow text-center buffer-2 selectable"
+            data-select-x="3"
+            data-select-height="0"
+            data-select-layer="0"
+            onClick={onSettingsRequest}
+          >
             <h3 className="ui-title-white-4">Settings</h3>
           </div>
           <div className="grow text-center buffer-2 selectable" data-select-x="4" data-select-height="0" data-select-layer="0">
@@ -68,10 +75,16 @@ export default function HomePage({
       <div className="absolute promo-img">
         <img className="object-cover" src={`${BASE}images/promotionalimage.png`} />
       </div>
-      <PromoWidget />
+      <PromoWidget onActivate={onDockActivate} />
       <div className="absolute flex flex-wrap today-pane items-center">
         <h3 className="today-pane-title">Today on MSN</h3>
-        <h3 className="today-pane-date selectable" data-select-x="0" data-select-height="1" data-select-layer="0">
+        <h3
+          className="today-pane-date selectable"
+          data-select-id="today-date"
+          data-select-x="0"
+          data-select-height="1"
+          data-select-layer="0"
+        >
           {dateStr}
         </h3>
         <h3
@@ -122,6 +135,7 @@ export default function HomePage({
           data-select-x="0"
           data-select-height="6"
           data-select-layer="0"
+          data-select-right="using-msn-tv-link"
           onClick={() => audibleDialingTipId && onDockActivate?.(audibleDialingTipId)}
         >
           Tip: Turn on audible dialing
@@ -132,6 +146,7 @@ export default function HomePage({
           data-select-x="0"
           data-select-height="7"
           data-select-layer="0"
+          data-select-right="using-msn-tv-link"
           onClick={() => printingTipId && onDockActivate?.(printingTipId)}
         >
           Get better printing results
@@ -139,6 +154,7 @@ export default function HomePage({
         <div className="break"></div>
         <div
           className="flex items-center today-end selectable"
+          data-select-id="using-msn-tv-link"
           data-select-x="0"
           data-select-height="8"
           data-select-layer="0"

@@ -20,10 +20,18 @@ const isMessengerSettingsPageId = (pageId) => (
   typeof pageId === 'string'
   && (pageId.startsWith('messenger-settings') || pageId === 'settings-control-alerts')
 )
+const isHomeSettingsPageId = (pageId) => (
+  typeof pageId === 'string'
+  && DOCK_PAGES[pageId]?.kind === 'home-settings'
+)
+const isAnySettingsPageId = (pageId) => (
+  isMessengerSettingsPageId(pageId) || isHomeSettingsPageId(pageId)
+)
 const getDockCenterId = (pageId) => {
   if (!pageId) return null
   if (isMoneyQuotePageId(pageId)) return 'money'
   if (isMessengerSettingsPageId(pageId)) return 'messenger'
+  if (isHomeSettingsPageId(pageId)) return 'settings'
   if (USING_MSN_TV_PAGE_IDS.has(pageId) || pageId.startsWith('tip-')) return 'usingmsntv'
 
   return DOCK_ITEMS
@@ -165,6 +173,7 @@ export default function App() {
   const [typeWwwPanelSlideOpen, setTypeWwwPanelSlideOpen] = useState(false)
   const [typeWwwPanelKey, setTypeWwwPanelKey] = useState(0)
   const [navigationErrorUrl, setNavigationErrorUrl] = useState('http://www.')
+  const [signInPressed, setSignInPressed] = useState(false)
 
   const selection = useSelection()
   const audio = useAudio()
@@ -668,6 +677,20 @@ export default function App() {
     closeMessengerPanel({ reopenSettings: true })
   }, [closeMessengerPanel])
 
+  const openHomeSettings = useCallback(() => {
+    if (inputLocked || dockTransitionPhase !== 'idle') return
+    if (openDockPageId === 'settings-home') return
+    selection.holdGreen()
+    beginDockTransition('settings-home', { pushHistory: true, showContacting: false, deferOnly: true })
+  }, [beginDockTransition, dockTransitionPhase, inputLocked, openDockPageId, selection])
+
+  const openForgotPassword = useCallback(() => {
+    if (inputLocked || dockTransitionPhase !== 'idle') return
+    if (openDockPageId === 'settings-forgot-password') return
+    selection.holdGreen()
+    beginDockTransition('settings-forgot-password', { pushHistory: true, showContacting: false, deferOnly: true })
+  }, [beginDockTransition, dockTransitionPhase, inputLocked, openDockPageId, selection])
+
   const showTypeWwwPanel = useCallback(() => {
     if (!curPageVisible || dockTransitionPhase !== 'idle') return
     if (isNavigationErrorScreenActive()) return
@@ -872,9 +895,11 @@ export default function App() {
       ? dockHistoryRef.current.pop()
       : null
 
+    const intraSettings = isAnySettingsPageId(openDockPageId) && isAnySettingsPageId(previousPageId)
     beginDockTransition(previousPageId ?? null, {
       immediateSound: previousPageId ? 'back' : null,
       showContacting: false,
+      deferOnly: intraSettings,
     })
     return true
   }, [openDockPageId, inputLocked, dockTransitionPhase, beginDockTransition, exitMessengerSettings])
@@ -885,8 +910,25 @@ export default function App() {
     }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
+  const handleStartRef = useRef(null)
   useEffect(() => {
     const handler = (e) => {
+      if (!started) {
+        if (e.repeat || e.metaKey || e.ctrlKey || e.altKey) return
+        if (e.key === 'Tab' || e.key === 'Shift' || e.key === 'Control' || e.key === 'Alt' || e.key === 'Meta') return
+        e.preventDefault()
+        handleStartRef.current?.()
+        return
+      }
+
+      if (e.keyCode === 10009 || e.key === 'GoBack' || e.key === 'BrowserBack') {
+        e.preventDefault()
+        if (!isTypingTextField(document.activeElement) && openDockPageId) {
+          handleBackNavigation()
+        }
+        return
+      }
+
       if (e.code === 'F2') {
         e.preventDefault()
         if (isMessengerSettingsPageId(openDockPageId)) return
@@ -932,7 +974,12 @@ export default function App() {
       if (isSearchInput && sel !== document.activeElement) {
         if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
           e.preventDefault()
-          sel.value += e.key
+          const max = sel.maxLength
+          if (max > 0 && sel.value.length >= max) {
+            sel.value = sel.value.slice(0, max - 1) + e.key
+          } else {
+            sel.value += e.key
+          }
           return
         }
         if (e.key === 'Backspace') {
@@ -986,11 +1033,13 @@ export default function App() {
         } else {
           audio.play('select')
         }
+        const isNoopAction = sel.getAttribute?.('data-action-noop') === 'true'
         const holdSettingsNavigation = Boolean(
           openDockPageId
-          && isMessengerSettingsPageId(openDockPageId)
+          && isAnySettingsPageId(openDockPageId)
           && sel.closest('.settings-page-shell')
           && !sel.classList.contains('settings-control-feedback')
+          && !isNoopAction
         )
         if (holdSettingsNavigation) {
           selection.holdGreen()
@@ -1103,6 +1152,7 @@ export default function App() {
     closeMediaPanel,
     closeMessengerPanel,
     closeTypeWwwPanel,
+    started,
   ])
 
   const fetchHeadlines = useCallback(async () => {
@@ -1120,13 +1170,18 @@ export default function App() {
   const handleStart = useCallback(() => {
     audio.play('select')
     setStartBtnFading(true)
+    setInputLocked(true)
     setTimeout(() => {
       setStarted(true)
       selection.goToSpecific(0, 1, 1)
       addTimeout(() => audio.play('startup'), 500)
-      addTimeout(() => setOverlayVisible(false), 4000)
+      addTimeout(() => {
+        setOverlayVisible(false)
+        setInputLocked(false)
+      }, 4000)
     }, 500)
   }, [audio, selection, addTimeout])
+  handleStartRef.current = handleStart
 
   const resetStatusUi = useCallback((nextPanelClass = 'closed-no-anim') => {
     setPanelText('Please wait while we sign you in to MSN TV.')
@@ -1158,6 +1213,8 @@ export default function App() {
   }, [])
 
   const handleSignIn = useCallback(() => {
+    if (signInPressed) return
+    setSignInPressed(true)
     clearTimeouts()
     setInputLocked(false)
     setSignInRevealStage(2)
@@ -1218,15 +1275,25 @@ export default function App() {
     }, 8250)
 
     addTimeout(() => setSpinnerHidden(true), 8450)
-  }, [clearTimeouts, resetStatusUi, audio, selection, addTimeout, fetchHeadlines])
+  }, [clearTimeouts, resetStatusUi, audio, selection, addTimeout, fetchHeadlines, signInPressed])
 
   useEffect(() => {
     const previousDockPageId = previousDockPageRef.current
     previousDockPageRef.current = openDockPageId
 
-    if (!curPageVisible) return
+    const isSigninDockPage = !curPageVisible && openDockPageId && DOCK_PAGES[openDockPageId]?.kind === 'home-settings'
+    const isReturningToSignInShell = !curPageVisible && !openDockPageId && previousDockPageId
 
-    const root = openDockPageId ? dockPageRef.current : curPageRef.current
+    if (!curPageVisible && !isSigninDockPage && !isReturningToSignInShell) return
+
+    let root
+    if (openDockPageId) {
+      root = dockPageRef.current
+    } else if (isReturningToSignInShell) {
+      root = mainPageRef.current
+    } else {
+      root = curPageRef.current
+    }
     if (!root) return
 
     dockSlidingRef.current = false
@@ -1234,7 +1301,7 @@ export default function App() {
     selection.initSelectables(root)
     revealFocusBox()
 
-    if (!openDockPageId && (previousDockPageId || currentPageReloadKey > 0)) {
+    if (curPageVisible && !openDockPageId && (previousDockPageId || currentPageReloadKey > 0)) {
       selection.goToSpecific(0, 10, 0)
     }
   }, [curPageVisible, openDockPageId, currentPageReloadKey, selection, revealFocusBox])
@@ -1351,6 +1418,7 @@ export default function App() {
       setSignOutShowing(false)
       setSignInRevealStage(0)
       setCurPageVisible(false)
+      setSignInPressed(false)
       resetHomePageState()
       resetStatusUi('closed-no-anim')
       selection.hideFocusBox()
@@ -1379,7 +1447,7 @@ export default function App() {
     }
     if (!pageId || (!DOCK_PAGES[pageId] && !isMoneyQuotePageId(pageId))) return
     if (pageId === openDockPageId) return
-    if (isMessengerSettingsPageId(openDockPageId) && isMessengerSettingsPageId(pageId)) {
+    if (isAnySettingsPageId(openDockPageId) && isAnySettingsPageId(pageId)) {
       beginDockTransition(pageId, { pushHistory: true, showContacting: false, deferOnly: true })
       return
     }
@@ -1400,8 +1468,17 @@ export default function App() {
   const handleSettingsAction = useCallback((action) => {
     if (!action) return
 
+    if (action.action === 'noop') return
+
     if (action.action === 'exit') {
       exitMessengerSettings()
+      return
+    }
+
+    if (action.action === 'home-exit') {
+      dockHistoryRef.current = []
+      const fromSignIn = !curPageVisible
+      beginDockTransition(null, { showContacting: false, deferOnly: fromSignIn })
       return
     }
 
@@ -1413,14 +1490,14 @@ export default function App() {
     }
 
     if (action.action === 'settings-home') {
-      beginDockTransition('messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
+      beginDockTransition(action.targetPage ?? 'messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
       return
     }
 
     if (action.action === 'messenger-settings') {
       beginDockTransition(action.targetPage ?? 'messenger-settings', { pushHistory: false, showContacting: false, deferOnly: true })
     }
-  }, [audio, beginDockTransition, exitMessengerSettings])
+  }, [audio, beginDockTransition, curPageVisible, exitMessengerSettings])
 
   const showSignInShell = signInRevealStage >= 1
   const showSignInExtras = signInRevealStage >= 2
@@ -1453,7 +1530,7 @@ export default function App() {
               <SelectionFrame flashable />
             </div>
 
-            <div className={`absolute top-0 left-0 right-0 px-4 py-2 ${showSignInShell ? '' : 'invisible'}`}>
+            <div className={`absolute top-0 left-0 right-0 px-4 py-2 ${showSignInShell && !(openDockPageId && !curPageVisible) ? '' : 'invisible'}`}>
               <div className="flex items-center">
                 <div className="shrink">
                   <img className="topbar-img" src={`${BASE}images/topbarlogo.png`} />
@@ -1463,10 +1540,17 @@ export default function App() {
                   data-select-x="0"
                   data-select-height="0"
                   data-select-layer="0"
+                  onClick={openForgotPassword}
                 >
                   <h3 className="ui-title-white">Forgot your password?</h3>
                 </div>
-                <div className="grow selectable" data-select-x="1" data-select-height="0" data-select-layer="0">
+                <div
+                  className="grow selectable"
+                  data-select-x="1"
+                  data-select-height="0"
+                  data-select-layer="0"
+                  onClick={openHomeSettings}
+                >
                   <h3 className="ui-title-white">Settings</h3>
                 </div>
                 <div className="grow selectable" data-select-x="2" data-select-height="0" data-select-layer="0">
@@ -1478,7 +1562,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className={`absolute top-0 left-0 right-0 px-4 py-2 login-container flex ${showSignInExtras ? '' : 'invisible'}`}>
+            <div className={`absolute top-0 left-0 right-0 px-4 py-2 login-container flex ${showSignInExtras && !(openDockPageId && !curPageVisible) ? '' : 'invisible'}`}>
               <div className="flex">
                 <div className="shrink user-icon-large">
                   <img src={`${BASE}images/tile22_l.png`} />
@@ -1503,6 +1587,7 @@ export default function App() {
                       data-select-height="1"
                       data-select-layer="0"
                       onClick={handleSignIn}
+                      disabled={signInPressed}
                     >
                       Sign In
                     </button>
@@ -1543,6 +1628,25 @@ export default function App() {
               <img className="absolute status-bar-logo" src={`${BASE}images/msntvlogo.png`} />
             </div>
 
+            {!curPageVisible && openDockPageId && DOCK_PAGES[openDockPageId]?.kind === 'home-settings' && (
+              <div
+                id="signin-dock-page"
+                ref={curPageRef}
+                className="absolute top-0 left-0 right-0 flex"
+              >
+                <DockPage
+                  key={`signin-${openDockPageId}-${currentPageReloadKey}`}
+                  pageId={openDockPageId}
+                  pageRef={dockPageRef}
+                  onClose={handleCloseDockPage}
+                  selection={selection}
+                  onNavigate={handleOpenDockPage}
+                  onSettingsAction={handleSettingsAction}
+                  navigationErrorUrl={navigationErrorUrl}
+                />
+              </div>
+            )}
+
             <div
               id="cur-page"
               ref={curPageRef}
@@ -1561,6 +1665,7 @@ export default function App() {
                         onSignOutRequest={handleOpenSignOutDialog}
                         onDockActivate={handleOpenDockPage}
                         onAddressGo={handleTypeWwwGo}
+                        onSettingsRequest={openHomeSettings}
                       />
 
                   {openDockPageId && (
@@ -1744,48 +1849,53 @@ export default function App() {
               </div>
             )}
 
-            <div className={`absolute bottom-0 left-0 right-0 network-container flex ${showSignInShell ? '' : 'invisible'}`}>
+<div className={`absolute bottom-0 left-0 right-0 network-container flex ${showSignInShell ? '' : 'invisible'}`}>
               <div className="flex items-center network-flex">
                 <div className="shrink">
                   <h3 className="ui-title-white-2">My home network</h3>
                 </div>
-                <div className="grow">
-                  <div className="flex items-center">
-                    <img
-                      className="network-icon selectable"
-                      data-select-x="0"
-                      data-select-height="3"
-                      data-select-layer="0"
-                      src={`${BASE}images/photo.png`}
-                      onClick={handleNetworkIcon}
-                    />
-                    <h3 className="ui-title-white-3">Photos</h3>
+                <div className="grow flex items-center network-trio">
+                  <div className="grow">
+                    <div className="flex items-center">
+                      <img
+                        className="network-icon selectable"
+                        data-select-id="network-photo"
+                        data-select-x="0"
+                        data-select-height="3"
+                        data-select-layer="0"
+                        src={`${BASE}images/photo.png`}
+                        onClick={handleNetworkIcon}
+                      />
+                      <h3 className="ui-title-white-3">Photos</h3>
+                    </div>
                   </div>
-                </div>
-                <div className="grow">
-                  <div className="flex items-center">
-                    <img
-                      className="network-icon selectable"
-                      data-select-x="1"
-                      data-select-height="3"
-                      data-select-layer="0"
-                      src={`${BASE}images/music.png`}
-                      onClick={handleNetworkIcon}
-                    />
-                    <h3 className="ui-title-white-3">Music</h3>
+                  <div className="grow">
+                    <div className="flex items-center">
+                      <img
+                        className="network-icon selectable"
+                        data-select-id="network-music"
+                        data-select-x="1"
+                        data-select-height="3"
+                        data-select-layer="0"
+                        src={`${BASE}images/music.png`}
+                        onClick={handleNetworkIcon}
+                      />
+                      <h3 className="ui-title-white-3">Music</h3>
+                    </div>
                   </div>
-                </div>
-                <div className="grow">
-                  <div className="flex items-center">
-                    <img
-                      className="network-icon selectable"
-                      data-select-x="2"
-                      data-select-height="3"
-                      data-select-layer="0"
-                      src={`${BASE}images/video.png`}
-                      onClick={handleNetworkIcon}
-                    />
-                    <h3 className="ui-title-white-3">Videos</h3>
+                  <div className="grow">
+                    <div className="flex items-center">
+                      <img
+                        className="network-icon selectable"
+                        data-select-id="network-video"
+                        data-select-x="2"
+                        data-select-height="3"
+                        data-select-layer="0"
+                        src={`${BASE}images/video.png`}
+                        onClick={handleNetworkIcon}
+                      />
+                      <h3 className="ui-title-white-3">Videos</h3>
+                    </div>
                   </div>
                 </div>
               </div>
