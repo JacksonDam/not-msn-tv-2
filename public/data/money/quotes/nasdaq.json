@@ -5,337 +5,85 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 24887.1,
-  "previousClose": 24836.598,
-  "dayHigh": 24899.365,
-  "dayLow": 24694.824,
-  "change": 50.50199999999677,
-  "changePercent": 0.20333702707591741,
+  "price": 24592.7,
+  "previousClose": 24887.1,
+  "dayHigh": 24724.697,
+  "dayLow": 24562.871,
+  "change": -294.3999999999978,
+  "changePercent": -1.1829421668253748,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1777296600,
-      "close": 24760.46875
+      "timestamp": 1777383000,
+      "close": 24624.208984375
     },
     {
-      "timestamp": 1777296900,
-      "close": 24784.984375
+      "timestamp": 1777383300,
+      "close": 24663.140625
     },
     {
-      "timestamp": 1777297200,
-      "close": 24776.65625
+      "timestamp": 1777383600,
+      "close": 24697.07421875
     },
     {
-      "timestamp": 1777297500,
-      "close": 24743.40234375
+      "timestamp": 1777383900,
+      "close": 24706.65625
     },
     {
-      "timestamp": 1777297800,
-      "close": 24774.1875
+      "timestamp": 1777384200,
+      "close": 24665.615234375
     },
     {
-      "timestamp": 1777298100,
-      "close": 24795.19921875
+      "timestamp": 1777384500,
+      "close": 24687.802734375
     },
     {
-      "timestamp": 1777298400,
-      "close": 24783.6015625
+      "timestamp": 1777384800,
+      "close": 24675.484375
     },
     {
-      "timestamp": 1777298700,
-      "close": 24772.171875
+      "timestamp": 1777385100,
+      "close": 24713.595703125
     },
     {
-      "timestamp": 1777299000,
-      "close": 24781.890625
+      "timestamp": 1777385400,
+      "close": 24700.892578125
     },
     {
-      "timestamp": 1777299300,
-      "close": 24758.337890625
+      "timestamp": 1777385700,
+      "close": 24688.7109375
     },
     {
-      "timestamp": 1777299600,
-      "close": 24770.720703125
+      "timestamp": 1777386000,
+      "close": 24671.779296875
     },
     {
-      "timestamp": 1777299900,
-      "close": 24774.0234375
+      "timestamp": 1777386300,
+      "close": 24671.134765625
     },
     {
-      "timestamp": 1777300200,
-      "close": 24761.1484375
+      "timestamp": 1777386600,
+      "close": 24655.388671875
     },
     {
-      "timestamp": 1777300500,
-      "close": 24784.287109375
+      "timestamp": 1777386900,
+      "close": 24586.07421875
     },
     {
-      "timestamp": 1777300800,
-      "close": 24789.935546875
+      "timestamp": 1777387200,
+      "close": 24568.564453125
     },
     {
-      "timestamp": 1777301100,
-      "close": 24783.189453125
-    },
-    {
-      "timestamp": 1777301400,
-      "close": 24766.513671875
-    },
-    {
-      "timestamp": 1777301700,
-      "close": 24776.958984375
-    },
-    {
-      "timestamp": 1777302000,
-      "close": 24746.0546875
-    },
-    {
-      "timestamp": 1777302300,
-      "close": 24765.41015625
-    },
-    {
-      "timestamp": 1777302600,
-      "close": 24750.529296875
-    },
-    {
-      "timestamp": 1777302900,
-      "close": 24748.052734375
-    },
-    {
-      "timestamp": 1777303200,
-      "close": 24731.154296875
-    },
-    {
-      "timestamp": 1777303500,
-      "close": 24752.0625
-    },
-    {
-      "timestamp": 1777303800,
-      "close": 24759.486328125
-    },
-    {
-      "timestamp": 1777304100,
-      "close": 24768.57421875
-    },
-    {
-      "timestamp": 1777304400,
-      "close": 24776.478515625
-    },
-    {
-      "timestamp": 1777304700,
-      "close": 24766.857421875
-    },
-    {
-      "timestamp": 1777305000,
-      "close": 24758.857421875
-    },
-    {
-      "timestamp": 1777305300,
-      "close": 24769.703125
-    },
-    {
-      "timestamp": 1777305600,
-      "close": 24777.7578125
-    },
-    {
-      "timestamp": 1777305900,
-      "close": 24786.283203125
-    },
-    {
-      "timestamp": 1777306200,
-      "close": 24794.041015625
-    },
-    {
-      "timestamp": 1777306500,
-      "close": 24802.66796875
-    },
-    {
-      "timestamp": 1777306800,
-      "close": 24793.5703125
-    },
-    {
-      "timestamp": 1777307100,
-      "close": 24798.328125
-    },
-    {
-      "timestamp": 1777307400,
-      "close": 24818.21875
-    },
-    {
-      "timestamp": 1777307700,
-      "close": 24830.4140625
-    },
-    {
-      "timestamp": 1777308000,
-      "close": 24827.705078125
-    },
-    {
-      "timestamp": 1777308300,
-      "close": 24833.775390625
-    },
-    {
-      "timestamp": 1777308600,
-      "close": 24818.685546875
-    },
-    {
-      "timestamp": 1777308900,
-      "close": 24818.912109375
-    },
-    {
-      "timestamp": 1777309200,
-      "close": 24829.26171875
-    },
-    {
-      "timestamp": 1777309500,
-      "close": 24836.46484375
-    },
-    {
-      "timestamp": 1777309800,
-      "close": 24848.376953125
-    },
-    {
-      "timestamp": 1777310100,
-      "close": 24828.73828125
-    },
-    {
-      "timestamp": 1777310400,
-      "close": 24844.015625
-    },
-    {
-      "timestamp": 1777310700,
-      "close": 24855.37890625
-    },
-    {
-      "timestamp": 1777311000,
-      "close": 24880.66015625
-    },
-    {
-      "timestamp": 1777311300,
-      "close": 24864.978515625
-    },
-    {
-      "timestamp": 1777311600,
-      "close": 24870.72265625
-    },
-    {
-      "timestamp": 1777311900,
-      "close": 24878.58984375
-    },
-    {
-      "timestamp": 1777312200,
-      "close": 24869.8359375
-    },
-    {
-      "timestamp": 1777312500,
-      "close": 24875.791015625
-    },
-    {
-      "timestamp": 1777312800,
-      "close": 24872.2890625
-    },
-    {
-      "timestamp": 1777313100,
-      "close": 24881.19921875
-    },
-    {
-      "timestamp": 1777313400,
-      "close": 24879.97265625
-    },
-    {
-      "timestamp": 1777313700,
-      "close": 24884.90234375
-    },
-    {
-      "timestamp": 1777314000,
-      "close": 24884.2890625
-    },
-    {
-      "timestamp": 1777314300,
-      "close": 24880.09375
-    },
-    {
-      "timestamp": 1777314600,
-      "close": 24880.212890625
-    },
-    {
-      "timestamp": 1777314900,
-      "close": 24874.990234375
-    },
-    {
-      "timestamp": 1777315200,
-      "close": 24866.291015625
-    },
-    {
-      "timestamp": 1777315500,
-      "close": 24860.203125
-    },
-    {
-      "timestamp": 1777315800,
-      "close": 24847.7421875
-    },
-    {
-      "timestamp": 1777316100,
-      "close": 24857.6953125
-    },
-    {
-      "timestamp": 1777316400,
-      "close": 24858.150390625
-    },
-    {
-      "timestamp": 1777316700,
-      "close": 24853.103515625
-    },
-    {
-      "timestamp": 1777317000,
-      "close": 24867.1953125
-    },
-    {
-      "timestamp": 1777317300,
-      "close": 24876.990234375
-    },
-    {
-      "timestamp": 1777317600,
-      "close": 24872.232421875
-    },
-    {
-      "timestamp": 1777317900,
-      "close": 24869.72265625
-    },
-    {
-      "timestamp": 1777318200,
-      "close": 24876.73828125
-    },
-    {
-      "timestamp": 1777318500,
-      "close": 24874.958984375
-    },
-    {
-      "timestamp": 1777318800,
-      "close": 24880.6015625
-    },
-    {
-      "timestamp": 1777319100,
-      "close": 24893.583984375
-    },
-    {
-      "timestamp": 1777319400,
-      "close": 24884.486328125
-    },
-    {
-      "timestamp": 1777319700,
-      "close": 24884.5859375
-    },
-    {
-      "timestamp": 1777320000,
-      "close": 24887.099609375
+      "timestamp": 1777387312,
+      "close": 24592.69921875
     }
   ],
   "news": {
-    "title": "Here Are Tuesday’s Top Wall Street Analyst Research Calls: American Homes 4 Rent, BP, Fortis, International Business Machines, Micron Technology, Nucor, Opendoor Technologies,Rambus, and More",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-04-28T11:57:57.000Z"
+    "title": "BC-Most Active Stocks",
+    "publisher": "Associated Press",
+    "publishedAt": "2026-04-28T14:30:19.000Z"
   },
-  "generatedAt": "2026-04-28T12:02:54.151Z"
+  "generatedAt": "2026-04-28T14:41:56.309Z"
 }
