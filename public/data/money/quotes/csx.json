@@ -5,12 +5,12 @@
     "displaySymbol": "$CSX"
   },
   "name": "CSX CORPORATION",
-  "price": 45.414,
+  "price": 45.23,
   "previousClose": 45.46,
   "dayHigh": 45.77,
   "dayLow": 44.98,
-  "change": -0.045999999999999375,
-  "changePercent": -0.10118785745710378,
+  "change": -0.23000000000000398,
+  "changePercent": -0.5059392872855345,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -273,11 +273,63 @@
     },
     {
       "timestamp": 1777402200,
+      "close": 45.432098388671875
+    },
+    {
+      "timestamp": 1777402500,
+      "close": 45.435001373291016
+    },
+    {
+      "timestamp": 1777402800,
       "close": 45.42499923706055
     },
     {
-      "timestamp": 1777402349,
-      "close": 45.41389846801758
+      "timestamp": 1777403100,
+      "close": 45.41999816894531
+    },
+    {
+      "timestamp": 1777403400,
+      "close": 45.3849983215332
+    },
+    {
+      "timestamp": 1777403700,
+      "close": 45.375
+    },
+    {
+      "timestamp": 1777404000,
+      "close": 45.345001220703125
+    },
+    {
+      "timestamp": 1777404300,
+      "close": 45.28499984741211
+    },
+    {
+      "timestamp": 1777404600,
+      "close": 45.185001373291016
+    },
+    {
+      "timestamp": 1777404900,
+      "close": 45.20000076293945
+    },
+    {
+      "timestamp": 1777405200,
+      "close": 45.224998474121094
+    },
+    {
+      "timestamp": 1777405500,
+      "close": 45.26499938964844
+    },
+    {
+      "timestamp": 1777405800,
+      "close": 45.2599983215332
+    },
+    {
+      "timestamp": 1777406100,
+      "close": 45.25
+    },
+    {
+      "timestamp": 1777406400,
+      "close": 45.22999954223633
     }
   ],
   "news": {
@@ -285,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-04-28T10:22:00.000Z"
   },
-  "generatedAt": "2026-04-28T18:52:31.762Z"
+  "generatedAt": "2026-04-28T20:41:27.309Z"
 }
