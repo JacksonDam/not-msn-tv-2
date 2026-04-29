@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 39.51,
+  "price": 39.55,
   "previousClose": 38.01,
-  "dayHigh": 39.565,
+  "dayHigh": 39.7,
   "dayLow": 38.51,
-  "change": 1.5,
-  "changePercent": 3.946329913180742,
+  "change": 1.5399999999999991,
+  "changePercent": 4.051565377532226,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -269,11 +269,67 @@
     },
     {
       "timestamp": 1777488300,
-      "close": 39.52000045776367
+      "close": 39.4900016784668
     },
     {
-      "timestamp": 1777488467,
+      "timestamp": 1777488600,
+      "close": 39.435001373291016
+    },
+    {
+      "timestamp": 1777488900,
+      "close": 39.47999954223633
+    },
+    {
+      "timestamp": 1777489200,
+      "close": 39.45500183105469
+    },
+    {
+      "timestamp": 1777489500,
       "close": 39.5099983215332
+    },
+    {
+      "timestamp": 1777489800,
+      "close": 39.6150016784668
+    },
+    {
+      "timestamp": 1777490100,
+      "close": 39.6150016784668
+    },
+    {
+      "timestamp": 1777490400,
+      "close": 39.62689971923828
+    },
+    {
+      "timestamp": 1777490700,
+      "close": 39.630001068115234
+    },
+    {
+      "timestamp": 1777491000,
+      "close": 39.5099983215332
+    },
+    {
+      "timestamp": 1777491300,
+      "close": 39.474998474121094
+    },
+    {
+      "timestamp": 1777491600,
+      "close": 39.41999816894531
+    },
+    {
+      "timestamp": 1777491900,
+      "close": 39.525001525878906
+    },
+    {
+      "timestamp": 1777492200,
+      "close": 39.470001220703125
+    },
+    {
+      "timestamp": 1777492500,
+      "close": 39.53499984741211
+    },
+    {
+      "timestamp": 1777492800,
+      "close": 39.54999923706055
     }
   ],
   "news": {
@@ -281,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-04-29T16:22:21.000Z"
   },
-  "generatedAt": "2026-04-29T18:47:54.694Z"
+  "generatedAt": "2026-04-29T20:21:28.931Z"
 }
