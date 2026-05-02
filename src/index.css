@@ -1296,12 +1296,20 @@
     }
 
     .music-nav-arrow {
-        width: 7.2vh;
-        height: 7.2vh;
+        width: 8vh;
+        height: 8vh;
         object-fit: contain;
         image-rendering: pixelated;
-        transform: scale(0.66);
-        flex: 0 0 7.2vh;
+        transform: scale(0.525);
+        flex: 0 0 8vh;
+    }
+
+    .music-nav-arrow:first-child {
+        transform-origin: left center;
+    }
+
+    .music-nav-arrow:last-child {
+        transform-origin: right center;
     }
 
     .music-home-content {
@@ -7684,5 +7692,1093 @@
     .mail-center-stub-text {
         font-size: 3vh;
         margin: 0;
+    }
+
+    .photos-center-shell {
+        display: block;
+        overflow: hidden;
+        background: #b3b3b3;
+        color: #1d1d1d;
+        font-family: "Segoe TV";
+    }
+
+    .photos-center-shell:not(.photos-route-home) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 9vh;
+        left: 0;
+        z-index: 11;
+    }
+
+    .photos-center-shell.photos-route-slideshow {
+        bottom: 0;
+    }
+
+    #cur-page:has(.photos-center-shell.photos-route-slideshow) {
+        height: 100vh;
+        z-index: 12;
+    }
+
+    :where(.photos-center-shell) button {
+        appearance: none;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        color: inherit;
+        font-family: "Segoe TV";
+        cursor: default;
+    }
+
+    .photos-header {
+        position: relative;
+        height: 13.333vh;
+        background: url('/not-msn-tv-2/images/pages/photo/PhotoHeader.jpg') center / 100% 100% no-repeat;
+        border-bottom: 0.28vh solid rgba(235, 235, 235, 0.9);
+        box-sizing: border-box;
+    }
+
+    .photos-header-title {
+        position: absolute;
+        left: 3.55vh;
+        bottom: 2.55vh;
+        display: flex;
+        align-items: baseline;
+        gap: 2.7vh;
+        margin: 0;
+        color: #f3f3f3;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 4.95vh;
+        line-height: 1;
+        white-space: nowrap;
+        text-shadow: 0 0.15vh 0.2vh rgba(0, 0, 0, 0.35);
+    }
+
+    .photos-header-title span:first-child:not(:last-child) {
+        color: #d7d3d5;
+    }
+
+    .photos-header-actions {
+        position: absolute;
+        right: 2.3vh;
+        top: 1.55vh;
+        display: flex;
+        align-items: center;
+        gap: 2.8vh;
+    }
+
+    .photos-header-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8vh;
+        color: #ffffff;
+        font-family: "Segoe TV Bold";
+        font-size: 3.9vh;
+        line-height: 1;
+        white-space: nowrap;
+        text-shadow: 0 0.12vh 0.2vh rgba(0, 0, 0, 0.35);
+    }
+
+    .photos-header-help img {
+        width: 4.45vh;
+        height: 4.45vh;
+        object-fit: contain;
+    }
+
+    .photos-home-main {
+        height: 67.38vh;
+        padding: 2.7vh 3.55vh 0;
+        box-sizing: border-box;
+        background: url('/not-msn-tv-2/images/pages/photo/PhotosHomeBG.jpg') center / 100% 100% no-repeat;
+    }
+
+    .photos-home-grid {
+        display: grid;
+        grid-template-columns: 29.4vh 29.4vh minmax(0, 1fr);
+        grid-template-rows: 21.4vh 21.4vh;
+        column-gap: 3.5vh;
+        row-gap: 3vh;
+        align-items: stretch;
+        height: 46.2vh;
+        padding-top: 8.4vh;
+        box-sizing: border-box;
+    }
+
+    .photos-home-tile {
+        width: 29.4vh;
+        height: 21.4vh;
+        border: 0.5vh solid rgba(232, 232, 232, 0.86);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .photos-home-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .photos-home-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #d1a76a;
+        color: #ffffff;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 4.35vh;
+        line-height: 1.05;
+        text-align: center;
+        text-shadow: 0 0.15vh 0.2vh rgba(255, 255, 255, 0.25);
+    }
+
+    .photos-home-copy {
+        min-width: 0;
+        margin: 0;
+        font-family: "Segoe TV";
+        font-weight: 400;
+        font-size: 4.1vh;
+        line-height: 1.02;
+    }
+
+    .photos-home-copy-light {
+        padding-top: 0.6vh;
+        color: #fdfcfa;
+    }
+
+    .photos-home-copy-dark {
+        color: #1d1d1d;
+    }
+
+    .photos-home-network-link {
+        display: block;
+        color: rgb(33, 37, 75);
+        font-family: "Segoe TV";
+        font-size: 4.35vh;
+        line-height: 1;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .photos-home-nav {
+        position: relative;
+        height: 10.29vh;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-image:
+            linear-gradient(180deg,
+                #171717 0%,
+                #131313 2%,
+                #303030 5%,
+                #2b2b2d 10%,
+                #303032 15%,
+                #353535 23%,
+                #404042 36%,
+                #4e4e4e 50%,
+                #616161 68%,
+                #737373 86%,
+                #7b7b7b 100%);
+        border-top: 0.35vh solid #222222;
+        border-bottom: 0.35vh solid #6b6b6b;
+    }
+
+    .photos-home-nav-arrow {
+        width: 8vh;
+        height: 8vh;
+        object-fit: contain;
+        image-rendering: pixelated;
+        transform: scale(0.525);
+        flex: 0 0 8vh;
+    }
+
+    .photos-home-nav-arrow:first-child {
+        transform-origin: left center;
+    }
+
+    .photos-home-nav-arrow:last-child {
+        transform-origin: right center;
+    }
+
+    .photos-home-nav-items {
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    .photos-home-nav-slider {
+        height: 100%;
+        top: 0;
+        align-items: center;
+    }
+
+    .photos-home-nav-slot {
+        flex: 0 0 calc((100vw - 16vh) / 4);
+        width: calc((100vw - 16vh) / 4);
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photos-home-nav-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        color: rgb(200, 210, 220);
+        font-family: "Segoe TV Bold";
+        font-size: 4.05vh;
+        line-height: 1;
+        white-space: nowrap;
+        text-shadow: 0 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+    }
+
+    .photos-two-pane {
+        display: grid;
+        grid-template-columns: minmax(0, 73%) minmax(0, 27%);
+        height: calc(100% - 13.333vh);
+        background: linear-gradient(180deg, #b0b0b0 0%, #e8e8e8 100%);
+    }
+
+    .photos-browser-panel,
+    .photos-device-panel,
+    .photos-viewer-main {
+        min-width: 0;
+        padding: 1.7vh 2.9vh;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .photos-sidebar {
+        min-width: 0;
+        padding: 1.35vh 0.7vh 1.4vh;
+        box-sizing: border-box;
+        background: #999999;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    .photos-side-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 6.6vh;
+        height: 6.6vh;
+        margin-bottom: 1vh;
+        padding: 0 1.3vh 0.35vh;
+        box-sizing: border-box;
+        background-image: linear-gradient(180deg, #f3f8fa 0%, #b5cfdb 19%, #d7e8ef 100%) !important;
+        border: 0.24vh solid #7f9099 !important;
+        color: #244464;
+        font-family: "Segoe TV";
+        font-size: 3.85vh;
+        line-height: 1;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .settings-action,
+    .messenger-panel-button,
+    .mail-center-side-button,
+    .photos-side-button {
+        border: 0.28vh solid #1b1b1b !important;
+        border-radius: 0.25vh;
+        box-shadow: none;
+    }
+
+    .photos-list-row {
+        display: flex;
+        align-items: center;
+        gap: 1.4vh;
+        width: 100%;
+        height: 5.1vh;
+        padding: 0 0.7vh;
+        border-bottom: 0.28vh solid #a7a7a7 !important;
+        color: rgb(15, 20, 50);
+        font-size: 3.2vh;
+        line-height: 1;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .photos-pc-panel {
+        position: absolute;
+        top: 17.2vh;
+        left: 4.7vh;
+        right: 5.8vh;
+        height: 25.2vh;
+        padding: 3.8vh 3vh;
+        box-sizing: border-box;
+        background: linear-gradient(180deg, #f5f6f8 0%, #d7d7dc 100%);
+        border-radius: 1.6vh;
+    }
+
+    .photos-pc-heading {
+        display: flex;
+        align-items: center;
+        gap: 1.7vh;
+        color: rgb(15, 20, 50);
+        font-family: "Segoe TV";
+        font-size: 3.2vh;
+        height: 5vh;
+    }
+
+    .photos-pc-heading img {
+        width: 7vh;
+        height: 7vh;
+        object-fit: contain;
+    }
+
+    .photos-pc-list {
+        margin-top: 1.4vh;
+    }
+
+    .photos-path-title {
+        height: 5.2vh;
+        color: #1d1d1d;
+        font-size: 3.1vh;
+        line-height: 1;
+    }
+
+    .photos-path-title strong {
+        font-family: "Segoe TV Bold";
+        font-weight: 700;
+    }
+
+    .photos-group-title,
+    .photos-section-title {
+        margin-top: 1.2vh;
+        height: 3.9vh;
+        border-bottom: 0.28vh solid #999999;
+        color: #1d1d1d;
+        font-size: 3.1vh;
+        line-height: 1.05;
+    }
+
+    .photos-group-title {
+        font-family: "Segoe TV Bold";
+    }
+
+    .photos-section-title {
+        font-family: "Segoe TV";
+        font-weight: 400;
+    }
+
+    .photos-view-by-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55vh 1.7vh;
+        margin-bottom: 2.2vh;
+        color: rgb(15, 20, 50);
+    }
+
+    .photos-view-by-item {
+        padding: 0.25vh 0.55vh 0.4vh;
+        color: rgb(15, 20, 50);
+        font-size: 2.85vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .photos-view-by-item.is-current {
+        background: #667670;
+        color: #1d1d1d;
+        border: 0.2vh solid #422f2e;
+    }
+
+    .photos-shared-row {
+        color: rgb(15, 20, 50);
+    }
+
+    .photos-folder-root-row {
+        color: rgb(15, 20, 50);
+    }
+
+    .photos-viewer-pane {
+        grid-template-columns: minmax(0, 73%) minmax(0, 27%);
+    }
+
+    .photos-viewer-main {
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .photos-viewer-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .photos-count-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5.4vh;
+        color: #1d1d1d;
+        font-size: 3.05vh;
+        line-height: 1;
+    }
+
+    .photos-select-all {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.85vh;
+        color: #1d1d1d;
+        font-size: 2.85vh;
+        white-space: nowrap;
+    }
+
+    .photos-select-all-box {
+        display: inline-flex;
+        width: 3.8vh;
+        height: 3.8vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photos-check-icon {
+        width: 3.6vh;
+        height: 3.6vh;
+        object-fit: contain;
+        flex: 0 0 auto;
+    }
+
+    .photos-grid {
+        --photos-thumb-size: 12.2vh;
+        --photos-cell-width: 17.8vh;
+        --photos-cell-height: 16.2vh;
+        --photos-cell-right-padding: 3.9vh;
+        --photos-photo-gap: 2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25vh;
+        padding-bottom: 3vh;
+    }
+
+    .photos-grid-size-small {
+        --photos-thumb-size: 9.6vh;
+        --photos-cell-width: 14.4vh;
+        --photos-cell-height: 13.4vh;
+        --photos-cell-right-padding: 3.3vh;
+        --photos-photo-gap: 1.55vh;
+    }
+
+    .photos-grid-size-large {
+        --photos-thumb-size: 15.2vh;
+        --photos-cell-width: 21.9vh;
+        --photos-cell-height: 19.5vh;
+        --photos-cell-right-padding: 4.4vh;
+        --photos-photo-gap: 2.45vh;
+    }
+
+    .photos-date-group {
+        min-width: 0;
+    }
+
+    .photos-date-photo-row {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--photos-photo-gap);
+        min-height: var(--photos-cell-height);
+    }
+
+    .photos-photo-cell-wrap {
+        position: relative;
+        padding-top: 0;
+        min-height: var(--photos-cell-height);
+        box-sizing: border-box;
+    }
+
+    .photos-date-title {
+        position: static;
+        width: auto;
+        height: 4.1vh;
+        color: #1d1d1d;
+        font-family: "Segoe TV Bold";
+        font-size: 3.05vh;
+        line-height: 1;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+    .photos-photo-cell {
+        position: relative;
+        width: var(--photos-cell-width);
+        height: var(--photos-cell-height);
+        padding: 0.8vh var(--photos-cell-right-padding) 0.8vh 0.8vh;
+        box-sizing: border-box;
+        background: transparent;
+        border: 0.18vh solid #666666 !important;
+        overflow: hidden;
+    }
+
+    .photos-photo-cell.is-selected {
+        background: #c3d5ba;
+    }
+
+    .photos-photo-thumb {
+        display: block;
+        width: var(--photos-thumb-size);
+        height: var(--photos-thumb-size);
+        object-fit: cover;
+        background: #eeeeee;
+        transform-origin: center;
+    }
+
+    .photos-thumb-checkbox {
+        position: absolute;
+        top: 0.6vh;
+        right: 0.6vh;
+    }
+
+    .photos-viewer-sidebar {
+        color: #1d1d1d;
+    }
+
+    .photos-date-button {
+        appearance: none;
+        height: 5.6vh;
+        min-height: 5.6vh;
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 0.7vh;
+        padding: 0 1.4vh 0.35vh;
+        border: 0.28vh solid #1b1b1b !important;
+        border-radius: 0.25vh;
+        background-image: linear-gradient(180deg, #f8f8f8 0%, #91b1c9 35%, #d7e7f0 100%) !important;
+        color: #254267;
+        font-family: "Segoe TV";
+        font-size: 3.15vh;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.2vh;
+        box-sizing: border-box;
+    }
+
+    .photos-size-row,
+    .photos-rotate-row {
+        display: grid;
+        grid-template-columns: 7.3vh minmax(0, 1fr) 7.3vh;
+        align-items: center;
+        gap: 0.45vh;
+        height: 5.4vh;
+        margin-bottom: 0.7vh;
+    }
+
+    .photos-size-row .photos-side-button,
+    .photos-rotate-row .photos-side-button {
+        justify-content: center;
+        width: 7.3vh;
+        min-height: 5.4vh;
+        height: 5.4vh;
+        margin-bottom: 0;
+        padding: 0 1.05vh 0.35vh;
+        font-size: 3.2vh;
+        text-align: center;
+    }
+
+    .photos-size-row span,
+    .photos-rotate-row span {
+        color: #1d1d1d;
+        font-size: 3.85vh;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .photos-rotate-row img {
+        width: 3.4vh;
+        height: 3.4vh;
+        object-fit: contain;
+    }
+
+    .photos-album-panel {
+        color: #1d1d1d;
+    }
+
+    .photos-album-intro,
+    .photos-save-main p {
+        margin: 0 0 1.4vh;
+        color: #1d1d1d;
+        font-size: 3.05vh;
+        line-height: 1.05;
+    }
+
+    .photos-album-intro em,
+    .photos-save-main em {
+        font-family: "Segoe TV Bold";
+        font-style: normal;
+    }
+
+    .photos-album-row {
+        height: 8.4vh;
+    }
+
+    .photos-album-row img {
+        width: 8.6vh;
+        height: 6.4vh;
+        object-fit: contain;
+    }
+
+    .photos-saved-album-grid {
+        display: flex;
+        gap: 1.6vh;
+        margin-top: 2vh;
+    }
+
+    .photos-saved-album-thumb {
+        width: 18vh;
+        height: 14vh;
+        padding: 0.8vh;
+        background: rgba(255, 255, 255, 0.45) !important;
+        border: 0.2vh solid #777777 !important;
+    }
+
+    .photos-saved-album-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .photos-save-pane {
+        grid-template-columns: minmax(0, 73%) minmax(0, 27%);
+    }
+
+    .photos-save-main {
+        padding-top: 2.2vh;
+    }
+
+    .photos-save-divider {
+        height: 0.35vh;
+        margin: 1.2vh 0 1.8vh;
+        background: #888888;
+    }
+
+    .photos-save-choice {
+        display: grid;
+        grid-template-columns: 3.8vh 14vh minmax(0, 1fr);
+        align-items: center;
+        gap: 1.8vh;
+        width: 100%;
+        height: 10.4vh;
+        color: #1d1d1d;
+        font-size: 3.05vh;
+        text-align: left;
+    }
+
+    .photos-save-radio-control {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photos-save-radio-control img {
+        width: 2.9vh;
+        height: 2.9vh;
+        object-fit: contain;
+    }
+
+    .photos-album-icon-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 12.5vh;
+        height: 9.1vh;
+        background: url('/not-msn-tv-2/images/pages/photo/PhotoAlbum.png') center / contain no-repeat;
+        overflow: hidden;
+    }
+
+    .photos-album-icon-wrap img {
+        position: absolute;
+        width: 7vh;
+        height: 5.2vh;
+        object-fit: cover;
+        top: 2.05vh;
+        left: 2.72vh;
+    }
+
+    .photos-album-slide.is-current {
+        animation: photos-album-slide-in 0.45s linear both;
+    }
+
+    .photos-album-slide.is-current-initial {
+        opacity: 1;
+    }
+
+    .photos-album-slide.is-previous {
+        animation: photos-album-slide-out 0.45s linear both;
+    }
+
+    @keyframes photos-album-slide-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes photos-album-slide-out {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+
+    .photos-save-new-row {
+        display: grid;
+        grid-template-columns: 27vh minmax(0, 1fr);
+        align-items: center;
+        gap: 1.2vh;
+        height: 7.4vh;
+    }
+
+    .photos-save-radio-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.2vh;
+        color: #1d1d1d;
+        font-size: 3.05vh;
+        text-align: left;
+    }
+
+    .photos-save-input {
+        width: 100%;
+        height: 5.4vh;
+        padding: 0 1vh !important;
+        box-sizing: border-box;
+        background: #4d5d70 !important;
+        border-top: 0.45vh solid #161616 !important;
+        border-left: 0.45vh solid #161616 !important;
+        border-right: 0.45vh solid #a0a7ad !important;
+        border-bottom: 0.45vh solid #a0a7ad !important;
+        color: #ffffff !important;
+        font-family: "Segoe TV";
+        font-size: 3vh !important;
+        line-height: 1;
+    }
+
+    .photos-save-sidebar {
+        display: flex;
+        flex-direction: column;
+        color: #1d1d1d;
+        font-size: 2.75vh;
+        line-height: 1.05;
+    }
+
+    .photos-save-sidebar p {
+        margin: 2.4vh 0 2vh;
+        color: #ffffff;
+        font-size: 2.75vh;
+        line-height: 1.05;
+    }
+
+    .photos-save-sidebar strong {
+        font-family: "Segoe TV Bold";
+        font-weight: 700;
+    }
+
+    .photos-device-description,
+    .photos-learn-row {
+        color: #1d1d1d;
+        font-size: 3.25vh;
+        line-height: 1.1;
+    }
+
+    .photos-learn-row {
+        display: flex;
+        align-items: center;
+        gap: 2vh;
+        margin-top: 3vh;
+    }
+
+    .photos-learn-row img {
+        width: 10vh;
+        height: 10vh;
+        object-fit: contain;
+    }
+
+    .photos-slideshow {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        z-index: 9;
+    }
+
+    .photos-slideshow-stage {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .photos-slideshow-photo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transform-origin: center;
+        transform: translate(-50%, -50%) rotate(var(--photo-rotation, 0deg));
+        opacity: 1;
+    }
+
+    .photos-slideshow-photo.is-rotated-quarter {
+        max-width: calc(100vh - 14.6vh);
+        max-height: 100vw;
+    }
+
+    .photos-slideshow-photo.is-first {
+        animation: photos-slideshow-first-fade 1s ease-out both;
+    }
+
+    .photos-slideshow-photo.is-crossfading {
+        animation: photos-slideshow-crossfade-in 2s linear both;
+    }
+
+    .photos-slideshow-photo.is-previous {
+        animation: photos-slideshow-crossfade-out 2s linear both;
+    }
+
+    @keyframes photos-slideshow-first-fade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes photos-slideshow-crossfade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes photos-slideshow-crossfade-out {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+
+    .photos-slideshow-controls {
+        flex: 0 0 14.6vh;
+        display: flex;
+        align-items: center;
+        gap: 1.1vh;
+        padding: 0 1.7vh;
+        box-sizing: border-box;
+        background-image:
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerSmallLeftSide.jpg'),
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerSmallRightSide.jpg'),
+            url('/not-msn-tv-2/images/pages/media/PanelPlayerSmallMiddleStretch.jpg');
+        background-position: left center, right center, center center;
+        background-size: auto 100%, auto 100%, auto 100%;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+        border-top: 0.35vh solid #8f979d;
+        color: #dce9f3;
+    }
+
+    .photos-slideshow.is-controls-hidden .photos-slideshow-controls {
+        display: none;
+    }
+
+    .photos-player-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 8.8vh;
+        height: 100%;
+        color: #dce9f3;
+        font-family: "Segoe TV Bold";
+        font-size: 1.75vh;
+        line-height: 1;
+    }
+
+    .photos-player-button img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .photos-slideshow-status,
+    .photos-slideshow-count {
+        color: #dce9f3;
+        font-family: "Segoe TV Bold";
+        font-size: 3.1vh;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .photos-slideshow-status {
+        margin-left: 2.5vh;
+    }
+
+    .photos-slideshow-count {
+        margin-left: auto;
+    }
+
+    .photos-slideshow-done {
+        width: 15.4vh;
+        height: 5.5vh;
+        margin-left: 1.5vh;
+        margin-top: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        text-align: center;
+        background-image: linear-gradient(180deg, #ffffff 0%, #d8e3eb 34%, #f2f7fa 100%) !important;
+        border: 0.28vh solid #1b1b1b !important;
+        border-radius: 0.25vh;
+        color: #254267;
+        font-family: "Segoe TV";
+        font-size: 3.1vh;
+    }
+
+    .photos-dialog-scrim {
+        position: absolute;
+        inset: 0;
+        z-index: 12;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.04);
+    }
+
+    .photos-dialog {
+        position: relative;
+        width: 78vh;
+        min-height: 49.6vh;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: linear-gradient(#5a5d62 0%, #767676 1%, #224770 2%, #224770 100%);
+        border: 2px solid #193f68;
+        box-shadow: none;
+        color: #0d0f1d;
+    }
+
+    .photos-dialog-icon {
+        position: absolute;
+        top: 3vh;
+        left: 3.4vh;
+        width: 11vh;
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .photos-dialog-icon img {
+        max-width: 11vh;
+        max-height: 11vh;
+        object-fit: contain;
+    }
+
+    .photos-dialog-icon-info {
+        top: 2.35vh;
+        left: 2.6vh;
+        width: 13vh;
+        height: 13vh;
+    }
+
+    .photos-dialog-icon-info img {
+        max-width: 13vh;
+        max-height: 13vh;
+    }
+
+    .photos-dialog-body {
+        min-height: calc(49.6vh - 1.2vh);
+        margin: 0.6vh;
+        box-sizing: border-box;
+        background-image: url('./assets/errordialogbg.png');
+        background-size: cover;
+        border-radius: 12px;
+    }
+
+    .photos-dialog-copy {
+        min-height: calc(49.6vh - 1.2vh);
+        padding: 4vh 3vh 9vh 16vh;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    .photos-dialog-copy h2 {
+        margin: 0 0 1.2vh;
+        color: #0d0f1d;
+        font-family: "Segoe TV Bold";
+        font-size: 4vh;
+        line-height: 1;
+    }
+
+    .photos-dialog-copy p {
+        margin: 0 0 1.3vh;
+        color: #0d0f1d;
+        font-size: 3.15vh;
+        line-height: 1.08;
+    }
+
+    .photos-dialog-copy em,
+    .photos-dialog-copy strong {
+        font-family: "Segoe TV Bold";
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .photos-dialog-actions {
+        position: absolute;
+        right: 2.8vh;
+        bottom: 2.6vh;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.3vh;
+        opacity: 0;
+    }
+
+    .photos-dialog-icon.showing,
+    .photos-dialog-copy.showing,
+    .photos-dialog-actions.showing {
+        transition-delay: 0.03s;
+        opacity: 1;
+    }
+
+    .photos-dialog-button {
+        min-width: 15.2vh;
+        height: 5.6vh;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .photos-save-progress-panel {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+        transform: translateY(0%);
+    }
+
+    .photos-save-progress-panel .panel-title-white {
+        white-space: nowrap;
+    }
+
+    .photos-save-progress-panel .base-other {
+        margin-top: 1vh;
+    }
+
+    .photos-save-progress-cancel {
+        flex: 0 0 auto;
+    }
+
+    .photos-content-hidden {
+        visibility: hidden;
     }
 }

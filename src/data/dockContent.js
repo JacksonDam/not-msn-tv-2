@@ -414,6 +414,11 @@ export const DOCK_PAGES = {
     title: 'Music',
     subtitle: 'Home',
   },
+  photos: {
+    layout: 'photosCenter',
+    title: 'Photos',
+    subtitle: 'Home',
+  },
   news: createNewsPage('Top Stories', 'top-stories'),
   'news-business': createNewsPage('Business', 'business'),
   'news-technology': createNewsPage('Technology', 'technology'),

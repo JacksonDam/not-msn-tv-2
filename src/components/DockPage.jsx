@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { DOCK_PAGES } from '../data/dockContent'
 import MusicCenter from './MusicCenter'
+import PhotosCenter from './PhotosCenter'
 import SettingsPage from './SettingsPage'
 import animateScrollTop from '../utils/animateScrollTop'
 import {
@@ -305,6 +306,11 @@ export default function DockPage({
   musicNavPixelOffset = 0,
   musicNavSlidingFromPos = null,
   onMusicNavSlideEnd,
+  photosNavPos = 1,
+  photosNavViewStart = 0,
+  photosNavPixelOffset = 0,
+  photosNavSlidingFromPos = null,
+  onPhotosNavSlideEnd,
   mediaPlayer,
   onSettingsAction,
   navigationErrorUrl = 'http://www.',
@@ -388,6 +394,9 @@ export default function DockPage({
   useEffect(() => {
     if (!subPageBackRef) return undefined
     let handler = null
+    if (page?.layout === 'photosCenter') {
+      return undefined
+    }
     if (page?.layout === 'mapsCenter' && mapsScreen !== 'map') {
       handler = () => {
         setMapsScreen('map')
@@ -953,6 +962,22 @@ export default function DockPage({
         navSlidingFromPos={musicNavSlidingFromPos}
         onNavSlideEnd={onMusicNavSlideEnd}
         mediaPlayer={mediaPlayer}
+      />
+    )
+  }
+
+  if (page.layout === 'photosCenter') {
+    return (
+      <PhotosCenter
+        pageRef={setShellRef}
+        subPageBackRef={subPageBackRef}
+        selection={selection}
+        audio={audio}
+        navPos={photosNavPos}
+        navViewStart={photosNavViewStart}
+        navPixelOffset={photosNavPixelOffset}
+        navSlidingFromPos={photosNavSlidingFromPos}
+        onNavSlideEnd={onPhotosNavSlideEnd}
       />
     )
   }

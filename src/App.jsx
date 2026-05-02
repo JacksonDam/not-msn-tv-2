@@ -7,6 +7,7 @@ import MediaPlayerPanel from './components/MediaPlayerPanel'
 import MessengerPanel from './components/MessengerPanel'
 import TypeWwwPanel from './components/TypeWwwPanel'
 import { MUSIC_NAV_ROW } from './components/MusicCenter'
+import { PHOTOS_NAV_ROW } from './components/PhotosCenter'
 import SelectionFrame from './components/SelectionFrame'
 import { DOCK_ITEMS, DOCK_PAGES } from './data/dockContent'
 
@@ -137,8 +138,13 @@ export default function App() {
   const [musicNavViewStart, setMusicNavViewStart] = useState(0)
   const [musicNavPixelOffset, setMusicNavPixelOffset] = useState(0)
   const [musicNavSlidingFromPos, setMusicNavSlidingFromPos] = useState(null)
+  const [photosNavPos, setPhotosNavPos] = useState(1)
+  const [photosNavViewStart, setPhotosNavViewStart] = useState(0)
+  const [photosNavPixelOffset, setPhotosNavPixelOffset] = useState(0)
+  const [photosNavSlidingFromPos, setPhotosNavSlidingFromPos] = useState(null)
   const dockSlidingRef = useRef(false)
   const musicNavSlidingRef = useRef(false)
+  const photosNavSlidingRef = useRef(false)
 
   const timeoutsRef = useRef([])
   const mainPageRef = useRef(null)
@@ -1214,11 +1220,43 @@ export default function App() {
         const sel = selection.getSelected()
         const homeDockArea = !openDockPageId ? sel?.closest('#dock-area') : null
         const musicNavArea = openDockPageId === 'music' ? sel?.closest('.music-nav-area') : null
+        const photosNavArea = openDockPageId === 'photos' ? sel?.closest('.photos-home-nav') : null
         const isDockSelection = Boolean(homeDockArea)
         const isMusicNavSelection = Boolean(musicNavArea)
+        const isPhotosNavSelection = Boolean(photosNavArea)
 
-        if ((isDockSelection || isMusicNavSelection) && (key === 'ArrowLeft' || key === 'ArrowRight')) {
-          const carouselArea = isMusicNavSelection ? musicNavArea : homeDockArea
+        if (isPhotosNavSelection && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+          const direction = key === 'ArrowRight' ? 1 : -1
+          const slotWidth = photosNavArea?.querySelector('.photos-home-nav-slot')?.getBoundingClientRect().width ?? 0
+          const currentStart = photosNavViewStart
+          const nextPos = photosNavPos + direction
+          let nextStart = currentStart
+
+          if (direction > 0 && nextPos > currentStart + 3) {
+            nextStart = nextPos - 2
+          } else if (direction < 0 && nextPos < currentStart) {
+            nextStart = nextPos - 1
+          }
+
+          setPhotosNavPos(nextPos)
+          setPhotosNavViewStart(nextStart)
+          setPhotosNavPixelOffset(nextStart * slotWidth)
+          if (nextStart !== currentStart && slotWidth > 0) {
+            setPhotosNavSlidingFromPos(photosNavPos)
+            photosNavSlidingRef.current = true
+            const focusBox = selection.focusBoxRef.current
+            if (focusBox) {
+              focusBox.style.visibility = 'hidden'
+            }
+          } else {
+            setPhotosNavSlidingFromPos(null)
+            photosNavSlidingRef.current = false
+          }
+          return
+        }
+
+        if ((isDockSelection || isMusicNavSelection || isPhotosNavSelection) && (key === 'ArrowLeft' || key === 'ArrowRight')) {
+          const carouselArea = isPhotosNavSelection ? photosNavArea : (isMusicNavSelection ? musicNavArea : homeDockArea)
           const dockSel = carouselArea?.querySelector('[data-dock-carousel-selected="true"]') ?? sel
           if (!(dockSel instanceof HTMLElement)) return
 
@@ -1254,12 +1292,12 @@ export default function App() {
             }
           }
 
-          const setCarouselPos = isMusicNavSelection ? setMusicNavPos : setDockPos
-          const setCarouselViewStart = isMusicNavSelection ? setMusicNavViewStart : setDockViewStart
-          const setCarouselPixelOffset = isMusicNavSelection ? setMusicNavPixelOffset : setDockPixelOffset
-          const setCarouselSlidingFromPos = isMusicNavSelection ? setMusicNavSlidingFromPos : setDockSlidingFromPos
-          const carouselSlidingRef = isMusicNavSelection ? musicNavSlidingRef : dockSlidingRef
-          const carouselPos = isMusicNavSelection ? musicNavPos : dockPos
+          const setCarouselPos = isPhotosNavSelection ? setPhotosNavPos : (isMusicNavSelection ? setMusicNavPos : setDockPos)
+          const setCarouselViewStart = isPhotosNavSelection ? setPhotosNavViewStart : (isMusicNavSelection ? setMusicNavViewStart : setDockViewStart)
+          const setCarouselPixelOffset = isPhotosNavSelection ? setPhotosNavPixelOffset : (isMusicNavSelection ? setMusicNavPixelOffset : setDockPixelOffset)
+          const setCarouselSlidingFromPos = isPhotosNavSelection ? setPhotosNavSlidingFromPos : (isMusicNavSelection ? setMusicNavSlidingFromPos : setDockSlidingFromPos)
+          const carouselSlidingRef = isPhotosNavSelection ? photosNavSlidingRef : (isMusicNavSelection ? musicNavSlidingRef : dockSlidingRef)
+          const carouselPos = isPhotosNavSelection ? photosNavPos : (isMusicNavSelection ? musicNavPos : dockPos)
 
           setCarouselPos(prev => {
             const next = prev + (key === 'ArrowRight' ? 1 : -1)
@@ -1301,6 +1339,8 @@ export default function App() {
     isNavigationErrorScreenActive,
     dockPos,
     musicNavPos,
+    photosNavPos,
+    photosNavViewStart,
     handleBackNavigation,
     toggleMediaPanel,
     toggleMessengerPanel,
@@ -1368,8 +1408,13 @@ export default function App() {
     setMusicNavViewStart(0)
     setMusicNavPixelOffset(0)
     setMusicNavSlidingFromPos(null)
+    setPhotosNavPos(1)
+    setPhotosNavViewStart(0)
+    setPhotosNavPixelOffset(0)
+    setPhotosNavSlidingFromPos(null)
     dockSlidingRef.current = false
     musicNavSlidingRef.current = false
+    photosNavSlidingRef.current = false
   }, [])
 
   const handleSignIn = useCallback(() => {
@@ -1485,6 +1530,15 @@ export default function App() {
   }, [musicNavPos, curPageVisible, openDockPageId, currentPageReloadKey, selection])
 
   useEffect(() => {
+    if (!curPageVisible || openDockPageId !== 'photos' || !dockPageRef.current) return
+    const navEl = dockPageRef.current.querySelector(`.photos-home-nav [data-select-height="${PHOTOS_NAV_ROW}"]`)
+    if (navEl) {
+      selection.updateContainerRef(0, PHOTOS_NAV_ROW, 0, navEl)
+      selection.updateFocusBox()
+    }
+  }, [photosNavPos, curPageVisible, openDockPageId, currentPageReloadKey, selection])
+
+  useEffect(() => {
     if (dockTransitionPhase !== 'contacting' || !dockTransitionRef.current) return
     selection.initSelectables(dockTransitionRef.current)
     revealFocusBox()
@@ -1518,6 +1572,22 @@ export default function App() {
       const navEl = dockPageRef.current?.querySelector(`.music-nav-area [data-select-height="${MUSIC_NAV_ROW}"]`)
       if (navEl) {
         selection.updateContainerRef(0, MUSIC_NAV_ROW, 0, navEl)
+      }
+      selection.updateFocusBox()
+    }
+  }, [selection])
+
+  const handlePhotosNavSlideEnd = useCallback(() => {
+    if (photosNavSlidingRef.current) {
+      photosNavSlidingRef.current = false
+      const focusBox = selection.focusBoxRef.current
+      setPhotosNavSlidingFromPos(null)
+      if (focusBox) {
+        focusBox.style.visibility = ''
+      }
+      const navEl = dockPageRef.current?.querySelector(`.photos-home-nav [data-select-height="${PHOTOS_NAV_ROW}"]`)
+      if (navEl) {
+        selection.updateContainerRef(0, PHOTOS_NAV_ROW, 0, navEl)
       }
       selection.updateFocusBox()
     }
@@ -1845,6 +1915,11 @@ export default function App() {
                       musicNavPixelOffset={musicNavPixelOffset}
                       musicNavSlidingFromPos={musicNavSlidingFromPos}
                       onMusicNavSlideEnd={handleMusicNavSlideEnd}
+                      photosNavPos={photosNavPos}
+                      photosNavViewStart={photosNavViewStart}
+                      photosNavPixelOffset={photosNavPixelOffset}
+                      photosNavSlidingFromPos={photosNavSlidingFromPos}
+                      onPhotosNavSlideEnd={handlePhotosNavSlideEnd}
                       mediaPlayer={mediaPlayer}
                       onSettingsAction={handleSettingsAction}
                       navigationErrorUrl={navigationErrorUrl}
