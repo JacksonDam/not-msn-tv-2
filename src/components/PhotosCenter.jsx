@@ -8,7 +8,7 @@ export const PHOTOS_NAV_ROW = 0
 
 const PHOTO_NAV_ITEMS = [
   { id: 'devices', label: 'Devices (0)' },
-  { id: 'pcs', label: 'PCs (0)' },
+  { id: 'pcs', label: 'PCs (1)' },
   { id: 'mail', label: 'Photos in Mail' },
   { id: 'albums', label: 'Albums' },
 ]
@@ -283,19 +283,32 @@ export default function PhotosCenter({
   navPixelOffset = 0,
   navSlidingFromPos = null,
   onNavSlideEnd,
+  selectionMode = false,
+  initialSelectedIds = null,
+  onSelectionDone = null,
+  onSelectionCancel = null,
 }) {
   const rootRef = useRef(null)
   const dialogRef = useRef(null)
-  const routeRef = useRef({ name: 'home' })
+  const viewerScrollRef = useRef(null)
+  const routeRef = useRef(selectionMode ? { name: 'viewer', source: 'sample' } : { name: 'home' })
   const routeStackRef = useRef([])
   const saveTimersRef = useRef([])
   const readyTimersRef = useRef([])
   const slideshowTimersRef = useRef([])
   const slideshowControlsTimerRef = useRef(null)
   const slideshowAutoTimerRef = useRef(null)
-  const [route, setRoute] = useState({ name: 'home' })
+  const [viewerCanScrollDown, setViewerCanScrollDown] = useState(false)
+  const [viewerCanScrollUp, setViewerCanScrollUp] = useState(false)
+  const [composeSent, setComposeSent] = useState(false)
+  const [composeSendCount, setComposeSendCount] = useState(0)
+  const [composeBodyReady, setComposeBodyReady] = useState(false)
+  const [mailWriteSaveCopy, setMailWriteSaveCopy] = useState(true)
+  const composeReturnTimerRef = useRef(null)
+  const composeBodyTimerRef = useRef(null)
+  const [route, setRoute] = useState(() => (selectionMode ? { name: 'viewer', source: 'sample' } : { name: 'home' }))
   const [routeStack, setRouteStack] = useState([])
-  const [selectedIds, setSelectedIds] = useState(() => new Set())
+  const [selectedIds, setSelectedIds] = useState(() => new Set(initialSelectedIds ?? []))
   const [rotations, setRotations] = useState({})
   const [photoGridSizeIndex, setPhotoGridSizeIndex] = useState(1)
   const [slideshowIndex, setSlideshowIndex] = useState(0)
@@ -473,14 +486,53 @@ export default function PhotosCenter({
 
   useEffect(() => {
     if (!subPageBackRef) return undefined
-    const handler = () => goBack()
+    const handler = () => {
+      if (selectionMode && routeStackRef.current.length === 0) {
+        onSelectionCancel?.()
+        return true
+      }
+      return goBack()
+    }
     subPageBackRef.current = handler
     return () => {
       if (subPageBackRef.current === handler) {
         subPageBackRef.current = null
       }
     }
-  }, [goBack, subPageBackRef])
+  }, [goBack, onSelectionCancel, selectionMode, subPageBackRef])
+
+  const updateViewerScrollIndicator = useCallback(() => {
+    const node = viewerScrollRef.current
+    if (!node) {
+      setViewerCanScrollDown(false)
+      setViewerCanScrollUp(false)
+      return
+    }
+    const maxScrollTop = Math.max(0, node.scrollHeight - node.clientHeight)
+    setViewerCanScrollDown(node.scrollTop < maxScrollTop - 1)
+    setViewerCanScrollUp(node.scrollTop > 1)
+  }, [])
+
+  useEffect(() => {
+    if (route.name !== 'viewer') {
+      setViewerCanScrollDown(false)
+      setViewerCanScrollUp(false)
+      return undefined
+    }
+    const node = viewerScrollRef.current
+    if (!node) return undefined
+    updateViewerScrollIndicator()
+    const frame = window.requestAnimationFrame(updateViewerScrollIndicator)
+    node.addEventListener('scroll', updateViewerScrollIndicator)
+    window.addEventListener('resize', updateViewerScrollIndicator)
+    window.addEventListener('msntv-selection-change', updateViewerScrollIndicator)
+    return () => {
+      window.cancelAnimationFrame(frame)
+      node.removeEventListener('scroll', updateViewerScrollIndicator)
+      window.removeEventListener('resize', updateViewerScrollIndicator)
+      window.removeEventListener('msntv-selection-change', updateViewerScrollIndicator)
+    }
+  }, [photoGridSizeIndex, route.name, updateViewerScrollIndicator, viewerImagesReady])
 
   useEffect(() => {
     if (!selection) return undefined
@@ -499,10 +551,17 @@ export default function PhotosCenter({
       if (!dialog && route.name === 'viewer') {
         selection.goToSpecific(0, 0, 0)
       }
+      if (!dialog && route.name === 'mailCompose' && !composeSent && composeBodyReady) {
+        selection.goToSpecific(0, 2, 0)
+      }
+      if (!dialog && route.name === 'mailCompose' && (composeSent || !composeBodyReady)) {
+        selection.hideFocusBox()
+        return
+      }
       selection.unHideFocusBox()
     })
     return () => window.cancelAnimationFrame(frame)
-  }, [dialog, route.name, route.folder, route.source, route.album, saveProgress.active, selection])
+  }, [composeBodyReady, composeSent, dialog, route.name, route.folder, route.source, route.album, saveProgress.active, selection])
 
   const togglePhoto = useCallback((photoId) => {
     setSelectedIds((current) => {
@@ -655,8 +714,60 @@ export default function PhotosCenter({
       openDialog('noSelection', { playError: true })
       return
     }
-    openDialog('quality', { playError: true })
-  }, [openDialog, selectedCount])
+    if (selectionMode) {
+      onSelectionDone?.(Array.from(selectedIds))
+      return
+    }
+    setComposeSent(false)
+    goRoute({ name: 'mailCompose' })
+  }, [goRoute, onSelectionDone, openDialog, selectedCount, selectedIds, selectionMode])
+
+  const cancelMailCompose = useCallback(() => {
+    window.clearTimeout(composeReturnTimerRef.current)
+    composeReturnTimerRef.current = null
+    setComposeSent(false)
+    goBack({ closeDialog: false })
+  }, [goBack])
+
+  const handleMailSend = useCallback(() => {
+    audio?.play?.('emailSent')
+    setComposeSendCount((current) => current + 1)
+    setComposeSent(true)
+    selection?.hideFocusBox?.()
+    window.clearTimeout(composeReturnTimerRef.current)
+    composeReturnTimerRef.current = window.setTimeout(() => {
+      composeReturnTimerRef.current = null
+      setComposeSent(false)
+      goBack({ closeDialog: false })
+    }, 3200)
+  }, [audio, goBack, selection])
+
+  useEffect(() => () => {
+    window.clearTimeout(composeReturnTimerRef.current)
+    window.clearTimeout(composeBodyTimerRef.current)
+  }, [])
+
+  useEffect(() => {
+    if (route.name !== 'mailCompose') {
+      window.clearTimeout(composeReturnTimerRef.current)
+      composeReturnTimerRef.current = null
+      window.clearTimeout(composeBodyTimerRef.current)
+      composeBodyTimerRef.current = null
+      setComposeSent(false)
+      setComposeBodyReady(false)
+      return undefined
+    }
+    setComposeBodyReady(false)
+    window.clearTimeout(composeBodyTimerRef.current)
+    composeBodyTimerRef.current = window.setTimeout(() => {
+      composeBodyTimerRef.current = null
+      setComposeBodyReady(true)
+    }, 500)
+    return () => {
+      window.clearTimeout(composeBodyTimerRef.current)
+      composeBodyTimerRef.current = null
+    }
+  }, [route.name])
 
   const continueSave = useCallback(() => {
     clearSaveTimers()
@@ -984,7 +1095,7 @@ export default function PhotosCenter({
       <>
         <Header title="JACKSON-PC: jackson:" />
         <div className="photos-two-pane photos-viewer-pane">
-          <section className="photos-viewer-main" data-selection-scroll>
+          <section className="photos-viewer-main" data-selection-scroll ref={viewerScrollRef}>
             <PathTitle>Sample Pictures</PathTitle>
             <div className="photos-count-row">
               <span>{SAMPLE_PHOTOS.length} photos, {selectedCount} selected</span>
@@ -1073,8 +1184,18 @@ export default function PhotosCenter({
                 <img src={`${PHOTO_ASSET}Icon_PhotoRotateRight.png`} alt="" />
               </SideButton>
             </div>
-            <SideButton row={7} onClick={goBack}>Done</SideButton>
+            <SideButton row={7} onClick={selectionMode ? (() => onSelectionCancel?.()) : goBack}>{selectionMode ? 'Cancel' : 'Done'}</SideButton>
           </aside>
+          <img
+            className={`photos-viewer-scroll-indicator photos-viewer-scroll-indicator-up ${viewerCanScrollUp ? '' : 'hidden'}`}
+            src={`${BASE}images/scrollindicatordown.png`}
+            alt=""
+          />
+          <img
+            className={`photos-viewer-scroll-indicator photos-viewer-scroll-indicator-down ${viewerCanScrollDown ? '' : 'hidden'}`}
+            src={`${BASE}images/scrollindicatordown.png`}
+            alt=""
+          />
         </div>
       </>
     )
@@ -1085,7 +1206,7 @@ export default function PhotosCenter({
       <Header title="Save Photos to Album" />
       <div className="photos-two-pane photos-save-pane">
         <section className="photos-browser-panel photos-save-main">
-          <p>
+          <p className="photos-save-intro">
             Choose the album where you want to save these photos, and then choose <em>Continue</em>.
             To create a new album, type a name for it in the box at the bottom of the page and then
             choose <em>Continue</em>.
@@ -1147,6 +1268,206 @@ export default function PhotosCenter({
       </div>
     </>
   )
+
+  const renderMailCompose = () => {
+    const MAIL_TABS = [
+      { id: 'inbox', label: 'Inbox' },
+      { id: 'write', label: 'Write e-mail' },
+      { id: 'folders', label: 'Folders' },
+      { id: 'address', label: 'Address book' },
+    ]
+
+    return (
+      <div className={`photos-mail-compose mail-center-shell theme-mail${composeBodyReady ? '' : ' photos-mail-compose-hiding'}`}>
+        <div className="mail-center-banner">
+          <div className="mail-center-header">
+            <div className="mail-center-title">
+              <span className="mail-center-title-app">Mail</span>
+              <span className="mail-center-title-screen">Write e-mail</span>
+            </div>
+            <div className="mail-center-header-actions">
+              <button
+                type="button"
+                className="mail-center-header-link selectable"
+                data-select-x="5"
+                data-select-height="0"
+                data-select-layer="0"
+                data-select-down="photos-mail-tab-first"
+              >
+                Settings
+              </button>
+              <button
+                type="button"
+                className="mail-center-help selectable"
+                data-select-x="6"
+                data-select-height="0"
+                data-select-layer="0"
+                data-select-down="photos-mail-tab-first"
+              >
+                Help
+                <img className="mail-center-help-icon" src={`${BASE}images/helpicon.png`} alt="" />
+              </button>
+            </div>
+          </div>
+          <div className="mail-center-tabs">
+            {MAIL_TABS.map((tab, index) => (
+              <button
+                key={tab.id}
+                type="button"
+                className={`mail-center-tab selectable${tab.id === 'write' ? ' is-active' : ''}`}
+                data-select-x={index}
+                data-select-height="1"
+                data-select-layer="0"
+                data-select-down="photos-mail-content-first"
+                {...(index === 0 ? { 'data-select-id': 'photos-mail-tab-first' } : {})}
+                onClick={cancelMailCompose}
+              >
+                <span className={`mail-center-tab-icon mail-center-tab-icon-${tab.id}`} aria-hidden="true"></span>
+                <span className="mail-center-tab-label">{tab.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {composeSent ? (
+          <main className="mail-center-body mail-center-body-sent">
+            <img
+              key={`photos-mail-sent-${composeSendCount}`}
+              className="mail-center-sent-anim"
+              src={`${BASE}images/pages/mail/MailSent2.gif?v=${composeSendCount}`}
+              alt="Sending e-mail"
+            />
+          </main>
+        ) : (
+          <main className="mail-center-body mail-center-body-write">
+            <section className="mail-center-write-pane">
+              <div className="mail-center-write-row">
+                <span className="mail-center-write-label-box">To:</span>
+                <span className="mail-center-write-field">
+                  <input
+                    className="mail-center-write-input selectable"
+                    type="text"
+                    defaultValue=""
+                    autoComplete="off"
+                    spellCheck={false}
+                    data-select-id="photos-mail-content-first"
+                    data-select-x="0"
+                    data-select-height="2"
+                    data-select-layer="0"
+                  />
+                </span>
+              </div>
+              <div className="mail-center-write-row">
+                <span className="mail-center-write-label-box">Cc:</span>
+                <span className="mail-center-write-field">
+                  <input
+                    className="mail-center-write-input selectable"
+                    type="text"
+                    defaultValue=""
+                    autoComplete="off"
+                    spellCheck={false}
+                    data-select-x="0"
+                    data-select-height="3"
+                    data-select-layer="0"
+                  />
+                </span>
+              </div>
+              <div className="mail-center-write-row">
+                <span className="mail-center-write-label-plain">Subject:</span>
+                <span className="mail-center-write-field mail-center-write-field-subject">
+                  <input
+                    className="mail-center-write-input selectable"
+                    type="text"
+                    defaultValue=""
+                    autoComplete="off"
+                    spellCheck={false}
+                    data-select-x="0"
+                    data-select-height="4"
+                    data-select-layer="0"
+                  />
+                </span>
+              </div>
+              <div className="mail-center-write-row photos-mail-attachments-row">
+                <span className="mail-center-write-label-plain">Attached:</span>
+                <span className="photos-mail-attachments">
+                  <span className="mail-center-attachment-icon" aria-hidden="true"></span>
+                  {selectedPhotos.length} {selectedPhotos.length === 1 ? 'attachment' : 'attachments'}
+                </span>
+              </div>
+              <textarea
+                className="mail-center-write-body selectable"
+                placeholder="Type your message here"
+                defaultValue=""
+                data-select-x="0"
+                data-select-height="5"
+                data-select-layer="0"
+              />
+              <button
+                type="button"
+                className="mail-center-write-savecopy settings-control-feedback selectable"
+                data-select-x="0"
+                data-select-height="6"
+                data-select-layer="0"
+                onClick={() => setMailWriteSaveCopy((current) => !current)}
+              >
+                <img
+                  className="mail-center-checkbox-img"
+                  src={`${BASE}images/${mailWriteSaveCopy ? 'checked.png' : 'unchecked.png'}`}
+                  alt=""
+                />
+                <span>Save a copy of this e-mail to my Sent messages folder</span>
+              </button>
+            </section>
+
+            <aside className="mail-center-side mail-center-side-write">
+              <button
+                type="button"
+                className="mail-center-side-button selectable"
+                data-select-x="1"
+                data-select-height="2"
+                data-select-layer="0"
+                onClick={handleMailSend}
+              >
+                Send
+              </button>
+              <button
+                type="button"
+                className="mail-center-side-button selectable"
+                data-select-x="1"
+                data-select-height="3"
+                data-select-layer="0"
+              >
+                Insert Photos
+              </button>
+              <button
+                type="button"
+                className="mail-center-side-button selectable"
+                data-select-x="1"
+                data-select-height="4"
+                data-select-layer="0"
+                onClick={cancelMailCompose}
+              >
+                Save as Draft
+              </button>
+              <button
+                type="button"
+                className="mail-center-side-button selectable"
+                data-select-x="1"
+                data-select-height="5"
+                data-select-layer="0"
+                onClick={cancelMailCompose}
+              >
+                Cancel
+              </button>
+              <p className="mail-center-tip mail-center-tip-write">
+                Tip: To save your work, choose <b>Save as Draft</b>.
+              </p>
+            </aside>
+          </main>
+        )}
+      </div>
+    )
+  }
 
   const renderSlideshow = () => {
     const activePhoto = selectedPhotos[slideshowIndex % selectedPhotos.length]
@@ -1233,28 +1554,6 @@ export default function PhotosCenter({
   }
 
   const renderDialog = () => {
-    if (dialog === 'quality') {
-      return (
-        <SimpleDialog
-          dialogRef={dialogRef}
-          title="Choose photo quality"
-          showing={dialogShowing}
-          actions={[
-            { label: 'Full', onClick: () => openDialog('sent') },
-            { label: 'Friendly', onClick: () => openDialog('sent') },
-            { label: 'Cancel', onClick: () => { setDialog(null); setDialogShowing(false) } },
-          ]}
-        >
-          <p>Sending photos at full quality can take a long time.</p>
-          <p>
-            Choose <em>Friendly</em> to send lower quality photos that are e-mail friendly
-            (these are smaller files that are good for viewing but not for printing).
-            Choose <em>Full</em> if you do not want to change the quality.
-          </p>
-        </SimpleDialog>
-      )
-    }
-
     if (dialog === 'noSelection') {
       return (
         <SimpleDialog
@@ -1264,20 +1563,6 @@ export default function PhotosCenter({
           actions={[{ label: 'OK', onClick: () => { setDialog(null); setDialogShowing(false) } }]}
         >
           <p>Please choose one or more photos before selecting <strong>Send Photos</strong>.</p>
-        </SimpleDialog>
-      )
-    }
-
-    if (dialog === 'sent') {
-      return (
-        <SimpleDialog
-          dialogRef={dialogRef}
-          title="Photos Ready"
-          icon="info"
-          showing={dialogShowing}
-          actions={[{ label: 'Done', onClick: () => { setDialog(null); setDialogShowing(false) } }]}
-        >
-          <p>{selectedCount || 1} photo{(selectedCount || 1) === 1 ? '' : 's'} have been added to a new e-mail message.</p>
         </SimpleDialog>
       )
     }
@@ -1350,6 +1635,7 @@ export default function PhotosCenter({
     if (route.name === 'slideshow') return renderSlideshow()
     if (route.name === 'albums') return renderAlbums()
     if (route.name === 'albumViewer') return renderAlbumViewer()
+    if (route.name === 'mailCompose') return renderMailCompose()
     return renderHome()
   }
 

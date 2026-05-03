@@ -323,6 +323,7 @@ export default function SettingsPage({ page, onNavigate, onAction }) {
   const [controlState, setControlState] = useState(initialControlState)
   const contentRef = useRef(null)
   const [canScrollDown, setCanScrollDown] = useState(false)
+  const [canScrollUp, setCanScrollUp] = useState(false)
 
   useEffect(() => {
     setControlState(initialControlState)
@@ -332,10 +333,12 @@ export default function SettingsPage({ page, onNavigate, onAction }) {
     const node = contentRef.current
     if (!node) {
       setCanScrollDown(false)
+      setCanScrollUp(false)
       return
     }
     const maxScrollTop = Math.max(0, node.scrollHeight - node.clientHeight)
     setCanScrollDown(node.scrollTop < maxScrollTop - 1)
+    setCanScrollUp(node.scrollTop > 1)
   }, [])
 
   useEffect(() => {
@@ -554,7 +557,12 @@ export default function SettingsPage({ page, onNavigate, onAction }) {
           {isFullVariant && actionsAside}
         </section>
         <img
-          className={`settings-page-scroll-indicator ${canScrollDown ? '' : 'hidden'}`}
+          className={`settings-page-scroll-indicator settings-page-scroll-indicator-up ${canScrollUp ? '' : 'hidden'}`}
+          src={`${BASE}images/scrollindicatordown.png`}
+          alt=""
+        />
+        <img
+          className={`settings-page-scroll-indicator settings-page-scroll-indicator-down ${canScrollDown ? '' : 'hidden'}`}
           src={`${BASE}images/scrollindicatordown.png`}
           alt=""
         />

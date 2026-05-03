@@ -372,6 +372,8 @@ export default function DockPage({
   const [mailWriteSaveCopy, setMailWriteSaveCopy] = useState(true)
   const [mailSendCount, setMailSendCount] = useState(0)
   const [mailInitialReady, setMailInitialReady] = useState(false)
+  const [mailComposeAttachmentIds, setMailComposeAttachmentIds] = useState([])
+  const [mailPhotoSelectorOpen, setMailPhotoSelectorOpen] = useState(false)
   const mailWriteResetKeyRef = useRef(0)
 
   if (!page) return null
@@ -395,6 +397,9 @@ export default function DockPage({
     if (!subPageBackRef) return undefined
     let handler = null
     if (page?.layout === 'photosCenter') {
+      return undefined
+    }
+    if (page?.layout === 'mailCenter' && mailPhotoSelectorOpen) {
       return undefined
     }
     if (page?.layout === 'mapsCenter' && mapsScreen !== 'map') {
@@ -423,7 +428,7 @@ export default function DockPage({
         subPageBackRef.current = null
       }
     }
-  }, [subPageBackRef, page?.layout, mapsScreen, mailScreen, mailSortOpen])
+  }, [subPageBackRef, page?.layout, mapsScreen, mailScreen, mailSortOpen, mailPhotoSelectorOpen])
 
   const updateScrollIndicators = useCallback(() => {
     const node = bodyScrollRef.current
@@ -757,10 +762,17 @@ export default function DockPage({
     const timer = window.setTimeout(() => {
       mailWriteResetKeyRef.current += 1
       setMailWriteSaveCopy(true)
+      setMailComposeAttachmentIds([])
       setMailScreen('inbox')
     }, 3200)
     return () => window.clearTimeout(timer)
   }, [page.layout, mailScreen])
+
+  useEffect(() => {
+    if (page.layout !== 'mailCenter' || mailScreen === 'write' || mailScreen === 'sent') return
+    if (mailComposeAttachmentIds.length > 0) setMailComposeAttachmentIds([])
+    if (mailPhotoSelectorOpen) setMailPhotoSelectorOpen(false)
+  }, [mailComposeAttachmentIds.length, mailPhotoSelectorOpen, mailScreen, page.layout])
 
   useEffect(() => {
     if (page.layout !== 'mailCenter') return undefined
@@ -770,6 +782,7 @@ export default function DockPage({
 
   useEffect(() => {
     if (page.layout !== 'mailCenter' || !shellNodeRef.current || !selection) return undefined
+    if (mailPhotoSelectorOpen) return undefined
 
     const prev = mailFocusTrackRef.current
     const screenChanged = prev.screen !== mailScreen
@@ -791,7 +804,7 @@ export default function DockPage({
     })
 
     return () => window.cancelAnimationFrame(frame)
-  }, [page.layout, mailScreen, mailSortOpen, mailInitialReady, selection])
+  }, [page.layout, mailScreen, mailSortOpen, mailInitialReady, mailPhotoSelectorOpen, selection])
 
   const handleMoneyWatchlistAdd = useCallback(() => {
     const symbol = normalizeMoneyWatchlistInput(moneyWatchlistInputRef.current?.value)
@@ -1608,6 +1621,15 @@ export default function DockPage({
                   />
                 </span>
               </div>
+              {mailComposeAttachmentIds.length > 0 && (
+                <div className="mail-center-write-row photos-mail-attachments-row">
+                  <span className="mail-center-write-label-plain">Attached:</span>
+                  <span className="photos-mail-attachments">
+                    <span className="mail-center-attachment-icon" aria-hidden="true"></span>
+                    {mailComposeAttachmentIds.length} {mailComposeAttachmentIds.length === 1 ? 'attachment' : 'attachments'}
+                  </span>
+                </div>
+              )}
               <textarea
                 className="mail-center-write-body selectable"
                 placeholder="Type your message here"
@@ -1654,7 +1676,7 @@ export default function DockPage({
                 data-select-x="1"
                 data-select-height="3"
                 data-select-layer="0"
-                onClick={noop}
+                onClick={() => setMailPhotoSelectorOpen(true)}
               >
                 Insert Photos
               </button>
@@ -1668,6 +1690,7 @@ export default function DockPage({
                   audio?.play?.('emailDraft')
                   mailWriteResetKeyRef.current += 1
                   setMailWriteSaveCopy(true)
+                  setMailComposeAttachmentIds([])
                   setMailScreen('inbox')
                 }}
               >
@@ -1706,6 +1729,22 @@ export default function DockPage({
               </button>
             </section>
           </main>
+        )}
+        {mailPhotoSelectorOpen && (
+          <div className="mail-photo-selector-overlay">
+            <PhotosCenter
+              selection={selection}
+              audio={audio}
+              selectionMode
+              initialSelectedIds={mailComposeAttachmentIds}
+              onSelectionDone={(ids) => {
+                setMailComposeAttachmentIds(ids)
+                setMailPhotoSelectorOpen(false)
+              }}
+              onSelectionCancel={() => setMailPhotoSelectorOpen(false)}
+              subPageBackRef={subPageBackRef}
+            />
+          </div>
         )}
       </div>
     )
