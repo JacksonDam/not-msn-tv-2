@@ -5,12 +5,12 @@
     "displaySymbol": "$BAC"
   },
   "name": "BANK OF AMERICA CORPORATION",
-  "price": 52.25,
+  "price": 52.19,
   "previousClose": 53.24,
   "dayHigh": 53.07,
   "dayLow": 52,
-  "change": -0.990000000000002,
-  "changePercent": -1.8595041322314085,
+  "change": -1.0500000000000043,
+  "changePercent": -1.9722013523666495,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1777924200,
-      "close": 52.20859909057617
+      "close": 52.208560943603516
     },
     {
-      "timestamp": 1777924533,
-      "close": 52.25
+      "timestamp": 1777924500,
+      "close": 52.244998931884766
+    },
+    {
+      "timestamp": 1777924800,
+      "close": 52.189998626708984
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "USA TODAY",
     "publishedAt": "2026-05-04T18:50:51.000Z"
   },
-  "generatedAt": "2026-05-04T19:55:34.392Z"
+  "generatedAt": "2026-05-04T21:20:19.243Z"
 }

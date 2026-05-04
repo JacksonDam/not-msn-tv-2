@@ -5,12 +5,12 @@
     "displaySymbol": "$BDX"
   },
   "name": "BECTON, DICKINSON AND COMPANY",
-  "price": 146.625,
+  "price": 146.31,
   "previousClose": 149.31,
   "dayHigh": 150.495,
-  "dayLow": 146.54,
-  "change": -2.6850000000000023,
-  "changePercent": -1.79827205143661,
+  "dayLow": 146.19,
+  "change": -3,
+  "changePercent": -2.0092425155716294,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -324,8 +324,12 @@
       "close": 146.8000030517578
     },
     {
-      "timestamp": 1777924531,
-      "close": 146.625
+      "timestamp": 1777924500,
+      "close": 146.30999755859375
+    },
+    {
+      "timestamp": 1777924800,
+      "close": 146.30999755859375
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-05-04T17:47:00.000Z"
   },
-  "generatedAt": "2026-05-04T19:55:35.025Z"
+  "generatedAt": "2026-05-04T21:20:19.828Z"
 }
