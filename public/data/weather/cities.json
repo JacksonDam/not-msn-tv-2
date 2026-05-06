@@ -10,10 +10,10 @@
       "longitude": -122.4194,
       "displayName": "San Francisco, CA",
       "current": {
-        "tempC": 17,
-        "feelsLikeC": 18,
-        "condition": "Partly cloudy",
-        "icon": "cloudysun"
+        "tempC": 20,
+        "feelsLikeC": 21,
+        "condition": "Clear",
+        "icon": "sun"
       },
       "forecast": [
         {
@@ -36,7 +36,7 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 18,
-          "lowC": 11,
+          "lowC": 10,
           "condition": "Fog",
           "icon": "fog"
         },
@@ -58,8 +58,8 @@
       "longitude": -0.1276,
       "displayName": "London, England",
       "current": {
-        "tempC": 12,
-        "feelsLikeC": 9,
+        "tempC": 11,
+        "feelsLikeC": 8,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -76,8 +76,8 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 16,
-          "lowC": 9,
-          "condition": "Cloudy",
+          "lowC": 8,
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
@@ -93,7 +93,7 @@
           "day": "Sat",
           "highC": 20,
           "lowC": 12,
-          "condition": "Drizzle",
+          "condition": "Cloudy",
           "icon": "cloud"
         }
       ]
@@ -106,8 +106,8 @@
       "longitude": -77.0369,
       "displayName": "Washington, DC",
       "current": {
-        "tempC": 20,
-        "feelsLikeC": 19,
+        "tempC": 22,
+        "feelsLikeC": 22,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -115,7 +115,7 @@
         {
           "date": "2026-05-06",
           "day": "Wed",
-          "highC": 23,
+          "highC": 22,
           "lowC": 16,
           "condition": "Drizzle",
           "icon": "cloud"
@@ -123,9 +123,9 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 17,
+          "highC": 18,
           "lowC": 11,
-          "condition": "Rain",
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
@@ -156,23 +156,23 @@
       "current": {
         "tempC": 13,
         "feelsLikeC": 10,
-        "condition": "Partly cloudy",
-        "icon": "cloudysun"
+        "condition": "Cloudy",
+        "icon": "cloud"
       },
       "forecast": [
         {
           "date": "2026-05-06",
           "day": "Wed",
-          "highC": 14,
+          "highC": 13,
           "lowC": 7,
-          "condition": "Cloudy",
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 11,
-          "lowC": 4,
+          "lowC": 5,
           "condition": "Cloudy",
           "icon": "cloud"
         },
@@ -180,7 +180,7 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 14,
-          "lowC": 3,
+          "lowC": 2,
           "condition": "Drizzle",
           "icon": "cloud"
         },
@@ -202,7 +202,7 @@
       "longitude": -99.1332,
       "displayName": "Mexico City, Mexico",
       "current": {
-        "tempC": 30,
+        "tempC": 31,
         "feelsLikeC": 31,
         "condition": "Mostly clear",
         "icon": "suncloud"
@@ -212,14 +212,14 @@
           "date": "2026-05-06",
           "day": "Wed",
           "highC": 31,
-          "lowC": 17,
-          "condition": "Cloudy",
+          "lowC": 16,
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 31,
+          "highC": 30,
           "lowC": 18,
           "condition": "Rain",
           "icon": "cloud"
@@ -227,17 +227,17 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 27,
-          "lowC": 15,
-          "condition": "Rain",
+          "highC": 28,
+          "lowC": 16,
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 29,
+          "highC": 28,
           "lowC": 15,
-          "condition": "Rain",
+          "condition": "Drizzle",
           "icon": "cloud"
         }
       ]
@@ -250,8 +250,8 @@
       "longitude": -47.8828,
       "displayName": "Brasilia, Brazil",
       "current": {
-        "tempC": 25,
-        "feelsLikeC": 24,
+        "tempC": 23,
+        "feelsLikeC": 23,
         "condition": "Clear",
         "icon": "sun"
       },
@@ -267,8 +267,8 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 27,
-          "lowC": 17,
+          "highC": 28,
+          "lowC": 18,
           "condition": "Partly cloudy",
           "icon": "cloudysun"
         },
@@ -276,9 +276,9 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 27,
-          "lowC": 19,
-          "condition": "Partly cloudy",
-          "icon": "cloudysun"
+          "lowC": 18,
+          "condition": "Drizzle",
+          "icon": "cloud"
         },
         {
           "date": "2026-05-09",
@@ -298,16 +298,16 @@
       "longitude": -58.3816,
       "displayName": "Buenos Aires, Argentina",
       "current": {
-        "tempC": 23,
-        "feelsLikeC": 25,
-        "condition": "Cloudy",
+        "tempC": 21,
+        "feelsLikeC": 23,
+        "condition": "Rain",
         "icon": "cloud"
       },
       "forecast": [
         {
           "date": "2026-05-06",
           "day": "Wed",
-          "highC": 23,
+          "highC": 25,
           "lowC": 19,
           "condition": "Rain",
           "icon": "cloud"
@@ -325,14 +325,14 @@
           "day": "Fri",
           "highC": 12,
           "lowC": 9,
-          "condition": "Rain",
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 13,
-          "lowC": 7,
+          "lowC": 8,
           "condition": "Drizzle",
           "icon": "cloud"
         }
@@ -346,7 +346,7 @@
       "longitude": -70.6693,
       "displayName": "Santiago, Chile",
       "current": {
-        "tempC": 14,
+        "tempC": 13,
         "feelsLikeC": 13,
         "condition": "Rain",
         "icon": "cloud"
@@ -355,7 +355,7 @@
         {
           "date": "2026-05-06",
           "day": "Wed",
-          "highC": 18,
+          "highC": 19,
           "lowC": 10,
           "condition": "Rain",
           "icon": "cloud"
@@ -364,7 +364,7 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 15,
-          "lowC": 8,
+          "lowC": 9,
           "condition": "Drizzle",
           "icon": "cloud"
         },
@@ -372,14 +372,14 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 16,
-          "lowC": 6,
+          "lowC": 7,
           "condition": "Cloudy",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 16,
+          "highC": 17,
           "lowC": 5,
           "condition": "Clear",
           "icon": "sun"
@@ -394,10 +394,10 @@
       "longitude": -77.0428,
       "displayName": "Lima, Peru",
       "current": {
-        "tempC": 23,
-        "feelsLikeC": 24,
-        "condition": "Mostly clear",
-        "icon": "suncloud"
+        "tempC": 22,
+        "feelsLikeC": 22,
+        "condition": "Clear",
+        "icon": "sun"
       },
       "forecast": [
         {
@@ -411,7 +411,7 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 22,
+          "highC": 23,
           "lowC": 19,
           "condition": "Cloudy",
           "icon": "cloud"
@@ -442,10 +442,10 @@
       "longitude": -74.0721,
       "displayName": "Bogota, Colombia",
       "current": {
-        "tempC": 21,
-        "feelsLikeC": 21,
-        "condition": "Cloudy",
-        "icon": "cloud"
+        "tempC": 20,
+        "feelsLikeC": 18,
+        "condition": "Mostly clear",
+        "icon": "suncloud"
       },
       "forecast": [
         {
@@ -453,14 +453,14 @@
           "day": "Wed",
           "highC": 21,
           "lowC": 11,
-          "condition": "Drizzle",
+          "condition": "Cloudy",
           "icon": "cloud"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 21,
-          "lowC": 9,
+          "highC": 20,
+          "lowC": 8,
           "condition": "Drizzle",
           "icon": "cloud"
         },
@@ -468,8 +468,8 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 22,
-          "lowC": 10,
-          "condition": "Rain",
+          "lowC": 8,
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
@@ -490,8 +490,8 @@
       "longitude": -66.9036,
       "displayName": "Caracas, Venezuela",
       "current": {
-        "tempC": 30,
-        "feelsLikeC": 33,
+        "tempC": 28,
+        "feelsLikeC": 30,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -508,7 +508,7 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 29,
-          "lowC": 20,
+          "lowC": 21,
           "condition": "Drizzle",
           "icon": "cloud"
         },
@@ -516,15 +516,15 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 29,
-          "lowC": 19,
+          "lowC": 21,
           "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 29,
-          "lowC": 17,
+          "highC": 30,
+          "lowC": 18,
           "condition": "Drizzle",
           "icon": "cloud"
         }
@@ -538,7 +538,7 @@
       "longitude": 2.3522,
       "displayName": "Paris, France",
       "current": {
-        "tempC": 13,
+        "tempC": 12,
         "feelsLikeC": 10,
         "condition": "Cloudy",
         "icon": "cloud"
@@ -586,8 +586,8 @@
       "longitude": 13.405,
       "displayName": "Berlin, Germany",
       "current": {
-        "tempC": 11,
-        "feelsLikeC": 9,
+        "tempC": 10,
+        "feelsLikeC": 8,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -604,16 +604,16 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 12,
-          "lowC": 6,
-          "condition": "Cloudy",
+          "lowC": 7,
+          "condition": "Rain",
           "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 16,
-          "lowC": 8,
-          "condition": "Cloudy",
+          "lowC": 7,
+          "condition": "Rain",
           "icon": "cloud"
         },
         {
@@ -634,10 +634,10 @@
       "longitude": -3.7038,
       "displayName": "Madrid, Spain",
       "current": {
-        "tempC": 19,
-        "feelsLikeC": 16,
-        "condition": "Mostly clear",
-        "icon": "suncloud"
+        "tempC": 16,
+        "feelsLikeC": 13,
+        "condition": "Partly cloudy",
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -682,7 +682,7 @@
       "longitude": 12.4964,
       "displayName": "Rome, Italy",
       "current": {
-        "tempC": 17,
+        "tempC": 16,
         "feelsLikeC": 17,
         "condition": "Rain",
         "icon": "cloud"
@@ -730,10 +730,10 @@
       "longitude": -9.1393,
       "displayName": "Lisbon, Portugal",
       "current": {
-        "tempC": 16,
-        "feelsLikeC": 13,
-        "condition": "Partly cloudy",
-        "icon": "cloudysun"
+        "tempC": 14,
+        "feelsLikeC": 12,
+        "condition": "Mostly clear",
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -778,8 +778,8 @@
       "longitude": -6.2603,
       "displayName": "Dublin, Ireland",
       "current": {
-        "tempC": 13,
-        "feelsLikeC": 10,
+        "tempC": 12,
+        "feelsLikeC": 9,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -797,7 +797,7 @@
           "day": "Thu",
           "highC": 15,
           "lowC": 11,
-          "condition": "Drizzle",
+          "condition": "Cloudy",
           "icon": "cloud"
         },
         {
@@ -826,10 +826,10 @@
       "longitude": 4.9041,
       "displayName": "Amsterdam, Netherlands",
       "current": {
-        "tempC": 13,
-        "feelsLikeC": 9,
-        "condition": "Cloudy",
-        "icon": "cloud"
+        "tempC": 11,
+        "feelsLikeC": 8,
+        "condition": "Clear",
+        "icon": "nightclear"
       },
       "forecast": [
         {
@@ -851,7 +851,7 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 19,
+          "highC": 18,
           "lowC": 10,
           "condition": "Cloudy",
           "icon": "cloud"
@@ -860,8 +860,8 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 19,
-          "lowC": 9,
-          "condition": "Drizzle",
+          "lowC": 10,
+          "condition": "Cloudy",
           "icon": "cloud"
         }
       ]
@@ -874,10 +874,10 @@
       "longitude": 4.3517,
       "displayName": "Brussels, Belgium",
       "current": {
-        "tempC": 13,
-        "feelsLikeC": 10,
-        "condition": "Cloudy",
-        "icon": "cloud"
+        "tempC": 11,
+        "feelsLikeC": 8,
+        "condition": "Partly cloudy",
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -891,8 +891,8 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 17,
-          "lowC": 8,
+          "highC": 18,
+          "lowC": 9,
           "condition": "Cloudy",
           "icon": "cloud"
         },
@@ -900,7 +900,7 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 20,
-          "lowC": 12,
+          "lowC": 13,
           "condition": "Cloudy",
           "icon": "cloud"
         },
@@ -908,7 +908,7 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 21,
-          "lowC": 9,
+          "lowC": 11,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -922,8 +922,8 @@
       "longitude": 16.3738,
       "displayName": "Vienna, Austria",
       "current": {
-        "tempC": 20,
-        "feelsLikeC": 18,
+        "tempC": 19,
+        "feelsLikeC": 16,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -949,7 +949,7 @@
           "day": "Fri",
           "highC": 23,
           "lowC": 13,
-          "condition": "Rain",
+          "condition": "Cloudy",
           "icon": "cloud"
         },
         {
@@ -970,10 +970,10 @@
       "longitude": 7.4474,
       "displayName": "Bern, Switzerland",
       "current": {
-        "tempC": 9,
-        "feelsLikeC": 8,
-        "condition": "Mostly clear",
-        "icon": "suncloud"
+        "tempC": 7,
+        "feelsLikeC": 6,
+        "condition": "Partly cloudy",
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -995,8 +995,8 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 19,
-          "lowC": 5,
+          "highC": 20,
+          "lowC": 6,
           "condition": "Rain",
           "icon": "cloud"
         },
@@ -1018,10 +1018,10 @@
       "longitude": 18.0686,
       "displayName": "Stockholm, Sweden",
       "current": {
-        "tempC": 9,
-        "feelsLikeC": 5,
+        "tempC": 7,
+        "feelsLikeC": 3,
         "condition": "Clear",
-        "icon": "sun"
+        "icon": "nightclear"
       },
       "forecast": [
         {
@@ -1029,13 +1029,13 @@
           "day": "Wed",
           "highC": 13,
           "lowC": 4,
-          "condition": "Mostly clear",
-          "icon": "suncloud"
+          "condition": "Partly cloudy",
+          "icon": "cloudysun"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 15,
+          "highC": 14,
           "lowC": 5,
           "condition": "Partly cloudy",
           "icon": "cloudysun"
@@ -1043,7 +1043,7 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 16,
+          "highC": 15,
           "lowC": 6,
           "condition": "Cloudy",
           "icon": "cloud"
@@ -1052,7 +1052,7 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 15,
-          "lowC": 5,
+          "lowC": 6,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -1066,10 +1066,10 @@
       "longitude": 10.7522,
       "displayName": "Oslo, Norway",
       "current": {
-        "tempC": 14,
-        "feelsLikeC": 9,
-        "condition": "Cloudy",
-        "icon": "cloud"
+        "tempC": 11,
+        "feelsLikeC": 6,
+        "condition": "Clear",
+        "icon": "nightclear"
       },
       "forecast": [
         {
@@ -1077,14 +1077,14 @@
           "day": "Wed",
           "highC": 16,
           "lowC": 3,
-          "condition": "Cloudy",
-          "icon": "cloud"
+          "condition": "Partly cloudy",
+          "icon": "cloudysun"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 16,
-          "lowC": 5,
+          "lowC": 4,
           "condition": "Mostly clear",
           "icon": "suncloud"
         },
@@ -1092,16 +1092,16 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 18,
-          "lowC": 6,
+          "lowC": 7,
           "condition": "Cloudy",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 14,
-          "lowC": 6,
-          "condition": "Drizzle",
+          "highC": 15,
+          "lowC": 7,
+          "condition": "Cloudy",
           "icon": "cloud"
         }
       ]
@@ -1114,8 +1114,8 @@
       "longitude": 12.5683,
       "displayName": "Copenhagen, Denmark",
       "current": {
-        "tempC": 12,
-        "feelsLikeC": 8,
+        "tempC": 10,
+        "feelsLikeC": 7,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -1148,7 +1148,7 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 15,
-          "lowC": 7,
+          "lowC": 8,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -1180,7 +1180,7 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 13,
-          "lowC": 5,
+          "lowC": 6,
           "condition": "Cloudy",
           "icon": "cloud"
         },
@@ -1196,7 +1196,7 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 13,
-          "lowC": 4,
+          "lowC": 6,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -1210,10 +1210,10 @@
       "longitude": -21.9426,
       "displayName": "Reykjavik, Iceland",
       "current": {
-        "tempC": 5,
+        "tempC": 4,
         "feelsLikeC": -3,
-        "condition": "Mostly clear",
-        "icon": "suncloud"
+        "condition": "Clear",
+        "icon": "sun"
       },
       "forecast": [
         {
@@ -1243,7 +1243,7 @@
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 6,
+          "highC": 7,
           "lowC": 2,
           "condition": "Drizzle",
           "icon": "cloud"
@@ -1258,10 +1258,10 @@
       "longitude": 21.0122,
       "displayName": "Warsaw, Poland",
       "current": {
-        "tempC": 22,
-        "feelsLikeC": 22,
-        "condition": "Cloudy",
-        "icon": "cloud"
+        "tempC": 20,
+        "feelsLikeC": 19,
+        "condition": "Partly cloudy",
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -1306,9 +1306,9 @@
       "longitude": 14.4378,
       "displayName": "Prague, Czechia",
       "current": {
-        "tempC": 17,
-        "feelsLikeC": 17,
-        "condition": "Cloudy",
+        "tempC": 15,
+        "feelsLikeC": 15,
+        "condition": "Rain",
         "icon": "cloud"
       },
       "forecast": [
@@ -1317,22 +1317,22 @@
           "day": "Wed",
           "highC": 23,
           "lowC": 13,
-          "condition": "Thunderstorms",
+          "condition": "Rain",
           "icon": "cloud"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 18,
+          "highC": 17,
           "lowC": 11,
-          "condition": "Rain",
+          "condition": "Thunderstorms",
           "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 17,
-          "lowC": 9,
+          "highC": 16,
+          "lowC": 10,
           "condition": "Cloudy",
           "icon": "cloud"
         },
@@ -1354,8 +1354,8 @@
       "longitude": 19.0402,
       "displayName": "Budapest, Hungary",
       "current": {
-        "tempC": 23,
-        "feelsLikeC": 21,
+        "tempC": 20,
+        "feelsLikeC": 18,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -1388,7 +1388,7 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 26,
-          "lowC": 13,
+          "lowC": 14,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -1402,10 +1402,10 @@
       "longitude": 23.7275,
       "displayName": "Athens, Greece",
       "current": {
-        "tempC": 19,
-        "feelsLikeC": 18,
-        "condition": "Partly cloudy",
-        "icon": "nightcloud"
+        "tempC": 18,
+        "feelsLikeC": 16,
+        "condition": "Clear",
+        "icon": "nightclear"
       },
       "forecast": [
         {
@@ -1450,8 +1450,8 @@
       "longitude": 32.8597,
       "displayName": "Ankara, Turkey",
       "current": {
-        "tempC": 9,
-        "feelsLikeC": 7,
+        "tempC": 7,
+        "feelsLikeC": 5,
         "condition": "Clear",
         "icon": "nightclear"
       },
@@ -1498,10 +1498,10 @@
       "longitude": 37.6173,
       "displayName": "Moscow, Russia",
       "current": {
-        "tempC": 19,
-        "feelsLikeC": 18,
-        "condition": "Clear",
-        "icon": "nightclear"
+        "tempC": 16,
+        "feelsLikeC": 15,
+        "condition": "Mostly clear",
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -1546,8 +1546,8 @@
       "longitude": 30.5234,
       "displayName": "Kyiv, Ukraine",
       "current": {
-        "tempC": 23,
-        "feelsLikeC": 21,
+        "tempC": 21,
+        "feelsLikeC": 18,
         "condition": "Clear",
         "icon": "nightclear"
       },
@@ -1594,10 +1594,10 @@
       "longitude": 31.2357,
       "displayName": "Cairo, Egypt",
       "current": {
-        "tempC": 21,
-        "feelsLikeC": 18,
-        "condition": "Mostly clear",
-        "icon": "nightcloud"
+        "tempC": 18,
+        "feelsLikeC": 17,
+        "condition": "Cloudy",
+        "icon": "cloud"
       },
       "forecast": [
         {
@@ -1643,7 +1643,7 @@
       "displayName": "Pretoria, South Africa",
       "current": {
         "tempC": 8,
-        "feelsLikeC": 5,
+        "feelsLikeC": 4,
         "condition": "Clear",
         "icon": "nightclear"
       },
@@ -1675,7 +1675,7 @@
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 17,
+          "highC": 18,
           "lowC": 6,
           "condition": "Cloudy",
           "icon": "cloud"
@@ -1692,31 +1692,31 @@
       "current": {
         "tempC": 17,
         "feelsLikeC": 18,
-        "condition": "Rain",
+        "condition": "Cloudy",
         "icon": "cloud"
       },
       "forecast": [
         {
           "date": "2026-05-06",
           "day": "Wed",
-          "highC": 24,
+          "highC": 25,
           "lowC": 16,
-          "condition": "Rain",
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 24,
-          "lowC": 16,
-          "condition": "Drizzle",
+          "lowC": 17,
+          "condition": "Rain",
           "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 24,
-          "lowC": 15,
+          "lowC": 17,
           "condition": "Rain",
           "icon": "cloud"
         },
@@ -1724,7 +1724,7 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 23,
-          "lowC": 16,
+          "lowC": 17,
           "condition": "Rain",
           "icon": "cloud"
         }
@@ -1738,10 +1738,10 @@
       "longitude": 38.7578,
       "displayName": "Addis Ababa, Ethiopia",
       "current": {
-        "tempC": 18,
+        "tempC": 16,
         "feelsLikeC": 15,
-        "condition": "Partly cloudy",
-        "icon": "nightcloud"
+        "condition": "Clear",
+        "icon": "nightclear"
       },
       "forecast": [
         {
@@ -1763,7 +1763,7 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 28,
+          "highC": 27,
           "lowC": 13,
           "condition": "Cloudy",
           "icon": "cloud"
@@ -1771,9 +1771,9 @@
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 27,
+          "highC": 26,
           "lowC": 14,
-          "condition": "Drizzle",
+          "condition": "Cloudy",
           "icon": "cloud"
         }
       ]
@@ -1786,8 +1786,8 @@
       "longitude": 7.3986,
       "displayName": "Abuja, Nigeria",
       "current": {
-        "tempC": 29,
-        "feelsLikeC": 35,
+        "tempC": 28,
+        "feelsLikeC": 32,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -1795,7 +1795,7 @@
         {
           "date": "2026-05-06",
           "day": "Wed",
-          "highC": 33,
+          "highC": 32,
           "lowC": 24,
           "condition": "Thunderstorms",
           "icon": "cloud"
@@ -1811,8 +1811,8 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 34,
-          "lowC": 24,
+          "highC": 33,
+          "lowC": 23,
           "condition": "Thunderstorms",
           "icon": "cloud"
         },
@@ -1834,8 +1834,8 @@
       "longitude": -0.187,
       "displayName": "Accra, Ghana",
       "current": {
-        "tempC": 28,
-        "feelsLikeC": 32,
+        "tempC": 27,
+        "feelsLikeC": 31,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -1859,7 +1859,7 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 32,
+          "highC": 31,
           "lowC": 25,
           "condition": "Rain",
           "icon": "cloud"
@@ -1867,9 +1867,9 @@
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 32,
+          "highC": 31,
           "lowC": 25,
-          "condition": "Rain",
+          "condition": "Drizzle",
           "icon": "cloud"
         }
       ]
@@ -1885,7 +1885,7 @@
         "tempC": 17,
         "feelsLikeC": 17,
         "condition": "Partly cloudy",
-        "icon": "cloudysun"
+        "icon": "nightcloud"
       },
       "forecast": [
         {
@@ -1930,8 +1930,8 @@
       "longitude": 46.6753,
       "displayName": "Riyadh, Saudi Arabia",
       "current": {
-        "tempC": 32,
-        "feelsLikeC": 30,
+        "tempC": 30,
+        "feelsLikeC": 27,
         "condition": "Cloudy",
         "icon": "cloud"
       },
@@ -1948,23 +1948,23 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 38,
-          "lowC": 28,
+          "lowC": 27,
           "condition": "Cloudy",
           "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 37,
-          "lowC": 26,
+          "highC": 35,
+          "lowC": 25,
           "condition": "Cloudy",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 36,
-          "lowC": 23,
+          "highC": 37,
+          "lowC": 25,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -1978,8 +1978,8 @@
       "longitude": 35.2137,
       "displayName": "Jerusalem, Israel",
       "current": {
-        "tempC": 12,
-        "feelsLikeC": 10,
+        "tempC": 11,
+        "feelsLikeC": 9,
         "condition": "Clear",
         "icon": "nightclear"
       },
@@ -2026,32 +2026,24 @@
       "longitude": 55.2708,
       "displayName": "Dubai, United Arab Emirates",
       "current": {
-        "tempC": 31,
+        "tempC": 28,
         "feelsLikeC": 32,
         "condition": "Clear",
         "icon": "nightclear"
       },
       "forecast": [
         {
-          "date": "2026-05-06",
-          "day": "Wed",
-          "highC": 39,
-          "lowC": 26,
-          "condition": "Clear",
-          "icon": "sun"
-        },
-        {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 39,
-          "lowC": 26,
+          "highC": 37,
+          "lowC": 25,
           "condition": "Clear",
           "icon": "sun"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 34,
+          "highC": 35,
           "lowC": 25,
           "condition": "Clear",
           "icon": "sun"
@@ -2063,6 +2055,14 @@
           "lowC": 25,
           "condition": "Clear",
           "icon": "sun"
+        },
+        {
+          "date": "2026-05-10",
+          "day": "Sun",
+          "highC": 34,
+          "lowC": 26,
+          "condition": "Mostly clear",
+          "icon": "suncloud"
         }
       ]
     },
@@ -2074,43 +2074,43 @@
       "longitude": 77.209,
       "displayName": "New Delhi, India",
       "current": {
-        "tempC": 27,
-        "feelsLikeC": 27,
-        "condition": "Clear",
-        "icon": "nightclear"
+        "tempC": 26,
+        "feelsLikeC": 25,
+        "condition": "Mostly clear",
+        "icon": "nightcloud"
       },
       "forecast": [
-        {
-          "date": "2026-05-06",
-          "day": "Wed",
-          "highC": 35,
-          "lowC": 22,
-          "condition": "Mostly clear",
-          "icon": "suncloud"
-        },
         {
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 36,
-          "lowC": 24,
-          "condition": "Drizzle",
-          "icon": "cloud"
+          "lowC": 25,
+          "condition": "Partly cloudy",
+          "icon": "cloudysun"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 36,
-          "lowC": 22,
+          "highC": 37,
+          "lowC": 23,
           "condition": "Cloudy",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 37,
+          "highC": 38,
           "lowC": 25,
           "condition": "Mostly clear",
           "icon": "suncloud"
+        },
+        {
+          "date": "2026-05-10",
+          "day": "Sun",
+          "highC": 39,
+          "lowC": 27,
+          "condition": "Clear",
+          "icon": "sun"
         }
       ]
     },
@@ -2122,20 +2122,12 @@
       "longitude": 73.0479,
       "displayName": "Islamabad, Pakistan",
       "current": {
-        "tempC": 23,
-        "feelsLikeC": 21,
+        "tempC": 22,
+        "feelsLikeC": 20,
         "condition": "Clear",
         "icon": "nightclear"
       },
       "forecast": [
-        {
-          "date": "2026-05-06",
-          "day": "Wed",
-          "highC": 32,
-          "lowC": 19,
-          "condition": "Partly cloudy",
-          "icon": "cloudysun"
-        },
         {
           "date": "2026-05-07",
           "day": "Thu",
@@ -2147,7 +2139,7 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 35,
+          "highC": 36,
           "lowC": 21,
           "condition": "Mostly clear",
           "icon": "suncloud"
@@ -2155,10 +2147,18 @@
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 37,
-          "lowC": 22,
+          "highC": 38,
+          "lowC": 23,
           "condition": "Partly cloudy",
           "icon": "cloudysun"
+        },
+        {
+          "date": "2026-05-10",
+          "day": "Sun",
+          "highC": 39,
+          "lowC": 24,
+          "condition": "Cloudy",
+          "icon": "cloud"
         }
       ]
     },
@@ -2170,8 +2170,8 @@
       "longitude": 90.4125,
       "displayName": "Dhaka, Bangladesh",
       "current": {
-        "tempC": 24,
-        "feelsLikeC": 28,
+        "tempC": 23,
+        "feelsLikeC": 27,
         "condition": "Mostly clear",
         "icon": "nightcloud"
       },
@@ -2179,16 +2179,16 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 30,
-          "lowC": 22,
+          "highC": 31,
+          "lowC": 23,
           "condition": "Rain",
           "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 31,
-          "lowC": 23,
+          "highC": 32,
+          "lowC": 22,
           "condition": "Rain",
           "icon": "cloud"
         },
@@ -2196,16 +2196,16 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 32,
-          "lowC": 23,
+          "lowC": 22,
           "condition": "Thunderstorms",
           "icon": "cloud"
         },
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 33,
+          "highC": 32,
           "lowC": 23,
-          "condition": "Drizzle",
+          "condition": "Rain",
           "icon": "cloud"
         }
       ]
@@ -2218,8 +2218,8 @@
       "longitude": 116.4074,
       "displayName": "Beijing, China",
       "current": {
-        "tempC": 17,
-        "feelsLikeC": 11,
+        "tempC": 15,
+        "feelsLikeC": 9,
         "condition": "Clear",
         "icon": "nightclear"
       },
@@ -2251,8 +2251,8 @@
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 32,
-          "lowC": 17,
+          "highC": 33,
+          "lowC": 18,
           "condition": "Cloudy",
           "icon": "cloud"
         }
@@ -2267,9 +2267,9 @@
       "displayName": "Tokyo, Japan",
       "current": {
         "tempC": 15,
-        "feelsLikeC": 16,
+        "feelsLikeC": 15,
         "condition": "Mostly clear",
-        "icon": "nightcloud"
+        "icon": "suncloud"
       },
       "forecast": [
         {
@@ -2299,7 +2299,7 @@
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 24,
+          "highC": 25,
           "lowC": 12,
           "condition": "Mostly clear",
           "icon": "suncloud"
@@ -2314,10 +2314,10 @@
       "longitude": 126.978,
       "displayName": "Seoul, South Korea",
       "current": {
-        "tempC": 11,
-        "feelsLikeC": 10,
-        "condition": "Partly cloudy",
-        "icon": "nightcloud"
+        "tempC": 10,
+        "feelsLikeC": 9,
+        "condition": "Mostly clear",
+        "icon": "suncloud"
       },
       "forecast": [
         {
@@ -2363,7 +2363,7 @@
       "displayName": "Bangkok, Thailand",
       "current": {
         "tempC": 29,
-        "feelsLikeC": 35,
+        "feelsLikeC": 36,
         "condition": "Thunderstorms",
         "icon": "cloud"
       },
@@ -2372,22 +2372,22 @@
           "date": "2026-05-07",
           "day": "Thu",
           "highC": 35,
-          "lowC": 27,
+          "lowC": 28,
           "condition": "Thunderstorms",
           "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 34,
-          "lowC": 27,
+          "highC": 33,
+          "lowC": 28,
           "condition": "Thunderstorms",
           "icon": "cloud"
         },
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 33,
+          "highC": 32,
           "lowC": 26,
           "condition": "Thunderstorms",
           "icon": "cloud"
@@ -2411,57 +2411,9 @@
       "displayName": "Hanoi, Vietnam",
       "current": {
         "tempC": 25,
-        "feelsLikeC": 29,
+        "feelsLikeC": 30,
         "condition": "Clear",
         "icon": "nightclear"
-      },
-      "forecast": [
-        {
-          "date": "2026-05-07",
-          "day": "Thu",
-          "highC": 30,
-          "lowC": 24,
-          "condition": "Rain",
-          "icon": "cloud"
-        },
-        {
-          "date": "2026-05-08",
-          "day": "Fri",
-          "highC": 27,
-          "lowC": 23,
-          "condition": "Rain",
-          "icon": "cloud"
-        },
-        {
-          "date": "2026-05-09",
-          "day": "Sat",
-          "highC": 28,
-          "lowC": 24,
-          "condition": "Rain",
-          "icon": "cloud"
-        },
-        {
-          "date": "2026-05-10",
-          "day": "Sun",
-          "highC": 29,
-          "lowC": 24,
-          "condition": "Rain",
-          "icon": "cloud"
-        }
-      ]
-    },
-    {
-      "id": "jakarta",
-      "name": "Jakarta",
-      "country": "Indonesia",
-      "latitude": -6.2088,
-      "longitude": 106.8456,
-      "displayName": "Jakarta, Indonesia",
-      "current": {
-        "tempC": 26,
-        "feelsLikeC": 31,
-        "condition": "Cloudy",
-        "icon": "cloud"
       },
       "forecast": [
         {
@@ -2475,9 +2427,57 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 32,
+          "highC": 28,
+          "lowC": 24,
+          "condition": "Rain",
+          "icon": "cloud"
+        },
+        {
+          "date": "2026-05-09",
+          "day": "Sat",
+          "highC": 28,
           "lowC": 23,
+          "condition": "Rain",
+          "icon": "cloud"
+        },
+        {
+          "date": "2026-05-10",
+          "day": "Sun",
+          "highC": 31,
+          "lowC": 24,
           "condition": "Drizzle",
+          "icon": "cloud"
+        }
+      ]
+    },
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "country": "Indonesia",
+      "latitude": -6.2088,
+      "longitude": 106.8456,
+      "displayName": "Jakarta, Indonesia",
+      "current": {
+        "tempC": 25,
+        "feelsLikeC": 30,
+        "condition": "Partly cloudy",
+        "icon": "nightcloud"
+      },
+      "forecast": [
+        {
+          "date": "2026-05-07",
+          "day": "Thu",
+          "highC": 32,
+          "lowC": 25,
+          "condition": "Rain",
+          "icon": "cloud"
+        },
+        {
+          "date": "2026-05-08",
+          "day": "Fri",
+          "highC": 31,
+          "lowC": 24,
+          "condition": "Cloudy",
           "icon": "cloud"
         },
         {
@@ -2485,13 +2485,13 @@
           "day": "Sat",
           "highC": 32,
           "lowC": 25,
-          "condition": "Drizzle",
+          "condition": "Rain",
           "icon": "cloud"
         },
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 32,
+          "highC": 31,
           "lowC": 25,
           "condition": "Thunderstorms",
           "icon": "cloud"
@@ -2515,17 +2515,17 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 36,
+          "highC": 37,
           "lowC": 27,
-          "condition": "Mostly clear",
-          "icon": "suncloud"
+          "condition": "Drizzle",
+          "icon": "cloud"
         },
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 37,
+          "highC": 36,
           "lowC": 28,
-          "condition": "Cloudy",
+          "condition": "Drizzle",
           "icon": "cloud"
         },
         {
@@ -2539,9 +2539,9 @@
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 36,
-          "lowC": 28,
-          "condition": "Drizzle",
+          "highC": 37,
+          "lowC": 27,
+          "condition": "Cloudy",
           "icon": "cloud"
         }
       ]
@@ -2554,16 +2554,16 @@
       "longitude": 101.6869,
       "displayName": "Kuala Lumpur, Malaysia",
       "current": {
-        "tempC": 24,
-        "feelsLikeC": 30,
-        "condition": "Mostly clear",
-        "icon": "nightcloud"
+        "tempC": 25,
+        "feelsLikeC": 31,
+        "condition": "Cloudy",
+        "icon": "cloud"
       },
       "forecast": [
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 32,
+          "highC": 33,
           "lowC": 24,
           "condition": "Rain",
           "icon": "cloud"
@@ -2571,7 +2571,7 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 32,
+          "highC": 34,
           "lowC": 24,
           "condition": "Thunderstorms",
           "icon": "cloud"
@@ -2587,7 +2587,7 @@
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 33,
+          "highC": 32,
           "lowC": 24,
           "condition": "Rain",
           "icon": "cloud"
@@ -2611,7 +2611,7 @@
         {
           "date": "2026-05-07",
           "day": "Thu",
-          "highC": 31,
+          "highC": 32,
           "lowC": 24,
           "condition": "Rain",
           "icon": "cloud"
@@ -2627,8 +2627,8 @@
         {
           "date": "2026-05-09",
           "day": "Sat",
-          "highC": 31,
-          "lowC": 24,
+          "highC": 32,
+          "lowC": 23,
           "condition": "Rain",
           "icon": "cloud"
         },
@@ -2651,9 +2651,9 @@
       "displayName": "Canberra, Australia",
       "current": {
         "tempC": 8,
-        "feelsLikeC": 5,
-        "condition": "Cloudy",
-        "icon": "cloud"
+        "feelsLikeC": 4,
+        "condition": "Mostly clear",
+        "icon": "suncloud"
       },
       "forecast": [
         {
@@ -2667,8 +2667,8 @@
         {
           "date": "2026-05-08",
           "day": "Fri",
-          "highC": 13,
-          "lowC": 3,
+          "highC": 14,
+          "lowC": 4,
           "condition": "Drizzle",
           "icon": "cloud"
         },
@@ -2683,7 +2683,7 @@
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 17,
+          "highC": 18,
           "lowC": 3,
           "condition": "Cloudy",
           "icon": "cloud"
@@ -2698,10 +2698,10 @@
       "longitude": 174.7762,
       "displayName": "Wellington, New Zealand",
       "current": {
-        "tempC": 15,
-        "feelsLikeC": 11,
-        "condition": "Partly cloudy",
-        "icon": "nightcloud"
+        "tempC": 16,
+        "feelsLikeC": 12,
+        "condition": "Cloudy",
+        "icon": "cloud"
       },
       "forecast": [
         {
@@ -2716,7 +2716,7 @@
           "date": "2026-05-08",
           "day": "Fri",
           "highC": 18,
-          "lowC": 15,
+          "lowC": 16,
           "condition": "Rain",
           "icon": "cloud"
         },
@@ -2724,20 +2724,20 @@
           "date": "2026-05-09",
           "day": "Sat",
           "highC": 16,
-          "lowC": 13,
+          "lowC": 14,
           "condition": "Drizzle",
           "icon": "cloud"
         },
         {
           "date": "2026-05-10",
           "day": "Sun",
-          "highC": 17,
+          "highC": 16,
           "lowC": 9,
-          "condition": "Drizzle",
+          "condition": "Rain",
           "icon": "cloud"
         }
       ]
     }
   ],
-  "generatedAt": "2026-05-06T18:59:22.146Z"
+  "generatedAt": "2026-05-06T20:46:56.074Z"
 }

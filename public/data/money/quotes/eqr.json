@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 66.46,
+  "price": 66.16,
   "previousClose": 66.25,
   "dayHigh": 66.855,
   "dayLow": 66.06,
-  "change": 0.20999999999999375,
-  "changePercent": 0.3169811320754623,
+  "change": -0.09000000000000341,
+  "changePercent": -0.13584905660377875,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,17 +277,65 @@
     },
     {
       "timestamp": 1778093700,
-      "close": 66.43499755859375
+      "close": 66.44000244140625
     },
     {
-      "timestamp": 1778093978,
+      "timestamp": 1778094000,
+      "close": 66.51000213623047
+    },
+    {
+      "timestamp": 1778094300,
+      "close": 66.51499938964844
+    },
+    {
+      "timestamp": 1778094600,
       "close": 66.45999908447266
+    },
+    {
+      "timestamp": 1778094900,
+      "close": 66.5
+    },
+    {
+      "timestamp": 1778095200,
+      "close": 66.63999938964844
+    },
+    {
+      "timestamp": 1778095500,
+      "close": 66.62999725341797
+    },
+    {
+      "timestamp": 1778095800,
+      "close": 66.52999877929688
+    },
+    {
+      "timestamp": 1778096100,
+      "close": 66.4800033569336
+    },
+    {
+      "timestamp": 1778096400,
+      "close": 66.47000122070312
+    },
+    {
+      "timestamp": 1778096700,
+      "close": 66.43000030517578
+    },
+    {
+      "timestamp": 1778097000,
+      "close": 66.40499877929688
+    },
+    {
+      "timestamp": 1778097300,
+      "close": 66.16000366210938
+    },
+    {
+      "timestamp": 1778097600,
+      "close": 66.16000366210938
     }
   ],
   "news": {
-    "title": "JPMorgan Adjusts Price Target on Equity Residential to $72 From $71, Maintains Neutral Rating",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-05-05T10:14:11.000Z"
+    "title": "Analyst Report: Equity Residential",
+    "publisher": "Argus Research",
+    "publishedAt": "2026-05-06T18:24:17.000Z"
   },
-  "generatedAt": "2026-05-06T18:59:49.614Z"
+  "generatedAt": "2026-05-06T20:47:32.666Z"
 }
