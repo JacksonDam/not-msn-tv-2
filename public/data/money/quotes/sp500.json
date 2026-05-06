@@ -5,337 +5,89 @@
     "displaySymbol": "$S&P"
   },
   "name": "S&P 500",
-  "price": 7259.22,
-  "previousClose": 7200.75,
-  "dayHigh": 7273.26,
-  "dayLow": 7233.62,
-  "change": 58.470000000000255,
-  "changePercent": 0.8119987501301983,
+  "price": 7341.29,
+  "previousClose": 7259.22,
+  "dayHigh": 7344,
+  "dayLow": 7294.14,
+  "change": 82.06999999999971,
+  "changePercent": 1.1305622367141333,
   "currency": "USD",
   "exchangeName": "SNP",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1777987800,
-      "close": 7246.240234375
+      "timestamp": 1778074200,
+      "close": 7315.2001953125
     },
     {
-      "timestamp": 1777988100,
-      "close": 7245.740234375
+      "timestamp": 1778074500,
+      "close": 7314.9501953125
     },
     {
-      "timestamp": 1777988400,
-      "close": 7245.10009765625
+      "timestamp": 1778074800,
+      "close": 7315.27001953125
     },
     {
-      "timestamp": 1777988700,
-      "close": 7245.18994140625
+      "timestamp": 1778075100,
+      "close": 7314.31005859375
     },
     {
-      "timestamp": 1777989000,
-      "close": 7247.1298828125
+      "timestamp": 1778075400,
+      "close": 7319.75
     },
     {
-      "timestamp": 1777989300,
-      "close": 7248.5498046875
+      "timestamp": 1778075700,
+      "close": 7319.97021484375
     },
     {
-      "timestamp": 1777989600,
-      "close": 7250.60986328125
+      "timestamp": 1778076000,
+      "close": 7317.2001953125
     },
     {
-      "timestamp": 1777989900,
-      "close": 7254.9599609375
+      "timestamp": 1778076300,
+      "close": 7321.56005859375
     },
     {
-      "timestamp": 1777990200,
-      "close": 7246.43017578125
+      "timestamp": 1778076600,
+      "close": 7323.7900390625
     },
     {
-      "timestamp": 1777990500,
-      "close": 7244.14013671875
+      "timestamp": 1778076900,
+      "close": 7320.0498046875
     },
     {
-      "timestamp": 1777990800,
-      "close": 7255.990234375
+      "timestamp": 1778077200,
+      "close": 7325.27001953125
     },
     {
-      "timestamp": 1777991100,
-      "close": 7256.1298828125
+      "timestamp": 1778077500,
+      "close": 7322.580078125
     },
     {
-      "timestamp": 1777991400,
-      "close": 7253.85986328125
+      "timestamp": 1778077800,
+      "close": 7333.35986328125
     },
     {
-      "timestamp": 1777991700,
-      "close": 7250.3798828125
+      "timestamp": 1778078100,
+      "close": 7336.259765625
     },
     {
-      "timestamp": 1777992000,
-      "close": 7250.6298828125
+      "timestamp": 1778078400,
+      "close": 7341.830078125
     },
     {
-      "timestamp": 1777992300,
-      "close": 7250.89013671875
+      "timestamp": 1778078700,
+      "close": 7341.8798828125
     },
     {
-      "timestamp": 1777992600,
-      "close": 7252.85009765625
-    },
-    {
-      "timestamp": 1777992900,
-      "close": 7254.47021484375
-    },
-    {
-      "timestamp": 1777993200,
-      "close": 7258.39013671875
-    },
-    {
-      "timestamp": 1777993500,
-      "close": 7257.02978515625
-    },
-    {
-      "timestamp": 1777993800,
-      "close": 7259.6201171875
-    },
-    {
-      "timestamp": 1777994100,
-      "close": 7256.8798828125
-    },
-    {
-      "timestamp": 1777994400,
-      "close": 7255.009765625
-    },
-    {
-      "timestamp": 1777994700,
-      "close": 7257.52001953125
-    },
-    {
-      "timestamp": 1777995000,
-      "close": 7252.68994140625
-    },
-    {
-      "timestamp": 1777995300,
-      "close": 7253.5400390625
-    },
-    {
-      "timestamp": 1777995600,
-      "close": 7254.25
-    },
-    {
-      "timestamp": 1777995900,
-      "close": 7256.41015625
-    },
-    {
-      "timestamp": 1777996200,
-      "close": 7256.169921875
-    },
-    {
-      "timestamp": 1777996500,
-      "close": 7253.580078125
-    },
-    {
-      "timestamp": 1777996800,
-      "close": 7256.77978515625
-    },
-    {
-      "timestamp": 1777997100,
-      "close": 7258.6201171875
-    },
-    {
-      "timestamp": 1777997400,
-      "close": 7258.5
-    },
-    {
-      "timestamp": 1777997700,
-      "close": 7259.2001953125
-    },
-    {
-      "timestamp": 1777998000,
-      "close": 7260.64990234375
-    },
-    {
-      "timestamp": 1777998300,
-      "close": 7258.77001953125
-    },
-    {
-      "timestamp": 1777998600,
-      "close": 7257.8798828125
-    },
-    {
-      "timestamp": 1777998900,
-      "close": 7257.33984375
-    },
-    {
-      "timestamp": 1777999200,
-      "close": 7257.58984375
-    },
-    {
-      "timestamp": 1777999500,
-      "close": 7259.2998046875
-    },
-    {
-      "timestamp": 1777999800,
-      "close": 7258.60009765625
-    },
-    {
-      "timestamp": 1778000100,
-      "close": 7257.89990234375
-    },
-    {
-      "timestamp": 1778000400,
-      "close": 7258.4599609375
-    },
-    {
-      "timestamp": 1778000700,
-      "close": 7255.60986328125
-    },
-    {
-      "timestamp": 1778001000,
-      "close": 7256.330078125
-    },
-    {
-      "timestamp": 1778001300,
-      "close": 7259.2998046875
-    },
-    {
-      "timestamp": 1778001600,
-      "close": 7258.8798828125
-    },
-    {
-      "timestamp": 1778001900,
-      "close": 7261.68017578125
-    },
-    {
-      "timestamp": 1778002200,
-      "close": 7260.89990234375
-    },
-    {
-      "timestamp": 1778002500,
-      "close": 7261.0400390625
-    },
-    {
-      "timestamp": 1778002800,
-      "close": 7261.919921875
-    },
-    {
-      "timestamp": 1778003100,
-      "close": 7262.10009765625
-    },
-    {
-      "timestamp": 1778003400,
-      "close": 7263.919921875
-    },
-    {
-      "timestamp": 1778003700,
-      "close": 7263.0400390625
-    },
-    {
-      "timestamp": 1778004000,
-      "close": 7264.81005859375
-    },
-    {
-      "timestamp": 1778004300,
-      "close": 7266.0498046875
-    },
-    {
-      "timestamp": 1778004600,
-      "close": 7269.06005859375
-    },
-    {
-      "timestamp": 1778004900,
-      "close": 7268.330078125
-    },
-    {
-      "timestamp": 1778005200,
-      "close": 7268.080078125
-    },
-    {
-      "timestamp": 1778005500,
-      "close": 7267.990234375
-    },
-    {
-      "timestamp": 1778005800,
-      "close": 7265.85986328125
-    },
-    {
-      "timestamp": 1778006100,
-      "close": 7264.759765625
-    },
-    {
-      "timestamp": 1778006400,
-      "close": 7266.169921875
-    },
-    {
-      "timestamp": 1778006700,
-      "close": 7267.06982421875
-    },
-    {
-      "timestamp": 1778007000,
-      "close": 7265.490234375
-    },
-    {
-      "timestamp": 1778007300,
-      "close": 7266.06005859375
-    },
-    {
-      "timestamp": 1778007600,
-      "close": 7267.56982421875
-    },
-    {
-      "timestamp": 1778007900,
-      "close": 7270.35986328125
-    },
-    {
-      "timestamp": 1778008200,
-      "close": 7270.43994140625
-    },
-    {
-      "timestamp": 1778008500,
-      "close": 7271.60986328125
-    },
-    {
-      "timestamp": 1778008800,
-      "close": 7272.77001953125
-    },
-    {
-      "timestamp": 1778009100,
-      "close": 7270.18017578125
-    },
-    {
-      "timestamp": 1778009400,
-      "close": 7269.259765625
-    },
-    {
-      "timestamp": 1778009700,
-      "close": 7270.3798828125
-    },
-    {
-      "timestamp": 1778010000,
-      "close": 7270.4599609375
-    },
-    {
-      "timestamp": 1778010300,
-      "close": 7267.10009765625
-    },
-    {
-      "timestamp": 1778010600,
-      "close": 7259.7099609375
-    },
-    {
-      "timestamp": 1778010900,
-      "close": 7259.47021484375
-    },
-    {
-      "timestamp": 1778011200,
-      "close": 7259.22021484375
+      "timestamp": 1778078786,
+      "close": 7341.2900390625
     }
   ],
   "news": {
-    "title": "Is Your Nest Egg Enough To Be 'Upper Class' In Retirement? Here's What You Need For A Top 20% Life",
-    "publisher": "Benzinga",
-    "publishedAt": "2026-05-06T12:01:09.000Z"
+    "title": "Factbox-Hedge funds turn nimble to deliver April gains, say sources",
+    "publisher": "Reuters",
+    "publishedAt": "2026-05-06T14:35:36.000Z"
   },
-  "generatedAt": "2026-05-06T12:06:22.158Z"
+  "generatedAt": "2026-05-06T14:46:27.490Z"
 }
