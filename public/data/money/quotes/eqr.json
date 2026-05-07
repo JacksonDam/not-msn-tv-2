@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 66.055,
+  "price": 65.86,
   "previousClose": 66.16,
   "dayHigh": 66.49,
   "dayLow": 65.78,
-  "change": -0.10499999999998977,
-  "changePercent": -0.15870616686818284,
+  "change": -0.29999999999999716,
+  "changePercent": -0.45344619105199085,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1778183400,
-      "close": 66.04499816894531
+      "close": 66.01499938964844
     },
     {
-      "timestamp": 1778183670,
-      "close": 66.05500030517578
+      "timestamp": 1778183700,
+      "close": 65.87000274658203
+    },
+    {
+      "timestamp": 1778184000,
+      "close": 65.86000061035156
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-05-06T18:24:17.000Z"
   },
-  "generatedAt": "2026-05-07T19:54:33.859Z"
+  "generatedAt": "2026-05-07T21:15:36.348Z"
 }
