@@ -5,12 +5,12 @@
     "displaySymbol": "$NWSA"
   },
   "name": "NEWS CORPORATION",
-  "price": 26.955,
+  "price": 27.02,
   "previousClose": 27.04,
-  "dayHigh": 27.01,
+  "dayHigh": 27.03,
   "dayLow": 25.97,
-  "change": -0.08500000000000085,
-  "changePercent": -0.3143491124260387,
+  "change": -0.019999999999999574,
+  "changePercent": -0.07396449704141854,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1778269500,
-      "close": 26.950000762939453
+      "close": 26.8700008392334
     },
     {
-      "timestamp": 1778269563,
-      "close": 26.954999923706055
+      "timestamp": 1778269800,
+      "close": 26.854999542236328
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 27.030000686645508
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 27.020000457763672
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-05-08T19:23:08.000Z"
   },
-  "generatedAt": "2026-05-08T19:46:05.596Z"
+  "generatedAt": "2026-05-08T21:17:55.938Z"
 }

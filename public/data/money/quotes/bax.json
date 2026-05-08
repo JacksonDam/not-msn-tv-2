@@ -5,12 +5,12 @@
     "displaySymbol": "$BAX"
   },
   "name": "BAXTER INTERNATIONAL INC.",
-  "price": 17.88,
+  "price": 17.99,
   "previousClose": 17.49,
-  "dayHigh": 17.92,
+  "dayHigh": 18,
   "dayLow": 17.285,
-  "change": 0.39000000000000057,
-  "changePercent": 2.2298456260720445,
+  "change": 0.5,
+  "changePercent": 2.858776443682104,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 17.885000228881836
     },
     {
-      "timestamp": 1778269507,
-      "close": 17.8799991607666
+      "timestamp": 1778269500,
+      "close": 17.8700008392334
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 17.889999389648438
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 18
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 17.989999771118164
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-05-08T13:23:51.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:10.200Z"
+  "generatedAt": "2026-05-08T21:17:15.377Z"
 }

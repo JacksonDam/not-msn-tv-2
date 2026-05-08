@@ -5,12 +5,12 @@
     "displaySymbol": "$EXC"
   },
   "name": "EXELON CORPORATION",
-  "price": 44.1,
+  "price": 43.91,
   "previousClose": 44.41,
   "dayHigh": 44.75,
-  "dayLow": 44.045,
-  "change": -0.30999999999999517,
-  "changePercent": -0.6980409817608538,
+  "dayLow": 43.87,
+  "change": -0.5,
+  "changePercent": -1.1258725512272012,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 44.084999084472656
     },
     {
-      "timestamp": 1778269525,
-      "close": 44.099998474121094
+      "timestamp": 1778269500,
+      "close": 44.025001525878906
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 44.025001525878906
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 43.8849983215332
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 43.90999984741211
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-05-07T15:36:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:34.840Z"
+  "generatedAt": "2026-05-08T21:17:32.620Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$SHW"
   },
   "name": "THE SHERWIN-WILLIAMS COMPANY",
-  "price": 316.5,
+  "price": 316.82,
   "previousClose": 320.21,
   "dayHigh": 323.635,
-  "dayLow": 315.98,
-  "change": -3.7099999999999795,
-  "changePercent": -1.1586146591299398,
+  "dayLow": 315.85,
+  "change": -3.3899999999999864,
+  "changePercent": -1.0586802410917795,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1778269500,
-      "close": 316.69000244140625
+      "close": 316.5299987792969
     },
     {
-      "timestamp": 1778269572,
-      "close": 316.5
+      "timestamp": 1778269800,
+      "close": 316.0199890136719
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 316.75
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 316.82000732421875
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-05-08T13:45:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:46:16.705Z"
+  "generatedAt": "2026-05-08T21:18:04.378Z"
 }

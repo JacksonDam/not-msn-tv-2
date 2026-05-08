@@ -5,12 +5,12 @@
     "displaySymbol": "$HOOD"
   },
   "name": "ROBINHOOD MARKETS, INC.",
-  "price": 76.57,
+  "price": 77.03,
   "previousClose": 76.28,
-  "dayHigh": 76.87,
+  "dayHigh": 77.065,
   "dayLow": 74.25,
-  "change": 0.28999999999999204,
-  "changePercent": 0.38017829050864194,
+  "change": 0.75,
+  "changePercent": 0.9832197168327216,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 76.55999755859375
     },
     {
-      "timestamp": 1778269543,
-      "close": 76.56999969482422
+      "timestamp": 1778269500,
+      "close": 76.46099853515625
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 76.66000366210938
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 77.05719757080078
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 77.02999877929688
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Yahoo Finance Video",
     "publishedAt": "2026-05-08T16:48:02.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:44.851Z"
+  "generatedAt": "2026-05-08T21:17:39.931Z"
 }

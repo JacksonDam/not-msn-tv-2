@@ -5,12 +5,12 @@
     "displaySymbol": "$NDSN"
   },
   "name": "NORDSON CORPORATION",
-  "price": 284.4,
+  "price": 283.53,
   "previousClose": 284.13,
   "dayHigh": 286.424,
   "dayLow": 282.64,
-  "change": 0.2699999999999818,
-  "changePercent": 0.09502692429521058,
+  "change": -0.6000000000000227,
+  "changePercent": -0.211170942878268,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 284.17999267578125
     },
     {
-      "timestamp": 1778269548,
-      "close": 284.3999938964844
+      "timestamp": 1778269500,
+      "close": 284.25
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 283.4599914550781
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 283.4599914550781
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 283.5299987792969
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-05-02T13:35:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:46:02.892Z"
+  "generatedAt": "2026-05-08T21:17:53.884Z"
 }

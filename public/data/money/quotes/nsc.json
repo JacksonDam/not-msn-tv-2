@@ -5,12 +5,12 @@
     "displaySymbol": "$NSC"
   },
   "name": "NORFOLK SOUTHERN CORPORATION",
-  "price": 313.07,
+  "price": 312.01,
   "previousClose": 312.04,
   "dayHigh": 315.02,
-  "dayLow": 312.305,
-  "change": 1.0299999999999727,
-  "changePercent": 0.33008588642480857,
+  "dayLow": 312,
+  "change": -0.03000000000002956,
+  "changePercent": -0.009614152031800268,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,19 +305,31 @@
     },
     {
       "timestamp": 1778268600,
-      "close": 313.2650146484375
+      "close": 313.2349853515625
     },
     {
       "timestamp": 1778268900,
-      "close": 313.0199890136719
+      "close": 313.1499938964844
     },
     {
       "timestamp": 1778269200,
       "close": 313.05499267578125
     },
     {
-      "timestamp": 1778269539,
-      "close": 313.07000732421875
+      "timestamp": 1778269500,
+      "close": 313.1199951171875
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 312.9800109863281
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 312.1700134277344
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 312.010009765625
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Morningstar Research",
     "publishedAt": "2026-05-07T19:46:38.000Z"
   },
-  "generatedAt": "2026-05-08T19:46:04.424Z"
+  "generatedAt": "2026-05-08T21:17:55.014Z"
 }

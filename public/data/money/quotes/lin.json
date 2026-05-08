@@ -5,12 +5,12 @@
     "displaySymbol": "$LIN"
   },
   "name": "LINDE PLC",
-  "price": 493.995,
+  "price": 493.16,
   "previousClose": 493.85,
   "dayHigh": 497.58,
   "dayLow": 492.26,
-  "change": 0.1449999999999818,
-  "changePercent": 0.029361142047176634,
+  "change": -0.6899999999999977,
+  "changePercent": -0.13971853801761622,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 493.7850036621094
     },
     {
-      "timestamp": 1778269552,
-      "close": 493.9949951171875
+      "timestamp": 1778269500,
+      "close": 493.80999755859375
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 492.7950134277344
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 493.1300048828125
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 493.1600036621094
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-05-08T13:16:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:54.899Z"
+  "generatedAt": "2026-05-08T21:17:47.488Z"
 }

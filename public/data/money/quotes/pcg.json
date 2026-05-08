@@ -5,12 +5,12 @@
     "displaySymbol": "$PCG"
   },
   "name": "PG&E CORPORATION",
-  "price": 16.215,
+  "price": 16.07,
   "previousClose": 16.19,
   "dayHigh": 16.355,
-  "dayLow": 16.124,
-  "change": 0.02499999999999858,
-  "changePercent": 0.15441630636194303,
+  "dayLow": 16.045,
+  "change": -0.120000000000001,
+  "changePercent": -0.7411982705373749,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1778269500,
-      "close": 16.219999313354492
+      "close": 16.190000534057617
     },
     {
-      "timestamp": 1778269567,
-      "close": 16.21500015258789
+      "timestamp": 1778269800,
+      "close": 16.165000915527344
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 16.045000076293945
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 16.06999969482422
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-05-07T14:34:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:46:08.166Z"
+  "generatedAt": "2026-05-08T21:17:57.928Z"
 }

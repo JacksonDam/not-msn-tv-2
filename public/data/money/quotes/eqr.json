@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 65.53,
+  "price": 65.54,
   "previousClose": 65.86,
   "dayHigh": 66.06,
-  "dayLow": 65.44,
-  "change": -0.3299999999999983,
-  "changePercent": -0.5010628606134198,
+  "dayLow": 65.405,
+  "change": -0.3199999999999932,
+  "changePercent": -0.48587913756452045,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 65.54000091552734
     },
     {
-      "timestamp": 1778269520,
+      "timestamp": 1778269500,
+      "close": 65.50499725341797
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 65.44000244140625
+    },
+    {
+      "timestamp": 1778270100,
       "close": 65.52999877929688
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 65.54000091552734
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-05T10:14:11.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:33.305Z"
+  "generatedAt": "2026-05-08T21:17:31.343Z"
 }

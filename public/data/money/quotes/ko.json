@@ -5,12 +5,12 @@
     "displaySymbol": "$KO"
   },
   "name": "THE COCA-COLA COMPANY",
-  "price": 78.445,
+  "price": 78.42,
   "previousClose": 78.43,
   "dayHigh": 79.19,
   "dayLow": 78.115,
-  "change": 0.014999999999986358,
-  "changePercent": 0.019125334693339737,
+  "change": -0.010000000000005116,
+  "changePercent": -0.012750223128911277,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1778269200,
-      "close": 78.45999908447266
+      "close": 78.45500183105469
     },
     {
-      "timestamp": 1778269551,
-      "close": 78.44499969482422
+      "timestamp": 1778269500,
+      "close": 78.43499755859375
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 78.5250015258789
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 78.41999816894531
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 78.41999816894531
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-05-08T16:41:26.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:52.712Z"
+  "generatedAt": "2026-05-08T21:17:46.180Z"
 }

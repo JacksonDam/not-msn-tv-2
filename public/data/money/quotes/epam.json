@@ -5,12 +5,12 @@
     "displaySymbol": "$EPAM"
   },
   "name": "EPAM SYSTEMS, INC.",
-  "price": 100.28,
+  "price": 99.23,
   "previousClose": 104.24,
   "dayHigh": 103.649,
   "dayLow": 98.76,
-  "change": -3.9599999999999937,
-  "changePercent": -3.7989255564082827,
+  "change": -5.009999999999991,
+  "changePercent": -4.806216423637751,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 100.11499786376953
     },
     {
-      "timestamp": 1778269531,
-      "close": 100.27999877929688
+      "timestamp": 1778269500,
+      "close": 100.2750015258789
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 99.51000213623047
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 99.27999877929688
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 99.2300033569336
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-08T15:15:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:32.906Z"
+  "generatedAt": "2026-05-08T21:17:31.091Z"
 }

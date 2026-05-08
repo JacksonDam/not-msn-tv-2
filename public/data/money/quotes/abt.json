@@ -5,12 +5,12 @@
     "displaySymbol": "$ABT"
   },
   "name": "ABBOTT LABORATORIES",
-  "price": 84.37,
+  "price": 84.32,
   "previousClose": 87.01,
   "dayHigh": 87.31,
-  "dayLow": 84.27,
-  "change": -2.6400000000000006,
-  "changePercent": -3.034134007585336,
+  "dayLow": 84.085,
+  "change": -2.690000000000012,
+  "changePercent": -3.091598666819919,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1778269200,
-      "close": 84.29000091552734
+      "close": 84.37000274658203
     },
     {
-      "timestamp": 1778269498,
-      "close": 84.37000274658203
+      "timestamp": 1778269500,
+      "close": 84.28500366210938
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 84.1500015258789
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 84.30000305175781
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 84.31999969482422
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-05-08T12:37:00.000Z"
   },
-  "generatedAt": "2026-05-08T19:44:59.878Z"
+  "generatedAt": "2026-05-08T21:17:08.242Z"
 }

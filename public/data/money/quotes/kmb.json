@@ -5,12 +5,12 @@
     "displaySymbol": "$KMB"
   },
   "name": "KIMBERLY-CLARK CORPORATION",
-  "price": 98.63,
+  "price": 98.31,
   "previousClose": 99.56,
   "dayHigh": 100.1,
   "dayLow": 98.21,
-  "change": -0.9300000000000068,
-  "changePercent": -0.9341100843712402,
+  "change": -1.25,
+  "changePercent": -1.2555243069505826,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 98.58499908447266
     },
     {
-      "timestamp": 1778269549,
-      "close": 98.62999725341797
+      "timestamp": 1778269500,
+      "close": 98.52999877929688
+    },
+    {
+      "timestamp": 1778269800,
+      "close": 98.55000305175781
+    },
+    {
+      "timestamp": 1778270100,
+      "close": 98.29000091552734
+    },
+    {
+      "timestamp": 1778270400,
+      "close": 98.30999755859375
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Morningstar Research",
     "publishedAt": "2026-05-07T17:22:11.000Z"
   },
-  "generatedAt": "2026-05-08T19:45:52.262Z"
+  "generatedAt": "2026-05-08T21:17:45.900Z"
 }
