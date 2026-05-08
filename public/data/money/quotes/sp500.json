@@ -5,337 +5,65 @@
     "displaySymbol": "$S&P"
   },
   "name": "S&P 500",
-  "price": 7337.11,
-  "previousClose": 7365.12,
-  "dayHigh": 7385.02,
-  "dayLow": 7321.25,
-  "change": -28.01000000000022,
-  "changePercent": -0.38030609141467103,
+  "price": 7389.95,
+  "previousClose": 7337.11,
+  "dayHigh": 7392.5,
+  "dayLow": 7362.97,
+  "change": 52.840000000000146,
+  "changePercent": 0.7201745646446646,
   "currency": "USD",
   "exchangeName": "SNP",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1778160600,
-      "close": 7369.7001953125
+      "timestamp": 1778247000,
+      "close": 7374.93017578125
     },
     {
-      "timestamp": 1778160900,
-      "close": 7370.27001953125
+      "timestamp": 1778247300,
+      "close": 7372.22998046875
     },
     {
-      "timestamp": 1778161200,
-      "close": 7366.18017578125
+      "timestamp": 1778247600,
+      "close": 7374.56005859375
     },
     {
-      "timestamp": 1778161500,
-      "close": 7360.8701171875
+      "timestamp": 1778247900,
+      "close": 7383.39013671875
     },
     {
-      "timestamp": 1778161800,
-      "close": 7364.52001953125
+      "timestamp": 1778248200,
+      "close": 7382.580078125
     },
     {
-      "timestamp": 1778162100,
-      "close": 7363.6298828125
+      "timestamp": 1778248500,
+      "close": 7389.4599609375
     },
     {
-      "timestamp": 1778162400,
-      "close": 7369.759765625
+      "timestamp": 1778248800,
+      "close": 7390.14013671875
     },
     {
-      "timestamp": 1778162700,
-      "close": 7371.18994140625
+      "timestamp": 1778249100,
+      "close": 7387.43994140625
     },
     {
-      "timestamp": 1778163000,
-      "close": 7369.7900390625
+      "timestamp": 1778249400,
+      "close": 7390.22998046875
     },
     {
-      "timestamp": 1778163300,
-      "close": 7369.759765625
+      "timestamp": 1778249700,
+      "close": 7390.6298828125
     },
     {
-      "timestamp": 1778163600,
-      "close": 7369.60986328125
-    },
-    {
-      "timestamp": 1778163900,
-      "close": 7369.60986328125
-    },
-    {
-      "timestamp": 1778164200,
-      "close": 7371.58984375
-    },
-    {
-      "timestamp": 1778164500,
-      "close": 7376.56982421875
-    },
-    {
-      "timestamp": 1778164800,
-      "close": 7376.169921875
-    },
-    {
-      "timestamp": 1778165100,
-      "close": 7375.77001953125
-    },
-    {
-      "timestamp": 1778165400,
-      "close": 7380.7001953125
-    },
-    {
-      "timestamp": 1778165700,
-      "close": 7384.77001953125
-    },
-    {
-      "timestamp": 1778166000,
-      "close": 7381.6201171875
-    },
-    {
-      "timestamp": 1778166300,
-      "close": 7380.43017578125
-    },
-    {
-      "timestamp": 1778166600,
-      "close": 7376.06982421875
-    },
-    {
-      "timestamp": 1778166900,
-      "close": 7377.77978515625
-    },
-    {
-      "timestamp": 1778167200,
-      "close": 7375.0498046875
-    },
-    {
-      "timestamp": 1778167500,
-      "close": 7372.16015625
-    },
-    {
-      "timestamp": 1778167800,
-      "close": 7379.64990234375
-    },
-    {
-      "timestamp": 1778168100,
-      "close": 7376.22021484375
-    },
-    {
-      "timestamp": 1778168400,
-      "close": 7377.06005859375
-    },
-    {
-      "timestamp": 1778168700,
-      "close": 7372.02978515625
-    },
-    {
-      "timestamp": 1778169000,
-      "close": 7372.6201171875
-    },
-    {
-      "timestamp": 1778169300,
-      "close": 7363.22998046875
-    },
-    {
-      "timestamp": 1778169600,
-      "close": 7358.27978515625
-    },
-    {
-      "timestamp": 1778169900,
-      "close": 7356.669921875
-    },
-    {
-      "timestamp": 1778170200,
-      "close": 7350.16015625
-    },
-    {
-      "timestamp": 1778170500,
-      "close": 7341.6298828125
-    },
-    {
-      "timestamp": 1778170800,
-      "close": 7350.33984375
-    },
-    {
-      "timestamp": 1778171100,
-      "close": 7357.080078125
-    },
-    {
-      "timestamp": 1778171400,
-      "close": 7359.7001953125
-    },
-    {
-      "timestamp": 1778171700,
-      "close": 7350.7998046875
-    },
-    {
-      "timestamp": 1778172000,
-      "close": 7350.89013671875
-    },
-    {
-      "timestamp": 1778172300,
-      "close": 7348.52978515625
-    },
-    {
-      "timestamp": 1778172600,
-      "close": 7347.0498046875
-    },
-    {
-      "timestamp": 1778172900,
-      "close": 7343.8701171875
-    },
-    {
-      "timestamp": 1778173200,
-      "close": 7343.56982421875
-    },
-    {
-      "timestamp": 1778173500,
-      "close": 7344.3701171875
-    },
-    {
-      "timestamp": 1778173800,
-      "close": 7343.080078125
-    },
-    {
-      "timestamp": 1778174100,
-      "close": 7336.81982421875
-    },
-    {
-      "timestamp": 1778174400,
-      "close": 7344.56982421875
-    },
-    {
-      "timestamp": 1778174700,
-      "close": 7329.740234375
-    },
-    {
-      "timestamp": 1778175000,
-      "close": 7333.1201171875
-    },
-    {
-      "timestamp": 1778175300,
-      "close": 7337.02001953125
-    },
-    {
-      "timestamp": 1778175600,
-      "close": 7330.14990234375
-    },
-    {
-      "timestamp": 1778175900,
-      "close": 7328.490234375
-    },
-    {
-      "timestamp": 1778176200,
-      "close": 7327.64990234375
-    },
-    {
-      "timestamp": 1778176500,
-      "close": 7340.93017578125
-    },
-    {
-      "timestamp": 1778176800,
-      "close": 7337.31982421875
-    },
-    {
-      "timestamp": 1778177100,
-      "close": 7335.6201171875
-    },
-    {
-      "timestamp": 1778177400,
-      "close": 7338.60986328125
-    },
-    {
-      "timestamp": 1778177700,
-      "close": 7341.14990234375
-    },
-    {
-      "timestamp": 1778178000,
-      "close": 7337.33984375
-    },
-    {
-      "timestamp": 1778178300,
-      "close": 7335.93994140625
-    },
-    {
-      "timestamp": 1778178600,
-      "close": 7340.330078125
-    },
-    {
-      "timestamp": 1778178900,
-      "close": 7336.8798828125
-    },
-    {
-      "timestamp": 1778179200,
-      "close": 7325.93017578125
-    },
-    {
-      "timestamp": 1778179500,
-      "close": 7325.52978515625
-    },
-    {
-      "timestamp": 1778179800,
-      "close": 7328.740234375
-    },
-    {
-      "timestamp": 1778180100,
-      "close": 7334.0400390625
-    },
-    {
-      "timestamp": 1778180400,
-      "close": 7331.759765625
-    },
-    {
-      "timestamp": 1778180700,
-      "close": 7331.66015625
-    },
-    {
-      "timestamp": 1778181000,
-      "close": 7335.3798828125
-    },
-    {
-      "timestamp": 1778181300,
-      "close": 7328.58984375
-    },
-    {
-      "timestamp": 1778181600,
-      "close": 7324.64990234375
-    },
-    {
-      "timestamp": 1778181900,
-      "close": 7327.68994140625
-    },
-    {
-      "timestamp": 1778182200,
-      "close": 7332.02001953125
-    },
-    {
-      "timestamp": 1778182500,
-      "close": 7335.97998046875
-    },
-    {
-      "timestamp": 1778182800,
-      "close": 7335.14990234375
-    },
-    {
-      "timestamp": 1778183100,
-      "close": 7335.080078125
-    },
-    {
-      "timestamp": 1778183400,
-      "close": 7331.919921875
-    },
-    {
-      "timestamp": 1778183700,
-      "close": 7337.10986328125
-    },
-    {
-      "timestamp": 1778184000,
-      "close": 7337.10986328125
+      "timestamp": 1778249816,
+      "close": 7389.9501953125
     }
   ],
   "news": {
-    "title": "Dow Jones Futures: Trump Says U.S.-Iran Ceasefire Holds; Akamai, Cloudflare, IREN Are Big Earnings Movers",
-    "publisher": "Investor's Business Daily",
-    "publishedAt": "2026-05-08T11:32:19.000Z"
+    "title": "Why Microsoft Stock Soared 10.2% Higher Last Month and Has Kept Rallying in May",
+    "publisher": "Motley Fool",
+    "publishedAt": "2026-05-08T14:07:20.000Z"
   },
-  "generatedAt": "2026-05-08T11:45:18.519Z"
+  "generatedAt": "2026-05-08T14:16:57.420Z"
 }
