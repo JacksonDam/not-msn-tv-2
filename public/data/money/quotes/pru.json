@@ -5,12 +5,12 @@
     "displaySymbol": "$PRU"
   },
   "name": "PRUDENTIAL FINANCIAL, INC.",
-  "price": 101.11,
+  "price": 101.12,
   "previousClose": 100.81,
   "dayHigh": 101.435,
   "dayLow": 100.07,
-  "change": 0.29999999999999716,
-  "changePercent": 0.2975895248487225,
+  "change": 0.3100000000000023,
+  "changePercent": 0.3075091756770184,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1778529300,
-      "close": 101.11000061035156
+      "close": 101.12999725341797
+    },
+    {
+      "timestamp": 1778529600,
+      "close": 101.12000274658203
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-11T16:54:37.000Z"
   },
-  "generatedAt": "2026-05-11T20:04:48.095Z"
+  "generatedAt": "2026-05-11T21:42:41.605Z"
 }

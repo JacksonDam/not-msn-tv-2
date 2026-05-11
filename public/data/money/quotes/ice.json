@@ -5,12 +5,12 @@
     "displaySymbol": "$ICE"
   },
   "name": "INTERCONTINENTAL EXCHANGE, INC.",
-  "price": 157.84,
+  "price": 157.82,
   "previousClose": 155.82,
   "dayHigh": 157.84,
   "dayLow": 154.05,
-  "change": 2.0200000000000102,
-  "changePercent": 1.2963676036452383,
+  "change": 2,
+  "changePercent": 1.283532280836863,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1778529300,
-      "close": 157.83999633789062
+      "close": 157.85000610351562
+    },
+    {
+      "timestamp": 1778529600,
+      "close": 157.82000732421875
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "TheStreet",
     "publishedAt": "2026-05-11T17:40:28.000Z"
   },
-  "generatedAt": "2026-05-11T20:04:26.769Z"
+  "generatedAt": "2026-05-11T21:42:17.975Z"
 }
