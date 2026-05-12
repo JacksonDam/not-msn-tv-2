@@ -5,12 +5,12 @@
     "displaySymbol": "$RJF"
   },
   "name": "RAYMOND JAMES FINANCIAL, INC.",
-  "price": 153.52,
+  "price": 153.48,
   "previousClose": 151.04,
   "dayHigh": 154.47,
   "dayLow": 149.73,
-  "change": 2.480000000000018,
-  "changePercent": 1.6419491525423853,
+  "change": 2.4399999999999977,
+  "changePercent": 1.6154661016949137,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1778615700,
-      "close": 153.52000427246094
+      "close": 153.5399932861328
+    },
+    {
+      "timestamp": 1778616000,
+      "close": 153.47999572753906
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-12T11:23:45.000Z"
   },
-  "generatedAt": "2026-05-12T20:09:04.227Z"
+  "generatedAt": "2026-05-12T21:40:52.402Z"
 }

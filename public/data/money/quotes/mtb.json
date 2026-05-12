@@ -5,12 +5,12 @@
     "displaySymbol": "$MTB"
   },
   "name": "M&T BANK CORPORATION",
-  "price": 208.805,
+  "price": 208.75,
   "previousClose": 207.98,
   "dayHigh": 209.56,
   "dayLow": 205.08,
-  "change": 0.825000000000017,
-  "changePercent": 0.3966727569958732,
+  "change": 0.7700000000000102,
+  "changePercent": 0.3702279065294789,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1778615700,
-      "close": 208.80499267578125
+      "close": 208.91000366210938
+    },
+    {
+      "timestamp": 1778616000,
+      "close": 208.75
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-05-12T15:59:00.000Z"
   },
-  "generatedAt": "2026-05-12T20:08:53.777Z"
+  "generatedAt": "2026-05-12T21:40:41.705Z"
 }
