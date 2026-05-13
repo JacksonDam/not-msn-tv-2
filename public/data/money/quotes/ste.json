@@ -5,12 +5,12 @@
     "displaySymbol": "$STE"
   },
   "name": "STERIS PLC",
-  "price": 211,
+  "price": 211.1,
   "previousClose": 210.85,
   "dayHigh": 212.57,
   "dayLow": 207.795,
-  "change": 0.15000000000000568,
-  "changePercent": 0.07114062129476201,
+  "change": 0.25,
+  "changePercent": 0.11856770215793219,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1778699100,
-      "close": 210.8699951171875
+      "close": 210.66000366210938
     },
     {
-      "timestamp": 1778699175,
-      "close": 211
+      "timestamp": 1778699400,
+      "close": 211.0399932861328
+    },
+    {
+      "timestamp": 1778699700,
+      "close": 211.39500427246094
+    },
+    {
+      "timestamp": 1778700000,
+      "close": 211.17999267578125
+    },
+    {
+      "timestamp": 1778700300,
+      "close": 210.2449951171875
+    },
+    {
+      "timestamp": 1778700600,
+      "close": 210.58999633789062
+    },
+    {
+      "timestamp": 1778700900,
+      "close": 210.58999633789062
+    },
+    {
+      "timestamp": 1778701200,
+      "close": 210.94000244140625
+    },
+    {
+      "timestamp": 1778701500,
+      "close": 210.63499450683594
+    },
+    {
+      "timestamp": 1778701800,
+      "close": 211.35000610351562
+    },
+    {
+      "timestamp": 1778702100,
+      "close": 211.1699981689453
+    },
+    {
+      "timestamp": 1778702400,
+      "close": 211.10000610351562
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-13T12:53:05.000Z"
   },
-  "generatedAt": "2026-05-13T19:07:33.508Z"
+  "generatedAt": "2026-05-13T20:56:05.519Z"
 }

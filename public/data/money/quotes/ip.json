@@ -5,12 +5,12 @@
     "displaySymbol": "$IP"
   },
   "name": "INTERNATIONAL PAPER COMPANY",
-  "price": 32.295,
+  "price": 31.98,
   "previousClose": 32.87,
   "dayHigh": 33.265,
-  "dayLow": 32.19,
-  "change": -0.5749999999999957,
-  "changePercent": -1.7493154852448913,
+  "dayLow": 31.94,
+  "change": -0.889999999999997,
+  "changePercent": -2.7076361423790605,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1778699100,
+      "close": 32.255001068115234
+    },
+    {
+      "timestamp": 1778699400,
       "close": 32.30500030517578
     },
     {
-      "timestamp": 1778699216,
-      "close": 32.29499816894531
+      "timestamp": 1778699700,
+      "close": 32.310001373291016
+    },
+    {
+      "timestamp": 1778700000,
+      "close": 32.29999923706055
+    },
+    {
+      "timestamp": 1778700300,
+      "close": 32.290000915527344
+    },
+    {
+      "timestamp": 1778700600,
+      "close": 32.189998626708984
+    },
+    {
+      "timestamp": 1778700900,
+      "close": 32.16999816894531
+    },
+    {
+      "timestamp": 1778701200,
+      "close": 32.1150016784668
+    },
+    {
+      "timestamp": 1778701500,
+      "close": 32.095001220703125
+    },
+    {
+      "timestamp": 1778701800,
+      "close": 32.064998626708984
+    },
+    {
+      "timestamp": 1778702100,
+      "close": 31.954999923706055
+    },
+    {
+      "timestamp": 1778702400,
+      "close": 31.979999542236328
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-05-12T20:30:00.000Z"
   },
-  "generatedAt": "2026-05-13T19:07:04.895Z"
+  "generatedAt": "2026-05-13T20:55:36.835Z"
 }

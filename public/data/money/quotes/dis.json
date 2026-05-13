@@ -5,12 +5,12 @@
     "displaySymbol": "$DIS"
   },
   "name": "THE WALT DISNEY COMPANY",
-  "price": 105.55,
+  "price": 104.9,
   "previousClose": 106.16,
   "dayHigh": 105.88,
   "dayLow": 103.86,
-  "change": -0.6099999999999994,
-  "changePercent": -0.5746043707611148,
+  "change": -1.259999999999991,
+  "changePercent": -1.1868877166540983,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1778699100,
-      "close": 105.58999633789062
+      "close": 105.37000274658203
     },
     {
-      "timestamp": 1778699205,
-      "close": 105.55000305175781
+      "timestamp": 1778699400,
+      "close": 105.33999633789062
+    },
+    {
+      "timestamp": 1778699700,
+      "close": 105.23999786376953
+    },
+    {
+      "timestamp": 1778700000,
+      "close": 105.05249786376953
+    },
+    {
+      "timestamp": 1778700300,
+      "close": 105.0999984741211
+    },
+    {
+      "timestamp": 1778700600,
+      "close": 105.04000091552734
+    },
+    {
+      "timestamp": 1778700900,
+      "close": 104.79000091552734
+    },
+    {
+      "timestamp": 1778701200,
+      "close": 104.875
+    },
+    {
+      "timestamp": 1778701500,
+      "close": 104.98999786376953
+    },
+    {
+      "timestamp": 1778701800,
+      "close": 105.12999725341797
+    },
+    {
+      "timestamp": 1778702100,
+      "close": 104.9000015258789
+    },
+    {
+      "timestamp": 1778702400,
+      "close": 104.9000015258789
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-05-13T16:01:00.000Z"
   },
-  "generatedAt": "2026-05-13T19:06:46.362Z"
+  "generatedAt": "2026-05-13T20:55:18.233Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$PCAR"
   },
   "name": "PACCAR INC",
-  "price": 111.88,
+  "price": 111.78,
   "previousClose": 113.03,
   "dayHigh": 113.13,
   "dayLow": 111.56,
-  "change": -1.1500000000000057,
-  "changePercent": -1.0174290011501421,
+  "change": -1.25,
+  "changePercent": -1.1059010882066707,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1778699100,
+      "close": 111.81500244140625
+    },
+    {
+      "timestamp": 1778699400,
+      "close": 111.95500183105469
+    },
+    {
+      "timestamp": 1778699700,
+      "close": 112.08499908447266
+    },
+    {
+      "timestamp": 1778700000,
+      "close": 112.12000274658203
+    },
+    {
+      "timestamp": 1778700300,
+      "close": 112.0999984741211
+    },
+    {
+      "timestamp": 1778700600,
+      "close": 111.9749984741211
+    },
+    {
+      "timestamp": 1778700900,
+      "close": 111.96499633789062
+    },
+    {
+      "timestamp": 1778701200,
+      "close": 112.00499725341797
+    },
+    {
+      "timestamp": 1778701500,
+      "close": 112.08000183105469
+    },
+    {
+      "timestamp": 1778701800,
       "close": 111.91000366210938
     },
     {
-      "timestamp": 1778699236,
-      "close": 111.87999725341797
+      "timestamp": 1778702100,
+      "close": 111.77999877929688
+    },
+    {
+      "timestamp": 1778702400,
+      "close": 111.77999877929688
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-11T11:00:51.000Z"
   },
-  "generatedAt": "2026-05-13T19:07:23.106Z"
+  "generatedAt": "2026-05-13T20:55:55.477Z"
 }

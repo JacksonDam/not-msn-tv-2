@@ -5,12 +5,12 @@
     "displaySymbol": "$CDW"
   },
   "name": "CDW CORPORATION",
-  "price": 99.98,
+  "price": 100.4,
   "previousClose": 99.3,
   "dayHigh": 102.25,
   "dayLow": 97.34,
-  "change": 0.6800000000000068,
-  "changePercent": 0.6847935548841961,
+  "change": 1.1000000000000085,
+  "changePercent": 1.1077542799597266,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1778699100,
-      "close": 99.95999908447266
+      "close": 99.83000183105469
     },
     {
-      "timestamp": 1778699182,
-      "close": 99.9800033569336
+      "timestamp": 1778699400,
+      "close": 99.91500091552734
+    },
+    {
+      "timestamp": 1778699700,
+      "close": 100.00499725341797
+    },
+    {
+      "timestamp": 1778700000,
+      "close": 99.9749984741211
+    },
+    {
+      "timestamp": 1778700300,
+      "close": 99.98999786376953
+    },
+    {
+      "timestamp": 1778700600,
+      "close": 100
+    },
+    {
+      "timestamp": 1778700900,
+      "close": 100.2300033569336
+    },
+    {
+      "timestamp": 1778701200,
+      "close": 100.42500305175781
+    },
+    {
+      "timestamp": 1778701500,
+      "close": 100.76499938964844
+    },
+    {
+      "timestamp": 1778701800,
+      "close": 100.37000274658203
+    },
+    {
+      "timestamp": 1778702100,
+      "close": 100.38999938964844
+    },
+    {
+      "timestamp": 1778702400,
+      "close": 100.4000015258789
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-13T13:10:22.000Z"
   },
-  "generatedAt": "2026-05-13T19:06:37.649Z"
+  "generatedAt": "2026-05-13T20:55:08.777Z"
 }

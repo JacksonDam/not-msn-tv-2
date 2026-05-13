@@ -5,12 +5,12 @@
     "displaySymbol": "$CPB"
   },
   "name": "THE CAMPBELL'S COMPANY",
-  "price": 20.405,
+  "price": 20.35,
   "previousClose": 20.39,
   "dayHigh": 20.57,
   "dayLow": 20.095,
-  "change": 0.015000000000000568,
-  "changePercent": 0.07356547327121415,
+  "change": -0.03999999999999915,
+  "changePercent": -0.19617459538989282,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1778699100,
-      "close": 20.405000686645508
+      "close": 20.399999618530273
     },
     {
-      "timestamp": 1778699199,
-      "close": 20.405000686645508
+      "timestamp": 1778699400,
+      "close": 20.375
+    },
+    {
+      "timestamp": 1778699700,
+      "close": 20.34000015258789
+    },
+    {
+      "timestamp": 1778700000,
+      "close": 20.344999313354492
+    },
+    {
+      "timestamp": 1778700300,
+      "close": 20.329999923706055
+    },
+    {
+      "timestamp": 1778700600,
+      "close": 20.344999313354492
+    },
+    {
+      "timestamp": 1778700900,
+      "close": 20.34000015258789
+    },
+    {
+      "timestamp": 1778701200,
+      "close": 20.316999435424805
+    },
+    {
+      "timestamp": 1778701500,
+      "close": 20.327999114990234
+    },
+    {
+      "timestamp": 1778701800,
+      "close": 20.34000015258789
+    },
+    {
+      "timestamp": 1778702100,
+      "close": 20.354999542236328
+    },
+    {
+      "timestamp": 1778702400,
+      "close": 20.350000381469727
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-05-11T18:42:00.000Z"
   },
-  "generatedAt": "2026-05-13T19:06:41.840Z"
+  "generatedAt": "2026-05-13T20:55:13.348Z"
 }
