@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 29.73,
+  "price": 29.74,
   "previousClose": 30.08,
   "dayHigh": 30.295,
-  "dayLow": 29.7,
-  "change": -0.34999999999999787,
-  "changePercent": -1.163563829787227,
+  "dayLow": 29.63,
+  "change": -0.33999999999999986,
+  "changePercent": -1.1303191489361697,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -273,11 +273,63 @@
     },
     {
       "timestamp": 1778871000,
+      "close": 29.75
+    },
+    {
+      "timestamp": 1778871300,
+      "close": 29.670000076293945
+    },
+    {
+      "timestamp": 1778871600,
+      "close": 29.690000534057617
+    },
+    {
+      "timestamp": 1778871900,
       "close": 29.709999084472656
     },
     {
-      "timestamp": 1778871251,
-      "close": 29.729999542236328
+      "timestamp": 1778872200,
+      "close": 29.69499969482422
+    },
+    {
+      "timestamp": 1778872500,
+      "close": 29.709999084472656
+    },
+    {
+      "timestamp": 1778872800,
+      "close": 29.760000228881836
+    },
+    {
+      "timestamp": 1778873100,
+      "close": 29.75
+    },
+    {
+      "timestamp": 1778873400,
+      "close": 29.725000381469727
+    },
+    {
+      "timestamp": 1778873700,
+      "close": 29.71500015258789
+    },
+    {
+      "timestamp": 1778874000,
+      "close": 29.639999389648438
+    },
+    {
+      "timestamp": 1778874300,
+      "close": 29.670000076293945
+    },
+    {
+      "timestamp": 1778874600,
+      "close": 29.670000076293945
+    },
+    {
+      "timestamp": 1778874900,
+      "close": 29.75
+    },
+    {
+      "timestamp": 1778875200,
+      "close": 29.739999771118164
     }
   ],
   "news": {
@@ -285,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-14T19:20:11.000Z"
   },
-  "generatedAt": "2026-05-15T18:54:33.250Z"
+  "generatedAt": "2026-05-15T20:36:13.246Z"
 }
