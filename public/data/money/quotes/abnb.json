@@ -5,12 +5,12 @@
     "displaySymbol": "$ABNB"
   },
   "name": "AIRBNB, INC.",
-  "price": 134.4,
+  "price": 134.3,
   "previousClose": 132.85,
   "dayHigh": 137.26,
   "dayLow": 132.35,
-  "change": 1.5500000000000114,
-  "changePercent": 1.1667293940534524,
+  "change": 1.450000000000017,
+  "changePercent": 1.0914565299209764,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -284,8 +284,52 @@
       "close": 134.27000427246094
     },
     {
-      "timestamp": 1779130974,
-      "close": 134.39999389648438
+      "timestamp": 1779131100,
+      "close": 134.0500030517578
+    },
+    {
+      "timestamp": 1779131400,
+      "close": 133.67999267578125
+    },
+    {
+      "timestamp": 1779131700,
+      "close": 133.83999633789062
+    },
+    {
+      "timestamp": 1779132000,
+      "close": 133.7003936767578
+    },
+    {
+      "timestamp": 1779132300,
+      "close": 133.77999877929688
+    },
+    {
+      "timestamp": 1779132600,
+      "close": 133.82000732421875
+    },
+    {
+      "timestamp": 1779132900,
+      "close": 133.83999633789062
+    },
+    {
+      "timestamp": 1779133200,
+      "close": 133.91000366210938
+    },
+    {
+      "timestamp": 1779133500,
+      "close": 134.02000427246094
+    },
+    {
+      "timestamp": 1779133800,
+      "close": 134
+    },
+    {
+      "timestamp": 1779134100,
+      "close": 134.2899932861328
+    },
+    {
+      "timestamp": 1779134400,
+      "close": 134.3000030517578
     }
   ],
   "news": {
@@ -293,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-18T11:00:28.000Z"
   },
-  "generatedAt": "2026-05-18T19:03:04.980Z"
+  "generatedAt": "2026-05-18T20:45:06.196Z"
 }
