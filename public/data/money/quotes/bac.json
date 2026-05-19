@@ -5,12 +5,12 @@
     "displaySymbol": "$BAC"
   },
   "name": "BANK OF AMERICA CORPORATION",
-  "price": 50.875,
+  "price": 50.7,
   "previousClose": 50.69,
   "dayHigh": 51.275,
   "dayLow": 50.375,
-  "change": 0.18500000000000227,
-  "changePercent": 0.36496350364963953,
+  "change": 0.010000000000005116,
+  "changePercent": 0.01972775695404442,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,17 +293,49 @@
     },
     {
       "timestamp": 1779218100,
-      "close": 50.869998931884766
+      "close": 50.875
     },
     {
-      "timestamp": 1779218259,
-      "close": 50.875
+      "timestamp": 1779218400,
+      "close": 50.82500076293945
+    },
+    {
+      "timestamp": 1779218700,
+      "close": 50.78499984741211
+    },
+    {
+      "timestamp": 1779219000,
+      "close": 50.70500183105469
+    },
+    {
+      "timestamp": 1779219300,
+      "close": 50.69499969482422
+    },
+    {
+      "timestamp": 1779219600,
+      "close": 50.70500183105469
+    },
+    {
+      "timestamp": 1779219900,
+      "close": 50.71500015258789
+    },
+    {
+      "timestamp": 1779220200,
+      "close": 50.6150016784668
+    },
+    {
+      "timestamp": 1779220500,
+      "close": 50.724998474121094
+    },
+    {
+      "timestamp": 1779220800,
+      "close": 50.70000076293945
     }
   ],
   "news": {
-    "title": "US Regulators Eye CAMELS Overhaul to Ease Bank Oversight Rules",
-    "publisher": "Zacks",
-    "publishedAt": "2026-05-19T16:27:00.000Z"
+    "title": "Snowflake seen delivering strong quarter as Bank of America lifts price target",
+    "publisher": "Proactive",
+    "publishedAt": "2026-05-19T20:07:00.000Z"
   },
-  "generatedAt": "2026-05-19T19:17:41.245Z"
+  "generatedAt": "2026-05-19T20:53:22.474Z"
 }
