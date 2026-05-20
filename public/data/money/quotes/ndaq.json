@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 90.39,
+  "price": 90.01,
   "previousClose": 91.98,
   "dayHigh": 91.65,
   "dayLow": 88.84,
-  "change": -1.5900000000000034,
-  "changePercent": -1.7286366601435132,
+  "change": -1.9699999999999989,
+  "changePercent": -2.141769949989127,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -257,11 +257,79 @@
     },
     {
       "timestamp": 1779301800,
+      "close": 90.45999908447266
+    },
+    {
+      "timestamp": 1779302100,
+      "close": 90.44499969482422
+    },
+    {
+      "timestamp": 1779302400,
       "close": 90.38999938964844
     },
     {
-      "timestamp": 1779301939,
-      "close": 90.38999938964844
+      "timestamp": 1779302700,
+      "close": 90.43000030517578
+    },
+    {
+      "timestamp": 1779303000,
+      "close": 90.20999908447266
+    },
+    {
+      "timestamp": 1779303300,
+      "close": 90.33000183105469
+    },
+    {
+      "timestamp": 1779303600,
+      "close": 90.33999633789062
+    },
+    {
+      "timestamp": 1779303900,
+      "close": 90.25
+    },
+    {
+      "timestamp": 1779304200,
+      "close": 90.30000305175781
+    },
+    {
+      "timestamp": 1779304500,
+      "close": 90.12999725341797
+    },
+    {
+      "timestamp": 1779304800,
+      "close": 90.13999938964844
+    },
+    {
+      "timestamp": 1779305100,
+      "close": 90.07499694824219
+    },
+    {
+      "timestamp": 1779305400,
+      "close": 89.94999694824219
+    },
+    {
+      "timestamp": 1779305700,
+      "close": 90.20999908447266
+    },
+    {
+      "timestamp": 1779306000,
+      "close": 90.30000305175781
+    },
+    {
+      "timestamp": 1779306300,
+      "close": 90.30999755859375
+    },
+    {
+      "timestamp": 1779306600,
+      "close": 90.05999755859375
+    },
+    {
+      "timestamp": 1779306900,
+      "close": 90.04000091552734
+    },
+    {
+      "timestamp": 1779307200,
+      "close": 90.01000213623047
     }
   ],
   "news": {
@@ -269,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-05-19T15:35:25.000Z"
   },
-  "generatedAt": "2026-05-20T18:32:41.287Z"
+  "generatedAt": "2026-05-20T21:14:22.344Z"
 }
