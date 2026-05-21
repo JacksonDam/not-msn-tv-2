@@ -5,12 +5,12 @@
     "displaySymbol": "$NSC"
   },
   "name": "NORFOLK SOUTHERN CORPORATION",
-  "price": 312.25,
+  "price": 311.44,
   "previousClose": 311.84,
   "dayHigh": 314.84,
   "dayLow": 310.07,
-  "change": 0.410000000000025,
-  "changePercent": 0.13147768086198855,
+  "change": -0.39999999999997726,
+  "changePercent": -0.12827090815802247,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,7 +285,7 @@
     },
     {
       "timestamp": 1779390300,
-      "close": 312.0249938964844
+      "close": 312.1499938964844
     },
     {
       "timestamp": 1779390600,
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1779390900,
-      "close": 312.33990478515625
+      "close": 312
     },
     {
-      "timestamp": 1779391077,
-      "close": 312.25
+      "timestamp": 1779391200,
+      "close": 311.9700012207031
+    },
+    {
+      "timestamp": 1779391500,
+      "close": 311.8399963378906
+    },
+    {
+      "timestamp": 1779391800,
+      "close": 312.2149963378906
+    },
+    {
+      "timestamp": 1779392100,
+      "close": 311.93499755859375
+    },
+    {
+      "timestamp": 1779392400,
+      "close": 311.8999938964844
+    },
+    {
+      "timestamp": 1779392700,
+      "close": 311.989990234375
+    },
+    {
+      "timestamp": 1779393000,
+      "close": 312.45001220703125
+    },
+    {
+      "timestamp": 1779393300,
+      "close": 311.510009765625
+    },
+    {
+      "timestamp": 1779393600,
+      "close": 311.44000244140625
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "FreightWaves",
     "publishedAt": "2026-05-21T15:52:28.000Z"
   },
-  "generatedAt": "2026-05-21T19:18:35.514Z"
+  "generatedAt": "2026-05-21T21:52:04.426Z"
 }
