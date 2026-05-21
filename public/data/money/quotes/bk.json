@@ -6,19 +6,28 @@
   },
   "name": "THE BANK OF NEW YORK MELLON CORPORATION",
   "price": 137.16,
-  "previousClose": 136.32,
+  "previousClose": 137.16,
   "dayHigh": 138.6,
   "dayLow": 135.7,
-  "change": 0.8400000000000034,
-  "changePercent": 0.6161971830985941,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
-  "series": [],
+  "series": [
+    {
+      "timestamp": 1779371100,
+      "close": 137.16000366210938
+    },
+    {
+      "timestamp": 1779371164,
+      "close": 137.16000366210938
+    }
+  ],
   "news": {
-    "title": "BNY (BK): Buy, Sell, or Hold Post Q1 Earnings?",
-    "publisher": "StockStory",
-    "publishedAt": "2026-05-21T08:44:55.000Z"
+    "title": "FRN Variable Rate Fix",
+    "publisher": "Business Wire",
+    "publishedAt": "2026-05-21T16:31:00.000Z"
   },
-  "generatedAt": "2026-05-21T13:32:36.521Z"
+  "generatedAt": "2026-05-21T16:49:36.514Z"
 }
