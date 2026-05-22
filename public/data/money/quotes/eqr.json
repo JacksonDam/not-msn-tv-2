@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 66.21,
+  "price": 66.2,
   "previousClose": 65.76,
   "dayHigh": 66.59,
   "dayLow": 65.56,
-  "change": 0.44999999999998863,
-  "changePercent": 0.6843065693430483,
+  "change": 0.4399999999999977,
+  "changePercent": 0.6690997566909941,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1779479700,
-      "close": 66.20999908447266
+      "close": 66.22000122070312
+    },
+    {
+      "timestamp": 1779480000,
+      "close": 66.19999694824219
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Morningstar Research",
     "publishedAt": "2026-05-21T21:59:02.000Z"
   },
-  "generatedAt": "2026-05-22T20:11:50.459Z"
+  "generatedAt": "2026-05-22T21:36:31.949Z"
 }

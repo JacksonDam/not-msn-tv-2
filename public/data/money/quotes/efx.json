@@ -5,12 +5,12 @@
     "displaySymbol": "$EFX"
   },
   "name": "EQUIFAX INC.",
-  "price": 164.12,
+  "price": 164.04,
   "previousClose": 162.54,
   "dayHigh": 167.03,
   "dayLow": 161.94,
-  "change": 1.5800000000000125,
-  "changePercent": 0.9720684139288868,
+  "change": 1.5,
+  "changePercent": 0.9228497600590625,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1779479700,
-      "close": 164.1199951171875
+      "close": 164.02999877929688
+    },
+    {
+      "timestamp": 1779480000,
+      "close": 164.0399932861328
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Morningstar Research",
     "publishedAt": "2026-05-22T14:43:03.000Z"
   },
-  "generatedAt": "2026-05-22T20:11:46.913Z"
+  "generatedAt": "2026-05-22T21:36:30.035Z"
 }

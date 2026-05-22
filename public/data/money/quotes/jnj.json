@@ -5,12 +5,12 @@
     "displaySymbol": "$JNJ"
   },
   "name": "JOHNSON & JOHNSON",
-  "price": 234.36,
+  "price": 234.34,
   "previousClose": 231.73,
   "dayHigh": 235.495,
   "dayLow": 232.72,
-  "change": 2.630000000000024,
-  "changePercent": 1.1349415267768626,
+  "change": 2.6100000000000136,
+  "changePercent": 1.126310792732928,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1779479700,
-      "close": 234.36000061035156
+      "close": 234.3800048828125
+    },
+    {
+      "timestamp": 1779480000,
+      "close": 234.33999633789062
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-05-22T18:30:54.000Z"
   },
-  "generatedAt": "2026-05-22T20:12:15.960Z"
+  "generatedAt": "2026-05-22T21:36:50.792Z"
 }
