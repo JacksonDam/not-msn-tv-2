@@ -5,12 +5,12 @@
     "displaySymbol": "$SCHW"
   },
   "name": "THE CHARLES SCHWAB CORPORATION",
-  "price": 89.82,
+  "price": 89.4,
   "previousClose": 90.15,
   "dayHigh": 90.42,
-  "dayLow": 89.49,
-  "change": -0.3300000000000125,
-  "changePercent": -0.3660565723793816,
+  "dayLow": 89.365,
+  "change": -0.75,
+  "changePercent": -0.8319467554076538,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -301,11 +301,35 @@
     },
     {
       "timestamp": 1779823500,
-      "close": 89.80500030517578
+      "close": 89.80000305175781
     },
     {
-      "timestamp": 1779823779,
-      "close": 89.81999969482422
+      "timestamp": 1779823800,
+      "close": 89.7300033569336
+    },
+    {
+      "timestamp": 1779824100,
+      "close": 89.71499633789062
+    },
+    {
+      "timestamp": 1779824400,
+      "close": 89.71499633789062
+    },
+    {
+      "timestamp": 1779824700,
+      "close": 89.45500183105469
+    },
+    {
+      "timestamp": 1779825000,
+      "close": 89.66999816894531
+    },
+    {
+      "timestamp": 1779825300,
+      "close": 89.4000015258789
+    },
+    {
+      "timestamp": 1779825600,
+      "close": 89.4000015258789
     }
   ],
   "news": {
@@ -313,5 +337,5 @@
     "publisher": "NYSE",
     "publishedAt": "2026-05-26T16:11:24.000Z"
   },
-  "generatedAt": "2026-05-26T19:29:40.043Z"
+  "generatedAt": "2026-05-26T21:59:03.408Z"
 }
