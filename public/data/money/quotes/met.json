@@ -8,7 +8,7 @@
   "price": 83.2,
   "previousClose": 83.27,
   "dayHigh": 84.22,
-  "dayLow": 83.105,
+  "dayLow": 83.01,
   "change": -0.06999999999999318,
   "changePercent": -0.08406388855529384,
   "currency": "USD",
@@ -305,10 +305,30 @@
     },
     {
       "timestamp": 1779910200,
-      "close": 83.16500091552734
+      "close": 83.2699966430664
     },
     {
-      "timestamp": 1779910411,
+      "timestamp": 1779910500,
+      "close": 83.25
+    },
+    {
+      "timestamp": 1779910800,
+      "close": 83.26499938964844
+    },
+    {
+      "timestamp": 1779911100,
+      "close": 83.04000091552734
+    },
+    {
+      "timestamp": 1779911400,
+      "close": 83.22000122070312
+    },
+    {
+      "timestamp": 1779911700,
+      "close": 83.19499969482422
+    },
+    {
+      "timestamp": 1779912000,
       "close": 83.19999694824219
     }
   ],
@@ -317,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-05-27T18:19:41.000Z"
   },
-  "generatedAt": "2026-05-27T19:33:59.099Z"
+  "generatedAt": "2026-05-27T22:09:21.025Z"
 }

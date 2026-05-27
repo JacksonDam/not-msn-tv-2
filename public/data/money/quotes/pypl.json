@@ -5,12 +5,12 @@
     "displaySymbol": "$PYPL"
   },
   "name": "PAYPAL HOLDINGS, INC.",
-  "price": 43.7,
+  "price": 43.76,
   "previousClose": 44.16,
   "dayHigh": 44.73,
-  "dayLow": 43.64,
-  "change": -0.45999999999999375,
-  "changePercent": -1.0416666666666525,
+  "dayLow": 43.63,
+  "change": -0.3999999999999986,
+  "changePercent": -0.9057971014492723,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1779910200,
+      "close": 43.68000030517578
+    },
+    {
+      "timestamp": 1779910500,
+      "close": 43.71500015258789
+    },
+    {
+      "timestamp": 1779910800,
+      "close": 43.70000076293945
+    },
+    {
+      "timestamp": 1779911100,
       "close": 43.685001373291016
     },
     {
-      "timestamp": 1779910452,
-      "close": 43.70000076293945
+      "timestamp": 1779911400,
+      "close": 43.70500183105469
+    },
+    {
+      "timestamp": 1779911700,
+      "close": 43.755001068115234
+    },
+    {
+      "timestamp": 1779912000,
+      "close": 43.7599983215332
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "decrypt",
     "publishedAt": "2026-05-27T18:49:02.000Z"
   },
-  "generatedAt": "2026-05-27T19:34:14.196Z"
+  "generatedAt": "2026-05-27T22:09:36.647Z"
 }

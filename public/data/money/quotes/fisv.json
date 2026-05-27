@@ -5,12 +5,12 @@
     "displaySymbol": "$FISV"
   },
   "name": "FISERV, INC.",
-  "price": 55.63,
+  "price": 55.62,
   "previousClose": 55.61,
   "dayHigh": 57.35,
-  "dayLow": 55.45,
-  "change": 0.020000000000003126,
-  "changePercent": 0.03596475454055588,
+  "dayLow": 55.4,
+  "change": 0.00999999999999801,
+  "changePercent": 0.017982377270271552,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1779910200,
+      "close": 55.650001525878906
+    },
+    {
+      "timestamp": 1779910500,
+      "close": 55.58000183105469
+    },
+    {
+      "timestamp": 1779910800,
       "close": 55.61000061035156
     },
     {
-      "timestamp": 1779910405,
-      "close": 55.630001068115234
+      "timestamp": 1779911100,
+      "close": 55.41999816894531
+    },
+    {
+      "timestamp": 1779911400,
+      "close": 55.439998626708984
+    },
+    {
+      "timestamp": 1779911700,
+      "close": 55.61000061035156
+    },
+    {
+      "timestamp": 1779912000,
+      "close": 55.619998931884766
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-05-25T19:54:20.000Z"
   },
-  "generatedAt": "2026-05-27T19:33:39.641Z"
+  "generatedAt": "2026-05-27T22:08:57.757Z"
 }

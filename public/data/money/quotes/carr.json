@@ -5,12 +5,12 @@
     "displaySymbol": "$CARR"
   },
   "name": "CARRIER GLOBAL CORPORATION",
-  "price": 64.65,
+  "price": 64.51,
   "previousClose": 64.89,
   "dayHigh": 66.15,
-  "dayLow": 64.64,
-  "change": -0.23999999999999488,
-  "changePercent": -0.36985668053628434,
+  "dayLow": 64.37,
+  "change": -0.37999999999999545,
+  "changePercent": -0.5856064108491223,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1779910200,
+      "close": 64.69499969482422
+    },
+    {
+      "timestamp": 1779910500,
+      "close": 64.68000030517578
+    },
+    {
+      "timestamp": 1779910800,
       "close": 64.6500015258789
     },
     {
-      "timestamp": 1779910396,
-      "close": 64.6500015258789
+      "timestamp": 1779911100,
+      "close": 64.58499908447266
+    },
+    {
+      "timestamp": 1779911400,
+      "close": 64.4800033569336
+    },
+    {
+      "timestamp": 1779911700,
+      "close": 64.48999786376953
+    },
+    {
+      "timestamp": 1779912000,
+      "close": 64.51000213623047
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-05-26T20:15:00.000Z"
   },
-  "generatedAt": "2026-05-27T19:33:19.384Z"
+  "generatedAt": "2026-05-27T22:08:35.065Z"
 }

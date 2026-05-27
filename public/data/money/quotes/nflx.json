@@ -5,12 +5,12 @@
     "displaySymbol": "$NFLX"
   },
   "name": "NETFLIX, INC.",
-  "price": 87.73,
+  "price": 87.35,
   "previousClose": 87.68,
   "dayHigh": 88.49,
   "dayLow": 86.82,
-  "change": 0.04999999999999716,
-  "changePercent": 0.05702554744525223,
+  "change": -0.3300000000000125,
+  "changePercent": -0.37636861313870035,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1779910200,
-      "close": 87.72000122070312
+      "close": 87.74500274658203
     },
     {
-      "timestamp": 1779910441,
-      "close": 87.7300033569336
+      "timestamp": 1779910500,
+      "close": 87.7240982055664
+    },
+    {
+      "timestamp": 1779910800,
+      "close": 87.7699966430664
+    },
+    {
+      "timestamp": 1779911100,
+      "close": 87.66000366210938
+    },
+    {
+      "timestamp": 1779911400,
+      "close": 87.5250015258789
+    },
+    {
+      "timestamp": 1779911700,
+      "close": 87.33499908447266
+    },
+    {
+      "timestamp": 1779912000,
+      "close": 87.3499984741211
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-05-27T15:32:00.000Z"
   },
-  "generatedAt": "2026-05-27T19:34:04.490Z"
+  "generatedAt": "2026-05-27T22:09:26.275Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$ABNB"
   },
   "name": "AIRBNB, INC.",
-  "price": 132.61,
+  "price": 132.1,
   "previousClose": 132.68,
   "dayHigh": 134.575,
-  "dayLow": 132.15,
-  "change": -0.06999999999999318,
-  "changePercent": -0.05275851673198159,
+  "dayLow": 131.93,
+  "change": -0.5800000000000125,
+  "changePercent": -0.4371419957793281,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1779910200,
-      "close": 132.6300048828125
+      "close": 132.75
     },
     {
-      "timestamp": 1779910381,
-      "close": 132.61000061035156
+      "timestamp": 1779910500,
+      "close": 132.5749969482422
+    },
+    {
+      "timestamp": 1779910800,
+      "close": 132.52999877929688
+    },
+    {
+      "timestamp": 1779911100,
+      "close": 132.42999267578125
+    },
+    {
+      "timestamp": 1779911400,
+      "close": 132.25
+    },
+    {
+      "timestamp": 1779911700,
+      "close": 132.11000061035156
+    },
+    {
+      "timestamp": 1779912000,
+      "close": 132.10000610351562
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "TechCrunch",
     "publishedAt": "2026-05-27T08:00:00.000Z"
   },
-  "generatedAt": "2026-05-27T19:33:06.456Z"
+  "generatedAt": "2026-05-27T22:08:20.205Z"
 }
