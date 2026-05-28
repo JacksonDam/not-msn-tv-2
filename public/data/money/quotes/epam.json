@@ -5,12 +5,12 @@
     "displaySymbol": "$EPAM"
   },
   "name": "EPAM SYSTEMS, INC.",
-  "price": 101.82,
+  "price": 101.43,
   "previousClose": 101.68,
   "dayHigh": 102.99,
   "dayLow": 99.921,
-  "change": 0.13999999999998636,
-  "changePercent": 0.1376868607395617,
+  "change": -0.25,
+  "changePercent": -0.24586939417781273,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -301,7 +301,7 @@
     },
     {
       "timestamp": 1779996300,
-      "close": 102.02999877929688
+      "close": 102.11499786376953
     },
     {
       "timestamp": 1779996600,
@@ -316,8 +316,20 @@
       "close": 101.87000274658203
     },
     {
-      "timestamp": 1779997512,
-      "close": 101.81999969482422
+      "timestamp": 1779997500,
+      "close": 101.78500366210938
+    },
+    {
+      "timestamp": 1779997800,
+      "close": 101.48999786376953
+    },
+    {
+      "timestamp": 1779998100,
+      "close": 101.51000213623047
+    },
+    {
+      "timestamp": 1779998400,
+      "close": 101.43000030517578
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-05-28T14:30:27.000Z"
   },
-  "generatedAt": "2026-05-28T19:45:14.688Z"
+  "generatedAt": "2026-05-28T22:07:22.879Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$ARE"
   },
   "name": "ALEXANDRIA REAL ESTATE EQUITIES, INC.",
-  "price": 50,
+  "price": 50.06,
   "previousClose": 49.93,
   "dayHigh": 50.53,
   "dayLow": 49.23,
-  "change": 0.07000000000000028,
-  "changePercent": 0.14019627478469915,
+  "change": 0.13000000000000256,
+  "changePercent": 0.26036451031444535,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1779997200,
+      "close": 50
+    },
+    {
+      "timestamp": 1779997500,
+      "close": 50.02000045776367
+    },
+    {
+      "timestamp": 1779997800,
       "close": 50.04999923706055
     },
     {
-      "timestamp": 1779997464,
-      "close": 50
+      "timestamp": 1779998100,
+      "close": 50.040000915527344
+    },
+    {
+      "timestamp": 1779998400,
+      "close": 50.060001373291016
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-05-28T12:05:48.000Z"
   },
-  "generatedAt": "2026-05-28T19:44:52.848Z"
+  "generatedAt": "2026-05-28T22:07:04.565Z"
 }

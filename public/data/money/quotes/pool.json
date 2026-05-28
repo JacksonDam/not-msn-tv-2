@@ -5,12 +5,12 @@
     "displaySymbol": "$POOL"
   },
   "name": "POOL CORPORATION",
-  "price": 185.15,
+  "price": 184.7,
   "previousClose": 184.41,
   "dayHigh": 185.27,
   "dayLow": 180.72,
-  "change": 0.7400000000000091,
-  "changePercent": 0.40127975706307095,
+  "change": 0.28999999999999204,
+  "changePercent": 0.15725828317335938,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 185.08999633789062
     },
     {
-      "timestamp": 1779997550,
-      "close": 185.14999389648438
+      "timestamp": 1779997500,
+      "close": 185.16250610351562
+    },
+    {
+      "timestamp": 1779997800,
+      "close": 184.80999755859375
+    },
+    {
+      "timestamp": 1779998100,
+      "close": 184.67999267578125
+    },
+    {
+      "timestamp": 1779998400,
+      "close": 184.6999969482422
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-05-27T00:00:00.000Z"
   },
-  "generatedAt": "2026-05-28T19:45:52.441Z"
+  "generatedAt": "2026-05-28T22:07:53.104Z"
 }

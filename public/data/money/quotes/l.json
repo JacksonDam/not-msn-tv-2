@@ -5,12 +5,12 @@
     "displaySymbol": "$L"
   },
   "name": "LOEWS CORPORATION",
-  "price": 104.99,
+  "price": 104.82,
   "previousClose": 106.98,
   "dayHigh": 106.35,
   "dayLow": 104.46,
-  "change": -1.990000000000009,
-  "changePercent": -1.8601607777154694,
+  "change": -2.160000000000011,
+  "changePercent": -2.0190689848569927,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -308,8 +308,20 @@
       "close": 105.02999877929688
     },
     {
-      "timestamp": 1779997513,
-      "close": 104.98999786376953
+      "timestamp": 1779997500,
+      "close": 104.95999908447266
+    },
+    {
+      "timestamp": 1779997800,
+      "close": 105
+    },
+    {
+      "timestamp": 1779998100,
+      "close": 104.81999969482422
+    },
+    {
+      "timestamp": 1779998400,
+      "close": 104.81999969482422
     }
   ],
   "news": {
@@ -317,5 +329,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-05-27T00:00:00.000Z"
   },
-  "generatedAt": "2026-05-28T19:45:34.670Z"
+  "generatedAt": "2026-05-28T22:07:38.131Z"
 }

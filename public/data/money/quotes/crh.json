@@ -5,12 +5,12 @@
     "displaySymbol": "$CRH"
   },
   "name": "CRH PLC",
-  "price": 106.75,
+  "price": 106.76,
   "previousClose": 106.25,
-  "dayHigh": 106.91,
+  "dayHigh": 107.04,
   "dayLow": 105,
-  "change": 0.5,
-  "changePercent": 0.4705882352941176,
+  "change": 0.5100000000000051,
+  "changePercent": 0.4800000000000048,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1779997200,
-      "close": 106.75
+      "close": 106.76000213623047
     },
     {
-      "timestamp": 1779997483,
-      "close": 106.75
+      "timestamp": 1779997500,
+      "close": 106.66999816894531
+    },
+    {
+      "timestamp": 1779997800,
+      "close": 106.93499755859375
+    },
+    {
+      "timestamp": 1779998100,
+      "close": 106.76000213623047
+    },
+    {
+      "timestamp": 1779998400,
+      "close": 106.76000213623047
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-05-27T16:38:34.000Z"
   },
-  "generatedAt": "2026-05-28T19:45:06.325Z"
+  "generatedAt": "2026-05-28T22:07:15.389Z"
 }
