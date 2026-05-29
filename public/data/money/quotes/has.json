@@ -5,12 +5,12 @@
     "displaySymbol": "$HAS"
   },
   "name": "HASBRO, INC.",
-  "price": 86.58,
+  "price": 86.17,
   "previousClose": 86.38,
   "dayHigh": 87.135,
-  "dayLow": 85.91,
-  "change": 0.20000000000000284,
-  "changePercent": 0.23153507756425426,
+  "dayLow": 85.9,
+  "change": -0.20999999999999375,
+  "changePercent": -0.24311183144245632,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
-      "close": 86.50499725341797
+      "close": 86.625
     },
     {
-      "timestamp": 1780083664,
-      "close": 86.58000183105469
+      "timestamp": 1780083900,
+      "close": 86.5199966430664
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 85.98500061035156
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 86.1500015258789
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 86.16999816894531
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-05-29T12:50:03.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:09.712Z"
+  "generatedAt": "2026-05-29T22:05:17.221Z"
 }

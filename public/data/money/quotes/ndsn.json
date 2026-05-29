@@ -5,12 +5,12 @@
     "displaySymbol": "$NDSN"
   },
   "name": "NORDSON CORPORATION",
-  "price": 288.4,
+  "price": 287.33,
   "previousClose": 288.12,
   "dayHigh": 289.14,
   "dayLow": 286.41,
-  "change": 0.2799999999999727,
-  "changePercent": 0.09718172983478159,
+  "change": -0.7900000000000205,
+  "changePercent": -0.274191309176739,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,7 +309,23 @@
     },
     {
       "timestamp": 1780083600,
-      "close": 288.3999938964844
+      "close": 288.2799987792969
+    },
+    {
+      "timestamp": 1780083900,
+      "close": 288.29998779296875
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 287.6300048828125
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 287.3800048828125
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 287.3299865722656
     }
   ],
   "news": {
@@ -317,5 +333,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-05-29T12:28:26.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:24.064Z"
+  "generatedAt": "2026-05-29T22:05:33.404Z"
 }

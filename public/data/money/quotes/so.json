@@ -5,12 +5,12 @@
     "displaySymbol": "$SO"
   },
   "name": "THE SOUTHERN COMPANY",
-  "price": 91.87,
+  "price": 92.05,
   "previousClose": 92.52,
   "dayHigh": 92.595,
   "dayLow": 91.345,
-  "change": -0.6499999999999915,
-  "changePercent": -0.7025507998270553,
+  "change": -0.46999999999999886,
+  "changePercent": -0.5079982706441838,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
+      "close": 91.83000183105469
+    },
+    {
+      "timestamp": 1780083900,
+      "close": 91.93499755859375
+    },
+    {
+      "timestamp": 1780084200,
       "close": 91.87000274658203
     },
     {
-      "timestamp": 1780083689,
-      "close": 91.87000274658203
+      "timestamp": 1780084500,
+      "close": 92.0199966430664
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 92.05000305175781
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-05-29T13:15:00.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:37.214Z"
+  "generatedAt": "2026-05-29T22:05:45.435Z"
 }

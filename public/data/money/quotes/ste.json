@@ -5,12 +5,12 @@
     "displaySymbol": "$STE"
   },
   "name": "STERIS PLC",
-  "price": 212.01,
+  "price": 212.73,
   "previousClose": 215.4,
   "dayHigh": 214.93,
   "dayLow": 210.99,
-  "change": -3.390000000000015,
-  "changePercent": -1.5738161559888646,
+  "change": -2.670000000000016,
+  "changePercent": -1.2395543175487538,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,19 +293,31 @@
     },
     {
       "timestamp": 1780083000,
-      "close": 211.88999938964844
-    },
-    {
-      "timestamp": 1780083300,
       "close": 211.8800048828125
     },
     {
-      "timestamp": 1780083600,
-      "close": 211.94000244140625
+      "timestamp": 1780083300,
+      "close": 211.92999267578125
     },
     {
-      "timestamp": 1780083694,
-      "close": 212.00999450683594
+      "timestamp": 1780083600,
+      "close": 211.86000061035156
+    },
+    {
+      "timestamp": 1780083900,
+      "close": 211.85499572753906
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 211.93499755859375
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 212.66000366210938
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 212.72999572753906
     }
   ],
   "news": {
@@ -313,5 +325,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-05-26T14:02:34.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:37.919Z"
+  "generatedAt": "2026-05-29T22:05:46.157Z"
 }

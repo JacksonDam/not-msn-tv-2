@@ -5,12 +5,12 @@
     "displaySymbol": "$NFLX"
   },
   "name": "NETFLIX, INC.",
-  "price": 86.315,
+  "price": 86.02,
   "previousClose": 86.36,
   "dayHigh": 86.67,
   "dayLow": 85.66,
-  "change": -0.045000000000001705,
-  "changePercent": -0.05210745715609275,
+  "change": -0.3400000000000034,
+  "changePercent": -0.39370078740157877,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
-      "close": 86.31500244140625
+      "close": 86.30000305175781
     },
     {
-      "timestamp": 1780083683,
-      "close": 86.31510162353516
+      "timestamp": 1780083900,
+      "close": 86.2249984741211
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 86.06500244140625
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 86.0199966430664
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 86.0199966430664
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-05-29T17:25:00.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:24.613Z"
+  "generatedAt": "2026-05-29T22:05:34.020Z"
 }

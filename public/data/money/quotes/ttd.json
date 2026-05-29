@@ -5,12 +5,12 @@
     "displaySymbol": "$TTD"
   },
   "name": "THE TRADE DESK, INC.",
-  "price": 21.755,
+  "price": 21.56,
   "previousClose": 21.15,
   "dayHigh": 22.155,
   "dayLow": 20.965,
-  "change": 0.6050000000000004,
-  "changePercent": 2.86052009456265,
+  "change": 0.41000000000000014,
+  "changePercent": 1.9385342789598117,
   "currency": "USD",
   "exchangeName": "NGM",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
+      "close": 21.719999313354492
+    },
+    {
+      "timestamp": 1780083900,
       "close": 21.735000610351562
     },
     {
-      "timestamp": 1780083700,
-      "close": 21.7549991607666
+      "timestamp": 1780084200,
+      "close": 21.40999984741211
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 21.56999969482422
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 21.559999465942383
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-05-29T14:20:28.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:43.330Z"
+  "generatedAt": "2026-05-29T22:05:51.447Z"
 }

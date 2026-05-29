@@ -5,12 +5,12 @@
     "displaySymbol": "$UPS"
   },
   "name": "UNITED PARCEL SERVICE, INC.",
-  "price": 106.99,
+  "price": 106.69,
   "previousClose": 106.67,
-  "dayHigh": 107.05,
+  "dayHigh": 107.3,
   "dayLow": 105.392,
-  "change": 0.3199999999999932,
-  "changePercent": 0.29999062529295323,
+  "change": 0.01999999999999602,
+  "changePercent": 0.018749414080806243,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
-      "close": 106.98999786376953
+      "close": 107.01499938964844
     },
     {
-      "timestamp": 1780083704,
-      "close": 106.98999786376953
+      "timestamp": 1780083900,
+      "close": 107.0250015258789
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 107.29000091552734
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 106.69999694824219
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 106.69000244140625
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-05-29T16:16:38.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:45.172Z"
+  "generatedAt": "2026-05-29T22:05:53.218Z"
 }

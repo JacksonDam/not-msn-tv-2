@@ -5,12 +5,12 @@
     "displaySymbol": "$SBUX"
   },
   "name": "STARBUCKS CORPORATION",
-  "price": 99.33,
+  "price": 99.16,
   "previousClose": 100.75,
   "dayHigh": 100.91,
   "dayLow": 98.577,
-  "change": -1.4200000000000017,
-  "changePercent": -1.409429280397024,
+  "change": -1.5900000000000034,
+  "changePercent": -1.5781637717121624,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
-      "close": 99.33000183105469
+      "close": 99.25499725341797
     },
     {
-      "timestamp": 1780083687,
-      "close": 99.33000183105469
+      "timestamp": 1780083900,
+      "close": 99.42500305175781
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 99.56999969482422
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 99.13999938964844
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 99.16000366210938
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-05-29T12:00:00.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:35.620Z"
+  "generatedAt": "2026-05-29T22:05:44.140Z"
 }

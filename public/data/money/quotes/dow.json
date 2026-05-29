@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 33.59,
+  "price": 33.75,
   "previousClose": 34.42,
   "dayHigh": 34.495,
   "dayLow": 33.445,
-  "change": -0.8299999999999983,
-  "changePercent": -2.411388727484016,
+  "change": -0.6700000000000017,
+  "changePercent": -1.94654270772807,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1780083300,
-      "close": 33.595001220703125
+      "close": 33.599998474121094
     },
     {
-      "timestamp": 1780083657,
-      "close": 33.59000015258789
+      "timestamp": 1780083600,
+      "close": 33.529998779296875
+    },
+    {
+      "timestamp": 1780083900,
+      "close": 33.54499816894531
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 33.56999969482422
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 33.77000045776367
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 33.75
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-05-29T13:40:04.000Z"
   },
-  "generatedAt": "2026-05-29T19:40:58.749Z"
+  "generatedAt": "2026-05-29T22:05:05.451Z"
 }

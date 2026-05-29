@@ -5,12 +5,12 @@
     "displaySymbol": "$PH"
   },
   "name": "PARKER-HANNIFIN CORPORATION",
-  "price": 845.43,
+  "price": 844.63,
   "previousClose": 852.81,
   "dayHigh": 856.84,
-  "dayLow": 844.59,
-  "change": -7.3799999999999955,
-  "changePercent": -0.865374467935413,
+  "dayLow": 844,
+  "change": -8.17999999999995,
+  "changePercent": -0.9591819983349105,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1780083600,
-      "close": 845.4349975585938
+      "close": 845.594970703125
     },
     {
-      "timestamp": 1780083686,
-      "close": 845.4299926757812
+      "timestamp": 1780083900,
+      "close": 845.1500244140625
+    },
+    {
+      "timestamp": 1780084200,
+      "close": 845.5
+    },
+    {
+      "timestamp": 1780084500,
+      "close": 844.0800170898438
+    },
+    {
+      "timestamp": 1780084800,
+      "close": 844.6300048828125
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-05-26T11:42:59.000Z"
   },
-  "generatedAt": "2026-05-29T19:41:29.881Z"
+  "generatedAt": "2026-05-29T22:05:38.494Z"
 }
