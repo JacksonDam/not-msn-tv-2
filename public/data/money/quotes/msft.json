@@ -5,337 +5,65 @@
     "displaySymbol": "$MSFT"
   },
   "name": "MICROSOFT CORPORATION",
-  "price": 427.34,
-  "previousClose": 441.31,
-  "dayHigh": 440.39,
-  "dayLow": 424.25,
-  "change": -13.970000000000027,
-  "changePercent": -3.1655752192336517,
+  "price": 430.172,
+  "previousClose": 427.34,
+  "dayHigh": 436.15,
+  "dayLow": 428.75,
+  "change": 2.8320000000000505,
+  "changePercent": 0.6627041699817594,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1780493400,
-      "close": 436.1099853515625
+      "timestamp": 1780579800,
+      "close": 429.7099914550781
     },
     {
-      "timestamp": 1780493700,
-      "close": 434.9200134277344
+      "timestamp": 1780580100,
+      "close": 432.42498779296875
     },
     {
-      "timestamp": 1780494000,
-      "close": 432.17999267578125
+      "timestamp": 1780580400,
+      "close": 431.8299865722656
     },
     {
-      "timestamp": 1780494300,
-      "close": 432.55499267578125
+      "timestamp": 1780580700,
+      "close": 429.8888854980469
     },
     {
-      "timestamp": 1780494600,
-      "close": 432.30999755859375
+      "timestamp": 1780581000,
+      "close": 430.1099853515625
     },
     {
-      "timestamp": 1780494900,
-      "close": 431.3999938964844
+      "timestamp": 1780581300,
+      "close": 432.4849853515625
     },
     {
-      "timestamp": 1780495200,
-      "close": 432.0299987792969
+      "timestamp": 1780581600,
+      "close": 433.7650146484375
     },
     {
-      "timestamp": 1780495500,
-      "close": 431.8949890136719
+      "timestamp": 1780581900,
+      "close": 432.2250061035156
     },
     {
-      "timestamp": 1780495800,
-      "close": 432.4798889160156
+      "timestamp": 1780582200,
+      "close": 431.489990234375
     },
     {
-      "timestamp": 1780496100,
-      "close": 432.5950012207031
+      "timestamp": 1780582500,
+      "close": 430.25
     },
     {
-      "timestamp": 1780496400,
-      "close": 431.1700134277344
-    },
-    {
-      "timestamp": 1780496700,
-      "close": 430.81500244140625
-    },
-    {
-      "timestamp": 1780497000,
-      "close": 429.4901123046875
-    },
-    {
-      "timestamp": 1780497300,
-      "close": 428.5299987792969
-    },
-    {
-      "timestamp": 1780497600,
-      "close": 428.2449951171875
-    },
-    {
-      "timestamp": 1780497900,
-      "close": 427.5050048828125
-    },
-    {
-      "timestamp": 1780498200,
-      "close": 427.07330322265625
-    },
-    {
-      "timestamp": 1780498500,
-      "close": 427.3550109863281
-    },
-    {
-      "timestamp": 1780498800,
-      "close": 426.9114990234375
-    },
-    {
-      "timestamp": 1780499100,
-      "close": 426.70001220703125
-    },
-    {
-      "timestamp": 1780499400,
-      "close": 425.9599914550781
-    },
-    {
-      "timestamp": 1780499700,
-      "close": 427.32000732421875
-    },
-    {
-      "timestamp": 1780500000,
-      "close": 426.82501220703125
-    },
-    {
-      "timestamp": 1780500300,
-      "close": 427.739990234375
-    },
-    {
-      "timestamp": 1780500600,
-      "close": 426.3299865722656
-    },
-    {
-      "timestamp": 1780500900,
-      "close": 426.4200134277344
-    },
-    {
-      "timestamp": 1780501200,
-      "close": 426.6199951171875
-    },
-    {
-      "timestamp": 1780501500,
-      "close": 426.42999267578125
-    },
-    {
-      "timestamp": 1780501800,
-      "close": 426.9649963378906
-    },
-    {
-      "timestamp": 1780502100,
-      "close": 427.0498962402344
-    },
-    {
-      "timestamp": 1780502400,
-      "close": 426.67498779296875
-    },
-    {
-      "timestamp": 1780502700,
-      "close": 426.4949951171875
-    },
-    {
-      "timestamp": 1780503000,
-      "close": 426.0599060058594
-    },
-    {
-      "timestamp": 1780503300,
-      "close": 425.8500061035156
-    },
-    {
-      "timestamp": 1780503600,
-      "close": 425.57000732421875
-    },
-    {
-      "timestamp": 1780503900,
-      "close": 425.4750061035156
-    },
-    {
-      "timestamp": 1780504200,
-      "close": 425.152099609375
-    },
-    {
-      "timestamp": 1780504500,
-      "close": 424.3800048828125
-    },
-    {
-      "timestamp": 1780504800,
-      "close": 424.3500061035156
-    },
-    {
-      "timestamp": 1780505100,
-      "close": 424.8855895996094
-    },
-    {
-      "timestamp": 1780505400,
-      "close": 424.6700134277344
-    },
-    {
-      "timestamp": 1780505700,
-      "close": 424.6499938964844
-    },
-    {
-      "timestamp": 1780506000,
-      "close": 424.8450012207031
-    },
-    {
-      "timestamp": 1780506300,
-      "close": 424.9849853515625
-    },
-    {
-      "timestamp": 1780506600,
-      "close": 424.42999267578125
-    },
-    {
-      "timestamp": 1780506900,
-      "close": 424.6211853027344
-    },
-    {
-      "timestamp": 1780507200,
-      "close": 425.1099853515625
-    },
-    {
-      "timestamp": 1780507500,
-      "close": 425.45989990234375
-    },
-    {
-      "timestamp": 1780507800,
-      "close": 425.69000244140625
-    },
-    {
-      "timestamp": 1780508100,
-      "close": 426.2500915527344
-    },
-    {
-      "timestamp": 1780508400,
-      "close": 426.5199890136719
-    },
-    {
-      "timestamp": 1780508700,
-      "close": 426.7850036621094
-    },
-    {
-      "timestamp": 1780509000,
-      "close": 426.385009765625
-    },
-    {
-      "timestamp": 1780509300,
-      "close": 426.6199951171875
-    },
-    {
-      "timestamp": 1780509600,
-      "close": 426.9359130859375
-    },
-    {
-      "timestamp": 1780509900,
-      "close": 426.7699890136719
-    },
-    {
-      "timestamp": 1780510200,
-      "close": 427.4100036621094
-    },
-    {
-      "timestamp": 1780510500,
-      "close": 427.2799987792969
-    },
-    {
-      "timestamp": 1780510800,
-      "close": 428.0400085449219
-    },
-    {
-      "timestamp": 1780511100,
-      "close": 428.1499938964844
-    },
-    {
-      "timestamp": 1780511400,
-      "close": 428.3301086425781
-    },
-    {
-      "timestamp": 1780511700,
-      "close": 428.6000061035156
-    },
-    {
-      "timestamp": 1780512000,
-      "close": 428.6050109863281
-    },
-    {
-      "timestamp": 1780512300,
-      "close": 428.2699890136719
-    },
-    {
-      "timestamp": 1780512600,
-      "close": 427.8900146484375
-    },
-    {
-      "timestamp": 1780512900,
-      "close": 428.2997131347656
-    },
-    {
-      "timestamp": 1780513200,
-      "close": 427.70001220703125
-    },
-    {
-      "timestamp": 1780513500,
-      "close": 427.8349914550781
-    },
-    {
-      "timestamp": 1780513800,
-      "close": 428.07000732421875
-    },
-    {
-      "timestamp": 1780514100,
-      "close": 428.3949890136719
-    },
-    {
-      "timestamp": 1780514400,
-      "close": 427.8399963378906
-    },
-    {
-      "timestamp": 1780514700,
-      "close": 427.8299865722656
-    },
-    {
-      "timestamp": 1780515000,
-      "close": 427.8900146484375
-    },
-    {
-      "timestamp": 1780515300,
-      "close": 428.2049865722656
-    },
-    {
-      "timestamp": 1780515600,
-      "close": 427.9100036621094
-    },
-    {
-      "timestamp": 1780515900,
-      "close": 428.44000244140625
-    },
-    {
-      "timestamp": 1780516200,
-      "close": 427.82000732421875
-    },
-    {
-      "timestamp": 1780516500,
-      "close": 427.5799865722656
-    },
-    {
-      "timestamp": 1780516800,
-      "close": 427.3399963378906
+      "timestamp": 1780582846,
+      "close": 430.1719970703125
     }
   ],
   "news": {
-    "title": "Social Buzz: Wallstreetbets Stocks Mostly Declining Premarket Thursday; Broadcom, Marvell Technology to Open Lower",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-06-04T10:37:10.000Z"
+    "title": "ReelTime’s RI Launches Expanded Lawful Access, Taking Direct Aim at Big Tech AI’s Restrictions and Infrastructure Weakness",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-06-04T14:12:00.000Z"
   },
-  "generatedAt": "2026-06-04T10:45:02.376Z"
+  "generatedAt": "2026-06-04T14:20:46.784Z"
 }
