@@ -5,12 +5,12 @@
     "displaySymbol": "$CARR"
   },
   "name": "CARRIER GLOBAL CORPORATION",
-  "price": 66.56,
+  "price": 67.16,
   "previousClose": 68.54,
   "dayHigh": 67.63,
   "dayLow": 66.48,
-  "change": -1.980000000000004,
-  "changePercent": -2.8888240443536675,
+  "change": -1.3800000000000097,
+  "changePercent": -2.01342281879196,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1780686300,
-      "close": 66.61000061035156
+      "close": 66.54499816894531
     },
     {
-      "timestamp": 1780686477,
-      "close": 66.55999755859375
+      "timestamp": 1780686600,
+      "close": 66.56999969482422
+    },
+    {
+      "timestamp": 1780686900,
+      "close": 66.59500122070312
+    },
+    {
+      "timestamp": 1780687200,
+      "close": 66.7699966430664
+    },
+    {
+      "timestamp": 1780687500,
+      "close": 66.87000274658203
+    },
+    {
+      "timestamp": 1780687800,
+      "close": 66.76499938964844
+    },
+    {
+      "timestamp": 1780688100,
+      "close": 66.93499755859375
+    },
+    {
+      "timestamp": 1780688400,
+      "close": 66.97000122070312
+    },
+    {
+      "timestamp": 1780688700,
+      "close": 67.01000213623047
+    },
+    {
+      "timestamp": 1780689000,
+      "close": 67.19999694824219
+    },
+    {
+      "timestamp": 1780689300,
+      "close": 67.16000366210938
+    },
+    {
+      "timestamp": 1780689600,
+      "close": 67.16000366210938
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-06-05T06:09:13.000Z"
   },
-  "generatedAt": "2026-06-05T19:08:07.371Z"
+  "generatedAt": "2026-06-05T20:56:18.150Z"
 }

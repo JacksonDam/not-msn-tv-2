@@ -5,12 +5,12 @@
     "displaySymbol": "$CBOE"
   },
   "name": "CBOE GLOBAL MARKETS, INC.",
-  "price": 282.07,
+  "price": 281.91,
   "previousClose": 286.03,
   "dayHigh": 288,
   "dayLow": 279.39,
-  "change": -3.9599999999999795,
-  "changePercent": -1.3844701604726708,
+  "change": -4.119999999999948,
+  "changePercent": -1.440408348774586,
   "currency": "USD",
   "exchangeName": "BTS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1780686300,
-      "close": 282.2699890136719
+      "close": 281.94000244140625
     },
     {
-      "timestamp": 1780686476,
-      "close": 282.07000732421875
+      "timestamp": 1780686600,
+      "close": 282.42498779296875
+    },
+    {
+      "timestamp": 1780686900,
+      "close": 282.4700012207031
+    },
+    {
+      "timestamp": 1780687200,
+      "close": 282.875
+    },
+    {
+      "timestamp": 1780687500,
+      "close": 282.6700134277344
+    },
+    {
+      "timestamp": 1780687800,
+      "close": 281.7099914550781
+    },
+    {
+      "timestamp": 1780688100,
+      "close": 282.2200012207031
+    },
+    {
+      "timestamp": 1780688400,
+      "close": 281.67999267578125
+    },
+    {
+      "timestamp": 1780688700,
+      "close": 281.8599853515625
+    },
+    {
+      "timestamp": 1780689000,
+      "close": 282.1400146484375
+    },
+    {
+      "timestamp": 1780689300,
+      "close": 281.5400085449219
+    },
+    {
+      "timestamp": 1780689600,
+      "close": 281.9100036621094
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "The Fly",
     "publishedAt": "2026-06-05T13:36:13.000Z"
   },
-  "generatedAt": "2026-06-05T19:08:07.956Z"
+  "generatedAt": "2026-06-05T20:56:18.672Z"
 }

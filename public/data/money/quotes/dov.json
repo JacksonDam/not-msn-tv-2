@@ -5,12 +5,12 @@
     "displaySymbol": "$DOV"
   },
   "name": "DOVER CORPORATION",
-  "price": 214.38,
+  "price": 214.76,
   "previousClose": 213.47,
   "dayHigh": 215.71,
   "dayLow": 212.3,
-  "change": 0.9099999999999966,
-  "changePercent": 0.42628940834777557,
+  "change": 1.289999999999992,
+  "changePercent": 0.6043003700754167,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1780686300,
-      "close": 214.27999877929688
+      "close": 214.16000366210938
     },
     {
-      "timestamp": 1780686451,
-      "close": 214.3800048828125
+      "timestamp": 1780686600,
+      "close": 214.24000549316406
+    },
+    {
+      "timestamp": 1780686900,
+      "close": 213.9949951171875
+    },
+    {
+      "timestamp": 1780687200,
+      "close": 214.0399932861328
+    },
+    {
+      "timestamp": 1780687500,
+      "close": 214.44000244140625
+    },
+    {
+      "timestamp": 1780687800,
+      "close": 214.47500610351562
+    },
+    {
+      "timestamp": 1780688100,
+      "close": 215.1699981689453
+    },
+    {
+      "timestamp": 1780688400,
+      "close": 214.9550018310547
+    },
+    {
+      "timestamp": 1780688700,
+      "close": 215.1300048828125
+    },
+    {
+      "timestamp": 1780689000,
+      "close": 215.11000061035156
+    },
+    {
+      "timestamp": 1780689300,
+      "close": 214.81500244140625
+    },
+    {
+      "timestamp": 1780689600,
+      "close": 214.75999450683594
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-06-04T11:10:38.000Z"
   },
-  "generatedAt": "2026-06-05T19:08:18.311Z"
+  "generatedAt": "2026-06-05T20:56:28.001Z"
 }

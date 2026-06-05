@@ -5,12 +5,12 @@
     "displaySymbol": "$WDAY"
   },
   "name": "WORKDAY, INC.",
-  "price": 146.29,
+  "price": 144.28,
   "previousClose": 147.91,
   "dayHigh": 151.5,
   "dayLow": 143.53,
-  "change": -1.6200000000000045,
-  "changePercent": -1.0952606314650832,
+  "change": -3.6299999999999955,
+  "changePercent": -2.454195118653232,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1780686300,
-      "close": 146.27999877929688
+      "close": 146.25
     },
     {
-      "timestamp": 1780686549,
-      "close": 146.2899932861328
+      "timestamp": 1780686600,
+      "close": 146.44000244140625
+    },
+    {
+      "timestamp": 1780686900,
+      "close": 145.64999389648438
+    },
+    {
+      "timestamp": 1780687200,
+      "close": 145.9199981689453
+    },
+    {
+      "timestamp": 1780687500,
+      "close": 145.92999267578125
+    },
+    {
+      "timestamp": 1780687800,
+      "close": 146.02999877929688
+    },
+    {
+      "timestamp": 1780688100,
+      "close": 145.77999877929688
+    },
+    {
+      "timestamp": 1780688400,
+      "close": 144.08999633789062
+    },
+    {
+      "timestamp": 1780688700,
+      "close": 144.58999633789062
+    },
+    {
+      "timestamp": 1780689000,
+      "close": 144.69000244140625
+    },
+    {
+      "timestamp": 1780689300,
+      "close": 144.27999877929688
+    },
+    {
+      "timestamp": 1780689600,
+      "close": 144.27999877929688
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-06-05T04:39:15.000Z"
   },
-  "generatedAt": "2026-06-05T19:09:13.466Z"
+  "generatedAt": "2026-06-05T20:57:15.301Z"
 }

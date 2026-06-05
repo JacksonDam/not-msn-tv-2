@@ -5,12 +5,12 @@
     "displaySymbol": "$OKE"
   },
   "name": "ONEOK, INC.",
-  "price": 88.41,
+  "price": 88.25,
   "previousClose": 88.95,
   "dayHigh": 89.65,
-  "dayLow": 88.058,
-  "change": -0.5400000000000063,
-  "changePercent": -0.6070826306914067,
+  "dayLow": 88.04,
+  "change": -0.7000000000000028,
+  "changePercent": -0.7869589657110768,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1780686300,
-      "close": 88.4000015258789
+      "close": 88.43000030517578
     },
     {
-      "timestamp": 1780686483,
+      "timestamp": 1780686600,
+      "close": 88.5199966430664
+    },
+    {
+      "timestamp": 1780686900,
+      "close": 88.45999908447266
+    },
+    {
+      "timestamp": 1780687200,
+      "close": 88.45999908447266
+    },
+    {
+      "timestamp": 1780687500,
+      "close": 88.61000061035156
+    },
+    {
+      "timestamp": 1780687800,
+      "close": 88.44000244140625
+    },
+    {
+      "timestamp": 1780688100,
+      "close": 88.33370208740234
+    },
+    {
+      "timestamp": 1780688400,
+      "close": 88.13999938964844
+    },
+    {
+      "timestamp": 1780688700,
+      "close": 88.10432434082031
+    },
+    {
+      "timestamp": 1780689000,
       "close": 88.41000366210938
+    },
+    {
+      "timestamp": 1780689300,
+      "close": 88.25499725341797
+    },
+    {
+      "timestamp": 1780689600,
+      "close": 88.25
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-06-05T10:24:30.000Z"
   },
-  "generatedAt": "2026-06-05T19:08:51.514Z"
+  "generatedAt": "2026-06-05T20:56:56.928Z"
 }

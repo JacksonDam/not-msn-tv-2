@@ -5,12 +5,12 @@
     "displaySymbol": "$TAP"
   },
   "name": "MOLSON COORS BEVERAGE COMPANY",
-  "price": 39.04,
+  "price": 39.06,
   "previousClose": 38.43,
   "dayHigh": 39.345,
   "dayLow": 38.65,
-  "change": 0.6099999999999994,
-  "changePercent": 1.5873015873015859,
+  "change": 0.6300000000000026,
+  "changePercent": 1.6393442622950887,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1780686300,
+      "close": 39.060001373291016
+    },
+    {
+      "timestamp": 1780686600,
+      "close": 39.130001068115234
+    },
+    {
+      "timestamp": 1780686900,
+      "close": 39.150001525878906
+    },
+    {
+      "timestamp": 1780687200,
+      "close": 39.130001068115234
+    },
+    {
+      "timestamp": 1780687500,
+      "close": 39.1349983215332
+    },
+    {
+      "timestamp": 1780687800,
+      "close": 39.150001525878906
+    },
+    {
+      "timestamp": 1780688100,
+      "close": 39.08000183105469
+    },
+    {
+      "timestamp": 1780688400,
+      "close": 38.9900016784668
+    },
+    {
+      "timestamp": 1780688700,
+      "close": 38.959999084472656
+    },
+    {
+      "timestamp": 1780689000,
+      "close": 39.040000915527344
+    },
+    {
+      "timestamp": 1780689300,
       "close": 39.04999923706055
     },
     {
-      "timestamp": 1780686541,
-      "close": 39.040000915527344
+      "timestamp": 1780689600,
+      "close": 39.060001373291016
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-06-03T20:15:33.000Z"
   },
-  "generatedAt": "2026-06-05T19:09:04.419Z"
+  "generatedAt": "2026-06-05T20:57:08.293Z"
 }
