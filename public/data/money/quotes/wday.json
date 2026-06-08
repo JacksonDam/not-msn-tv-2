@@ -5,12 +5,12 @@
     "displaySymbol": "$WDAY"
   },
   "name": "WORKDAY, INC.",
-  "price": 143.98,
+  "price": 143.76,
   "previousClose": 144.28,
   "dayHigh": 145.48,
   "dayLow": 141.155,
-  "change": -0.30000000000001137,
-  "changePercent": -0.20792902689216203,
+  "change": -0.5200000000000102,
+  "changePercent": -0.36041031327974093,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1780947300,
-      "close": 144.0399932861328
+      "close": 144
     },
     {
-      "timestamp": 1780947391,
-      "close": 143.97999572753906
+      "timestamp": 1780947600,
+      "close": 144.0749969482422
+    },
+    {
+      "timestamp": 1780947900,
+      "close": 144.08999633789062
+    },
+    {
+      "timestamp": 1780948200,
+      "close": 143.9600067138672
+    },
+    {
+      "timestamp": 1780948500,
+      "close": 143.80999755859375
+    },
+    {
+      "timestamp": 1780948800,
+      "close": 143.75999450683594
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-06-05T19:49:44.000Z"
   },
-  "generatedAt": "2026-06-08T19:36:37.481Z"
+  "generatedAt": "2026-06-08T22:02:20.527Z"
 }

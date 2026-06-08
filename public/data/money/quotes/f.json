@@ -5,12 +5,12 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 15.07,
+  "price": 15,
   "previousClose": 14.9,
   "dayHigh": 15.19,
   "dayLow": 14.91,
-  "change": 0.16999999999999993,
-  "changePercent": 1.1409395973154357,
+  "change": 0.09999999999999964,
+  "changePercent": 0.671140939597313,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -308,8 +308,28 @@
       "close": 15.095000267028809
     },
     {
-      "timestamp": 1780947348,
+      "timestamp": 1780947300,
       "close": 15.069999694824219
+    },
+    {
+      "timestamp": 1780947600,
+      "close": 15.069999694824219
+    },
+    {
+      "timestamp": 1780947900,
+      "close": 15.055000305175781
+    },
+    {
+      "timestamp": 1780948200,
+      "close": 15.045000076293945
+    },
+    {
+      "timestamp": 1780948500,
+      "close": 15.005000114440918
+    },
+    {
+      "timestamp": 1780948800,
+      "close": 15
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-06-08T17:36:24.000Z"
   },
-  "generatedAt": "2026-06-08T19:35:51.989Z"
+  "generatedAt": "2026-06-08T22:01:33.037Z"
 }

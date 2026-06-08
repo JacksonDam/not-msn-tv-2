@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 86.55,
+  "price": 86.78,
   "previousClose": 87.28,
   "dayHigh": 87.28,
   "dayLow": 86.16,
-  "change": -0.730000000000004,
-  "changePercent": -0.8363886342804812,
+  "change": -0.5,
+  "changePercent": -0.5728689275893676,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1780947300,
-      "close": 86.56999969482422
+      "close": 86.59500122070312
     },
     {
-      "timestamp": 1780947368,
-      "close": 86.55000305175781
+      "timestamp": 1780947600,
+      "close": 86.63500213623047
+    },
+    {
+      "timestamp": 1780947900,
+      "close": 86.69000244140625
+    },
+    {
+      "timestamp": 1780948200,
+      "close": 86.87000274658203
+    },
+    {
+      "timestamp": 1780948500,
+      "close": 86.77999877929688
+    },
+    {
+      "timestamp": 1780948800,
+      "close": 86.77999877929688
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-06-08T13:00:00.000Z"
   },
-  "generatedAt": "2026-06-08T19:36:13.393Z"
+  "generatedAt": "2026-06-08T22:01:55.711Z"
 }

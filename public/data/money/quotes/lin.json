@@ -5,12 +5,12 @@
     "displaySymbol": "$LIN"
   },
   "name": "LINDE PLC",
-  "price": 502.92,
+  "price": 501.92,
   "previousClose": 507.9,
   "dayHigh": 510.18,
   "dayLow": 499.95,
-  "change": -4.979999999999961,
-  "changePercent": -0.9805079740106245,
+  "change": -5.979999999999961,
+  "changePercent": -1.177397125418382,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1780947300,
-      "close": 502.81500244140625
+      "close": 503.32000732421875
     },
     {
-      "timestamp": 1780947365,
-      "close": 502.9200134277344
+      "timestamp": 1780947600,
+      "close": 502.989990234375
+    },
+    {
+      "timestamp": 1780947900,
+      "close": 503.260009765625
+    },
+    {
+      "timestamp": 1780948200,
+      "close": 503.1300048828125
+    },
+    {
+      "timestamp": 1780948500,
+      "close": 501.9200134277344
+    },
+    {
+      "timestamp": 1780948800,
+      "close": 501.9200134277344
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-06-05T23:00:02.000Z"
   },
-  "generatedAt": "2026-06-08T19:36:06.991Z"
+  "generatedAt": "2026-06-08T22:01:48.570Z"
 }
