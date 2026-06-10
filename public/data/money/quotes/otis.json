@@ -5,12 +5,12 @@
     "displaySymbol": "$OTIS"
   },
   "name": "OTIS WORLDWIDE CORPORATION",
-  "price": 70.4,
+  "price": 69.66,
   "previousClose": 71.27,
   "dayHigh": 71.03,
-  "dayLow": 70.21,
-  "change": -0.8699999999999903,
-  "changePercent": -1.220709976147033,
+  "dayLow": 69.47,
+  "change": -1.6099999999999994,
+  "changePercent": -2.259015013329591,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -241,11 +241,95 @@
     },
     {
       "timestamp": 1781115000,
-      "close": 70.4000015258789
+      "close": 70.375
     },
     {
-      "timestamp": 1781115060,
-      "close": 70.4000015258789
+      "timestamp": 1781115300,
+      "close": 70.38500213623047
+    },
+    {
+      "timestamp": 1781115600,
+      "close": 70.41999816894531
+    },
+    {
+      "timestamp": 1781115900,
+      "close": 70.41000366210938
+    },
+    {
+      "timestamp": 1781116200,
+      "close": 70.38500213623047
+    },
+    {
+      "timestamp": 1781116500,
+      "close": 70.31999969482422
+    },
+    {
+      "timestamp": 1781116800,
+      "close": 70.2750015258789
+    },
+    {
+      "timestamp": 1781117100,
+      "close": 70.1500015258789
+    },
+    {
+      "timestamp": 1781117400,
+      "close": 70.1449966430664
+    },
+    {
+      "timestamp": 1781117700,
+      "close": 70.08000183105469
+    },
+    {
+      "timestamp": 1781118000,
+      "close": 69.97000122070312
+    },
+    {
+      "timestamp": 1781118300,
+      "close": 70.05999755859375
+    },
+    {
+      "timestamp": 1781118600,
+      "close": 70.01000213623047
+    },
+    {
+      "timestamp": 1781118900,
+      "close": 70.05000305175781
+    },
+    {
+      "timestamp": 1781119200,
+      "close": 69.94999694824219
+    },
+    {
+      "timestamp": 1781119500,
+      "close": 69.87999725341797
+    },
+    {
+      "timestamp": 1781119800,
+      "close": 69.88999938964844
+    },
+    {
+      "timestamp": 1781120100,
+      "close": 69.75
+    },
+    {
+      "timestamp": 1781120400,
+      "close": 69.6500015258789
+    },
+    {
+      "timestamp": 1781120700,
+      "close": 69.72000122070312
+    },
+    {
+      "timestamp": 1781121000,
+      "close": 69.69999694824219
+    },
+    {
+      "timestamp": 1781121300,
+      "close": 69.66999816894531
+    },
+    {
+      "timestamp": 1781121600,
+      "close": 69.66000366210938
     }
   ],
   "news": {
@@ -253,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-06-10T17:12:00.000Z"
   },
-  "generatedAt": "2026-06-10T18:11:07.259Z"
+  "generatedAt": "2026-06-10T20:45:53.526Z"
 }
