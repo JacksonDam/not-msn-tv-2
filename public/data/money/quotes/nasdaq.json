@@ -5,337 +5,73 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 25678.822,
-  "previousClose": 25929.662,
-  "dayHigh": 26259.922,
-  "dayLow": 24980.377,
-  "change": -250.84000000000015,
-  "changePercent": -0.967386308390754,
+  "price": 25674.621,
+  "previousClose": 25678.822,
+  "dayHigh": 25725.996,
+  "dayLow": 25405.88,
+  "change": -4.201000000000931,
+  "changePercent": -0.01635978472844639,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1781011800,
-      "close": 26103.978515625
+      "timestamp": 1781098200,
+      "close": 25414.283203125
     },
     {
-      "timestamp": 1781012100,
-      "close": 26140.666015625
+      "timestamp": 1781098500,
+      "close": 25556.39453125
     },
     {
-      "timestamp": 1781012400,
-      "close": 26182.171875
+      "timestamp": 1781098800,
+      "close": 25640.859375
     },
     {
-      "timestamp": 1781012700,
-      "close": 26254.462890625
+      "timestamp": 1781099100,
+      "close": 25675.01953125
     },
     {
-      "timestamp": 1781013000,
-      "close": 26175.001953125
+      "timestamp": 1781099400,
+      "close": 25585.42578125
     },
     {
-      "timestamp": 1781013300,
-      "close": 26123.125
+      "timestamp": 1781099700,
+      "close": 25580.734375
     },
     {
-      "timestamp": 1781013600,
-      "close": 26110.62109375
+      "timestamp": 1781100000,
+      "close": 25632.6796875
     },
     {
-      "timestamp": 1781013900,
-      "close": 26080.08984375
+      "timestamp": 1781100300,
+      "close": 25667.6640625
     },
     {
-      "timestamp": 1781014200,
-      "close": 25970.625
+      "timestamp": 1781100600,
+      "close": 25644.83203125
     },
     {
-      "timestamp": 1781014500,
-      "close": 25883.373046875
+      "timestamp": 1781100900,
+      "close": 25632.048828125
     },
     {
-      "timestamp": 1781014800,
-      "close": 25967.8984375
+      "timestamp": 1781101200,
+      "close": 25717.703125
     },
     {
-      "timestamp": 1781015100,
-      "close": 25919.32421875
+      "timestamp": 1781101500,
+      "close": 25649.9609375
     },
     {
-      "timestamp": 1781015400,
-      "close": 25919.7109375
-    },
-    {
-      "timestamp": 1781015700,
-      "close": 25917.904296875
-    },
-    {
-      "timestamp": 1781016000,
-      "close": 25805.396484375
-    },
-    {
-      "timestamp": 1781016300,
-      "close": 25656.98046875
-    },
-    {
-      "timestamp": 1781016600,
-      "close": 25717.14453125
-    },
-    {
-      "timestamp": 1781016900,
-      "close": 25757.990234375
-    },
-    {
-      "timestamp": 1781017200,
-      "close": 25719.232421875
-    },
-    {
-      "timestamp": 1781017500,
-      "close": 25769.626953125
-    },
-    {
-      "timestamp": 1781017800,
-      "close": 25755.171875
-    },
-    {
-      "timestamp": 1781018100,
-      "close": 25687.466796875
-    },
-    {
-      "timestamp": 1781018400,
-      "close": 25574.611328125
-    },
-    {
-      "timestamp": 1781018700,
-      "close": 25439.005859375
-    },
-    {
-      "timestamp": 1781019000,
-      "close": 25432.236328125
-    },
-    {
-      "timestamp": 1781019300,
-      "close": 25459.02734375
-    },
-    {
-      "timestamp": 1781019600,
-      "close": 25471.0234375
-    },
-    {
-      "timestamp": 1781019900,
-      "close": 25486.453125
-    },
-    {
-      "timestamp": 1781020200,
-      "close": 25452.9140625
-    },
-    {
-      "timestamp": 1781020500,
-      "close": 25329.73828125
-    },
-    {
-      "timestamp": 1781020800,
-      "close": 25349.572265625
-    },
-    {
-      "timestamp": 1781021100,
-      "close": 25263.111328125
-    },
-    {
-      "timestamp": 1781021400,
-      "close": 25272.078125
-    },
-    {
-      "timestamp": 1781021700,
-      "close": 25145.23046875
-    },
-    {
-      "timestamp": 1781022000,
-      "close": 25209.779296875
-    },
-    {
-      "timestamp": 1781022300,
-      "close": 25206.330078125
-    },
-    {
-      "timestamp": 1781022600,
-      "close": 25184.865234375
-    },
-    {
-      "timestamp": 1781022900,
-      "close": 25009.720703125
-    },
-    {
-      "timestamp": 1781023200,
-      "close": 25082.484375
-    },
-    {
-      "timestamp": 1781023500,
-      "close": 25081.529296875
-    },
-    {
-      "timestamp": 1781023800,
-      "close": 25022.3671875
-    },
-    {
-      "timestamp": 1781024100,
-      "close": 25168.115234375
-    },
-    {
-      "timestamp": 1781024400,
-      "close": 25285.998046875
-    },
-    {
-      "timestamp": 1781024700,
-      "close": 25278.466796875
-    },
-    {
-      "timestamp": 1781025000,
-      "close": 25307.55859375
-    },
-    {
-      "timestamp": 1781025300,
-      "close": 25367.48046875
-    },
-    {
-      "timestamp": 1781025600,
-      "close": 25372.18359375
-    },
-    {
-      "timestamp": 1781025900,
-      "close": 25393.130859375
-    },
-    {
-      "timestamp": 1781026200,
-      "close": 25433.90625
-    },
-    {
-      "timestamp": 1781026500,
-      "close": 25455.154296875
-    },
-    {
-      "timestamp": 1781026800,
-      "close": 25493.849609375
-    },
-    {
-      "timestamp": 1781027100,
-      "close": 25394.328125
-    },
-    {
-      "timestamp": 1781027400,
-      "close": 25450.689453125
-    },
-    {
-      "timestamp": 1781027700,
-      "close": 25468.193359375
-    },
-    {
-      "timestamp": 1781028000,
-      "close": 25471.08984375
-    },
-    {
-      "timestamp": 1781028300,
-      "close": 25513.23046875
-    },
-    {
-      "timestamp": 1781028600,
-      "close": 25506.15625
-    },
-    {
-      "timestamp": 1781028900,
-      "close": 25560.21875
-    },
-    {
-      "timestamp": 1781029200,
-      "close": 25587.548828125
-    },
-    {
-      "timestamp": 1781029500,
-      "close": 25588.1875
-    },
-    {
-      "timestamp": 1781029800,
-      "close": 25618.935546875
-    },
-    {
-      "timestamp": 1781030100,
-      "close": 25632.111328125
-    },
-    {
-      "timestamp": 1781030400,
-      "close": 25559.546875
-    },
-    {
-      "timestamp": 1781030700,
-      "close": 25592.9140625
-    },
-    {
-      "timestamp": 1781031000,
-      "close": 25603.177734375
-    },
-    {
-      "timestamp": 1781031300,
-      "close": 25663.21875
-    },
-    {
-      "timestamp": 1781031600,
-      "close": 25697.025390625
-    },
-    {
-      "timestamp": 1781031900,
-      "close": 25651.701171875
-    },
-    {
-      "timestamp": 1781032200,
-      "close": 25585.892578125
-    },
-    {
-      "timestamp": 1781032500,
-      "close": 25512.57421875
-    },
-    {
-      "timestamp": 1781032800,
-      "close": 25527.068359375
-    },
-    {
-      "timestamp": 1781033100,
-      "close": 25568.453125
-    },
-    {
-      "timestamp": 1781033400,
-      "close": 25580.0859375
-    },
-    {
-      "timestamp": 1781033700,
-      "close": 25538.95703125
-    },
-    {
-      "timestamp": 1781034000,
-      "close": 25531.712890625
-    },
-    {
-      "timestamp": 1781034300,
-      "close": 25502.072265625
-    },
-    {
-      "timestamp": 1781034600,
-      "close": 25632.421875
-    },
-    {
-      "timestamp": 1781034900,
-      "close": 25675.19140625
-    },
-    {
-      "timestamp": 1781035200,
-      "close": 25678.822265625
+      "timestamp": 1781101793,
+      "close": 25674.62109375
     }
   ],
   "news": {
-    "title": "Tech Stock Selloff Rages On After U.S. Attacks Iran. Stock Futures Dive.",
-    "publisher": "Barrons.com",
-    "publishedAt": "2026-06-10T10:12:27.000Z"
+    "title": "Who’s buying the red-hot SpaceX IPO?",
+    "publisher": "Yahoo Finance Video",
+    "publishedAt": "2026-06-10T14:21:14.000Z"
   },
-  "generatedAt": "2026-06-10T11:03:34.097Z"
+  "generatedAt": "2026-06-10T14:29:55.109Z"
 }

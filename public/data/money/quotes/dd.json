@@ -5,337 +5,73 @@
     "displaySymbol": "$DD"
   },
   "name": "DUPONT DE NEMOURS, INC.",
-  "price": 47.06,
-  "previousClose": 46.99,
-  "dayHigh": 47.9,
-  "dayLow": 45.89,
-  "change": 0.07000000000000028,
-  "changePercent": 0.14896786550329918,
+  "price": 46.51,
+  "previousClose": 47.06,
+  "dayHigh": 46.86,
+  "dayLow": 46.23,
+  "change": -0.5500000000000043,
+  "changePercent": -1.1687207819804595,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1781011800,
-      "close": 47.5
-    },
-    {
-      "timestamp": 1781012100,
-      "close": 47.65999984741211
-    },
-    {
-      "timestamp": 1781012400,
-      "close": 47.68000030517578
-    },
-    {
-      "timestamp": 1781012700,
-      "close": 47.84000015258789
-    },
-    {
-      "timestamp": 1781013000,
-      "close": 47.75
-    },
-    {
-      "timestamp": 1781013300,
-      "close": 47.6150016784668
-    },
-    {
-      "timestamp": 1781013600,
-      "close": 47.560001373291016
-    },
-    {
-      "timestamp": 1781013900,
-      "close": 47.400001525878906
-    },
-    {
-      "timestamp": 1781014200,
-      "close": 47.20500183105469
-    },
-    {
-      "timestamp": 1781014500,
-      "close": 47.060001373291016
-    },
-    {
-      "timestamp": 1781014800,
-      "close": 47.06999969482422
-    },
-    {
-      "timestamp": 1781015100,
-      "close": 46.93000030517578
-    },
-    {
-      "timestamp": 1781015400,
-      "close": 46.90999984741211
-    },
-    {
-      "timestamp": 1781015700,
-      "close": 46.81999969482422
-    },
-    {
-      "timestamp": 1781016000,
-      "close": 46.790000915527344
-    },
-    {
-      "timestamp": 1781016300,
-      "close": 46.40999984741211
-    },
-    {
-      "timestamp": 1781016600,
-      "close": 46.599998474121094
-    },
-    {
-      "timestamp": 1781016900,
-      "close": 46.709999084472656
-    },
-    {
-      "timestamp": 1781017200,
-      "close": 46.71500015258789
-    },
-    {
-      "timestamp": 1781017500,
-      "close": 46.779998779296875
-    },
-    {
-      "timestamp": 1781017800,
-      "close": 46.875
-    },
-    {
-      "timestamp": 1781018100,
-      "close": 46.810001373291016
-    },
-    {
-      "timestamp": 1781018400,
-      "close": 46.67499923706055
-    },
-    {
-      "timestamp": 1781018700,
-      "close": 46.380001068115234
-    },
-    {
-      "timestamp": 1781019000,
-      "close": 46.400001525878906
-    },
-    {
-      "timestamp": 1781019300,
-      "close": 46.40010070800781
-    },
-    {
-      "timestamp": 1781019600,
-      "close": 46.5099983215332
-    },
-    {
-      "timestamp": 1781019900,
-      "close": 46.4900016784668
-    },
-    {
-      "timestamp": 1781020200,
-      "close": 46.45000076293945
-    },
-    {
-      "timestamp": 1781020500,
-      "close": 46.279998779296875
-    },
-    {
-      "timestamp": 1781020800,
-      "close": 46.345001220703125
-    },
-    {
-      "timestamp": 1781021100,
-      "close": 46.22999954223633
-    },
-    {
-      "timestamp": 1781021400,
-      "close": 46.209999084472656
-    },
-    {
-      "timestamp": 1781021700,
-      "close": 46.060001373291016
-    },
-    {
-      "timestamp": 1781022000,
-      "close": 46.15999984741211
-    },
-    {
-      "timestamp": 1781022300,
-      "close": 46.20500183105469
-    },
-    {
-      "timestamp": 1781022600,
-      "close": 46.2599983215332
-    },
-    {
-      "timestamp": 1781022900,
-      "close": 46.029998779296875
-    },
-    {
-      "timestamp": 1781023200,
-      "close": 46.05500030517578
-    },
-    {
-      "timestamp": 1781023500,
-      "close": 46.040000915527344
-    },
-    {
-      "timestamp": 1781023800,
-      "close": 45.970001220703125
-    },
-    {
-      "timestamp": 1781024100,
-      "close": 46.06999969482422
-    },
-    {
-      "timestamp": 1781024400,
-      "close": 46.18000030517578
-    },
-    {
-      "timestamp": 1781024700,
-      "close": 46.20500183105469
-    },
-    {
-      "timestamp": 1781025000,
-      "close": 46.16999816894531
-    },
-    {
-      "timestamp": 1781025300,
-      "close": 46.38999938964844
-    },
-    {
-      "timestamp": 1781025600,
-      "close": 46.439998626708984
-    },
-    {
-      "timestamp": 1781025900,
-      "close": 46.5
-    },
-    {
-      "timestamp": 1781026200,
-      "close": 46.470001220703125
-    },
-    {
-      "timestamp": 1781026500,
-      "close": 46.540000915527344
-    },
-    {
-      "timestamp": 1781026800,
-      "close": 46.689998626708984
-    },
-    {
-      "timestamp": 1781027100,
-      "close": 46.540000915527344
-    },
-    {
-      "timestamp": 1781027400,
-      "close": 46.61000061035156
-    },
-    {
-      "timestamp": 1781027700,
-      "close": 46.65999984741211
-    },
-    {
-      "timestamp": 1781028000,
-      "close": 46.6150016784668
-    },
-    {
-      "timestamp": 1781028300,
-      "close": 46.689998626708984
-    },
-    {
-      "timestamp": 1781028600,
-      "close": 46.779998779296875
-    },
-    {
-      "timestamp": 1781028900,
-      "close": 46.869998931884766
-    },
-    {
-      "timestamp": 1781029200,
-      "close": 46.900001525878906
-    },
-    {
-      "timestamp": 1781029500,
-      "close": 46.90999984741211
-    },
-    {
-      "timestamp": 1781029800,
-      "close": 46.959999084472656
-    },
-    {
-      "timestamp": 1781030100,
-      "close": 47.04999923706055
-    },
-    {
-      "timestamp": 1781030400,
-      "close": 46.91999816894531
-    },
-    {
-      "timestamp": 1781030700,
-      "close": 46.95500183105469
-    },
-    {
-      "timestamp": 1781031000,
-      "close": 46.96500015258789
-    },
-    {
-      "timestamp": 1781031300,
-      "close": 47.029998779296875
-    },
-    {
-      "timestamp": 1781031600,
-      "close": 47.0099983215332
-    },
-    {
-      "timestamp": 1781031900,
-      "close": 46.88999938964844
-    },
-    {
-      "timestamp": 1781032200,
-      "close": 46.84000015258789
-    },
-    {
-      "timestamp": 1781032500,
+      "timestamp": 1781098200,
       "close": 46.70500183105469
     },
     {
-      "timestamp": 1781032800,
-      "close": 46.72999954223633
+      "timestamp": 1781098500,
+      "close": 46.66999816894531
     },
     {
-      "timestamp": 1781033100,
-      "close": 46.72999954223633
+      "timestamp": 1781098800,
+      "close": 46.560001373291016
     },
     {
-      "timestamp": 1781033400,
-      "close": 46.709999084472656
+      "timestamp": 1781099100,
+      "close": 46.619998931884766
     },
     {
-      "timestamp": 1781033700,
-      "close": 46.67499923706055
+      "timestamp": 1781099400,
+      "close": 46.435001373291016
     },
     {
-      "timestamp": 1781034000,
-      "close": 46.625
+      "timestamp": 1781099700,
+      "close": 46.43000030517578
     },
     {
-      "timestamp": 1781034300,
-      "close": 46.689998626708984
+      "timestamp": 1781100000,
+      "close": 46.310001373291016
     },
     {
-      "timestamp": 1781034600,
-      "close": 46.880001068115234
+      "timestamp": 1781100300,
+      "close": 46.44499969482422
     },
     {
-      "timestamp": 1781034900,
-      "close": 47.060001373291016
+      "timestamp": 1781100600,
+      "close": 46.38999938964844
     },
     {
-      "timestamp": 1781035200,
-      "close": 47.060001373291016
+      "timestamp": 1781100900,
+      "close": 46.525001525878906
+    },
+    {
+      "timestamp": 1781101200,
+      "close": 46.579898834228516
+    },
+    {
+      "timestamp": 1781101500,
+      "close": 46.5099983215332
+    },
+    {
+      "timestamp": 1781101813,
+      "close": 46.5099983215332
     }
   ],
   "news": {
-    "title": "DuPont™ MemCor™ MBR system selected for major Riverstone Water Resource Recovery Facility upgrade in Australia",
+    "title": "DuPont Announces Healthcare Solutions U.S.-based Manufacturing Sites Now Powered by 100% Renewable Electricity",
     "publisher": "PR Newswire",
-    "publishedAt": "2026-06-09T13:00:00.000Z"
+    "publishedAt": "2026-06-10T13:00:00.000Z"
   },
-  "generatedAt": "2026-06-10T11:03:52.836Z"
+  "generatedAt": "2026-06-10T14:30:17.397Z"
 }
