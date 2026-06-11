@@ -5,12 +5,12 @@
     "displaySymbol": "$ABBV"
   },
   "name": "ABBVIE INC.",
-  "price": 226.65,
+  "price": 224.77,
   "previousClose": 224.95,
   "dayHigh": 227.55,
   "dayLow": 224.04,
-  "change": 1.700000000000017,
-  "changePercent": 0.7557234941098099,
+  "change": -0.1799999999999784,
+  "changePercent": -0.08001778172926358,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1781206800,
-      "close": 226.6199951171875
+      "close": 226.57000732421875
     },
     {
-      "timestamp": 1781207087,
-      "close": 226.64990234375
+      "timestamp": 1781207100,
+      "close": 226.36000061035156
+    },
+    {
+      "timestamp": 1781207400,
+      "close": 225.64999389648438
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 224.75999450683594
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 224.77000427246094
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-06-11T18:22:07.000Z"
   },
-  "generatedAt": "2026-06-11T19:44:50.259Z"
+  "generatedAt": "2026-06-11T22:15:50.448Z"
 }

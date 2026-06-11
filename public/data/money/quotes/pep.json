@@ -5,12 +5,12 @@
     "displaySymbol": "$PEP"
   },
   "name": "PEPSICO, INC.",
-  "price": 144.12,
+  "price": 143.73,
   "previousClose": 144.32,
   "dayHigh": 145.4,
-  "dayLow": 144.04,
-  "change": -0.19999999999998863,
-  "changePercent": -0.13858093126385024,
+  "dayLow": 143.57,
+  "change": -0.5900000000000034,
+  "changePercent": -0.40881374722838376,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 144.25
     },
     {
-      "timestamp": 1781207140,
-      "close": 144.1199951171875
+      "timestamp": 1781207100,
+      "close": 144.14999389648438
+    },
+    {
+      "timestamp": 1781207400,
+      "close": 143.9600067138672
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 143.69000244140625
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 143.72999572753906
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-06-11T13:32:17.000Z"
   },
-  "generatedAt": "2026-06-11T19:45:44.428Z"
+  "generatedAt": "2026-06-11T22:16:39.745Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$CNP"
   },
   "name": "CENTERPOINT ENERGY, INC.",
-  "price": 42.785,
+  "price": 42.55,
   "previousClose": 42.74,
   "dayHigh": 43.17,
-  "dayLow": 42.73,
-  "change": 0.0449999999999946,
-  "changePercent": 0.10528778661673982,
+  "dayLow": 42.525,
+  "change": -0.19000000000000483,
+  "changePercent": -0.444548432381855,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1781206800,
+      "close": 42.790000915527344
+    },
+    {
+      "timestamp": 1781207100,
       "close": 42.779998779296875
     },
     {
-      "timestamp": 1781207102,
-      "close": 42.78499984741211
+      "timestamp": 1781207400,
+      "close": 42.630001068115234
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 42.54999923706055
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 42.54999923706055
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-06-11T17:39:48.000Z"
   },
-  "generatedAt": "2026-06-11T19:45:04.858Z"
+  "generatedAt": "2026-06-11T22:16:04.072Z"
 }

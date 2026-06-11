@@ -5,12 +5,12 @@
     "displaySymbol": "$ES"
   },
   "name": "EVERSOURCE ENERGY",
-  "price": 68.97,
+  "price": 68.43,
   "previousClose": 69.18,
   "dayHigh": 69.97,
-  "dayLow": 68.96,
-  "change": -0.21000000000000796,
-  "changePercent": -0.30355594102342864,
+  "dayLow": 68.44,
+  "change": -0.75,
+  "changePercent": -1.0841283607979184,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1781206800,
-      "close": 68.9800033569336
+      "close": 69
     },
     {
-      "timestamp": 1781207113,
-      "close": 68.97000122070312
+      "timestamp": 1781207100,
+      "close": 68.83999633789062
+    },
+    {
+      "timestamp": 1781207400,
+      "close": 68.66999816894531
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 68.41999816894531
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 68.43000030517578
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Utility Dive",
     "publishedAt": "2026-06-11T08:52:22.000Z"
   },
-  "generatedAt": "2026-06-11T19:45:14.869Z"
+  "generatedAt": "2026-06-11T22:16:13.151Z"
 }

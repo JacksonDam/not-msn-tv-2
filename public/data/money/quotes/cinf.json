@@ -5,12 +5,12 @@
     "displaySymbol": "$CINF"
   },
   "name": "CINCINNATI FINANCIAL CORPORATION",
-  "price": 169.13,
+  "price": 168.3,
   "previousClose": 166.43,
   "dayHigh": 170.43,
   "dayLow": 167.265,
-  "change": 2.6999999999999886,
-  "changePercent": 1.6223036712131156,
+  "change": 1.8700000000000045,
+  "changePercent": 1.1235955056179803,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,23 @@
     },
     {
       "timestamp": 1781206800,
-      "close": 169.17999267578125
+      "close": 169.1300048828125
     },
     {
-      "timestamp": 1781207099,
-      "close": 169.1300048828125
+      "timestamp": 1781207100,
+      "close": 169.05999755859375
+    },
+    {
+      "timestamp": 1781207400,
+      "close": 168.3699951171875
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 168.32000732421875
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 168.3000030517578
     }
   ],
   "news": {
@@ -321,5 +333,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-06-10T00:00:00.000Z"
   },
-  "generatedAt": "2026-06-11T19:45:03.415Z"
+  "generatedAt": "2026-06-11T22:16:02.857Z"
 }

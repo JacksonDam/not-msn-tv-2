@@ -5,12 +5,12 @@
     "displaySymbol": "$GIS"
   },
   "name": "GENERAL MILLS, INC.",
-  "price": 33.875,
+  "price": 33.82,
   "previousClose": 33.82,
   "dayHigh": 34.025,
   "dayLow": 33.57,
-  "change": 0.054999999999999716,
-  "changePercent": 0.1626256652868117,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,19 +305,31 @@
     },
     {
       "timestamp": 1781206200,
-      "close": 33.80500030517578
+      "close": 33.810001373291016
     },
     {
       "timestamp": 1781206500,
-      "close": 33.85530090332031
+      "close": 33.85499954223633
     },
     {
       "timestamp": 1781206800,
       "close": 33.88999938964844
     },
     {
-      "timestamp": 1781207117,
-      "close": 33.875
+      "timestamp": 1781207100,
+      "close": 33.94499969482422
+    },
+    {
+      "timestamp": 1781207400,
+      "close": 33.89500045776367
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 33.810001373291016
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 33.81999969482422
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Proactive",
     "publishedAt": "2026-06-11T19:08:00.000Z"
   },
-  "generatedAt": "2026-06-11T19:45:20.734Z"
+  "generatedAt": "2026-06-11T22:16:18.710Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$PSX"
   },
   "name": "PHILLIPS 66",
-  "price": 178.79,
+  "price": 178.1,
   "previousClose": 181.72,
   "dayHigh": 185.74,
-  "dayLow": 178.66,
-  "change": -2.930000000000007,
-  "changePercent": -1.6123706801672941,
+  "dayLow": 177.88,
+  "change": -3.6200000000000045,
+  "changePercent": -1.9920757208892828,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 178.8800048828125
     },
     {
-      "timestamp": 1781207142,
-      "close": 178.7899932861328
+      "timestamp": 1781207100,
+      "close": 178.69000244140625
+    },
+    {
+      "timestamp": 1781207400,
+      "close": 178.3249969482422
+    },
+    {
+      "timestamp": 1781207700,
+      "close": 178.07000732421875
+    },
+    {
+      "timestamp": 1781208000,
+      "close": 178.10000610351562
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-06-11T16:58:00.000Z"
   },
-  "generatedAt": "2026-06-11T19:45:47.725Z"
+  "generatedAt": "2026-06-11T22:16:42.378Z"
 }
