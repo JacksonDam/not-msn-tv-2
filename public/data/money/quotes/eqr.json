@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 67.12,
+  "price": 67.34,
   "previousClose": 66.65,
-  "dayHigh": 67.26,
+  "dayHigh": 67.35,
   "dayLow": 66.785,
-  "change": 0.46999999999999886,
-  "changePercent": 0.7051762940735167,
+  "change": 0.6899999999999977,
+  "changePercent": 1.0352588147036723,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,7 +285,7 @@
     },
     {
       "timestamp": 1781291100,
-      "close": 67.20999908447266
+      "close": 67.19000244140625
     },
     {
       "timestamp": 1781291400,
@@ -297,11 +297,39 @@
     },
     {
       "timestamp": 1781292000,
-      "close": 67.13999938964844
+      "close": 67.0999984741211
     },
     {
-      "timestamp": 1781292096,
-      "close": 67.12000274658203
+      "timestamp": 1781292300,
+      "close": 67.05000305175781
+    },
+    {
+      "timestamp": 1781292600,
+      "close": 67.02999877929688
+    },
+    {
+      "timestamp": 1781292900,
+      "close": 67.06999969482422
+    },
+    {
+      "timestamp": 1781293200,
+      "close": 67.05999755859375
+    },
+    {
+      "timestamp": 1781293500,
+      "close": 67.08899688720703
+    },
+    {
+      "timestamp": 1781293800,
+      "close": 67.25
+    },
+    {
+      "timestamp": 1781294100,
+      "close": 67.33000183105469
+    },
+    {
+      "timestamp": 1781294400,
+      "close": 67.33999633789062
     }
   ],
   "news": {
@@ -309,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-06-12T11:51:48.000Z"
   },
-  "generatedAt": "2026-06-12T19:22:01.758Z"
+  "generatedAt": "2026-06-12T22:00:53.465Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 14.765,
+  "price": 14.84,
   "previousClose": 14.71,
   "dayHigh": 15,
   "dayLow": 14.61,
-  "change": 0.054999999999999716,
-  "changePercent": 0.3738953093133903,
+  "change": 0.129999999999999,
+  "changePercent": 0.8837525492861931,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -297,11 +297,39 @@
     },
     {
       "timestamp": 1781292000,
+      "close": 14.774999618530273
+    },
+    {
+      "timestamp": 1781292300,
+      "close": 14.770000457763672
+    },
+    {
+      "timestamp": 1781292600,
       "close": 14.765000343322754
     },
     {
-      "timestamp": 1781292118,
+      "timestamp": 1781292900,
+      "close": 14.755000114440918
+    },
+    {
+      "timestamp": 1781293200,
       "close": 14.765000343322754
+    },
+    {
+      "timestamp": 1781293500,
+      "close": 14.765000343322754
+    },
+    {
+      "timestamp": 1781293800,
+      "close": 14.789999961853027
+    },
+    {
+      "timestamp": 1781294100,
+      "close": 14.824999809265137
+    },
+    {
+      "timestamp": 1781294400,
+      "close": 14.84000015258789
     }
   ],
   "news": {
@@ -309,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-06-12T15:17:00.000Z"
   },
-  "generatedAt": "2026-06-12T19:22:03.772Z"
+  "generatedAt": "2026-06-12T22:00:55.218Z"
 }

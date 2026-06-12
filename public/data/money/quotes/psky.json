@@ -5,12 +5,12 @@
     "displaySymbol": "$PSKY"
   },
   "name": "PARAMOUNT SKYDANCE CORPORATION",
-  "price": 10.51,
+  "price": 10.47,
   "previousClose": 10.49,
   "dayHigh": 10.525,
   "dayLow": 10.17,
-  "change": 0.019999999999999574,
-  "changePercent": 0.1906577693040951,
+  "change": -0.019999999999999574,
+  "changePercent": -0.1906577693040951,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -297,17 +297,45 @@
     },
     {
       "timestamp": 1781292000,
+      "close": 10.5
+    },
+    {
+      "timestamp": 1781292300,
+      "close": 10.489999771118164
+    },
+    {
+      "timestamp": 1781292600,
       "close": 10.475000381469727
     },
     {
-      "timestamp": 1781292111,
-      "close": 10.510000228881836
+      "timestamp": 1781292900,
+      "close": 10.487099647521973
+    },
+    {
+      "timestamp": 1781293200,
+      "close": 10.46500015258789
+    },
+    {
+      "timestamp": 1781293500,
+      "close": 10.460000038146973
+    },
+    {
+      "timestamp": 1781293800,
+      "close": 10.4399995803833
+    },
+    {
+      "timestamp": 1781294100,
+      "close": 10.46500015258789
+    },
+    {
+      "timestamp": 1781294400,
+      "close": 10.470000267028809
     }
   ],
   "news": {
-    "title": "Paramount Skydance Extends Expiration Date for Offers to Purchase Warner Bros. Debt Securities",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-06-12T13:39:44.000Z"
+    "title": "Paramount’s Deal for Warner Bros. Is Cleared by US DOJ",
+    "publisher": "Bloomberg",
+    "publishedAt": "2026-06-12T21:07:00.000Z"
   },
-  "generatedAt": "2026-06-12T19:22:34.148Z"
+  "generatedAt": "2026-06-12T22:01:22.114Z"
 }
