@@ -5,12 +5,12 @@
     "displaySymbol": "$KEY"
   },
   "name": "KEYCORP",
-  "price": 22.475,
+  "price": 22.42,
   "previousClose": 22.7,
   "dayHigh": 22.96,
-  "dayLow": 22.435,
-  "change": -0.22499999999999787,
-  "changePercent": -0.991189427312766,
+  "dayLow": 22.375,
+  "change": -0.2799999999999976,
+  "changePercent": -1.2334801762114431,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
-      "close": 22.480899810791016
+      "close": 22.485000610351562
     },
     {
-      "timestamp": 1781550570,
+      "timestamp": 1781550600,
+      "close": 22.5049991607666
+    },
+    {
+      "timestamp": 1781550900,
+      "close": 22.5049991607666
+    },
+    {
+      "timestamp": 1781551200,
+      "close": 22.5049991607666
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 22.489999771118164
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 22.467599868774414
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 22.459999084472656
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 22.46500015258789
+    },
+    {
+      "timestamp": 1781552700,
       "close": 22.475000381469727
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 22.395000457763672
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 22.420000076293945
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 22.420000076293945
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-06-15T16:36:07.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:31.683Z"
+  "generatedAt": "2026-06-15T21:50:01.361Z"
 }

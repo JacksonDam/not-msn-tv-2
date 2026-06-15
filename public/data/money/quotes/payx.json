@@ -5,12 +5,12 @@
     "displaySymbol": "$PAYX"
   },
   "name": "PAYCHEX, INC.",
-  "price": 100.8,
+  "price": 100.9,
   "previousClose": 100.63,
   "dayHigh": 103.3,
   "dayLow": 100.25,
-  "change": 0.1700000000000017,
-  "changePercent": 0.16893570505813546,
+  "change": 0.27000000000001023,
+  "changePercent": 0.26830964920998734,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
+      "close": 100.80000305175781
+    },
+    {
+      "timestamp": 1781550600,
+      "close": 100.80000305175781
+    },
+    {
+      "timestamp": 1781550900,
+      "close": 100.80000305175781
+    },
+    {
+      "timestamp": 1781551200,
+      "close": 100.62000274658203
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 100.63999938964844
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 100.66000366210938
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 100.69999694824219
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 100.58499908447266
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 100.70999908447266
+    },
+    {
+      "timestamp": 1781553000,
       "close": 100.77999877929688
     },
     {
-      "timestamp": 1781550585,
-      "close": 100.80000305175781
+      "timestamp": 1781553300,
+      "close": 100.91000366210938
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 100.9000015258789
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Investing.com",
     "publishedAt": "2026-06-15T18:20:50.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:45.681Z"
+  "generatedAt": "2026-06-15T21:50:16.184Z"
 }

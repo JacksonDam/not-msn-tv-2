@@ -5,12 +5,12 @@
     "displaySymbol": "$SYY"
   },
   "name": "SYSCO CORPORATION",
-  "price": 79.14,
+  "price": 79.69,
   "previousClose": 79.19,
-  "dayHigh": 79.65,
+  "dayHigh": 79.71,
   "dayLow": 78.34,
-  "change": -0.04999999999999716,
-  "changePercent": -0.06313928526328723,
+  "change": 0.5,
+  "changePercent": 0.6313928526329082,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
+      "close": 79.1449966430664
+    },
+    {
+      "timestamp": 1781550600,
+      "close": 79.21499633789062
+    },
+    {
+      "timestamp": 1781550900,
       "close": 79.16000366210938
     },
     {
-      "timestamp": 1781550581,
-      "close": 79.13999938964844
+      "timestamp": 1781551200,
+      "close": 79.2300033569336
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 79.21499633789062
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 79.12000274658203
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 79.16999816894531
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 79.16999816894531
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 79.27999877929688
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 79.41500091552734
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 79.69999694824219
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 79.69000244140625
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-06-15T15:00:00.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:56.947Z"
+  "generatedAt": "2026-06-15T21:50:28.218Z"
 }

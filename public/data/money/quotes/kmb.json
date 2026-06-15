@@ -5,12 +5,12 @@
     "displaySymbol": "$KMB"
   },
   "name": "KIMBERLY-CLARK CORPORATION",
-  "price": 103.76,
+  "price": 103.14,
   "previousClose": 102.29,
   "dayHigh": 104.07,
   "dayLow": 102.205,
-  "change": 1.4699999999999989,
-  "changePercent": 1.4370906246944948,
+  "change": 0.8499999999999943,
+  "changePercent": 0.8309707693811655,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
-      "close": 103.7300033569336
+      "close": 103.7750015258789
     },
     {
-      "timestamp": 1781550565,
-      "close": 103.76000213623047
+      "timestamp": 1781550600,
+      "close": 103.75
+    },
+    {
+      "timestamp": 1781550900,
+      "close": 103.66500091552734
+    },
+    {
+      "timestamp": 1781551200,
+      "close": 103.5999984741211
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 103.5
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 103.22000122070312
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 103.45999908447266
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 103.33000183105469
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 103.3949966430664
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 103.36000061035156
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 103.12999725341797
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 103.13999938964844
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-06-15T15:42:00.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:32.624Z"
+  "generatedAt": "2026-06-15T21:50:02.130Z"
 }

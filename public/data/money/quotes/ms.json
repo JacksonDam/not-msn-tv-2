@@ -5,12 +5,12 @@
     "displaySymbol": "$MS"
   },
   "name": "MORGAN STANLEY",
-  "price": 219.41,
+  "price": 217.98,
   "previousClose": 214.04,
   "dayHigh": 220.6,
   "dayLow": 216.85,
-  "change": 5.3700000000000045,
-  "changePercent": 2.5088768454494508,
+  "change": 3.9399999999999977,
+  "changePercent": 1.840777424780414,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
-      "close": 219.3249969482422
+      "close": 219.36000061035156
     },
     {
-      "timestamp": 1781550572,
-      "close": 219.41000366210938
+      "timestamp": 1781550600,
+      "close": 219.38999938964844
+    },
+    {
+      "timestamp": 1781550900,
+      "close": 219.69000244140625
+    },
+    {
+      "timestamp": 1781551200,
+      "close": 219.55999755859375
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 219.27999877929688
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 218.9600067138672
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 218.9499969482422
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 219.0800018310547
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 218.7899932861328
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 218.10000610351562
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 218.07000732421875
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 217.97999572753906
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "GuruFocus.com",
     "publishedAt": "2026-06-15T18:51:31.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:40.029Z"
+  "generatedAt": "2026-06-15T21:50:09.257Z"
 }

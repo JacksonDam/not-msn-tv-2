@@ -5,12 +5,12 @@
     "displaySymbol": "$HSIC"
   },
   "name": "HENRY SCHEIN, INC.",
-  "price": 81.12,
+  "price": 81.09,
   "previousClose": 81.25,
   "dayHigh": 82.3,
-  "dayLow": 81.02,
-  "change": -0.12999999999999545,
-  "changePercent": -0.15999999999999442,
+  "dayLow": 81,
+  "change": -0.1599999999999966,
+  "changePercent": -0.1969230769230727,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
-      "close": 81.11000061035156
+      "close": 81.12000274658203
     },
     {
-      "timestamp": 1781550553,
+      "timestamp": 1781550600,
+      "close": 81.2300033569336
+    },
+    {
+      "timestamp": 1781550900,
+      "close": 81.30000305175781
+    },
+    {
+      "timestamp": 1781551200,
+      "close": 81.3949966430664
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 81.33999633789062
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 81.29000091552734
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 81.2699966430664
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 81.25
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 81.13999938964844
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 81.06500244140625
+    },
+    {
+      "timestamp": 1781553300,
       "close": 81.12000274658203
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 81.08999633789062
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-06-14T11:06:40.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:26.055Z"
+  "generatedAt": "2026-06-15T21:49:56.658Z"
 }

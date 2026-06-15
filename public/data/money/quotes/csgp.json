@@ -5,12 +5,12 @@
     "displaySymbol": "$CSGP"
   },
   "name": "COSTAR GROUP, INC.",
-  "price": 32.025,
+  "price": 32.04,
   "previousClose": 32.84,
   "dayHigh": 34.08,
-  "dayLow": 31.93,
-  "change": -0.8150000000000048,
-  "changePercent": -2.4817295980511718,
+  "dayLow": 31.91,
+  "change": -0.8000000000000043,
+  "changePercent": -2.4360535931790626,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
+      "close": 32.029998779296875
+    },
+    {
+      "timestamp": 1781550600,
+      "close": 32.040000915527344
+    },
+    {
+      "timestamp": 1781550900,
+      "close": 32.02000045776367
+    },
+    {
+      "timestamp": 1781551200,
+      "close": 31.9950008392334
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 32.01499938964844
+    },
+    {
+      "timestamp": 1781551800,
       "close": 32.025001525878906
     },
     {
-      "timestamp": 1781550547,
-      "close": 32.025001525878906
+      "timestamp": 1781552100,
+      "close": 32.09000015258789
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 32
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 32.03010177612305
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 32.04999923706055
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 32.029998779296875
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 32.040000915527344
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "MarketBeat",
     "publishedAt": "2026-06-13T13:25:00.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:08.226Z"
+  "generatedAt": "2026-06-15T21:49:39.154Z"
 }

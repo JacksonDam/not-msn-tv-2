@@ -5,12 +5,12 @@
     "displaySymbol": "$KHC"
   },
   "name": "THE KRAFT HEINZ COMPANY",
-  "price": 24.11,
+  "price": 23.99,
   "previousClose": 24.39,
   "dayHigh": 24.37,
-  "dayLow": 24.06,
-  "change": -0.28000000000000114,
-  "changePercent": -1.1480114801148058,
+  "dayLow": 23.97,
+  "change": -0.40000000000000213,
+  "changePercent": -1.6400164001640103,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
+      "close": 24.114999771118164
+    },
+    {
+      "timestamp": 1781550600,
+      "close": 24.114999771118164
+    },
+    {
+      "timestamp": 1781550900,
       "close": 24.125
     },
     {
-      "timestamp": 1781550568,
-      "close": 24.110000610351562
+      "timestamp": 1781551200,
+      "close": 24.1200008392334
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 24.120100021362305
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 24.094999313354492
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 24.114999771118164
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 24.09000015258789
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 24.125
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 24.075000762939453
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 23.979999542236328
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 23.989999771118164
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-06-14T20:06:56.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:31.977Z"
+  "generatedAt": "2026-06-15T21:50:01.626Z"
 }

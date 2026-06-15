@@ -5,12 +5,12 @@
     "displaySymbol": "$MET"
   },
   "name": "METLIFE, INC.",
-  "price": 88.57,
+  "price": 87.66,
   "previousClose": 88.84,
   "dayHigh": 89.62,
-  "dayLow": 88.415,
-  "change": -0.27000000000001023,
-  "changePercent": -0.3039171544349507,
+  "dayLow": 87.59,
+  "change": -1.1800000000000068,
+  "changePercent": -1.3282305267897418,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,11 +285,51 @@
     },
     {
       "timestamp": 1781550300,
+      "close": 88.5613021850586
+    },
+    {
+      "timestamp": 1781550600,
+      "close": 88.5781021118164
+    },
+    {
+      "timestamp": 1781550900,
       "close": 88.58000183105469
     },
     {
-      "timestamp": 1781550565,
-      "close": 88.56999969482422
+      "timestamp": 1781551200,
+      "close": 88.44999694824219
+    },
+    {
+      "timestamp": 1781551500,
+      "close": 88.29000091552734
+    },
+    {
+      "timestamp": 1781551800,
+      "close": 88.16000366210938
+    },
+    {
+      "timestamp": 1781552100,
+      "close": 88.16500091552734
+    },
+    {
+      "timestamp": 1781552400,
+      "close": 88.16000366210938
+    },
+    {
+      "timestamp": 1781552700,
+      "close": 88.2699966430664
+    },
+    {
+      "timestamp": 1781553000,
+      "close": 87.93499755859375
+    },
+    {
+      "timestamp": 1781553300,
+      "close": 87.67500305175781
+    },
+    {
+      "timestamp": 1781553600,
+      "close": 87.66000366210938
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-06-15T16:09:49.000Z"
   },
-  "generatedAt": "2026-06-15T19:09:37.774Z"
+  "generatedAt": "2026-06-15T21:50:07.398Z"
 }
