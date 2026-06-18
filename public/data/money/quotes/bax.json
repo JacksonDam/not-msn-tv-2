@@ -5,337 +5,69 @@
     "displaySymbol": "$BAX"
   },
   "name": "BAXTER INTERNATIONAL INC.",
-  "price": 19.39,
-  "previousClose": 20.46,
-  "dayHigh": 20.62,
-  "dayLow": 19.38,
-  "change": -1.0700000000000003,
-  "changePercent": -5.229716520039101,
+  "price": 19.685,
+  "previousClose": 19.39,
+  "dayHigh": 19.84,
+  "dayLow": 19.55,
+  "change": 0.29499999999999815,
+  "changePercent": 1.5214027849406815,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1781703000,
-      "close": 20.5
+      "timestamp": 1781789400,
+      "close": 19.625
     },
     {
-      "timestamp": 1781703300,
-      "close": 20.600000381469727
+      "timestamp": 1781789700,
+      "close": 19.770000457763672
     },
     {
-      "timestamp": 1781703600,
-      "close": 20.46500015258789
-    },
-    {
-      "timestamp": 1781703900,
-      "close": 20.540000915527344
-    },
-    {
-      "timestamp": 1781704200,
-      "close": 20.399999618530273
-    },
-    {
-      "timestamp": 1781704500,
-      "close": 20.375
-    },
-    {
-      "timestamp": 1781704800,
-      "close": 20.239999771118164
-    },
-    {
-      "timestamp": 1781705100,
-      "close": 20.31999969482422
-    },
-    {
-      "timestamp": 1781705400,
-      "close": 20.30500030517578
-    },
-    {
-      "timestamp": 1781705700,
-      "close": 20.2450008392334
-    },
-    {
-      "timestamp": 1781706000,
-      "close": 20.204999923706055
-    },
-    {
-      "timestamp": 1781706300,
-      "close": 20.2450008392334
-    },
-    {
-      "timestamp": 1781706600,
-      "close": 20.25
-    },
-    {
-      "timestamp": 1781706900,
-      "close": 20.2450008392334
-    },
-    {
-      "timestamp": 1781707200,
-      "close": 20.2450008392334
-    },
-    {
-      "timestamp": 1781707500,
-      "close": 20.235000610351562
-    },
-    {
-      "timestamp": 1781707800,
-      "close": 20.225000381469727
-    },
-    {
-      "timestamp": 1781708100,
-      "close": 20.264999389648438
-    },
-    {
-      "timestamp": 1781708400,
-      "close": 20.274999618530273
-    },
-    {
-      "timestamp": 1781708700,
-      "close": 20.235000610351562
-    },
-    {
-      "timestamp": 1781709000,
-      "close": 20.260000228881836
-    },
-    {
-      "timestamp": 1781709300,
-      "close": 20.2450008392334
-    },
-    {
-      "timestamp": 1781709600,
-      "close": 20.270000457763672
-    },
-    {
-      "timestamp": 1781709900,
-      "close": 20.270099639892578
-    },
-    {
-      "timestamp": 1781710200,
-      "close": 20.315000534057617
-    },
-    {
-      "timestamp": 1781710500,
-      "close": 20.329999923706055
-    },
-    {
-      "timestamp": 1781710800,
-      "close": 20.329999923706055
-    },
-    {
-      "timestamp": 1781711100,
-      "close": 20.334999084472656
-    },
-    {
-      "timestamp": 1781711400,
-      "close": 20.325000762939453
-    },
-    {
-      "timestamp": 1781711700,
-      "close": 20.315000534057617
-    },
-    {
-      "timestamp": 1781712000,
-      "close": 20.315000534057617
-    },
-    {
-      "timestamp": 1781712300,
-      "close": 20.325000762939453
-    },
-    {
-      "timestamp": 1781712600,
-      "close": 20.350000381469727
-    },
-    {
-      "timestamp": 1781712900,
-      "close": 20.334999084472656
-    },
-    {
-      "timestamp": 1781713200,
-      "close": 20.309999465942383
-    },
-    {
-      "timestamp": 1781713500,
-      "close": 20.280000686645508
-    },
-    {
-      "timestamp": 1781713800,
-      "close": 20.264999389648438
-    },
-    {
-      "timestamp": 1781714100,
-      "close": 20.28499984741211
-    },
-    {
-      "timestamp": 1781714400,
-      "close": 20.28499984741211
-    },
-    {
-      "timestamp": 1781714700,
-      "close": 20.280000686645508
-    },
-    {
-      "timestamp": 1781715000,
-      "close": 20.274999618530273
-    },
-    {
-      "timestamp": 1781715300,
-      "close": 20.264999389648438
-    },
-    {
-      "timestamp": 1781715600,
-      "close": 20.209999084472656
-    },
-    {
-      "timestamp": 1781715900,
-      "close": 20.170000076293945
-    },
-    {
-      "timestamp": 1781716200,
-      "close": 20.219999313354492
-    },
-    {
-      "timestamp": 1781716500,
-      "close": 20.21500015258789
-    },
-    {
-      "timestamp": 1781716800,
-      "close": 20.200000762939453
-    },
-    {
-      "timestamp": 1781717100,
-      "close": 20.184999465942383
-    },
-    {
-      "timestamp": 1781717400,
-      "close": 20.19499969482422
-    },
-    {
-      "timestamp": 1781717700,
-      "close": 20.155000686645508
-    },
-    {
-      "timestamp": 1781718000,
-      "close": 20.135000228881836
-    },
-    {
-      "timestamp": 1781718300,
-      "close": 20.145000457763672
-    },
-    {
-      "timestamp": 1781718600,
-      "close": 20.155000686645508
-    },
-    {
-      "timestamp": 1781718900,
-      "close": 20.155000686645508
-    },
-    {
-      "timestamp": 1781719200,
-      "close": 19.809999465942383
-    },
-    {
-      "timestamp": 1781719500,
-      "close": 19.844999313354492
-    },
-    {
-      "timestamp": 1781719800,
-      "close": 19.825000762939453
-    },
-    {
-      "timestamp": 1781720100,
-      "close": 19.934999465942383
-    },
-    {
-      "timestamp": 1781720400,
-      "close": 19.93000030517578
-    },
-    {
-      "timestamp": 1781720700,
-      "close": 19.8799991607666
-    },
-    {
-      "timestamp": 1781721000,
-      "close": 19.834999084472656
-    },
-    {
-      "timestamp": 1781721300,
-      "close": 20.020000457763672
-    },
-    {
-      "timestamp": 1781721600,
-      "close": 20.020000457763672
-    },
-    {
-      "timestamp": 1781721900,
-      "close": 19.934999465942383
-    },
-    {
-      "timestamp": 1781722200,
-      "close": 19.920000076293945
-    },
-    {
-      "timestamp": 1781722500,
-      "close": 19.825000762939453
-    },
-    {
-      "timestamp": 1781722800,
-      "close": 19.799999237060547
-    },
-    {
-      "timestamp": 1781723100,
+      "timestamp": 1781790000,
       "close": 19.7450008392334
     },
     {
-      "timestamp": 1781723400,
-      "close": 19.780000686645508
+      "timestamp": 1781790300,
+      "close": 19.809999465942383
     },
     {
-      "timestamp": 1781723700,
-      "close": 19.735000610351562
+      "timestamp": 1781790600,
+      "close": 19.80500030517578
     },
     {
-      "timestamp": 1781724000,
-      "close": 19.655000686645508
+      "timestamp": 1781790900,
+      "close": 19.809999465942383
     },
     {
-      "timestamp": 1781724300,
-      "close": 19.594999313354492
+      "timestamp": 1781791200,
+      "close": 19.76180076599121
     },
     {
-      "timestamp": 1781724600,
-      "close": 19.520099639892578
+      "timestamp": 1781791500,
+      "close": 19.795000076293945
     },
     {
-      "timestamp": 1781724900,
-      "close": 19.46500015258789
+      "timestamp": 1781791800,
+      "close": 19.725000381469727
     },
     {
-      "timestamp": 1781725200,
-      "close": 19.475000381469727
+      "timestamp": 1781792100,
+      "close": 19.739999771118164
     },
     {
-      "timestamp": 1781725500,
-      "close": 19.424999237060547
+      "timestamp": 1781792400,
+      "close": 19.68000030517578
     },
     {
-      "timestamp": 1781725800,
-      "close": 19.385000228881836
-    },
-    {
-      "timestamp": 1781726100,
-      "close": 19.405000686645508
-    },
-    {
-      "timestamp": 1781726400,
-      "close": 19.389999389648438
+      "timestamp": 1781792718,
+      "close": 19.684999465942383
     }
   ],
   "news": {
-    "title": "Is Baxter International Stock Underperforming the S&P 500?",
-    "publisher": "Barchart",
-    "publishedAt": "2026-06-17T17:51:36.000Z"
+    "title": "MediThinQ and Synovis Micro Companies Alliance, Inc. Announce Strategic Global Distribution Agreement to Redefine Microsurgery with the SHIYA 3D Visualization Platform",
+    "publisher": "PR Newswire",
+    "publishedAt": "2026-06-18T14:01:00.000Z"
   },
-  "generatedAt": "2026-06-18T11:17:09.033Z"
+  "generatedAt": "2026-06-18T14:25:22.663Z"
 }
