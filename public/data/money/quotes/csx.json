@@ -5,12 +5,12 @@
     "displaySymbol": "$CSX"
   },
   "name": "CSX CORPORATION",
-  "price": 48.705,
+  "price": 48.89,
   "previousClose": 48.33,
   "dayHigh": 49.21,
   "dayLow": 48.535,
-  "change": 0.375,
-  "changePercent": 0.7759155803848542,
+  "change": 0.5600000000000023,
+  "changePercent": 1.1587006000413869,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -269,11 +269,67 @@
     },
     {
       "timestamp": 1783017900,
-      "close": 48.70500183105469
+      "close": 48.724998474121094
     },
     {
-      "timestamp": 1783018109,
-      "close": 48.70500183105469
+      "timestamp": 1783018200,
+      "close": 48.685001373291016
+    },
+    {
+      "timestamp": 1783018500,
+      "close": 48.70000076293945
+    },
+    {
+      "timestamp": 1783018800,
+      "close": 48.720001220703125
+    },
+    {
+      "timestamp": 1783019100,
+      "close": 48.724998474121094
+    },
+    {
+      "timestamp": 1783019400,
+      "close": 48.71500015258789
+    },
+    {
+      "timestamp": 1783019700,
+      "close": 48.71500015258789
+    },
+    {
+      "timestamp": 1783020000,
+      "close": 48.720001220703125
+    },
+    {
+      "timestamp": 1783020300,
+      "close": 48.720001220703125
+    },
+    {
+      "timestamp": 1783020600,
+      "close": 48.75
+    },
+    {
+      "timestamp": 1783020900,
+      "close": 48.79499816894531
+    },
+    {
+      "timestamp": 1783021200,
+      "close": 48.845001220703125
+    },
+    {
+      "timestamp": 1783021500,
+      "close": 48.849998474121094
+    },
+    {
+      "timestamp": 1783021800,
+      "close": 48.95000076293945
+    },
+    {
+      "timestamp": 1783022100,
+      "close": 48.880001068115234
+    },
+    {
+      "timestamp": 1783022400,
+      "close": 48.88999938964844
     }
   ],
   "news": {
@@ -281,5 +337,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-07-02T11:15:59.000Z"
   },
-  "generatedAt": "2026-07-02T18:48:33.820Z"
+  "generatedAt": "2026-07-02T20:37:35.638Z"
 }
