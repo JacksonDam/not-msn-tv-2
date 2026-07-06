@@ -5,12 +5,12 @@
     "displaySymbol": "$TRMB"
   },
   "name": "TRIMBLE INC.",
-  "price": 53.07,
+  "price": 52.47,
   "previousClose": 53.04,
   "dayHigh": 53.45,
   "dayLow": 52,
-  "change": 0.030000000000001137,
-  "changePercent": 0.05656108597285282,
+  "change": -0.5700000000000003,
+  "changePercent": -1.0746606334841635,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -284,8 +284,52 @@
       "close": 53.060001373291016
     },
     {
-      "timestamp": 1783364703,
-      "close": 53.06990051269531
+      "timestamp": 1783364700,
+      "close": 53.02000045776367
+    },
+    {
+      "timestamp": 1783365000,
+      "close": 53.04499816894531
+    },
+    {
+      "timestamp": 1783365300,
+      "close": 53.04499816894531
+    },
+    {
+      "timestamp": 1783365600,
+      "close": 52.93000030517578
+    },
+    {
+      "timestamp": 1783365900,
+      "close": 52.77349853515625
+    },
+    {
+      "timestamp": 1783366200,
+      "close": 52.720001220703125
+    },
+    {
+      "timestamp": 1783366500,
+      "close": 52.75
+    },
+    {
+      "timestamp": 1783366800,
+      "close": 52.689998626708984
+    },
+    {
+      "timestamp": 1783367100,
+      "close": 52.64500045776367
+    },
+    {
+      "timestamp": 1783367400,
+      "close": 52.619998931884766
+    },
+    {
+      "timestamp": 1783367700,
+      "close": 52.4900016784668
+    },
+    {
+      "timestamp": 1783368000,
+      "close": 52.470001220703125
     }
   ],
   "news": {
@@ -293,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-07-03T18:24:48.000Z"
   },
-  "generatedAt": "2026-07-06T19:05:20.375Z"
+  "generatedAt": "2026-07-06T21:02:13.646Z"
 }
