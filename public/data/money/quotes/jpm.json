@@ -5,12 +5,12 @@
     "displaySymbol": "$JPM"
   },
   "name": "JPMORGAN CHASE & CO.",
-  "price": 339.18,
+  "price": 339.22,
   "previousClose": 337.72,
   "dayHigh": 341.4,
   "dayLow": 337.09,
-  "change": 1.4599999999999795,
-  "changePercent": 0.4323107900035471,
+  "change": 1.5,
+  "changePercent": 0.4441549212365272,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1783454100,
-      "close": 339.17999267578125
+      "close": 339.260009765625
+    },
+    {
+      "timestamp": 1783454400,
+      "close": 339.2200012207031
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-07-07T19:39:00.000Z"
   },
-  "generatedAt": "2026-07-07T20:13:53.488Z"
+  "generatedAt": "2026-07-07T21:41:52.956Z"
 }

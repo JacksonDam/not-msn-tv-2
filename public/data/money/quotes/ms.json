@@ -5,12 +5,12 @@
     "displaySymbol": "$MS"
   },
   "name": "MORGAN STANLEY",
-  "price": 222.075,
+  "price": 222.04,
   "previousClose": 222.1,
   "dayHigh": 223.258,
   "dayLow": 219.82,
-  "change": -0.025000000000005684,
-  "changePercent": -0.011256190905000308,
+  "change": -0.060000000000002274,
+  "changePercent": -0.027014858171995622,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -326,6 +326,10 @@
     {
       "timestamp": 1783454100,
       "close": 222.0749969482422
+    },
+    {
+      "timestamp": 1783454400,
+      "close": 222.0399932861328
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-07T16:55:54.000Z"
   },
-  "generatedAt": "2026-07-07T20:14:01.812Z"
+  "generatedAt": "2026-07-07T21:42:00.642Z"
 }

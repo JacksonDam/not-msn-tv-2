@@ -5,12 +5,12 @@
     "displaySymbol": "$OTIS"
   },
   "name": "OTIS WORLDWIDE CORPORATION",
-  "price": 73.41,
+  "price": 73.43,
   "previousClose": 73.49,
   "dayHigh": 74.39,
   "dayLow": 72.65,
-  "change": -0.0799999999999983,
-  "changePercent": -0.10885834807456565,
+  "change": -0.05999999999998806,
+  "changePercent": -0.08164376105590973,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1783454100,
-      "close": 73.41000366210938
+      "close": 73.40249633789062
+    },
+    {
+      "timestamp": 1783454400,
+      "close": 73.43000030517578
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-02T12:40:58.000Z"
   },
-  "generatedAt": "2026-07-07T20:14:06.888Z"
+  "generatedAt": "2026-07-07T21:42:05.676Z"
 }

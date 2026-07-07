@@ -5,12 +5,12 @@
     "displaySymbol": "$TFC"
   },
   "name": "TRUIST FINANCIAL CORPORATION",
-  "price": 51.38,
+  "price": 51.36,
   "previousClose": 51.42,
   "dayHigh": 51.845,
   "dayLow": 51.28,
-  "change": -0.03999999999999915,
-  "changePercent": -0.07779074290159305,
+  "change": -0.060000000000002274,
+  "changePercent": -0.11668611435239648,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1783454100,
-      "close": 51.380001068115234
+      "close": 51.3849983215332
+    },
+    {
+      "timestamp": 1783454400,
+      "close": 51.36000061035156
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-07T19:41:38.000Z"
   },
-  "generatedAt": "2026-07-07T20:14:20.685Z"
+  "generatedAt": "2026-07-07T21:42:17.683Z"
 }

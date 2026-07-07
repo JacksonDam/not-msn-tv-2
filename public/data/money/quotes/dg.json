@@ -5,12 +5,12 @@
     "displaySymbol": "$DG"
   },
   "name": "DOLLAR GENERAL CORPORATION",
-  "price": 115.41,
+  "price": 115.43,
   "previousClose": 115.68,
   "dayHigh": 117.71,
   "dayLow": 115.15,
-  "change": -0.27000000000001023,
-  "changePercent": -0.23340248962656485,
+  "change": -0.25,
+  "changePercent": -0.21611341632088518,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1783454100,
-      "close": 115.41000366210938
+      "close": 115.41999816894531
+    },
+    {
+      "timestamp": 1783454400,
+      "close": 115.43000030517578
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-07T11:12:04.000Z"
   },
-  "generatedAt": "2026-07-07T20:13:33.918Z"
+  "generatedAt": "2026-07-07T21:41:35.551Z"
 }
