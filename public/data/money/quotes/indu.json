@@ -5,337 +5,109 @@
     "displaySymbol": "$INDU"
   },
   "name": "DOW JONES INDUSTRIAL AVERAGE",
-  "price": 53055.91,
-  "previousClose": 52900.07,
-  "dayHigh": 53060.1,
-  "dayLow": 52648.69,
-  "change": 155.84000000000378,
-  "changePercent": 0.2945931829579881,
+  "price": 52824.79,
+  "previousClose": 53055.91,
+  "dayHigh": 53289.3,
+  "dayLow": 52824.59,
+  "change": -231.12000000000262,
+  "changePercent": -0.4356159379793931,
   "currency": "USD",
   "exchangeName": "DJI",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1783344600,
-      "close": 53031.44921875
+      "timestamp": 1783431000,
+      "close": 53202.578125
     },
     {
-      "timestamp": 1783344900,
-      "close": 52859.76171875
+      "timestamp": 1783431300,
+      "close": 53162.4296875
     },
     {
-      "timestamp": 1783345200,
-      "close": 52849.7890625
+      "timestamp": 1783431600,
+      "close": 53181.37109375
     },
     {
-      "timestamp": 1783345500,
-      "close": 52850.3515625
+      "timestamp": 1783431900,
+      "close": 53174.21875
     },
     {
-      "timestamp": 1783345800,
-      "close": 52804.12109375
+      "timestamp": 1783432200,
+      "close": 53101.73046875
     },
     {
-      "timestamp": 1783346100,
-      "close": 52746.0390625
+      "timestamp": 1783432500,
+      "close": 53062.19140625
     },
     {
-      "timestamp": 1783346400,
-      "close": 52713.4609375
+      "timestamp": 1783432800,
+      "close": 53074.19140625
     },
     {
-      "timestamp": 1783346700,
-      "close": 52651.76953125
+      "timestamp": 1783433100,
+      "close": 53032.46875
     },
     {
-      "timestamp": 1783347000,
-      "close": 52760.640625
+      "timestamp": 1783433400,
+      "close": 52959.41015625
     },
     {
-      "timestamp": 1783347300,
-      "close": 52755.01953125
+      "timestamp": 1783433700,
+      "close": 53024.98046875
     },
     {
-      "timestamp": 1783347600,
-      "close": 52772.359375
+      "timestamp": 1783434000,
+      "close": 53013.44140625
     },
     {
-      "timestamp": 1783347900,
-      "close": 52811.48828125
+      "timestamp": 1783434300,
+      "close": 53014.51953125
     },
     {
-      "timestamp": 1783348200,
-      "close": 52773.80078125
+      "timestamp": 1783434600,
+      "close": 52951.66015625
     },
     {
-      "timestamp": 1783348500,
-      "close": 52806.609375
+      "timestamp": 1783434900,
+      "close": 52930
     },
     {
-      "timestamp": 1783348800,
-      "close": 52789.69921875
+      "timestamp": 1783435200,
+      "close": 52926.30859375
     },
     {
-      "timestamp": 1783349100,
-      "close": 52786.30859375
+      "timestamp": 1783435500,
+      "close": 52926.98046875
     },
     {
-      "timestamp": 1783349400,
-      "close": 52823.19921875
+      "timestamp": 1783435800,
+      "close": 52929.55078125
     },
     {
-      "timestamp": 1783349700,
-      "close": 52871.76953125
+      "timestamp": 1783436100,
+      "close": 52885.328125
     },
     {
-      "timestamp": 1783350000,
-      "close": 52850.19921875
+      "timestamp": 1783436400,
+      "close": 52849.51171875
     },
     {
-      "timestamp": 1783350300,
-      "close": 52890.3515625
+      "timestamp": 1783436700,
+      "close": 52867.828125
     },
     {
-      "timestamp": 1783350600,
-      "close": 52895.91015625
+      "timestamp": 1783437000,
+      "close": 52843.76171875
     },
     {
-      "timestamp": 1783350900,
-      "close": 52879.66015625
-    },
-    {
-      "timestamp": 1783351200,
-      "close": 52856.16015625
-    },
-    {
-      "timestamp": 1783351500,
-      "close": 52854.640625
-    },
-    {
-      "timestamp": 1783351800,
-      "close": 52860.21875
-    },
-    {
-      "timestamp": 1783352100,
-      "close": 52874.0703125
-    },
-    {
-      "timestamp": 1783352400,
-      "close": 52876.69140625
-    },
-    {
-      "timestamp": 1783352700,
-      "close": 52880.76171875
-    },
-    {
-      "timestamp": 1783353000,
-      "close": 52868.26953125
-    },
-    {
-      "timestamp": 1783353300,
-      "close": 52862.21875
-    },
-    {
-      "timestamp": 1783353600,
-      "close": 52856.69921875
-    },
-    {
-      "timestamp": 1783353900,
-      "close": 52847.078125
-    },
-    {
-      "timestamp": 1783354200,
-      "close": 52849.671875
-    },
-    {
-      "timestamp": 1783354500,
-      "close": 52875.8203125
-    },
-    {
-      "timestamp": 1783354800,
-      "close": 52873.0703125
-    },
-    {
-      "timestamp": 1783355100,
-      "close": 52881.08984375
-    },
-    {
-      "timestamp": 1783355400,
-      "close": 52874.73046875
-    },
-    {
-      "timestamp": 1783355700,
-      "close": 52877.01171875
-    },
-    {
-      "timestamp": 1783356000,
-      "close": 52896.62890625
-    },
-    {
-      "timestamp": 1783356300,
-      "close": 52919.62890625
-    },
-    {
-      "timestamp": 1783356600,
-      "close": 52911.96875
-    },
-    {
-      "timestamp": 1783356900,
-      "close": 52892.73046875
-    },
-    {
-      "timestamp": 1783357200,
-      "close": 52912.98046875
-    },
-    {
-      "timestamp": 1783357500,
-      "close": 52947.6796875
-    },
-    {
-      "timestamp": 1783357800,
-      "close": 52947.26953125
-    },
-    {
-      "timestamp": 1783358100,
-      "close": 52942.4296875
-    },
-    {
-      "timestamp": 1783358400,
-      "close": 52955.23046875
-    },
-    {
-      "timestamp": 1783358700,
-      "close": 52945.01953125
-    },
-    {
-      "timestamp": 1783359000,
-      "close": 52911.46875
-    },
-    {
-      "timestamp": 1783359300,
-      "close": 52919.1015625
-    },
-    {
-      "timestamp": 1783359600,
-      "close": 52898.23046875
-    },
-    {
-      "timestamp": 1783359900,
-      "close": 52899.16015625
-    },
-    {
-      "timestamp": 1783360200,
-      "close": 52886.0390625
-    },
-    {
-      "timestamp": 1783360500,
-      "close": 52910.78125
-    },
-    {
-      "timestamp": 1783360800,
-      "close": 52949.01953125
-    },
-    {
-      "timestamp": 1783361100,
-      "close": 52938.828125
-    },
-    {
-      "timestamp": 1783361400,
-      "close": 52949.1796875
-    },
-    {
-      "timestamp": 1783361700,
-      "close": 52966.640625
-    },
-    {
-      "timestamp": 1783362000,
-      "close": 52972.46875
-    },
-    {
-      "timestamp": 1783362300,
-      "close": 52985.0390625
-    },
-    {
-      "timestamp": 1783362600,
-      "close": 52962.51171875
-    },
-    {
-      "timestamp": 1783362900,
-      "close": 52957.078125
-    },
-    {
-      "timestamp": 1783363200,
-      "close": 52959.5
-    },
-    {
-      "timestamp": 1783363500,
-      "close": 52982.53125
-    },
-    {
-      "timestamp": 1783363800,
-      "close": 52999.12109375
-    },
-    {
-      "timestamp": 1783364100,
-      "close": 53017.0390625
-    },
-    {
-      "timestamp": 1783364400,
-      "close": 53000.19140625
-    },
-    {
-      "timestamp": 1783364700,
-      "close": 52975.78125
-    },
-    {
-      "timestamp": 1783365000,
-      "close": 52980.87890625
-    },
-    {
-      "timestamp": 1783365300,
-      "close": 52981.890625
-    },
-    {
-      "timestamp": 1783365600,
-      "close": 52999.98046875
-    },
-    {
-      "timestamp": 1783365900,
-      "close": 52987.55859375
-    },
-    {
-      "timestamp": 1783366200,
-      "close": 52974.4296875
-    },
-    {
-      "timestamp": 1783366500,
-      "close": 52998.28125
-    },
-    {
-      "timestamp": 1783366800,
-      "close": 52993.94140625
-    },
-    {
-      "timestamp": 1783367100,
-      "close": 52989.3515625
-    },
-    {
-      "timestamp": 1783367400,
-      "close": 53010.6015625
-    },
-    {
-      "timestamp": 1783367700,
-      "close": 53060.1015625
-    },
-    {
-      "timestamp": 1783368000,
-      "close": 53055.91015625
+      "timestamp": 1783437212,
+      "close": 52824.7890625
     }
   ],
   "news": {
-    "title": "Tech Stock Decline, Oil Price Increase Dampen US Equity Futures Pre-Bell",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-07-07T11:55:40.000Z"
+    "title": "Intel and Applied Materials Dive 10%, AMD Craters 8% as Samsung Earnings Trigger Chip Selloff",
+    "publisher": "24/7 Wall St.",
+    "publishedAt": "2026-07-07T14:27:59.000Z"
   },
-  "generatedAt": "2026-07-07T12:08:59.864Z"
+  "generatedAt": "2026-07-07T15:13:33.385Z"
 }
