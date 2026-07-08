@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 48.41,
+  "price": 47.95,
   "previousClose": 49.2,
   "dayHigh": 49.39,
-  "dayLow": 48.19,
-  "change": -0.7900000000000063,
-  "changePercent": -1.6056910569105818,
+  "dayLow": 47.835,
+  "change": -1.25,
+  "changePercent": -2.540650406504065,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -268,8 +268,68 @@
       "close": 48.40999984741211
     },
     {
-      "timestamp": 1783536273,
+      "timestamp": 1783536300,
+      "close": 48.400001525878906
+    },
+    {
+      "timestamp": 1783536600,
       "close": 48.40999984741211
+    },
+    {
+      "timestamp": 1783536900,
+      "close": 48.43000030517578
+    },
+    {
+      "timestamp": 1783537200,
+      "close": 48.349998474121094
+    },
+    {
+      "timestamp": 1783537500,
+      "close": 48.349998474121094
+    },
+    {
+      "timestamp": 1783537800,
+      "close": 48.275001525878906
+    },
+    {
+      "timestamp": 1783538100,
+      "close": 48.1349983215332
+    },
+    {
+      "timestamp": 1783538400,
+      "close": 48.16999816894531
+    },
+    {
+      "timestamp": 1783538700,
+      "close": 48.13999938964844
+    },
+    {
+      "timestamp": 1783539000,
+      "close": 48
+    },
+    {
+      "timestamp": 1783539300,
+      "close": 48.09000015258789
+    },
+    {
+      "timestamp": 1783539600,
+      "close": 47.95000076293945
+    },
+    {
+      "timestamp": 1783539900,
+      "close": 48.04999923706055
+    },
+    {
+      "timestamp": 1783540200,
+      "close": 48.189998626708984
+    },
+    {
+      "timestamp": 1783540500,
+      "close": 47.959999084472656
+    },
+    {
+      "timestamp": 1783540800,
+      "close": 47.95000076293945
     }
   ],
   "news": {
@@ -277,5 +337,5 @@
     "publisher": "GuruFocus.com",
     "publishedAt": "2026-07-08T13:11:46.000Z"
   },
-  "generatedAt": "2026-07-08T18:44:36.993Z"
+  "generatedAt": "2026-07-08T20:37:28.879Z"
 }

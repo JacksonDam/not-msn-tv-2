@@ -5,12 +5,12 @@
     "displaySymbol": "$IBKR"
   },
   "name": "INTERACTIVE BROKERS GROUP, INC.",
-  "price": 93.795,
+  "price": 93.4,
   "previousClose": 94.57,
   "dayHigh": 94.11,
   "dayLow": 92.19,
-  "change": -0.7749999999999915,
-  "changePercent": -0.8194987839695375,
+  "change": -1.1699999999999875,
+  "changePercent": -1.23717880934756,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -265,11 +265,71 @@
     },
     {
       "timestamp": 1783536000,
+      "close": 93.80989837646484
+    },
+    {
+      "timestamp": 1783536300,
+      "close": 93.79000091552734
+    },
+    {
+      "timestamp": 1783536600,
+      "close": 93.7699966430664
+    },
+    {
+      "timestamp": 1783536900,
+      "close": 93.71499633789062
+    },
+    {
+      "timestamp": 1783537200,
+      "close": 93.56600189208984
+    },
+    {
+      "timestamp": 1783537500,
+      "close": 93.70600128173828
+    },
+    {
+      "timestamp": 1783537800,
+      "close": 93.63500213623047
+    },
+    {
+      "timestamp": 1783538100,
       "close": 93.69000244140625
     },
     {
-      "timestamp": 1783536274,
-      "close": 93.79499816894531
+      "timestamp": 1783538400,
+      "close": 93.64009857177734
+    },
+    {
+      "timestamp": 1783538700,
+      "close": 93.70999908447266
+    },
+    {
+      "timestamp": 1783539000,
+      "close": 93.5
+    },
+    {
+      "timestamp": 1783539300,
+      "close": 93.52999877929688
+    },
+    {
+      "timestamp": 1783539600,
+      "close": 93.66999816894531
+    },
+    {
+      "timestamp": 1783539900,
+      "close": 93.2699966430664
+    },
+    {
+      "timestamp": 1783540200,
+      "close": 93.4000015258789
+    },
+    {
+      "timestamp": 1783540500,
+      "close": 93.37999725341797
+    },
+    {
+      "timestamp": 1783540800,
+      "close": 93.4000015258789
     }
   ],
   "news": {
@@ -277,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-07-08T16:17:21.000Z"
   },
-  "generatedAt": "2026-07-08T18:44:43.861Z"
+  "generatedAt": "2026-07-08T20:37:35.692Z"
 }
