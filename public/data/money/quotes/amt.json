@@ -5,12 +5,12 @@
     "displaySymbol": "$AMT"
   },
   "name": "AMERICAN TOWER CORPORATION",
-  "price": 164.988,
+  "price": 165,
   "previousClose": 165.04,
   "dayHigh": 166.07,
   "dayLow": 163.66,
-  "change": -0.0519999999999925,
-  "changePercent": -0.03150751333009725,
+  "change": -0.03999999999999204,
+  "changePercent": -0.024236548715458096,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1783626600,
-      "close": 164.7761993408203
+      "close": 164.77999877929688
     },
     {
       "timestamp": 1783626900,
-      "close": 164.98800659179688
+      "close": 165.00999450683594
+    },
+    {
+      "timestamp": 1783627200,
+      "close": 165
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "The Fly",
     "publishedAt": "2026-07-09T13:47:11.000Z"
   },
-  "generatedAt": "2026-07-09T20:03:45.052Z"
+  "generatedAt": "2026-07-09T21:43:41.269Z"
 }
