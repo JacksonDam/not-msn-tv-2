@@ -5,337 +5,89 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 13.61,
-  "previousClose": 13.5,
-  "dayHigh": 13.745,
-  "dayLow": 13.435,
-  "change": 0.10999999999999943,
-  "changePercent": 0.8148148148148106,
+  "price": 14.02,
+  "previousClose": 13.61,
+  "dayHigh": 14.035,
+  "dayLow": 13.627,
+  "change": 0.41000000000000014,
+  "changePercent": 3.0124908155767827,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1783603800,
-      "close": 13.5600004196167
-    },
-    {
-      "timestamp": 1783604100,
-      "close": 13.505000114440918
-    },
-    {
-      "timestamp": 1783604400,
-      "close": 13.524999618530273
-    },
-    {
-      "timestamp": 1783604700,
-      "close": 13.51990032196045
-    },
-    {
-      "timestamp": 1783605000,
-      "close": 13.475199699401855
-    },
-    {
-      "timestamp": 1783605300,
-      "close": 13.484999656677246
-    },
-    {
-      "timestamp": 1783605600,
-      "close": 13.490599632263184
-    },
-    {
-      "timestamp": 1783605900,
-      "close": 13.494999885559082
-    },
-    {
-      "timestamp": 1783606200,
-      "close": 13.489999771118164
-    },
-    {
-      "timestamp": 1783606500,
-      "close": 13.454999923706055
-    },
-    {
-      "timestamp": 1783606800,
-      "close": 13.470100402832031
-    },
-    {
-      "timestamp": 1783607100,
-      "close": 13.512499809265137
-    },
-    {
-      "timestamp": 1783607400,
-      "close": 13.574999809265137
-    },
-    {
-      "timestamp": 1783607700,
-      "close": 13.555000305175781
-    },
-    {
-      "timestamp": 1783608000,
-      "close": 13.560099601745605
-    },
-    {
-      "timestamp": 1783608300,
-      "close": 13.5649995803833
-    },
-    {
-      "timestamp": 1783608600,
-      "close": 13.585000038146973
-    },
-    {
-      "timestamp": 1783608900,
-      "close": 13.59000015258789
-    },
-    {
-      "timestamp": 1783609200,
-      "close": 13.585000038146973
-    },
-    {
-      "timestamp": 1783609500,
-      "close": 13.579999923706055
-    },
-    {
-      "timestamp": 1783609800,
-      "close": 13.5649995803833
-    },
-    {
-      "timestamp": 1783610100,
-      "close": 13.585000038146973
-    },
-    {
-      "timestamp": 1783610400,
-      "close": 13.579999923706055
-    },
-    {
-      "timestamp": 1783610700,
-      "close": 13.600000381469727
-    },
-    {
-      "timestamp": 1783611000,
-      "close": 13.585000038146973
-    },
-    {
-      "timestamp": 1783611300,
-      "close": 13.600700378417969
-    },
-    {
-      "timestamp": 1783611600,
-      "close": 13.595000267028809
-    },
-    {
-      "timestamp": 1783611900,
-      "close": 13.635000228881836
-    },
-    {
-      "timestamp": 1783612200,
-      "close": 13.649999618530273
-    },
-    {
-      "timestamp": 1783612500,
-      "close": 13.645000457763672
-    },
-    {
-      "timestamp": 1783612800,
-      "close": 13.654999732971191
-    },
-    {
-      "timestamp": 1783613100,
-      "close": 13.670000076293945
-    },
-    {
-      "timestamp": 1783613400,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783613700,
-      "close": 13.670000076293945
-    },
-    {
-      "timestamp": 1783614000,
-      "close": 13.65999984741211
-    },
-    {
-      "timestamp": 1783614300,
-      "close": 13.645000457763672
-    },
-    {
-      "timestamp": 1783614600,
-      "close": 13.645000457763672
-    },
-    {
-      "timestamp": 1783614900,
-      "close": 13.670000076293945
-    },
-    {
-      "timestamp": 1783615200,
-      "close": 13.670000076293945
-    },
-    {
-      "timestamp": 1783615500,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783615800,
-      "close": 13.654999732971191
-    },
-    {
-      "timestamp": 1783616100,
-      "close": 13.654999732971191
-    },
-    {
-      "timestamp": 1783616400,
-      "close": 13.635000228881836
-    },
-    {
-      "timestamp": 1783616700,
-      "close": 13.6850004196167
-    },
-    {
-      "timestamp": 1783617000,
-      "close": 13.6850004196167
-    },
-    {
-      "timestamp": 1783617300,
-      "close": 13.6850004196167
-    },
-    {
-      "timestamp": 1783617600,
-      "close": 13.699999809265137
-    },
-    {
-      "timestamp": 1783617900,
-      "close": 13.710000038146973
-    },
-    {
-      "timestamp": 1783618200,
-      "close": 13.720000267028809
-    },
-    {
-      "timestamp": 1783618500,
-      "close": 13.725000381469727
-    },
-    {
-      "timestamp": 1783618800,
+      "timestamp": 1783690200,
       "close": 13.704999923706055
     },
     {
-      "timestamp": 1783619100,
-      "close": 13.71500015258789
+      "timestamp": 1783690500,
+      "close": 13.72859001159668
     },
     {
-      "timestamp": 1783619400,
-      "close": 13.694999694824219
+      "timestamp": 1783690800,
+      "close": 13.795000076293945
     },
     {
-      "timestamp": 1783619700,
-      "close": 13.694999694824219
+      "timestamp": 1783691100,
+      "close": 13.795000076293945
     },
     {
-      "timestamp": 1783620000,
-      "close": 13.65999984741211
+      "timestamp": 1783691400,
+      "close": 13.819999694824219
     },
     {
-      "timestamp": 1783620300,
-      "close": 13.680000305175781
+      "timestamp": 1783691700,
+      "close": 13.824999809265137
     },
     {
-      "timestamp": 1783620600,
-      "close": 13.6850004196167
+      "timestamp": 1783692000,
+      "close": 13.864999771118164
     },
     {
-      "timestamp": 1783620900,
-      "close": 13.675000190734863
+      "timestamp": 1783692300,
+      "close": 13.890000343322754
     },
     {
-      "timestamp": 1783621200,
-      "close": 13.710000038146973
+      "timestamp": 1783692600,
+      "close": 13.854999542236328
     },
     {
-      "timestamp": 1783621500,
-      "close": 13.6899995803833
+      "timestamp": 1783692900,
+      "close": 13.925000190734863
     },
     {
-      "timestamp": 1783621800,
-      "close": 13.6850004196167
+      "timestamp": 1783693200,
+      "close": 13.87030029296875
     },
     {
-      "timestamp": 1783622100,
-      "close": 13.675000190734863
+      "timestamp": 1783693500,
+      "close": 13.904999732971191
     },
     {
-      "timestamp": 1783622400,
-      "close": 13.6899995803833
+      "timestamp": 1783693800,
+      "close": 13.895000457763672
     },
     {
-      "timestamp": 1783622700,
-      "close": 13.6850004196167
+      "timestamp": 1783694100,
+      "close": 13.969599723815918
     },
     {
-      "timestamp": 1783623000,
-      "close": 13.6899995803833
+      "timestamp": 1783694400,
+      "close": 13.960000038146973
     },
     {
-      "timestamp": 1783623300,
-      "close": 13.694999694824219
+      "timestamp": 1783694700,
+      "close": 13.994999885559082
     },
     {
-      "timestamp": 1783623600,
-      "close": 13.65999984741211
-    },
-    {
-      "timestamp": 1783623900,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783624200,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783624500,
-      "close": 13.670000076293945
-    },
-    {
-      "timestamp": 1783624800,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783625100,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783625400,
-      "close": 13.654999732971191
-    },
-    {
-      "timestamp": 1783625700,
-      "close": 13.675000190734863
-    },
-    {
-      "timestamp": 1783626000,
-      "close": 13.664999961853027
-    },
-    {
-      "timestamp": 1783626300,
-      "close": 13.654999732971191
-    },
-    {
-      "timestamp": 1783626600,
-      "close": 13.619999885559082
-    },
-    {
-      "timestamp": 1783626900,
-      "close": 13.619999885559082
-    },
-    {
-      "timestamp": 1783627200,
-      "close": 13.609999656677246
+      "timestamp": 1783695055,
+      "close": 14.020000457763672
     }
   ],
   "news": {
-    "title": "Market Chatter: Tesla's Profit per Vehicle Falls Near Toyota Range",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-07-10T10:20:02.000Z"
+    "title": "New to The Street's Exclusive Ford Motor Company (F) Interview Surpasses 4 Million Views, Continues to Deliver More Than 100,000 Monthly Views - Demonstrating the Power of Premium Content and Global Distribution",
+    "publisher": "ACCESS Newswire",
+    "publishedAt": "2026-07-10T13:25:00.000Z"
   },
-  "generatedAt": "2026-07-10T11:19:30.668Z"
+  "generatedAt": "2026-07-10T14:50:58.067Z"
 }

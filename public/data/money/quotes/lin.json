@@ -5,337 +5,89 @@
     "displaySymbol": "$LIN"
   },
   "name": "LINDE PLC",
-  "price": 525.56,
-  "previousClose": 527.67,
-  "dayHigh": 527.84,
-  "dayLow": 519.01,
-  "change": -2.1100000000000136,
-  "changePercent": -0.3998711315784513,
+  "price": 530.985,
+  "previousClose": 525.56,
+  "dayHigh": 531.61,
+  "dayLow": 523.58,
+  "change": 5.425000000000068,
+  "changePercent": 1.0322322855620802,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1783603800,
-      "close": 523.6400146484375
+      "timestamp": 1783690200,
+      "close": 526.0900268554688
     },
     {
-      "timestamp": 1783604100,
-      "close": 523.780029296875
+      "timestamp": 1783690500,
+      "close": 525.1400146484375
     },
     {
-      "timestamp": 1783604400,
-      "close": 523.4299926757812
+      "timestamp": 1783690800,
+      "close": 525.3200073242188
     },
     {
-      "timestamp": 1783604700,
-      "close": 523.3699951171875
+      "timestamp": 1783691100,
+      "close": 524.9349975585938
     },
     {
-      "timestamp": 1783605000,
-      "close": 521.1900024414062
+      "timestamp": 1783691400,
+      "close": 526.739990234375
     },
     {
-      "timestamp": 1783605300,
-      "close": 522.1649780273438
+      "timestamp": 1783691700,
+      "close": 527.010009765625
     },
     {
-      "timestamp": 1783605600,
-      "close": 521.3099975585938
+      "timestamp": 1783692000,
+      "close": 528.3200073242188
     },
     {
-      "timestamp": 1783605900,
-      "close": 521.5225219726562
+      "timestamp": 1783692300,
+      "close": 529.4099731445312
     },
     {
-      "timestamp": 1783606200,
-      "close": 521.0499877929688
+      "timestamp": 1783692600,
+      "close": 529.4349975585938
     },
     {
-      "timestamp": 1783606500,
-      "close": 521.530029296875
+      "timestamp": 1783692900,
+      "close": 530.5399169921875
     },
     {
-      "timestamp": 1783606800,
-      "close": 520.8350219726562
+      "timestamp": 1783693200,
+      "close": 530.5800170898438
     },
     {
-      "timestamp": 1783607100,
-      "close": 520.219970703125
+      "timestamp": 1783693500,
+      "close": 530.7050170898438
     },
     {
-      "timestamp": 1783607400,
-      "close": 520.1799926757812
+      "timestamp": 1783693800,
+      "close": 529.4550170898438
     },
     {
-      "timestamp": 1783607700,
-      "close": 519.9099731445312
+      "timestamp": 1783694100,
+      "close": 530.2899780273438
     },
     {
-      "timestamp": 1783608000,
-      "close": 520.3900146484375
+      "timestamp": 1783694400,
+      "close": 531.1199951171875
     },
     {
-      "timestamp": 1783608300,
-      "close": 519.469970703125
+      "timestamp": 1783694700,
+      "close": 530.89501953125
     },
     {
-      "timestamp": 1783608600,
-      "close": 520.2899780273438
-    },
-    {
-      "timestamp": 1783608900,
-      "close": 520.22998046875
-    },
-    {
-      "timestamp": 1783609200,
-      "close": 519.9000244140625
-    },
-    {
-      "timestamp": 1783609500,
-      "close": 520.2924194335938
-    },
-    {
-      "timestamp": 1783609800,
-      "close": 519.6599731445312
-    },
-    {
-      "timestamp": 1783610100,
-      "close": 519.9400024414062
-    },
-    {
-      "timestamp": 1783610400,
-      "close": 520.0599975585938
-    },
-    {
-      "timestamp": 1783610700,
-      "close": 521.375
-    },
-    {
-      "timestamp": 1783611000,
-      "close": 520.4299926757812
-    },
-    {
-      "timestamp": 1783611300,
-      "close": 519.8800048828125
-    },
-    {
-      "timestamp": 1783611600,
-      "close": 519.4600219726562
-    },
-    {
-      "timestamp": 1783611900,
-      "close": 520.135009765625
-    },
-    {
-      "timestamp": 1783612200,
-      "close": 520.9949951171875
-    },
-    {
-      "timestamp": 1783612500,
-      "close": 520.655029296875
-    },
-    {
-      "timestamp": 1783612800,
-      "close": 521.6749877929688
-    },
-    {
-      "timestamp": 1783613100,
-      "close": 521.719970703125
-    },
-    {
-      "timestamp": 1783613400,
-      "close": 521.739990234375
-    },
-    {
-      "timestamp": 1783613700,
-      "close": 520.7349853515625
-    },
-    {
-      "timestamp": 1783614000,
-      "close": 521.405029296875
-    },
-    {
-      "timestamp": 1783614300,
-      "close": 521.5850219726562
-    },
-    {
-      "timestamp": 1783614600,
-      "close": 521.489990234375
-    },
-    {
-      "timestamp": 1783614900,
-      "close": 521.3375244140625
-    },
-    {
-      "timestamp": 1783615200,
-      "close": 520.7100219726562
-    },
-    {
-      "timestamp": 1783615500,
-      "close": 522.0900268554688
-    },
-    {
-      "timestamp": 1783615800,
-      "close": 522.1375122070312
-    },
-    {
-      "timestamp": 1783616100,
-      "close": 522.72998046875
-    },
-    {
-      "timestamp": 1783616400,
-      "close": 522.2249755859375
-    },
-    {
-      "timestamp": 1783616700,
-      "close": 522.030029296875
-    },
-    {
-      "timestamp": 1783617000,
-      "close": 521.9299926757812
-    },
-    {
-      "timestamp": 1783617300,
-      "close": 522.5150146484375
-    },
-    {
-      "timestamp": 1783617600,
-      "close": 523.0250244140625
-    },
-    {
-      "timestamp": 1783617900,
-      "close": 523.3099975585938
-    },
-    {
-      "timestamp": 1783618200,
-      "close": 523.3599853515625
-    },
-    {
-      "timestamp": 1783618500,
-      "close": 523.4000244140625
-    },
-    {
-      "timestamp": 1783618800,
-      "close": 523.9199829101562
-    },
-    {
-      "timestamp": 1783619100,
-      "close": 523.8099975585938
-    },
-    {
-      "timestamp": 1783619400,
-      "close": 524.260009765625
-    },
-    {
-      "timestamp": 1783619700,
-      "close": 523.9149780273438
-    },
-    {
-      "timestamp": 1783620000,
-      "close": 523.17431640625
-    },
-    {
-      "timestamp": 1783620300,
-      "close": 524.159912109375
-    },
-    {
-      "timestamp": 1783620600,
-      "close": 524.3300170898438
-    },
-    {
-      "timestamp": 1783620900,
-      "close": 523.7349853515625
-    },
-    {
-      "timestamp": 1783621200,
-      "close": 523.719970703125
-    },
-    {
-      "timestamp": 1783621500,
-      "close": 523.989990234375
-    },
-    {
-      "timestamp": 1783621800,
-      "close": 524.8599853515625
-    },
-    {
-      "timestamp": 1783622100,
-      "close": 524.1799926757812
-    },
-    {
-      "timestamp": 1783622400,
-      "close": 524.2150268554688
-    },
-    {
-      "timestamp": 1783622700,
-      "close": 524
-    },
-    {
-      "timestamp": 1783623000,
-      "close": 524.1300048828125
-    },
-    {
-      "timestamp": 1783623300,
-      "close": 524.3900146484375
-    },
-    {
-      "timestamp": 1783623600,
-      "close": 525.260009765625
-    },
-    {
-      "timestamp": 1783623900,
-      "close": 524.5800170898438
-    },
-    {
-      "timestamp": 1783624200,
-      "close": 524.4949951171875
-    },
-    {
-      "timestamp": 1783624500,
-      "close": 524.4600219726562
-    },
-    {
-      "timestamp": 1783624800,
-      "close": 525.0399780273438
-    },
-    {
-      "timestamp": 1783625100,
-      "close": 525.635009765625
-    },
-    {
-      "timestamp": 1783625400,
-      "close": 525.5499877929688
-    },
-    {
-      "timestamp": 1783625700,
-      "close": 525.260009765625
-    },
-    {
-      "timestamp": 1783626000,
-      "close": 525.885009765625
-    },
-    {
-      "timestamp": 1783626300,
-      "close": 525.35498046875
-    },
-    {
-      "timestamp": 1783626600,
-      "close": 525.5150146484375
-    },
-    {
-      "timestamp": 1783626900,
-      "close": 525.5399780273438
-    },
-    {
-      "timestamp": 1783627200,
-      "close": 525.5599975585938
+      "timestamp": 1783695058,
+      "close": 530.9849853515625
     }
   ],
   "news": {
-    "title": "[Latest] Global Green Hydrogen Market Size/Share Worth USD 188.9 Billion by 2035 at a 31.2% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-07-09T04:30:00.000Z"
+    "title": "Evercore ISI Adjusts Price Target on Linde to $525 From $515",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-07-10T13:14:04.000Z"
   },
-  "generatedAt": "2026-07-10T11:19:46.118Z"
+  "generatedAt": "2026-07-10T14:51:13.969Z"
 }
