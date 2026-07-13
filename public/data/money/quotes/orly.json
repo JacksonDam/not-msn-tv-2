@@ -5,12 +5,12 @@
     "displaySymbol": "$ORLY"
   },
   "name": "O'REILLY AUTOMOTIVE, INC.",
-  "price": 87.08,
+  "price": 87.28,
   "previousClose": 86.28,
   "dayHigh": 88.02,
   "dayLow": 86.22,
-  "change": 0.7999999999999972,
-  "changePercent": 0.9272137227630937,
+  "change": 1,
+  "changePercent": 1.1590171534538711,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1783971900,
-      "close": 87.125
+      "close": 87.08000183105469
     },
     {
-      "timestamp": 1783972159,
-      "close": 87.08000183105469
+      "timestamp": 1783972200,
+      "close": 86.97000122070312
+    },
+    {
+      "timestamp": 1783972500,
+      "close": 87.29989624023438
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 87.27999877929688
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Restaurant Dive",
     "publishedAt": "2026-07-13T10:07:53.000Z"
   },
-  "generatedAt": "2026-07-13T19:49:25.655Z"
+  "generatedAt": "2026-07-13T21:13:25.198Z"
 }

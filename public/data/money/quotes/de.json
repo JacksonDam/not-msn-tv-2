@@ -5,12 +5,12 @@
     "displaySymbol": "$DE"
   },
   "name": "DEERE & COMPANY",
-  "price": 585.985,
+  "price": 585.64,
   "previousClose": 586.86,
   "dayHigh": 587.83,
   "dayLow": 582.01,
-  "change": -0.875,
-  "changePercent": -0.1490985925092867,
+  "change": -1.2200000000000273,
+  "changePercent": -0.20788603755581012,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,15 +313,23 @@
     },
     {
       "timestamp": 1783971600,
-      "close": 586.2899780273438
+      "close": 586.260009765625
     },
     {
       "timestamp": 1783971900,
-      "close": 585.47998046875
+      "close": 586.2000122070312
     },
     {
-      "timestamp": 1783972124,
-      "close": 585.9849853515625
+      "timestamp": 1783972200,
+      "close": 586.02001953125
+    },
+    {
+      "timestamp": 1783972500,
+      "close": 585.6400146484375
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 585.6400146484375
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-13T18:53:54.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:49.328Z"
+  "generatedAt": "2026-07-13T21:12:54.179Z"
 }

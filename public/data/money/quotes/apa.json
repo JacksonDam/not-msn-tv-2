@@ -5,12 +5,12 @@
     "displaySymbol": "$APA"
   },
   "name": "APA CORPORATION",
-  "price": 34.575,
+  "price": 34.67,
   "previousClose": 33.44,
   "dayHigh": 34.93,
   "dayLow": 34.15,
-  "change": 1.1350000000000051,
-  "changePercent": 3.3941387559808764,
+  "change": 1.230000000000004,
+  "changePercent": 3.6782296650717825,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1783971900,
+      "close": 34.52429962158203
+    },
+    {
+      "timestamp": 1783972200,
       "close": 34.564998626708984
     },
     {
-      "timestamp": 1783972092,
-      "close": 34.57500076293945
+      "timestamp": 1783972500,
+      "close": 34.68000030517578
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 34.66999816894531
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Oilprice.com",
     "publishedAt": "2026-07-12T21:00:00.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:33.483Z"
+  "generatedAt": "2026-07-13T21:12:39.894Z"
 }

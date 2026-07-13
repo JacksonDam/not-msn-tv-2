@@ -5,12 +5,12 @@
     "displaySymbol": "$COF"
   },
   "name": "CAPITAL ONE FINANCIAL CORPORATION",
-  "price": 202.265,
+  "price": 203.02,
   "previousClose": 201.52,
   "dayHigh": 205.28,
   "dayLow": 201.78,
-  "change": 0.7449999999999761,
-  "changePercent": 0.3696903533147956,
+  "change": 1.5,
+  "changePercent": 0.7443429932512902,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1783971900,
-      "close": 202.25
+      "close": 202.2550048828125
     },
     {
-      "timestamp": 1783972121,
-      "close": 202.26499938964844
+      "timestamp": 1783972200,
+      "close": 202.94500732421875
+    },
+    {
+      "timestamp": 1783972500,
+      "close": 203.02000427246094
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 203.02000427246094
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-07-13T18:14:20.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:44.514Z"
+  "generatedAt": "2026-07-13T21:12:49.453Z"
 }

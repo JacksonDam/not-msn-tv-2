@@ -5,12 +5,12 @@
     "displaySymbol": "$AMT"
   },
   "name": "AMERICAN TOWER CORPORATION",
-  "price": 169.635,
+  "price": 169.5,
   "previousClose": 168.59,
   "dayHigh": 170.9,
   "dayLow": 168.969,
-  "change": 1.0449999999999875,
-  "changePercent": 0.6198469660122116,
+  "change": 0.9099999999999966,
+  "changePercent": 0.5397710421733178,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1783971900,
+      "close": 169.2899932861328
+    },
+    {
+      "timestamp": 1783972200,
+      "close": 169.8800048828125
+    },
+    {
+      "timestamp": 1783972500,
       "close": 169.57000732421875
     },
     {
-      "timestamp": 1783972111,
-      "close": 169.63499450683594
+      "timestamp": 1783972800,
+      "close": 169.5
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-10T22:15:04.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:32.746Z"
+  "generatedAt": "2026-07-13T21:12:39.192Z"
 }

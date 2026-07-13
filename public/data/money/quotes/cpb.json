@@ -5,12 +5,12 @@
     "displaySymbol": "$CPB"
   },
   "name": "THE CAMPBELL'S COMPANY",
-  "price": 22.05,
+  "price": 22.15,
   "previousClose": 22.07,
   "dayHigh": 22.805,
   "dayLow": 22.03,
-  "change": -0.019999999999999574,
-  "changePercent": -0.09062075215224093,
+  "change": 0.0799999999999983,
+  "changePercent": 0.3624830086089637,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1783971900,
-      "close": 22.05500030517578
+      "close": 22.045000076293945
     },
     {
-      "timestamp": 1783972125,
+      "timestamp": 1783972200,
       "close": 22.049999237060547
+    },
+    {
+      "timestamp": 1783972500,
+      "close": 22.135000228881836
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 22.149999618530273
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-07-10T10:28:00.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:45.756Z"
+  "generatedAt": "2026-07-13T21:12:51.041Z"
 }

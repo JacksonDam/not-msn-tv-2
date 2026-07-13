@@ -5,12 +5,12 @@
     "displaySymbol": "$DIS"
   },
   "name": "THE WALT DISNEY COMPANY",
-  "price": 96.05,
+  "price": 96,
   "previousClose": 95.62,
   "dayHigh": 97.539,
-  "dayLow": 95.94,
-  "change": 0.4299999999999926,
-  "changePercent": 0.4496967161681579,
+  "dayLow": 95.825,
+  "change": 0.37999999999999545,
+  "changePercent": 0.39740640033465324,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,7 +309,7 @@
     },
     {
       "timestamp": 1783971300,
-      "close": 96.08499908447266
+      "close": 96.08000183105469
     },
     {
       "timestamp": 1783971600,
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1783971900,
-      "close": 96.04000091552734
+      "close": 96.05132293701172
     },
     {
-      "timestamp": 1783972125,
-      "close": 96.05000305175781
+      "timestamp": 1783972200,
+      "close": 95.87000274658203
+    },
+    {
+      "timestamp": 1783972500,
+      "close": 96.01000213623047
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 96
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-07-13T18:39:00.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:50.417Z"
+  "generatedAt": "2026-07-13T21:12:55.144Z"
 }

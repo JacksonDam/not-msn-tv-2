@@ -5,12 +5,12 @@
     "displaySymbol": "$CRH"
   },
   "name": "CRH PLC",
-  "price": 102.15,
+  "price": 102.71,
   "previousClose": 104.71,
   "dayHigh": 105.27,
   "dayLow": 102.11,
-  "change": -2.559999999999988,
-  "changePercent": -2.444847674529642,
+  "change": -2,
+  "changePercent": -1.910037245726292,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -320,8 +320,16 @@
       "close": 102.20999908447266
     },
     {
-      "timestamp": 1783972123,
-      "close": 102.1500015258789
+      "timestamp": 1783972200,
+      "close": 102.33999633789062
+    },
+    {
+      "timestamp": 1783972500,
+      "close": 102.70999908447266
+    },
+    {
+      "timestamp": 1783972800,
+      "close": 102.70999908447266
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-10T13:30:05.000Z"
   },
-  "generatedAt": "2026-07-13T19:48:46.291Z"
+  "generatedAt": "2026-07-13T21:12:51.504Z"
 }
