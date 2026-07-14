@@ -5,337 +5,101 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 25873.176,
-  "previousClose": 26281.607,
-  "dayHigh": 26139.37,
-  "dayLow": 25822.096,
-  "change": -408.4310000000005,
-  "changePercent": -1.5540564167175945,
+  "price": 26082.195,
+  "previousClose": 25873.176,
+  "dayHigh": 26120.418,
+  "dayLow": 25912.402,
+  "change": 209.01900000000023,
+  "changePercent": 0.8078598468158692,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1783949400,
-      "close": 26085.267578125
+      "timestamp": 1784035800,
+      "close": 25971.65234375
     },
     {
-      "timestamp": 1783949700,
-      "close": 26094.6875
+      "timestamp": 1784036100,
+      "close": 26028.392578125
     },
     {
-      "timestamp": 1783950000,
-      "close": 26063.548828125
+      "timestamp": 1784036400,
+      "close": 26014.009765625
     },
     {
-      "timestamp": 1783950300,
-      "close": 26050.099609375
+      "timestamp": 1784036700,
+      "close": 26016.400390625
     },
     {
-      "timestamp": 1783950600,
-      "close": 26000.80078125
+      "timestamp": 1784037000,
+      "close": 26024.1796875
     },
     {
-      "timestamp": 1783950900,
-      "close": 26066.330078125
+      "timestamp": 1784037300,
+      "close": 26048.736328125
     },
     {
-      "timestamp": 1783951200,
-      "close": 26027.44921875
+      "timestamp": 1784037600,
+      "close": 25977.025390625
     },
     {
-      "timestamp": 1783951500,
-      "close": 26038.609375
+      "timestamp": 1784037900,
+      "close": 25970.416015625
     },
     {
-      "timestamp": 1783951800,
-      "close": 26055.453125
+      "timestamp": 1784038200,
+      "close": 25979.9375
     },
     {
-      "timestamp": 1783952100,
-      "close": 25997.08203125
+      "timestamp": 1784038500,
+      "close": 25959.654296875
     },
     {
-      "timestamp": 1783952400,
-      "close": 26049.1640625
+      "timestamp": 1784038800,
+      "close": 25979.556640625
     },
     {
-      "timestamp": 1783952700,
-      "close": 26076.41796875
+      "timestamp": 1784039100,
+      "close": 26002.142578125
     },
     {
-      "timestamp": 1783953000,
-      "close": 26068.248046875
+      "timestamp": 1784039400,
+      "close": 26077.263671875
     },
     {
-      "timestamp": 1783953300,
-      "close": 26059.53515625
+      "timestamp": 1784039700,
+      "close": 26084.3671875
     },
     {
-      "timestamp": 1783953600,
-      "close": 26015.97265625
+      "timestamp": 1784040000,
+      "close": 26048.685546875
     },
     {
-      "timestamp": 1783953900,
-      "close": 26062.814453125
+      "timestamp": 1784040300,
+      "close": 26022.423828125
     },
     {
-      "timestamp": 1783954200,
-      "close": 26031.00390625
+      "timestamp": 1784040600,
+      "close": 26065.53515625
     },
     {
-      "timestamp": 1783954500,
-      "close": 26081.587890625
+      "timestamp": 1784040900,
+      "close": 26090.560546875
     },
     {
-      "timestamp": 1783954800,
-      "close": 26072.90234375
+      "timestamp": 1784041200,
+      "close": 26088.58203125
     },
     {
-      "timestamp": 1783955100,
-      "close": 26061.4921875
-    },
-    {
-      "timestamp": 1783955400,
-      "close": 26050.431640625
-    },
-    {
-      "timestamp": 1783955700,
-      "close": 26060.65625
-    },
-    {
-      "timestamp": 1783956000,
-      "close": 26075.8203125
-    },
-    {
-      "timestamp": 1783956300,
-      "close": 26069.94140625
-    },
-    {
-      "timestamp": 1783956600,
-      "close": 26058.595703125
-    },
-    {
-      "timestamp": 1783956900,
-      "close": 26053.205078125
-    },
-    {
-      "timestamp": 1783957200,
-      "close": 26031.115234375
-    },
-    {
-      "timestamp": 1783957500,
-      "close": 26018.15234375
-    },
-    {
-      "timestamp": 1783957800,
-      "close": 26012.08203125
-    },
-    {
-      "timestamp": 1783958100,
-      "close": 26004.552734375
-    },
-    {
-      "timestamp": 1783958400,
-      "close": 25989.001953125
-    },
-    {
-      "timestamp": 1783958700,
-      "close": 26007.91796875
-    },
-    {
-      "timestamp": 1783959000,
-      "close": 26008.826171875
-    },
-    {
-      "timestamp": 1783959300,
-      "close": 25989.28125
-    },
-    {
-      "timestamp": 1783959600,
-      "close": 25973.134765625
-    },
-    {
-      "timestamp": 1783959900,
-      "close": 25966.943359375
-    },
-    {
-      "timestamp": 1783960200,
-      "close": 25931.541015625
-    },
-    {
-      "timestamp": 1783960500,
-      "close": 25933.8125
-    },
-    {
-      "timestamp": 1783960800,
-      "close": 25948.302734375
-    },
-    {
-      "timestamp": 1783961100,
-      "close": 25933.18359375
-    },
-    {
-      "timestamp": 1783961400,
-      "close": 25914.341796875
-    },
-    {
-      "timestamp": 1783961700,
-      "close": 25931.611328125
-    },
-    {
-      "timestamp": 1783962000,
-      "close": 25934.568359375
-    },
-    {
-      "timestamp": 1783962300,
-      "close": 25962.25
-    },
-    {
-      "timestamp": 1783962600,
-      "close": 25944.263671875
-    },
-    {
-      "timestamp": 1783962900,
-      "close": 25946.294921875
-    },
-    {
-      "timestamp": 1783963200,
-      "close": 25920.51171875
-    },
-    {
-      "timestamp": 1783963500,
-      "close": 25920.599609375
-    },
-    {
-      "timestamp": 1783963800,
-      "close": 25923.875
-    },
-    {
-      "timestamp": 1783964100,
-      "close": 25903.705078125
-    },
-    {
-      "timestamp": 1783964400,
-      "close": 25913.796875
-    },
-    {
-      "timestamp": 1783964700,
-      "close": 25897.916015625
-    },
-    {
-      "timestamp": 1783965000,
-      "close": 25888.361328125
-    },
-    {
-      "timestamp": 1783965300,
-      "close": 25882.998046875
-    },
-    {
-      "timestamp": 1783965600,
-      "close": 25900.642578125
-    },
-    {
-      "timestamp": 1783965900,
-      "close": 25905.8046875
-    },
-    {
-      "timestamp": 1783966200,
-      "close": 25913.216796875
-    },
-    {
-      "timestamp": 1783966500,
-      "close": 25884.6875
-    },
-    {
-      "timestamp": 1783966800,
-      "close": 25903.603515625
-    },
-    {
-      "timestamp": 1783967100,
-      "close": 25887.00390625
-    },
-    {
-      "timestamp": 1783967400,
-      "close": 25889.216796875
-    },
-    {
-      "timestamp": 1783967700,
-      "close": 25908.357421875
-    },
-    {
-      "timestamp": 1783968000,
-      "close": 25910.810546875
-    },
-    {
-      "timestamp": 1783968300,
-      "close": 25916.021484375
-    },
-    {
-      "timestamp": 1783968600,
-      "close": 25915.119140625
-    },
-    {
-      "timestamp": 1783968900,
-      "close": 25901.580078125
-    },
-    {
-      "timestamp": 1783969200,
-      "close": 25917.25390625
-    },
-    {
-      "timestamp": 1783969500,
-      "close": 25894.583984375
-    },
-    {
-      "timestamp": 1783969800,
-      "close": 25876.658203125
-    },
-    {
-      "timestamp": 1783970100,
-      "close": 25873.625
-    },
-    {
-      "timestamp": 1783970400,
-      "close": 25856.912109375
-    },
-    {
-      "timestamp": 1783970700,
-      "close": 25838.111328125
-    },
-    {
-      "timestamp": 1783971000,
-      "close": 25850.759765625
-    },
-    {
-      "timestamp": 1783971300,
-      "close": 25826.259765625
-    },
-    {
-      "timestamp": 1783971600,
-      "close": 25860.0390625
-    },
-    {
-      "timestamp": 1783971900,
-      "close": 25866.830078125
-    },
-    {
-      "timestamp": 1783972200,
-      "close": 25869.69140625
-    },
-    {
-      "timestamp": 1783972500,
-      "close": 25878.7890625
-    },
-    {
-      "timestamp": 1783972800,
-      "close": 25873.17578125
+      "timestamp": 1784041365,
+      "close": 26082.1953125
     }
   ],
   "news": {
-    "title": "The Stock Market Just Sent Its Most Confusing Signal in Years -- but History Is Clear on What Happens Next",
-    "publisher": "Motley Fool",
-    "publishedAt": "2026-07-14T12:20:00.000Z"
+    "title": "BC-Most Active Stocks",
+    "publisher": "Associated Press",
+    "publishedAt": "2026-07-14T14:30:24.000Z"
   },
-  "generatedAt": "2026-07-14T12:39:52.433Z"
+  "generatedAt": "2026-07-14T15:02:49.819Z"
 }
