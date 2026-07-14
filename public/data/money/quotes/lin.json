@@ -5,12 +5,12 @@
     "displaySymbol": "$LIN"
   },
   "name": "LINDE PLC",
-  "price": 522.12,
+  "price": 522.54,
   "previousClose": 524.06,
   "dayHigh": 531.62,
-  "dayLow": 521.46,
-  "change": -1.9399999999999409,
-  "changePercent": -0.37018661985267737,
+  "dayLow": 521,
+  "change": -1.5199999999999818,
+  "changePercent": -0.29004312483303096,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784058300,
-      "close": 522.2999877929688
+      "close": 522.75
     },
     {
-      "timestamp": 1784058374,
-      "close": 522.1199951171875
+      "timestamp": 1784058600,
+      "close": 521.3300170898438
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 522.530029296875
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 522.5399780273438
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-14T13:06:02.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:18.058Z"
+  "generatedAt": "2026-07-14T21:15:13.303Z"
 }

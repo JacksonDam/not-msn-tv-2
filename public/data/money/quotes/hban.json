@@ -5,12 +5,12 @@
     "displaySymbol": "$HBAN"
   },
   "name": "HUNTINGTON BANCSHARES INCORPORATED",
-  "price": 17.805,
+  "price": 17.85,
   "previousClose": 17.93,
   "dayHigh": 18.15,
   "dayLow": 17.76,
-  "change": -0.125,
-  "changePercent": -0.6971556051310653,
+  "change": -0.0799999999999983,
+  "changePercent": -0.44617958728387225,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784058300,
+      "close": 17.815000534057617
+    },
+    {
+      "timestamp": 1784058600,
       "close": 17.80500030517578
     },
     {
-      "timestamp": 1784058363,
-      "close": 17.80500030517578
+      "timestamp": 1784058900,
+      "close": 17.860000610351562
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 17.850000381469727
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-07-14T12:00:00.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:06.784Z"
+  "generatedAt": "2026-07-14T21:15:03.662Z"
 }

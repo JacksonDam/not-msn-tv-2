@@ -5,12 +5,12 @@
     "displaySymbol": "$AES"
   },
   "name": "THE AES CORPORATION",
-  "price": 14.785,
+  "price": 14.8,
   "previousClose": 14.76,
   "dayHigh": 14.8,
   "dayLow": 14.78,
-  "change": 0.025000000000000355,
-  "changePercent": 0.1693766937669401,
+  "change": 0.040000000000000924,
+  "changePercent": 0.2710027100271065,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1784058000,
-      "close": 14.789899826049805
+      "close": 14.78499984741211
     },
     {
-      "timestamp": 1784058328,
+      "timestamp": 1784058300,
+      "close": 14.789999961853027
+    },
+    {
+      "timestamp": 1784058600,
       "close": 14.78499984741211
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 14.795000076293945
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 14.800000190734863
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-07-10T15:14:26.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:29.209Z"
+  "generatedAt": "2026-07-14T21:14:33.196Z"
 }

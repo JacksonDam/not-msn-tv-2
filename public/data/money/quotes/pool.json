@@ -5,12 +5,12 @@
     "displaySymbol": "$POOL"
   },
   "name": "POOL CORPORATION",
-  "price": 210.7,
+  "price": 210.07,
   "previousClose": 210.82,
   "dayHigh": 213.175,
   "dayLow": 207.268,
-  "change": -0.12000000000000455,
-  "changePercent": -0.05692059576890454,
+  "change": -0.75,
+  "changePercent": -0.3557537235556399,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,19 @@
     },
     {
       "timestamp": 1784058300,
-      "close": 210.67999267578125
+      "close": 210.91000366210938
     },
     {
-      "timestamp": 1784058375,
-      "close": 210.6999969482422
+      "timestamp": 1784058600,
+      "close": 210.64999389648438
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 209.89999389648438
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 210.07000732421875
     }
   ],
   "news": {
@@ -325,5 +333,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-07-10T13:15:39.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:36.527Z"
+  "generatedAt": "2026-07-14T21:15:27.680Z"
 }

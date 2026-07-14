@@ -5,12 +5,12 @@
     "displaySymbol": "$AIG"
   },
   "name": "AMERICAN INTERNATIONAL GROUP, INC.",
-  "price": 79.23,
+  "price": 79,
   "previousClose": 79.9,
   "dayHigh": 80.26,
   "dayLow": 78.7,
-  "change": -0.6700000000000017,
-  "changePercent": -0.8385481852315415,
+  "change": -0.9000000000000057,
+  "changePercent": -1.1264080100125227,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1784058000,
-      "close": 79.25
+      "close": 79.26000213623047
     },
     {
-      "timestamp": 1784058329,
-      "close": 79.2300033569336
+      "timestamp": 1784058300,
+      "close": 79.19999694824219
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 79.12000274658203
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 79
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 79
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-14T18:54:48.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:29.565Z"
+  "generatedAt": "2026-07-14T21:14:33.486Z"
 }

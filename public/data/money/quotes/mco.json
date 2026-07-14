@@ -5,12 +5,12 @@
     "displaySymbol": "$MCO"
   },
   "name": "MOODY'S CORPORATION",
-  "price": 494.91,
+  "price": 494.73,
   "previousClose": 495.72,
-  "dayHigh": 495.14,
+  "dayHigh": 495.745,
   "dayLow": 480,
-  "change": -0.8100000000000023,
-  "changePercent": -0.163398692810458,
+  "change": -0.9900000000000091,
+  "changePercent": -0.19970951343500545,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784058300,
-      "close": 494.9100036621094
+      "close": 495.1499938964844
     },
     {
-      "timestamp": 1784058380,
-      "close": 494.9100036621094
+      "timestamp": 1784058600,
+      "close": 494.2550048828125
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 494.739990234375
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 494.7300109863281
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-14T13:26:36.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:21.935Z"
+  "generatedAt": "2026-07-14T21:15:16.047Z"
 }

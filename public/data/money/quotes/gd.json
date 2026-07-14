@@ -5,12 +5,12 @@
     "displaySymbol": "$GD"
   },
   "name": "GENERAL DYNAMICS CORPORATION",
-  "price": 370.38,
+  "price": 369.5,
   "previousClose": 372.78,
   "dayHigh": 376.805,
-  "dayLow": 370,
-  "change": -2.3999999999999773,
-  "changePercent": -0.6438113632705557,
+  "dayLow": 369.15,
+  "change": -3.2799999999999727,
+  "changePercent": -0.8798755298030937,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 370.2799987792969
     },
     {
-      "timestamp": 1784058358,
-      "close": 370.3800048828125
+      "timestamp": 1784058300,
+      "close": 370.5400085449219
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 370.04998779296875
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 369.4700012207031
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 369.5
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-14T17:05:25.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:03.257Z"
+  "generatedAt": "2026-07-14T21:15:00.450Z"
 }

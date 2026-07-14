@@ -5,12 +5,12 @@
     "displaySymbol": "$CME"
   },
   "name": "CME GROUP INC.",
-  "price": 243.915,
+  "price": 243.61,
   "previousClose": 245.1,
   "dayHigh": 247.355,
   "dayLow": 242,
-  "change": -1.1850000000000023,
-  "changePercent": -0.4834761321909434,
+  "change": -1.4899999999999807,
+  "changePercent": -0.6079151366788987,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 244.18499755859375
     },
     {
-      "timestamp": 1784058343,
-      "close": 243.9149932861328
+      "timestamp": 1784058300,
+      "close": 243.4499969482422
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 243.33999633789062
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 243.55999755859375
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 243.61000061035156
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-07-14T14:01:09.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:44.592Z"
+  "generatedAt": "2026-07-14T21:14:45.288Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$SRE"
   },
   "name": "SEMPRA",
-  "price": 93.66,
+  "price": 93.36,
   "previousClose": 94.41,
   "dayHigh": 95.61,
-  "dayLow": 93.51,
-  "change": -0.75,
-  "changePercent": -0.7944073721004131,
+  "dayLow": 93.33,
+  "change": -1.0499999999999972,
+  "changePercent": -1.1121703209405753,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,7 +305,7 @@
     },
     {
       "timestamp": 1784057400,
-      "close": 93.60099792480469
+      "close": 93.63999938964844
     },
     {
       "timestamp": 1784057700,
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784058300,
-      "close": 93.66999816894531
+      "close": 93.66000366210938
     },
     {
-      "timestamp": 1784058386,
-      "close": 93.66000366210938
+      "timestamp": 1784058600,
+      "close": 93.5250015258789
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 93.33999633789062
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 93.36000061035156
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-10T19:55:51.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:44.437Z"
+  "generatedAt": "2026-07-14T21:15:33.617Z"
 }

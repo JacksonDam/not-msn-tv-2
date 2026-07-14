@@ -5,12 +5,12 @@
     "displaySymbol": "$TGT"
   },
   "name": "TARGET CORPORATION",
-  "price": 133.82,
+  "price": 134,
   "previousClose": 134.77,
   "dayHigh": 136.339,
   "dayLow": 133.1,
-  "change": -0.950000000000017,
-  "changePercent": -0.7049046523707182,
+  "change": -0.7700000000000102,
+  "changePercent": -0.5713437708688953,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784058300,
-      "close": 133.77999877929688
+      "close": 133.9199981689453
     },
     {
-      "timestamp": 1784058407,
-      "close": 133.82000732421875
+      "timestamp": 1784058600,
+      "close": 133.94000244140625
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 133.97000122070312
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 134
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-14T15:45:02.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:48.347Z"
+  "generatedAt": "2026-07-14T21:15:36.929Z"
 }

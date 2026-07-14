@@ -5,12 +5,12 @@
     "displaySymbol": "$KEY"
   },
   "name": "KEYCORP",
-  "price": 23.23,
+  "price": 23.3,
   "previousClose": 23.22,
   "dayHigh": 23.539,
   "dayLow": 23.105,
-  "change": 0.010000000000001563,
-  "changePercent": 0.04306632213609631,
+  "change": 0.08000000000000185,
+  "changePercent": 0.3445305770887246,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784058300,
-      "close": 23.235000610351562
+      "close": 23.270000457763672
     },
     {
-      "timestamp": 1784058374,
-      "close": 23.230300903320312
+      "timestamp": 1784058600,
+      "close": 23.264999389648438
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 23.295000076293945
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 23.299999237060547
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-14T14:00:10.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:14.634Z"
+  "generatedAt": "2026-07-14T21:15:10.558Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$MGM"
   },
   "name": "MGM RESORTS INTERNATIONAL",
-  "price": 46.783,
+  "price": 46.67,
   "previousClose": 47.24,
   "dayHigh": 47.39,
   "dayLow": 46.52,
-  "change": -0.45700000000000074,
-  "changePercent": -0.967400508044032,
+  "change": -0.5700000000000003,
+  "changePercent": -1.2066045723962748,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,15 +313,23 @@
     },
     {
       "timestamp": 1784058000,
-      "close": 46.75
+      "close": 46.7400016784668
     },
     {
       "timestamp": 1784058300,
-      "close": 46.779998779296875
+      "close": 46.7400016784668
     },
     {
-      "timestamp": 1784058381,
-      "close": 46.78260040283203
+      "timestamp": 1784058600,
+      "close": 46.65999984741211
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 46.665000915527344
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 46.66999816894531
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-14T13:10:58.000Z"
   },
-  "generatedAt": "2026-07-14T19:46:23.020Z"
+  "generatedAt": "2026-07-14T21:15:16.755Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$AMCR"
   },
   "name": "AMCOR PLC",
-  "price": 42.83,
+  "price": 42.78,
   "previousClose": 42.43,
-  "dayHigh": 42.88,
+  "dayHigh": 42.9,
   "dayLow": 42.18,
-  "change": 0.3999999999999986,
-  "changePercent": 0.9427292010369989,
+  "change": 0.3500000000000014,
+  "changePercent": 0.8248880509073803,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1784058000,
+      "close": 42.78499984741211
+    },
+    {
+      "timestamp": 1784058300,
+      "close": 42.83000183105469
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 42.83000183105469
+    },
+    {
+      "timestamp": 1784058900,
       "close": 42.790000915527344
     },
     {
-      "timestamp": 1784058318,
-      "close": 42.83000183105469
+      "timestamp": 1784059200,
+      "close": 42.779998779296875
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-14T15:00:40.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:31.491Z"
+  "generatedAt": "2026-07-14T21:14:34.940Z"
 }

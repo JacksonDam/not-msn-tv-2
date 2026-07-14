@@ -5,12 +5,12 @@
     "displaySymbol": "$AFL"
   },
   "name": "AFLAC INCORPORATED",
-  "price": 122.29,
+  "price": 122.05,
   "previousClose": 123.3,
   "dayHigh": 123.75,
-  "dayLow": 122.22,
-  "change": -1.009999999999991,
-  "changePercent": -0.8191403081913956,
+  "dayLow": 122.03,
+  "change": -1.25,
+  "changePercent": -1.0137875101378753,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 122.30500030517578
     },
     {
-      "timestamp": 1784058327,
-      "close": 122.29000091552734
+      "timestamp": 1784058300,
+      "close": 122.3499984741211
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 122.26000213623047
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 122.05999755859375
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 122.05000305175781
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MarketBeat",
     "publishedAt": "2026-07-13T12:35:00.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:29.402Z"
+  "generatedAt": "2026-07-14T21:14:33.347Z"
 }

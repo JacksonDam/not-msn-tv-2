@@ -5,12 +5,12 @@
     "displaySymbol": "$BDX"
   },
   "name": "BECTON, DICKINSON AND COMPANY",
-  "price": 150.9,
+  "price": 150.65,
   "previousClose": 153.83,
   "dayHigh": 151.93,
   "dayLow": 148.46,
-  "change": -2.930000000000007,
-  "changePercent": -1.9046999934993216,
+  "change": -3.180000000000007,
+  "changePercent": -2.0672170577910722,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 151.02499389648438
     },
     {
-      "timestamp": 1784058328,
-      "close": 150.89999389648438
+      "timestamp": 1784058300,
+      "close": 150.7899932861328
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 150.97000122070312
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 150.7100067138672
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 150.64999389648438
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-14T11:31:50.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:37.201Z"
+  "generatedAt": "2026-07-14T21:14:39.285Z"
 }

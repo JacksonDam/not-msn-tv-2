@@ -5,12 +5,12 @@
     "displaySymbol": "$BKR"
   },
   "name": "BAKER HUGHES COMPANY",
-  "price": 57.56,
+  "price": 57.775,
   "previousClose": 57.66,
   "dayHigh": 58.85,
   "dayLow": 57.015,
-  "change": -0.09999999999999432,
-  "changePercent": -0.17343045438778065,
+  "change": 0.11500000000000199,
+  "changePercent": 0.19944502254596255,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 57.540000915527344
     },
     {
-      "timestamp": 1784058336,
-      "close": 57.560001373291016
+      "timestamp": 1784058300,
+      "close": 57.53499984741211
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 57.56769943237305
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 57.77000045776367
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 57.775001525878906
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-14T13:28:11.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:38.439Z"
+  "generatedAt": "2026-07-14T21:14:40.218Z"
 }

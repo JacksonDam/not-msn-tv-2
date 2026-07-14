@@ -5,12 +5,12 @@
     "displaySymbol": "$EVRG"
   },
   "name": "EVERGY, INC.",
-  "price": 86.5,
+  "price": 86.45,
   "previousClose": 86.45,
   "dayHigh": 87.52,
   "dayLow": 86.08,
-  "change": 0.04999999999999716,
-  "changePercent": 0.05783689994215981,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 86.44499969482422
     },
     {
-      "timestamp": 1784058353,
+      "timestamp": 1784058300,
       "close": 86.5
+    },
+    {
+      "timestamp": 1784058600,
+      "close": 86.43000030517578
+    },
+    {
+      "timestamp": 1784058900,
+      "close": 86.44999694824219
+    },
+    {
+      "timestamp": 1784059200,
+      "close": 86.44999694824219
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-13T14:13:22.000Z"
   },
-  "generatedAt": "2026-07-14T19:45:58.500Z"
+  "generatedAt": "2026-07-14T21:14:56.564Z"
 }
