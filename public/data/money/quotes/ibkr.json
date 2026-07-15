@@ -5,12 +5,12 @@
     "displaySymbol": "$IBKR"
   },
   "name": "INTERACTIVE BROKERS GROUP, INC.",
-  "price": 97.43,
+  "price": 97.41,
   "previousClose": 95.61,
-  "dayHigh": 97.49,
+  "dayHigh": 97.76,
   "dayLow": 95.57,
-  "change": 1.8200000000000074,
-  "changePercent": 1.9035665725342616,
+  "change": 1.7999999999999972,
+  "changePercent": 1.882648258550358,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
+      "close": 97.58999633789062
+    },
+    {
+      "timestamp": 1784144400,
+      "close": 97.69499969482422
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 97.63500213623047
+    },
+    {
+      "timestamp": 1784145000,
       "close": 97.44000244140625
     },
     {
-      "timestamp": 1784144213,
-      "close": 97.43000030517578
+      "timestamp": 1784145300,
+      "close": 97.41000366210938
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 97.41000366210938
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-15T16:00:03.000Z"
   },
-  "generatedAt": "2026-07-15T19:36:55.613Z"
+  "generatedAt": "2026-07-15T21:15:18.102Z"
 }

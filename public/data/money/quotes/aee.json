@@ -5,12 +5,12 @@
     "displaySymbol": "$AEE"
   },
   "name": "AMEREN CORPORATION",
-  "price": 111.37,
+  "price": 111.38,
   "previousClose": 112.95,
   "dayHigh": 113.3,
-  "dayLow": 111.37,
-  "change": -1.5799999999999983,
-  "changePercent": -1.398849048251437,
+  "dayLow": 111,
+  "change": -1.5700000000000074,
+  "changePercent": -1.389995573262512,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
-      "close": 111.37000274658203
+      "close": 111.1500015258789
     },
     {
-      "timestamp": 1784144161,
-      "close": 111.37000274658203
+      "timestamp": 1784144400,
+      "close": 111.26000213623047
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 111.29499816894531
+    },
+    {
+      "timestamp": 1784145000,
+      "close": 111.32499694824219
+    },
+    {
+      "timestamp": 1784145300,
+      "close": 111.38999938964844
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 111.37999725341797
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-15T16:55:00.000Z"
   },
-  "generatedAt": "2026-07-15T19:36:10.097Z"
+  "generatedAt": "2026-07-15T21:14:41.955Z"
 }

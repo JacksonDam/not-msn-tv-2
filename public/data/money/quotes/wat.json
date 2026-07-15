@@ -5,12 +5,12 @@
     "displaySymbol": "$WAT"
   },
   "name": "WATERS CORPORATION",
-  "price": 376.4,
+  "price": 374.92,
   "previousClose": 376.39,
   "dayHigh": 381.31,
-  "dayLow": 374.81,
-  "change": 0.009999999999990905,
-  "changePercent": 0.002656818725255959,
+  "dayLow": 373.85,
+  "change": -1.4699999999999704,
+  "changePercent": -0.3905523526129734,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
-      "close": 376.30999755859375
+      "close": 376.010009765625
     },
     {
-      "timestamp": 1784144251,
-      "close": 376.3999938964844
+      "timestamp": 1784144400,
+      "close": 375.2149963378906
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 375.0050048828125
+    },
+    {
+      "timestamp": 1784145000,
+      "close": 374.7250061035156
+    },
+    {
+      "timestamp": 1784145300,
+      "close": 374.9200134277344
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 374.9200134277344
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-15T14:40:29.000Z"
   },
-  "generatedAt": "2026-07-15T19:37:43.259Z"
+  "generatedAt": "2026-07-15T21:15:57.626Z"
 }

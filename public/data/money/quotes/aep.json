@@ -5,12 +5,12 @@
     "displaySymbol": "$AEP"
   },
   "name": "AMERICAN ELECTRIC POWER COMPANY, INC.",
-  "price": 132.82,
+  "price": 132.5,
   "previousClose": 134.94,
   "dayHigh": 135,
-  "dayLow": 132.7,
-  "change": -2.1200000000000045,
-  "changePercent": -1.5710686230917477,
+  "dayLow": 132.37,
+  "change": -2.4399999999999977,
+  "changePercent": -1.8082110567659686,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
-      "close": 132.88999938964844
+      "close": 132.50999450683594
     },
     {
-      "timestamp": 1784144165,
-      "close": 132.82000732421875
+      "timestamp": 1784144400,
+      "close": 132.60000610351562
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 132.60000610351562
+    },
+    {
+      "timestamp": 1784145000,
+      "close": 132.49000549316406
+    },
+    {
+      "timestamp": 1784145300,
+      "close": 132.5
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 132.5
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-13T12:11:30.000Z"
   },
-  "generatedAt": "2026-07-15T19:36:10.310Z"
+  "generatedAt": "2026-07-15T21:14:42.108Z"
 }

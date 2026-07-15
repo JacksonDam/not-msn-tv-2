@@ -5,12 +5,12 @@
     "displaySymbol": "$HPQ"
   },
   "name": "HP INC.",
-  "price": 23.795,
+  "price": 23.75,
   "previousClose": 24.63,
   "dayHigh": 24.765,
   "dayLow": 23.255,
-  "change": -0.8349999999999973,
-  "changePercent": -3.390174583840834,
+  "change": -0.879999999999999,
+  "changePercent": -3.5728786033292694,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
-      "close": 23.809999465942383
+      "close": 23.81999969482422
     },
     {
-      "timestamp": 1784144210,
+      "timestamp": 1784144400,
+      "close": 23.825000762939453
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 23.78499984741211
+    },
+    {
+      "timestamp": 1784145000,
       "close": 23.795000076293945
+    },
+    {
+      "timestamp": 1784145300,
+      "close": 23.770000457763672
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 23.75
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-15T13:08:00.000Z"
   },
-  "generatedAt": "2026-07-15T19:36:53.551Z"
+  "generatedAt": "2026-07-15T21:15:16.874Z"
 }

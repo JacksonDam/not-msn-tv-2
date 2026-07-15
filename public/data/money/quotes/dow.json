@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 29.725,
+  "price": 29.7,
   "previousClose": 30.31,
   "dayHigh": 30.31,
   "dayLow": 29.31,
-  "change": -0.5849999999999973,
-  "changePercent": -1.9300560870999584,
+  "change": -0.6099999999999994,
+  "changePercent": -2.0125371164632115,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
-      "close": 29.75
+      "close": 29.764999389648438
     },
     {
-      "timestamp": 1784144195,
+      "timestamp": 1784144400,
+      "close": 29.704999923706055
+    },
+    {
+      "timestamp": 1784144700,
       "close": 29.725000381469727
+    },
+    {
+      "timestamp": 1784145000,
+      "close": 29.735000610351562
+    },
+    {
+      "timestamp": 1784145300,
+      "close": 29.69499969482422
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 29.700000762939453
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-07-14T20:57:01.000Z"
   },
-  "generatedAt": "2026-07-15T19:36:37.499Z"
+  "generatedAt": "2026-07-15T21:15:03.047Z"
 }

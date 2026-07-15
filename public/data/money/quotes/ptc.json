@@ -5,12 +5,12 @@
     "displaySymbol": "$PTC"
   },
   "name": "PTC INC.",
-  "price": 123.62,
+  "price": 123.61,
   "previousClose": 122.51,
   "dayHigh": 126.58,
   "dayLow": 122.89,
-  "change": 1.1099999999999994,
-  "changePercent": 0.9060484858378903,
+  "change": 1.0999999999999943,
+  "changePercent": 0.8978858868663736,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
-      "close": 123.63500213623047
+      "close": 123.6500015258789
     },
     {
-      "timestamp": 1784144220,
+      "timestamp": 1784144400,
+      "close": 123.41000366210938
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 123.51499938964844
+    },
+    {
+      "timestamp": 1784145000,
+      "close": 123.4000015258789
+    },
+    {
+      "timestamp": 1784145300,
       "close": 123.62000274658203
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 123.61000061035156
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MarketBeat",
     "publishedAt": "2026-07-15T18:02:11.000Z"
   },
-  "generatedAt": "2026-07-15T19:37:22.453Z"
+  "generatedAt": "2026-07-15T21:15:41.885Z"
 }

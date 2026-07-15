@@ -5,12 +5,12 @@
     "displaySymbol": "$PFE"
   },
   "name": "PFIZER INC.",
-  "price": 24.708,
+  "price": 24.82,
   "previousClose": 24.25,
-  "dayHigh": 24.815,
+  "dayHigh": 24.82,
   "dayLow": 24.31,
-  "change": 0.4579999999999984,
-  "changePercent": 1.8886597938144265,
+  "change": 0.5700000000000003,
+  "changePercent": 2.3505154639175267,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
+      "close": 24.709999084472656
+    },
+    {
+      "timestamp": 1784144400,
+      "close": 24.725000381469727
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 24.735000610351562
+    },
+    {
+      "timestamp": 1784145000,
       "close": 24.704999923706055
     },
     {
-      "timestamp": 1784144235,
-      "close": 24.708499908447266
+      "timestamp": 1784145300,
+      "close": 24.799999237060547
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 24.81999969482422
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-15T17:29:04.000Z"
   },
-  "generatedAt": "2026-07-15T19:37:18.418Z"
+  "generatedAt": "2026-07-15T21:15:38.435Z"
 }

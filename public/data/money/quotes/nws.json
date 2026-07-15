@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 31.59,
+  "price": 31.66,
   "previousClose": 31.15,
   "dayHigh": 32.05,
   "dayLow": 30.85,
-  "change": 0.4400000000000013,
-  "changePercent": 1.4125200642054616,
+  "change": 0.5100000000000016,
+  "changePercent": 1.637239165329058,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
+      "close": 31.59000015258789
+    },
+    {
+      "timestamp": 1784144400,
+      "close": 31.575000762939453
+    },
+    {
+      "timestamp": 1784144700,
+      "close": 31.56999969482422
+    },
+    {
+      "timestamp": 1784145000,
       "close": 31.600000381469727
     },
     {
-      "timestamp": 1784144211,
-      "close": 31.59000015258789
+      "timestamp": 1784145300,
+      "close": 31.639999389648438
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 31.65999984741211
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Proactive",
     "publishedAt": "2026-07-15T10:32:00.000Z"
   },
-  "generatedAt": "2026-07-15T19:37:14.930Z"
+  "generatedAt": "2026-07-15T21:15:35.556Z"
 }

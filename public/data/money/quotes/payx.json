@@ -5,12 +5,12 @@
     "displaySymbol": "$PAYX"
   },
   "name": "PAYCHEX, INC.",
-  "price": 109.63,
+  "price": 110,
   "previousClose": 109.52,
   "dayHigh": 112.34,
-  "dayLow": 109.58,
-  "change": 0.10999999999999943,
-  "changePercent": 0.10043827611395129,
+  "dayLow": 109.43,
+  "change": 0.480000000000004,
+  "changePercent": 0.4382761139517933,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1784144100,
+      "close": 109.76000213623047
+    },
+    {
+      "timestamp": 1784144400,
       "close": 109.62999725341797
     },
     {
-      "timestamp": 1784144236,
-      "close": 109.62999725341797
+      "timestamp": 1784144700,
+      "close": 109.54000091552734
+    },
+    {
+      "timestamp": 1784145000,
+      "close": 109.68000030517578
+    },
+    {
+      "timestamp": 1784145300,
+      "close": 109.97000122070312
+    },
+    {
+      "timestamp": 1784145600,
+      "close": 110
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-07-15T17:20:00.000Z"
   },
-  "generatedAt": "2026-07-15T19:37:17.473Z"
+  "generatedAt": "2026-07-15T21:15:37.636Z"
 }
