@@ -5,12 +5,12 @@
     "displaySymbol": "$AIG"
   },
   "name": "AMERICAN INTERNATIONAL GROUP, INC.",
-  "price": 78.02,
+  "price": 78.03,
   "previousClose": 76.78,
   "dayHigh": 78.48,
   "dayLow": 77.05,
-  "change": 1.2399999999999949,
-  "changePercent": 1.615003907267511,
+  "change": 1.25,
+  "changePercent": 1.6280281323261265,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1784231700,
-      "close": 78.0199966430664
+      "close": 78.0250015258789
+    },
+    {
+      "timestamp": 1784232000,
+      "close": 78.02999877929688
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-16T13:06:49.000Z"
   },
-  "generatedAt": "2026-07-16T20:11:39.099Z"
+  "generatedAt": "2026-07-16T21:15:33.997Z"
 }

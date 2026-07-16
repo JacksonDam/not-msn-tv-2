@@ -5,12 +5,12 @@
     "displaySymbol": "$IVZ"
   },
   "name": "INVESCO LTD.",
-  "price": 30.31,
+  "price": 30.3,
   "previousClose": 30.3,
   "dayHigh": 31.01,
   "dayLow": 30.03,
-  "change": 0.00999999999999801,
-  "changePercent": 0.033003300330026436,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -326,6 +326,10 @@
     {
       "timestamp": 1784231700,
       "close": 30.309999465942383
+    },
+    {
+      "timestamp": 1784232000,
+      "close": 30.299999237060547
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-16T16:00:04.000Z"
   },
-  "generatedAt": "2026-07-16T20:12:18.344Z"
+  "generatedAt": "2026-07-16T21:16:18.684Z"
 }
