@@ -5,337 +5,69 @@
     "displaySymbol": "$INDU"
   },
   "name": "DOW JONES INDUSTRIAL AVERAGE",
-  "price": 52658.64,
-  "previousClose": 52508.3,
-  "dayHigh": 52823.95,
-  "dayLow": 52428.54,
-  "change": 150.3399999999965,
-  "changePercent": 0.2863166394646113,
+  "price": 52647.15,
+  "previousClose": 52658.64,
+  "dayHigh": 52924.86,
+  "dayLow": 52610.22,
+  "change": -11.489999999997963,
+  "changePercent": -0.021819781141324504,
   "currency": "USD",
   "exchangeName": "DJI",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1784122200,
-      "close": 52671.578125
+      "timestamp": 1784208600,
+      "close": 52709.30859375
     },
     {
-      "timestamp": 1784122500,
-      "close": 52725.109375
+      "timestamp": 1784208900,
+      "close": 52742.609375
     },
     {
-      "timestamp": 1784122800,
-      "close": 52710.98046875
+      "timestamp": 1784209200,
+      "close": 52747.53125
     },
     {
-      "timestamp": 1784123100,
-      "close": 52671.9296875
+      "timestamp": 1784209500,
+      "close": 52693.98046875
     },
     {
-      "timestamp": 1784123400,
-      "close": 52697.44921875
+      "timestamp": 1784209800,
+      "close": 52660.87890625
     },
     {
-      "timestamp": 1784123700,
-      "close": 52693.05859375
+      "timestamp": 1784210100,
+      "close": 52622.2109375
     },
     {
-      "timestamp": 1784124000,
-      "close": 52674.91015625
+      "timestamp": 1784210400,
+      "close": 52681.3203125
     },
     {
-      "timestamp": 1784124300,
-      "close": 52665.390625
+      "timestamp": 1784210700,
+      "close": 52691.58984375
     },
     {
-      "timestamp": 1784124600,
-      "close": 52695.2109375
+      "timestamp": 1784211000,
+      "close": 52654.71875
     },
     {
-      "timestamp": 1784124900,
-      "close": 52797.5
+      "timestamp": 1784211300,
+      "close": 52652.73046875
     },
     {
-      "timestamp": 1784125200,
-      "close": 52729.44140625
+      "timestamp": 1784211600,
+      "close": 52641.48828125
     },
     {
-      "timestamp": 1784125500,
-      "close": 52754.01171875
-    },
-    {
-      "timestamp": 1784125800,
-      "close": 52787.828125
-    },
-    {
-      "timestamp": 1784126100,
-      "close": 52744.8203125
-    },
-    {
-      "timestamp": 1784126400,
-      "close": 52721.5
-    },
-    {
-      "timestamp": 1784126700,
-      "close": 52705.41015625
-    },
-    {
-      "timestamp": 1784127000,
-      "close": 52698.3203125
-    },
-    {
-      "timestamp": 1784127300,
-      "close": 52703.828125
-    },
-    {
-      "timestamp": 1784127600,
-      "close": 52705.58984375
-    },
-    {
-      "timestamp": 1784127900,
-      "close": 52719.37109375
-    },
-    {
-      "timestamp": 1784128200,
-      "close": 52667.94921875
-    },
-    {
-      "timestamp": 1784128500,
-      "close": 52693.0703125
-    },
-    {
-      "timestamp": 1784128800,
-      "close": 52678.26171875
-    },
-    {
-      "timestamp": 1784129100,
-      "close": 52686.55078125
-    },
-    {
-      "timestamp": 1784129400,
-      "close": 52683.05859375
-    },
-    {
-      "timestamp": 1784129700,
-      "close": 52693.41015625
-    },
-    {
-      "timestamp": 1784130000,
-      "close": 52684.3203125
-    },
-    {
-      "timestamp": 1784130300,
-      "close": 52680.859375
-    },
-    {
-      "timestamp": 1784130600,
-      "close": 52665.75
-    },
-    {
-      "timestamp": 1784130900,
-      "close": 52637.75
-    },
-    {
-      "timestamp": 1784131200,
-      "close": 52637.7109375
-    },
-    {
-      "timestamp": 1784131500,
-      "close": 52621.12890625
-    },
-    {
-      "timestamp": 1784131800,
-      "close": 52559.609375
-    },
-    {
-      "timestamp": 1784132100,
-      "close": 52506.8515625
-    },
-    {
-      "timestamp": 1784132400,
-      "close": 52434.359375
-    },
-    {
-      "timestamp": 1784132700,
-      "close": 52470.94140625
-    },
-    {
-      "timestamp": 1784133000,
-      "close": 52451.62890625
-    },
-    {
-      "timestamp": 1784133300,
-      "close": 52457.30859375
-    },
-    {
-      "timestamp": 1784133600,
-      "close": 52472.19140625
-    },
-    {
-      "timestamp": 1784133900,
-      "close": 52495.73046875
-    },
-    {
-      "timestamp": 1784134200,
-      "close": 52521.05859375
-    },
-    {
-      "timestamp": 1784134500,
-      "close": 52532.96875
-    },
-    {
-      "timestamp": 1784134800,
-      "close": 52552.76171875
-    },
-    {
-      "timestamp": 1784135100,
-      "close": 52545.94921875
-    },
-    {
-      "timestamp": 1784135400,
-      "close": 52515.6015625
-    },
-    {
-      "timestamp": 1784135700,
-      "close": 52532.0703125
-    },
-    {
-      "timestamp": 1784136000,
-      "close": 52532.08984375
-    },
-    {
-      "timestamp": 1784136300,
-      "close": 52578.01171875
-    },
-    {
-      "timestamp": 1784136600,
-      "close": 52586.48046875
-    },
-    {
-      "timestamp": 1784136900,
-      "close": 52618.2109375
-    },
-    {
-      "timestamp": 1784137200,
-      "close": 52615.890625
-    },
-    {
-      "timestamp": 1784137500,
-      "close": 52651.83984375
-    },
-    {
-      "timestamp": 1784137800,
-      "close": 52663.71875
-    },
-    {
-      "timestamp": 1784138100,
-      "close": 52660.23828125
-    },
-    {
-      "timestamp": 1784138400,
-      "close": 52670.109375
-    },
-    {
-      "timestamp": 1784138700,
-      "close": 52678.37109375
-    },
-    {
-      "timestamp": 1784139000,
-      "close": 52676.62109375
-    },
-    {
-      "timestamp": 1784139300,
-      "close": 52650.71875
-    },
-    {
-      "timestamp": 1784139600,
-      "close": 52645.7890625
-    },
-    {
-      "timestamp": 1784139900,
-      "close": 52651.078125
-    },
-    {
-      "timestamp": 1784140200,
-      "close": 52664.3515625
-    },
-    {
-      "timestamp": 1784140500,
-      "close": 52672.19140625
-    },
-    {
-      "timestamp": 1784140800,
-      "close": 52645.5703125
-    },
-    {
-      "timestamp": 1784141100,
-      "close": 52619.6015625
-    },
-    {
-      "timestamp": 1784141400,
-      "close": 52605.26171875
-    },
-    {
-      "timestamp": 1784141700,
-      "close": 52605.76953125
-    },
-    {
-      "timestamp": 1784142000,
-      "close": 52585.75
-    },
-    {
-      "timestamp": 1784142300,
-      "close": 52602.1796875
-    },
-    {
-      "timestamp": 1784142600,
-      "close": 52639.69921875
-    },
-    {
-      "timestamp": 1784142900,
-      "close": 52653.53125
-    },
-    {
-      "timestamp": 1784143200,
-      "close": 52634.44921875
-    },
-    {
-      "timestamp": 1784143500,
-      "close": 52627.87890625
-    },
-    {
-      "timestamp": 1784143800,
-      "close": 52591.87109375
-    },
-    {
-      "timestamp": 1784144100,
-      "close": 52627.640625
-    },
-    {
-      "timestamp": 1784144400,
-      "close": 52646.80078125
-    },
-    {
-      "timestamp": 1784144700,
-      "close": 52619.51953125
-    },
-    {
-      "timestamp": 1784145000,
-      "close": 52634.421875
-    },
-    {
-      "timestamp": 1784145300,
-      "close": 52658.01953125
-    },
-    {
-      "timestamp": 1784145600,
-      "close": 52658.640625
+      "timestamp": 1784211712,
+      "close": 52647.1484375
     }
   ],
   "news": {
-    "title": "Dow Jones Futures Rise But AI Woes Continue; Taiwan Semi, GE, UnitedHealth Are Key Earnings Movers",
+    "title": "Stock Market Today: Nasdaq Slides As Sandisk, SK Hynix Plunge; TSMC Hits Sell Rule (Live Coverage)",
     "publisher": "Investor's Business Daily",
-    "publishedAt": "2026-07-16T11:48:02.000Z"
+    "publishedAt": "2026-07-16T14:07:34.000Z"
   },
-  "generatedAt": "2026-07-16T11:53:48.282Z"
+  "generatedAt": "2026-07-16T14:21:53.026Z"
 }
