@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 68.89,
+  "price": 69,
   "previousClose": 70,
   "dayHigh": 70.75,
   "dayLow": 68.56,
-  "change": -1.1099999999999994,
-  "changePercent": -1.5857142857142847,
+  "change": -1,
+  "changePercent": -1.4285714285714286,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,7 +293,7 @@
     },
     {
       "timestamp": 1784315700,
-      "close": 68.91000366210938
+      "close": 68.94999694824219
     },
     {
       "timestamp": 1784316000,
@@ -305,11 +305,31 @@
     },
     {
       "timestamp": 1784316600,
-      "close": 68.87000274658203
+      "close": 68.875
     },
     {
-      "timestamp": 1784316752,
-      "close": 68.88999938964844
+      "timestamp": 1784316900,
+      "close": 68.9749984741211
+    },
+    {
+      "timestamp": 1784317200,
+      "close": 68.9800033569336
+    },
+    {
+      "timestamp": 1784317500,
+      "close": 68.95999908447266
+    },
+    {
+      "timestamp": 1784317800,
+      "close": 68.94999694824219
+    },
+    {
+      "timestamp": 1784318100,
+      "close": 69
+    },
+    {
+      "timestamp": 1784318400,
+      "close": 69
     }
   ],
   "news": {
@@ -317,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-07-16T14:25:00.000Z"
   },
-  "generatedAt": "2026-07-17T19:32:37.936Z"
+  "generatedAt": "2026-07-17T21:08:00.280Z"
 }
