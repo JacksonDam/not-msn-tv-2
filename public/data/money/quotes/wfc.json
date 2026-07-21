@@ -4,17 +4,70 @@
     "requestSymbol": "WFC",
     "displaySymbol": "$WFC"
   },
-  "name": "",
-  "price": 0,
-  "previousClose": 0,
-  "dayHigh": 0,
-  "dayLow": 0,
-  "change": 0,
-  "changePercent": 0,
+  "name": "WELLS FARGO & COMPANY",
+  "price": 86.915,
+  "previousClose": 86.33,
+  "dayHigh": 87.124,
+  "dayLow": 85.89,
+  "change": 0.585000000000008,
+  "changePercent": 0.6776323410170368,
   "currency": "USD",
-  "exchangeName": "",
+  "exchangeName": "NYQ",
   "marketState": "",
-  "series": [],
-  "news": null,
-  "generatedAt": "2026-07-21T12:00:36.308Z"
+  "series": [
+    {
+      "timestamp": 1784640600,
+      "close": 86.30500030517578
+    },
+    {
+      "timestamp": 1784640900,
+      "close": 86.28500366210938
+    },
+    {
+      "timestamp": 1784641200,
+      "close": 86.50900268554688
+    },
+    {
+      "timestamp": 1784641500,
+      "close": 86.88999938964844
+    },
+    {
+      "timestamp": 1784641800,
+      "close": 86.87000274658203
+    },
+    {
+      "timestamp": 1784642100,
+      "close": 86.91000366210938
+    },
+    {
+      "timestamp": 1784642400,
+      "close": 87.08000183105469
+    },
+    {
+      "timestamp": 1784642700,
+      "close": 87
+    },
+    {
+      "timestamp": 1784643000,
+      "close": 87
+    },
+    {
+      "timestamp": 1784643300,
+      "close": 86.91999816894531
+    },
+    {
+      "timestamp": 1784643600,
+      "close": 86.9000015258789
+    },
+    {
+      "timestamp": 1784643713,
+      "close": 86.91500091552734
+    }
+  ],
+  "news": {
+    "title": "Economic Momentum Flips From Blessing to Curse for S&P 500 Bulls",
+    "publisher": "Bloomberg",
+    "publishedAt": "2026-07-21T11:56:30.000Z"
+  },
+  "generatedAt": "2026-07-21T14:21:56.668Z"
 }

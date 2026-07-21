@@ -5,337 +5,65 @@
     "displaySymbol": "$S&P"
   },
   "name": "S&P 500",
-  "price": 7443.28,
-  "previousClose": 7457.69,
-  "dayHigh": 7513.23,
-  "dayLow": 7440.53,
-  "change": -14.409999999999854,
-  "changePercent": -0.1932233707756672,
+  "price": 7486.57,
+  "previousClose": 7443.28,
+  "dayHigh": 7492.5,
+  "dayLow": 7467.86,
+  "change": 43.289999999999964,
+  "changePercent": 0.5815984350985045,
   "currency": "USD",
   "exchangeName": "SNP",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1784554200,
-      "close": 7505.60009765625
+      "timestamp": 1784640600,
+      "close": 7483.14013671875
     },
     {
-      "timestamp": 1784554500,
-      "close": 7506.91015625
+      "timestamp": 1784640900,
+      "close": 7480.259765625
     },
     {
-      "timestamp": 1784554800,
-      "close": 7512.14013671875
+      "timestamp": 1784641200,
+      "close": 7470.75
     },
     {
-      "timestamp": 1784555100,
-      "close": 7502.2099609375
+      "timestamp": 1784641500,
+      "close": 7474.89990234375
     },
     {
-      "timestamp": 1784555400,
-      "close": 7490.85009765625
+      "timestamp": 1784641800,
+      "close": 7476.490234375
     },
     {
-      "timestamp": 1784555700,
-      "close": 7483.41015625
+      "timestamp": 1784642100,
+      "close": 7478.6298828125
     },
     {
-      "timestamp": 1784556000,
-      "close": 7484.830078125
+      "timestamp": 1784642400,
+      "close": 7479.83984375
     },
     {
-      "timestamp": 1784556300,
-      "close": 7479.7998046875
+      "timestamp": 1784642700,
+      "close": 7477.5498046875
     },
     {
-      "timestamp": 1784556600,
-      "close": 7475.08984375
+      "timestamp": 1784643000,
+      "close": 7482.14990234375
     },
     {
-      "timestamp": 1784556900,
-      "close": 7474.39013671875
+      "timestamp": 1784643300,
+      "close": 7485.31005859375
     },
     {
-      "timestamp": 1784557200,
-      "close": 7475.919921875
-    },
-    {
-      "timestamp": 1784557500,
-      "close": 7482.85986328125
-    },
-    {
-      "timestamp": 1784557800,
-      "close": 7478.240234375
-    },
-    {
-      "timestamp": 1784558100,
-      "close": 7478.7998046875
-    },
-    {
-      "timestamp": 1784558400,
-      "close": 7474.83984375
-    },
-    {
-      "timestamp": 1784558700,
-      "close": 7471.64013671875
-    },
-    {
-      "timestamp": 1784559000,
-      "close": 7468.580078125
-    },
-    {
-      "timestamp": 1784559300,
-      "close": 7466.02001953125
-    },
-    {
-      "timestamp": 1784559600,
-      "close": 7471.47021484375
-    },
-    {
-      "timestamp": 1784559900,
-      "close": 7479.27001953125
-    },
-    {
-      "timestamp": 1784560200,
-      "close": 7473.47998046875
-    },
-    {
-      "timestamp": 1784560500,
-      "close": 7478.2099609375
-    },
-    {
-      "timestamp": 1784560800,
-      "close": 7482.669921875
-    },
-    {
-      "timestamp": 1784561100,
-      "close": 7484.35009765625
-    },
-    {
-      "timestamp": 1784561400,
-      "close": 7484.14990234375
-    },
-    {
-      "timestamp": 1784561700,
-      "close": 7480.3701171875
-    },
-    {
-      "timestamp": 1784562000,
-      "close": 7484.60986328125
-    },
-    {
-      "timestamp": 1784562300,
-      "close": 7478.259765625
-    },
-    {
-      "timestamp": 1784562600,
-      "close": 7488.06982421875
-    },
-    {
-      "timestamp": 1784562900,
-      "close": 7485.56005859375
-    },
-    {
-      "timestamp": 1784563200,
-      "close": 7487.68017578125
-    },
-    {
-      "timestamp": 1784563500,
-      "close": 7493.64013671875
-    },
-    {
-      "timestamp": 1784563800,
-      "close": 7493.72021484375
-    },
-    {
-      "timestamp": 1784564100,
-      "close": 7492.56982421875
-    },
-    {
-      "timestamp": 1784564400,
-      "close": 7493.2900390625
-    },
-    {
-      "timestamp": 1784564700,
-      "close": 7490.75
-    },
-    {
-      "timestamp": 1784565000,
-      "close": 7484.27978515625
-    },
-    {
-      "timestamp": 1784565300,
-      "close": 7489.2099609375
-    },
-    {
-      "timestamp": 1784565600,
-      "close": 7479.52978515625
-    },
-    {
-      "timestamp": 1784565900,
-      "close": 7487.06005859375
-    },
-    {
-      "timestamp": 1784566200,
-      "close": 7475.58984375
-    },
-    {
-      "timestamp": 1784566500,
-      "close": 7475.2900390625
-    },
-    {
-      "timestamp": 1784566800,
-      "close": 7470.9501953125
-    },
-    {
-      "timestamp": 1784567100,
-      "close": 7471.18994140625
-    },
-    {
-      "timestamp": 1784567400,
-      "close": 7464.8798828125
-    },
-    {
-      "timestamp": 1784567700,
-      "close": 7467.10009765625
-    },
-    {
-      "timestamp": 1784568000,
-      "close": 7466.66015625
-    },
-    {
-      "timestamp": 1784568300,
-      "close": 7466.83984375
-    },
-    {
-      "timestamp": 1784568600,
-      "close": 7468.60009765625
-    },
-    {
-      "timestamp": 1784568900,
-      "close": 7465.919921875
-    },
-    {
-      "timestamp": 1784569200,
-      "close": 7463.18994140625
-    },
-    {
-      "timestamp": 1784569500,
-      "close": 7467.9599609375
-    },
-    {
-      "timestamp": 1784569800,
-      "close": 7472.31982421875
-    },
-    {
-      "timestamp": 1784570100,
-      "close": 7471.10986328125
-    },
-    {
-      "timestamp": 1784570400,
-      "close": 7473.60986328125
-    },
-    {
-      "timestamp": 1784570700,
-      "close": 7474.35009765625
-    },
-    {
-      "timestamp": 1784571000,
-      "close": 7475.9501953125
-    },
-    {
-      "timestamp": 1784571300,
-      "close": 7477.740234375
-    },
-    {
-      "timestamp": 1784571600,
-      "close": 7468.419921875
-    },
-    {
-      "timestamp": 1784571900,
-      "close": 7470.5400390625
-    },
-    {
-      "timestamp": 1784572200,
-      "close": 7462.02001953125
-    },
-    {
-      "timestamp": 1784572500,
-      "close": 7460.31982421875
-    },
-    {
-      "timestamp": 1784572800,
-      "close": 7450.7998046875
-    },
-    {
-      "timestamp": 1784573100,
-      "close": 7452.9501953125
-    },
-    {
-      "timestamp": 1784573400,
-      "close": 7455.91015625
-    },
-    {
-      "timestamp": 1784573700,
-      "close": 7452.8701171875
-    },
-    {
-      "timestamp": 1784574000,
-      "close": 7451.2900390625
-    },
-    {
-      "timestamp": 1784574300,
-      "close": 7452.43017578125
-    },
-    {
-      "timestamp": 1784574600,
-      "close": 7442.830078125
-    },
-    {
-      "timestamp": 1784574900,
-      "close": 7444.2998046875
-    },
-    {
-      "timestamp": 1784575200,
-      "close": 7448.3701171875
-    },
-    {
-      "timestamp": 1784575500,
-      "close": 7452.14013671875
-    },
-    {
-      "timestamp": 1784575800,
-      "close": 7455.240234375
-    },
-    {
-      "timestamp": 1784576100,
-      "close": 7454.25
-    },
-    {
-      "timestamp": 1784576400,
-      "close": 7454.68994140625
-    },
-    {
-      "timestamp": 1784576700,
-      "close": 7455.990234375
-    },
-    {
-      "timestamp": 1784577000,
-      "close": 7446.740234375
-    },
-    {
-      "timestamp": 1784577300,
-      "close": 7444.72998046875
-    },
-    {
-      "timestamp": 1784577600,
-      "close": 7443.27978515625
+      "timestamp": 1784643633,
+      "close": 7486.56982421875
     }
   ],
   "news": {
-    "title": "Stocks Rise Pre-Bell as Investors Await More Earnings, Monitor Middle East Developments",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-07-21T11:48:07.000Z"
+    "title": "Credo Technology Gains from Increasing Connectivity Challenge",
+    "publisher": "Insider Monkey",
+    "publishedAt": "2026-07-21T14:09:23.000Z"
   },
-  "generatedAt": "2026-07-21T11:59:17.297Z"
+  "generatedAt": "2026-07-21T14:20:33.982Z"
 }
