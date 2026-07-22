@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 30.98,
+  "price": 30.95,
   "previousClose": 31.21,
   "dayHigh": 31.51,
-  "dayLow": 30.925,
-  "change": -0.23000000000000043,
-  "changePercent": -0.7369432874078834,
+  "dayLow": 30.84,
+  "change": -0.26000000000000156,
+  "changePercent": -0.8330663248958716,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -253,11 +253,79 @@
     },
     {
       "timestamp": 1784745000,
+      "close": 30.979999542236328
+    },
+    {
+      "timestamp": 1784745300,
+      "close": 30.950000762939453
+    },
+    {
+      "timestamp": 1784745600,
+      "close": 30.93000030517578
+    },
+    {
+      "timestamp": 1784745900,
+      "close": 30.924999237060547
+    },
+    {
+      "timestamp": 1784746200,
+      "close": 30.920000076293945
+    },
+    {
+      "timestamp": 1784746500,
+      "close": 30.950000762939453
+    },
+    {
+      "timestamp": 1784746800,
       "close": 30.969999313354492
     },
     {
-      "timestamp": 1784745061,
-      "close": 30.979999542236328
+      "timestamp": 1784747100,
+      "close": 30.93000030517578
+    },
+    {
+      "timestamp": 1784747400,
+      "close": 30.920000076293945
+    },
+    {
+      "timestamp": 1784747700,
+      "close": 30.920000076293945
+    },
+    {
+      "timestamp": 1784748000,
+      "close": 30.950000762939453
+    },
+    {
+      "timestamp": 1784748300,
+      "close": 30.94499969482422
+    },
+    {
+      "timestamp": 1784748600,
+      "close": 30.885000228881836
+    },
+    {
+      "timestamp": 1784748900,
+      "close": 30.84000015258789
+    },
+    {
+      "timestamp": 1784749200,
+      "close": 30.875
+    },
+    {
+      "timestamp": 1784749500,
+      "close": 30.875
+    },
+    {
+      "timestamp": 1784749800,
+      "close": 30.905000686645508
+    },
+    {
+      "timestamp": 1784750100,
+      "close": 30.959999084472656
+    },
+    {
+      "timestamp": 1784750400,
+      "close": 30.950000762939453
     }
   ],
   "news": {
@@ -265,5 +333,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-22T14:37:13.000Z"
   },
-  "generatedAt": "2026-07-22T18:34:31.782Z"
+  "generatedAt": "2026-07-22T20:22:25.684Z"
 }
