@@ -5,337 +5,73 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 25690.902,
-  "previousClose": 25837.207,
-  "dayHigh": 25841.307,
-  "dayLow": 25681.324,
-  "change": -146.3050000000003,
-  "changePercent": -0.5662570261561177,
+  "price": 25195.91,
+  "previousClose": 25690.902,
+  "dayHigh": 25358.281,
+  "dayLow": 25168.656,
+  "change": -494.99199999999837,
+  "changePercent": -1.926720984728362,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1784727000,
-      "close": 25721.20703125
+      "timestamp": 1784813400,
+      "close": 25273.75
     },
     {
-      "timestamp": 1784727300,
-      "close": 25711.5703125
+      "timestamp": 1784813700,
+      "close": 25291.517578125
     },
     {
-      "timestamp": 1784727600,
-      "close": 25722.2109375
+      "timestamp": 1784814000,
+      "close": 25331.263671875
     },
     {
-      "timestamp": 1784727900,
-      "close": 25727.96484375
+      "timestamp": 1784814300,
+      "close": 25249.556640625
     },
     {
-      "timestamp": 1784728200,
-      "close": 25755.619140625
+      "timestamp": 1784814600,
+      "close": 25286.255859375
     },
     {
-      "timestamp": 1784728500,
-      "close": 25781.58203125
+      "timestamp": 1784814900,
+      "close": 25220.275390625
     },
     {
-      "timestamp": 1784728800,
-      "close": 25781.201171875
+      "timestamp": 1784815200,
+      "close": 25246.701171875
     },
     {
-      "timestamp": 1784729100,
-      "close": 25751.076171875
+      "timestamp": 1784815500,
+      "close": 25200.130859375
     },
     {
-      "timestamp": 1784729400,
-      "close": 25742.84375
+      "timestamp": 1784815800,
+      "close": 25187.650390625
     },
     {
-      "timestamp": 1784729700,
-      "close": 25738.255859375
+      "timestamp": 1784816100,
+      "close": 25186.46484375
     },
     {
-      "timestamp": 1784730000,
-      "close": 25715.45703125
+      "timestamp": 1784816400,
+      "close": 25183.220703125
     },
     {
-      "timestamp": 1784730300,
-      "close": 25711.056640625
+      "timestamp": 1784816700,
+      "close": 25201.453125
     },
     {
-      "timestamp": 1784730600,
-      "close": 25716.87890625
-    },
-    {
-      "timestamp": 1784730900,
-      "close": 25716.494140625
-    },
-    {
-      "timestamp": 1784731200,
-      "close": 25698.794921875
-    },
-    {
-      "timestamp": 1784731500,
-      "close": 25720.357421875
-    },
-    {
-      "timestamp": 1784731800,
-      "close": 25717.642578125
-    },
-    {
-      "timestamp": 1784732100,
-      "close": 25750.70703125
-    },
-    {
-      "timestamp": 1784732400,
-      "close": 25772.490234375
-    },
-    {
-      "timestamp": 1784732700,
-      "close": 25797.005859375
-    },
-    {
-      "timestamp": 1784733000,
-      "close": 25812.7109375
-    },
-    {
-      "timestamp": 1784733300,
-      "close": 25810.630859375
-    },
-    {
-      "timestamp": 1784733600,
-      "close": 25827.09765625
-    },
-    {
-      "timestamp": 1784733900,
-      "close": 25829.548828125
-    },
-    {
-      "timestamp": 1784734200,
-      "close": 25807.296875
-    },
-    {
-      "timestamp": 1784734500,
-      "close": 25799.18359375
-    },
-    {
-      "timestamp": 1784734800,
-      "close": 25801.95703125
-    },
-    {
-      "timestamp": 1784735100,
-      "close": 25818.21484375
-    },
-    {
-      "timestamp": 1784735400,
-      "close": 25821.21484375
-    },
-    {
-      "timestamp": 1784735700,
-      "close": 25840.86328125
-    },
-    {
-      "timestamp": 1784736000,
-      "close": 25828.12109375
-    },
-    {
-      "timestamp": 1784736300,
-      "close": 25831.193359375
-    },
-    {
-      "timestamp": 1784736600,
-      "close": 25831.373046875
-    },
-    {
-      "timestamp": 1784736900,
-      "close": 25837.52734375
-    },
-    {
-      "timestamp": 1784737200,
-      "close": 25828.841796875
-    },
-    {
-      "timestamp": 1784737500,
-      "close": 25821.541015625
-    },
-    {
-      "timestamp": 1784737800,
-      "close": 25825.931640625
-    },
-    {
-      "timestamp": 1784738100,
-      "close": 25814.955078125
-    },
-    {
-      "timestamp": 1784738400,
-      "close": 25804.0234375
-    },
-    {
-      "timestamp": 1784738700,
-      "close": 25800.5078125
-    },
-    {
-      "timestamp": 1784739000,
-      "close": 25802.353515625
-    },
-    {
-      "timestamp": 1784739300,
-      "close": 25821.3203125
-    },
-    {
-      "timestamp": 1784739600,
-      "close": 25813.29296875
-    },
-    {
-      "timestamp": 1784739900,
-      "close": 25820.95703125
-    },
-    {
-      "timestamp": 1784740200,
-      "close": 25807.77734375
-    },
-    {
-      "timestamp": 1784740500,
-      "close": 25803.4921875
-    },
-    {
-      "timestamp": 1784740800,
-      "close": 25804.279296875
-    },
-    {
-      "timestamp": 1784741100,
-      "close": 25799.517578125
-    },
-    {
-      "timestamp": 1784741400,
-      "close": 25786.666015625
-    },
-    {
-      "timestamp": 1784741700,
-      "close": 25811.484375
-    },
-    {
-      "timestamp": 1784742000,
-      "close": 25793.212890625
-    },
-    {
-      "timestamp": 1784742300,
-      "close": 25785.078125
-    },
-    {
-      "timestamp": 1784742600,
-      "close": 25760.298828125
-    },
-    {
-      "timestamp": 1784742900,
-      "close": 25751.451171875
-    },
-    {
-      "timestamp": 1784743200,
-      "close": 25759.392578125
-    },
-    {
-      "timestamp": 1784743500,
-      "close": 25753.435546875
-    },
-    {
-      "timestamp": 1784743800,
-      "close": 25739.310546875
-    },
-    {
-      "timestamp": 1784744100,
-      "close": 25744.96875
-    },
-    {
-      "timestamp": 1784744400,
-      "close": 25740.37890625
-    },
-    {
-      "timestamp": 1784744700,
-      "close": 25750.791015625
-    },
-    {
-      "timestamp": 1784745000,
-      "close": 25734.748046875
-    },
-    {
-      "timestamp": 1784745300,
-      "close": 25746.900390625
-    },
-    {
-      "timestamp": 1784745600,
-      "close": 25748.0859375
-    },
-    {
-      "timestamp": 1784745900,
-      "close": 25748.625
-    },
-    {
-      "timestamp": 1784746200,
-      "close": 25756.466796875
-    },
-    {
-      "timestamp": 1784746500,
-      "close": 25756.7109375
-    },
-    {
-      "timestamp": 1784746800,
-      "close": 25758.783203125
-    },
-    {
-      "timestamp": 1784747100,
-      "close": 25756.90625
-    },
-    {
-      "timestamp": 1784747400,
-      "close": 25738.34765625
-    },
-    {
-      "timestamp": 1784747700,
-      "close": 25747.173828125
-    },
-    {
-      "timestamp": 1784748000,
-      "close": 25744.69140625
-    },
-    {
-      "timestamp": 1784748300,
-      "close": 25751.31640625
-    },
-    {
-      "timestamp": 1784748600,
-      "close": 25728.607421875
-    },
-    {
-      "timestamp": 1784748900,
-      "close": 25709.822265625
-    },
-    {
-      "timestamp": 1784749200,
-      "close": 25719.625
-    },
-    {
-      "timestamp": 1784749500,
-      "close": 25728.306640625
-    },
-    {
-      "timestamp": 1784749800,
-      "close": 25714.84765625
-    },
-    {
-      "timestamp": 1784750100,
-      "close": 25694.271484375
-    },
-    {
-      "timestamp": 1784750400,
-      "close": 25690.90234375
+      "timestamp": 1784817035,
+      "close": 25195.91015625
     }
   ],
   "news": {
-    "title": "Dow Jones Futures Fall As Oil Prices Top $90; Google, Tesla Skid On Earnings, Capital Spending",
+    "title": "Stock Market Today: Dow Slammed 500 Points; Google Smacked To 200-Day Line (Live Coverage)",
     "publisher": "Investor's Business Daily",
-    "publishedAt": "2026-07-23T11:59:33.000Z"
+    "publishedAt": "2026-07-23T14:17:22.000Z"
   },
-  "generatedAt": "2026-07-23T12:02:03.018Z"
+  "generatedAt": "2026-07-23T14:30:37.716Z"
 }
