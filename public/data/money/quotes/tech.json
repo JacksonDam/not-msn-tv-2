@@ -8,7 +8,7 @@
   "price": 71.6,
   "previousClose": 71.77,
   "dayHigh": 71.94,
-  "dayLow": 71.6,
+  "dayLow": 71.58,
   "change": -0.1700000000000017,
   "changePercent": -0.2368677720496053,
   "currency": "USD",
@@ -317,10 +317,18 @@
     },
     {
       "timestamp": 1784922300,
-      "close": 71.6050033569336
+      "close": 71.5999984741211
     },
     {
-      "timestamp": 1784922431,
+      "timestamp": 1784922600,
+      "close": 71.5999984741211
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 71.5999984741211
+    },
+    {
+      "timestamp": 1784923200,
       "close": 71.5999984741211
     }
   ],
@@ -329,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-07-20T12:12:28.000Z"
   },
-  "generatedAt": "2026-07-24T19:47:15.494Z"
+  "generatedAt": "2026-07-24T21:21:07.278Z"
 }

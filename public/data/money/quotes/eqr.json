@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 67.91,
+  "price": 67.86,
   "previousClose": 68.28,
   "dayHigh": 68.875,
   "dayLow": 67.49,
-  "change": -0.37000000000000455,
-  "changePercent": -0.5418863503222093,
+  "change": -0.4200000000000017,
+  "changePercent": -0.6151142355008812,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784922300,
-      "close": 67.91999816894531
+      "close": 67.9000015258789
     },
     {
-      "timestamp": 1784922395,
-      "close": 67.91000366210938
+      "timestamp": 1784922600,
+      "close": 67.96099853515625
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 67.88500213623047
+    },
+    {
+      "timestamp": 1784923200,
+      "close": 67.86000061035156
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Multifamily Dive",
     "publishedAt": "2026-07-23T16:16:00.000Z"
   },
-  "generatedAt": "2026-07-24T19:46:37.301Z"
+  "generatedAt": "2026-07-24T21:20:27.959Z"
 }

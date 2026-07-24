@@ -5,12 +5,12 @@
     "displaySymbol": "$DHR"
   },
   "name": "DANAHER CORPORATION",
-  "price": 192.5,
+  "price": 191.5,
   "previousClose": 192.5,
   "dayHigh": 194.8,
   "dayLow": 190,
-  "change": 0,
-  "changePercent": 0,
+  "change": -1,
+  "changePercent": -0.5194805194805194,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784922300,
-      "close": 192.52000427246094
+      "close": 192.01499938964844
     },
     {
-      "timestamp": 1784922385,
-      "close": 192.5
+      "timestamp": 1784922600,
+      "close": 192.46499633789062
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 191.49000549316406
+    },
+    {
+      "timestamp": 1784923200,
+      "close": 191.5
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-07-24T14:33:38.000Z"
   },
-  "generatedAt": "2026-07-24T19:46:33.017Z"
+  "generatedAt": "2026-07-24T21:20:23.604Z"
 }

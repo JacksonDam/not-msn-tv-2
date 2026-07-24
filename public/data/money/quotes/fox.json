@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 49.49,
+  "price": 49.41,
   "previousClose": 49.18,
   "dayHigh": 49.873,
   "dayLow": 48.694,
-  "change": 0.3100000000000023,
-  "changePercent": 0.6303375355835752,
+  "change": 0.22999999999999687,
+  "changePercent": 0.4676697844652234,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784922300,
-      "close": 49.505001068115234
+      "close": 49.41999816894531
     },
     {
-      "timestamp": 1784922395,
-      "close": 49.4900016784668
+      "timestamp": 1784922600,
+      "close": 49.34000015258789
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 49.439998626708984
+    },
+    {
+      "timestamp": 1784923200,
+      "close": 49.40999984741211
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-07-23T20:05:00.000Z"
   },
-  "generatedAt": "2026-07-24T19:46:41.419Z"
+  "generatedAt": "2026-07-24T21:20:32.186Z"
 }

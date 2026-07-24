@@ -5,12 +5,12 @@
     "displaySymbol": "$BX"
   },
   "name": "BLACKSTONE INC.",
-  "price": 129.235,
+  "price": 130,
   "previousClose": 124.5,
-  "dayHigh": 129.67,
+  "dayHigh": 130,
   "dayLow": 124.28,
-  "change": 4.735000000000014,
-  "changePercent": 3.803212851405634,
+  "change": 5.5,
+  "changePercent": 4.417670682730924,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,15 +313,23 @@
     },
     {
       "timestamp": 1784922000,
-      "close": 129.42999267578125
+      "close": 129.44000244140625
     },
     {
       "timestamp": 1784922300,
-      "close": 129.25999450683594
+      "close": 129.3800048828125
     },
     {
-      "timestamp": 1784922380,
-      "close": 129.23500061035156
+      "timestamp": 1784922600,
+      "close": 129.72999572753906
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 129.97000122070312
+    },
+    {
+      "timestamp": 1784923200,
+      "close": 130
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Pitchbook",
     "publishedAt": "2026-07-24T18:37:56.000Z"
   },
-  "generatedAt": "2026-07-24T19:46:22.862Z"
+  "generatedAt": "2026-07-24T21:20:13.318Z"
 }

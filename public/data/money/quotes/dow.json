@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 29.9,
+  "price": 29.84,
   "previousClose": 30.9,
   "dayHigh": 30.775,
   "dayLow": 29.3,
-  "change": -1,
-  "changePercent": -3.2362459546925573,
+  "change": -1.0599999999999987,
+  "changePercent": -3.430420711974106,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,15 +313,23 @@
     },
     {
       "timestamp": 1784922000,
-      "close": 29.885000228881836
+      "close": 29.8799991607666
     },
     {
       "timestamp": 1784922300,
-      "close": 29.90999984741211
+      "close": 29.94499969482422
     },
     {
-      "timestamp": 1784922392,
-      "close": 29.899999618530273
+      "timestamp": 1784922600,
+      "close": 29.8799991607666
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 29.844999313354492
+    },
+    {
+      "timestamp": 1784923200,
+      "close": 29.84000015258789
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-24T16:45:19.000Z"
   },
-  "generatedAt": "2026-07-24T19:46:33.829Z"
+  "generatedAt": "2026-07-24T21:20:24.535Z"
 }

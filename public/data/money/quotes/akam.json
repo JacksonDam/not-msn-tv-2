@@ -5,12 +5,12 @@
     "displaySymbol": "$AKAM"
   },
   "name": "AKAMAI TECHNOLOGIES, INC.",
-  "price": 116.23,
+  "price": 115.37,
   "previousClose": 117.37,
   "dayHigh": 119.035,
-  "dayLow": 115.43,
-  "change": -1.1400000000000006,
-  "changePercent": -0.9712873817841019,
+  "dayLow": 115.24,
+  "change": -2,
+  "changePercent": -1.7040129504984236,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1784922300,
-      "close": 116.12999725341797
+      "close": 116.33999633789062
     },
     {
-      "timestamp": 1784922364,
-      "close": 116.2300033569336
+      "timestamp": 1784922600,
+      "close": 115.73999786376953
+    },
+    {
+      "timestamp": 1784922900,
+      "close": 115.31999969482422
+    },
+    {
+      "timestamp": 1784923200,
+      "close": 115.37000274658203
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-07-22T12:46:07.000Z"
   },
-  "generatedAt": "2026-07-24T19:46:14.887Z"
+  "generatedAt": "2026-07-24T21:20:05.802Z"
 }
