@@ -5,12 +5,12 @@
     "displaySymbol": "$MSCI"
   },
   "name": "MSCI INC.",
-  "price": 579.41,
+  "price": 579.39,
   "previousClose": 571.03,
   "dayHigh": 585.55,
   "dayLow": 568.42,
-  "change": 8.379999999999995,
-  "changePercent": 1.4675235977094014,
+  "change": 8.360000000000014,
+  "changePercent": 1.4640211547554443,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -268,8 +268,68 @@
       "close": 579.489990234375
     },
     {
-      "timestamp": 1785264352,
-      "close": 579.4099731445312
+      "timestamp": 1785264300,
+      "close": 579.489990234375
+    },
+    {
+      "timestamp": 1785264600,
+      "close": 579.27001953125
+    },
+    {
+      "timestamp": 1785264900,
+      "close": 579.2949829101562
+    },
+    {
+      "timestamp": 1785265200,
+      "close": 579
+    },
+    {
+      "timestamp": 1785265500,
+      "close": 578.9749755859375
+    },
+    {
+      "timestamp": 1785265800,
+      "close": 578.6900024414062
+    },
+    {
+      "timestamp": 1785266100,
+      "close": 579.0800170898438
+    },
+    {
+      "timestamp": 1785266400,
+      "close": 579.0800170898438
+    },
+    {
+      "timestamp": 1785266700,
+      "close": 579.3499755859375
+    },
+    {
+      "timestamp": 1785267000,
+      "close": 580.280029296875
+    },
+    {
+      "timestamp": 1785267300,
+      "close": 581.280029296875
+    },
+    {
+      "timestamp": 1785267600,
+      "close": 580.97998046875
+    },
+    {
+      "timestamp": 1785267900,
+      "close": 581.760009765625
+    },
+    {
+      "timestamp": 1785268200,
+      "close": 580.719970703125
+    },
+    {
+      "timestamp": 1785268500,
+      "close": 579.3900146484375
+    },
+    {
+      "timestamp": 1785268800,
+      "close": 579.3900146484375
     }
   ],
   "news": {
@@ -277,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-28T01:04:26.000Z"
   },
-  "generatedAt": "2026-07-28T18:45:58.562Z"
+  "generatedAt": "2026-07-28T20:34:57.663Z"
 }
