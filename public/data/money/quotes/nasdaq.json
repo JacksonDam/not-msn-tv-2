@@ -5,337 +5,113 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 24876.912,
-  "previousClose": 24932.082,
-  "dayHigh": 24984.5,
-  "dayLow": 24581.006,
-  "change": -55.169999999998254,
-  "changePercent": -0.22128115895013603,
+  "price": 24642.52,
+  "previousClose": 24876.912,
+  "dayHigh": 24899.98,
+  "dayLow": 24568.969,
+  "change": -234.39199999999983,
+  "changePercent": -0.9422069748849851,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1785245400,
-      "close": 24753.890625
+      "timestamp": 1785331800,
+      "close": 24877.05859375
     },
     {
-      "timestamp": 1785245700,
-      "close": 24712.04296875
+      "timestamp": 1785332100,
+      "close": 24845.40625
     },
     {
-      "timestamp": 1785246000,
-      "close": 24662.0546875
+      "timestamp": 1785332400,
+      "close": 24852.048828125
     },
     {
-      "timestamp": 1785246300,
-      "close": 24653.72265625
+      "timestamp": 1785332700,
+      "close": 24811.91796875
     },
     {
-      "timestamp": 1785246600,
-      "close": 24625.857421875
+      "timestamp": 1785333000,
+      "close": 24748.2421875
     },
     {
-      "timestamp": 1785246900,
-      "close": 24605.693359375
+      "timestamp": 1785333300,
+      "close": 24742.09375
     },
     {
-      "timestamp": 1785247200,
-      "close": 24642.45703125
+      "timestamp": 1785333600,
+      "close": 24767.2734375
     },
     {
-      "timestamp": 1785247500,
-      "close": 24637.533203125
+      "timestamp": 1785333900,
+      "close": 24733.951171875
     },
     {
-      "timestamp": 1785247800,
-      "close": 24590.33203125
+      "timestamp": 1785334200,
+      "close": 24650.435546875
     },
     {
-      "timestamp": 1785248100,
-      "close": 24602.75390625
+      "timestamp": 1785334500,
+      "close": 24662.583984375
     },
     {
-      "timestamp": 1785248400,
-      "close": 24634.65625
+      "timestamp": 1785334800,
+      "close": 24634.703125
     },
     {
-      "timestamp": 1785248700,
-      "close": 24656.646484375
+      "timestamp": 1785335100,
+      "close": 24607.9453125
     },
     {
-      "timestamp": 1785249000,
-      "close": 24644.595703125
+      "timestamp": 1785335400,
+      "close": 24647.189453125
     },
     {
-      "timestamp": 1785249300,
-      "close": 24670.005859375
+      "timestamp": 1785335700,
+      "close": 24607.177734375
     },
     {
-      "timestamp": 1785249600,
-      "close": 24717.220703125
+      "timestamp": 1785336000,
+      "close": 24585.197265625
     },
     {
-      "timestamp": 1785249900,
-      "close": 24786.6484375
+      "timestamp": 1785336300,
+      "close": 24603.390625
     },
     {
-      "timestamp": 1785250200,
-      "close": 24781.84375
+      "timestamp": 1785336600,
+      "close": 24636.595703125
     },
     {
-      "timestamp": 1785250500,
-      "close": 24745.88671875
+      "timestamp": 1785336900,
+      "close": 24639.666015625
     },
     {
-      "timestamp": 1785250800,
-      "close": 24731.255859375
+      "timestamp": 1785337200,
+      "close": 24664.05078125
     },
     {
-      "timestamp": 1785251100,
-      "close": 24751.517578125
+      "timestamp": 1785337500,
+      "close": 24668.73046875
     },
     {
-      "timestamp": 1785251400,
-      "close": 24803.16015625
+      "timestamp": 1785337800,
+      "close": 24620.54296875
     },
     {
-      "timestamp": 1785251700,
-      "close": 24856.712890625
+      "timestamp": 1785338100,
+      "close": 24643.47265625
     },
     {
-      "timestamp": 1785252000,
-      "close": 24906.02734375
-    },
-    {
-      "timestamp": 1785252300,
-      "close": 24904.875
-    },
-    {
-      "timestamp": 1785252600,
-      "close": 24912.919921875
-    },
-    {
-      "timestamp": 1785252900,
-      "close": 24938.609375
-    },
-    {
-      "timestamp": 1785253200,
-      "close": 24950.44921875
-    },
-    {
-      "timestamp": 1785253500,
-      "close": 24954.927734375
-    },
-    {
-      "timestamp": 1785253800,
-      "close": 24951.40234375
-    },
-    {
-      "timestamp": 1785254100,
-      "close": 24962.67578125
-    },
-    {
-      "timestamp": 1785254400,
-      "close": 24959.0234375
-    },
-    {
-      "timestamp": 1785254700,
-      "close": 24930.671875
-    },
-    {
-      "timestamp": 1785255000,
-      "close": 24924.515625
-    },
-    {
-      "timestamp": 1785255300,
-      "close": 24949.091796875
-    },
-    {
-      "timestamp": 1785255600,
-      "close": 24923.15234375
-    },
-    {
-      "timestamp": 1785255900,
-      "close": 24920.89453125
-    },
-    {
-      "timestamp": 1785256200,
-      "close": 24904.470703125
-    },
-    {
-      "timestamp": 1785256500,
-      "close": 24935.763671875
-    },
-    {
-      "timestamp": 1785256800,
-      "close": 24945.716796875
-    },
-    {
-      "timestamp": 1785257100,
-      "close": 24934.322265625
-    },
-    {
-      "timestamp": 1785257400,
-      "close": 24978.388671875
-    },
-    {
-      "timestamp": 1785257700,
-      "close": 24972.615234375
-    },
-    {
-      "timestamp": 1785258000,
-      "close": 24945.91796875
-    },
-    {
-      "timestamp": 1785258300,
-      "close": 24919.859375
-    },
-    {
-      "timestamp": 1785258600,
-      "close": 24919.080078125
-    },
-    {
-      "timestamp": 1785258900,
-      "close": 24925.212890625
-    },
-    {
-      "timestamp": 1785259200,
-      "close": 24930.125
-    },
-    {
-      "timestamp": 1785259500,
-      "close": 24930.580078125
-    },
-    {
-      "timestamp": 1785259800,
-      "close": 24946
-    },
-    {
-      "timestamp": 1785260100,
-      "close": 24930.96875
-    },
-    {
-      "timestamp": 1785260400,
-      "close": 24898.31640625
-    },
-    {
-      "timestamp": 1785260700,
-      "close": 24921.67578125
-    },
-    {
-      "timestamp": 1785261000,
-      "close": 24892.267578125
-    },
-    {
-      "timestamp": 1785261300,
-      "close": 24915.14453125
-    },
-    {
-      "timestamp": 1785261600,
-      "close": 24906.501953125
-    },
-    {
-      "timestamp": 1785261900,
-      "close": 24886.46484375
-    },
-    {
-      "timestamp": 1785262200,
-      "close": 24871.1015625
-    },
-    {
-      "timestamp": 1785262500,
-      "close": 24881.302734375
-    },
-    {
-      "timestamp": 1785262800,
-      "close": 24882.6796875
-    },
-    {
-      "timestamp": 1785263100,
-      "close": 24878.412109375
-    },
-    {
-      "timestamp": 1785263400,
-      "close": 24891.7421875
-    },
-    {
-      "timestamp": 1785263700,
-      "close": 24881.22265625
-    },
-    {
-      "timestamp": 1785264000,
-      "close": 24880.51171875
-    },
-    {
-      "timestamp": 1785264300,
-      "close": 24901.31640625
-    },
-    {
-      "timestamp": 1785264600,
-      "close": 24896.767578125
-    },
-    {
-      "timestamp": 1785264900,
-      "close": 24912.91015625
-    },
-    {
-      "timestamp": 1785265200,
-      "close": 24943.451171875
-    },
-    {
-      "timestamp": 1785265500,
-      "close": 24917.421875
-    },
-    {
-      "timestamp": 1785265800,
-      "close": 24914.666015625
-    },
-    {
-      "timestamp": 1785266100,
-      "close": 24917.40625
-    },
-    {
-      "timestamp": 1785266400,
-      "close": 24929.384765625
-    },
-    {
-      "timestamp": 1785266700,
-      "close": 24933.94921875
-    },
-    {
-      "timestamp": 1785267000,
-      "close": 24929.064453125
-    },
-    {
-      "timestamp": 1785267300,
-      "close": 24891.142578125
-    },
-    {
-      "timestamp": 1785267600,
-      "close": 24896.6875
-    },
-    {
-      "timestamp": 1785267900,
-      "close": 24893.673828125
-    },
-    {
-      "timestamp": 1785268200,
-      "close": 24924.490234375
-    },
-    {
-      "timestamp": 1785268500,
-      "close": 24874.451171875
-    },
-    {
-      "timestamp": 1785268800,
-      "close": 24876.912109375
+      "timestamp": 1785338349,
+      "close": 24642.51953125
     }
   ],
   "news": {
-    "title": "Here Are Wednesday’s Top Wall Street Analyst Research Calls: Bloom Energy, Caesars Entertainment, CarMax, Caterpillar, Ford, MPLX LP, Noble, Reddit, Texas Instruments, and More",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-07-29T12:16:36.000Z"
+    "title": "Dow Tumbles Over 850 Points – Trump's Latest Iran Warning Sends Crude Oil Prices Soaring Ahead Of Fed Decision",
+    "publisher": "Stocktwits",
+    "publishedAt": "2026-07-29T15:11:30.000Z"
   },
-  "generatedAt": "2026-07-29T12:20:18.713Z"
+  "generatedAt": "2026-07-29T15:19:11.131Z"
 }
