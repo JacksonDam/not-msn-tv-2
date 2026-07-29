@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 32.78,
+  "price": 32.64,
   "previousClose": 31.81,
   "dayHigh": 33.03,
   "dayLow": 31.81,
-  "change": 0.9700000000000024,
-  "changePercent": 3.0493555485696398,
+  "change": 0.8300000000000018,
+  "changePercent": 2.6092423766111343,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,17 +313,29 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 32.76499938964844
+      "close": 32.779998779296875
     },
     {
-      "timestamp": 1785354151,
-      "close": 32.779998779296875
+      "timestamp": 1785354300,
+      "close": 32.810001373291016
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 32.7599983215332
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 32.650001525878906
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 32.63999938964844
     }
   ],
   "news": {
-    "title": "New York City Rent Hits a New High: Just in Time for the Class of 2026",
-    "publisher": "PR Newswire",
-    "publishedAt": "2026-07-28T10:00:00.000Z"
+    "title": "NWS: What does Argus have to say about NWS?",
+    "publisher": "Argus Research",
+    "publishedAt": "2026-07-29T00:00:00.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:57.837Z"
+  "generatedAt": "2026-07-29T21:12:59.969Z"
 }

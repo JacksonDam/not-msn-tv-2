@@ -5,12 +5,12 @@
     "displaySymbol": "$MCO"
   },
   "name": "MOODY'S CORPORATION",
-  "price": 483.55,
+  "price": 483.24,
   "previousClose": 484.2,
   "dayHigh": 489.61,
   "dayLow": 480.88,
-  "change": -0.6499999999999773,
-  "changePercent": -0.1342420487401853,
+  "change": -0.9599999999999795,
+  "changePercent": -0.19826517967781485,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,15 +309,27 @@
     },
     {
       "timestamp": 1785353700,
-      "close": 484.2090148925781
+      "close": 484.010009765625
     },
     {
       "timestamp": 1785354000,
-      "close": 483.7099914550781
+      "close": 483.385009765625
     },
     {
-      "timestamp": 1785354162,
-      "close": 483.54998779296875
+      "timestamp": 1785354300,
+      "close": 483.2349853515625
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 482.6789855957031
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 483.489990234375
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 483.239990234375
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-07-29T13:07:40.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:50.651Z"
+  "generatedAt": "2026-07-29T21:12:53.028Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$DASH"
   },
   "name": "DOORDASH, INC.",
-  "price": 193.78,
+  "price": 193.53,
   "previousClose": 195.52,
   "dayHigh": 199.89,
-  "dayLow": 193.4,
-  "change": -1.740000000000009,
-  "changePercent": -0.8899345335515594,
+  "dayLow": 192.82,
+  "change": -1.990000000000009,
+  "changePercent": -1.0177986906710357,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 193.6699981689453
+      "close": 193.25999450683594
     },
     {
-      "timestamp": 1785354139,
-      "close": 193.77999877929688
+      "timestamp": 1785354300,
+      "close": 193
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 193.14500427246094
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 193.5800018310547
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 193.52999877929688
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Moby",
     "publishedAt": "2026-07-29T18:34:39.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:22.463Z"
+  "generatedAt": "2026-07-29T21:12:23.295Z"
 }

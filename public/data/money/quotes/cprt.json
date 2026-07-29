@@ -5,12 +5,12 @@
     "displaySymbol": "$CPRT"
   },
   "name": "COPART, INC.",
-  "price": 30.84,
+  "price": 30.82,
   "previousClose": 30.69,
   "dayHigh": 31.418,
   "dayLow": 30.2,
-  "change": 0.14999999999999858,
-  "changePercent": 0.4887585532746776,
+  "change": 0.129999999999999,
+  "changePercent": 0.42359074617138803,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
+      "close": 30.875
+    },
+    {
+      "timestamp": 1785354300,
       "close": 30.825000762939453
     },
     {
-      "timestamp": 1785354138,
+      "timestamp": 1785354600,
+      "close": 30.790000915527344
+    },
+    {
+      "timestamp": 1785354900,
       "close": 30.84000015258789
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 30.81999969482422
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-07-27T14:38:45.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:19.943Z"
+  "generatedAt": "2026-07-29T21:12:20.101Z"
 }

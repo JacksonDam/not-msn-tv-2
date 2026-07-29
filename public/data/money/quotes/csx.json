@@ -5,12 +5,12 @@
     "displaySymbol": "$CSX"
   },
   "name": "CSX CORPORATION",
-  "price": 50.7,
+  "price": 50.74,
   "previousClose": 50.84,
   "dayHigh": 51,
   "dayLow": 50.3,
-  "change": -0.14000000000000057,
-  "changePercent": -0.27537372147915135,
+  "change": -0.10000000000000142,
+  "changePercent": -0.19669551534225296,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 50.709999084472656
+      "close": 50.665000915527344
     },
     {
-      "timestamp": 1785354138,
-      "close": 50.70000076293945
+      "timestamp": 1785354300,
+      "close": 50.689998626708984
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 50.6150016784668
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 50.75
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 50.7400016784668
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-07-28T10:14:48.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:21.013Z"
+  "generatedAt": "2026-07-29T21:12:21.441Z"
 }

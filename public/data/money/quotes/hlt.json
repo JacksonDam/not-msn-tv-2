@@ -5,12 +5,12 @@
     "displaySymbol": "$HLT"
   },
   "name": "HILTON WORLDWIDE HOLDINGS INC.",
-  "price": 322.73,
+  "price": 321.72,
   "previousClose": 322.43,
   "dayHigh": 325.87,
   "dayLow": 318.14,
-  "change": 0.30000000000001137,
-  "changePercent": 0.09304345129175677,
+  "change": -0.7099999999999795,
+  "changePercent": -0.22020283472380967,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,15 +309,27 @@
     },
     {
       "timestamp": 1785353700,
-      "close": 322.8299865722656
+      "close": 322.75
     },
     {
       "timestamp": 1785354000,
+      "close": 322.4700012207031
+    },
+    {
+      "timestamp": 1785354300,
       "close": 322.80999755859375
     },
     {
-      "timestamp": 1785354147,
-      "close": 322.7300109863281
+      "timestamp": 1785354600,
+      "close": 322.9200134277344
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 321.9800109863281
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 321.7200012207031
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-29T14:22:28.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:38.142Z"
+  "generatedAt": "2026-07-29T21:12:40.157Z"
 }

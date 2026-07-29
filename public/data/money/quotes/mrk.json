@@ -5,12 +5,12 @@
     "displaySymbol": "$MRK"
   },
   "name": "MERCK & CO., INC.",
-  "price": 129.74,
+  "price": 130.36,
   "previousClose": 131.82,
   "dayHigh": 132.69,
   "dayLow": 129.65,
-  "change": -2.079999999999984,
-  "changePercent": -1.5779092702169504,
+  "change": -1.4599999999999795,
+  "changePercent": -1.1075709300561216,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 129.74000549316406
+      "close": 129.875
     },
     {
-      "timestamp": 1785354168,
-      "close": 129.74000549316406
+      "timestamp": 1785354300,
+      "close": 129.91000366210938
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 129.9600067138672
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 130.38999938964844
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 130.36000061035156
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-29T18:11:10.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:53.030Z"
+  "generatedAt": "2026-07-29T21:12:55.345Z"
 }

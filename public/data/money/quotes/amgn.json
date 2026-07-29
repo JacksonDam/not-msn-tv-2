@@ -5,12 +5,12 @@
     "displaySymbol": "$AMGN"
   },
   "name": "AMGEN INC.",
-  "price": 387.56,
+  "price": 387.64,
   "previousClose": 393.1,
   "dayHigh": 397.88,
-  "dayLow": 387,
-  "change": -5.5400000000000205,
-  "changePercent": -1.4093106079877946,
+  "dayLow": 386.59,
+  "change": -5.460000000000036,
+  "changePercent": -1.3889595522767835,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 387.67999267578125
+      "close": 387.3999938964844
     },
     {
-      "timestamp": 1785354122,
-      "close": 387.55999755859375
+      "timestamp": 1785354300,
+      "close": 387.54998779296875
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 386.80999755859375
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 387.4259948730469
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 387.6400146484375
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-07-29T16:21:00.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:06.066Z"
+  "generatedAt": "2026-07-29T21:12:05.467Z"
 }

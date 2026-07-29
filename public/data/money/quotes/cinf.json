@@ -5,12 +5,12 @@
     "displaySymbol": "$CINF"
   },
   "name": "CINCINNATI FINANCIAL CORPORATION",
-  "price": 179.4,
+  "price": 181.33,
   "previousClose": 182.63,
-  "dayHigh": 181.22,
+  "dayHigh": 181.45,
   "dayLow": 178.48,
-  "change": -3.2299999999999898,
-  "changePercent": -1.7686031867710617,
+  "change": -1.299999999999983,
+  "changePercent": -0.7118217160378815,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 179.39999389648438
+      "close": 179.60000610351562
     },
     {
-      "timestamp": 1785354133,
-      "close": 179.39999389648438
+      "timestamp": 1785354300,
+      "close": 179.8350067138672
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 179.9949951171875
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 181.2899932861328
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 181.3300018310547
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-29T13:23:10.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:16.932Z"
+  "generatedAt": "2026-07-29T21:12:16.781Z"
 }

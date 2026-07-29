@@ -5,12 +5,12 @@
     "displaySymbol": "$DPZ"
   },
   "name": "DOMINO'S PIZZA, INC.",
-  "price": 361.545,
+  "price": 360,
   "previousClose": 350.47,
   "dayHigh": 364.58,
   "dayLow": 347.61,
-  "change": 11.074999999999989,
-  "changePercent": 3.160042229006759,
+  "change": 9.529999999999973,
+  "changePercent": 2.719205638143057,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 361.614990234375
+      "close": 361.489990234375
     },
     {
-      "timestamp": 1785354135,
-      "close": 361.5450134277344
+      "timestamp": 1785354300,
+      "close": 360.6400146484375
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 359.760009765625
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 360
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 360
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-28T18:01:18.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:24.932Z"
+  "generatedAt": "2026-07-29T21:12:26.289Z"
 }

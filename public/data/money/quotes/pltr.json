@@ -5,12 +5,12 @@
     "displaySymbol": "$PLTR"
   },
   "name": "PALANTIR TECHNOLOGIES INC.",
-  "price": 123.19,
+  "price": 123,
   "previousClose": 123.53,
   "dayHigh": 127.28,
-  "dayLow": 122.7,
-  "change": -0.3400000000000034,
-  "changePercent": -0.27523678458674283,
+  "dayLow": 122.45,
+  "change": -0.5300000000000011,
+  "changePercent": -0.42904557597344867,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 123.13999938964844
+      "close": 122.90499877929688
     },
     {
-      "timestamp": 1785354181,
-      "close": 123.19000244140625
+      "timestamp": 1785354300,
+      "close": 123.05000305175781
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 123.30999755859375
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 123.05000305175781
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 123
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-29T17:42:16.000Z"
   },
-  "generatedAt": "2026-07-29T19:43:02.334Z"
+  "generatedAt": "2026-07-29T21:13:04.575Z"
 }

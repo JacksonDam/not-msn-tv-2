@@ -5,12 +5,12 @@
     "displaySymbol": "$CMS"
   },
   "name": "CMS ENERGY CORPORATION",
-  "price": 74.045,
+  "price": 74.36,
   "previousClose": 74.37,
   "dayHigh": 75.14,
   "dayLow": 73.89,
-  "change": -0.32500000000000284,
-  "changePercent": -0.4370041683474557,
+  "change": -0.010000000000005116,
+  "changePercent": -0.0134462821030054,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 74.05999755859375
+      "close": 74.05000305175781
     },
     {
-      "timestamp": 1785354135,
-      "close": 74.04499816894531
+      "timestamp": 1785354300,
+      "close": 74.125
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 74.13999938964844
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 74.37000274658203
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 74.36000061035156
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-07-29T14:13:21.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:18.083Z"
+  "generatedAt": "2026-07-29T21:12:18.058Z"
 }

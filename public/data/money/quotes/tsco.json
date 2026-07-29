@@ -5,12 +5,12 @@
     "displaySymbol": "$TSCO"
   },
   "name": "TRACTOR SUPPLY COMPANY",
-  "price": 31.02,
+  "price": 31,
   "previousClose": 31.46,
   "dayHigh": 31.745,
   "dayLow": 30.78,
-  "change": -0.4400000000000013,
-  "changePercent": -1.3986013986014025,
+  "change": -0.46000000000000085,
+  "changePercent": -1.4621741894469193,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 31.030000686645508
+      "close": 31.045000076293945
     },
     {
-      "timestamp": 1785354190,
-      "close": 31.020000457763672
+      "timestamp": 1785354300,
+      "close": 31.05500030517578
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 31.010000228881836
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 31.010000228881836
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 31
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "USA TODAY",
     "publishedAt": "2026-07-28T18:28:25.000Z"
   },
-  "generatedAt": "2026-07-29T19:43:15.716Z"
+  "generatedAt": "2026-07-29T21:13:18.255Z"
 }

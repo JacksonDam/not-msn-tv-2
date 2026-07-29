@@ -5,12 +5,12 @@
     "displaySymbol": "$AXP"
   },
   "name": "AMERICAN EXPRESS COMPANY",
-  "price": 332,
+  "price": 331.5,
   "previousClose": 336.63,
   "dayHigh": 336.393,
-  "dayLow": 331.56,
-  "change": -4.6299999999999955,
-  "changePercent": -1.3753973205002512,
+  "dayLow": 330.39,
+  "change": -5.1299999999999955,
+  "changePercent": -1.5239283486320279,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -301,11 +301,11 @@
     },
     {
       "timestamp": 1785353100,
-      "close": 332.6300048828125
+      "close": 332.635009765625
     },
     {
       "timestamp": 1785353400,
-      "close": 332.7598876953125
+      "close": 332.760009765625
     },
     {
       "timestamp": 1785353700,
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1785354000,
-      "close": 331.92999267578125
+      "close": 332.05499267578125
     },
     {
-      "timestamp": 1785354125,
-      "close": 332
+      "timestamp": 1785354300,
+      "close": 330.9949951171875
+    },
+    {
+      "timestamp": 1785354600,
+      "close": 330.8450012207031
+    },
+    {
+      "timestamp": 1785354900,
+      "close": 331.44000244140625
+    },
+    {
+      "timestamp": 1785355200,
+      "close": 331.5
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-29T17:00:31.000Z"
   },
-  "generatedAt": "2026-07-29T19:42:09.777Z"
+  "generatedAt": "2026-07-29T21:12:09.266Z"
 }
