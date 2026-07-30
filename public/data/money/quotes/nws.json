@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 31.7,
+  "price": 31.8,
   "previousClose": 32.64,
   "dayHigh": 32.23,
   "dayLow": 31.18,
-  "change": -0.9400000000000013,
-  "changePercent": -2.8799019607843177,
+  "change": -0.8399999999999999,
+  "changePercent": -2.5735294117647056,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -265,11 +265,71 @@
     },
     {
       "timestamp": 1785436800,
+      "close": 31.700000762939453
+    },
+    {
+      "timestamp": 1785437100,
+      "close": 31.65999984741211
+    },
+    {
+      "timestamp": 1785437400,
       "close": 31.704999923706055
     },
     {
-      "timestamp": 1785437046,
-      "close": 31.700000762939453
+      "timestamp": 1785437700,
+      "close": 31.674999237060547
+    },
+    {
+      "timestamp": 1785438000,
+      "close": 31.71500015258789
+    },
+    {
+      "timestamp": 1785438300,
+      "close": 31.65999984741211
+    },
+    {
+      "timestamp": 1785438600,
+      "close": 31.684999465942383
+    },
+    {
+      "timestamp": 1785438900,
+      "close": 31.68000030517578
+    },
+    {
+      "timestamp": 1785439200,
+      "close": 31.690000534057617
+    },
+    {
+      "timestamp": 1785439500,
+      "close": 31.690000534057617
+    },
+    {
+      "timestamp": 1785439800,
+      "close": 31.665000915527344
+    },
+    {
+      "timestamp": 1785440100,
+      "close": 31.639999389648438
+    },
+    {
+      "timestamp": 1785440400,
+      "close": 31.59000015258789
+    },
+    {
+      "timestamp": 1785440700,
+      "close": 31.649999618530273
+    },
+    {
+      "timestamp": 1785441000,
+      "close": 31.729999542236328
+    },
+    {
+      "timestamp": 1785441300,
+      "close": 31.790000915527344
+    },
+    {
+      "timestamp": 1785441600,
+      "close": 31.799999237060547
     }
   ],
   "news": {
@@ -277,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-07-30T10:00:00.000Z"
   },
-  "generatedAt": "2026-07-30T18:45:57.797Z"
+  "generatedAt": "2026-07-30T20:35:08.782Z"
 }
