@@ -5,12 +5,12 @@
     "displaySymbol": "$SPGI"
   },
   "name": "S&P GLOBAL INC.",
-  "price": 415.125,
+  "price": 411.93,
   "previousClose": 415,
   "dayHigh": 417.09,
   "dayLow": 409.39,
-  "change": 0.125,
-  "changePercent": 0.030120481927710847,
+  "change": -3.069999999999993,
+  "changePercent": -0.7397590361445766,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -269,11 +269,67 @@
     },
     {
       "timestamp": 1785523500,
+      "close": 414.875
+    },
+    {
+      "timestamp": 1785523800,
+      "close": 414.5
+    },
+    {
+      "timestamp": 1785524100,
+      "close": 414.5950012207031
+    },
+    {
+      "timestamp": 1785524400,
+      "close": 414.75
+    },
+    {
+      "timestamp": 1785524700,
+      "close": 415.0299987792969
+    },
+    {
+      "timestamp": 1785525000,
+      "close": 414.7799987792969
+    },
+    {
+      "timestamp": 1785525300,
+      "close": 415.5799865722656
+    },
+    {
+      "timestamp": 1785525600,
+      "close": 415.07000732421875
+    },
+    {
+      "timestamp": 1785525900,
+      "close": 415.20001220703125
+    },
+    {
+      "timestamp": 1785526200,
+      "close": 414.6700134277344
+    },
+    {
+      "timestamp": 1785526500,
       "close": 415.1000061035156
     },
     {
-      "timestamp": 1785523571,
-      "close": 415.125
+      "timestamp": 1785526800,
+      "close": 415.2200012207031
+    },
+    {
+      "timestamp": 1785527100,
+      "close": 414.6400146484375
+    },
+    {
+      "timestamp": 1785527400,
+      "close": 413.0899963378906
+    },
+    {
+      "timestamp": 1785527700,
+      "close": 411.7799987792969
+    },
+    {
+      "timestamp": 1785528000,
+      "close": 411.92999267578125
     }
   ],
   "news": {
@@ -281,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-07-31T14:26:22.000Z"
   },
-  "generatedAt": "2026-07-31T18:46:18.861Z"
+  "generatedAt": "2026-07-31T20:38:12.898Z"
 }

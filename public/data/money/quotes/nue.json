@@ -5,12 +5,12 @@
     "displaySymbol": "$NUE"
   },
   "name": "NUCOR CORPORATION",
-  "price": 257.78,
+  "price": 257.29,
   "previousClose": 257.04,
   "dayHigh": 259.95,
   "dayLow": 255.384,
-  "change": 0.7399999999999523,
-  "changePercent": 0.28789293495173984,
+  "change": 0.25,
+  "changePercent": 0.09726112667289137,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -268,8 +268,68 @@
       "close": 257.8299865722656
     },
     {
-      "timestamp": 1785523527,
-      "close": 257.7799987792969
+      "timestamp": 1785523500,
+      "close": 257.7099914550781
+    },
+    {
+      "timestamp": 1785523800,
+      "close": 257.6300048828125
+    },
+    {
+      "timestamp": 1785524100,
+      "close": 257.7200012207031
+    },
+    {
+      "timestamp": 1785524400,
+      "close": 257.4100036621094
+    },
+    {
+      "timestamp": 1785524700,
+      "close": 257.94500732421875
+    },
+    {
+      "timestamp": 1785525000,
+      "close": 257.82000732421875
+    },
+    {
+      "timestamp": 1785525300,
+      "close": 258
+    },
+    {
+      "timestamp": 1785525600,
+      "close": 258.19000244140625
+    },
+    {
+      "timestamp": 1785525900,
+      "close": 258.32501220703125
+    },
+    {
+      "timestamp": 1785526200,
+      "close": 257.5
+    },
+    {
+      "timestamp": 1785526500,
+      "close": 257.5950012207031
+    },
+    {
+      "timestamp": 1785526800,
+      "close": 257.9049987792969
+    },
+    {
+      "timestamp": 1785527100,
+      "close": 257.7200012207031
+    },
+    {
+      "timestamp": 1785527400,
+      "close": 257.4100036621094
+    },
+    {
+      "timestamp": 1785527700,
+      "close": 257.4200134277344
+    },
+    {
+      "timestamp": 1785528000,
+      "close": 257.2900085449219
     }
   ],
   "news": {
@@ -277,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-07-31T13:54:13.000Z"
   },
-  "generatedAt": "2026-07-31T18:46:06.146Z"
+  "generatedAt": "2026-07-31T20:37:59.697Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 31.44,
+  "price": 31.27,
   "previousClose": 31.8,
   "dayHigh": 31.87,
   "dayLow": 31.01,
-  "change": -0.35999999999999943,
-  "changePercent": -1.1320754716981114,
+  "change": -0.5300000000000011,
+  "changePercent": -1.66666666666667,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -265,11 +265,71 @@
     },
     {
       "timestamp": 1785523200,
+      "close": 31.440000534057617
+    },
+    {
+      "timestamp": 1785523500,
+      "close": 31.440000534057617
+    },
+    {
+      "timestamp": 1785523800,
+      "close": 31.40999984741211
+    },
+    {
+      "timestamp": 1785524100,
+      "close": 31.40999984741211
+    },
+    {
+      "timestamp": 1785524400,
       "close": 31.43000030517578
     },
     {
-      "timestamp": 1785523460,
+      "timestamp": 1785524700,
       "close": 31.440000534057617
+    },
+    {
+      "timestamp": 1785525000,
+      "close": 31.420000076293945
+    },
+    {
+      "timestamp": 1785525300,
+      "close": 31.43000030517578
+    },
+    {
+      "timestamp": 1785525600,
+      "close": 31.43000030517578
+    },
+    {
+      "timestamp": 1785525900,
+      "close": 31.389999389648438
+    },
+    {
+      "timestamp": 1785526200,
+      "close": 31.360000610351562
+    },
+    {
+      "timestamp": 1785526500,
+      "close": 31.360000610351562
+    },
+    {
+      "timestamp": 1785526800,
+      "close": 31.34000015258789
+    },
+    {
+      "timestamp": 1785527100,
+      "close": 31.280000686645508
+    },
+    {
+      "timestamp": 1785527400,
+      "close": 31.309999465942383
+    },
+    {
+      "timestamp": 1785527700,
+      "close": 31.280000686645508
+    },
+    {
+      "timestamp": 1785528000,
+      "close": 31.270000457763672
     }
   ],
   "news": {
@@ -277,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-07-30T10:00:00.000Z"
   },
-  "generatedAt": "2026-07-31T18:46:06.832Z"
+  "generatedAt": "2026-07-31T20:38:00.132Z"
 }
