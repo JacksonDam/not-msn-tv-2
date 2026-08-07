@@ -5,12 +5,12 @@
     "displaySymbol": "$TXN"
   },
   "name": "TEXAS INSTRUMENTS INCORPORATED",
-  "price": 282.32,
+  "price": 278.4,
   "previousClose": 277.72,
   "dayHigh": 283.275,
   "dayLow": 272.65,
-  "change": 4.599999999999966,
-  "changePercent": 1.656344519660077,
+  "change": 0.67999999999995,
+  "changePercent": 0.24485092899321254,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -109,17 +109,233 @@
     },
     {
       "timestamp": 1786029900,
-      "close": 282
+      "close": 282.23089599609375
     },
     {
-      "timestamp": 1786030111,
-      "close": 282.32000732421875
+      "timestamp": 1786030200,
+      "close": 281.2500915527344
+    },
+    {
+      "timestamp": 1786030500,
+      "close": 281.4800109863281
+    },
+    {
+      "timestamp": 1786030800,
+      "close": 280.31500244140625
+    },
+    {
+      "timestamp": 1786031100,
+      "close": 281.31500244140625
+    },
+    {
+      "timestamp": 1786031400,
+      "close": 280.5
+    },
+    {
+      "timestamp": 1786031700,
+      "close": 279.9800109863281
+    },
+    {
+      "timestamp": 1786032000,
+      "close": 280.19000244140625
+    },
+    {
+      "timestamp": 1786032300,
+      "close": 280.7250061035156
+    },
+    {
+      "timestamp": 1786032600,
+      "close": 280.1400146484375
+    },
+    {
+      "timestamp": 1786032900,
+      "close": 279.7149963378906
+    },
+    {
+      "timestamp": 1786033200,
+      "close": 279.1400146484375
+    },
+    {
+      "timestamp": 1786033500,
+      "close": 278.79998779296875
+    },
+    {
+      "timestamp": 1786033800,
+      "close": 279.3500061035156
+    },
+    {
+      "timestamp": 1786034100,
+      "close": 280.2200012207031
+    },
+    {
+      "timestamp": 1786034400,
+      "close": 279.9599914550781
+    },
+    {
+      "timestamp": 1786034700,
+      "close": 280.6050109863281
+    },
+    {
+      "timestamp": 1786035000,
+      "close": 280.4049987792969
+    },
+    {
+      "timestamp": 1786035300,
+      "close": 280.95001220703125
+    },
+    {
+      "timestamp": 1786035600,
+      "close": 281.44500732421875
+    },
+    {
+      "timestamp": 1786035900,
+      "close": 281.30999755859375
+    },
+    {
+      "timestamp": 1786036200,
+      "close": 281.4200134277344
+    },
+    {
+      "timestamp": 1786036500,
+      "close": 281.7850036621094
+    },
+    {
+      "timestamp": 1786036800,
+      "close": 281.3800048828125
+    },
+    {
+      "timestamp": 1786037100,
+      "close": 281.57000732421875
+    },
+    {
+      "timestamp": 1786037400,
+      "close": 281.6238098144531
+    },
+    {
+      "timestamp": 1786037700,
+      "close": 281.4200134277344
+    },
+    {
+      "timestamp": 1786038000,
+      "close": 280.92999267578125
+    },
+    {
+      "timestamp": 1786038300,
+      "close": 280.9700012207031
+    },
+    {
+      "timestamp": 1786038600,
+      "close": 281.32501220703125
+    },
+    {
+      "timestamp": 1786038900,
+      "close": 281.489990234375
+    },
+    {
+      "timestamp": 1786039200,
+      "close": 281.8450012207031
+    },
+    {
+      "timestamp": 1786039500,
+      "close": 281.8599853515625
+    },
+    {
+      "timestamp": 1786039800,
+      "close": 282.0299987792969
+    },
+    {
+      "timestamp": 1786040100,
+      "close": 282.5450134277344
+    },
+    {
+      "timestamp": 1786040400,
+      "close": 282.6050109863281
+    },
+    {
+      "timestamp": 1786040700,
+      "close": 282.4150085449219
+    },
+    {
+      "timestamp": 1786041000,
+      "close": 281.6400146484375
+    },
+    {
+      "timestamp": 1786041300,
+      "close": 281.6650085449219
+    },
+    {
+      "timestamp": 1786041600,
+      "close": 281.7699890136719
+    },
+    {
+      "timestamp": 1786041900,
+      "close": 281.1659851074219
+    },
+    {
+      "timestamp": 1786042200,
+      "close": 281.760009765625
+    },
+    {
+      "timestamp": 1786042500,
+      "close": 281.6000061035156
+    },
+    {
+      "timestamp": 1786042800,
+      "close": 281.90008544921875
+    },
+    {
+      "timestamp": 1786043100,
+      "close": 281.5450134277344
+    },
+    {
+      "timestamp": 1786043400,
+      "close": 280.80999755859375
+    },
+    {
+      "timestamp": 1786043700,
+      "close": 280.67999267578125
+    },
+    {
+      "timestamp": 1786044000,
+      "close": 280.05499267578125
+    },
+    {
+      "timestamp": 1786044300,
+      "close": 279.885009765625
+    },
+    {
+      "timestamp": 1786044600,
+      "close": 280.1700134277344
+    },
+    {
+      "timestamp": 1786044900,
+      "close": 279.8699951171875
+    },
+    {
+      "timestamp": 1786045200,
+      "close": 279.6400146484375
+    },
+    {
+      "timestamp": 1786045500,
+      "close": 279.7900085449219
+    },
+    {
+      "timestamp": 1786045800,
+      "close": 280.0775146484375
+    },
+    {
+      "timestamp": 1786046100,
+      "close": 278.33099365234375
+    },
+    {
+      "timestamp": 1786046400,
+      "close": 278.3999938964844
     }
   ],
   "news": {
-    "title": "New Strong Buy Stocks for August 6th",
-    "publisher": "Zacks",
-    "publishedAt": "2026-08-06T08:43:00.000Z"
+    "title": "Diamond Hill Capital's Top Q2 2026 Move: Trimming Texas Instruments Inc at a -1.5% Portfolio Impact",
+    "publisher": "GuruFocus.com",
+    "publishedAt": "2026-08-07T00:00:56.000Z"
   },
-  "generatedAt": "2026-08-06T15:28:37.148Z"
+  "generatedAt": "2026-08-07T00:16:07.669Z"
 }

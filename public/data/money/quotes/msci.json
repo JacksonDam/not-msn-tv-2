@@ -5,12 +5,12 @@
     "displaySymbol": "$MSCI"
   },
   "name": "MSCI INC.",
-  "price": 566.505,
+  "price": 567.23,
   "previousClose": 571.87,
   "dayHigh": 573.795,
-  "dayLow": 565.14,
-  "change": -5.365000000000009,
-  "changePercent": -0.9381502789095439,
+  "dayLow": 563.96,
+  "change": -4.639999999999986,
+  "changePercent": -0.8113732141920342,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -101,7 +101,7 @@
     },
     {
       "timestamp": 1786029300,
-      "close": 569.0700073242188
+      "close": 568.8800048828125
     },
     {
       "timestamp": 1786029600,
@@ -109,17 +109,233 @@
     },
     {
       "timestamp": 1786029900,
+      "close": 567.4749755859375
+    },
+    {
+      "timestamp": 1786030200,
+      "close": 568.1300048828125
+    },
+    {
+      "timestamp": 1786030500,
+      "close": 568.510009765625
+    },
+    {
+      "timestamp": 1786030800,
+      "close": 568.6900024414062
+    },
+    {
+      "timestamp": 1786031100,
+      "close": 568.5499877929688
+    },
+    {
+      "timestamp": 1786031400,
+      "close": 568.3300170898438
+    },
+    {
+      "timestamp": 1786031700,
+      "close": 567.8699951171875
+    },
+    {
+      "timestamp": 1786032000,
+      "close": 567.989990234375
+    },
+    {
+      "timestamp": 1786032300,
+      "close": 567.39501953125
+    },
+    {
+      "timestamp": 1786032600,
+      "close": 567.0700073242188
+    },
+    {
+      "timestamp": 1786032900,
+      "close": 567.260009765625
+    },
+    {
+      "timestamp": 1786033200,
+      "close": 567.5300903320312
+    },
+    {
+      "timestamp": 1786033500,
+      "close": 567.719970703125
+    },
+    {
+      "timestamp": 1786033800,
+      "close": 566.8599853515625
+    },
+    {
+      "timestamp": 1786034100,
+      "close": 565.6799926757812
+    },
+    {
+      "timestamp": 1786034400,
+      "close": 565.2999877929688
+    },
+    {
+      "timestamp": 1786034700,
+      "close": 565.4199829101562
+    },
+    {
+      "timestamp": 1786035000,
+      "close": 565.25
+    },
+    {
+      "timestamp": 1786035300,
+      "close": 565
+    },
+    {
+      "timestamp": 1786035600,
+      "close": 564.9099731445312
+    },
+    {
+      "timestamp": 1786035900,
+      "close": 564.780029296875
+    },
+    {
+      "timestamp": 1786036200,
+      "close": 564.0800170898438
+    },
+    {
+      "timestamp": 1786036500,
+      "close": 564.4600219726562
+    },
+    {
+      "timestamp": 1786036800,
+      "close": 564.5800170898438
+    },
+    {
+      "timestamp": 1786037100,
+      "close": 564.9000244140625
+    },
+    {
+      "timestamp": 1786037400,
+      "close": 564.8200073242188
+    },
+    {
+      "timestamp": 1786037700,
+      "close": 565.8300170898438
+    },
+    {
+      "timestamp": 1786038000,
+      "close": 565.7000122070312
+    },
+    {
+      "timestamp": 1786038300,
+      "close": 565.7100219726562
+    },
+    {
+      "timestamp": 1786038600,
+      "close": 565.3599853515625
+    },
+    {
+      "timestamp": 1786038900,
+      "close": 565.5499877929688
+    },
+    {
+      "timestamp": 1786039200,
+      "close": 566.6300048828125
+    },
+    {
+      "timestamp": 1786039500,
+      "close": 566.0399780273438
+    },
+    {
+      "timestamp": 1786039800,
+      "close": 566.469970703125
+    },
+    {
+      "timestamp": 1786040100,
+      "close": 565.6400146484375
+    },
+    {
+      "timestamp": 1786040400,
+      "close": 566.1799926757812
+    },
+    {
+      "timestamp": 1786040700,
+      "close": 566.260009765625
+    },
+    {
+      "timestamp": 1786041000,
+      "close": 566.1400146484375
+    },
+    {
+      "timestamp": 1786041300,
       "close": 566.4299926757812
     },
     {
-      "timestamp": 1786030091,
-      "close": 566.5050048828125
+      "timestamp": 1786041600,
+      "close": 565.6900024414062
+    },
+    {
+      "timestamp": 1786041900,
+      "close": 566.1199951171875
+    },
+    {
+      "timestamp": 1786042200,
+      "close": 565.22998046875
+    },
+    {
+      "timestamp": 1786042500,
+      "close": 565.8699951171875
+    },
+    {
+      "timestamp": 1786042800,
+      "close": 565.6599731445312
+    },
+    {
+      "timestamp": 1786043100,
+      "close": 566.1099853515625
+    },
+    {
+      "timestamp": 1786043400,
+      "close": 566.35498046875
+    },
+    {
+      "timestamp": 1786043700,
+      "close": 566.10498046875
+    },
+    {
+      "timestamp": 1786044000,
+      "close": 565.75
+    },
+    {
+      "timestamp": 1786044300,
+      "close": 564.6500244140625
+    },
+    {
+      "timestamp": 1786044600,
+      "close": 564.9500122070312
+    },
+    {
+      "timestamp": 1786044900,
+      "close": 565.010009765625
+    },
+    {
+      "timestamp": 1786045200,
+      "close": 565
+    },
+    {
+      "timestamp": 1786045500,
+      "close": 564.5800170898438
+    },
+    {
+      "timestamp": 1786045800,
+      "close": 565.9650268554688
+    },
+    {
+      "timestamp": 1786046100,
+      "close": 567.2100219726562
+    },
+    {
+      "timestamp": 1786046400,
+      "close": 567.22998046875
     }
   ],
   "news": {
-    "title": "MSCI August Index Review Announcement Scheduled for August 12, 2026",
-    "publisher": "Business Wire",
-    "publishedAt": "2026-08-05T22:08:00.000Z"
+    "title": "Charlie Munger’s Only Outside Manager Just Sold a Bank to Buy the Companies That Rate Banks",
+    "publisher": "24/7 Wall St.",
+    "publishedAt": "2026-08-06T18:10:01.000Z"
   },
-  "generatedAt": "2026-08-06T15:28:14.787Z"
+  "generatedAt": "2026-08-07T00:15:47.349Z"
 }
