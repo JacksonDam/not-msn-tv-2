@@ -5,12 +5,12 @@
     "displaySymbol": "$CBOE"
   },
   "name": "CBOE GLOBAL MARKETS, INC.",
-  "price": 288.68,
+  "price": 285,
   "previousClose": 289.17,
   "dayHigh": 290.76,
-  "dayLow": 285,
-  "change": -0.4900000000000091,
-  "changePercent": -0.169450496247885,
+  "dayLow": 284.635,
+  "change": -4.170000000000016,
+  "changePercent": -1.4420583048034084,
   "currency": "USD",
   "exchangeName": "BTS",
   "marketState": "",
@@ -232,8 +232,68 @@
       "close": 288.7099914550781
     },
     {
-      "timestamp": 1786125614,
-      "close": 288.67999267578125
+      "timestamp": 1786125600,
+      "close": 288.4750061035156
+    },
+    {
+      "timestamp": 1786125900,
+      "close": 288.2950134277344
+    },
+    {
+      "timestamp": 1786126200,
+      "close": 288.6000061035156
+    },
+    {
+      "timestamp": 1786126500,
+      "close": 288.7449951171875
+    },
+    {
+      "timestamp": 1786126800,
+      "close": 288.42498779296875
+    },
+    {
+      "timestamp": 1786127100,
+      "close": 288.45001220703125
+    },
+    {
+      "timestamp": 1786127400,
+      "close": 287.989990234375
+    },
+    {
+      "timestamp": 1786127700,
+      "close": 287.2900085449219
+    },
+    {
+      "timestamp": 1786128000,
+      "close": 287.0899963378906
+    },
+    {
+      "timestamp": 1786128300,
+      "close": 287.17999267578125
+    },
+    {
+      "timestamp": 1786128600,
+      "close": 286.385009765625
+    },
+    {
+      "timestamp": 1786128900,
+      "close": 286.7200012207031
+    },
+    {
+      "timestamp": 1786129200,
+      "close": 285.4849853515625
+    },
+    {
+      "timestamp": 1786129500,
+      "close": 285.2449951171875
+    },
+    {
+      "timestamp": 1786129800,
+      "close": 284.75
+    },
+    {
+      "timestamp": 1786130067,
+      "close": 285
     }
   ],
   "news": {
@@ -241,5 +301,5 @@
     "publisher": "The Wall Street Journal",
     "publishedAt": "2026-08-07T16:00:02.000Z"
   },
-  "generatedAt": "2026-08-07T18:01:25.070Z"
+  "generatedAt": "2026-08-07T19:14:41.912Z"
 }
