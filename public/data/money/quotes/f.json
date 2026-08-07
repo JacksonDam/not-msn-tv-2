@@ -5,12 +5,12 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 14.055,
+  "price": 13.98,
   "previousClose": 13.79,
   "dayHigh": 14.09,
   "dayLow": 13.76,
-  "change": 0.26500000000000057,
-  "changePercent": 1.9216823785351747,
+  "change": 0.19000000000000128,
+  "changePercent": 1.3778100072516408,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -289,17 +289,49 @@
     },
     {
       "timestamp": 1786129800,
+      "close": 14.057499885559082
+    },
+    {
+      "timestamp": 1786130100,
+      "close": 14.055000305175781
+    },
+    {
+      "timestamp": 1786130400,
+      "close": 14.0600004196167
+    },
+    {
+      "timestamp": 1786130700,
+      "close": 14.055000305175781
+    },
+    {
+      "timestamp": 1786131000,
       "close": 14.045000076293945
     },
     {
-      "timestamp": 1786130096,
-      "close": 14.055000305175781
+      "timestamp": 1786131300,
+      "close": 14.045000076293945
+    },
+    {
+      "timestamp": 1786131600,
+      "close": 14.010000228881836
+    },
+    {
+      "timestamp": 1786131900,
+      "close": 13.984999656677246
+    },
+    {
+      "timestamp": 1786132200,
+      "close": 13.984999656677246
+    },
+    {
+      "timestamp": 1786132500,
+      "close": 13.984999656677246
     }
   ],
   "news": {
-    "title": "Ford Plans a New Four-Door Version of Mustang",
+    "title": "Ford Plans a Four-Door Version of Mustang",
     "publisher": "The Wall Street Journal",
     "publishedAt": "2026-08-07T17:58:00.000Z"
   },
-  "generatedAt": "2026-08-07T19:14:59.106Z"
+  "generatedAt": "2026-08-07T20:00:26.316Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 29.7,
+  "price": 29.345,
   "previousClose": 30.3,
   "dayHigh": 29.94,
-  "dayLow": 29.275,
-  "change": -0.6000000000000014,
-  "changePercent": -1.9801980198019846,
+  "dayLow": 29.265,
+  "change": -0.9550000000000018,
+  "changePercent": -3.1518151815181574,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,7 +277,7 @@
     },
     {
       "timestamp": 1786128900,
-      "close": 29.735000610351562
+      "close": 29.739999771118164
     },
     {
       "timestamp": 1786129200,
@@ -289,11 +289,43 @@
     },
     {
       "timestamp": 1786129800,
-      "close": 29.71500015258789
+      "close": 29.700000762939453
     },
     {
-      "timestamp": 1786130090,
-      "close": 29.700000762939453
+      "timestamp": 1786130100,
+      "close": 29.665000915527344
+    },
+    {
+      "timestamp": 1786130400,
+      "close": 29.665000915527344
+    },
+    {
+      "timestamp": 1786130700,
+      "close": 29.559999465942383
+    },
+    {
+      "timestamp": 1786131000,
+      "close": 29.520000457763672
+    },
+    {
+      "timestamp": 1786131300,
+      "close": 29.524999618530273
+    },
+    {
+      "timestamp": 1786131600,
+      "close": 29.424999237060547
+    },
+    {
+      "timestamp": 1786131900,
+      "close": 29.420000076293945
+    },
+    {
+      "timestamp": 1786132200,
+      "close": 29.295000076293945
+    },
+    {
+      "timestamp": 1786132500,
+      "close": 29.31999969482422
     }
   ],
   "news": {
@@ -301,5 +333,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-03T21:27:58.000Z"
   },
-  "generatedAt": "2026-08-07T19:14:52.847Z"
+  "generatedAt": "2026-08-07T20:00:18.931Z"
 }

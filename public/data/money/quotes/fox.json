@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 57.03,
+  "price": 57.005,
   "previousClose": 55.37,
-  "dayHigh": 57.12,
+  "dayHigh": 57.18,
   "dayLow": 55.38,
-  "change": 1.6600000000000037,
-  "changePercent": 2.9980133646378975,
+  "change": 1.6350000000000051,
+  "changePercent": 2.9528625609535943,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -289,11 +289,43 @@
     },
     {
       "timestamp": 1786129800,
-      "close": 57.005001068115234
+      "close": 57.029998779296875
     },
     {
-      "timestamp": 1786130050,
+      "timestamp": 1786130100,
+      "close": 56.98500061035156
+    },
+    {
+      "timestamp": 1786130400,
+      "close": 56.95500183105469
+    },
+    {
+      "timestamp": 1786130700,
+      "close": 56.86000061035156
+    },
+    {
+      "timestamp": 1786131000,
+      "close": 57.040000915527344
+    },
+    {
+      "timestamp": 1786131300,
       "close": 57.029998779296875
+    },
+    {
+      "timestamp": 1786131600,
+      "close": 56.91999816894531
+    },
+    {
+      "timestamp": 1786131900,
+      "close": 57
+    },
+    {
+      "timestamp": 1786132200,
+      "close": 57.06999969482422
+    },
+    {
+      "timestamp": 1786132500,
+      "close": 57.005001068115234
     }
   ],
   "news": {
@@ -301,5 +333,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-07T15:37:00.000Z"
   },
-  "generatedAt": "2026-08-07T19:15:01.376Z"
+  "generatedAt": "2026-08-07T20:00:28.799Z"
 }
