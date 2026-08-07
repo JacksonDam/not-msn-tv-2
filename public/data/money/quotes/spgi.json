@@ -5,12 +5,12 @@
     "displaySymbol": "$SPGI"
   },
   "name": "S&P GLOBAL INC.",
-  "price": 408.3,
+  "price": 408.19,
   "previousClose": 405.24,
   "dayHigh": 413.2,
   "dayLow": 404.42,
-  "change": 3.0600000000000023,
-  "changePercent": 0.7551080840983126,
+  "change": 2.9499999999999886,
+  "changePercent": 0.7279636758464092,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1786132500,
-      "close": 408.29998779296875
+      "close": 408.1700134277344
+    },
+    {
+      "timestamp": 1786132800,
+      "close": 408.19000244140625
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-07T16:16:38.000Z"
   },
-  "generatedAt": "2026-08-07T20:01:15.766Z"
+  "generatedAt": "2026-08-07T20:59:20.384Z"
 }

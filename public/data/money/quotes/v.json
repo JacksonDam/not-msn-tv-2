@@ -5,12 +5,12 @@
     "displaySymbol": "$V"
   },
   "name": "VISA INC.",
-  "price": 362.39,
+  "price": 362.5,
   "previousClose": 370.47,
   "dayHigh": 369.809,
   "dayLow": 361.52,
-  "change": -8.080000000000041,
-  "changePercent": -2.181013307420315,
+  "change": -7.970000000000027,
+  "changePercent": -2.1513212945717672,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1786132200,
-      "close": 362.1700134277344
+      "close": 362.1600036621094
     },
     {
       "timestamp": 1786132500,
-      "close": 362.3900146484375
+      "close": 362.3999938964844
+    },
+    {
+      "timestamp": 1786132800,
+      "close": 362.5
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-07T18:18:03.000Z"
   },
-  "generatedAt": "2026-08-07T20:01:24.832Z"
+  "generatedAt": "2026-08-07T20:59:30.534Z"
 }

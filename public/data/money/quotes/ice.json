@@ -5,12 +5,12 @@
     "displaySymbol": "$ICE"
   },
   "name": "INTERCONTINENTAL EXCHANGE, INC.",
-  "price": 150.29,
+  "price": 150.3,
   "previousClose": 149.75,
   "dayHigh": 153.32,
   "dayLow": 149.91,
-  "change": 0.539999999999992,
-  "changePercent": 0.36060100166944375,
+  "change": 0.5500000000000114,
+  "changePercent": 0.3672787979966687,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1786132200,
-      "close": 150.36749267578125
+      "close": 150.36000061035156
     },
     {
       "timestamp": 1786132500,
       "close": 150.2899932861328
+    },
+    {
+      "timestamp": 1786132800,
+      "close": 150.3000030517578
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "CNW Group",
     "publishedAt": "2026-08-07T12:55:00.000Z"
   },
-  "generatedAt": "2026-08-07T20:00:39.062Z"
+  "generatedAt": "2026-08-07T20:58:45.558Z"
 }
