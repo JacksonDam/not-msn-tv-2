@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 95.47,
+  "price": 95.2,
   "previousClose": 94.7,
-  "dayHigh": 95.583,
+  "dayHigh": 96.045,
   "dayLow": 94.31,
-  "change": 0.769999999999996,
-  "changePercent": 0.813093980992604,
+  "change": 0.5,
+  "changePercent": 0.5279831045406547,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -21,11 +21,83 @@
     },
     {
       "timestamp": 1786109700,
-      "close": 95.5
+      "close": 95.47000122070312
     },
     {
-      "timestamp": 1786109856,
-      "close": 95.47000122070312
+      "timestamp": 1786110000,
+      "close": 95.29000091552734
+    },
+    {
+      "timestamp": 1786110300,
+      "close": 95.18000030517578
+    },
+    {
+      "timestamp": 1786110600,
+      "close": 95.37000274658203
+    },
+    {
+      "timestamp": 1786110900,
+      "close": 95.53500366210938
+    },
+    {
+      "timestamp": 1786111200,
+      "close": 95.56999969482422
+    },
+    {
+      "timestamp": 1786111500,
+      "close": 95.7300033569336
+    },
+    {
+      "timestamp": 1786111800,
+      "close": 95.86849975585938
+    },
+    {
+      "timestamp": 1786112100,
+      "close": 95.87999725341797
+    },
+    {
+      "timestamp": 1786112400,
+      "close": 95.91999816894531
+    },
+    {
+      "timestamp": 1786112700,
+      "close": 95.96499633789062
+    },
+    {
+      "timestamp": 1786113000,
+      "close": 95.83000183105469
+    },
+    {
+      "timestamp": 1786113300,
+      "close": 95.70999908447266
+    },
+    {
+      "timestamp": 1786113600,
+      "close": 95.83000183105469
+    },
+    {
+      "timestamp": 1786113900,
+      "close": 95.70999908447266
+    },
+    {
+      "timestamp": 1786114200,
+      "close": 95.56999969482422
+    },
+    {
+      "timestamp": 1786114500,
+      "close": 95.4749984741211
+    },
+    {
+      "timestamp": 1786114800,
+      "close": 95.2300033569336
+    },
+    {
+      "timestamp": 1786115100,
+      "close": 95.19999694824219
+    },
+    {
+      "timestamp": 1786115348,
+      "close": 95.19999694824219
     }
   ],
   "news": {
@@ -33,5 +105,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-08-05T20:05:00.000Z"
   },
-  "generatedAt": "2026-08-07T13:38:46.846Z"
+  "generatedAt": "2026-08-07T15:09:19.067Z"
 }
