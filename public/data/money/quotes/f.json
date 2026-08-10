@@ -5,12 +5,12 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 14.015,
+  "price": 14,
   "previousClose": 13.98,
   "dayHigh": 14.07,
   "dayLow": 13.76,
-  "change": 0.03500000000000014,
-  "changePercent": 0.2503576537911312,
+  "change": 0.019999999999999574,
+  "changePercent": 0.14306151645207132,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -326,6 +326,10 @@
     {
       "timestamp": 1786391700,
       "close": 14.015000343322754
+    },
+    {
+      "timestamp": 1786392000,
+      "close": 14
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "CNW Group",
     "publishedAt": "2026-08-10T15:14:00.000Z"
   },
-  "generatedAt": "2026-08-10T20:03:58.800Z"
+  "generatedAt": "2026-08-10T21:02:50.223Z"
 }

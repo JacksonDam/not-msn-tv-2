@@ -5,12 +5,12 @@
     "displaySymbol": "$EQR"
   },
   "name": "EQUITY RESIDENTIAL",
-  "price": 65.835,
+  "price": 65.83,
   "previousClose": 67.07,
   "dayHigh": 66.66,
   "dayLow": 65.505,
-  "change": -1.2349999999999994,
-  "changePercent": -1.841359773371104,
+  "change": -1.2399999999999949,
+  "changePercent": -1.8488146712389968,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1786391700,
-      "close": 65.83499908447266
+      "close": 65.83000183105469
+    },
+    {
+      "timestamp": 1786392000,
+      "close": 65.83000183105469
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "CRE Daily",
     "publishedAt": "2026-08-06T05:50:45.000Z"
   },
-  "generatedAt": "2026-08-10T20:03:56.709Z"
+  "generatedAt": "2026-08-10T21:02:47.493Z"
 }

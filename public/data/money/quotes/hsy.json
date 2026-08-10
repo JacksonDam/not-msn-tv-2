@@ -5,12 +5,12 @@
     "displaySymbol": "$HSY"
   },
   "name": "THE HERSHEY COMPANY",
-  "price": 182.805,
+  "price": 182.75,
   "previousClose": 182.35,
   "dayHigh": 182.85,
   "dayLow": 180.21,
-  "change": 0.4550000000000125,
-  "changePercent": 0.2495201535508706,
+  "change": 0.4000000000000057,
+  "changePercent": 0.21935837674801517,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1786391700,
-      "close": 182.80499267578125
+      "close": 182.75
+    },
+    {
+      "timestamp": 1786392000,
+      "close": 182.75
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-10T17:04:27.000Z"
   },
-  "generatedAt": "2026-08-10T20:04:06.786Z"
+  "generatedAt": "2026-08-10T21:02:59.781Z"
 }

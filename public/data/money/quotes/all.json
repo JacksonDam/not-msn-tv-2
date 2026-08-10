@@ -5,12 +5,12 @@
     "displaySymbol": "$ALL"
   },
   "name": "THE ALLSTATE CORPORATION",
-  "price": 269.68,
+  "price": 269.67,
   "previousClose": 267,
   "dayHigh": 271.634,
   "dayLow": 262.02,
-  "change": 2.680000000000007,
-  "changePercent": 1.0037453183520624,
+  "change": 2.670000000000016,
+  "changePercent": 1.000000000000006,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1786391700,
-      "close": 269.67999267578125
+      "close": 269.75
+    },
+    {
+      "timestamp": 1786392000,
+      "close": 269.6700134277344
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-10T13:17:10.000Z"
   },
-  "generatedAt": "2026-08-10T20:03:33.880Z"
+  "generatedAt": "2026-08-10T21:02:20.396Z"
 }
