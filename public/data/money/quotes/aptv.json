@@ -5,12 +5,12 @@
     "displaySymbol": "$APTV"
   },
   "name": "APTIV PLC",
-  "price": 49.505,
+  "price": 49.565,
   "previousClose": 49.55,
   "dayHigh": 49.89,
   "dayLow": 48.6,
-  "change": -0.0449999999999946,
-  "changePercent": -0.09081735620584178,
+  "change": 0.015000000000000568,
+  "changePercent": 0.030272452068618706,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -233,11 +233,67 @@
     },
     {
       "timestamp": 1786384800,
+      "close": 49.525001525878906
+    },
+    {
+      "timestamp": 1786385100,
+      "close": 49.59000015258789
+    },
+    {
+      "timestamp": 1786385400,
+      "close": 49.53499984741211
+    },
+    {
+      "timestamp": 1786385700,
+      "close": 49.560001373291016
+    },
+    {
+      "timestamp": 1786386000,
+      "close": 49.52000045776367
+    },
+    {
+      "timestamp": 1786386300,
+      "close": 49.4900016784668
+    },
+    {
+      "timestamp": 1786386600,
+      "close": 49.540000915527344
+    },
+    {
+      "timestamp": 1786386900,
+      "close": 49.47999954223633
+    },
+    {
+      "timestamp": 1786387200,
       "close": 49.470001220703125
     },
     {
-      "timestamp": 1786384962,
-      "close": 49.505001068115234
+      "timestamp": 1786387500,
+      "close": 49.47999954223633
+    },
+    {
+      "timestamp": 1786387800,
+      "close": 49.43000030517578
+    },
+    {
+      "timestamp": 1786388100,
+      "close": 49.43000030517578
+    },
+    {
+      "timestamp": 1786388400,
+      "close": 49.540000915527344
+    },
+    {
+      "timestamp": 1786388700,
+      "close": 49.540000915527344
+    },
+    {
+      "timestamp": 1786389000,
+      "close": 49.56999969482422
+    },
+    {
+      "timestamp": 1786389331,
+      "close": 49.564998626708984
     }
   ],
   "news": {
@@ -245,5 +301,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-10T13:01:44.000Z"
   },
-  "generatedAt": "2026-08-10T18:02:57.570Z"
+  "generatedAt": "2026-08-10T19:16:08.588Z"
 }
