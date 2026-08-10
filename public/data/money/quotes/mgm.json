@@ -5,12 +5,12 @@
     "displaySymbol": "$MGM"
   },
   "name": "MGM RESORTS INTERNATIONAL",
-  "price": 43.55,
+  "price": 43.35,
   "previousClose": 44.47,
   "dayHigh": 44.23,
-  "dayLow": 43.52,
-  "change": -0.9200000000000017,
-  "changePercent": -2.068810434000454,
+  "dayLow": 43.32,
+  "change": -1.1199999999999974,
+  "changePercent": -2.518551832696194,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,11 +293,39 @@
     },
     {
       "timestamp": 1786389300,
+      "close": 43.52000045776367
+    },
+    {
+      "timestamp": 1786389600,
+      "close": 43.59000015258789
+    },
+    {
+      "timestamp": 1786389900,
+      "close": 43.540000915527344
+    },
+    {
+      "timestamp": 1786390200,
       "close": 43.560001373291016
     },
     {
-      "timestamp": 1786389397,
+      "timestamp": 1786390500,
       "close": 43.54999923706055
+    },
+    {
+      "timestamp": 1786390800,
+      "close": 43.525001525878906
+    },
+    {
+      "timestamp": 1786391100,
+      "close": 43.459999084472656
+    },
+    {
+      "timestamp": 1786391400,
+      "close": 43.43000030517578
+    },
+    {
+      "timestamp": 1786391700,
+      "close": 43.349998474121094
     }
   ],
   "news": {
@@ -305,5 +333,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-08-08T00:33:24.000Z"
   },
-  "generatedAt": "2026-08-10T19:16:43.601Z"
+  "generatedAt": "2026-08-10T20:04:17.812Z"
 }

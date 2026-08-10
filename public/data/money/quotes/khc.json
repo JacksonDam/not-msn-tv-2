@@ -5,12 +5,12 @@
     "displaySymbol": "$KHC"
   },
   "name": "THE KRAFT HEINZ COMPANY",
-  "price": 24.765,
+  "price": 24.93,
   "previousClose": 25.32,
   "dayHigh": 25.55,
   "dayLow": 24.681,
-  "change": -0.5549999999999997,
-  "changePercent": -2.191943127962084,
+  "change": -0.39000000000000057,
+  "changePercent": -1.5402843601895757,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1786389300,
+      "close": 24.770000457763672
+    },
+    {
+      "timestamp": 1786389600,
+      "close": 24.795000076293945
+    },
+    {
+      "timestamp": 1786389900,
+      "close": 24.764999389648438
+    },
+    {
+      "timestamp": 1786390200,
+      "close": 24.774999618530273
+    },
+    {
+      "timestamp": 1786390500,
       "close": 24.7549991607666
     },
     {
-      "timestamp": 1786389395,
-      "close": 24.764999389648438
+      "timestamp": 1786390800,
+      "close": 24.739999771118164
+    },
+    {
+      "timestamp": 1786391100,
+      "close": 24.704999923706055
+    },
+    {
+      "timestamp": 1786391400,
+      "close": 24.829999923706055
+    },
+    {
+      "timestamp": 1786391700,
+      "close": 24.94499969482422
+    },
+    {
+      "timestamp": 1786392000,
+      "close": 24.93000030517578
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-10T17:04:27.000Z"
   },
-  "generatedAt": "2026-08-10T19:16:38.568Z"
+  "generatedAt": "2026-08-10T20:04:11.658Z"
 }

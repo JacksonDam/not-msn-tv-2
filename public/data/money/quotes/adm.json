@@ -5,12 +5,12 @@
     "displaySymbol": "$ADM"
   },
   "name": "ARCHER-DANIELS-MIDLAND COMPANY",
-  "price": 80.545,
+  "price": 80.5,
   "previousClose": 76.59,
-  "dayHigh": 80.6,
+  "dayHigh": 80.64,
   "dayLow": 76.83,
-  "change": 3.9549999999999983,
-  "changePercent": 5.1638595116855965,
+  "change": 3.9099999999999966,
+  "changePercent": 5.105105105105101,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -285,15 +285,47 @@
     },
     {
       "timestamp": 1786388700,
-      "close": 80.54000091552734
+      "close": 80.52999877929688
     },
     {
       "timestamp": 1786389000,
-      "close": 80.55999755859375
+      "close": 80.55000305175781
     },
     {
-      "timestamp": 1786389343,
-      "close": 80.54499816894531
+      "timestamp": 1786389300,
+      "close": 80.62999725341797
+    },
+    {
+      "timestamp": 1786389600,
+      "close": 80.55500030517578
+    },
+    {
+      "timestamp": 1786389900,
+      "close": 80.43000030517578
+    },
+    {
+      "timestamp": 1786390200,
+      "close": 80.37000274658203
+    },
+    {
+      "timestamp": 1786390500,
+      "close": 80.40280151367188
+    },
+    {
+      "timestamp": 1786390800,
+      "close": 80.45999908447266
+    },
+    {
+      "timestamp": 1786391100,
+      "close": 80.51000213623047
+    },
+    {
+      "timestamp": 1786391400,
+      "close": 80.33499908447266
+    },
+    {
+      "timestamp": 1786391700,
+      "close": 80.5
     }
   ],
   "news": {
@@ -301,5 +333,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-10T11:46:36.000Z"
   },
-  "generatedAt": "2026-08-10T19:16:04.527Z"
+  "generatedAt": "2026-08-10T20:03:31.730Z"
 }

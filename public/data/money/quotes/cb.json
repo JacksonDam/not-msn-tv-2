@@ -5,12 +5,12 @@
     "displaySymbol": "$CB"
   },
   "name": "CHUBB LIMITED",
-  "price": 345.74,
+  "price": 348.34,
   "previousClose": 350.31,
   "dayHigh": 351.25,
-  "dayLow": 345.73,
-  "change": -4.569999999999993,
-  "changePercent": -1.3045588193314475,
+  "dayLow": 345.5,
+  "change": -1.9700000000000273,
+  "changePercent": -0.5623590534098448,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,11 +293,39 @@
     },
     {
       "timestamp": 1786389300,
+      "close": 346.0400085449219
+    },
+    {
+      "timestamp": 1786389600,
+      "close": 345.8900146484375
+    },
+    {
+      "timestamp": 1786389900,
+      "close": 345.6300048828125
+    },
+    {
+      "timestamp": 1786390200,
       "close": 345.82000732421875
     },
     {
-      "timestamp": 1786389368,
-      "close": 345.739990234375
+      "timestamp": 1786390500,
+      "close": 345.989990234375
+    },
+    {
+      "timestamp": 1786390800,
+      "close": 346.07501220703125
+    },
+    {
+      "timestamp": 1786391100,
+      "close": 346.135009765625
+    },
+    {
+      "timestamp": 1786391400,
+      "close": 347.19500732421875
+    },
+    {
+      "timestamp": 1786391700,
+      "close": 348.3399963378906
     }
   ],
   "news": {
@@ -305,5 +333,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-08-10T15:49:00.000Z"
   },
-  "generatedAt": "2026-08-10T19:16:13.892Z"
+  "generatedAt": "2026-08-10T20:03:42.779Z"
 }

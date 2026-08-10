@@ -5,12 +5,12 @@
     "displaySymbol": "$NDSN"
   },
   "name": "NORDSON CORPORATION",
-  "price": 308.79,
+  "price": 308.685,
   "previousClose": 310.11,
   "dayHigh": 310.44,
   "dayLow": 307.1,
-  "change": -1.3199999999999932,
-  "changePercent": -0.42565541259552836,
+  "change": -1.4250000000000114,
+  "changePercent": -0.4595143658701788,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -285,11 +285,43 @@
     },
     {
       "timestamp": 1786389300,
+      "close": 308.8800048828125
+    },
+    {
+      "timestamp": 1786389600,
       "close": 308.80999755859375
     },
     {
-      "timestamp": 1786389377,
-      "close": 308.7900085449219
+      "timestamp": 1786389900,
+      "close": 308.7149963378906
+    },
+    {
+      "timestamp": 1786390200,
+      "close": 308.6600036621094
+    },
+    {
+      "timestamp": 1786390500,
+      "close": 308.8399963378906
+    },
+    {
+      "timestamp": 1786390800,
+      "close": 308.5199890136719
+    },
+    {
+      "timestamp": 1786391100,
+      "close": 308.5199890136719
+    },
+    {
+      "timestamp": 1786391400,
+      "close": 308.2099914550781
+    },
+    {
+      "timestamp": 1786391700,
+      "close": 308.80999755859375
+    },
+    {
+      "timestamp": 1786392000,
+      "close": 308.68499755859375
     }
   ],
   "news": {
@@ -297,5 +329,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-02T13:30:07.000Z"
   },
-  "generatedAt": "2026-08-10T19:16:46.342Z"
+  "generatedAt": "2026-08-10T20:04:21.323Z"
 }
