@@ -5,12 +5,12 @@
     "displaySymbol": "$LIN"
   },
   "name": "LINDE PLC",
-  "price": 489.21,
+  "price": 488.885,
   "previousClose": 489.98,
   "dayHigh": 490.45,
   "dayLow": 487.02,
-  "change": -0.7700000000000387,
-  "changePercent": -0.1571492713988405,
+  "change": -1.0950000000000273,
+  "changePercent": -0.22347850932691685,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -101,11 +101,51 @@
     },
     {
       "timestamp": 1786374900,
-      "close": 489.1300048828125
+      "close": 489.1700134277344
     },
     {
-      "timestamp": 1786375019,
-      "close": 489.2099914550781
+      "timestamp": 1786375200,
+      "close": 488.625
+    },
+    {
+      "timestamp": 1786375500,
+      "close": 488.20001220703125
+    },
+    {
+      "timestamp": 1786375800,
+      "close": 488.9549865722656
+    },
+    {
+      "timestamp": 1786376100,
+      "close": 488.92999267578125
+    },
+    {
+      "timestamp": 1786376400,
+      "close": 488.7049865722656
+    },
+    {
+      "timestamp": 1786376700,
+      "close": 488.4150085449219
+    },
+    {
+      "timestamp": 1786377000,
+      "close": 488.3299865722656
+    },
+    {
+      "timestamp": 1786377300,
+      "close": 488.44500732421875
+    },
+    {
+      "timestamp": 1786377600,
+      "close": 487.9200134277344
+    },
+    {
+      "timestamp": 1786377900,
+      "close": 488.6300048828125
+    },
+    {
+      "timestamp": 1786378257,
+      "close": 488.885009765625
     }
   ],
   "news": {
@@ -113,5 +153,5 @@
     "publisher": "Argus Research",
     "publishedAt": "2026-08-10T11:54:36.000Z"
   },
-  "generatedAt": "2026-08-10T15:17:03.493Z"
+  "generatedAt": "2026-08-10T16:11:09.969Z"
 }
