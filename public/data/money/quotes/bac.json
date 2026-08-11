@@ -5,12 +5,12 @@
     "displaySymbol": "$BAC"
   },
   "name": "BANK OF AMERICA CORPORATION",
-  "price": 64.01,
+  "price": 64,
   "previousClose": 63.86,
   "dayHigh": 64.27,
   "dayLow": 63.74,
-  "change": 0.15000000000000568,
-  "changePercent": 0.23488881929221056,
+  "change": 0.14000000000000057,
+  "changePercent": 0.21922956467272248,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1786475700,
+      "close": 64.0250015258789
+    },
+    {
+      "timestamp": 1786476000,
+      "close": 64.0250015258789
+    },
+    {
+      "timestamp": 1786476300,
       "close": 64.00499725341797
     },
     {
-      "timestamp": 1786475965,
-      "close": 64.01010131835938
+      "timestamp": 1786476600,
+      "close": 64.00499725341797
+    },
+    {
+      "timestamp": 1786476900,
+      "close": 63.94499969482422
+    },
+    {
+      "timestamp": 1786477200,
+      "close": 63.95500183105469
+    },
+    {
+      "timestamp": 1786477500,
+      "close": 63.981998443603516
+    },
+    {
+      "timestamp": 1786477800,
+      "close": 63.8650016784668
+    },
+    {
+      "timestamp": 1786478100,
+      "close": 64
+    },
+    {
+      "timestamp": 1786478400,
+      "close": 64
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Barrons.com",
     "publishedAt": "2026-08-11T16:08:00.000Z"
   },
-  "generatedAt": "2026-08-11T19:19:28.430Z"
+  "generatedAt": "2026-08-11T21:03:52.103Z"
 }

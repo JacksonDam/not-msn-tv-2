@@ -5,12 +5,12 @@
     "displaySymbol": "$POOL"
   },
   "name": "POOL CORPORATION",
-  "price": 201.38,
+  "price": 201.5,
   "previousClose": 199.98,
   "dayHigh": 204.99,
   "dayLow": 199.42,
-  "change": 1.4000000000000057,
-  "changePercent": 0.7000700070007029,
+  "change": 1.5200000000000102,
+  "changePercent": 0.7600760076007652,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -293,7 +293,39 @@
     },
     {
       "timestamp": 1786476000,
-      "close": 201.3800048828125
+      "close": 201.55999755859375
+    },
+    {
+      "timestamp": 1786476300,
+      "close": 201.27000427246094
+    },
+    {
+      "timestamp": 1786476600,
+      "close": 201.32000732421875
+    },
+    {
+      "timestamp": 1786476900,
+      "close": 201.63999938964844
+    },
+    {
+      "timestamp": 1786477200,
+      "close": 201.50999450683594
+    },
+    {
+      "timestamp": 1786477500,
+      "close": 201.9250030517578
+    },
+    {
+      "timestamp": 1786477800,
+      "close": 202.47000122070312
+    },
+    {
+      "timestamp": 1786478100,
+      "close": 201.2899932861328
+    },
+    {
+      "timestamp": 1786478400,
+      "close": 201.5
     }
   ],
   "news": {
@@ -301,5 +333,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-08-04T20:05:00.000Z"
   },
-  "generatedAt": "2026-08-11T19:20:12.029Z"
+  "generatedAt": "2026-08-11T21:04:48.614Z"
 }

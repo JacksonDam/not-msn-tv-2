@@ -5,12 +5,12 @@
     "displaySymbol": "$CMCSA"
   },
   "name": "COMCAST CORPORATION",
-  "price": 25.66,
+  "price": 25.65,
   "previousClose": 25.2,
-  "dayHigh": 25.66,
+  "dayHigh": 25.675,
   "dayLow": 25.04,
-  "change": 0.46000000000000085,
-  "changePercent": 1.825396825396829,
+  "change": 0.4499999999999993,
+  "changePercent": 1.785714285714283,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1786475700,
+      "close": 25.665000915527344
+    },
+    {
+      "timestamp": 1786476000,
+      "close": 25.655000686645508
+    },
+    {
+      "timestamp": 1786476300,
+      "close": 25.645000457763672
+    },
+    {
+      "timestamp": 1786476600,
+      "close": 25.655000686645508
+    },
+    {
+      "timestamp": 1786476900,
       "close": 25.635000228881836
     },
     {
-      "timestamp": 1786475972,
-      "close": 25.65999984741211
+      "timestamp": 1786477200,
+      "close": 25.649900436401367
+    },
+    {
+      "timestamp": 1786477500,
+      "close": 25.594999313354492
+    },
+    {
+      "timestamp": 1786477800,
+      "close": 25.604999542236328
+    },
+    {
+      "timestamp": 1786478100,
+      "close": 25.665000915527344
+    },
+    {
+      "timestamp": 1786478400,
+      "close": 25.649999618530273
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-08-11T16:14:35.000Z"
   },
-  "generatedAt": "2026-08-11T19:19:34.691Z"
+  "generatedAt": "2026-08-11T21:04:00.589Z"
 }
