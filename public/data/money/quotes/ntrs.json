@@ -5,12 +5,12 @@
     "displaySymbol": "$NTRS"
   },
   "name": "NORTHERN TRUST CORPORATION",
-  "price": 188.89,
+  "price": 187.555,
   "previousClose": 187.86,
   "dayHigh": 189.65,
   "dayLow": 187.27,
-  "change": 1.0299999999999727,
-  "changePercent": 0.5482806345150498,
+  "change": -0.3050000000000068,
+  "changePercent": -0.16235494517194016,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -233,11 +233,67 @@
     },
     {
       "timestamp": 1786471500,
-      "close": 188.89999389648438
+      "close": 188.92999267578125
     },
     {
-      "timestamp": 1786471633,
-      "close": 188.88999938964844
+      "timestamp": 1786471800,
+      "close": 188.97000122070312
+    },
+    {
+      "timestamp": 1786472100,
+      "close": 188.69000244140625
+    },
+    {
+      "timestamp": 1786472400,
+      "close": 188.72000122070312
+    },
+    {
+      "timestamp": 1786472700,
+      "close": 188.55999755859375
+    },
+    {
+      "timestamp": 1786473000,
+      "close": 188.5
+    },
+    {
+      "timestamp": 1786473300,
+      "close": 188.57000732421875
+    },
+    {
+      "timestamp": 1786473600,
+      "close": 188.33999633789062
+    },
+    {
+      "timestamp": 1786473900,
+      "close": 188.16000366210938
+    },
+    {
+      "timestamp": 1786474200,
+      "close": 188.10000610351562
+    },
+    {
+      "timestamp": 1786474500,
+      "close": 188.10000610351562
+    },
+    {
+      "timestamp": 1786474800,
+      "close": 187.75689697265625
+    },
+    {
+      "timestamp": 1786475100,
+      "close": 187.5
+    },
+    {
+      "timestamp": 1786475400,
+      "close": 187.44000244140625
+    },
+    {
+      "timestamp": 1786475700,
+      "close": 187.48500061035156
+    },
+    {
+      "timestamp": 1786475990,
+      "close": 187.55499267578125
     }
   ],
   "news": {
@@ -245,5 +301,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-11T15:28:31.000Z"
   },
-  "generatedAt": "2026-08-11T18:07:28.396Z"
+  "generatedAt": "2026-08-11T19:20:07.189Z"
 }

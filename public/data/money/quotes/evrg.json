@@ -5,12 +5,12 @@
     "displaySymbol": "$EVRG"
   },
   "name": "EVERGY, INC.",
-  "price": 82.15,
+  "price": 82.16,
   "previousClose": 82.09,
   "dayHigh": 82.82,
   "dayLow": 81.44,
-  "change": 0.060000000000002274,
-  "changePercent": 0.0730905104154005,
+  "change": 0.06999999999999318,
+  "changePercent": 0.08527226215128904,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -237,11 +237,67 @@
     },
     {
       "timestamp": 1786471500,
+      "close": 82.19000244140625
+    },
+    {
+      "timestamp": 1786471800,
+      "close": 82.2300033569336
+    },
+    {
+      "timestamp": 1786472100,
+      "close": 82.16000366210938
+    },
+    {
+      "timestamp": 1786472400,
+      "close": 82.2249984741211
+    },
+    {
+      "timestamp": 1786472700,
+      "close": 82.16000366210938
+    },
+    {
+      "timestamp": 1786473000,
       "close": 82.11000061035156
     },
     {
-      "timestamp": 1786471607,
-      "close": 82.1500015258789
+      "timestamp": 1786473300,
+      "close": 82.12999725341797
+    },
+    {
+      "timestamp": 1786473600,
+      "close": 82.16500091552734
+    },
+    {
+      "timestamp": 1786473900,
+      "close": 82.08000183105469
+    },
+    {
+      "timestamp": 1786474200,
+      "close": 82.12999725341797
+    },
+    {
+      "timestamp": 1786474500,
+      "close": 82.11000061035156
+    },
+    {
+      "timestamp": 1786474800,
+      "close": 82.18000030517578
+    },
+    {
+      "timestamp": 1786475100,
+      "close": 82.25499725341797
+    },
+    {
+      "timestamp": 1786475400,
+      "close": 82.26000213623047
+    },
+    {
+      "timestamp": 1786475700,
+      "close": 82.18000030517578
+    },
+    {
+      "timestamp": 1786475975,
+      "close": 82.16000366210938
     }
   ],
   "news": {
@@ -249,5 +305,5 @@
     "publisher": "Utility Dive",
     "publishedAt": "2026-08-11T10:50:23.000Z"
   },
-  "generatedAt": "2026-08-11T18:06:57.670Z"
+  "generatedAt": "2026-08-11T19:19:45.508Z"
 }
