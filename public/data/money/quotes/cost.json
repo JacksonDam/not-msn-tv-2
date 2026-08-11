@@ -5,337 +5,37 @@
     "displaySymbol": "$COST"
   },
   "name": "COSTCO WHOLESALE CORPORATION",
-  "price": 952.75,
-  "previousClose": 947.82,
-  "dayHigh": 952.88,
-  "dayLow": 940.56,
-  "change": 4.92999999999995,
-  "changePercent": 0.5201409550336509,
+  "price": 952.84,
+  "previousClose": 952.75,
+  "dayHigh": 954.7,
+  "dayLow": 947.76,
+  "change": 0.09000000000003183,
+  "changePercent": 0.009446339543430264,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1786368600,
-      "close": 944.4450073242188
+      "timestamp": 1786455000,
+      "close": 951.0999755859375
     },
     {
-      "timestamp": 1786368900,
-      "close": 946.10498046875
+      "timestamp": 1786455300,
+      "close": 954.3049926757812
     },
     {
-      "timestamp": 1786369200,
-      "close": 944.7000122070312
+      "timestamp": 1786455600,
+      "close": 953.217529296875
     },
     {
-      "timestamp": 1786369500,
-      "close": 942.4400024414062
-    },
-    {
-      "timestamp": 1786369800,
-      "close": 946.97998046875
-    },
-    {
-      "timestamp": 1786370100,
-      "close": 944.4149780273438
-    },
-    {
-      "timestamp": 1786370400,
-      "close": 944.6649780273438
-    },
-    {
-      "timestamp": 1786370700,
-      "close": 943.8599853515625
-    },
-    {
-      "timestamp": 1786371000,
-      "close": 941.25
-    },
-    {
-      "timestamp": 1786371300,
-      "close": 942.5599975585938
-    },
-    {
-      "timestamp": 1786371600,
-      "close": 942.614990234375
-    },
-    {
-      "timestamp": 1786371900,
-      "close": 942.5
-    },
-    {
-      "timestamp": 1786372200,
-      "close": 943.02001953125
-    },
-    {
-      "timestamp": 1786372500,
-      "close": 944.1099853515625
-    },
-    {
-      "timestamp": 1786372800,
-      "close": 945
-    },
-    {
-      "timestamp": 1786373100,
-      "close": 944.655029296875
-    },
-    {
-      "timestamp": 1786373400,
-      "close": 945.5
-    },
-    {
-      "timestamp": 1786373700,
-      "close": 947.0449829101562
-    },
-    {
-      "timestamp": 1786374000,
-      "close": 946.3900146484375
-    },
-    {
-      "timestamp": 1786374300,
-      "close": 945.47998046875
-    },
-    {
-      "timestamp": 1786374600,
-      "close": 945.27001953125
-    },
-    {
-      "timestamp": 1786374900,
-      "close": 944.7349853515625
-    },
-    {
-      "timestamp": 1786375200,
-      "close": 943.7750244140625
-    },
-    {
-      "timestamp": 1786375500,
-      "close": 943.0650024414062
-    },
-    {
-      "timestamp": 1786375800,
-      "close": 943.2000122070312
-    },
-    {
-      "timestamp": 1786376100,
-      "close": 944.280029296875
-    },
-    {
-      "timestamp": 1786376400,
-      "close": 943.3660888671875
-    },
-    {
-      "timestamp": 1786376700,
-      "close": 943.530029296875
-    },
-    {
-      "timestamp": 1786377000,
-      "close": 943.9000244140625
-    },
-    {
-      "timestamp": 1786377300,
-      "close": 944.3699951171875
-    },
-    {
-      "timestamp": 1786377600,
-      "close": 944.8400268554688
-    },
-    {
-      "timestamp": 1786377900,
-      "close": 945.1749877929688
-    },
-    {
-      "timestamp": 1786378200,
-      "close": 945.844970703125
-    },
-    {
-      "timestamp": 1786378500,
-      "close": 945.989990234375
-    },
-    {
-      "timestamp": 1786378800,
-      "close": 945.1486206054688
-    },
-    {
-      "timestamp": 1786379100,
-      "close": 946.0800170898438
-    },
-    {
-      "timestamp": 1786379400,
-      "close": 946.030029296875
-    },
-    {
-      "timestamp": 1786379700,
-      "close": 946.510009765625
-    },
-    {
-      "timestamp": 1786380000,
-      "close": 946.75
-    },
-    {
-      "timestamp": 1786380300,
-      "close": 947.1900024414062
-    },
-    {
-      "timestamp": 1786380600,
-      "close": 947.719970703125
-    },
-    {
-      "timestamp": 1786380900,
-      "close": 947.625
-    },
-    {
-      "timestamp": 1786381200,
-      "close": 946.9199829101562
-    },
-    {
-      "timestamp": 1786381500,
-      "close": 946.7050170898438
-    },
-    {
-      "timestamp": 1786381800,
-      "close": 946.5850219726562
-    },
-    {
-      "timestamp": 1786382100,
-      "close": 946.6041259765625
-    },
-    {
-      "timestamp": 1786382400,
-      "close": 946.75
-    },
-    {
-      "timestamp": 1786382700,
-      "close": 945.9099731445312
-    },
-    {
-      "timestamp": 1786383000,
-      "close": 946.614990234375
-    },
-    {
-      "timestamp": 1786383300,
-      "close": 947.719970703125
-    },
-    {
-      "timestamp": 1786383600,
-      "close": 948.5399780273438
-    },
-    {
-      "timestamp": 1786383900,
-      "close": 948.2747192382812
-    },
-    {
-      "timestamp": 1786384200,
-      "close": 949.719970703125
-    },
-    {
-      "timestamp": 1786384500,
-      "close": 949.8798828125
-    },
-    {
-      "timestamp": 1786384800,
-      "close": 949.9199829101562
-    },
-    {
-      "timestamp": 1786385100,
-      "close": 949.6099853515625
-    },
-    {
-      "timestamp": 1786385400,
-      "close": 950.114990234375
-    },
-    {
-      "timestamp": 1786385700,
-      "close": 949.9000244140625
-    },
-    {
-      "timestamp": 1786386000,
-      "close": 950.0399780273438
-    },
-    {
-      "timestamp": 1786386300,
-      "close": 949.7999877929688
-    },
-    {
-      "timestamp": 1786386600,
-      "close": 949.780029296875
-    },
-    {
-      "timestamp": 1786386900,
-      "close": 949.7899780273438
-    },
-    {
-      "timestamp": 1786387200,
-      "close": 949.6699829101562
-    },
-    {
-      "timestamp": 1786387500,
-      "close": 949.5960083007812
-    },
-    {
-      "timestamp": 1786387800,
-      "close": 949.4199829101562
-    },
-    {
-      "timestamp": 1786388100,
-      "close": 948.5599975585938
-    },
-    {
-      "timestamp": 1786388400,
-      "close": 948.532470703125
-    },
-    {
-      "timestamp": 1786388700,
-      "close": 948.6199951171875
-    },
-    {
-      "timestamp": 1786389000,
-      "close": 949.3350219726562
-    },
-    {
-      "timestamp": 1786389300,
-      "close": 949.3099975585938
-    },
-    {
-      "timestamp": 1786389600,
-      "close": 949.1300048828125
-    },
-    {
-      "timestamp": 1786389900,
-      "close": 944.9349975585938
-    },
-    {
-      "timestamp": 1786390200,
-      "close": 945.219970703125
-    },
-    {
-      "timestamp": 1786390500,
-      "close": 946.489990234375
-    },
-    {
-      "timestamp": 1786390800,
-      "close": 947.1199951171875
-    },
-    {
-      "timestamp": 1786391100,
-      "close": 946.75
-    },
-    {
-      "timestamp": 1786391400,
-      "close": 949.75
-    },
-    {
-      "timestamp": 1786391700,
-      "close": 952.6300048828125
-    },
-    {
-      "timestamp": 1786392000,
-      "close": 952.75
+      "timestamp": 1786455696,
+      "close": 952.8400268554688
     }
   ],
   "news": {
-    "title": "Should You Own Walmart for Its Dividend King Status or Costco for Its Special Dividend? Here's the Answer.",
-    "publisher": "Motley Fool",
-    "publishedAt": "2026-08-11T10:50:00.000Z"
+    "title": "Omada Health Touts Record Q2 as GLP-1 Demand Fuels Growth Strategy",
+    "publisher": "MarketBeat",
+    "publishedAt": "2026-08-11T13:04:37.000Z"
   },
-  "generatedAt": "2026-08-11T11:56:13.655Z"
+  "generatedAt": "2026-08-11T13:41:57.085Z"
 }
