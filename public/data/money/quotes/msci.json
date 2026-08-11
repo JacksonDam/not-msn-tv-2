@@ -5,19 +5,19 @@
     "displaySymbol": "$MSCI"
   },
   "name": "MSCI INC.",
-  "price": 560.44,
-  "previousClose": 563.035,
-  "dayHigh": 564.68,
+  "price": 562.76,
+  "previousClose": 563.08,
+  "dayHigh": 565.33,
   "dayLow": 558.805,
-  "change": -2.5949999999999136,
-  "changePercent": -0.46089497100533955,
+  "change": -0.32000000000005,
+  "changePercent": -0.056830290544869294,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1786455000,
-      "close": 562.1749877929688
+      "close": 561.969970703125
     },
     {
       "timestamp": 1786455300,
@@ -25,11 +25,87 @@
     },
     {
       "timestamp": 1786455600,
-      "close": 559.25
+      "close": 560.0599975585938
     },
     {
-      "timestamp": 1786455755,
-      "close": 560.4400024414062
+      "timestamp": 1786455900,
+      "close": 561.5700073242188
+    },
+    {
+      "timestamp": 1786456200,
+      "close": 563.5499877929688
+    },
+    {
+      "timestamp": 1786456500,
+      "close": 563.6599731445312
+    },
+    {
+      "timestamp": 1786456800,
+      "close": 564.6799926757812
+    },
+    {
+      "timestamp": 1786457100,
+      "close": 563.75
+    },
+    {
+      "timestamp": 1786457400,
+      "close": 563.3400268554688
+    },
+    {
+      "timestamp": 1786457700,
+      "close": 564.4400024414062
+    },
+    {
+      "timestamp": 1786458000,
+      "close": 563
+    },
+    {
+      "timestamp": 1786458300,
+      "close": 563.3499755859375
+    },
+    {
+      "timestamp": 1786458600,
+      "close": 563.4099731445312
+    },
+    {
+      "timestamp": 1786458900,
+      "close": 563.3599853515625
+    },
+    {
+      "timestamp": 1786459200,
+      "close": 563.7999877929688
+    },
+    {
+      "timestamp": 1786459500,
+      "close": 564.47998046875
+    },
+    {
+      "timestamp": 1786459800,
+      "close": 563.6900024414062
+    },
+    {
+      "timestamp": 1786460100,
+      "close": 564.5999755859375
+    },
+    {
+      "timestamp": 1786460400,
+      "close": 563.64501953125
+    },
+    {
+      "timestamp": 1786460700,
+      "close": 563.8150024414062
+    },
+    {
+      "timestamp": 1786461000,
+      "close": 563.1300048828125
+    },
+    {
+      "timestamp": 1786461300,
+      "close": 562.780029296875
+    },
+    {
+      "timestamp": 1786461395,
+      "close": 562.760009765625
     }
   ],
   "news": {
@@ -37,5 +113,5 @@
     "publisher": "Retail Insight Network",
     "publishedAt": "2026-08-11T09:08:18.000Z"
   },
-  "generatedAt": "2026-08-11T13:42:39.399Z"
+  "generatedAt": "2026-08-11T15:16:51.513Z"
 }
