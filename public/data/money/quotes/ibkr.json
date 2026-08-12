@@ -5,12 +5,12 @@
     "displaySymbol": "$IBKR"
   },
   "name": "INTERACTIVE BROKERS GROUP, INC.",
-  "price": 91.51,
+  "price": 92.6,
   "previousClose": 89.78,
-  "dayHigh": 91.8,
+  "dayHigh": 92.755,
   "dayLow": 90.84,
-  "change": 1.730000000000004,
-  "changePercent": 1.9269325016707552,
+  "change": 2.819999999999993,
+  "changePercent": 3.141011361104915,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -29,11 +29,79 @@
     },
     {
       "timestamp": 1786542300,
-      "close": 91.45999908447266
+      "close": 91.78500366210938
     },
     {
-      "timestamp": 1786542362,
-      "close": 91.51000213623047
+      "timestamp": 1786542600,
+      "close": 91.22000122070312
+    },
+    {
+      "timestamp": 1786542900,
+      "close": 91.55000305175781
+    },
+    {
+      "timestamp": 1786543200,
+      "close": 91.94000244140625
+    },
+    {
+      "timestamp": 1786543500,
+      "close": 91.80500030517578
+    },
+    {
+      "timestamp": 1786543800,
+      "close": 91.86519622802734
+    },
+    {
+      "timestamp": 1786544100,
+      "close": 91.93499755859375
+    },
+    {
+      "timestamp": 1786544400,
+      "close": 91.91000366210938
+    },
+    {
+      "timestamp": 1786544700,
+      "close": 91.96499633789062
+    },
+    {
+      "timestamp": 1786545000,
+      "close": 91.87000274658203
+    },
+    {
+      "timestamp": 1786545300,
+      "close": 92.02999877929688
+    },
+    {
+      "timestamp": 1786545600,
+      "close": 92.18150329589844
+    },
+    {
+      "timestamp": 1786545900,
+      "close": 92.1449966430664
+    },
+    {
+      "timestamp": 1786546200,
+      "close": 91.82499694824219
+    },
+    {
+      "timestamp": 1786546500,
+      "close": 92.02100372314453
+    },
+    {
+      "timestamp": 1786546800,
+      "close": 92.21499633789062
+    },
+    {
+      "timestamp": 1786547100,
+      "close": 92.63999938964844
+    },
+    {
+      "timestamp": 1786547400,
+      "close": 92.69000244140625
+    },
+    {
+      "timestamp": 1786547678,
+      "close": 92.5999984741211
     }
   ],
   "news": {
@@ -41,5 +109,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-11T14:13:00.000Z"
   },
-  "generatedAt": "2026-08-12T13:46:10.225Z"
+  "generatedAt": "2026-08-12T15:14:55.398Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$NDSN"
   },
   "name": "NORDSON CORPORATION",
-  "price": 313.04,
+  "price": 311.06,
   "previousClose": 311.36,
   "dayHigh": 314.56,
-  "dayLow": 312.58,
-  "change": 1.6800000000000068,
-  "changePercent": 0.5395683453237432,
+  "dayLow": 309.43,
+  "change": -0.30000000000001137,
+  "changePercent": -0.09635149023638596,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -28,8 +28,80 @@
       "close": 312.5899963378906
     },
     {
-      "timestamp": 1786542336,
-      "close": 313.0400085449219
+      "timestamp": 1786542300,
+      "close": 313.0299987792969
+    },
+    {
+      "timestamp": 1786542600,
+      "close": 312.9800109863281
+    },
+    {
+      "timestamp": 1786542900,
+      "close": 312.7200012207031
+    },
+    {
+      "timestamp": 1786543200,
+      "close": 312.17999267578125
+    },
+    {
+      "timestamp": 1786543500,
+      "close": 311.45001220703125
+    },
+    {
+      "timestamp": 1786543800,
+      "close": 310.6600036621094
+    },
+    {
+      "timestamp": 1786544100,
+      "close": 311.3349914550781
+    },
+    {
+      "timestamp": 1786544400,
+      "close": 310.8800048828125
+    },
+    {
+      "timestamp": 1786544700,
+      "close": 310.4200134277344
+    },
+    {
+      "timestamp": 1786545000,
+      "close": 309.7900085449219
+    },
+    {
+      "timestamp": 1786545300,
+      "close": 309.6600036621094
+    },
+    {
+      "timestamp": 1786545600,
+      "close": 310.114990234375
+    },
+    {
+      "timestamp": 1786545900,
+      "close": 309.7799987792969
+    },
+    {
+      "timestamp": 1786546200,
+      "close": 309.6000061035156
+    },
+    {
+      "timestamp": 1786546500,
+      "close": 309.80999755859375
+    },
+    {
+      "timestamp": 1786546800,
+      "close": 309.9049987792969
+    },
+    {
+      "timestamp": 1786547100,
+      "close": 310.4750061035156
+    },
+    {
+      "timestamp": 1786547400,
+      "close": 310.93499755859375
+    },
+    {
+      "timestamp": 1786547681,
+      "close": 311.05999755859375
     }
   ],
   "news": {
@@ -37,5 +109,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-12T04:13:22.000Z"
   },
-  "generatedAt": "2026-08-12T13:46:23.792Z"
+  "generatedAt": "2026-08-12T15:15:14.372Z"
 }
