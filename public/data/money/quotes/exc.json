@@ -5,12 +5,12 @@
     "displaySymbol": "$EXC"
   },
   "name": "EXELON CORPORATION",
-  "price": 45,
+  "price": 45.12,
   "previousClose": 44.87,
   "dayHigh": 45.155,
   "dayLow": 44.785,
-  "change": 0.13000000000000256,
-  "changePercent": 0.2897258747492814,
+  "change": 0.25,
+  "changePercent": 0.5571651437486072,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -193,11 +193,55 @@
     },
     {
       "timestamp": 1786554600,
-      "close": 44.98500061035156
+      "close": 45.01499938964844
     },
     {
-      "timestamp": 1786554704,
-      "close": 45
+      "timestamp": 1786554900,
+      "close": 45.04010009765625
+    },
+    {
+      "timestamp": 1786555200,
+      "close": 45.040000915527344
+    },
+    {
+      "timestamp": 1786555500,
+      "close": 45.0099983215332
+    },
+    {
+      "timestamp": 1786555800,
+      "close": 45.029998779296875
+    },
+    {
+      "timestamp": 1786556100,
+      "close": 44.9900016784668
+    },
+    {
+      "timestamp": 1786556400,
+      "close": 45.029998779296875
+    },
+    {
+      "timestamp": 1786556700,
+      "close": 45.06999969482422
+    },
+    {
+      "timestamp": 1786557000,
+      "close": 45.095001220703125
+    },
+    {
+      "timestamp": 1786557300,
+      "close": 45.10499954223633
+    },
+    {
+      "timestamp": 1786557600,
+      "close": 45.12990188598633
+    },
+    {
+      "timestamp": 1786557900,
+      "close": 45.119998931884766
+    },
+    {
+      "timestamp": 1786558001,
+      "close": 45.119998931884766
     }
   ],
   "news": {
@@ -205,5 +249,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-12T09:30:00.000Z"
   },
-  "generatedAt": "2026-08-12T17:11:54.104Z"
+  "generatedAt": "2026-08-12T18:07:01.918Z"
 }

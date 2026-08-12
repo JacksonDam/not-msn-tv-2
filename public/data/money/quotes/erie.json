@@ -5,20 +5,16 @@
     "displaySymbol": "$ERIE"
   },
   "name": "ERIE INDEMNITY COMPANY",
-  "price": 254.06,
+  "price": 254.765,
   "previousClose": 256.64,
   "dayHigh": 256.7,
   "dayLow": 250.9,
-  "change": -2.579999999999984,
-  "changePercent": -1.005299251870318,
+  "change": -1.875,
+  "changePercent": -0.7305953865336658,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
-    {
-      "timestamp": 1786541400,
-      "close": 253.7100067138672
-    },
     {
       "timestamp": 1786541700,
       "close": 252.5
@@ -108,8 +104,44 @@
       "close": 253.75999450683594
     },
     {
-      "timestamp": 1786554711,
+      "timestamp": 1786554600,
       "close": 254.05999755859375
+    },
+    {
+      "timestamp": 1786555200,
+      "close": 253.72999572753906
+    },
+    {
+      "timestamp": 1786555500,
+      "close": 253.33999633789062
+    },
+    {
+      "timestamp": 1786555800,
+      "close": 253.5050048828125
+    },
+    {
+      "timestamp": 1786556100,
+      "close": 253.52000427246094
+    },
+    {
+      "timestamp": 1786556400,
+      "close": 254.24000549316406
+    },
+    {
+      "timestamp": 1786556700,
+      "close": 254.35000610351562
+    },
+    {
+      "timestamp": 1786557000,
+      "close": 254.53500366210938
+    },
+    {
+      "timestamp": 1786557300,
+      "close": 254.92999267578125
+    },
+    {
+      "timestamp": 1786557600,
+      "close": 254.76499938964844
     }
   ],
   "news": {
@@ -117,5 +149,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-11T14:18:44.000Z"
   },
-  "generatedAt": "2026-08-12T17:11:53.186Z"
+  "generatedAt": "2026-08-12T18:07:00.405Z"
 }
