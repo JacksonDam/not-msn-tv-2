@@ -5,12 +5,12 @@
     "displaySymbol": "$CME"
   },
   "name": "CME GROUP INC.",
-  "price": 262.72,
+  "price": 262.515,
   "previousClose": 259.32,
   "dayHigh": 263.38,
   "dayLow": 256.83,
-  "change": 3.400000000000034,
-  "changePercent": 1.3111213944161786,
+  "change": 3.194999999999993,
+  "changePercent": 1.2320684868116587,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -237,11 +237,67 @@
     },
     {
       "timestamp": 1786557900,
+      "close": 262.63800048828125
+    },
+    {
+      "timestamp": 1786558200,
+      "close": 262.1499938964844
+    },
+    {
+      "timestamp": 1786558500,
+      "close": 262.3999938964844
+    },
+    {
+      "timestamp": 1786558800,
+      "close": 262.2449951171875
+    },
+    {
+      "timestamp": 1786559100,
+      "close": 262.4150085449219
+    },
+    {
+      "timestamp": 1786559400,
+      "close": 262.6300048828125
+    },
+    {
+      "timestamp": 1786559700,
+      "close": 262.7049865722656
+    },
+    {
+      "timestamp": 1786560000,
+      "close": 262.7300109863281
+    },
+    {
+      "timestamp": 1786560300,
+      "close": 263.0799865722656
+    },
+    {
+      "timestamp": 1786560600,
       "close": 262.75
     },
     {
-      "timestamp": 1786557999,
-      "close": 262.7200012207031
+      "timestamp": 1786560900,
+      "close": 262.7182922363281
+    },
+    {
+      "timestamp": 1786561200,
+      "close": 262.5400085449219
+    },
+    {
+      "timestamp": 1786561500,
+      "close": 262.3500061035156
+    },
+    {
+      "timestamp": 1786561800,
+      "close": 262.6050109863281
+    },
+    {
+      "timestamp": 1786562100,
+      "close": 262.5
+    },
+    {
+      "timestamp": 1786562364,
+      "close": 262.5150146484375
     }
   ],
   "news": {
@@ -249,5 +305,5 @@
     "publisher": "Axios",
     "publishedAt": "2026-08-12T12:57:35.000Z"
   },
-  "generatedAt": "2026-08-12T18:06:44.697Z"
+  "generatedAt": "2026-08-12T19:19:35.085Z"
 }
