@@ -5,12 +5,12 @@
     "displaySymbol": "$PCAR"
   },
   "name": "PACCAR INC",
-  "price": 130.79,
+  "price": 131.23,
   "previousClose": 132.18,
   "dayHigh": 133.71,
   "dayLow": 129.7,
-  "change": -1.3900000000000148,
-  "changePercent": -1.0515963080647712,
+  "change": -0.950000000000017,
+  "changePercent": -0.7187169011953525,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -100,8 +100,52 @@
       "close": 130.85000610351562
     },
     {
-      "timestamp": 1786547717,
-      "close": 130.7899932861328
+      "timestamp": 1786547700,
+      "close": 130.72999572753906
+    },
+    {
+      "timestamp": 1786548000,
+      "close": 130.6999969482422
+    },
+    {
+      "timestamp": 1786548300,
+      "close": 130.8000030517578
+    },
+    {
+      "timestamp": 1786548600,
+      "close": 130.8249969482422
+    },
+    {
+      "timestamp": 1786548900,
+      "close": 130.75
+    },
+    {
+      "timestamp": 1786549200,
+      "close": 130.7100067138672
+    },
+    {
+      "timestamp": 1786549500,
+      "close": 130.84500122070312
+    },
+    {
+      "timestamp": 1786549800,
+      "close": 131.05999755859375
+    },
+    {
+      "timestamp": 1786550100,
+      "close": 130.92999267578125
+    },
+    {
+      "timestamp": 1786550400,
+      "close": 131.14999389648438
+    },
+    {
+      "timestamp": 1786550700,
+      "close": 131.19000244140625
+    },
+    {
+      "timestamp": 1786551044,
+      "close": 131.22999572753906
     }
   ],
   "news": {
@@ -109,5 +153,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-11T23:51:34.000Z"
   },
-  "generatedAt": "2026-08-12T15:15:21.328Z"
+  "generatedAt": "2026-08-12T16:11:04.402Z"
 }

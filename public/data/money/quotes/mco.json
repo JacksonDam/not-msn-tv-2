@@ -5,12 +5,12 @@
     "displaySymbol": "$MCO"
   },
   "name": "MOODY'S CORPORATION",
-  "price": 476.206,
+  "price": 477.55,
   "previousClose": 476.48,
   "dayHigh": 481.58,
   "dayLow": 473.27,
-  "change": -0.2740000000000009,
-  "changePercent": -0.057505036937542164,
+  "change": 1.0699999999999932,
+  "changePercent": 0.22456346541302746,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -100,8 +100,52 @@
       "close": 476.1400146484375
     },
     {
-      "timestamp": 1786547702,
-      "close": 476.206298828125
+      "timestamp": 1786547700,
+      "close": 475.8900146484375
+    },
+    {
+      "timestamp": 1786548000,
+      "close": 476.6099853515625
+    },
+    {
+      "timestamp": 1786548300,
+      "close": 476.7200012207031
+    },
+    {
+      "timestamp": 1786548600,
+      "close": 476.7200012207031
+    },
+    {
+      "timestamp": 1786548900,
+      "close": 477.1499938964844
+    },
+    {
+      "timestamp": 1786549200,
+      "close": 477.739990234375
+    },
+    {
+      "timestamp": 1786549500,
+      "close": 477.6700134277344
+    },
+    {
+      "timestamp": 1786549800,
+      "close": 477.1000061035156
+    },
+    {
+      "timestamp": 1786550100,
+      "close": 476.8450012207031
+    },
+    {
+      "timestamp": 1786550400,
+      "close": 477.4800109863281
+    },
+    {
+      "timestamp": 1786550700,
+      "close": 477.5450134277344
+    },
+    {
+      "timestamp": 1786551042,
+      "close": 477.54998779296875
     }
   ],
   "news": {
@@ -109,5 +153,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-12T01:26:26.000Z"
   },
-  "generatedAt": "2026-08-12T15:15:09.532Z"
+  "generatedAt": "2026-08-12T16:10:54.320Z"
 }
