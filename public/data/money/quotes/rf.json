@@ -5,12 +5,12 @@
     "displaySymbol": "$RF"
   },
   "name": "REGIONS FINANCIAL CORPORATION",
-  "price": 31.72,
+  "price": 31.6,
   "previousClose": 31.6,
-  "dayHigh": 31.74,
+  "dayHigh": 31.755,
   "dayLow": 31.38,
-  "change": 0.11999999999999744,
-  "changePercent": 0.37974683544302984,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1786562100,
-      "close": 31.735000610351562
+      "close": 31.729999542236328
     },
     {
-      "timestamp": 1786562431,
+      "timestamp": 1786562400,
+      "close": 31.684999465942383
+    },
+    {
+      "timestamp": 1786562700,
+      "close": 31.684999465942383
+    },
+    {
+      "timestamp": 1786563000,
+      "close": 31.725000381469727
+    },
+    {
+      "timestamp": 1786563300,
+      "close": 31.7549991607666
+    },
+    {
+      "timestamp": 1786563600,
       "close": 31.719999313354492
+    },
+    {
+      "timestamp": 1786563900,
+      "close": 31.684999465942383
+    },
+    {
+      "timestamp": 1786564200,
+      "close": 31.59000015258789
+    },
+    {
+      "timestamp": 1786564500,
+      "close": 31.614999771118164
+    },
+    {
+      "timestamp": 1786564800,
+      "close": 31.600000381469727
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Banking Dive",
     "publishedAt": "2026-08-12T10:44:03.000Z"
   },
-  "generatedAt": "2026-08-12T19:20:32.700Z"
+  "generatedAt": "2026-08-12T21:04:09.309Z"
 }

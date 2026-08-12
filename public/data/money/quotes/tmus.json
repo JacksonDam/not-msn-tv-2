@@ -5,12 +5,12 @@
     "displaySymbol": "$TMUS"
   },
   "name": "T-MOBILE US, INC.",
-  "price": 177.055,
+  "price": 177.13,
   "previousClose": 178.59,
   "dayHigh": 178.74,
   "dayLow": 175.72,
-  "change": -1.5349999999999966,
-  "changePercent": -0.8595106108964647,
+  "change": -1.460000000000008,
+  "changePercent": -0.8175149784422464,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -297,7 +297,39 @@
     },
     {
       "timestamp": 1786562400,
-      "close": 177.05499267578125
+      "close": 176.91000366210938
+    },
+    {
+      "timestamp": 1786562700,
+      "close": 176.89999389648438
+    },
+    {
+      "timestamp": 1786563000,
+      "close": 177
+    },
+    {
+      "timestamp": 1786563300,
+      "close": 177.08999633789062
+    },
+    {
+      "timestamp": 1786563600,
+      "close": 176.72999572753906
+    },
+    {
+      "timestamp": 1786563900,
+      "close": 176.52000427246094
+    },
+    {
+      "timestamp": 1786564200,
+      "close": 176.60000610351562
+    },
+    {
+      "timestamp": 1786564500,
+      "close": 177.14999389648438
+    },
+    {
+      "timestamp": 1786564800,
+      "close": 177.1300048828125
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-12T14:35:04.000Z"
   },
-  "generatedAt": "2026-08-12T19:20:42.264Z"
+  "generatedAt": "2026-08-12T21:04:18.811Z"
 }

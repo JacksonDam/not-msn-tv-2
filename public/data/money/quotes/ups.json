@@ -5,12 +5,12 @@
     "displaySymbol": "$UPS"
   },
   "name": "UNITED PARCEL SERVICE, INC.",
-  "price": 103.9,
+  "price": 103.91,
   "previousClose": 104.43,
   "dayHigh": 104.29,
   "dayLow": 102.85,
-  "change": -0.5300000000000011,
-  "changePercent": -0.5075169970315054,
+  "change": -0.5200000000000102,
+  "changePercent": -0.4979412046346933,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -296,8 +296,40 @@
       "close": 103.94000244140625
     },
     {
-      "timestamp": 1786562443,
+      "timestamp": 1786562400,
+      "close": 103.97000122070312
+    },
+    {
+      "timestamp": 1786562700,
+      "close": 104.05899810791016
+    },
+    {
+      "timestamp": 1786563000,
+      "close": 104.06900024414062
+    },
+    {
+      "timestamp": 1786563300,
+      "close": 104.12000274658203
+    },
+    {
+      "timestamp": 1786563600,
+      "close": 104.11000061035156
+    },
+    {
+      "timestamp": 1786563900,
+      "close": 104.06999969482422
+    },
+    {
+      "timestamp": 1786564200,
+      "close": 103.86000061035156
+    },
+    {
+      "timestamp": 1786564500,
       "close": 103.9000015258789
+    },
+    {
+      "timestamp": 1786564800,
+      "close": 103.91000366210938
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Supply Chain Dive",
     "publishedAt": "2026-08-12T09:51:00.000Z"
   },
-  "generatedAt": "2026-08-12T19:20:46.427Z"
+  "generatedAt": "2026-08-12T21:04:23.037Z"
 }
