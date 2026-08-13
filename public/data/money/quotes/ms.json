@@ -5,12 +5,12 @@
     "displaySymbol": "$MS"
   },
   "name": "MORGAN STANLEY",
-  "price": 218.87,
+  "price": 218.665,
   "previousClose": 217.64,
   "dayHigh": 222,
   "dayLow": 218.43,
-  "change": 1.2300000000000182,
-  "changePercent": 0.5651534644366929,
+  "change": 1.0250000000000057,
+  "changePercent": 0.4709612203639063,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -137,7 +137,7 @@
     },
     {
       "timestamp": 1786636800,
-      "close": 218.85499572753906
+      "close": 218.8450927734375
     },
     {
       "timestamp": 1786637100,
@@ -145,11 +145,59 @@
     },
     {
       "timestamp": 1786637400,
-      "close": 218.77999877929688
+      "close": 218.58999633789062
     },
     {
-      "timestamp": 1786637470,
+      "timestamp": 1786637700,
+      "close": 218.52000427246094
+    },
+    {
+      "timestamp": 1786638000,
+      "close": 218.83999633789062
+    },
+    {
+      "timestamp": 1786638300,
+      "close": 219.05999755859375
+    },
+    {
+      "timestamp": 1786638600,
+      "close": 219.1300048828125
+    },
+    {
+      "timestamp": 1786638900,
+      "close": 219.02999877929688
+    },
+    {
+      "timestamp": 1786639200,
+      "close": 219.19000244140625
+    },
+    {
+      "timestamp": 1786639500,
       "close": 218.8699951171875
+    },
+    {
+      "timestamp": 1786639800,
+      "close": 218.7100067138672
+    },
+    {
+      "timestamp": 1786640100,
+      "close": 218.8000030517578
+    },
+    {
+      "timestamp": 1786640400,
+      "close": 218.76499938964844
+    },
+    {
+      "timestamp": 1786640700,
+      "close": 218.60000610351562
+    },
+    {
+      "timestamp": 1786641000,
+      "close": 218.63999938964844
+    },
+    {
+      "timestamp": 1786641110,
+      "close": 218.6649932861328
     }
   ],
   "news": {
@@ -157,5 +205,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-13T15:14:16.000Z"
   },
-  "generatedAt": "2026-08-13T16:11:23.786Z"
+  "generatedAt": "2026-08-13T17:12:03.814Z"
 }

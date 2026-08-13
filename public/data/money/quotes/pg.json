@@ -4,13 +4,13 @@
     "requestSymbol": "PG",
     "displaySymbol": "$PG"
   },
-  "name": "THE PROCTER & GAMBLE COMPANY",
-  "price": 144.16,
+  "name": "PROCTER & GAMBLE COMPANY (THE)",
+  "price": 144.045,
   "previousClose": 144.08,
   "dayHigh": 145.8,
   "dayLow": 144.02,
-  "change": 0.07999999999998408,
-  "changePercent": 0.055524708495269345,
+  "change": -0.03500000000002501,
+  "changePercent": -0.024292059966702532,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -145,11 +145,59 @@
     },
     {
       "timestamp": 1786637400,
+      "close": 144.25
+    },
+    {
+      "timestamp": 1786637700,
+      "close": 144.3000030517578
+    },
+    {
+      "timestamp": 1786638000,
+      "close": 144.16000366210938
+    },
+    {
+      "timestamp": 1786638300,
+      "close": 144.1999969482422
+    },
+    {
+      "timestamp": 1786638600,
+      "close": 144.21499633789062
+    },
+    {
+      "timestamp": 1786638900,
+      "close": 144.17999267578125
+    },
+    {
+      "timestamp": 1786639200,
       "close": 144.2100067138672
     },
     {
-      "timestamp": 1786637486,
-      "close": 144.16000366210938
+      "timestamp": 1786639500,
+      "close": 144.30999755859375
+    },
+    {
+      "timestamp": 1786639800,
+      "close": 144.38999938964844
+    },
+    {
+      "timestamp": 1786640100,
+      "close": 144.18499755859375
+    },
+    {
+      "timestamp": 1786640400,
+      "close": 144.05499267578125
+    },
+    {
+      "timestamp": 1786640700,
+      "close": 144.07000732421875
+    },
+    {
+      "timestamp": 1786641000,
+      "close": 144.0500030517578
+    },
+    {
+      "timestamp": 1786641125,
+      "close": 144.0449981689453
     }
   ],
   "news": {
@@ -157,5 +205,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-08-13T08:20:00.000Z"
   },
-  "generatedAt": "2026-08-13T16:11:31.016Z"
+  "generatedAt": "2026-08-13T17:12:10.850Z"
 }
