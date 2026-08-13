@@ -5,12 +5,12 @@
     "displaySymbol": "$CBOE"
   },
   "name": "CBOE GLOBAL MARKETS, INC.",
-  "price": 293.395,
+  "price": 290.795,
   "previousClose": 290.98,
   "dayHigh": 294.81,
   "dayLow": 290.445,
-  "change": 2.4149999999999636,
-  "changePercent": 0.8299539487249856,
+  "change": -0.18500000000000227,
+  "changePercent": -0.06357825280088056,
   "currency": "USD",
   "exchangeName": "BTS",
   "marketState": "",
@@ -89,19 +89,63 @@
     },
     {
       "timestamp": 1786633200,
-      "close": 293.01251220703125
+      "close": 292.8599853515625
     },
     {
       "timestamp": 1786633500,
-      "close": 292.8299865722656
+      "close": 293
     },
     {
       "timestamp": 1786633800,
-      "close": 293.3074035644531
+      "close": 293.3999938964844
     },
     {
-      "timestamp": 1786634072,
-      "close": 293.3949890136719
+      "timestamp": 1786634100,
+      "close": 293.7300109863281
+    },
+    {
+      "timestamp": 1786634400,
+      "close": 292.8800048828125
+    },
+    {
+      "timestamp": 1786634700,
+      "close": 292.80499267578125
+    },
+    {
+      "timestamp": 1786635000,
+      "close": 292.4700012207031
+    },
+    {
+      "timestamp": 1786635300,
+      "close": 291.6700134277344
+    },
+    {
+      "timestamp": 1786635600,
+      "close": 290.95001220703125
+    },
+    {
+      "timestamp": 1786635900,
+      "close": 290.7900085449219
+    },
+    {
+      "timestamp": 1786636200,
+      "close": 291.04998779296875
+    },
+    {
+      "timestamp": 1786636500,
+      "close": 290.8900146484375
+    },
+    {
+      "timestamp": 1786636800,
+      "close": 291.07000732421875
+    },
+    {
+      "timestamp": 1786637100,
+      "close": 290.9049987792969
+    },
+    {
+      "timestamp": 1786637435,
+      "close": 290.7950134277344
     }
   ],
   "news": {
@@ -109,5 +153,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-12T18:11:00.000Z"
   },
-  "generatedAt": "2026-08-13T15:14:38.571Z"
+  "generatedAt": "2026-08-13T16:10:40.060Z"
 }
