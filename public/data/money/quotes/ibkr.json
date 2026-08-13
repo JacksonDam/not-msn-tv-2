@@ -5,12 +5,12 @@
     "displaySymbol": "$IBKR"
   },
   "name": "INTERACTIVE BROKERS GROUP, INC.",
-  "price": 92.24,
+  "price": 92.27,
   "previousClose": 91.66,
   "dayHigh": 92.72,
   "dayLow": 91.45,
-  "change": 0.5799999999999983,
-  "changePercent": 0.6327732926030966,
+  "change": 0.6099999999999994,
+  "changePercent": 0.6655029456687753,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -237,11 +237,67 @@
     },
     {
       "timestamp": 1786644300,
+      "close": 92.19999694824219
+    },
+    {
+      "timestamp": 1786644600,
+      "close": 92.27999877929688
+    },
+    {
+      "timestamp": 1786644900,
+      "close": 92.33999633789062
+    },
+    {
+      "timestamp": 1786645200,
       "close": 92.2300033569336
     },
     {
-      "timestamp": 1786644477,
-      "close": 92.24030303955078
+      "timestamp": 1786645500,
+      "close": 92.375
+    },
+    {
+      "timestamp": 1786645800,
+      "close": 92.31999969482422
+    },
+    {
+      "timestamp": 1786646100,
+      "close": 92.27999877929688
+    },
+    {
+      "timestamp": 1786646400,
+      "close": 92.16500091552734
+    },
+    {
+      "timestamp": 1786646700,
+      "close": 92.16000366210938
+    },
+    {
+      "timestamp": 1786647000,
+      "close": 92.18000030517578
+    },
+    {
+      "timestamp": 1786647300,
+      "close": 92.13999938964844
+    },
+    {
+      "timestamp": 1786647600,
+      "close": 92.38999938964844
+    },
+    {
+      "timestamp": 1786647900,
+      "close": 92.44999694824219
+    },
+    {
+      "timestamp": 1786648200,
+      "close": 92.30000305175781
+    },
+    {
+      "timestamp": 1786648500,
+      "close": 92.2300033569336
+    },
+    {
+      "timestamp": 1786648815,
+      "close": 92.2699966430664
     }
   ],
   "news": {
@@ -249,5 +305,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-13T07:58:56.000Z"
   },
-  "generatedAt": "2026-08-13T18:08:03.215Z"
+  "generatedAt": "2026-08-13T19:20:17.198Z"
 }
