@@ -5,12 +5,12 @@
     "displaySymbol": "$IBKR"
   },
   "name": "INTERACTIVE BROKERS GROUP, INC.",
-  "price": 92.2,
+  "price": 91.91,
   "previousClose": 91.66,
-  "dayHigh": 92.59,
+  "dayHigh": 92.72,
   "dayLow": 91.45,
-  "change": 0.5400000000000063,
-  "changePercent": 0.5891337551822019,
+  "change": 0.25,
+  "changePercent": 0.27274710888064585,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -29,11 +29,79 @@
     },
     {
       "timestamp": 1786628700,
-      "close": 92.20999908447266
+      "close": 92.19999694824219
     },
     {
-      "timestamp": 1786628796,
-      "close": 92.19999694824219
+      "timestamp": 1786629000,
+      "close": 92.06999969482422
+    },
+    {
+      "timestamp": 1786629300,
+      "close": 91.82499694824219
+    },
+    {
+      "timestamp": 1786629600,
+      "close": 92.16999816894531
+    },
+    {
+      "timestamp": 1786629900,
+      "close": 92.1500015258789
+    },
+    {
+      "timestamp": 1786630200,
+      "close": 92.05000305175781
+    },
+    {
+      "timestamp": 1786630500,
+      "close": 91.94000244140625
+    },
+    {
+      "timestamp": 1786630800,
+      "close": 92.4800033569336
+    },
+    {
+      "timestamp": 1786631100,
+      "close": 92.61009979248047
+    },
+    {
+      "timestamp": 1786631400,
+      "close": 92.58999633789062
+    },
+    {
+      "timestamp": 1786631700,
+      "close": 92.375
+    },
+    {
+      "timestamp": 1786632000,
+      "close": 92.0999984741211
+    },
+    {
+      "timestamp": 1786632300,
+      "close": 91.69999694824219
+    },
+    {
+      "timestamp": 1786632600,
+      "close": 92.04499816894531
+    },
+    {
+      "timestamp": 1786632900,
+      "close": 92.16000366210938
+    },
+    {
+      "timestamp": 1786633200,
+      "close": 92.12000274658203
+    },
+    {
+      "timestamp": 1786633500,
+      "close": 92.19989776611328
+    },
+    {
+      "timestamp": 1786633800,
+      "close": 91.91000366210938
+    },
+    {
+      "timestamp": 1786634092,
+      "close": 91.91000366210938
     }
   ],
   "news": {
@@ -41,5 +109,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-13T07:58:56.000Z"
   },
-  "generatedAt": "2026-08-13T13:47:02.049Z"
+  "generatedAt": "2026-08-13T15:15:04.889Z"
 }
