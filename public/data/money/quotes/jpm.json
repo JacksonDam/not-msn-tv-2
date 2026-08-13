@@ -4,338 +4,42 @@
     "requestSymbol": "JPM",
     "displaySymbol": "$JPM"
   },
-  "name": "JP MORGAN CHASE & CO.",
-  "price": 365.18,
-  "previousClose": 362.04,
-  "dayHigh": 366.09,
-  "dayLow": 361.3,
-  "change": 3.1399999999999864,
-  "changePercent": 0.8673074798364784,
+  "name": "JPMORGAN CHASE & CO.",
+  "price": 364.47,
+  "previousClose": 365.18,
+  "dayHigh": 366.5,
+  "dayLow": 361.84,
+  "change": -0.7099999999999795,
+  "changePercent": -0.19442466728735952,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1786541400,
-      "close": 362.3599853515625
+      "timestamp": 1786627800,
+      "close": 363.510009765625
     },
     {
-      "timestamp": 1786541700,
-      "close": 362.55999755859375
+      "timestamp": 1786628100,
+      "close": 363.55499267578125
     },
     {
-      "timestamp": 1786542000,
-      "close": 363.17718505859375
+      "timestamp": 1786628400,
+      "close": 364.0199890136719
     },
     {
-      "timestamp": 1786542300,
-      "close": 362.9100036621094
+      "timestamp": 1786628700,
+      "close": 364.2550048828125
     },
     {
-      "timestamp": 1786542600,
-      "close": 362.5950012207031
-    },
-    {
-      "timestamp": 1786542900,
-      "close": 363.5299987792969
-    },
-    {
-      "timestamp": 1786543200,
-      "close": 364.8949890136719
-    },
-    {
-      "timestamp": 1786543500,
-      "close": 363.80999755859375
-    },
-    {
-      "timestamp": 1786543800,
+      "timestamp": 1786628825,
       "close": 364.4700012207031
-    },
-    {
-      "timestamp": 1786544100,
-      "close": 364.8407897949219
-    },
-    {
-      "timestamp": 1786544400,
-      "close": 365.0799865722656
-    },
-    {
-      "timestamp": 1786544700,
-      "close": 365.4551086425781
-    },
-    {
-      "timestamp": 1786545000,
-      "close": 364.7799987792969
-    },
-    {
-      "timestamp": 1786545300,
-      "close": 365.1000061035156
-    },
-    {
-      "timestamp": 1786545600,
-      "close": 365.17999267578125
-    },
-    {
-      "timestamp": 1786545900,
-      "close": 365.0199890136719
-    },
-    {
-      "timestamp": 1786546200,
-      "close": 364.6600036621094
-    },
-    {
-      "timestamp": 1786546500,
-      "close": 364.7699890136719
-    },
-    {
-      "timestamp": 1786546800,
-      "close": 364.7200012207031
-    },
-    {
-      "timestamp": 1786547100,
-      "close": 364.7550048828125
-    },
-    {
-      "timestamp": 1786547400,
-      "close": 364.4892883300781
-    },
-    {
-      "timestamp": 1786547700,
-      "close": 364.2699890136719
-    },
-    {
-      "timestamp": 1786548000,
-      "close": 364.7099914550781
-    },
-    {
-      "timestamp": 1786548300,
-      "close": 364.55499267578125
-    },
-    {
-      "timestamp": 1786548600,
-      "close": 364.8900146484375
-    },
-    {
-      "timestamp": 1786548900,
-      "close": 364.6700134277344
-    },
-    {
-      "timestamp": 1786549200,
-      "close": 365.2799987792969
-    },
-    {
-      "timestamp": 1786549500,
-      "close": 365.32000732421875
-    },
-    {
-      "timestamp": 1786549800,
-      "close": 365.0249938964844
-    },
-    {
-      "timestamp": 1786550100,
-      "close": 365.010009765625
-    },
-    {
-      "timestamp": 1786550400,
-      "close": 364.9750061035156
-    },
-    {
-      "timestamp": 1786550700,
-      "close": 364.3999938964844
-    },
-    {
-      "timestamp": 1786551000,
-      "close": 364.614990234375
-    },
-    {
-      "timestamp": 1786551300,
-      "close": 365.2099914550781
-    },
-    {
-      "timestamp": 1786551600,
-      "close": 365.1400146484375
-    },
-    {
-      "timestamp": 1786551900,
-      "close": 365.0400085449219
-    },
-    {
-      "timestamp": 1786552200,
-      "close": 364.91571044921875
-    },
-    {
-      "timestamp": 1786552500,
-      "close": 364.95001220703125
-    },
-    {
-      "timestamp": 1786552800,
-      "close": 365.1199951171875
-    },
-    {
-      "timestamp": 1786553100,
-      "close": 365.30499267578125
-    },
-    {
-      "timestamp": 1786553400,
-      "close": 365.24609375
-    },
-    {
-      "timestamp": 1786553700,
-      "close": 365.1099853515625
-    },
-    {
-      "timestamp": 1786554000,
-      "close": 364.92999267578125
-    },
-    {
-      "timestamp": 1786554300,
-      "close": 364.9100036621094
-    },
-    {
-      "timestamp": 1786554600,
-      "close": 365.0150146484375
-    },
-    {
-      "timestamp": 1786554900,
-      "close": 365
-    },
-    {
-      "timestamp": 1786555200,
-      "close": 365.0350036621094
-    },
-    {
-      "timestamp": 1786555500,
-      "close": 365.05010986328125
-    },
-    {
-      "timestamp": 1786555800,
-      "close": 364.7650146484375
-    },
-    {
-      "timestamp": 1786556100,
-      "close": 364.5325927734375
-    },
-    {
-      "timestamp": 1786556400,
-      "close": 364.6000061035156
-    },
-    {
-      "timestamp": 1786556700,
-      "close": 364.8599853515625
-    },
-    {
-      "timestamp": 1786557000,
-      "close": 364.7699890136719
-    },
-    {
-      "timestamp": 1786557300,
-      "close": 364.9700012207031
-    },
-    {
-      "timestamp": 1786557600,
-      "close": 364.79998779296875
-    },
-    {
-      "timestamp": 1786557900,
-      "close": 365.0700988769531
-    },
-    {
-      "timestamp": 1786558200,
-      "close": 364.9800109863281
-    },
-    {
-      "timestamp": 1786558500,
-      "close": 365.2130126953125
-    },
-    {
-      "timestamp": 1786558800,
-      "close": 365.06500244140625
-    },
-    {
-      "timestamp": 1786559100,
-      "close": 365.4049987792969
-    },
-    {
-      "timestamp": 1786559400,
-      "close": 365.4700012207031
-    },
-    {
-      "timestamp": 1786559700,
-      "close": 365.44000244140625
-    },
-    {
-      "timestamp": 1786560000,
-      "close": 365.54949951171875
-    },
-    {
-      "timestamp": 1786560300,
-      "close": 365.6300048828125
-    },
-    {
-      "timestamp": 1786560600,
-      "close": 365.6600036621094
-    },
-    {
-      "timestamp": 1786560900,
-      "close": 365.6099853515625
-    },
-    {
-      "timestamp": 1786561200,
-      "close": 365.8500061035156
-    },
-    {
-      "timestamp": 1786561500,
-      "close": 366.0199890136719
-    },
-    {
-      "timestamp": 1786561800,
-      "close": 365.639892578125
-    },
-    {
-      "timestamp": 1786562100,
-      "close": 365.7099914550781
-    },
-    {
-      "timestamp": 1786562400,
-      "close": 365.3999938964844
-    },
-    {
-      "timestamp": 1786562700,
-      "close": 365.4150085449219
-    },
-    {
-      "timestamp": 1786563000,
-      "close": 365.7900085449219
-    },
-    {
-      "timestamp": 1786563300,
-      "close": 365.92999267578125
-    },
-    {
-      "timestamp": 1786563600,
-      "close": 365.625
-    },
-    {
-      "timestamp": 1786563900,
-      "close": 365.7349853515625
-    },
-    {
-      "timestamp": 1786564200,
-      "close": 365.135009765625
-    },
-    {
-      "timestamp": 1786564500,
-      "close": 365.2200012207031
-    },
-    {
-      "timestamp": 1786564800,
-      "close": 365.17999267578125
     }
   ],
   "news": {
-    "title": "You’ve retired — so grow up already and stop buying these 5 things to save yourself thousands of dollars",
-    "publisher": "Moneywise",
-    "publishedAt": "2026-08-13T11:15:00.000Z"
+    "title": "Crypto’s Wall Street Era Arrives as Retail Buzz, Liquidity Fade",
+    "publisher": "Bloomberg",
+    "publishedAt": "2026-08-13T12:24:06.000Z"
   },
-  "generatedAt": "2026-08-13T11:59:57.566Z"
+  "generatedAt": "2026-08-13T13:47:06.120Z"
 }

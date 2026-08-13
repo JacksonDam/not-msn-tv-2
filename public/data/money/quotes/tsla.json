@@ -5,337 +5,41 @@
     "displaySymbol": "$TSLA"
   },
   "name": "TESLA, INC.",
-  "price": 327.51,
-  "previousClose": 332.81,
-  "dayHigh": 335.5,
-  "dayLow": 323.64,
-  "change": -5.300000000000011,
-  "changePercent": -1.592500225353809,
+  "price": 329.95,
+  "previousClose": 327.51,
+  "dayHigh": 331.69,
+  "dayLow": 325.24,
+  "change": 2.4399999999999977,
+  "changePercent": 0.7450154193765068,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1786541400,
-      "close": 330.25
+      "timestamp": 1786627800,
+      "close": 328.5799865722656
     },
     {
-      "timestamp": 1786541700,
-      "close": 330.64801025390625
+      "timestamp": 1786628100,
+      "close": 330.3500061035156
     },
     {
-      "timestamp": 1786542000,
+      "timestamp": 1786628400,
       "close": 329.3900146484375
     },
     {
-      "timestamp": 1786542300,
-      "close": 329.2900085449219
+      "timestamp": 1786628700,
+      "close": 330.3299865722656
     },
     {
-      "timestamp": 1786542600,
-      "close": 327.7799987792969
-    },
-    {
-      "timestamp": 1786542900,
-      "close": 328.05828857421875
-    },
-    {
-      "timestamp": 1786543200,
-      "close": 327.1650085449219
-    },
-    {
-      "timestamp": 1786543500,
-      "close": 328.0950012207031
-    },
-    {
-      "timestamp": 1786543800,
-      "close": 327.5199890136719
-    },
-    {
-      "timestamp": 1786544100,
-      "close": 327.0105895996094
-    },
-    {
-      "timestamp": 1786544400,
-      "close": 327.340087890625
-    },
-    {
-      "timestamp": 1786544700,
-      "close": 325.5849914550781
-    },
-    {
-      "timestamp": 1786545000,
-      "close": 324.8399963378906
-    },
-    {
-      "timestamp": 1786545300,
-      "close": 324.9200134277344
-    },
-    {
-      "timestamp": 1786545600,
-      "close": 325.07000732421875
-    },
-    {
-      "timestamp": 1786545900,
-      "close": 324.6549987792969
-    },
-    {
-      "timestamp": 1786546200,
-      "close": 323.8800048828125
-    },
-    {
-      "timestamp": 1786546500,
-      "close": 324.55999755859375
-    },
-    {
-      "timestamp": 1786546800,
-      "close": 324.6600036621094
-    },
-    {
-      "timestamp": 1786547100,
-      "close": 325.364990234375
-    },
-    {
-      "timestamp": 1786547400,
-      "close": 325
-    },
-    {
-      "timestamp": 1786547700,
-      "close": 324.95001220703125
-    },
-    {
-      "timestamp": 1786548000,
-      "close": 324.18499755859375
-    },
-    {
-      "timestamp": 1786548300,
-      "close": 324.36199951171875
-    },
-    {
-      "timestamp": 1786548600,
-      "close": 323.8902893066406
-    },
-    {
-      "timestamp": 1786548900,
-      "close": 324.42498779296875
-    },
-    {
-      "timestamp": 1786549200,
-      "close": 324.57000732421875
-    },
-    {
-      "timestamp": 1786549500,
-      "close": 325.0350036621094
-    },
-    {
-      "timestamp": 1786549800,
-      "close": 325.44000244140625
-    },
-    {
-      "timestamp": 1786550100,
-      "close": 325.9800109863281
-    },
-    {
-      "timestamp": 1786550400,
-      "close": 326.6549987792969
-    },
-    {
-      "timestamp": 1786550700,
-      "close": 326.4800109863281
-    },
-    {
-      "timestamp": 1786551000,
-      "close": 326.57000732421875
-    },
-    {
-      "timestamp": 1786551300,
-      "close": 326.5331115722656
-    },
-    {
-      "timestamp": 1786551600,
-      "close": 326.5199890136719
-    },
-    {
-      "timestamp": 1786551900,
-      "close": 326.94500732421875
-    },
-    {
-      "timestamp": 1786552200,
-      "close": 326.8399963378906
-    },
-    {
-      "timestamp": 1786552500,
-      "close": 326.7099914550781
-    },
-    {
-      "timestamp": 1786552800,
-      "close": 326.7279968261719
-    },
-    {
-      "timestamp": 1786553100,
-      "close": 326.8299865722656
-    },
-    {
-      "timestamp": 1786553400,
-      "close": 326.9750061035156
-    },
-    {
-      "timestamp": 1786553700,
-      "close": 326.92498779296875
-    },
-    {
-      "timestamp": 1786554000,
-      "close": 326.81500244140625
-    },
-    {
-      "timestamp": 1786554300,
-      "close": 326.94500732421875
-    },
-    {
-      "timestamp": 1786554600,
-      "close": 326.82501220703125
-    },
-    {
-      "timestamp": 1786554900,
-      "close": 326.3450012207031
-    },
-    {
-      "timestamp": 1786555200,
-      "close": 326.25
-    },
-    {
-      "timestamp": 1786555500,
-      "close": 326.2900085449219
-    },
-    {
-      "timestamp": 1786555800,
-      "close": 325.8999938964844
-    },
-    {
-      "timestamp": 1786556100,
-      "close": 325.7850036621094
-    },
-    {
-      "timestamp": 1786556400,
-      "close": 326.010009765625
-    },
-    {
-      "timestamp": 1786556700,
-      "close": 325.80999755859375
-    },
-    {
-      "timestamp": 1786557000,
-      "close": 326.0093994140625
-    },
-    {
-      "timestamp": 1786557300,
-      "close": 326.2950134277344
-    },
-    {
-      "timestamp": 1786557600,
-      "close": 326.44000244140625
-    },
-    {
-      "timestamp": 1786557900,
-      "close": 326.5899963378906
-    },
-    {
-      "timestamp": 1786558200,
-      "close": 326.4599914550781
-    },
-    {
-      "timestamp": 1786558500,
-      "close": 326.19000244140625
-    },
-    {
-      "timestamp": 1786558800,
-      "close": 326.375
-    },
-    {
-      "timestamp": 1786559100,
-      "close": 326.506103515625
-    },
-    {
-      "timestamp": 1786559400,
-      "close": 326.85369873046875
-    },
-    {
-      "timestamp": 1786559700,
-      "close": 326.5400085449219
-    },
-    {
-      "timestamp": 1786560000,
-      "close": 326.489990234375
-    },
-    {
-      "timestamp": 1786560300,
-      "close": 326.69500732421875
-    },
-    {
-      "timestamp": 1786560600,
-      "close": 327.30010986328125
-    },
-    {
-      "timestamp": 1786560900,
-      "close": 327.0799865722656
-    },
-    {
-      "timestamp": 1786561200,
-      "close": 326.8900146484375
-    },
-    {
-      "timestamp": 1786561500,
-      "close": 327.1499938964844
-    },
-    {
-      "timestamp": 1786561800,
-      "close": 327.135009765625
-    },
-    {
-      "timestamp": 1786562100,
-      "close": 327.17999267578125
-    },
-    {
-      "timestamp": 1786562400,
-      "close": 327.4800109863281
-    },
-    {
-      "timestamp": 1786562700,
-      "close": 327.67999267578125
-    },
-    {
-      "timestamp": 1786563000,
-      "close": 327.6300048828125
-    },
-    {
-      "timestamp": 1786563300,
-      "close": 327.30999755859375
-    },
-    {
-      "timestamp": 1786563600,
-      "close": 327.3299865722656
-    },
-    {
-      "timestamp": 1786563900,
-      "close": 327.45001220703125
-    },
-    {
-      "timestamp": 1786564200,
-      "close": 327.510009765625
-    },
-    {
-      "timestamp": 1786564500,
-      "close": 327.45001220703125
-    },
-    {
-      "timestamp": 1786564800,
-      "close": 327.510009765625
+      "timestamp": 1786628856,
+      "close": 329.95001220703125
     }
   ],
   "news": {
-    "title": "Elon Musk’s New Texas Facility Will be 36 Times Bigger Than the Empire State Building. Here’s Everything We Know So Far.",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-08-13T11:26:35.000Z"
+    "title": "Virtuix to Highlight Accelerating Consumer Growth and Expansion Across Defense, Robotics, and Healthcare at Sidoti Investor Conference",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-08-13T13:17:00.000Z"
   },
-  "generatedAt": "2026-08-13T12:00:34.205Z"
+  "generatedAt": "2026-08-13T13:47:38.618Z"
 }
