@@ -5,12 +5,12 @@
     "displaySymbol": "$LOW"
   },
   "name": "LOWE'S COMPANIES, INC.",
-  "price": 217.175,
+  "price": 217.21,
   "previousClose": 215.97,
   "dayHigh": 218.56,
   "dayLow": 215.36,
-  "change": 1.2050000000000125,
-  "changePercent": 0.557947863129144,
+  "change": 1.240000000000009,
+  "changePercent": 0.5741538176598644,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -185,19 +185,63 @@
     },
     {
       "timestamp": 1786640400,
-      "close": 217.0850067138672
+      "close": 217.1300048828125
     },
     {
       "timestamp": 1786640700,
-      "close": 217.1699981689453
+      "close": 217.1750030517578
     },
     {
       "timestamp": 1786641000,
-      "close": 217.1699981689453
+      "close": 216.94000244140625
     },
     {
-      "timestamp": 1786641062,
-      "close": 217.1750030517578
+      "timestamp": 1786641300,
+      "close": 216.89500427246094
+    },
+    {
+      "timestamp": 1786641600,
+      "close": 216.99000549316406
+    },
+    {
+      "timestamp": 1786641900,
+      "close": 216.89500427246094
+    },
+    {
+      "timestamp": 1786642200,
+      "close": 216.74000549316406
+    },
+    {
+      "timestamp": 1786642500,
+      "close": 216.72999572753906
+    },
+    {
+      "timestamp": 1786642800,
+      "close": 216.80999755859375
+    },
+    {
+      "timestamp": 1786643100,
+      "close": 216.98500061035156
+    },
+    {
+      "timestamp": 1786643400,
+      "close": 216.86000061035156
+    },
+    {
+      "timestamp": 1786643700,
+      "close": 216.8350067138672
+    },
+    {
+      "timestamp": 1786644000,
+      "close": 217.05999755859375
+    },
+    {
+      "timestamp": 1786644300,
+      "close": 217.1999969482422
+    },
+    {
+      "timestamp": 1786644484,
+      "close": 217.2100067138672
     }
   ],
   "news": {
@@ -205,5 +249,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-13T13:00:00.000Z"
   },
-  "generatedAt": "2026-08-13T17:11:59.124Z"
+  "generatedAt": "2026-08-13T18:08:13.826Z"
 }
