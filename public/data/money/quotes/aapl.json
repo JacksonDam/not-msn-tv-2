@@ -5,12 +5,12 @@
     "displaySymbol": "$AAPL"
   },
   "name": "APPLE INC.",
-  "price": 305.095,
+  "price": 305.55,
   "previousClose": 305.26,
   "dayHigh": 307.49,
-  "dayLow": 304.66,
-  "change": -0.16499999999996362,
-  "changePercent": -0.05405228329947049,
+  "dayLow": 304.3,
+  "change": 0.29000000000002046,
+  "changePercent": 0.09500098276879397,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -93,17 +93,61 @@
     },
     {
       "timestamp": 1786719900,
-      "close": 305.20001220703125
+      "close": 304.3500061035156
     },
     {
-      "timestamp": 1786719978,
-      "close": 305.0950012207031
+      "timestamp": 1786720200,
+      "close": 304.7200012207031
+    },
+    {
+      "timestamp": 1786720500,
+      "close": 305.1650085449219
+    },
+    {
+      "timestamp": 1786720800,
+      "close": 305.75
+    },
+    {
+      "timestamp": 1786721100,
+      "close": 305.53289794921875
+    },
+    {
+      "timestamp": 1786721400,
+      "close": 305.7749938964844
+    },
+    {
+      "timestamp": 1786721700,
+      "close": 305.7900085449219
+    },
+    {
+      "timestamp": 1786722000,
+      "close": 305.7250061035156
+    },
+    {
+      "timestamp": 1786722300,
+      "close": 305.6700134277344
+    },
+    {
+      "timestamp": 1786722600,
+      "close": 305.67498779296875
+    },
+    {
+      "timestamp": 1786722900,
+      "close": 305.6650085449219
+    },
+    {
+      "timestamp": 1786723200,
+      "close": 305.57000732421875
+    },
+    {
+      "timestamp": 1786723537,
+      "close": 305.55010986328125
     }
   ],
   "news": {
-    "title": "Apple trains China-specific AI model with Alibaba's help",
-    "publisher": "Quartz",
-    "publishedAt": "2026-08-14T14:03:16.000Z"
+    "title": "Apple Builds Custom AI Model for China With Alibaba",
+    "publisher": "GuruFocus.com",
+    "publishedAt": "2026-08-14T16:02:11.000Z"
   },
-  "generatedAt": "2026-08-14T15:06:19.355Z"
+  "generatedAt": "2026-08-14T16:05:39.473Z"
 }

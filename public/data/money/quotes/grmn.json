@@ -5,12 +5,12 @@
     "displaySymbol": "$GRMN"
   },
   "name": "GARMIN LTD.",
-  "price": 312.5,
+  "price": 311.565,
   "previousClose": 311.93,
   "dayHigh": 313.48,
-  "dayLow": 311.863,
-  "change": 0.5699999999999932,
-  "changePercent": 0.18273330554931977,
+  "dayLow": 311.27,
+  "change": -0.3650000000000091,
+  "changePercent": -0.11701343250088451,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -76,6 +76,10 @@
       "close": 312.1499938964844
     },
     {
+      "timestamp": 1786718700,
+      "close": 312.20001220703125
+    },
+    {
       "timestamp": 1786719000,
       "close": 312.3450012207031
     },
@@ -85,11 +89,55 @@
     },
     {
       "timestamp": 1786719600,
-      "close": 312.3500061035156
+      "close": 312.54998779296875
     },
     {
-      "timestamp": 1786719660,
+      "timestamp": 1786720200,
+      "close": 312.45001220703125
+    },
+    {
+      "timestamp": 1786720500,
       "close": 312.5
+    },
+    {
+      "timestamp": 1786720800,
+      "close": 312.5450134277344
+    },
+    {
+      "timestamp": 1786721100,
+      "close": 312.1400146484375
+    },
+    {
+      "timestamp": 1786721400,
+      "close": 312.385009765625
+    },
+    {
+      "timestamp": 1786721700,
+      "close": 312.2850036621094
+    },
+    {
+      "timestamp": 1786722000,
+      "close": 311.9800109863281
+    },
+    {
+      "timestamp": 1786722300,
+      "close": 311.7900085449219
+    },
+    {
+      "timestamp": 1786722600,
+      "close": 311.4800109863281
+    },
+    {
+      "timestamp": 1786722900,
+      "close": 311.3699951171875
+    },
+    {
+      "timestamp": 1786723200,
+      "close": 311.4599914550781
+    },
+    {
+      "timestamp": 1786723463,
+      "close": 311.56500244140625
     }
   ],
   "news": {
@@ -97,5 +145,5 @@
     "publisher": "The Wall Street Journal",
     "publishedAt": "2026-08-14T10:29:00.000Z"
   },
-  "generatedAt": "2026-08-14T15:06:53.875Z"
+  "generatedAt": "2026-08-14T16:06:10.604Z"
 }
