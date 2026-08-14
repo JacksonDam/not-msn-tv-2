@@ -5,337 +5,37 @@
     "displaySymbol": "$MS"
   },
   "name": "MORGAN STANLEY",
-  "price": 218.38,
-  "previousClose": 217.64,
-  "dayHigh": 222,
-  "dayLow": 217.88,
-  "change": 0.7400000000000091,
-  "changePercent": 0.34001102738467615,
+  "price": 217.46,
+  "previousClose": 218.33,
+  "dayHigh": 217.995,
+  "dayLow": 215.3,
+  "change": -0.8700000000000045,
+  "changePercent": -0.3984793660971944,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1786627800,
-      "close": 218.50999450683594
+      "timestamp": 1786714200,
+      "close": 217.10000610351562
     },
     {
-      "timestamp": 1786628100,
-      "close": 219.4199981689453
+      "timestamp": 1786714500,
+      "close": 216.77999877929688
     },
     {
-      "timestamp": 1786628400,
-      "close": 220.2550048828125
+      "timestamp": 1786714800,
+      "close": 216.80999755859375
     },
     {
-      "timestamp": 1786628700,
-      "close": 220.19000244140625
-    },
-    {
-      "timestamp": 1786629000,
-      "close": 219.44000244140625
-    },
-    {
-      "timestamp": 1786629300,
-      "close": 219.57000732421875
-    },
-    {
-      "timestamp": 1786629600,
-      "close": 219.72999572753906
-    },
-    {
-      "timestamp": 1786629900,
-      "close": 219.80499267578125
-    },
-    {
-      "timestamp": 1786630200,
-      "close": 220.11000061035156
-    },
-    {
-      "timestamp": 1786630500,
-      "close": 220.83999633789062
-    },
-    {
-      "timestamp": 1786630800,
-      "close": 221.75999450683594
-    },
-    {
-      "timestamp": 1786631100,
-      "close": 221.9499969482422
-    },
-    {
-      "timestamp": 1786631400,
-      "close": 221.58999633789062
-    },
-    {
-      "timestamp": 1786631700,
-      "close": 221.41000366210938
-    },
-    {
-      "timestamp": 1786632000,
-      "close": 221
-    },
-    {
-      "timestamp": 1786632300,
-      "close": 220.49000549316406
-    },
-    {
-      "timestamp": 1786632600,
-      "close": 220.4199981689453
-    },
-    {
-      "timestamp": 1786632900,
-      "close": 220.0850067138672
-    },
-    {
-      "timestamp": 1786633200,
-      "close": 219.80999755859375
-    },
-    {
-      "timestamp": 1786633500,
-      "close": 219.8800048828125
-    },
-    {
-      "timestamp": 1786633800,
-      "close": 219.22999572753906
-    },
-    {
-      "timestamp": 1786634100,
-      "close": 218.8800048828125
-    },
-    {
-      "timestamp": 1786634400,
-      "close": 219.32000732421875
-    },
-    {
-      "timestamp": 1786634700,
-      "close": 219.3300018310547
-    },
-    {
-      "timestamp": 1786635000,
-      "close": 219.27000427246094
-    },
-    {
-      "timestamp": 1786635300,
-      "close": 219.0800018310547
-    },
-    {
-      "timestamp": 1786635600,
-      "close": 219.19000244140625
-    },
-    {
-      "timestamp": 1786635900,
-      "close": 219.3000030517578
-    },
-    {
-      "timestamp": 1786636200,
-      "close": 219.00999450683594
-    },
-    {
-      "timestamp": 1786636500,
-      "close": 218.72999572753906
-    },
-    {
-      "timestamp": 1786636800,
-      "close": 218.8450927734375
-    },
-    {
-      "timestamp": 1786637100,
-      "close": 218.8300018310547
-    },
-    {
-      "timestamp": 1786637400,
-      "close": 218.58999633789062
-    },
-    {
-      "timestamp": 1786637700,
-      "close": 218.52000427246094
-    },
-    {
-      "timestamp": 1786638000,
-      "close": 218.83999633789062
-    },
-    {
-      "timestamp": 1786638300,
-      "close": 219.05999755859375
-    },
-    {
-      "timestamp": 1786638600,
-      "close": 219.1300048828125
-    },
-    {
-      "timestamp": 1786638900,
-      "close": 219.02999877929688
-    },
-    {
-      "timestamp": 1786639200,
-      "close": 219.19000244140625
-    },
-    {
-      "timestamp": 1786639500,
-      "close": 218.8699951171875
-    },
-    {
-      "timestamp": 1786639800,
-      "close": 218.7100067138672
-    },
-    {
-      "timestamp": 1786640100,
-      "close": 218.8000030517578
-    },
-    {
-      "timestamp": 1786640400,
-      "close": 218.76499938964844
-    },
-    {
-      "timestamp": 1786640700,
-      "close": 218.60000610351562
-    },
-    {
-      "timestamp": 1786641000,
-      "close": 218.74000549316406
-    },
-    {
-      "timestamp": 1786641300,
-      "close": 218.8800048828125
-    },
-    {
-      "timestamp": 1786641600,
-      "close": 218.85499572753906
-    },
-    {
-      "timestamp": 1786641900,
-      "close": 218.32000732421875
-    },
-    {
-      "timestamp": 1786642200,
-      "close": 218.22500610351562
-    },
-    {
-      "timestamp": 1786642500,
-      "close": 218.21499633789062
-    },
-    {
-      "timestamp": 1786642800,
-      "close": 218.3800048828125
-    },
-    {
-      "timestamp": 1786643100,
-      "close": 218.3000030517578
-    },
-    {
-      "timestamp": 1786643400,
-      "close": 218.46749877929688
-    },
-    {
-      "timestamp": 1786643700,
-      "close": 218.38999938964844
-    },
-    {
-      "timestamp": 1786644000,
-      "close": 218.6199951171875
-    },
-    {
-      "timestamp": 1786644300,
-      "close": 218.88499450683594
-    },
-    {
-      "timestamp": 1786644600,
-      "close": 218.99000549316406
-    },
-    {
-      "timestamp": 1786644900,
-      "close": 218.99000549316406
-    },
-    {
-      "timestamp": 1786645200,
-      "close": 218.7550048828125
-    },
-    {
-      "timestamp": 1786645500,
-      "close": 218.9149932861328
-    },
-    {
-      "timestamp": 1786645800,
-      "close": 218.9949951171875
-    },
-    {
-      "timestamp": 1786646100,
-      "close": 218.8300018310547
-    },
-    {
-      "timestamp": 1786646400,
-      "close": 218.7100067138672
-    },
-    {
-      "timestamp": 1786646700,
-      "close": 218.7100067138672
-    },
-    {
-      "timestamp": 1786647000,
-      "close": 218.58999633789062
-    },
-    {
-      "timestamp": 1786647300,
-      "close": 218.38499450683594
-    },
-    {
-      "timestamp": 1786647600,
-      "close": 218.9199981689453
-    },
-    {
-      "timestamp": 1786647900,
-      "close": 218.9600067138672
-    },
-    {
-      "timestamp": 1786648200,
-      "close": 218.81500244140625
-    },
-    {
-      "timestamp": 1786648500,
-      "close": 218.61000061035156
-    },
-    {
-      "timestamp": 1786648800,
-      "close": 218.82000732421875
-    },
-    {
-      "timestamp": 1786649100,
-      "close": 218.52000427246094
-    },
-    {
-      "timestamp": 1786649400,
-      "close": 218.22999572753906
-    },
-    {
-      "timestamp": 1786649700,
-      "close": 218.24000549316406
-    },
-    {
-      "timestamp": 1786650000,
-      "close": 218.2550048828125
-    },
-    {
-      "timestamp": 1786650300,
-      "close": 218.2899932861328
-    },
-    {
-      "timestamp": 1786650600,
-      "close": 218.1300048828125
-    },
-    {
-      "timestamp": 1786650900,
-      "close": 218.3699951171875
-    },
-    {
-      "timestamp": 1786651200,
-      "close": 218.3800048828125
+      "timestamp": 1786714978,
+      "close": 217.4600067138672
     }
   ],
   "news": {
-    "title": "Applied Materials Quarterly Revenue Guidance Implies Slower Systems Shipment Growth, Morgan Stanley Says",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-08-14T11:12:48.000Z"
+    "title": "SNDK Stock Primed For 5-Day Winning Streak – Wall Street Backs Margin Overhaul, Cash Return Strategy After Investor Day",
+    "publisher": "Stocktwits",
+    "publishedAt": "2026-08-14T13:01:41.000Z"
   },
-  "generatedAt": "2026-08-14T11:57:23.607Z"
+  "generatedAt": "2026-08-14T13:43:04.271Z"
 }
