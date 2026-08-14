@@ -5,12 +5,12 @@
     "displaySymbol": "$ALL"
   },
   "name": "THE ALLSTATE CORPORATION",
-  "price": 261.5,
+  "price": 261.41,
   "previousClose": 260.48,
   "dayHigh": 261.665,
   "dayLow": 259.12,
-  "change": 1.0199999999999818,
-  "changePercent": 0.3915847665847596,
+  "change": 0.9300000000000068,
+  "changePercent": 0.35703316953317216,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1786737000,
-      "close": 261.5299987792969
+      "close": 261.4100036621094
     },
     {
-      "timestamp": 1786737354,
-      "close": 261.5
+      "timestamp": 1786737300,
+      "close": 261.3699951171875
+    },
+    {
+      "timestamp": 1786737600,
+      "close": 261.4100036621094
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Quartz",
     "publishedAt": "2026-08-14T12:51:57.000Z"
   },
-  "generatedAt": "2026-08-14T19:55:56.440Z"
+  "generatedAt": "2026-08-14T20:44:39.418Z"
 }
