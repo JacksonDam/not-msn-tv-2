@@ -4,13 +4,13 @@
     "requestSymbol": "ARE",
     "displaySymbol": "$ARE"
   },
-  "name": "ALEXANDRIA REAL ESTATE EQUITIES, INC.",
-  "price": 48.32,
+  "name": "ALEXANDRIA REAL ESTATE EQUITIES",
+  "price": 48.22,
   "previousClose": 48.42,
   "dayHigh": 48.568,
   "dayLow": 48.02,
-  "change": -0.10000000000000142,
-  "changePercent": -0.2065262288310645,
+  "change": -0.20000000000000284,
+  "changePercent": -0.413052457662129,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -137,11 +137,63 @@
     },
     {
       "timestamp": 1786723200,
+      "close": 48.31999969482422
+    },
+    {
+      "timestamp": 1786723500,
+      "close": 48.33000183105469
+    },
+    {
+      "timestamp": 1786723800,
+      "close": 48.36989974975586
+    },
+    {
+      "timestamp": 1786724100,
       "close": 48.310001373291016
     },
     {
-      "timestamp": 1786723410,
-      "close": 48.31999969482422
+      "timestamp": 1786724400,
+      "close": 48.20000076293945
+    },
+    {
+      "timestamp": 1786724700,
+      "close": 48.209999084472656
+    },
+    {
+      "timestamp": 1786725000,
+      "close": 48.30500030517578
+    },
+    {
+      "timestamp": 1786725300,
+      "close": 48.275001525878906
+    },
+    {
+      "timestamp": 1786725600,
+      "close": 48.22999954223633
+    },
+    {
+      "timestamp": 1786725900,
+      "close": 48.150001525878906
+    },
+    {
+      "timestamp": 1786726200,
+      "close": 48.1349983215332
+    },
+    {
+      "timestamp": 1786726500,
+      "close": 48.220001220703125
+    },
+    {
+      "timestamp": 1786726800,
+      "close": 48.27000045776367
+    },
+    {
+      "timestamp": 1786727100,
+      "close": 48.25659942626953
+    },
+    {
+      "timestamp": 1786727311,
+      "close": 48.220001220703125
     }
   ],
   "news": {
@@ -149,5 +201,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-13T12:19:04.000Z"
   },
-  "generatedAt": "2026-08-14T16:05:45.307Z"
+  "generatedAt": "2026-08-14T17:10:37.356Z"
 }

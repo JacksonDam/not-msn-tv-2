@@ -5,12 +5,12 @@
     "displaySymbol": "$ICE"
   },
   "name": "INTERCONTINENTAL EXCHANGE, INC.",
-  "price": 154.59,
+  "price": 154.49,
   "previousClose": 155.24,
   "dayHigh": 155.35,
   "dayLow": 153.264,
-  "change": -0.6500000000000057,
-  "changePercent": -0.4187065189384216,
+  "change": -0.75,
+  "changePercent": -0.4831229064674053,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -133,15 +133,67 @@
     },
     {
       "timestamp": 1786722900,
-      "close": 154.5500030517578
+      "close": 154.60000610351562
     },
     {
       "timestamp": 1786723200,
       "close": 154.58999633789062
     },
     {
-      "timestamp": 1786723566,
-      "close": 154.58999633789062
+      "timestamp": 1786723500,
+      "close": 154.49000549316406
+    },
+    {
+      "timestamp": 1786723800,
+      "close": 154.47999572753906
+    },
+    {
+      "timestamp": 1786724100,
+      "close": 154.38999938964844
+    },
+    {
+      "timestamp": 1786724400,
+      "close": 154.25
+    },
+    {
+      "timestamp": 1786724700,
+      "close": 154.38999938964844
+    },
+    {
+      "timestamp": 1786725000,
+      "close": 154.3350067138672
+    },
+    {
+      "timestamp": 1786725300,
+      "close": 154.2949981689453
+    },
+    {
+      "timestamp": 1786725600,
+      "close": 154.22999572753906
+    },
+    {
+      "timestamp": 1786725900,
+      "close": 154.30499267578125
+    },
+    {
+      "timestamp": 1786726200,
+      "close": 154.42999267578125
+    },
+    {
+      "timestamp": 1786726500,
+      "close": 154.41000366210938
+    },
+    {
+      "timestamp": 1786726800,
+      "close": 154.41000366210938
+    },
+    {
+      "timestamp": 1786727100,
+      "close": 154.42999267578125
+    },
+    {
+      "timestamp": 1786727373,
+      "close": 154.49000549316406
     }
   ],
   "news": {
@@ -149,5 +201,5 @@
     "publisher": "CNW Group",
     "publishedAt": "2026-08-14T12:55:00.000Z"
   },
-  "generatedAt": "2026-08-14T16:06:14.041Z"
+  "generatedAt": "2026-08-14T17:11:13.570Z"
 }
