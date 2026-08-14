@@ -4,13 +4,13 @@
     "requestSymbol": "ICE",
     "displaySymbol": "$ICE"
   },
-  "name": "INTERCONTINENTAL EXCHANGE, INC.",
-  "price": 154.49,
+  "name": "INTERCONTINENTAL EXCHANGE INC.",
+  "price": 154.25,
   "previousClose": 155.24,
   "dayHigh": 155.35,
   "dayLow": 153.264,
-  "change": -0.75,
-  "changePercent": -0.4831229064674053,
+  "change": -0.9900000000000091,
+  "changePercent": -0.6377222365369808,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -189,11 +189,55 @@
     },
     {
       "timestamp": 1786727100,
+      "close": 154.5
+    },
+    {
+      "timestamp": 1786727400,
       "close": 154.42999267578125
     },
     {
-      "timestamp": 1786727373,
-      "close": 154.49000549316406
+      "timestamp": 1786727700,
+      "close": 154.38499450683594
+    },
+    {
+      "timestamp": 1786728000,
+      "close": 154.3800048828125
+    },
+    {
+      "timestamp": 1786728300,
+      "close": 154.2550048828125
+    },
+    {
+      "timestamp": 1786728600,
+      "close": 154.02000427246094
+    },
+    {
+      "timestamp": 1786728900,
+      "close": 154.1300048828125
+    },
+    {
+      "timestamp": 1786729200,
+      "close": 154.13999938964844
+    },
+    {
+      "timestamp": 1786729500,
+      "close": 154.1300048828125
+    },
+    {
+      "timestamp": 1786729800,
+      "close": 154.1199951171875
+    },
+    {
+      "timestamp": 1786730100,
+      "close": 154.16000366210938
+    },
+    {
+      "timestamp": 1786730400,
+      "close": 154.21949768066406
+    },
+    {
+      "timestamp": 1786730783,
+      "close": 154.25
     }
   ],
   "news": {
@@ -201,5 +245,5 @@
     "publisher": "CNW Group",
     "publishedAt": "2026-08-14T12:55:00.000Z"
   },
-  "generatedAt": "2026-08-14T17:11:13.570Z"
+  "generatedAt": "2026-08-14T18:06:37.154Z"
 }

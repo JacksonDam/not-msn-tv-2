@@ -5,12 +5,12 @@
     "displaySymbol": "$STT"
   },
   "name": "STATE STREET CORPORATION",
-  "price": 190.83,
+  "price": 190.845,
   "previousClose": 189.85,
   "dayHigh": 191.32,
   "dayLow": 188.8,
-  "change": 0.9800000000000182,
-  "changePercent": 0.5161969976297173,
+  "change": 0.9950000000000045,
+  "changePercent": 0.524097972083226,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -180,8 +180,12 @@
       "close": 190.8699951171875
     },
     {
+      "timestamp": 1786726500,
+      "close": 190.85000610351562
+    },
+    {
       "timestamp": 1786726800,
-      "close": 190.72000122070312
+      "close": 190.75
     },
     {
       "timestamp": 1786727100,
@@ -189,11 +193,55 @@
     },
     {
       "timestamp": 1786727400,
-      "close": 190.7274932861328
+      "close": 190.91000366210938
     },
     {
-      "timestamp": 1786727494,
-      "close": 190.8300018310547
+      "timestamp": 1786727700,
+      "close": 190.85000610351562
+    },
+    {
+      "timestamp": 1786728000,
+      "close": 190.80999755859375
+    },
+    {
+      "timestamp": 1786728300,
+      "close": 190.8800048828125
+    },
+    {
+      "timestamp": 1786728600,
+      "close": 190.7949981689453
+    },
+    {
+      "timestamp": 1786728900,
+      "close": 190.5449981689453
+    },
+    {
+      "timestamp": 1786729200,
+      "close": 190.61000061035156
+    },
+    {
+      "timestamp": 1786729500,
+      "close": 190.63999938964844
+    },
+    {
+      "timestamp": 1786729800,
+      "close": 190.86990356445312
+    },
+    {
+      "timestamp": 1786730100,
+      "close": 190.6875
+    },
+    {
+      "timestamp": 1786730400,
+      "close": 190.80499267578125
+    },
+    {
+      "timestamp": 1786730700,
+      "close": 190.83999633789062
+    },
+    {
+      "timestamp": 1786730810,
+      "close": 190.84500122070312
     }
   ],
   "news": {
@@ -201,5 +249,5 @@
     "publisher": "Bloomberg",
     "publishedAt": "2026-08-14T16:02:39.000Z"
   },
-  "generatedAt": "2026-08-14T17:11:42.422Z"
+  "generatedAt": "2026-08-14T18:07:04.197Z"
 }
