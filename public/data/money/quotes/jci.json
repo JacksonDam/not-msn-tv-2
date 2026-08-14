@@ -4,13 +4,13 @@
     "requestSymbol": "JCI",
     "displaySymbol": "$JCI"
   },
-  "name": "JOHNSON CONTROLS INTERNATIONAL ",
-  "price": 153,
+  "name": "JOHNSON CONTROLS INTERNATIONAL PLC",
+  "price": 153.65,
   "previousClose": 151.45,
-  "dayHigh": 153.46,
+  "dayHigh": 153.665,
   "dayLow": 150.24,
-  "change": 1.5500000000000114,
-  "changePercent": 1.0234400792340783,
+  "change": 2.200000000000017,
+  "changePercent": 1.4526246285903053,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -289,11 +289,47 @@
     },
     {
       "timestamp": 1786734600,
-      "close": 153.1300048828125
+      "close": 152.89500427246094
     },
     {
-      "timestamp": 1786734814,
-      "close": 153
+      "timestamp": 1786734900,
+      "close": 152.99000549316406
+    },
+    {
+      "timestamp": 1786735200,
+      "close": 152.97999572753906
+    },
+    {
+      "timestamp": 1786735500,
+      "close": 152.86500549316406
+    },
+    {
+      "timestamp": 1786735800,
+      "close": 152.8209991455078
+    },
+    {
+      "timestamp": 1786736100,
+      "close": 152.88999938964844
+    },
+    {
+      "timestamp": 1786736400,
+      "close": 152.74000549316406
+    },
+    {
+      "timestamp": 1786736700,
+      "close": 152.83999633789062
+    },
+    {
+      "timestamp": 1786737000,
+      "close": 152.97999572753906
+    },
+    {
+      "timestamp": 1786737300,
+      "close": 153.5
+    },
+    {
+      "timestamp": 1786737403,
+      "close": 153.64999389648438
     }
   ],
   "news": {
@@ -301,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-14T09:58:23.000Z"
   },
-  "generatedAt": "2026-08-14T19:13:54.992Z"
+  "generatedAt": "2026-08-14T19:56:46.102Z"
 }

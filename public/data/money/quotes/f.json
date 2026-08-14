@@ -5,12 +5,12 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 14.42,
+  "price": 14.385,
   "previousClose": 13.89,
-  "dayHigh": 14.42,
+  "dayHigh": 14.44,
   "dayLow": 13.93,
-  "change": 0.5299999999999994,
-  "changePercent": 3.8156947444204414,
+  "change": 0.4949999999999992,
+  "changePercent": 3.5637149028077695,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -289,11 +289,47 @@
     },
     {
       "timestamp": 1786734600,
+      "close": 14.425000190734863
+    },
+    {
+      "timestamp": 1786734900,
+      "close": 14.425000190734863
+    },
+    {
+      "timestamp": 1786735200,
+      "close": 14.399999618530273
+    },
+    {
+      "timestamp": 1786735500,
+      "close": 14.402299880981445
+    },
+    {
+      "timestamp": 1786735800,
+      "close": 14.399999618530273
+    },
+    {
+      "timestamp": 1786736100,
+      "close": 14.390000343322754
+    },
+    {
+      "timestamp": 1786736400,
+      "close": 14.39330005645752
+    },
+    {
+      "timestamp": 1786736700,
+      "close": 14.425000190734863
+    },
+    {
+      "timestamp": 1786737000,
       "close": 14.414999961853027
     },
     {
-      "timestamp": 1786734819,
-      "close": 14.420000076293945
+      "timestamp": 1786737300,
+      "close": 14.385000228881836
+    },
+    {
+      "timestamp": 1786737387,
+      "close": 14.385000228881836
     }
   ],
   "news": {
@@ -301,5 +337,5 @@
     "publisher": "Benzinga",
     "publishedAt": "2026-08-14T18:01:09.000Z"
   },
-  "generatedAt": "2026-08-14T19:13:42.114Z"
+  "generatedAt": "2026-08-14T19:56:29.549Z"
 }

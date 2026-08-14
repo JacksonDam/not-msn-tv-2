@@ -4,13 +4,13 @@
     "requestSymbol": "PFE",
     "displaySymbol": "$PFE"
   },
-  "name": "PFIZER, INC.",
-  "price": 26.9,
+  "name": "PFIZER INC.",
+  "price": 26.755,
   "previousClose": 26.8,
   "dayHigh": 26.915,
   "dayLow": 26.42,
-  "change": 0.09999999999999787,
-  "changePercent": 0.37313432835820104,
+  "change": -0.045000000000001705,
+  "changePercent": -0.16791044776120037,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -289,11 +289,47 @@
     },
     {
       "timestamp": 1786734600,
+      "close": 26.895000457763672
+    },
+    {
+      "timestamp": 1786734900,
       "close": 26.885000228881836
     },
     {
-      "timestamp": 1786734849,
-      "close": 26.899999618530273
+      "timestamp": 1786735200,
+      "close": 26.854999542236328
+    },
+    {
+      "timestamp": 1786735500,
+      "close": 26.829999923706055
+    },
+    {
+      "timestamp": 1786735800,
+      "close": 26.84000015258789
+    },
+    {
+      "timestamp": 1786736100,
+      "close": 26.790599822998047
+    },
+    {
+      "timestamp": 1786736400,
+      "close": 26.78499984741211
+    },
+    {
+      "timestamp": 1786736700,
+      "close": 26.80500030517578
+    },
+    {
+      "timestamp": 1786737000,
+      "close": 26.795000076293945
+    },
+    {
+      "timestamp": 1786737300,
+      "close": 26.7450008392334
+    },
+    {
+      "timestamp": 1786737423,
+      "close": 26.7549991607666
     }
   ],
   "news": {
@@ -301,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-14T17:45:14.000Z"
   },
-  "generatedAt": "2026-08-14T19:14:11.585Z"
+  "generatedAt": "2026-08-14T19:57:04.932Z"
 }
