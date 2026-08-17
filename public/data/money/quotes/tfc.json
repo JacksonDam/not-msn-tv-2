@@ -5,12 +5,12 @@
     "displaySymbol": "$TFC"
   },
   "name": "TRUIST FINANCIAL CORPORATION",
-  "price": 53.155,
+  "price": 52.94,
   "previousClose": 53.1,
   "dayHigh": 53.53,
-  "dayLow": 52.924,
-  "change": 0.054999999999999716,
-  "changePercent": 0.10357815442561151,
+  "dayLow": 52.92,
+  "change": -0.1600000000000037,
+  "changePercent": -0.30131826741996925,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -176,8 +176,52 @@
       "close": 53.1349983215332
     },
     {
-      "timestamp": 1786985192,
+      "timestamp": 1786985400,
+      "close": 53.099998474121094
+    },
+    {
+      "timestamp": 1786985700,
+      "close": 53.125
+    },
+    {
+      "timestamp": 1786986000,
       "close": 53.154998779296875
+    },
+    {
+      "timestamp": 1786986300,
+      "close": 53.13999938964844
+    },
+    {
+      "timestamp": 1786986600,
+      "close": 53.165000915527344
+    },
+    {
+      "timestamp": 1786986900,
+      "close": 53.1349983215332
+    },
+    {
+      "timestamp": 1786987200,
+      "close": 53.095001220703125
+    },
+    {
+      "timestamp": 1786987500,
+      "close": 53.08000183105469
+    },
+    {
+      "timestamp": 1786987800,
+      "close": 53.060001373291016
+    },
+    {
+      "timestamp": 1786988100,
+      "close": 52.939998626708984
+    },
+    {
+      "timestamp": 1786988400,
+      "close": 52.94499969482422
+    },
+    {
+      "timestamp": 1786988758,
+      "close": 52.939998626708984
     }
   ],
   "news": {
@@ -185,5 +229,5 @@
     "publisher": "Stocktwits",
     "publishedAt": "2026-08-17T04:22:00.000Z"
   },
-  "generatedAt": "2026-08-17T16:46:35.245Z"
+  "generatedAt": "2026-08-17T17:46:19.863Z"
 }
