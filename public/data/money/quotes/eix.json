@@ -5,12 +5,12 @@
     "displaySymbol": "$EIX"
   },
   "name": "EDISON INTERNATIONAL",
-  "price": 71.515,
+  "price": 71.3,
   "previousClose": 71.41,
   "dayHigh": 72.29,
   "dayLow": 70.37,
-  "change": 0.10500000000000398,
-  "changePercent": 0.1470382299397899,
+  "change": -0.10999999999999943,
+  "changePercent": -0.15404005041310662,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 71.5999984741211
+      "close": 71.6500015258789
     },
     {
-      "timestamp": 1786995741,
-      "close": 71.51499938964844
+      "timestamp": 1786995900,
+      "close": 71.16999816894531
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 71.25
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 71.30999755859375
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 71.30000305175781
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-08-14T16:00:00.000Z"
   },
-  "generatedAt": "2026-08-17T19:42:25.732Z"
+  "generatedAt": "2026-08-17T20:44:15.587Z"
 }

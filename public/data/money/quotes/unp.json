@@ -5,12 +5,12 @@
     "displaySymbol": "$UNP"
   },
   "name": "UNION PACIFIC CORPORATION",
-  "price": 300.18,
+  "price": 299.9,
   "previousClose": 293.68,
   "dayHigh": 302.79,
   "dayLow": 295.39,
-  "change": 6.5,
-  "changePercent": 2.213293380550259,
+  "change": 6.21999999999997,
+  "changePercent": 2.1179515118496224,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 300.04998779296875
+      "close": 300.2900085449219
     },
     {
-      "timestamp": 1786995807,
-      "close": 300.17999267578125
+      "timestamp": 1786995900,
+      "close": 300.25
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 300.4800109863281
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 299.9200134277344
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 299.8999938964844
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "InvestorsHub",
     "publishedAt": "2026-08-17T11:04:49.000Z"
   },
-  "generatedAt": "2026-08-17T19:43:34.982Z"
+  "generatedAt": "2026-08-17T20:46:03.015Z"
 }

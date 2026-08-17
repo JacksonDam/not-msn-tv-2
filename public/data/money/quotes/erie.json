@@ -5,12 +5,12 @@
     "displaySymbol": "$ERIE"
   },
   "name": "ERIE INDEMNITY COMPANY",
-  "price": 247.9,
+  "price": 247.75,
   "previousClose": 255.99,
   "dayHigh": 256.68,
   "dayLow": 246.99,
-  "change": -8.090000000000003,
-  "changePercent": -3.1602796984257213,
+  "change": -8.240000000000009,
+  "changePercent": -3.218875737333493,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -261,11 +261,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 248
+      "close": 248.3699951171875
     },
     {
-      "timestamp": 1786995738,
-      "close": 247.89999389648438
+      "timestamp": 1786995900,
+      "close": 247.7100067138672
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 248.3000030517578
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 247.52999877929688
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 247.75
     }
   ],
   "news": {
@@ -273,5 +285,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-11T14:18:44.000Z"
   },
-  "generatedAt": "2026-08-17T19:42:28.031Z"
+  "generatedAt": "2026-08-17T20:44:19.266Z"
 }

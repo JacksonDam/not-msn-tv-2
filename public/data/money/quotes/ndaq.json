@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 96.71,
+  "price": 96.68,
   "previousClose": 97.02,
   "dayHigh": 97.75,
   "dayLow": 96.47,
-  "change": -0.3100000000000023,
-  "changePercent": -0.319521748093179,
+  "change": -0.3399999999999892,
+  "changePercent": -0.35044320758605363,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 96.70999908447266
+      "close": 96.76000213623047
     },
     {
-      "timestamp": 1786995781,
-      "close": 96.70999908447266
+      "timestamp": 1786995900,
+      "close": 96.79000091552734
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 96.77999877929688
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 96.66999816894531
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 96.68000030517578
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-12T18:11:00.000Z"
   },
-  "generatedAt": "2026-08-17T19:43:04.480Z"
+  "generatedAt": "2026-08-17T20:45:15.255Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$PNR"
   },
   "name": "PENTAIR PLC",
-  "price": 64.44,
+  "price": 64.1,
   "previousClose": 66.16,
   "dayHigh": 65.93,
-  "dayLow": 64.01,
-  "change": -1.7199999999999989,
-  "changePercent": -2.5997581620314376,
+  "dayLow": 63.97,
+  "change": -2.0600000000000023,
+  "changePercent": -3.1136638452237038,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 64.3949966430664
+      "close": 64.28500366210938
     },
     {
-      "timestamp": 1786995793,
-      "close": 64.44000244140625
+      "timestamp": 1786995900,
+      "close": 64.18000030517578
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 64.0999984741211
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 64.08999633789062
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 64.0999984741211
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-17T10:38:29.000Z"
   },
-  "generatedAt": "2026-08-17T19:43:14.362Z"
+  "generatedAt": "2026-08-17T20:45:31.388Z"
 }

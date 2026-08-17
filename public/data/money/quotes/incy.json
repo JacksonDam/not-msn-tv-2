@@ -5,12 +5,12 @@
     "displaySymbol": "$INCY"
   },
   "name": "INCYTE CORPORATION",
-  "price": 123.34,
+  "price": 123.5,
   "previousClose": 120.16,
   "dayHigh": 124.06,
   "dayLow": 119.64,
-  "change": 3.180000000000007,
-  "changePercent": 2.646471371504666,
+  "change": 3.3400000000000034,
+  "changePercent": 2.7796271637816274,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 123.48999786376953
+      "close": 123.62210083007812
     },
     {
-      "timestamp": 1786995745,
-      "close": 123.33999633789062
+      "timestamp": 1786995900,
+      "close": 123.63500213623047
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 123.54000091552734
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 123.43000030517578
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 123.5
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-17T09:35:17.000Z"
   },
-  "generatedAt": "2026-08-17T19:42:45.557Z"
+  "generatedAt": "2026-08-17T20:44:46.947Z"
 }

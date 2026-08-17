@@ -5,12 +5,12 @@
     "displaySymbol": "$PSX"
   },
   "name": "PHILLIPS 66",
-  "price": 240.09,
+  "price": 240.55,
   "previousClose": 233.61,
-  "dayHigh": 240.47,
+  "dayHigh": 240.65,
   "dayLow": 233,
-  "change": 6.47999999999999,
-  "changePercent": 2.7738538589957575,
+  "change": 6.939999999999998,
+  "changePercent": 2.97076323787509,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 240.10000610351562
+      "close": 240.1199951171875
     },
     {
-      "timestamp": 1786995787,
-      "close": 240.08999633789062
+      "timestamp": 1786995900,
+      "close": 240.47999572753906
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 240.11500549316406
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 240.5800018310547
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 240.5500030517578
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-17T09:47:09.000Z"
   },
-  "generatedAt": "2026-08-17T19:43:16.561Z"
+  "generatedAt": "2026-08-17T20:45:34.769Z"
 }

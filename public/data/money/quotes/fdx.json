@@ -5,12 +5,12 @@
     "displaySymbol": "$FDX"
   },
   "name": "FEDEX CORPORATION",
-  "price": 331.615,
+  "price": 331.49,
   "previousClose": 334.64,
   "dayHigh": 340.03,
-  "dayLow": 331.5,
-  "change": -3.0249999999999773,
-  "changePercent": -0.9039564905570098,
+  "dayLow": 331.42,
+  "change": -3.1499999999999773,
+  "changePercent": -0.9413100645469691,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1786995600,
-      "close": 331.5799865722656
+      "close": 331.7850036621094
     },
     {
-      "timestamp": 1786995751,
-      "close": 331.614990234375
+      "timestamp": 1786995900,
+      "close": 331.8999938964844
+    },
+    {
+      "timestamp": 1786996200,
+      "close": 332.30499267578125
+    },
+    {
+      "timestamp": 1786996500,
+      "close": 331.54998779296875
+    },
+    {
+      "timestamp": 1786996800,
+      "close": 331.489990234375
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-08-17T06:09:25.000Z"
   },
-  "generatedAt": "2026-08-17T19:42:32.463Z"
+  "generatedAt": "2026-08-17T20:44:25.134Z"
 }
