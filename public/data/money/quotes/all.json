@@ -5,12 +5,12 @@
     "displaySymbol": "$ALL"
   },
   "name": "THE ALLSTATE CORPORATION",
-  "price": 261.61,
-  "previousClose": 261.37,
-  "dayHigh": 262.48,
+  "price": 260.847,
+  "previousClose": 261.41,
+  "dayHigh": 262.66,
   "dayLow": 259.62,
-  "change": 0.2400000000000091,
-  "changePercent": 0.09182385124536445,
+  "change": -0.563000000000045,
+  "changePercent": -0.2153704907999101,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -33,11 +33,51 @@
     },
     {
       "timestamp": 1786974600,
+      "close": 261.5
+    },
+    {
+      "timestamp": 1786974900,
+      "close": 261.8900146484375
+    },
+    {
+      "timestamp": 1786975200,
+      "close": 262.0849914550781
+    },
+    {
+      "timestamp": 1786975500,
+      "close": 261.8800048828125
+    },
+    {
+      "timestamp": 1786975800,
+      "close": 261.94500732421875
+    },
+    {
+      "timestamp": 1786976100,
       "close": 261.55999755859375
     },
     {
-      "timestamp": 1786974731,
-      "close": 261.6099853515625
+      "timestamp": 1786976400,
+      "close": 261.7099914550781
+    },
+    {
+      "timestamp": 1786976700,
+      "close": 261.5799865722656
+    },
+    {
+      "timestamp": 1786977000,
+      "close": 261.0799865722656
+    },
+    {
+      "timestamp": 1786977300,
+      "close": 260.9800109863281
+    },
+    {
+      "timestamp": 1786977600,
+      "close": 260.92498779296875
+    },
+    {
+      "timestamp": 1786977734,
+      "close": 260.8468933105469
     }
   ],
   "news": {
@@ -45,5 +85,5 @@
     "publisher": "Investing.com",
     "publishedAt": "2026-08-16T10:30:03.000Z"
   },
-  "generatedAt": "2026-08-17T13:52:28.885Z"
+  "generatedAt": "2026-08-17T14:43:59.260Z"
 }
