@@ -5,12 +5,12 @@
     "displaySymbol": "$TXN"
   },
   "name": "TEXAS INSTRUMENTS INCORPORATED",
-  "price": 284.2,
+  "price": 284.24,
   "previousClose": 279.58,
-  "dayHigh": 285.95,
+  "dayHigh": 286.21,
   "dayLow": 279,
-  "change": 4.6200000000000045,
-  "changePercent": 1.6524787180771174,
+  "change": 4.660000000000025,
+  "changePercent": 1.6667858931254114,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -76,8 +76,52 @@
       "close": 284.31500244140625
     },
     {
-      "timestamp": 1786977926,
+      "timestamp": 1786977900,
+      "close": 284.2900085449219
+    },
+    {
+      "timestamp": 1786978200,
+      "close": 285.3699951171875
+    },
+    {
+      "timestamp": 1786978500,
+      "close": 285.7650146484375
+    },
+    {
+      "timestamp": 1786978800,
+      "close": 285.989990234375
+    },
+    {
+      "timestamp": 1786979100,
+      "close": 285.6400146484375
+    },
+    {
+      "timestamp": 1786979400,
+      "close": 285.0350036621094
+    },
+    {
+      "timestamp": 1786979700,
+      "close": 285.3949890136719
+    },
+    {
+      "timestamp": 1786980000,
+      "close": 284.9849853515625
+    },
+    {
+      "timestamp": 1786980300,
+      "close": 285.04998779296875
+    },
+    {
+      "timestamp": 1786980600,
+      "close": 284.4599914550781
+    },
+    {
+      "timestamp": 1786980900,
       "close": 284.20001220703125
+    },
+    {
+      "timestamp": 1786981202,
+      "close": 284.239990234375
     }
   ],
   "news": {
@@ -85,5 +129,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-08-14T21:06:50.000Z"
   },
-  "generatedAt": "2026-08-17T14:45:28.466Z"
+  "generatedAt": "2026-08-17T15:40:20.928Z"
 }
