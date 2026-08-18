@@ -5,12 +5,12 @@
     "displaySymbol": "$TTD"
   },
   "name": "THE TRADE DESK, INC.",
-  "price": 13.425,
+  "price": 13.375,
   "previousClose": 13.4,
   "dayHigh": 13.78,
   "dayLow": 13.37,
-  "change": 0.025000000000000355,
-  "changePercent": 0.18656716417910713,
+  "change": -0.025000000000000355,
+  "changePercent": -0.18656716417910713,
   "currency": "USD",
   "exchangeName": "NGM",
   "marketState": "",
@@ -277,11 +277,47 @@
     },
     {
       "timestamp": 1787079300,
-      "close": 13.420000076293945
+      "close": 13.414999961853027
     },
     {
-      "timestamp": 1787079442,
+      "timestamp": 1787079600,
       "close": 13.425000190734863
+    },
+    {
+      "timestamp": 1787079900,
+      "close": 13.414999961853027
+    },
+    {
+      "timestamp": 1787080200,
+      "close": 13.444999694824219
+    },
+    {
+      "timestamp": 1787080500,
+      "close": 13.46500015258789
+    },
+    {
+      "timestamp": 1787080800,
+      "close": 13.440099716186523
+    },
+    {
+      "timestamp": 1787081100,
+      "close": 13.454999923706055
+    },
+    {
+      "timestamp": 1787081400,
+      "close": 13.46500015258789
+    },
+    {
+      "timestamp": 1787081700,
+      "close": 13.404999732971191
+    },
+    {
+      "timestamp": 1787082000,
+      "close": 13.380000114440918
+    },
+    {
+      "timestamp": 1787082084,
+      "close": 13.375
     }
   ],
   "news": {
@@ -289,5 +325,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-08-18T04:33:58.000Z"
   },
-  "generatedAt": "2026-08-18T18:57:24.272Z"
+  "generatedAt": "2026-08-18T19:41:26.531Z"
 }
