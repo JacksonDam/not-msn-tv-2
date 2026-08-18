@@ -5,12 +5,12 @@
     "displaySymbol": "$CDW"
   },
   "name": "CDW CORPORATION",
-  "price": 136.33,
+  "price": 134.97,
   "previousClose": 135.3,
   "dayHigh": 137.16,
   "dayLow": 134.118,
-  "change": 1.0300000000000011,
-  "changePercent": 0.7612712490761279,
+  "change": -0.3300000000000125,
+  "changePercent": -0.24390243902439948,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 136.24000549316406
     },
     {
-      "timestamp": 1787082010,
-      "close": 136.3300018310547
+      "timestamp": 1787082000,
+      "close": 135.78500366210938
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 135.88999938964844
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 135.38999938964844
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 134.97999572753906
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 134.97000122070312
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-17T21:18:20.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:13.364Z"
+  "generatedAt": "2026-08-18T20:40:50.694Z"
 }

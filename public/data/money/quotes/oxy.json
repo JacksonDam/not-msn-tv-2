@@ -5,12 +5,12 @@
     "displaySymbol": "$OXY"
   },
   "name": "OCCIDENTAL PETROLEUM CORPORATION",
-  "price": 59.89,
+  "price": 59.8,
   "previousClose": 59.04,
   "dayHigh": 60.15,
   "dayLow": 59.04,
-  "change": 0.8500000000000014,
-  "changePercent": 1.4397018970189726,
+  "change": 0.759999999999998,
+  "changePercent": 1.287262872628723,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787082000,
-      "close": 59.89099884033203
+      "close": 59.875
     },
     {
-      "timestamp": 1787082065,
-      "close": 59.890499114990234
+      "timestamp": 1787082300,
+      "close": 59.845001220703125
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 59.834999084472656
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 59.814998626708984
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 59.79999923706055
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-18T16:30:27.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:07.250Z"
+  "generatedAt": "2026-08-18T20:43:02.489Z"
 }

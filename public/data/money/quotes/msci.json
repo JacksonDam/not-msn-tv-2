@@ -5,12 +5,12 @@
     "displaySymbol": "$MSCI"
   },
   "name": "MSCI INC.",
-  "price": 563.78,
+  "price": 562.77,
   "previousClose": 550.68,
   "dayHigh": 566.855,
   "dayLow": 554.065,
-  "change": 13.100000000000023,
-  "changePercent": 2.3788770247693805,
+  "change": 12.090000000000032,
+  "changePercent": 2.1954674220963235,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -301,19 +301,35 @@
     },
     {
       "timestamp": 1787081100,
-      "close": 564.5549926757812
+      "close": 564.760009765625
     },
     {
       "timestamp": 1787081400,
-      "close": 564.4299926757812
+      "close": 564.6099853515625
     },
     {
       "timestamp": 1787081700,
       "close": 564.0549926757812
     },
     {
-      "timestamp": 1787082039,
-      "close": 563.780029296875
+      "timestamp": 1787082000,
+      "close": 562.719970703125
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 562.85498046875
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 564.0050048828125
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 563.010009765625
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 562.77001953125
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-17T17:58:20.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:58.778Z"
+  "generatedAt": "2026-08-18T20:42:45.192Z"
 }

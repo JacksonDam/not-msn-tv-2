@@ -5,12 +5,12 @@
     "displaySymbol": "$PCG"
   },
   "name": "PG&E CORPORATION",
-  "price": 17.8,
+  "price": 17.82,
   "previousClose": 17.5,
   "dayHigh": 17.99,
   "dayLow": 17.72,
-  "change": 0.3000000000000007,
-  "changePercent": 1.7142857142857182,
+  "change": 0.3200000000000003,
+  "changePercent": 1.82857142857143,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787082000,
-      "close": 17.795000076293945
+      "close": 17.799999237060547
     },
     {
-      "timestamp": 1787082066,
-      "close": 17.79990005493164
+      "timestamp": 1787082300,
+      "close": 17.815000534057617
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 17.81999969482422
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 17.825000762939453
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 17.81999969482422
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-14T21:46:30.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:07.898Z"
+  "generatedAt": "2026-08-18T20:43:04.414Z"
 }

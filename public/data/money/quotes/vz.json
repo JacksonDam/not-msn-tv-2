@@ -5,12 +5,12 @@
     "displaySymbol": "$VZ"
   },
   "name": "VERIZON COMMUNICATIONS INC.",
-  "price": 48.685,
+  "price": 48.54,
   "previousClose": 48.06,
   "dayHigh": 49.005,
   "dayLow": 48.405,
-  "change": 0.625,
-  "changePercent": 1.3004577611319184,
+  "change": 0.4799999999999969,
+  "changePercent": 0.9987515605493068,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787082000,
+      "close": 48.685001373291016
+    },
+    {
+      "timestamp": 1787082300,
       "close": 48.69499969482422
     },
     {
-      "timestamp": 1787082090,
-      "close": 48.685001373291016
+      "timestamp": 1787082600,
+      "close": 48.70500183105469
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 48.560001373291016
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 48.540000915527344
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-18T19:12:12.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:31.570Z"
+  "generatedAt": "2026-08-18T20:44:27.647Z"
 }

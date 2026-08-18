@@ -5,12 +5,12 @@
     "displaySymbol": "$HAL"
   },
   "name": "HALLIBURTON COMPANY",
-  "price": 34.73,
+  "price": 34.66,
   "previousClose": 34.73,
   "dayHigh": 35.27,
   "dayLow": 34.57,
-  "change": 0,
-  "changePercent": 0,
+  "change": -0.07000000000000028,
+  "changePercent": -0.20155485171321708,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 34.7400016784668
     },
     {
-      "timestamp": 1787082038,
-      "close": 34.72999954223633
+      "timestamp": 1787082000,
+      "close": 34.775001525878906
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 34.81999969482422
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 34.71500015258789
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 34.66999816894531
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 34.65999984741211
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-18T09:34:13.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:40.650Z"
+  "generatedAt": "2026-08-18T20:41:53.621Z"
 }

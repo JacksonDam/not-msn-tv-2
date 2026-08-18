@@ -5,12 +5,12 @@
     "displaySymbol": "$FISV"
   },
   "name": "FISERV, INC.",
-  "price": 52.52,
+  "price": 51.72,
   "previousClose": 52.21,
   "dayHigh": 53.41,
-  "dayLow": 52.43,
-  "change": 0.3100000000000023,
-  "changePercent": 0.593755985443406,
+  "dayLow": 51.69,
+  "change": -0.490000000000002,
+  "changePercent": -0.9385175253782838,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 52.53499984741211
     },
     {
-      "timestamp": 1787082024,
-      "close": 52.52000045776367
+      "timestamp": 1787082000,
+      "close": 52.45500183105469
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 52.40999984741211
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 52.224998474121094
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 51.72999954223633
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 51.720001220703125
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-17T13:05:22.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:35.026Z"
+  "generatedAt": "2026-08-18T20:41:40.323Z"
 }

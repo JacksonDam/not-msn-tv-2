@@ -5,12 +5,12 @@
     "displaySymbol": "$WAT"
   },
   "name": "WATERS CORPORATION",
-  "price": 403.41,
+  "price": 401.25,
   "previousClose": 407.74,
   "dayHigh": 409.61,
-  "dayLow": 401.84,
-  "change": -4.329999999999984,
-  "changePercent": -1.0619512434394427,
+  "dayLow": 400.94,
+  "change": -6.490000000000009,
+  "changePercent": -1.5917005935154778,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,15 +309,27 @@
     },
     {
       "timestamp": 1787081700,
-      "close": 403.739990234375
+      "close": 403.6199951171875
     },
     {
       "timestamp": 1787082000,
-      "close": 403.7300109863281
+      "close": 403.6449890136719
     },
     {
-      "timestamp": 1787082080,
-      "close": 403.4100036621094
+      "timestamp": 1787082300,
+      "close": 403.9849853515625
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 402.8699951171875
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 401.3699951171875
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 401.25
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-18T10:13:33.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:31.888Z"
+  "generatedAt": "2026-08-18T20:44:28.947Z"
 }

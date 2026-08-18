@@ -5,12 +5,12 @@
     "displaySymbol": "$ABNB"
   },
   "name": "AIRBNB, INC.",
-  "price": 184.34,
+  "price": 183.25,
   "previousClose": 179.29,
   "dayHigh": 186.1,
   "dayLow": 180.08,
-  "change": 5.050000000000011,
-  "changePercent": 2.816665737074021,
+  "change": 3.960000000000008,
+  "changePercent": 2.2087121423392317,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787081700,
-      "close": 184.30999755859375
+      "close": 184.33999633789062
     },
     {
-      "timestamp": 1787081994,
-      "close": 184.33999633789062
+      "timestamp": 1787082000,
+      "close": 184.00999450683594
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 183.875
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 183.82000732421875
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 183.24000549316406
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 183.25
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-18T18:36:55.000Z"
   },
-  "generatedAt": "2026-08-18T19:39:59.316Z"
+  "generatedAt": "2026-08-18T20:40:16.858Z"
 }

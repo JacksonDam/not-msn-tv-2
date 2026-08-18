@@ -5,12 +5,12 @@
     "displaySymbol": "$T"
   },
   "name": "AT&T INC.",
-  "price": 24.985,
+  "price": 24.9,
   "previousClose": 24.68,
   "dayHigh": 25.23,
-  "dayLow": 24.92,
-  "change": 0.3049999999999997,
-  "changePercent": 1.2358184764991886,
+  "dayLow": 24.9,
+  "change": 0.21999999999999886,
+  "changePercent": 0.8914100486223616,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,15 +309,27 @@
     },
     {
       "timestamp": 1787081700,
-      "close": 25.037500381469727
+      "close": 25.030000686645508
     },
     {
       "timestamp": 1787082000,
-      "close": 24.9950008392334
+      "close": 25.0049991607666
     },
     {
-      "timestamp": 1787082081,
+      "timestamp": 1787082300,
+      "close": 24.96500015258789
+    },
+    {
+      "timestamp": 1787082600,
       "close": 24.985000610351562
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 24.90999984741211
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 24.899999618530273
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Quartz",
     "publishedAt": "2026-08-18T13:27:13.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:22.008Z"
+  "generatedAt": "2026-08-18T20:43:49.422Z"
 }

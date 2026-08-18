@@ -5,12 +5,12 @@
     "displaySymbol": "$CARR"
   },
   "name": "CARRIER GLOBAL CORPORATION",
-  "price": 61.225,
+  "price": 61.42,
   "previousClose": 62.56,
   "dayHigh": 62.13,
   "dayLow": 60.95,
-  "change": -1.3350000000000009,
-  "changePercent": -2.1339514066496177,
+  "change": -1.1400000000000006,
+  "changePercent": -1.8222506393861901,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,7 +313,23 @@
     },
     {
       "timestamp": 1787082000,
-      "close": 61.224998474121094
+      "close": 61.290000915527344
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 61.327999114990234
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 61.31999969482422
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 61.40999984741211
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 61.41999816894531
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-17T20:06:20.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:11.780Z"
+  "generatedAt": "2026-08-18T20:40:46.681Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$WFC"
   },
   "name": "WELLS FARGO & COMPANY",
-  "price": 87.42,
+  "price": 87.4,
   "previousClose": 87.54,
   "dayHigh": 88.3,
   "dayLow": 86.854,
-  "change": -0.12000000000000455,
-  "changePercent": -0.13708019191227386,
+  "change": -0.14000000000000057,
+  "changePercent": -0.1599268905643141,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787082000,
-      "close": 87.44000244140625
+      "close": 87.41500091552734
     },
     {
-      "timestamp": 1787082093,
-      "close": 87.41999816894531
+      "timestamp": 1787082300,
+      "close": 87.4000015258789
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 87.37000274658203
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 87.41500091552734
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 87.4000015258789
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "TheStreet",
     "publishedAt": "2026-08-18T16:03:00.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:34.028Z"
+  "generatedAt": "2026-08-18T20:44:32.848Z"
 }

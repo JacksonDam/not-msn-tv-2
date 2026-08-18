@@ -5,12 +5,12 @@
     "displaySymbol": "$RF"
   },
   "name": "REGIONS FINANCIAL CORPORATION",
-  "price": 31.79,
+  "price": 31.7,
   "previousClose": 31.7,
   "dayHigh": 31.89,
   "dayLow": 31.42,
-  "change": 0.08999999999999986,
-  "changePercent": 0.2839116719242898,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787082000,
-      "close": 31.78499984741211
+      "close": 31.790000915527344
     },
     {
-      "timestamp": 1787082071,
-      "close": 31.790000915527344
+      "timestamp": 1787082300,
+      "close": 31.79520034790039
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 31.7549991607666
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 31.700000762939453
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 31.700000762939453
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-14T21:49:00.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:14.715Z"
+  "generatedAt": "2026-08-18T20:43:21.499Z"
 }

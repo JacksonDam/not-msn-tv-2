@@ -5,12 +5,12 @@
     "displaySymbol": "$TECH"
   },
   "name": "BIO-TECHNE CORPORATION",
-  "price": 72.34,
+  "price": 72.22,
   "previousClose": 72.39,
   "dayHigh": 72.515,
-  "dayLow": 72.285,
-  "change": -0.04999999999999716,
-  "changePercent": -0.06907031357921972,
+  "dayLow": 72.22,
+  "change": -0.1700000000000017,
+  "changePercent": -0.23483906616936276,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 72.34500122070312
     },
     {
-      "timestamp": 1787082071,
-      "close": 72.33999633789062
+      "timestamp": 1787082300,
+      "close": 72.33499908447266
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 72.32499694824219
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 72.2300033569336
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 72.22000122070312
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-18T09:50:38.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:22.659Z"
+  "generatedAt": "2026-08-18T20:43:54.035Z"
 }

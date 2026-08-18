@@ -5,12 +5,12 @@
     "displaySymbol": "$USB"
   },
   "name": "U.S. BANCORP",
-  "price": 64.895,
+  "price": 64.79,
   "previousClose": 64.87,
   "dayHigh": 65.32,
   "dayLow": 64.265,
-  "change": 0.024999999999991473,
-  "changePercent": 0.038538615692911164,
+  "change": -0.0799999999999983,
+  "changePercent": -0.12332357021735516,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 64.88500213623047
     },
     {
-      "timestamp": 1787082081,
-      "close": 64.8949966430664
+      "timestamp": 1787082300,
+      "close": 64.87000274658203
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 64.8499984741211
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 64.79499816894531
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 64.79000091552734
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-14T20:53:00.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:28.877Z"
+  "generatedAt": "2026-08-18T20:44:18.934Z"
 }

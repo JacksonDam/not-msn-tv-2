@@ -5,12 +5,12 @@
     "displaySymbol": "$CTAS"
   },
   "name": "CINTAS CORPORATION",
-  "price": 199.85,
+  "price": 199.45,
   "previousClose": 197.82,
   "dayHigh": 201.31,
   "dayLow": 199.21,
-  "change": 2.030000000000001,
-  "changePercent": 1.0261854210898802,
+  "change": 1.6299999999999955,
+  "changePercent": 0.8239813972298026,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 199.85000610351562
     },
     {
-      "timestamp": 1787082013,
-      "close": 199.85000610351562
+      "timestamp": 1787082000,
+      "close": 199.75
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 199.8350067138672
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 199.69000244140625
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 199.4600067138672
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 199.4499969482422
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "ACCESS Newswire",
     "publishedAt": "2026-08-17T06:40:00.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:20.581Z"
+  "generatedAt": "2026-08-18T20:41:06.932Z"
 }

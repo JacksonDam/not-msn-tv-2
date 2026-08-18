@@ -5,12 +5,12 @@
     "displaySymbol": "$LNT"
   },
   "name": "ALLIANT ENERGY CORPORATION",
-  "price": 70.23,
+  "price": 69.98,
   "previousClose": 70.35,
   "dayHigh": 71.456,
-  "dayLow": 70.14,
-  "change": -0.11999999999999034,
-  "changePercent": -0.17057569296373895,
+  "dayLow": 69.95,
+  "change": -0.36999999999999034,
+  "changePercent": -0.525941719971557,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 70.22000122070312
     },
     {
-      "timestamp": 1787082052,
+      "timestamp": 1787082000,
       "close": 70.2300033569336
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 70.26000213623047
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 70.12999725341797
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 69.97000122070312
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 69.9800033569336
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-13T07:02:37.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:53.257Z"
+  "generatedAt": "2026-08-18T20:42:27.226Z"
 }

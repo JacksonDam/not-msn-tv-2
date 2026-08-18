@@ -5,12 +5,12 @@
     "displaySymbol": "$KMB"
   },
   "name": "KIMBERLY-CLARK CORPORATION",
-  "price": 108.04,
+  "price": 107.72,
   "previousClose": 107.91,
   "dayHigh": 109.79,
-  "dayLow": 108.03,
-  "change": 0.13000000000000966,
-  "changePercent": 0.1204707626726065,
+  "dayLow": 107.66,
+  "change": -0.18999999999999773,
+  "changePercent": -0.17607265313687123,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 108.1500015258789
     },
     {
-      "timestamp": 1787082047,
-      "close": 108.04000091552734
+      "timestamp": 1787082000,
+      "close": 107.94999694824219
+    },
+    {
+      "timestamp": 1787082300,
+      "close": 107.91000366210938
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 108.00499725341797
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 107.72000122070312
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 107.72000122070312
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Supply Chain Dive",
     "publishedAt": "2026-08-18T09:55:00.000Z"
   },
-  "generatedAt": "2026-08-18T19:40:50.937Z"
+  "generatedAt": "2026-08-18T20:42:19.655Z"
 }

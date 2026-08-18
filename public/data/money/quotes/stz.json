@@ -5,12 +5,12 @@
     "displaySymbol": "$STZ"
   },
   "name": "CONSTELLATION BRANDS, INC.",
-  "price": 131.88,
+  "price": 131,
   "previousClose": 130.56,
   "dayHigh": 132.15,
   "dayLow": 129.44,
-  "change": 1.3199999999999932,
-  "changePercent": 1.0110294117647005,
+  "change": 0.4399999999999977,
+  "changePercent": 0.3370098039215669,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787082000,
-      "close": 131.8699951171875
+      "close": 131.77000427246094
     },
     {
-      "timestamp": 1787082079,
-      "close": 131.8800048828125
+      "timestamp": 1787082300,
+      "close": 131.5500030517578
+    },
+    {
+      "timestamp": 1787082600,
+      "close": 131.49099731445312
+    },
+    {
+      "timestamp": 1787082900,
+      "close": 130.97999572753906
+    },
+    {
+      "timestamp": 1787083200,
+      "close": 131
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-18T15:49:33.000Z"
   },
-  "generatedAt": "2026-08-18T19:41:20.814Z"
+  "generatedAt": "2026-08-18T20:43:43.205Z"
 }
