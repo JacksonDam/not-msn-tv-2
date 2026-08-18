@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 31.33,
+  "price": 31.325,
   "previousClose": 31.34,
   "dayHigh": 31.93,
   "dayLow": 31.061,
-  "change": -0.010000000000001563,
-  "changePercent": -0.03190810465858827,
+  "change": -0.015000000000000568,
+  "changePercent": -0.047862156987876735,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -173,11 +173,55 @@
     },
     {
       "timestamp": 1787071500,
+      "close": 31.28499984741211
+    },
+    {
+      "timestamp": 1787071800,
+      "close": 31.28499984741211
+    },
+    {
+      "timestamp": 1787072100,
+      "close": 31.295000076293945
+    },
+    {
+      "timestamp": 1787072400,
+      "close": 31.299999237060547
+    },
+    {
+      "timestamp": 1787072700,
+      "close": 31.31999969482422
+    },
+    {
+      "timestamp": 1787073000,
+      "close": 31.360000610351562
+    },
+    {
+      "timestamp": 1787073300,
+      "close": 31.344999313354492
+    },
+    {
+      "timestamp": 1787073600,
+      "close": 31.325000762939453
+    },
+    {
+      "timestamp": 1787073900,
+      "close": 31.368999481201172
+    },
+    {
+      "timestamp": 1787074200,
+      "close": 31.360000610351562
+    },
+    {
+      "timestamp": 1787074500,
       "close": 31.329999923706055
     },
     {
-      "timestamp": 1787071659,
-      "close": 31.329999923706055
+      "timestamp": 1787074800,
+      "close": 31.309999465942383
+    },
+    {
+      "timestamp": 1787074952,
+      "close": 31.325000762939453
     }
   ],
   "news": {
@@ -185,5 +229,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-17T13:07:48.000Z"
   },
-  "generatedAt": "2026-08-18T16:48:13.997Z"
+  "generatedAt": "2026-08-18T17:42:35.796Z"
 }
