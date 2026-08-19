@@ -5,12 +5,12 @@
     "displaySymbol": "$EIX"
   },
   "name": "EDISON INTERNATIONAL",
-  "price": 73.695,
+  "price": 73.04,
   "previousClose": 73.69,
   "dayHigh": 75.07,
-  "dayLow": 73.615,
-  "change": 0.0049999999999954525,
-  "changePercent": 0.006785181164330917,
+  "dayLow": 73.01,
+  "change": -0.6499999999999915,
+  "changePercent": -0.8820735513638098,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -81,11 +81,55 @@
     },
     {
       "timestamp": 1787151000,
-      "close": 73.6449966430664
+      "close": 73.6050033569336
     },
     {
-      "timestamp": 1787151121,
-      "close": 73.69499969482422
+      "timestamp": 1787151300,
+      "close": 73.91000366210938
+    },
+    {
+      "timestamp": 1787151600,
+      "close": 73.87999725341797
+    },
+    {
+      "timestamp": 1787151900,
+      "close": 73.86000061035156
+    },
+    {
+      "timestamp": 1787152200,
+      "close": 73.63999938964844
+    },
+    {
+      "timestamp": 1787152500,
+      "close": 73.55000305175781
+    },
+    {
+      "timestamp": 1787152800,
+      "close": 73.30999755859375
+    },
+    {
+      "timestamp": 1787153100,
+      "close": 73.4800033569336
+    },
+    {
+      "timestamp": 1787153400,
+      "close": 73.3550033569336
+    },
+    {
+      "timestamp": 1787153700,
+      "close": 73.44000244140625
+    },
+    {
+      "timestamp": 1787154000,
+      "close": 73.05000305175781
+    },
+    {
+      "timestamp": 1787154300,
+      "close": 73.08000183105469
+    },
+    {
+      "timestamp": 1787154368,
+      "close": 73.04000091552734
     }
   ],
   "news": {
@@ -93,5 +137,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-18T10:51:59.000Z"
   },
-  "generatedAt": "2026-08-19T14:53:21.205Z"
+  "generatedAt": "2026-08-19T15:46:20.552Z"
 }

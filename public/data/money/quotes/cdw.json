@@ -5,12 +5,12 @@
     "displaySymbol": "$CDW"
   },
   "name": "CDW CORPORATION",
-  "price": 135.24,
+  "price": 134.31,
   "previousClose": 134.97,
   "dayHigh": 136.78,
   "dayLow": 133.63,
-  "change": 0.27000000000001023,
-  "changePercent": 0.20004445432319054,
+  "change": -0.6599999999999966,
+  "changePercent": -0.4889975550122224,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -81,11 +81,51 @@
     },
     {
       "timestamp": 1787151000,
-      "close": 135.10000610351562
+      "close": 135.24000549316406
     },
     {
-      "timestamp": 1787151177,
-      "close": 135.24000549316406
+      "timestamp": 1787151300,
+      "close": 135.14500427246094
+    },
+    {
+      "timestamp": 1787151600,
+      "close": 135.00999450683594
+    },
+    {
+      "timestamp": 1787151900,
+      "close": 135.1699981689453
+    },
+    {
+      "timestamp": 1787152200,
+      "close": 135.22500610351562
+    },
+    {
+      "timestamp": 1787152500,
+      "close": 135.0500030517578
+    },
+    {
+      "timestamp": 1787152800,
+      "close": 134.9499969482422
+    },
+    {
+      "timestamp": 1787153100,
+      "close": 134.69000244140625
+    },
+    {
+      "timestamp": 1787153400,
+      "close": 134.69000244140625
+    },
+    {
+      "timestamp": 1787153700,
+      "close": 134.10000610351562
+    },
+    {
+      "timestamp": 1787154000,
+      "close": 134.0399932861328
+    },
+    {
+      "timestamp": 1787154306,
+      "close": 134.30999755859375
     }
   ],
   "news": {
@@ -93,5 +133,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-17T21:18:20.000Z"
   },
-  "generatedAt": "2026-08-19T14:53:07.040Z"
+  "generatedAt": "2026-08-19T15:46:05.974Z"
 }

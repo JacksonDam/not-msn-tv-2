@@ -5,12 +5,12 @@
     "displaySymbol": "$INCY"
   },
   "name": "INCYTE CORPORATION",
-  "price": 126.59,
+  "price": 126.14,
   "previousClose": 123.47,
-  "dayHigh": 127,
+  "dayHigh": 127.025,
   "dayLow": 124.755,
-  "change": 3.1200000000000045,
-  "changePercent": 2.526929618530821,
+  "change": 2.6700000000000017,
+  "changePercent": 2.1624686158581046,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -81,11 +81,51 @@
     },
     {
       "timestamp": 1787151000,
+      "close": 126.56510162353516
+    },
+    {
+      "timestamp": 1787151300,
+      "close": 126.4000015258789
+    },
+    {
+      "timestamp": 1787151600,
+      "close": 126.625
+    },
+    {
+      "timestamp": 1787151900,
       "close": 126.58499908447266
     },
     {
-      "timestamp": 1787151181,
-      "close": 126.58999633789062
+      "timestamp": 1787152200,
+      "close": 126.70999908447266
+    },
+    {
+      "timestamp": 1787152500,
+      "close": 126.93000030517578
+    },
+    {
+      "timestamp": 1787152800,
+      "close": 126.92500305175781
+    },
+    {
+      "timestamp": 1787153100,
+      "close": 126.78500366210938
+    },
+    {
+      "timestamp": 1787153400,
+      "close": 126.44999694824219
+    },
+    {
+      "timestamp": 1787153700,
+      "close": 126.38999938964844
+    },
+    {
+      "timestamp": 1787154000,
+      "close": 126.0999984741211
+    },
+    {
+      "timestamp": 1787154366,
+      "close": 126.13999938964844
     }
   ],
   "news": {
@@ -93,5 +133,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-18T12:50:45.000Z"
   },
-  "generatedAt": "2026-08-19T14:53:37.604Z"
+  "generatedAt": "2026-08-19T15:46:38.161Z"
 }

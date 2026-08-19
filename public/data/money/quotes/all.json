@@ -5,12 +5,12 @@
     "displaySymbol": "$ALL"
   },
   "name": "THE ALLSTATE CORPORATION",
-  "price": 262.88,
+  "price": 261.2,
   "previousClose": 261.15,
   "dayHigh": 266.57,
   "dayLow": 260.391,
-  "change": 1.7300000000000182,
-  "changePercent": 0.662454528049021,
+  "change": 0.05000000000001137,
+  "changePercent": 0.0191460846256984,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -81,11 +81,51 @@
     },
     {
       "timestamp": 1787151000,
-      "close": 262.6000061035156
+      "close": 262.3450012207031
     },
     {
-      "timestamp": 1787151166,
-      "close": 262.8800048828125
+      "timestamp": 1787151300,
+      "close": 262.18499755859375
+    },
+    {
+      "timestamp": 1787151600,
+      "close": 262.80999755859375
+    },
+    {
+      "timestamp": 1787151900,
+      "close": 262.6199951171875
+    },
+    {
+      "timestamp": 1787152200,
+      "close": 262.69000244140625
+    },
+    {
+      "timestamp": 1787152500,
+      "close": 262.510009765625
+    },
+    {
+      "timestamp": 1787152800,
+      "close": 262.2699890136719
+    },
+    {
+      "timestamp": 1787153100,
+      "close": 261.9649963378906
+    },
+    {
+      "timestamp": 1787153400,
+      "close": 261.9649963378906
+    },
+    {
+      "timestamp": 1787153700,
+      "close": 261.3550109863281
+    },
+    {
+      "timestamp": 1787154000,
+      "close": 261.20001220703125
+    },
+    {
+      "timestamp": 1787154316,
+      "close": 261.20001220703125
     }
   ],
   "news": {
@@ -93,5 +133,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-18T20:41:00.000Z"
   },
-  "generatedAt": "2026-08-19T14:52:54.988Z"
+  "generatedAt": "2026-08-19T15:45:52.795Z"
 }

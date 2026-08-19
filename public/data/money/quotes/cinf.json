@@ -5,12 +5,12 @@
     "displaySymbol": "$CINF"
   },
   "name": "CINCINNATI FINANCIAL CORPORATION",
-  "price": 170.28,
+  "price": 169,
   "previousClose": 171.35,
   "dayHigh": 171.56,
-  "dayLow": 169.84,
-  "change": -1.0699999999999932,
-  "changePercent": -0.62445287423402,
+  "dayLow": 169,
+  "change": -2.3499999999999943,
+  "changePercent": -1.3714619200466849,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -80,8 +80,52 @@
       "close": 170.4149932861328
     },
     {
-      "timestamp": 1787151173,
+      "timestamp": 1787151000,
       "close": 170.27999877929688
+    },
+    {
+      "timestamp": 1787151300,
+      "close": 170.0399932861328
+    },
+    {
+      "timestamp": 1787151600,
+      "close": 170.66000366210938
+    },
+    {
+      "timestamp": 1787151900,
+      "close": 170.27000427246094
+    },
+    {
+      "timestamp": 1787152200,
+      "close": 169.94000244140625
+    },
+    {
+      "timestamp": 1787152500,
+      "close": 169.7550048828125
+    },
+    {
+      "timestamp": 1787152800,
+      "close": 169.57000732421875
+    },
+    {
+      "timestamp": 1787153100,
+      "close": 169.3300018310547
+    },
+    {
+      "timestamp": 1787153400,
+      "close": 169.1999969482422
+    },
+    {
+      "timestamp": 1787153700,
+      "close": 169.35499572753906
+    },
+    {
+      "timestamp": 1787154000,
+      "close": 169.13999938964844
+    },
+    {
+      "timestamp": 1787154358,
+      "close": 169
     }
   ],
   "news": {
@@ -89,5 +133,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-19T11:42:02.000Z"
   },
-  "generatedAt": "2026-08-19T14:53:08.826Z"
+  "generatedAt": "2026-08-19T15:46:07.847Z"
 }
