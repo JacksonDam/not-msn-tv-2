@@ -5,12 +5,12 @@
     "displaySymbol": "$NWSA"
   },
   "name": "NEWS CORPORATION",
-  "price": 29.535,
+  "price": 29.53,
   "previousClose": 29.39,
-  "dayHigh": 29.54,
+  "dayHigh": 29.63,
   "dayLow": 29,
-  "change": 0.14499999999999957,
-  "changePercent": 0.493365090166722,
+  "change": 0.14000000000000057,
+  "changePercent": 0.4763525008506314,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -125,11 +125,59 @@
     },
     {
       "timestamp": 1787154300,
+      "close": 29.545000076293945
+    },
+    {
+      "timestamp": 1787154600,
+      "close": 29.559999465942383
+    },
+    {
+      "timestamp": 1787154900,
+      "close": 29.594999313354492
+    },
+    {
+      "timestamp": 1787155200,
+      "close": 29.594999313354492
+    },
+    {
+      "timestamp": 1787155500,
+      "close": 29.575000762939453
+    },
+    {
+      "timestamp": 1787155800,
+      "close": 29.600000381469727
+    },
+    {
+      "timestamp": 1787156100,
+      "close": 29.614999771118164
+    },
+    {
+      "timestamp": 1787156400,
+      "close": 29.594999313354492
+    },
+    {
+      "timestamp": 1787156700,
+      "close": 29.559999465942383
+    },
+    {
+      "timestamp": 1787157000,
+      "close": 29.55500030517578
+    },
+    {
+      "timestamp": 1787157300,
+      "close": 29.540000915527344
+    },
+    {
+      "timestamp": 1787157600,
       "close": 29.524999618530273
     },
     {
-      "timestamp": 1787154410,
-      "close": 29.53499984741211
+      "timestamp": 1787157900,
+      "close": 29.520000457763672
+    },
+    {
+      "timestamp": 1787157996,
+      "close": 29.530000686645508
     }
   ],
   "news": {
@@ -137,5 +185,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-19T11:02:47.000Z"
   },
-  "generatedAt": "2026-08-19T15:46:56.606Z"
+  "generatedAt": "2026-08-19T16:47:01.888Z"
 }
