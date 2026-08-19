@@ -5,12 +5,12 @@
     "displaySymbol": "$EIX"
   },
   "name": "EDISON INTERNATIONAL",
-  "price": 73.41,
+  "price": 73.44,
   "previousClose": 73.69,
   "dayHigh": 75.07,
   "dayLow": 72.93,
-  "change": -0.28000000000000114,
-  "changePercent": -0.3799701452028785,
+  "change": -0.25,
+  "changePercent": -0.33925905821685437,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787168100,
-      "close": 73.41999816894531
+      "close": 73.3949966430664
     },
     {
-      "timestamp": 1787168370,
-      "close": 73.41000366210938
+      "timestamp": 1787168400,
+      "close": 73.37000274658203
+    },
+    {
+      "timestamp": 1787168700,
+      "close": 73.44000244140625
+    },
+    {
+      "timestamp": 1787169000,
+      "close": 73.38999938964844
+    },
+    {
+      "timestamp": 1787169300,
+      "close": 73.44000244140625
+    },
+    {
+      "timestamp": 1787169600,
+      "close": 73.44000244140625
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-18T10:51:59.000Z"
   },
-  "generatedAt": "2026-08-19T19:39:32.574Z"
+  "generatedAt": "2026-08-19T20:45:32.853Z"
 }

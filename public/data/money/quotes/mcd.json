@@ -5,12 +5,12 @@
     "displaySymbol": "$MCD"
   },
   "name": "MCDONALD'S CORPORATION",
-  "price": 267.7,
+  "price": 267.45,
   "previousClose": 266.99,
   "dayHigh": 271.87,
   "dayLow": 266.09,
-  "change": 0.7099999999999795,
-  "changePercent": 0.26592756283006086,
+  "change": 0.45999999999997954,
+  "changePercent": 0.17229109704482548,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787168100,
-      "close": 267.760009765625
+      "close": 267.70001220703125
     },
     {
-      "timestamp": 1787168398,
-      "close": 267.70001220703125
+      "timestamp": 1787168400,
+      "close": 267.45001220703125
+    },
+    {
+      "timestamp": 1787168700,
+      "close": 267.5899963378906
+    },
+    {
+      "timestamp": 1787169000,
+      "close": 267.3399963378906
+    },
+    {
+      "timestamp": 1787169300,
+      "close": 267.45001220703125
+    },
+    {
+      "timestamp": 1787169600,
+      "close": 267.45001220703125
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-19T17:53:50.000Z"
   },
-  "generatedAt": "2026-08-19T19:40:00.727Z"
+  "generatedAt": "2026-08-19T20:46:16.518Z"
 }

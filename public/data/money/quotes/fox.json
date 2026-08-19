@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 60.43,
+  "price": 60.39,
   "previousClose": 61.23,
   "dayHigh": 61.48,
-  "dayLow": 60.43,
-  "change": -0.7999999999999972,
-  "changePercent": -1.3065490772497097,
+  "dayLow": 60.19,
+  "change": -0.8399999999999963,
+  "changePercent": -1.3718765311121939,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787168100,
-      "close": 60.470001220703125
+      "close": 60.369998931884766
     },
     {
-      "timestamp": 1787168363,
-      "close": 60.43000030517578
+      "timestamp": 1787168400,
+      "close": 60.459999084472656
+    },
+    {
+      "timestamp": 1787168700,
+      "close": 60.369998931884766
+    },
+    {
+      "timestamp": 1787169000,
+      "close": 60.27000045776367
+    },
+    {
+      "timestamp": 1787169300,
+      "close": 60.40999984741211
+    },
+    {
+      "timestamp": 1787169600,
+      "close": 60.38999938964844
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-19T11:02:47.000Z"
   },
-  "generatedAt": "2026-08-19T19:39:39.438Z"
+  "generatedAt": "2026-08-19T20:45:43.991Z"
 }

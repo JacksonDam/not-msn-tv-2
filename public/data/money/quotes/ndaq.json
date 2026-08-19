@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 96.14,
+  "price": 96.35,
   "previousClose": 96.71,
   "dayHigh": 98.655,
   "dayLow": 95.82,
-  "change": -0.5699999999999932,
-  "changePercent": -0.5893909626718987,
+  "change": -0.35999999999999943,
+  "changePercent": -0.37224692379278196,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -312,8 +312,24 @@
       "close": 96.1449966430664
     },
     {
-      "timestamp": 1787168403,
-      "close": 96.13999938964844
+      "timestamp": 1787168400,
+      "close": 96.44000244140625
+    },
+    {
+      "timestamp": 1787168700,
+      "close": 96.75
+    },
+    {
+      "timestamp": 1787169000,
+      "close": 96.58999633789062
+    },
+    {
+      "timestamp": 1787169300,
+      "close": 96.3499984741211
+    },
+    {
+      "timestamp": 1787169600,
+      "close": 96.3499984741211
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-08-18T20:45:37.000Z"
   },
-  "generatedAt": "2026-08-19T19:40:06.332Z"
+  "generatedAt": "2026-08-19T20:46:25.294Z"
 }

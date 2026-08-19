@@ -5,12 +5,12 @@
     "displaySymbol": "$LNT"
   },
   "name": "ALLIANT ENERGY CORPORATION",
-  "price": 70.25,
+  "price": 70.15,
   "previousClose": 69.98,
   "dayHigh": 70.64,
   "dayLow": 69.84,
-  "change": 0.269999999999996,
-  "changePercent": 0.38582452129179196,
+  "change": 0.1700000000000017,
+  "changePercent": 0.24292655044298614,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787168100,
-      "close": 70.26499938964844
+      "close": 70.25
     },
     {
-      "timestamp": 1787168391,
-      "close": 70.25
+      "timestamp": 1787168400,
+      "close": 70.20999908447266
+    },
+    {
+      "timestamp": 1787168700,
+      "close": 70.16000366210938
+    },
+    {
+      "timestamp": 1787169000,
+      "close": 70.16000366210938
+    },
+    {
+      "timestamp": 1787169300,
+      "close": 70.16500091552734
+    },
+    {
+      "timestamp": 1787169600,
+      "close": 70.1500015258789
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-18T21:54:40.000Z"
   },
-  "generatedAt": "2026-08-19T19:39:58.180Z"
+  "generatedAt": "2026-08-19T20:46:12.895Z"
 }

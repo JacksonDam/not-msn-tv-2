@@ -8,7 +8,7 @@
   "price": 83.29,
   "previousClose": 85.7,
   "dayHigh": 86.72,
-  "dayLow": 83.29,
+  "dayLow": 83.06,
   "change": -2.4099999999999966,
   "changePercent": -2.8121353558926447,
   "currency": "USD",
@@ -309,10 +309,26 @@
     },
     {
       "timestamp": 1787168100,
+      "close": 83.29000091552734
+    },
+    {
+      "timestamp": 1787168400,
+      "close": 83.13999938964844
+    },
+    {
+      "timestamp": 1787168700,
       "close": 83.31999969482422
     },
     {
-      "timestamp": 1787168362,
+      "timestamp": 1787169000,
+      "close": 83.42500305175781
+    },
+    {
+      "timestamp": 1787169300,
+      "close": 83.30000305175781
+    },
+    {
+      "timestamp": 1787169600,
       "close": 83.29000091552734
     }
   ],
@@ -321,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-19T17:23:00.000Z"
   },
-  "generatedAt": "2026-08-19T19:39:26.551Z"
+  "generatedAt": "2026-08-19T20:45:22.308Z"
 }
