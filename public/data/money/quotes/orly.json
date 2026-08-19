@@ -5,12 +5,12 @@
     "displaySymbol": "$ORLY"
   },
   "name": "O'REILLY AUTOMOTIVE, INC.",
-  "price": 91.15,
+  "price": 91.29,
   "previousClose": 90.76,
   "dayHigh": 92.77,
   "dayLow": 90.57,
-  "change": 0.39000000000000057,
-  "changePercent": 0.42970471573380403,
+  "change": 0.5300000000000011,
+  "changePercent": 0.5839576906126058,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -173,11 +173,51 @@
     },
     {
       "timestamp": 1787157900,
-      "close": 91.16000366210938
+      "close": 91.125
     },
     {
-      "timestamp": 1787158013,
-      "close": 91.1500015258789
+      "timestamp": 1787158200,
+      "close": 90.99500274658203
+    },
+    {
+      "timestamp": 1787158500,
+      "close": 90.87000274658203
+    },
+    {
+      "timestamp": 1787158800,
+      "close": 90.97000122070312
+    },
+    {
+      "timestamp": 1787159100,
+      "close": 90.9000015258789
+    },
+    {
+      "timestamp": 1787159400,
+      "close": 90.95999908447266
+    },
+    {
+      "timestamp": 1787159700,
+      "close": 91.04000091552734
+    },
+    {
+      "timestamp": 1787160000,
+      "close": 90.9800033569336
+    },
+    {
+      "timestamp": 1787160300,
+      "close": 91.08999633789062
+    },
+    {
+      "timestamp": 1787160600,
+      "close": 91.18499755859375
+    },
+    {
+      "timestamp": 1787160900,
+      "close": 91.25
+    },
+    {
+      "timestamp": 1787161243,
+      "close": 91.29000091552734
     }
   ],
   "news": {
@@ -185,5 +225,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-13T12:37:00.000Z"
   },
-  "generatedAt": "2026-08-19T16:47:03.325Z"
+  "generatedAt": "2026-08-19T17:40:53.728Z"
 }
