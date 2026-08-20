@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 61.04,
+  "price": 61.12,
   "previousClose": 60.39,
   "dayHigh": 61.248,
   "dayLow": 60.495,
-  "change": 0.6499999999999986,
-  "changePercent": 1.07633714191091,
+  "change": 0.7299999999999969,
+  "changePercent": 1.208809405530712,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,47 @@
     },
     {
       "timestamp": 1787252100,
+      "close": 61.040000915527344
+    },
+    {
+      "timestamp": 1787252400,
+      "close": 61.08000183105469
+    },
+    {
+      "timestamp": 1787252700,
+      "close": 61.16999816894531
+    },
+    {
+      "timestamp": 1787253000,
+      "close": 61.1349983215332
+    },
+    {
+      "timestamp": 1787253300,
       "close": 61.060001373291016
     },
     {
-      "timestamp": 1787252351,
-      "close": 61.040000915527344
+      "timestamp": 1787253600,
+      "close": 61
+    },
+    {
+      "timestamp": 1787253900,
+      "close": 60.95500183105469
+    },
+    {
+      "timestamp": 1787254200,
+      "close": 61.0099983215332
+    },
+    {
+      "timestamp": 1787254500,
+      "close": 61.05500030517578
+    },
+    {
+      "timestamp": 1787254800,
+      "close": 61.119998931884766
+    },
+    {
+      "timestamp": 1787255151,
+      "close": 61.119998931884766
     }
   ],
   "news": {
@@ -289,5 +325,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-20T14:47:29.000Z"
   },
-  "generatedAt": "2026-08-20T18:59:15.057Z"
+  "generatedAt": "2026-08-20T19:45:53.830Z"
 }

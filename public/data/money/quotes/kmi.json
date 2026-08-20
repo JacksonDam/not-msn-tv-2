@@ -5,12 +5,12 @@
     "displaySymbol": "$KMI"
   },
   "name": "KINDER MORGAN, INC.",
-  "price": 31.64,
+  "price": 31.635,
   "previousClose": 32.08,
   "dayHigh": 32.29,
   "dayLow": 31.13,
-  "change": -0.4399999999999977,
-  "changePercent": -1.371571072319195,
+  "change": -0.44499999999999673,
+  "changePercent": -1.3871571072319102,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787252100,
-      "close": 31.645000457763672
+      "close": 31.635000228881836
     },
     {
-      "timestamp": 1787252365,
-      "close": 31.639999389648438
+      "timestamp": 1787252400,
+      "close": 31.604999542236328
+    },
+    {
+      "timestamp": 1787252700,
+      "close": 31.59000015258789
+    },
+    {
+      "timestamp": 1787253000,
+      "close": 31.610000610351562
+    },
+    {
+      "timestamp": 1787253300,
+      "close": 31.575000762939453
+    },
+    {
+      "timestamp": 1787253600,
+      "close": 31.545000076293945
+    },
+    {
+      "timestamp": 1787253900,
+      "close": 31.625
+    },
+    {
+      "timestamp": 1787254200,
+      "close": 31.594999313354492
+    },
+    {
+      "timestamp": 1787254500,
+      "close": 31.610000610351562
+    },
+    {
+      "timestamp": 1787254800,
+      "close": 31.6200008392334
+    },
+    {
+      "timestamp": 1787255100,
+      "close": 31.649999618530273
+    },
+    {
+      "timestamp": 1787255163,
+      "close": 31.635000228881836
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-19T13:29:00.000Z"
   },
-  "generatedAt": "2026-08-20T18:59:27.473Z"
+  "generatedAt": "2026-08-20T19:46:07.900Z"
 }

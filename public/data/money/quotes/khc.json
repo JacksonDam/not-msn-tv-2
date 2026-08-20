@@ -5,12 +5,12 @@
     "displaySymbol": "$KHC"
   },
   "name": "THE KRAFT HEINZ COMPANY",
-  "price": 25.495,
+  "price": 25.625,
   "previousClose": 25.68,
   "dayHigh": 25.795,
   "dayLow": 25.31,
-  "change": -0.18499999999999872,
-  "changePercent": -0.7204049844236711,
+  "change": -0.054999999999999716,
+  "changePercent": -0.21417445482865932,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787252100,
-      "close": 25.5
+      "close": 25.5049991607666
     },
     {
-      "timestamp": 1787252365,
-      "close": 25.4950008392334
+      "timestamp": 1787252400,
+      "close": 25.524999618530273
+    },
+    {
+      "timestamp": 1787252700,
+      "close": 25.565000534057617
+    },
+    {
+      "timestamp": 1787253000,
+      "close": 25.524999618530273
+    },
+    {
+      "timestamp": 1787253300,
+      "close": 25.524799346923828
+    },
+    {
+      "timestamp": 1787253600,
+      "close": 25.56999969482422
+    },
+    {
+      "timestamp": 1787253900,
+      "close": 25.545000076293945
+    },
+    {
+      "timestamp": 1787254200,
+      "close": 25.59000015258789
+    },
+    {
+      "timestamp": 1787254500,
+      "close": 25.614999771118164
+    },
+    {
+      "timestamp": 1787254800,
+      "close": 25.614999771118164
+    },
+    {
+      "timestamp": 1787255100,
+      "close": 25.628999710083008
+    },
+    {
+      "timestamp": 1787255165,
+      "close": 25.625
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-08-19T22:18:51.000Z"
   },
-  "generatedAt": "2026-08-20T18:59:26.622Z"
+  "generatedAt": "2026-08-20T19:46:06.925Z"
 }
