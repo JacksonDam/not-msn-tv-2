@@ -4,13 +4,13 @@
     "requestSymbol": "ETN",
     "displaySymbol": "$ETN"
   },
-  "name": "EATON CORPORATION, PLC",
-  "price": 419.055,
+  "name": "EATON CORPORATION PLC",
+  "price": 419.335,
   "previousClose": 424.67,
   "dayHigh": 425.421,
   "dayLow": 416.03,
-  "change": -5.615000000000009,
-  "changePercent": -1.3222031224244728,
+  "change": -5.335000000000036,
+  "changePercent": -1.2562695740221905,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -25,7 +25,7 @@
     },
     {
       "timestamp": 1787233200,
-      "close": 420.75
+      "close": 420.67999267578125
     },
     {
       "timestamp": 1787233500,
@@ -117,19 +117,67 @@
     },
     {
       "timestamp": 1787240100,
-      "close": 419.5899963378906
+      "close": 419.6099853515625
     },
     {
       "timestamp": 1787240400,
-      "close": 418.9599914550781
+      "close": 418.9200134277344
     },
     {
       "timestamp": 1787240700,
-      "close": 418.7200012207031
+      "close": 418.75
     },
     {
-      "timestamp": 1787240921,
-      "close": 419.05499267578125
+      "timestamp": 1787241000,
+      "close": 418.04998779296875
+    },
+    {
+      "timestamp": 1787241300,
+      "close": 418.5299987792969
+    },
+    {
+      "timestamp": 1787241600,
+      "close": 418.1499938964844
+    },
+    {
+      "timestamp": 1787241900,
+      "close": 418.2900085449219
+    },
+    {
+      "timestamp": 1787242200,
+      "close": 417.95001220703125
+    },
+    {
+      "timestamp": 1787242500,
+      "close": 418.6499938964844
+    },
+    {
+      "timestamp": 1787242800,
+      "close": 419.0400085449219
+    },
+    {
+      "timestamp": 1787243100,
+      "close": 418.239990234375
+    },
+    {
+      "timestamp": 1787243400,
+      "close": 418.6549987792969
+    },
+    {
+      "timestamp": 1787243700,
+      "close": 419.1018981933594
+    },
+    {
+      "timestamp": 1787244000,
+      "close": 419.2300109863281
+    },
+    {
+      "timestamp": 1787244300,
+      "close": 418.989990234375
+    },
+    {
+      "timestamp": 1787244634,
+      "close": 419.3349914550781
     }
   ],
   "news": {
@@ -137,5 +185,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-20T12:55:43.000Z"
   },
-  "generatedAt": "2026-08-20T15:48:57.450Z"
+  "generatedAt": "2026-08-20T16:50:35.790Z"
 }
