@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 60.875,
+  "price": 60.78,
   "previousClose": 60.39,
-  "dayHigh": 61.12,
+  "dayHigh": 61.248,
   "dayLow": 60.495,
-  "change": 0.48499999999999943,
-  "changePercent": 0.8031130981950645,
+  "change": 0.39000000000000057,
+  "changePercent": 0.6458022851465484,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -37,11 +37,51 @@
     },
     {
       "timestamp": 1787234100,
-      "close": 60.83000183105469
+      "close": 60.875
     },
     {
-      "timestamp": 1787234337,
-      "close": 60.875
+      "timestamp": 1787234400,
+      "close": 60.970001220703125
+    },
+    {
+      "timestamp": 1787234700,
+      "close": 61.185001373291016
+    },
+    {
+      "timestamp": 1787235000,
+      "close": 61.15999984741211
+    },
+    {
+      "timestamp": 1787235300,
+      "close": 61.189998626708984
+    },
+    {
+      "timestamp": 1787235600,
+      "close": 61.244998931884766
+    },
+    {
+      "timestamp": 1787235900,
+      "close": 61.095001220703125
+    },
+    {
+      "timestamp": 1787236200,
+      "close": 61
+    },
+    {
+      "timestamp": 1787236500,
+      "close": 60.88999938964844
+    },
+    {
+      "timestamp": 1787236800,
+      "close": 60.89500045776367
+    },
+    {
+      "timestamp": 1787237100,
+      "close": 60.720001220703125
+    },
+    {
+      "timestamp": 1787237489,
+      "close": 60.779998779296875
     }
   ],
   "news": {
@@ -49,5 +89,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-19T11:02:47.000Z"
   },
-  "generatedAt": "2026-08-20T13:59:25.399Z"
+  "generatedAt": "2026-08-20T14:54:43.410Z"
 }

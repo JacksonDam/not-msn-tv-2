@@ -5,12 +5,12 @@
     "displaySymbol": "$BAX"
   },
   "name": "BAXTER INTERNATIONAL INC.",
-  "price": 26.68,
-  "previousClose": 26.665,
+  "price": 26.295,
+  "previousClose": 26.64,
   "dayHigh": 26.78,
   "dayLow": 25.9,
-  "change": 0.015000000000000568,
-  "changePercent": 0.05625351584474243,
+  "change": -0.34499999999999886,
+  "changePercent": -1.2950450450450406,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -25,7 +25,7 @@
     },
     {
       "timestamp": 1787233200,
-      "close": 26.530000686645508
+      "close": 26.540000915527344
     },
     {
       "timestamp": 1787233500,
@@ -37,11 +37,55 @@
     },
     {
       "timestamp": 1787234100,
-      "close": 26.670000076293945
+      "close": 26.71500015258789
     },
     {
-      "timestamp": 1787234332,
-      "close": 26.68000030517578
+      "timestamp": 1787234400,
+      "close": 26.684999465942383
+    },
+    {
+      "timestamp": 1787234700,
+      "close": 26.614999771118164
+    },
+    {
+      "timestamp": 1787235000,
+      "close": 26.4950008392334
+    },
+    {
+      "timestamp": 1787235300,
+      "close": 26.44499969482422
+    },
+    {
+      "timestamp": 1787235600,
+      "close": 26.299999237060547
+    },
+    {
+      "timestamp": 1787235900,
+      "close": 26.21500015258789
+    },
+    {
+      "timestamp": 1787236200,
+      "close": 26.225000381469727
+    },
+    {
+      "timestamp": 1787236500,
+      "close": 26.295000076293945
+    },
+    {
+      "timestamp": 1787236800,
+      "close": 26.274999618530273
+    },
+    {
+      "timestamp": 1787237100,
+      "close": 26.274999618530273
+    },
+    {
+      "timestamp": 1787237400,
+      "close": 26.295000076293945
+    },
+    {
+      "timestamp": 1787237649,
+      "close": 26.295000076293945
     }
   ],
   "news": {
@@ -49,5 +93,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-19T12:35:50.000Z"
   },
-  "generatedAt": "2026-08-20T13:58:57.121Z"
+  "generatedAt": "2026-08-20T14:54:16.844Z"
 }
