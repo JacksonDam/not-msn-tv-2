@@ -5,12 +5,12 @@
     "displaySymbol": "$IBM"
   },
   "name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-  "price": 233.94,
+  "price": 233.69,
   "previousClose": 237.16,
   "dayHigh": 237.49,
-  "dayLow": 233.81,
-  "change": -3.219999999999999,
-  "changePercent": -1.3577331759149938,
+  "dayLow": 233.03,
+  "change": -3.469999999999999,
+  "changePercent": -1.4631472423680212,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 233.93499755859375
+      "close": 233.7949981689453
     },
     {
-      "timestamp": 1787255160,
-      "close": 233.94000244140625
+      "timestamp": 1787255400,
+      "close": 233.8800048828125
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 233.7100067138672
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 233.69000244140625
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "TipRanks",
     "publishedAt": "2026-08-20T17:55:00.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:01.948Z"
+  "generatedAt": "2026-08-20T20:46:14.264Z"
 }

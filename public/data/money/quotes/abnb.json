@@ -5,12 +5,12 @@
     "displaySymbol": "$ABNB"
   },
   "name": "AIRBNB, INC.",
-  "price": 185.49,
+  "price": 185,
   "previousClose": 186.39,
   "dayHigh": 186.8,
   "dayLow": 183.252,
-  "change": -0.8999999999999773,
-  "changePercent": -0.4828585224529091,
+  "change": -1.3899999999999864,
+  "changePercent": -0.74574816245506,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 185.47999572753906
     },
     {
-      "timestamp": 1787255111,
-      "close": 185.49000549316406
+      "timestamp": 1787255100,
+      "close": 185.5399932861328
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 185.63499450683594
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 185
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 185
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Yahoo Finance",
     "publishedAt": "2026-08-20T11:40:30.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:19.486Z"
+  "generatedAt": "2026-08-20T20:45:33.769Z"
 }

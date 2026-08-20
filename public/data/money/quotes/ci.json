@@ -5,12 +5,12 @@
     "displaySymbol": "$CI"
   },
   "name": "THE CIGNA GROUP",
-  "price": 274.515,
+  "price": 274.41,
   "previousClose": 277.45,
   "dayHigh": 278.8,
   "dayLow": 274.12,
-  "change": -2.9350000000000023,
-  "changePercent": -1.0578482609479194,
+  "change": -3.0399999999999636,
+  "changePercent": -1.0956929176428054,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787254800,
+      "close": 274.7200012207031
+    },
+    {
+      "timestamp": 1787255100,
+      "close": 274.75
+    },
+    {
+      "timestamp": 1787255400,
       "close": 274.6700134277344
     },
     {
-      "timestamp": 1787255114,
-      "close": 274.5150146484375
+      "timestamp": 1787255700,
+      "close": 274.5199890136719
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 274.4100036621094
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-20T19:21:30.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:34.812Z"
+  "generatedAt": "2026-08-20T20:45:49.392Z"
 }

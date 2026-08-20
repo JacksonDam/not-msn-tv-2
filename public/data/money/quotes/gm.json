@@ -5,12 +5,12 @@
     "displaySymbol": "$GM"
   },
   "name": "GENERAL MOTORS COMPANY",
-  "price": 85.92,
+  "price": 86.15,
   "previousClose": 84.96,
   "dayHigh": 86.44,
   "dayLow": 83.73,
-  "change": 0.960000000000008,
-  "changePercent": 1.129943502824868,
+  "change": 1.190000000000012,
+  "changePercent": 1.4006591337099952,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787254800,
-      "close": 85.83999633789062
+      "close": 85.83499908447266
     },
     {
-      "timestamp": 1787255149,
-      "close": 85.91999816894531
+      "timestamp": 1787255100,
+      "close": 85.91000366210938
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 85.80999755859375
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 86.16000366210938
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 86.1500015258789
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-20T18:34:19.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:56.603Z"
+  "generatedAt": "2026-08-20T20:46:09.270Z"
 }

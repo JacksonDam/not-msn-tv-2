@@ -5,12 +5,12 @@
     "displaySymbol": "$DOV"
   },
   "name": "DOVER CORPORATION",
-  "price": 200.58,
+  "price": 199.88,
   "previousClose": 202.38,
   "dayHigh": 204,
-  "dayLow": 200.25,
-  "change": -1.799999999999983,
-  "changePercent": -0.8894159501926983,
+  "dayLow": 199.86,
+  "change": -2.5,
+  "changePercent": -1.2352999308232038,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,15 +309,27 @@
     },
     {
       "timestamp": 1787254500,
-      "close": 200.75
+      "close": 200.7100067138672
     },
     {
       "timestamp": 1787254800,
       "close": 200.6649932861328
     },
     {
-      "timestamp": 1787255121,
+      "timestamp": 1787255100,
       "close": 200.5800018310547
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 200.32000732421875
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 199.8699951171875
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 199.8800048828125
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-20T10:52:04.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:44.595Z"
+  "generatedAt": "2026-08-20T20:45:57.914Z"
 }

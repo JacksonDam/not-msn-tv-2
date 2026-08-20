@@ -5,12 +5,12 @@
     "displaySymbol": "$TAP"
   },
   "name": "MOLSON COORS BEVERAGE COMPANY",
-  "price": 42.73,
+  "price": 42.61,
   "previousClose": 42.49,
-  "dayHigh": 42.77,
+  "dayHigh": 42.775,
   "dayLow": 41.51,
-  "change": 0.23999999999999488,
-  "changePercent": 0.564838785596599,
+  "change": 0.11999999999999744,
+  "changePercent": 0.2824193927982995,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 42.72999954223633
+      "close": 42.70000076293945
     },
     {
-      "timestamp": 1787255182,
-      "close": 42.72999954223633
+      "timestamp": 1787255400,
+      "close": 42.75
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 42.63999938964844
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 42.61000061035156
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-15T08:53:00.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:36.074Z"
+  "generatedAt": "2026-08-20T20:46:44.922Z"
 }

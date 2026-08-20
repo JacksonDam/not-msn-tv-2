@@ -5,12 +5,12 @@
     "displaySymbol": "$ALL"
   },
   "name": "THE ALLSTATE CORPORATION",
-  "price": 254.6,
+  "price": 254.54,
   "previousClose": 259.74,
   "dayHigh": 258.79,
   "dayLow": 252.831,
-  "change": -5.140000000000015,
-  "changePercent": -1.9789019789019844,
+  "change": -5.200000000000017,
+  "changePercent": -2.0020020020020084,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 254.625
     },
     {
-      "timestamp": 1787255111,
-      "close": 254.60000610351562
+      "timestamp": 1787255100,
+      "close": 254.85000610351562
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 255.22999572753906
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 254.57000732421875
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 254.5399932861328
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "The Fly",
     "publishedAt": "2026-08-20T13:38:49.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:22.685Z"
+  "generatedAt": "2026-08-20T20:45:37.926Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$BALL"
   },
   "name": "BALL CORPORATION",
-  "price": 62.63,
+  "price": 62.61,
   "previousClose": 62.62,
   "dayHigh": 62.89,
   "dayLow": 61.78,
-  "change": 0.010000000000005116,
-  "changePercent": 0.015969338869378978,
+  "change": -0.00999999999999801,
+  "changePercent": -0.015969338869367633,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 62.599998474121094
     },
     {
-      "timestamp": 1787255113,
-      "close": 62.630001068115234
+      "timestamp": 1787255100,
+      "close": 62.720001220703125
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 62.81999969482422
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 62.619998931884766
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 62.61000061035156
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-13T12:29:00.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:27.819Z"
+  "generatedAt": "2026-08-20T20:45:42.839Z"
 }

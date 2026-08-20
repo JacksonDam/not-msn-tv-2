@@ -5,12 +5,12 @@
     "displaySymbol": "$PAYX"
   },
   "name": "PAYCHEX, INC.",
-  "price": 123.175,
+  "price": 122.91,
   "previousClose": 122.5,
   "dayHigh": 124.17,
   "dayLow": 122.25,
-  "change": 0.6749999999999972,
-  "changePercent": 0.551020408163263,
+  "change": 0.4099999999999966,
+  "changePercent": 0.33469387755101765,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 123.23999786376953
     },
     {
-      "timestamp": 1787255143,
-      "close": 123.17500305175781
+      "timestamp": 1787255100,
+      "close": 123.05999755859375
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 123.22000122070312
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 122.9000015258789
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 122.91000366210938
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-20T16:51:15.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:22.719Z"
+  "generatedAt": "2026-08-20T20:46:32.825Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$WY"
   },
   "name": "WEYERHAEUSER COMPANY",
-  "price": 24.78,
+  "price": 24.62,
   "previousClose": 24.62,
   "dayHigh": 24.965,
   "dayLow": 24.37,
-  "change": 0.16000000000000014,
-  "changePercent": 0.6498781478472793,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 24.780000686645508
+      "close": 24.735000610351562
     },
     {
-      "timestamp": 1787255205,
-      "close": 24.780000686645508
+      "timestamp": 1787255400,
+      "close": 24.725000381469727
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 24.635000228881836
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 24.6200008392334
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-08-14T00:00:00.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:48.057Z"
+  "generatedAt": "2026-08-20T20:46:55.950Z"
 }

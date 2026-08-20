@@ -5,12 +5,12 @@
     "displaySymbol": "$BA"
   },
   "name": "THE BOEING COMPANY",
-  "price": 214.83,
+  "price": 215.1,
   "previousClose": 222.2,
   "dayHigh": 221.07,
   "dayLow": 214.14,
-  "change": -7.369999999999976,
-  "changePercent": -3.3168316831683065,
+  "change": -7.099999999999994,
+  "changePercent": -3.195319531953193,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 214.89500427246094
     },
     {
-      "timestamp": 1787255123,
-      "close": 214.8300018310547
+      "timestamp": 1787255100,
+      "close": 214.6649932861328
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 215.41000366210938
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 215.1999969482422
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 215.10000610351562
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-20T17:47:31.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:27.515Z"
+  "generatedAt": "2026-08-20T20:45:42.521Z"
 }

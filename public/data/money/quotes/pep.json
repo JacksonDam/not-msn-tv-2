@@ -5,12 +5,12 @@
     "displaySymbol": "$PEP"
   },
   "name": "PEPSICO, INC. COMMON STOCK",
-  "price": 142.49,
+  "price": 142.08,
   "previousClose": 142.58,
   "dayHigh": 143.365,
   "dayLow": 141.11,
-  "change": -0.09000000000000341,
-  "changePercent": -0.0631224575676837,
+  "change": -0.5,
+  "changePercent": -0.3506803198204516,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 142.50999450683594
+      "close": 142.3300018310547
     },
     {
-      "timestamp": 1787255176,
-      "close": 142.49000549316406
+      "timestamp": 1787255400,
+      "close": 142.3300018310547
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 142.08999633789062
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 142.0800018310547
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Yahoo Finance",
     "publishedAt": "2026-08-20T15:32:38.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:23.514Z"
+  "generatedAt": "2026-08-20T20:46:33.470Z"
 }

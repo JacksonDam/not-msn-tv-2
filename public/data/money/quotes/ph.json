@@ -5,12 +5,12 @@
     "displaySymbol": "$PH"
   },
   "name": "PARKER-HANNIFIN CORPORATION",
-  "price": 1000.415,
+  "price": 1000.13,
   "previousClose": 1023.25,
   "dayHigh": 1023.675,
-  "dayLow": 1000.19,
-  "change": -22.835000000000036,
-  "changePercent": -2.2316149523576874,
+  "dayLow": 999.82,
+  "change": -23.120000000000005,
+  "changePercent": -2.2594673833374057,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,7 +305,7 @@
     },
     {
       "timestamp": 1787254200,
-      "close": 1000.7899780273438
+      "close": 1000.7949829101562
     },
     {
       "timestamp": 1787254500,
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 1000.2899780273438
+      "close": 1000.7999877929688
     },
     {
-      "timestamp": 1787255168,
-      "close": 1000.4149780273438
+      "timestamp": 1787255400,
+      "close": 1000.5999755859375
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 1000.9099731445312
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 1000.1300048828125
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-20T00:07:53.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:24.402Z"
+  "generatedAt": "2026-08-20T20:46:34.230Z"
 }

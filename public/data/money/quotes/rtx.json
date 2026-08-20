@@ -5,12 +5,12 @@
     "displaySymbol": "$RTX"
   },
   "name": "RTX CORPORATION",
-  "price": 213.24,
+  "price": 212.29,
   "previousClose": 220.35,
   "dayHigh": 220.44,
-  "dayLow": 212.59,
-  "change": -7.109999999999985,
-  "changePercent": -3.226684819605167,
+  "dayLow": 212.16,
+  "change": -8.060000000000002,
+  "changePercent": -3.657817109144544,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 213.35000610351562
+      "close": 213.10000610351562
     },
     {
-      "timestamp": 1787255186,
-      "close": 213.24000549316406
+      "timestamp": 1787255400,
+      "close": 213.1300048828125
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 212.52999877929688
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 212.2899932861328
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-20T17:47:31.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:30.793Z"
+  "generatedAt": "2026-08-20T20:46:39.973Z"
 }

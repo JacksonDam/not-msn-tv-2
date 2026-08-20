@@ -5,12 +5,12 @@
     "displaySymbol": "$MTB"
   },
   "name": "M&T BANK CORPORATION",
-  "price": 239.03,
+  "price": 238.25,
   "previousClose": 244.55,
   "dayHigh": 244.245,
-  "dayLow": 238.865,
-  "change": -5.52000000000001,
-  "changePercent": -2.257207115109389,
+  "dayLow": 238.15,
+  "change": -6.300000000000011,
+  "changePercent": -2.576160294418324,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 239.1199951171875
     },
     {
-      "timestamp": 1787255144,
-      "close": 239.02999877929688
+      "timestamp": 1787255100,
+      "close": 239.1999969482422
+    },
+    {
+      "timestamp": 1787255400,
+      "close": 239.28250122070312
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 238.39999389648438
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 238.25
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "CNW Group",
     "publishedAt": "2026-08-20T12:55:00.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:16.734Z"
+  "generatedAt": "2026-08-20T20:46:27.826Z"
 }

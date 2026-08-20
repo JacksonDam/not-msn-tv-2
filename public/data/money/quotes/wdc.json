@@ -5,12 +5,12 @@
     "displaySymbol": "$WDC"
   },
   "name": "WESTERN DIGITAL CORPORATION",
-  "price": 469.5,
+  "price": 469.05,
   "previousClose": 462.09,
   "dayHigh": 477.28,
   "dayLow": 453.7,
-  "change": 7.410000000000025,
-  "changePercent": 1.6035837174576437,
+  "change": 6.960000000000036,
+  "changePercent": 1.5062000908913928,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787255100,
-      "close": 469.9596862792969
+      "close": 469.3450012207031
     },
     {
-      "timestamp": 1787255205,
-      "close": 469.5
+      "timestamp": 1787255400,
+      "close": 468.7049865722656
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 469.2699890136719
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 469.04998779296875
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-20T18:31:39.000Z"
   },
-  "generatedAt": "2026-08-20T19:46:46.245Z"
+  "generatedAt": "2026-08-20T20:46:54.175Z"
 }

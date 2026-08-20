@@ -5,12 +5,12 @@
     "displaySymbol": "$DUK"
   },
   "name": "DUKE ENERGY CORPORATION",
-  "price": 123.25,
+  "price": 122.69,
   "previousClose": 123.6,
   "dayHigh": 124.28,
-  "dayLow": 122.98,
-  "change": -0.3499999999999943,
-  "changePercent": -0.2831715210355941,
+  "dayLow": 122.68,
+  "change": -0.9099999999999966,
+  "changePercent": -0.7362459546925538,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787254800,
-      "close": 123.3218994140625
+      "close": 123.33499908447266
     },
     {
-      "timestamp": 1787255144,
+      "timestamp": 1787255100,
+      "close": 123.3761978149414
+    },
+    {
+      "timestamp": 1787255400,
       "close": 123.25
+    },
+    {
+      "timestamp": 1787255700,
+      "close": 122.71499633789062
+    },
+    {
+      "timestamp": 1787256000,
+      "close": 122.69000244140625
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Utility Dive",
     "publishedAt": "2026-08-20T11:16:56.000Z"
   },
-  "generatedAt": "2026-08-20T19:45:45.422Z"
+  "generatedAt": "2026-08-20T20:45:58.692Z"
 }
