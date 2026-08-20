@@ -5,12 +5,12 @@
     "displaySymbol": "$RSG"
   },
   "name": "REPUBLIC SERVICES, INC.",
-  "price": 220.29,
+  "price": 219.955,
   "previousClose": 221.04,
   "dayHigh": 222.1,
   "dayLow": 219.8,
-  "change": -0.75,
-  "changePercent": -0.3393051031487514,
+  "change": -1.0849999999999795,
+  "changePercent": -0.4908613825551844,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -176,8 +176,52 @@
       "close": 220.2899932861328
     },
     {
-      "timestamp": 1787244656,
-      "close": 220.2899932861328
+      "timestamp": 1787244600,
+      "close": 220.25999450683594
+    },
+    {
+      "timestamp": 1787244900,
+      "close": 220.1199951171875
+    },
+    {
+      "timestamp": 1787245200,
+      "close": 220.1300048828125
+    },
+    {
+      "timestamp": 1787245500,
+      "close": 220.08999633789062
+    },
+    {
+      "timestamp": 1787245800,
+      "close": 220.15499877929688
+    },
+    {
+      "timestamp": 1787246100,
+      "close": 220.17999267578125
+    },
+    {
+      "timestamp": 1787246400,
+      "close": 220.03500366210938
+    },
+    {
+      "timestamp": 1787246700,
+      "close": 220.13999938964844
+    },
+    {
+      "timestamp": 1787247000,
+      "close": 220.19000244140625
+    },
+    {
+      "timestamp": 1787247300,
+      "close": 220.07000732421875
+    },
+    {
+      "timestamp": 1787247600,
+      "close": 219.8800048828125
+    },
+    {
+      "timestamp": 1787247939,
+      "close": 219.9550018310547
     }
   ],
   "news": {
@@ -185,5 +229,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-19T15:04:24.000Z"
   },
-  "generatedAt": "2026-08-20T16:51:20.493Z"
+  "generatedAt": "2026-08-20T17:46:15.576Z"
 }
