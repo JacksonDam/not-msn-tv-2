@@ -5,12 +5,12 @@
     "displaySymbol": "$BALL"
   },
   "name": "BALL CORPORATION",
-  "price": 62.65,
+  "price": 62.41,
   "previousClose": 62.62,
   "dayHigh": 62.89,
   "dayLow": 61.78,
-  "change": 0.030000000000001137,
-  "changePercent": 0.047908016608114244,
+  "change": -0.21000000000000085,
+  "changePercent": -0.33535611625678835,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -77,15 +77,59 @@
     },
     {
       "timestamp": 1787237100,
-      "close": 62.599998474121094
+      "close": 62.61000061035156
     },
     {
       "timestamp": 1787237400,
+      "close": 62.64500045776367
+    },
+    {
+      "timestamp": 1787237700,
+      "close": 62.599998474121094
+    },
+    {
+      "timestamp": 1787238000,
       "close": 62.650001525878906
     },
     {
-      "timestamp": 1787237637,
-      "close": 62.650001525878906
+      "timestamp": 1787238300,
+      "close": 62.68000030517578
+    },
+    {
+      "timestamp": 1787238600,
+      "close": 62.709999084472656
+    },
+    {
+      "timestamp": 1787238900,
+      "close": 62.790000915527344
+    },
+    {
+      "timestamp": 1787239200,
+      "close": 62.65999984741211
+    },
+    {
+      "timestamp": 1787239500,
+      "close": 62.63999938964844
+    },
+    {
+      "timestamp": 1787239800,
+      "close": 62.65999984741211
+    },
+    {
+      "timestamp": 1787240100,
+      "close": 62.540000915527344
+    },
+    {
+      "timestamp": 1787240400,
+      "close": 62.43000030517578
+    },
+    {
+      "timestamp": 1787240700,
+      "close": 62.40999984741211
+    },
+    {
+      "timestamp": 1787240899,
+      "close": 62.40999984741211
     }
   ],
   "news": {
@@ -93,5 +137,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-13T12:29:00.000Z"
   },
-  "generatedAt": "2026-08-20T14:54:16.663Z"
+  "generatedAt": "2026-08-20T15:48:35.611Z"
 }
