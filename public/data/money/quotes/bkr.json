@@ -5,12 +5,12 @@
     "displaySymbol": "$BKR"
   },
   "name": "BAKER HUGHES COMPANY",
-  "price": 62.57,
+  "price": 62.45,
   "previousClose": 62.78,
   "dayHigh": 64.03,
   "dayLow": 62.38,
-  "change": -0.21000000000000085,
-  "changePercent": -0.33450143357757384,
+  "change": -0.3299999999999983,
+  "changePercent": -0.5256451099076112,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -176,8 +176,52 @@
       "close": 62.595001220703125
     },
     {
-      "timestamp": 1787331029,
-      "close": 62.56999969482422
+      "timestamp": 1787331000,
+      "close": 62.625
+    },
+    {
+      "timestamp": 1787331300,
+      "close": 62.65999984741211
+    },
+    {
+      "timestamp": 1787331600,
+      "close": 62.650001525878906
+    },
+    {
+      "timestamp": 1787331900,
+      "close": 62.630001068115234
+    },
+    {
+      "timestamp": 1787332200,
+      "close": 62.71500015258789
+    },
+    {
+      "timestamp": 1787332500,
+      "close": 62.619998931884766
+    },
+    {
+      "timestamp": 1787332800,
+      "close": 62.5
+    },
+    {
+      "timestamp": 1787333100,
+      "close": 62.52000045776367
+    },
+    {
+      "timestamp": 1787333400,
+      "close": 62.45000076293945
+    },
+    {
+      "timestamp": 1787333700,
+      "close": 62.47999954223633
+    },
+    {
+      "timestamp": 1787334000,
+      "close": 62.459999084472656
+    },
+    {
+      "timestamp": 1787334287,
+      "close": 62.45000076293945
     }
   ],
   "news": {
@@ -185,5 +229,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-20T13:07:15.000Z"
   },
-  "generatedAt": "2026-08-21T16:50:39.419Z"
+  "generatedAt": "2026-08-21T17:44:50.379Z"
 }

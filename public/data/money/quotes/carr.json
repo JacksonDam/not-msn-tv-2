@@ -5,12 +5,12 @@
     "displaySymbol": "$CARR"
   },
   "name": "CARRIER GLOBAL CORPORATION",
-  "price": 60.155,
+  "price": 60.14,
   "previousClose": 60.15,
   "dayHigh": 61.24,
   "dayLow": 60.1,
-  "change": 0.005000000000002558,
-  "changePercent": 0.008312551953453961,
+  "change": -0.00999999999999801,
+  "changePercent": -0.016625103906896112,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -176,8 +176,52 @@
       "close": 60.17499923706055
     },
     {
-      "timestamp": 1787331032,
-      "close": 60.154998779296875
+      "timestamp": 1787331000,
+      "close": 60.185001373291016
+    },
+    {
+      "timestamp": 1787331300,
+      "close": 60.220001220703125
+    },
+    {
+      "timestamp": 1787331600,
+      "close": 60.1349983215332
+    },
+    {
+      "timestamp": 1787331900,
+      "close": 60.189998626708984
+    },
+    {
+      "timestamp": 1787332200,
+      "close": 60.15999984741211
+    },
+    {
+      "timestamp": 1787332500,
+      "close": 60.16999816894531
+    },
+    {
+      "timestamp": 1787332800,
+      "close": 60.25
+    },
+    {
+      "timestamp": 1787333100,
+      "close": 60.28499984741211
+    },
+    {
+      "timestamp": 1787333400,
+      "close": 60.25
+    },
+    {
+      "timestamp": 1787333700,
+      "close": 60.21500015258789
+    },
+    {
+      "timestamp": 1787334000,
+      "close": 60.150001525878906
+    },
+    {
+      "timestamp": 1787334287,
+      "close": 60.13999938964844
     }
   ],
   "news": {
@@ -185,5 +229,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-21T15:23:00.000Z"
   },
-  "generatedAt": "2026-08-21T16:50:41.533Z"
+  "generatedAt": "2026-08-21T17:44:52.819Z"
 }
