@@ -5,12 +5,12 @@
     "displaySymbol": "$AAPL"
   },
   "name": "APPLE INC.",
-  "price": 311.14,
+  "price": 310.74,
   "previousClose": 311.3,
   "dayHigh": 312.38,
   "dayLow": 307.01,
-  "change": -0.160000000000025,
-  "changePercent": -0.05139736588500643,
+  "change": -0.5600000000000023,
+  "changePercent": -0.1798907805974951,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -125,17 +125,65 @@
     },
     {
       "timestamp": 1787327100,
-      "close": 311.1499938964844
+      "close": 311.1300048828125
     },
     {
-      "timestamp": 1787327286,
-      "close": 311.1400146484375
+      "timestamp": 1787327400,
+      "close": 311.7900085449219
+    },
+    {
+      "timestamp": 1787327700,
+      "close": 311.510009765625
+    },
+    {
+      "timestamp": 1787328000,
+      "close": 311.375
+    },
+    {
+      "timestamp": 1787328300,
+      "close": 311.5
+    },
+    {
+      "timestamp": 1787328600,
+      "close": 311.19000244140625
+    },
+    {
+      "timestamp": 1787328900,
+      "close": 311.1050109863281
+    },
+    {
+      "timestamp": 1787329200,
+      "close": 311.364990234375
+    },
+    {
+      "timestamp": 1787329500,
+      "close": 311.20318603515625
+    },
+    {
+      "timestamp": 1787329800,
+      "close": 310.4100036621094
+    },
+    {
+      "timestamp": 1787330100,
+      "close": 310.7099914550781
+    },
+    {
+      "timestamp": 1787330400,
+      "close": 310.70001220703125
+    },
+    {
+      "timestamp": 1787330700,
+      "close": 310.79010009765625
+    },
+    {
+      "timestamp": 1787331027,
+      "close": 310.739990234375
     }
   ],
   "news": {
-    "title": "Apple paid 40% of its global taxes to Ireland in last fiscal year",
-    "publisher": "Reuters",
-    "publishedAt": "2026-08-21T14:49:40.000Z"
+    "title": "The Hidden Tax Cost of JEPI’s Monthly Income Machine",
+    "publisher": "24/7 Wall St.",
+    "publishedAt": "2026-08-21T16:30:31.000Z"
   },
-  "generatedAt": "2026-08-21T15:48:07.530Z"
+  "generatedAt": "2026-08-21T16:50:29.170Z"
 }
