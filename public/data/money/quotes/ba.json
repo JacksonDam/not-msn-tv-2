@@ -5,12 +5,12 @@
     "displaySymbol": "$BA"
   },
   "name": "THE BOEING COMPANY",
-  "price": 213,
+  "price": 213.42,
   "previousClose": 215.1,
   "dayHigh": 216.46,
-  "dayLow": 212.85,
-  "change": -2.0999999999999943,
-  "changePercent": -0.9762900976290071,
+  "dayLow": 212.75,
+  "change": -1.6800000000000068,
+  "changePercent": -0.7810320781032111,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -77,15 +77,59 @@
     },
     {
       "timestamp": 1787323500,
-      "close": 212.93499755859375
+      "close": 212.9600067138672
     },
     {
       "timestamp": 1787323800,
-      "close": 213.09500122070312
+      "close": 212.91250610351562
     },
     {
-      "timestamp": 1787323985,
-      "close": 213
+      "timestamp": 1787324100,
+      "close": 212.89999389648438
+    },
+    {
+      "timestamp": 1787324400,
+      "close": 213.47999572753906
+    },
+    {
+      "timestamp": 1787324700,
+      "close": 213.27749633789062
+    },
+    {
+      "timestamp": 1787325000,
+      "close": 213.2899932861328
+    },
+    {
+      "timestamp": 1787325300,
+      "close": 213.27000427246094
+    },
+    {
+      "timestamp": 1787325600,
+      "close": 213.53500366210938
+    },
+    {
+      "timestamp": 1787325900,
+      "close": 213.52000427246094
+    },
+    {
+      "timestamp": 1787326200,
+      "close": 213.4600067138672
+    },
+    {
+      "timestamp": 1787326500,
+      "close": 213.67999267578125
+    },
+    {
+      "timestamp": 1787326800,
+      "close": 213.68499755859375
+    },
+    {
+      "timestamp": 1787327100,
+      "close": 213.47999572753906
+    },
+    {
+      "timestamp": 1787327298,
+      "close": 213.4199981689453
     }
   ],
   "news": {
@@ -93,5 +137,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-21T13:30:55.000Z"
   },
-  "generatedAt": "2026-08-21T14:53:10.258Z"
+  "generatedAt": "2026-08-21T15:48:18.639Z"
 }
