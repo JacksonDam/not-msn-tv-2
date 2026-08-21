@@ -5,12 +5,12 @@
     "displaySymbol": "$EBAY"
   },
   "name": "EBAY INC.",
-  "price": 104.5,
+  "price": 104.75,
   "previousClose": 104.61,
   "dayHigh": 105.62,
   "dayLow": 103.69,
-  "change": -0.10999999999999943,
-  "changePercent": -0.10515247108306991,
+  "change": 0.14000000000000057,
+  "changePercent": 0.13383041774209023,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -217,11 +217,67 @@
     },
     {
       "timestamp": 1787334000,
-      "close": 104.47000122070312
+      "close": 104.5
     },
     {
-      "timestamp": 1787334254,
-      "close": 104.5
+      "timestamp": 1787334300,
+      "close": 104.37999725341797
+    },
+    {
+      "timestamp": 1787334600,
+      "close": 104.34519958496094
+    },
+    {
+      "timestamp": 1787334900,
+      "close": 104.41500091552734
+    },
+    {
+      "timestamp": 1787335200,
+      "close": 104.30999755859375
+    },
+    {
+      "timestamp": 1787335500,
+      "close": 104.38999938964844
+    },
+    {
+      "timestamp": 1787335800,
+      "close": 104.4000015258789
+    },
+    {
+      "timestamp": 1787336100,
+      "close": 104.46499633789062
+    },
+    {
+      "timestamp": 1787336400,
+      "close": 104.66999816894531
+    },
+    {
+      "timestamp": 1787336700,
+      "close": 104.55999755859375
+    },
+    {
+      "timestamp": 1787337000,
+      "close": 104.5199966430664
+    },
+    {
+      "timestamp": 1787337300,
+      "close": 104.49500274658203
+    },
+    {
+      "timestamp": 1787337600,
+      "close": 104.58000183105469
+    },
+    {
+      "timestamp": 1787337900,
+      "close": 104.7750015258789
+    },
+    {
+      "timestamp": 1787338200,
+      "close": 104.77999877929688
+    },
+    {
+      "timestamp": 1787338528,
+      "close": 104.75
     }
   ],
   "news": {
@@ -229,5 +285,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-20T18:38:49.000Z"
   },
-  "generatedAt": "2026-08-21T17:45:06.379Z"
+  "generatedAt": "2026-08-21T18:55:30.550Z"
 }

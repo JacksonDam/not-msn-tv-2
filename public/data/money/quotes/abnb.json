@@ -5,12 +5,12 @@
     "displaySymbol": "$ABNB"
   },
   "name": "AIRBNB, INC.",
-  "price": 186.81,
+  "price": 186.75,
   "previousClose": 185,
   "dayHigh": 188.595,
   "dayLow": 184.31,
-  "change": 1.8100000000000023,
-  "changePercent": 0.9783783783783796,
+  "change": 1.75,
+  "changePercent": 0.945945945945946,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -217,11 +217,67 @@
     },
     {
       "timestamp": 1787334000,
-      "close": 186.7899932861328
+      "close": 186.8000030517578
     },
     {
-      "timestamp": 1787334265,
-      "close": 186.80999755859375
+      "timestamp": 1787334300,
+      "close": 186.6699981689453
+    },
+    {
+      "timestamp": 1787334600,
+      "close": 186.3699951171875
+    },
+    {
+      "timestamp": 1787334900,
+      "close": 186.625
+    },
+    {
+      "timestamp": 1787335200,
+      "close": 186.69000244140625
+    },
+    {
+      "timestamp": 1787335500,
+      "close": 186.4600067138672
+    },
+    {
+      "timestamp": 1787335800,
+      "close": 186.5449981689453
+    },
+    {
+      "timestamp": 1787336100,
+      "close": 186.52499389648438
+    },
+    {
+      "timestamp": 1787336400,
+      "close": 186.3800048828125
+    },
+    {
+      "timestamp": 1787336700,
+      "close": 186.33999633789062
+    },
+    {
+      "timestamp": 1787337000,
+      "close": 186.47500610351562
+    },
+    {
+      "timestamp": 1787337300,
+      "close": 186.47999572753906
+    },
+    {
+      "timestamp": 1787337600,
+      "close": 186.4250030517578
+    },
+    {
+      "timestamp": 1787337900,
+      "close": 186.59500122070312
+    },
+    {
+      "timestamp": 1787338200,
+      "close": 186.69500732421875
+    },
+    {
+      "timestamp": 1787338486,
+      "close": 186.75
     }
   ],
   "news": {
@@ -229,5 +285,5 @@
     "publisher": "Proactive",
     "publishedAt": "2026-08-21T14:48:22.000Z"
   },
-  "generatedAt": "2026-08-21T17:44:40.018Z"
+  "generatedAt": "2026-08-21T18:55:04.936Z"
 }
