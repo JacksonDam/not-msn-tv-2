@@ -5,12 +5,12 @@
     "displaySymbol": "$DIS"
   },
   "name": "THE WALT DISNEY COMPANY",
-  "price": 107.345,
-  "previousClose": 107.375,
+  "price": 107.96,
+  "previousClose": 107.32,
   "dayHigh": 108.41,
   "dayLow": 106.992,
-  "change": -0.030000000000001137,
-  "changePercent": -0.027939464493598264,
+  "change": 0.6400000000000006,
+  "changePercent": 0.5963473723443912,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -25,7 +25,7 @@
     },
     {
       "timestamp": 1787319600,
-      "close": 107.30999755859375
+      "close": 107.36499786376953
     },
     {
       "timestamp": 1787319900,
@@ -37,11 +37,55 @@
     },
     {
       "timestamp": 1787320500,
-      "close": 107.34500122070312
+      "close": 107.26000213623047
     },
     {
-      "timestamp": 1787320702,
-      "close": 107.34500122070312
+      "timestamp": 1787320800,
+      "close": 107.4800033569336
+    },
+    {
+      "timestamp": 1787321100,
+      "close": 107.58000183105469
+    },
+    {
+      "timestamp": 1787321400,
+      "close": 107.64009857177734
+    },
+    {
+      "timestamp": 1787321700,
+      "close": 107.68000030517578
+    },
+    {
+      "timestamp": 1787322000,
+      "close": 107.69999694824219
+    },
+    {
+      "timestamp": 1787322300,
+      "close": 107.54000091552734
+    },
+    {
+      "timestamp": 1787322600,
+      "close": 107.62999725341797
+    },
+    {
+      "timestamp": 1787322900,
+      "close": 107.67500305175781
+    },
+    {
+      "timestamp": 1787323200,
+      "close": 107.8550033569336
+    },
+    {
+      "timestamp": 1787323500,
+      "close": 107.87000274658203
+    },
+    {
+      "timestamp": 1787323800,
+      "close": 107.93499755859375
+    },
+    {
+      "timestamp": 1787324001,
+      "close": 107.95999908447266
     }
   ],
   "news": {
@@ -49,5 +93,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-08-21T10:17:15.000Z"
   },
-  "generatedAt": "2026-08-21T13:58:22.906Z"
+  "generatedAt": "2026-08-21T14:53:27.552Z"
 }
