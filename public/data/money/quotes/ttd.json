@@ -5,12 +5,12 @@
     "displaySymbol": "$TTD"
   },
   "name": "THE TRADE DESK, INC.",
-  "price": 13.16,
+  "price": 13.18,
   "previousClose": 13.32,
   "dayHigh": 13.37,
   "dayLow": 13.14,
-  "change": -0.16000000000000014,
-  "changePercent": -1.2012012012012023,
+  "change": -0.14000000000000057,
+  "changePercent": -1.0510510510510553,
   "currency": "USD",
   "exchangeName": "NGM",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787340900,
+      "close": 13.170000076293945
+    },
+    {
+      "timestamp": 1787341200,
+      "close": 13.180000305175781
+    },
+    {
+      "timestamp": 1787341500,
+      "close": 13.204999923706055
+    },
+    {
+      "timestamp": 1787341800,
+      "close": 13.210000038146973
+    },
+    {
+      "timestamp": 1787342100,
       "close": 13.164999961853027
     },
     {
-      "timestamp": 1787341072,
-      "close": 13.160300254821777
+      "timestamp": 1787342400,
+      "close": 13.180000305175781
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-21T14:58:04.000Z"
   },
-  "generatedAt": "2026-08-21T19:37:59.176Z"
+  "generatedAt": "2026-08-21T20:41:39.661Z"
 }

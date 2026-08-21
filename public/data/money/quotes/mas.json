@@ -5,12 +5,12 @@
     "displaySymbol": "$MAS"
   },
   "name": "MASCO CORPORATION",
-  "price": 73.375,
+  "price": 73.29,
   "previousClose": 73.33,
   "dayHigh": 74.09,
   "dayLow": 72.765,
-  "change": 0.045000000000001705,
-  "changePercent": 0.06136642574662717,
+  "change": -0.03999999999999204,
+  "changePercent": -0.05454793399698901,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,11 +309,27 @@
     },
     {
       "timestamp": 1787340900,
-      "close": 73.36000061035156
+      "close": 73.43000030517578
     },
     {
-      "timestamp": 1787340982,
-      "close": 73.375
+      "timestamp": 1787341200,
+      "close": 73.44000244140625
+    },
+    {
+      "timestamp": 1787341500,
+      "close": 73.51000213623047
+    },
+    {
+      "timestamp": 1787341800,
+      "close": 73.44999694824219
+    },
+    {
+      "timestamp": 1787342100,
+      "close": 73.29000091552734
+    },
+    {
+      "timestamp": 1787342400,
+      "close": 73.29000091552734
     }
   ],
   "news": {
@@ -321,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-18T06:08:27.000Z"
   },
-  "generatedAt": "2026-08-21T19:37:28.522Z"
+  "generatedAt": "2026-08-21T20:41:13.857Z"
 }
