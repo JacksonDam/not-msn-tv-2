@@ -5,12 +5,12 @@
     "displaySymbol": "$FOX"
   },
   "name": "FOX CORPORATION",
-  "price": 61.49,
+  "price": 61.59,
   "previousClose": 61.05,
   "dayHigh": 61.82,
   "dayLow": 60.45,
-  "change": 0.44000000000000483,
-  "changePercent": 0.7207207207207287,
+  "change": 0.5400000000000063,
+  "changePercent": 0.8845208845208948,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -309,11 +309,23 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 61.51499938964844
+      "close": 61.4900016784668
     },
     {
-      "timestamp": 1787600683,
-      "close": 61.4900016784668
+      "timestamp": 1787600700,
+      "close": 61.52000045776367
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 61.63999938964844
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 61.56999969482422
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 61.59000015258789
     }
   ],
   "news": {
@@ -321,5 +333,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-20T14:47:29.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:04.325Z"
+  "generatedAt": "2026-08-24T20:47:51.139Z"
 }

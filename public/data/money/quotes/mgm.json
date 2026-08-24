@@ -5,12 +5,12 @@
     "displaySymbol": "$MGM"
   },
   "name": "MGM RESORTS INTERNATIONAL",
-  "price": 43.795,
+  "price": 43.69,
   "previousClose": 43.74,
   "dayHigh": 44.305,
   "dayLow": 43.64,
-  "change": 0.054999999999999716,
-  "changePercent": 0.1257430269775942,
+  "change": -0.05000000000000426,
+  "changePercent": -0.11431184270691418,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 43.79999923706055
     },
     {
-      "timestamp": 1787600726,
-      "close": 43.79499816894531
+      "timestamp": 1787600700,
+      "close": 43.77000045776367
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 43.77000045776367
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 43.69499969482422
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 43.689998626708984
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MarketBeat",
     "publishedAt": "2026-08-22T14:20:00.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:28.122Z"
+  "generatedAt": "2026-08-24T20:48:09.054Z"
 }

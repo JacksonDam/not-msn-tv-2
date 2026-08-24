@@ -5,12 +5,12 @@
     "displaySymbol": "$SYY"
   },
   "name": "SYSCO CORPORATION",
-  "price": 84.1,
+  "price": 83.86,
   "previousClose": 84.1,
   "dayHigh": 85.25,
   "dayLow": 83.74,
-  "change": 0,
-  "changePercent": 0,
+  "change": -0.23999999999999488,
+  "changePercent": -0.28537455410225315,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 84.0999984741211
     },
     {
-      "timestamp": 1787600724,
-      "close": 84.0999984741211
+      "timestamp": 1787600700,
+      "close": 84.1500015258789
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 84.14250183105469
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 83.86000061035156
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 83.86000061035156
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-21T08:17:55.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:52.953Z"
+  "generatedAt": "2026-08-24T20:48:30.693Z"
 }

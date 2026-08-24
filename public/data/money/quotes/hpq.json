@@ -5,12 +5,12 @@
     "displaySymbol": "$HPQ"
   },
   "name": "HP INC.",
-  "price": 28.365,
+  "price": 28.58,
   "previousClose": 29.71,
   "dayHigh": 29.77,
-  "dayLow": 28.354,
-  "change": -1.3450000000000024,
-  "changePercent": -4.527095254123199,
+  "dayLow": 28.29,
+  "change": -1.1300000000000026,
+  "changePercent": -3.803433187478972,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 28.353599548339844
+      "close": 28.350000381469727
     },
     {
-      "timestamp": 1787600710,
-      "close": 28.364999771118164
+      "timestamp": 1787600700,
+      "close": 28.344999313354492
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 28.475000381469727
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 28.59000015258789
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 28.579999923706055
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-24T16:48:02.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:12.185Z"
+  "generatedAt": "2026-08-24T20:47:56.798Z"
 }

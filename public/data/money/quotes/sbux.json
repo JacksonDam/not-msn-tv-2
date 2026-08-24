@@ -5,12 +5,12 @@
     "displaySymbol": "$SBUX"
   },
   "name": "STARBUCKS CORPORATION",
-  "price": 107.34,
+  "price": 107.49,
   "previousClose": 107.08,
   "dayHigh": 107.8,
   "dayLow": 105.68,
-  "change": 0.2600000000000051,
-  "changePercent": 0.24280911468061742,
+  "change": 0.4099999999999966,
+  "changePercent": 0.3828912962271167,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 107.31999969482422
     },
     {
-      "timestamp": 1787600742,
-      "close": 107.33999633789062
+      "timestamp": 1787600700,
+      "close": 107.5
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 107.55500030517578
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 107.5
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 107.48999786376953
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "TheStreet",
     "publishedAt": "2026-08-24T16:17:00.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:48.024Z"
+  "generatedAt": "2026-08-24T20:48:26.807Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$IBM"
   },
   "name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-  "price": 232.105,
+  "price": 231.04,
   "previousClose": 235.68,
   "dayHigh": 234.49,
   "dayLow": 230.47,
-  "change": -3.575000000000017,
-  "changePercent": -1.5168873048201021,
+  "change": -4.640000000000015,
+  "changePercent": -1.9687712152070664,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 232.0800018310547
+      "close": 232.10499572753906
     },
     {
-      "timestamp": 1787600712,
-      "close": 232.10499572753906
+      "timestamp": 1787600700,
+      "close": 231.76499938964844
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 231.77000427246094
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 231.0399932861328
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 231.0399932861328
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-24T16:43:38.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:14.142Z"
+  "generatedAt": "2026-08-24T20:47:58.497Z"
 }

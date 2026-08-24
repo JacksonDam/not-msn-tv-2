@@ -5,12 +5,12 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 26008.121,
+  "price": 25980.191,
   "previousClose": 26180.455,
   "dayHigh": 26109.96,
   "dayLow": 25910.816,
-  "change": -172.33400000000256,
-  "changePercent": -0.6582544115448054,
+  "change": -200.26400000000285,
+  "changePercent": -0.7649370494133996,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
@@ -313,17 +313,29 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 26010.9375
+      "close": 26010.12109375
     },
     {
-      "timestamp": 1787600661,
-      "close": 26008.12109375
+      "timestamp": 1787600700,
+      "close": 26006.423828125
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 26000.390625
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 25979.658203125
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 25980.19140625
     }
   ],
   "news": {
-    "title": "U.S. Stocks Mixed After Bessent Outlines Plan to Squeeze Iran",
-    "publisher": "The Wall Street Journal",
-    "publishedAt": "2026-08-24T19:17:00.000Z"
+    "title": "Update: Nasdaq, S&P 500 Fall as New Sanctions Plan Targets Iran's Trading Partners",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-08-24T20:41:12.000Z"
   },
-  "generatedAt": "2026-08-24T19:44:22.727Z"
+  "generatedAt": "2026-08-24T20:47:19.571Z"
 }

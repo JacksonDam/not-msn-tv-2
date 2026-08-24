@@ -5,12 +5,12 @@
     "displaySymbol": "$DLTR"
   },
   "name": "DOLLAR TREE, INC.",
-  "price": 136.23,
+  "price": 136.75,
   "previousClose": 131.48,
-  "dayHigh": 136.27,
+  "dayHigh": 137.07,
   "dayLow": 131.57,
-  "change": 4.75,
-  "changePercent": 3.6127167630057806,
+  "change": 5.27000000000001,
+  "changePercent": 4.008214177061158,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 136.1300048828125
+      "close": 136.19000244140625
     },
     {
-      "timestamp": 1787600681,
-      "close": 136.22999572753906
+      "timestamp": 1787600700,
+      "close": 136.27000427246094
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 136.50999450683594
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 136.75999450683594
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 136.75
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MediaPost",
     "publishedAt": "2026-08-24T15:00:00.000Z"
   },
-  "generatedAt": "2026-08-24T19:44:53.845Z"
+  "generatedAt": "2026-08-24T20:47:42.598Z"
 }

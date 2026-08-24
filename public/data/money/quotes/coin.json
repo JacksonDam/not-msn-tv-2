@@ -5,12 +5,12 @@
     "displaySymbol": "$COIN"
   },
   "name": "COINBASE GLOBAL, INC.",
-  "price": 179.2,
+  "price": 179.48,
   "previousClose": 186.49,
   "dayHigh": 191.839,
-  "dayLow": 178.86,
-  "change": -7.2900000000000205,
-  "changePercent": -3.909056785886653,
+  "dayLow": 178.52,
+  "change": -7.010000000000019,
+  "changePercent": -3.7589146871146006,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -313,17 +313,29 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 179.13999938964844
+      "close": 179.30999755859375
     },
     {
-      "timestamp": 1787600680,
-      "close": 179.1999969482422
+      "timestamp": 1787600700,
+      "close": 179.14999389648438
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 179.38999938964844
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 179.48500061035156
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 179.47999572753906
     }
   ],
   "news": {
-    "title": "Coinbase Global Selects Chainlink to Provide Pricing Data for Tokenized Stocks",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-08-24T17:30:38.000Z"
+    "title": "Coinbase Enters the Tokenized Stock Wars",
+    "publisher": "Bankless",
+    "publishedAt": "2026-08-24T20:25:42.000Z"
   },
-  "generatedAt": "2026-08-24T19:44:45.713Z"
+  "generatedAt": "2026-08-24T20:47:36.849Z"
 }

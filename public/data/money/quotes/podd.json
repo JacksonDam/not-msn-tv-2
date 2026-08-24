@@ -5,12 +5,12 @@
     "displaySymbol": "$PODD"
   },
   "name": "INSULET CORPORATION",
-  "price": 145.735,
+  "price": 145.42,
   "previousClose": 148.16,
   "dayHigh": 151.75,
-  "dayLow": 145.6,
-  "change": -2.424999999999983,
-  "changePercent": -1.6367440604751506,
+  "dayLow": 145.19,
+  "change": -2.740000000000009,
+  "changePercent": -1.8493520518358593,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 145.82000732421875
     },
     {
-      "timestamp": 1787600738,
-      "close": 145.73500061035156
+      "timestamp": 1787600700,
+      "close": 145.75
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 145.5500030517578
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 145.47000122070312
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 145.4199981689453
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-08-24T13:33:01.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:41.895Z"
+  "generatedAt": "2026-08-24T20:48:21.870Z"
 }

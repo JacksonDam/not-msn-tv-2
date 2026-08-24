@@ -5,12 +5,12 @@
     "displaySymbol": "$MOS"
   },
   "name": "THE MOSAIC COMPANY",
-  "price": 23.93,
+  "price": 24,
   "previousClose": 24.41,
   "dayHigh": 25.175,
   "dayLow": 23.59,
-  "change": -0.4800000000000004,
-  "changePercent": -1.9664072101597725,
+  "change": -0.41000000000000014,
+  "changePercent": -1.6796394920114712,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -309,15 +309,27 @@
     },
     {
       "timestamp": 1787600100,
-      "close": 23.91510009765625
+      "close": 23.920000076293945
     },
     {
       "timestamp": 1787600400,
       "close": 23.94499969482422
     },
     {
-      "timestamp": 1787600725,
-      "close": 23.93000030517578
+      "timestamp": 1787600700,
+      "close": 23.94499969482422
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 23.940000534057617
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 24.010000228881836
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 24
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-21T20:20:25.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:29.729Z"
+  "generatedAt": "2026-08-24T20:48:10.236Z"
 }

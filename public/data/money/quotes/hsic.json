@@ -5,12 +5,12 @@
     "displaySymbol": "$HSIC"
   },
   "name": "HENRY SCHEIN, INC.",
-  "price": 89.5,
+  "price": 89.51,
   "previousClose": 88.5,
-  "dayHigh": 89.65,
+  "dayHigh": 89.71,
   "dayLow": 87.67,
-  "change": 1,
-  "changePercent": 1.1299435028248588,
+  "change": 1.0100000000000051,
+  "changePercent": 1.1412429378531133,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -301,11 +301,23 @@
     },
     {
       "timestamp": 1787600400,
-      "close": 89.43499755859375
+      "close": 89.5
     },
     {
-      "timestamp": 1787600681,
-      "close": 89.5
+      "timestamp": 1787600700,
+      "close": 89.69999694824219
+    },
+    {
+      "timestamp": 1787601000,
+      "close": 89.62000274658203
+    },
+    {
+      "timestamp": 1787601300,
+      "close": 89.51000213623047
+    },
+    {
+      "timestamp": 1787601600,
+      "close": 89.51000213623047
     }
   ],
   "news": {
@@ -313,5 +325,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-08-20T12:21:30.000Z"
   },
-  "generatedAt": "2026-08-24T19:45:12.592Z"
+  "generatedAt": "2026-08-24T20:47:57.137Z"
 }
