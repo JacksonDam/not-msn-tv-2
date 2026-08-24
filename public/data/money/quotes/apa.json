@@ -5,12 +5,12 @@
     "displaySymbol": "$APA"
   },
   "name": "APA CORPORATION",
-  "price": 42.27,
+  "price": 42.465,
   "previousClose": 43.39,
   "dayHigh": 43.466,
   "dayLow": 41.8,
-  "change": -1.1199999999999974,
-  "changePercent": -2.581239917031568,
+  "change": -0.9249999999999972,
+  "changePercent": -2.1318276100483917,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -177,11 +177,51 @@
     },
     {
       "timestamp": 1787590200,
-      "close": 42.27000045776367
+      "close": 42.209999084472656
     },
     {
-      "timestamp": 1787590449,
-      "close": 42.27000045776367
+      "timestamp": 1787590500,
+      "close": 42.2599983215332
+    },
+    {
+      "timestamp": 1787590800,
+      "close": 42.29999923706055
+    },
+    {
+      "timestamp": 1787591100,
+      "close": 42.334999084472656
+    },
+    {
+      "timestamp": 1787591400,
+      "close": 42.31999969482422
+    },
+    {
+      "timestamp": 1787591700,
+      "close": 42.26499938964844
+    },
+    {
+      "timestamp": 1787592000,
+      "close": 42.33000183105469
+    },
+    {
+      "timestamp": 1787592300,
+      "close": 42.369998931884766
+    },
+    {
+      "timestamp": 1787592600,
+      "close": 42.44499969482422
+    },
+    {
+      "timestamp": 1787592900,
+      "close": 42.42499923706055
+    },
+    {
+      "timestamp": 1787593200,
+      "close": 42.45500183105469
+    },
+    {
+      "timestamp": 1787593392,
+      "close": 42.46500015258789
     }
   ],
   "news": {
@@ -189,5 +229,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-24T10:09:36.000Z"
   },
-  "generatedAt": "2026-08-24T16:54:32.023Z"
+  "generatedAt": "2026-08-24T17:46:26.277Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$LVS"
   },
   "name": "LAS VEGAS SANDS CORP.",
-  "price": 47.03,
+  "price": 47.022,
   "previousClose": 47.03,
   "dayHigh": 47.22,
   "dayLow": 46.47,
-  "change": 0,
-  "changePercent": 0,
+  "change": -0.008000000000002672,
+  "changePercent": -0.01701041888157064,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -173,15 +173,55 @@
     },
     {
       "timestamp": 1787589900,
-      "close": 47.060001373291016
+      "close": 47.04999923706055
     },
     {
       "timestamp": 1787590200,
       "close": 47.040000915527344
     },
     {
-      "timestamp": 1787590518,
+      "timestamp": 1787590500,
+      "close": 47
+    },
+    {
+      "timestamp": 1787590800,
+      "close": 46.959999084472656
+    },
+    {
+      "timestamp": 1787591100,
+      "close": 46.959999084472656
+    },
+    {
+      "timestamp": 1787591400,
+      "close": 46.97999954223633
+    },
+    {
+      "timestamp": 1787591700,
+      "close": 46.9900016784668
+    },
+    {
+      "timestamp": 1787592000,
+      "close": 46.95000076293945
+    },
+    {
+      "timestamp": 1787592300,
+      "close": 47.060001373291016
+    },
+    {
+      "timestamp": 1787592600,
+      "close": 47.040000915527344
+    },
+    {
+      "timestamp": 1787592900,
+      "close": 47.02000045776367
+    },
+    {
+      "timestamp": 1787593200,
       "close": 47.029998779296875
+    },
+    {
+      "timestamp": 1787593406,
+      "close": 47.02199935913086
     }
   ],
   "news": {
@@ -189,5 +229,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-21T15:30:06.000Z"
   },
-  "generatedAt": "2026-08-24T16:55:26.547Z"
+  "generatedAt": "2026-08-24T17:47:00.764Z"
 }
