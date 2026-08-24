@@ -5,12 +5,12 @@
     "displaySymbol": "$TTD"
   },
   "name": "THE TRADE DESK, INC.",
-  "price": 13.345,
+  "price": 13.375,
   "previousClose": 13.18,
   "dayHigh": 13.42,
   "dayLow": 13.15,
-  "change": 0.16500000000000092,
-  "changePercent": 1.251896813353573,
+  "change": 0.19500000000000028,
+  "changePercent": 1.4795144157814892,
   "currency": "USD",
   "exchangeName": "NGM",
   "marketState": "",
@@ -133,11 +133,55 @@
     },
     {
       "timestamp": 1787586900,
+      "close": 13.369999885559082
+    },
+    {
+      "timestamp": 1787587200,
       "close": 13.364999771118164
     },
     {
-      "timestamp": 1787586999,
+      "timestamp": 1787587500,
       "close": 13.345000267028809
+    },
+    {
+      "timestamp": 1787587800,
+      "close": 13.335000038146973
+    },
+    {
+      "timestamp": 1787588100,
+      "close": 13.360099792480469
+    },
+    {
+      "timestamp": 1787588400,
+      "close": 13.345000267028809
+    },
+    {
+      "timestamp": 1787588700,
+      "close": 13.39780044555664
+    },
+    {
+      "timestamp": 1787589000,
+      "close": 13.369999885559082
+    },
+    {
+      "timestamp": 1787589300,
+      "close": 13.350099563598633
+    },
+    {
+      "timestamp": 1787589600,
+      "close": 13.359999656677246
+    },
+    {
+      "timestamp": 1787589900,
+      "close": 13.375
+    },
+    {
+      "timestamp": 1787590200,
+      "close": 13.354999542236328
+    },
+    {
+      "timestamp": 1787590545,
+      "close": 13.375
     }
   ],
   "news": {
@@ -145,5 +189,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-24T12:47:00.000Z"
   },
-  "generatedAt": "2026-08-24T15:56:40.625Z"
+  "generatedAt": "2026-08-24T16:55:57.626Z"
 }
