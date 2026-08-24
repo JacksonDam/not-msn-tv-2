@@ -5,12 +5,12 @@
     "displaySymbol": "$CSX"
   },
   "name": "CSX CORPORATION",
-  "price": 51.65,
+  "price": 51.535,
   "previousClose": 51.59,
   "dayHigh": 51.998,
   "dayLow": 51.225,
-  "change": 0.05999999999999517,
-  "changePercent": 0.1163016088389129,
+  "change": -0.05500000000000682,
+  "changePercent": -0.10660980810235864,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,47 @@
     },
     {
       "timestamp": 1787597700,
-      "close": 51.63999938964844
+      "close": 51.654998779296875
     },
     {
-      "timestamp": 1787597939,
-      "close": 51.650001525878906
+      "timestamp": 1787598000,
+      "close": 51.6349983215332
+    },
+    {
+      "timestamp": 1787598300,
+      "close": 51.6349983215332
+    },
+    {
+      "timestamp": 1787598600,
+      "close": 51.54999923706055
+    },
+    {
+      "timestamp": 1787598900,
+      "close": 51.55500030517578
+    },
+    {
+      "timestamp": 1787599200,
+      "close": 51.54499816894531
+    },
+    {
+      "timestamp": 1787599500,
+      "close": 51.51499938964844
+    },
+    {
+      "timestamp": 1787599800,
+      "close": 51.4900016784668
+    },
+    {
+      "timestamp": 1787600100,
+      "close": 51.52000045776367
+    },
+    {
+      "timestamp": 1787600400,
+      "close": 51.53499984741211
+    },
+    {
+      "timestamp": 1787600677,
+      "close": 51.53499984741211
     }
   ],
   "news": {
@@ -289,5 +325,5 @@
     "publisher": "FreightWaves",
     "publishedAt": "2026-08-24T16:02:40.000Z"
   },
-  "generatedAt": "2026-08-24T18:59:01.907Z"
+  "generatedAt": "2026-08-24T19:44:49.305Z"
 }
