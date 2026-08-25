@@ -5,12 +5,12 @@
     "displaySymbol": "$EIX"
   },
   "name": "EDISON INTERNATIONAL",
-  "price": 74,
+  "price": 73.985,
   "previousClose": 73.97,
   "dayHigh": 74.45,
   "dayLow": 73.645,
-  "change": 0.030000000000001137,
-  "changePercent": 0.040556982560499034,
+  "change": 0.015000000000000568,
+  "changePercent": 0.020278491280249517,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -92,8 +92,52 @@
       "close": 74.01000213623047
     },
     {
-      "timestamp": 1787670311,
-      "close": 74
+      "timestamp": 1787670300,
+      "close": 73.91000366210938
+    },
+    {
+      "timestamp": 1787670600,
+      "close": 73.9124984741211
+    },
+    {
+      "timestamp": 1787670900,
+      "close": 73.88999938964844
+    },
+    {
+      "timestamp": 1787671200,
+      "close": 74.05000305175781
+    },
+    {
+      "timestamp": 1787671500,
+      "close": 74.02999877929688
+    },
+    {
+      "timestamp": 1787671800,
+      "close": 74.0999984741211
+    },
+    {
+      "timestamp": 1787672100,
+      "close": 74.08499908447266
+    },
+    {
+      "timestamp": 1787672400,
+      "close": 74.01000213623047
+    },
+    {
+      "timestamp": 1787672700,
+      "close": 74.08499908447266
+    },
+    {
+      "timestamp": 1787673000,
+      "close": 74.15499877929688
+    },
+    {
+      "timestamp": 1787673300,
+      "close": 73.9800033569336
+    },
+    {
+      "timestamp": 1787673576,
+      "close": 73.98500061035156
     }
   ],
   "news": {
@@ -101,5 +145,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-25T11:43:52.000Z"
   },
-  "generatedAt": "2026-08-25T15:05:25.680Z"
+  "generatedAt": "2026-08-25T16:00:06.222Z"
 }

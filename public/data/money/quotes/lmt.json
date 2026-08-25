@@ -5,12 +5,12 @@
     "displaySymbol": "$LMT"
   },
   "name": "LOCKHEED MARTIN CORPORATION",
-  "price": 560.65,
+  "price": 560,
   "previousClose": 564.14,
   "dayHigh": 567.98,
-  "dayLow": 558.945,
-  "change": -3.490000000000009,
-  "changePercent": -0.618640762931189,
+  "dayLow": 558,
+  "change": -4.139999999999986,
+  "changePercent": -0.7338603892650736,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -81,19 +81,63 @@
     },
     {
       "timestamp": 1787669400,
-      "close": 559.77001953125
+      "close": 559.3800048828125
     },
     {
       "timestamp": 1787669700,
-      "close": 559.4199829101562
+      "close": 559.6099853515625
     },
     {
       "timestamp": 1787670000,
-      "close": 560.9749755859375
+      "close": 560.6699829101562
     },
     {
-      "timestamp": 1787670275,
-      "close": 560.6500244140625
+      "timestamp": 1787670300,
+      "close": 560.719970703125
+    },
+    {
+      "timestamp": 1787670600,
+      "close": 559.5900268554688
+    },
+    {
+      "timestamp": 1787670900,
+      "close": 560.1699829101562
+    },
+    {
+      "timestamp": 1787671200,
+      "close": 559.2249755859375
+    },
+    {
+      "timestamp": 1787671500,
+      "close": 559.5499877929688
+    },
+    {
+      "timestamp": 1787671800,
+      "close": 558.97998046875
+    },
+    {
+      "timestamp": 1787672100,
+      "close": 558.1400146484375
+    },
+    {
+      "timestamp": 1787672400,
+      "close": 558.6500244140625
+    },
+    {
+      "timestamp": 1787672700,
+      "close": 559.5999755859375
+    },
+    {
+      "timestamp": 1787673000,
+      "close": 559.3800048828125
+    },
+    {
+      "timestamp": 1787673300,
+      "close": 560.5399780273438
+    },
+    {
+      "timestamp": 1787673606,
+      "close": 560
     }
   ],
   "news": {
@@ -101,5 +145,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-25T14:54:44.000Z"
   },
-  "generatedAt": "2026-08-25T15:05:47.300Z"
+  "generatedAt": "2026-08-25T16:00:37.729Z"
 }

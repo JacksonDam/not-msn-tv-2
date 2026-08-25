@@ -5,12 +5,12 @@
     "displaySymbol": "$L"
   },
   "name": "LOEWS CORPORATION",
-  "price": 111.04,
+  "price": 110.9,
   "previousClose": 111.45,
   "dayHigh": 111.64,
   "dayLow": 110.68,
-  "change": -0.4099999999999966,
-  "changePercent": -0.36787797218483315,
+  "change": -0.5499999999999972,
+  "changePercent": -0.4934948407357534,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -84,12 +84,52 @@
       "close": 110.7782974243164
     },
     {
+      "timestamp": 1787669700,
+      "close": 110.9000015258789
+    },
+    {
       "timestamp": 1787670000,
       "close": 111.06999969482422
     },
     {
-      "timestamp": 1787670311,
-      "close": 111.04000091552734
+      "timestamp": 1787670300,
+      "close": 111.18000030517578
+    },
+    {
+      "timestamp": 1787670600,
+      "close": 111.20999908447266
+    },
+    {
+      "timestamp": 1787670900,
+      "close": 111.19999694824219
+    },
+    {
+      "timestamp": 1787671200,
+      "close": 111.08999633789062
+    },
+    {
+      "timestamp": 1787671500,
+      "close": 110.94999694824219
+    },
+    {
+      "timestamp": 1787671800,
+      "close": 110.87999725341797
+    },
+    {
+      "timestamp": 1787672100,
+      "close": 110.91000366210938
+    },
+    {
+      "timestamp": 1787672400,
+      "close": 110.88999938964844
+    },
+    {
+      "timestamp": 1787672700,
+      "close": 110.90499877929688
+    },
+    {
+      "timestamp": 1787673389,
+      "close": 110.9000015258789
     }
   ],
   "news": {
@@ -97,5 +137,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-08-04T15:32:00.000Z"
   },
-  "generatedAt": "2026-08-25T15:05:45.585Z"
+  "generatedAt": "2026-08-25T16:00:35.795Z"
 }

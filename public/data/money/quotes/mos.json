@@ -5,12 +5,12 @@
     "displaySymbol": "$MOS"
   },
   "name": "THE MOSAIC COMPANY",
-  "price": 23.805,
+  "price": 24.105,
   "previousClose": 24,
   "dayHigh": 24.16,
-  "dayLow": 23.72,
-  "change": -0.19500000000000028,
-  "changePercent": -0.8125000000000012,
+  "dayLow": 23.665,
+  "change": 0.10500000000000043,
+  "changePercent": 0.4375000000000018,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -92,8 +92,52 @@
       "close": 23.825000762939453
     },
     {
-      "timestamp": 1787670334,
+      "timestamp": 1787670300,
+      "close": 23.75
+    },
+    {
+      "timestamp": 1787670600,
+      "close": 23.684999465942383
+    },
+    {
+      "timestamp": 1787670900,
+      "close": 23.7450008392334
+    },
+    {
+      "timestamp": 1787671200,
+      "close": 23.770000457763672
+    },
+    {
+      "timestamp": 1787671500,
       "close": 23.80500030517578
+    },
+    {
+      "timestamp": 1787671800,
+      "close": 23.8799991607666
+    },
+    {
+      "timestamp": 1787672100,
+      "close": 23.915000915527344
+    },
+    {
+      "timestamp": 1787672400,
+      "close": 23.895000457763672
+    },
+    {
+      "timestamp": 1787672700,
+      "close": 23.989999771118164
+    },
+    {
+      "timestamp": 1787673000,
+      "close": 23.9950008392334
+    },
+    {
+      "timestamp": 1787673300,
+      "close": 24.06999969482422
+    },
+    {
+      "timestamp": 1787673641,
+      "close": 24.104999542236328
     }
   ],
   "news": {
@@ -101,5 +145,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-21T20:20:25.000Z"
   },
-  "generatedAt": "2026-08-25T15:05:51.859Z"
+  "generatedAt": "2026-08-25T16:00:43.294Z"
 }
