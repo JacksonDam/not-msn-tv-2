@@ -5,12 +5,12 @@
     "displaySymbol": "$PSKY"
   },
   "name": "PARAMOUNT SKYDANCE CORPORATION",
-  "price": 10.62,
+  "price": 10.64,
   "previousClose": 10.35,
   "dayHigh": 10.76,
   "dayLow": 10.26,
-  "change": 0.2699999999999996,
-  "changePercent": 2.608695652173909,
+  "change": 0.2900000000000009,
+  "changePercent": 2.8019323671497673,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 10.625
+      "close": 10.619999885559082
     },
     {
-      "timestamp": 1787684226,
-      "close": 10.619999885559082
+      "timestamp": 1787684400,
+      "close": 10.640000343322754
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 10.670499801635742
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 10.675000190734863
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 10.645000457763672
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 10.664999961853027
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 10.65999984741211
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 10.675000190734863
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 10.654999732971191
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 10.65999984741211
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 10.654999732971191
+    },
+    {
+      "timestamp": 1787687193,
+      "close": 10.640000343322754
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Reuters",
     "publishedAt": "2026-08-25T18:29:19.000Z"
   },
-  "generatedAt": "2026-08-25T18:57:11.381Z"
+  "generatedAt": "2026-08-25T19:46:50.799Z"
 }

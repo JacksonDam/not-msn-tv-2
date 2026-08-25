@@ -5,12 +5,12 @@
     "displaySymbol": "$SOLV"
   },
   "name": "SOLVENTUM CORPORATION",
-  "price": 91.7,
+  "price": 91.76,
   "previousClose": 91.25,
   "dayHigh": 92.05,
   "dayLow": 90.35,
-  "change": 0.45000000000000284,
-  "changePercent": 0.49315068493150993,
+  "change": 0.5100000000000051,
+  "changePercent": 0.5589041095890467,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 91.70999908447266
+      "close": 91.7249984741211
     },
     {
-      "timestamp": 1787684227,
-      "close": 91.69999694824219
+      "timestamp": 1787684400,
+      "close": 91.87999725341797
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 91.9749984741211
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 92
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 91.9800033569336
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 91.93000030517578
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 91.7699966430664
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 91.76499938964844
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 91.74500274658203
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 91.73750305175781
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 91.69000244140625
+    },
+    {
+      "timestamp": 1787687213,
+      "close": 91.76000213623047
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-20T12:59:15.000Z"
   },
-  "generatedAt": "2026-08-25T18:57:16.948Z"
+  "generatedAt": "2026-08-25T19:46:57.465Z"
 }

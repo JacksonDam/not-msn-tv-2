@@ -5,12 +5,12 @@
     "displaySymbol": "$SRE"
   },
   "name": "SEMPRA",
-  "price": 84.56,
+  "price": 84.44,
   "previousClose": 84.57,
   "dayHigh": 85,
   "dayLow": 83.99,
-  "change": -0.009999999999990905,
-  "changePercent": -0.011824524062895716,
+  "change": -0.12999999999999545,
+  "changePercent": -0.15371881281777872,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 84.57109832763672
+      "close": 84.6050033569336
     },
     {
-      "timestamp": 1787684214,
-      "close": 84.55999755859375
+      "timestamp": 1787684400,
+      "close": 84.66000366210938
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 84.66999816894531
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 84.68000030517578
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 84.6500015258789
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 84.62999725341797
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 84.6500015258789
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 84.5999984741211
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 84.52999877929688
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 84.51000213623047
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 84.45999908447266
+    },
+    {
+      "timestamp": 1787687216,
+      "close": 84.44000244140625
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-24T21:34:00.000Z"
   },
-  "generatedAt": "2026-08-25T18:57:17.457Z"
+  "generatedAt": "2026-08-25T19:46:58.153Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$PNR"
   },
   "name": "PENTAIR PLC",
-  "price": 62.42,
+  "price": 62.435,
   "previousClose": 63.31,
   "dayHigh": 64.28,
-  "dayLow": 62.4,
-  "change": -0.8900000000000006,
-  "changePercent": -1.4057810772389836,
+  "dayLow": 62.32,
+  "change": -0.875,
+  "changePercent": -1.382088137734955,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
+      "close": 62.41999816894531
+    },
+    {
+      "timestamp": 1787684400,
+      "close": 62.43000030517578
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 62.445098876953125
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 62.33000183105469
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 62.40999984741211
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 62.45500183105469
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 62.43000030517578
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 62.40999984741211
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 62.45500183105469
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 62.470001220703125
+    },
+    {
+      "timestamp": 1787687100,
       "close": 62.439998626708984
     },
     {
-      "timestamp": 1787684209,
-      "close": 62.41999816894531
+      "timestamp": 1787687205,
+      "close": 62.435001373291016
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-25T12:20:28.000Z"
   },
-  "generatedAt": "2026-08-25T18:57:09.886Z"
+  "generatedAt": "2026-08-25T19:46:49.115Z"
 }

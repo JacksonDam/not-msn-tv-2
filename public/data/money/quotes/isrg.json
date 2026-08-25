@@ -5,12 +5,12 @@
     "displaySymbol": "$ISRG"
   },
   "name": "INTUITIVE SURGICAL, INC.",
-  "price": 370.61,
+  "price": 371.5,
   "previousClose": 373.57,
   "dayHigh": 378.23,
   "dayLow": 367.07,
-  "change": -2.9599999999999795,
-  "changePercent": -0.7923548464812431,
+  "change": -2.069999999999993,
+  "changePercent": -0.5541130176406011,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 370.6400146484375
+      "close": 370.6300048828125
     },
     {
-      "timestamp": 1787684191,
-      "close": 370.6099853515625
+      "timestamp": 1787684400,
+      "close": 370.7349853515625
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 370.7099914550781
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 370.489990234375
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 370.739990234375
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 371.0400085449219
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 370.635009765625
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 370.5249938964844
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 371.1650085449219
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 371.1600036621094
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 371.3900146484375
+    },
+    {
+      "timestamp": 1787687181,
+      "close": 371.5
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-25T15:08:39.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:49.462Z"
+  "generatedAt": "2026-08-25T19:46:24.757Z"
 }

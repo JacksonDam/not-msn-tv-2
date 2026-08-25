@@ -5,12 +5,12 @@
     "displaySymbol": "$FISV"
   },
   "name": "FISERV, INC.",
-  "price": 52.7,
+  "price": 52.455,
   "previousClose": 52.96,
   "dayHigh": 52.87,
   "dayLow": 52.09,
-  "change": -0.259999999999998,
-  "changePercent": -0.4909365558912349,
+  "change": -0.5050000000000026,
+  "changePercent": -0.9535498489426031,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
+      "close": 52.709999084472656
+    },
+    {
+      "timestamp": 1787684400,
+      "close": 52.630001068115234
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 52.65999984741211
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 52.68000030517578
+    },
+    {
+      "timestamp": 1787685300,
       "close": 52.689998626708984
     },
     {
-      "timestamp": 1787684196,
-      "close": 52.70000076293945
+      "timestamp": 1787685600,
+      "close": 52.75
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 52.68009948730469
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 52.4900016784668
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 52.45000076293945
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 52.459999084472656
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 52.470001220703125
+    },
+    {
+      "timestamp": 1787687166,
+      "close": 52.45500183105469
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-25T13:38:20.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:38.871Z"
+  "generatedAt": "2026-08-25T19:46:11.946Z"
 }

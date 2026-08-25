@@ -5,12 +5,12 @@
     "displaySymbol": "$MDT"
   },
   "name": "MEDTRONIC PLC",
-  "price": 91.89,
+  "price": 91.595,
   "previousClose": 92.9,
   "dayHigh": 92.82,
   "dayLow": 91.15,
-  "change": -1.0100000000000051,
-  "changePercent": -1.0871905274488753,
+  "change": -1.3050000000000068,
+  "changePercent": -1.404736275565131,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 91.88999938964844
+      "close": 91.91999816894531
     },
     {
-      "timestamp": 1787684211,
-      "close": 91.88999938964844
+      "timestamp": 1787684400,
+      "close": 91.94499969482422
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 91.97470092773438
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 91.9800033569336
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 91.98999786376953
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 92.0250015258789
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 91.83999633789062
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 91.74500274658203
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 91.80999755859375
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 91.625
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 91.58000183105469
+    },
+    {
+      "timestamp": 1787687192,
+      "close": 91.59500122070312
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-25T16:05:37.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:58.035Z"
+  "generatedAt": "2026-08-25T19:46:35.219Z"
 }

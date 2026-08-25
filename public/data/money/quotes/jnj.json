@@ -5,12 +5,12 @@
     "displaySymbol": "$JNJ"
   },
   "name": "JOHNSON & JOHNSON",
-  "price": 273.385,
+  "price": 272.72,
   "previousClose": 271.7,
   "dayHigh": 273.802,
   "dayLow": 270.175,
-  "change": 1.6850000000000023,
-  "changePercent": 0.6201693043798316,
+  "change": 1.0200000000000387,
+  "changePercent": 0.37541405962460017,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
+      "close": 273.3699951171875
+    },
+    {
+      "timestamp": 1787684400,
+      "close": 273.4599914550781
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 273.4200134277344
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 273.5199890136719
+    },
+    {
+      "timestamp": 1787685300,
       "close": 273.3900146484375
     },
     {
-      "timestamp": 1787684173,
-      "close": 273.385009765625
+      "timestamp": 1787685600,
+      "close": 273.3089904785156
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 273.3299865722656
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 273.07501220703125
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 272.9700012207031
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 272.8900146484375
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 272.7174987792969
+    },
+    {
+      "timestamp": 1787687178,
+      "close": 272.7200012207031
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-25T17:58:59.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:50.990Z"
+  "generatedAt": "2026-08-25T19:46:26.628Z"
 }

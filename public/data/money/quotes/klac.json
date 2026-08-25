@@ -5,12 +5,12 @@
     "displaySymbol": "$KLAC"
   },
   "name": "KLA CORPORATION",
-  "price": 182.985,
+  "price": 182.66,
   "previousClose": 181.57,
   "dayHigh": 186.13,
   "dayLow": 180.72,
-  "change": 1.4150000000000205,
-  "changePercent": 0.7793137632868979,
+  "change": 1.0900000000000034,
+  "changePercent": 0.6003194360301831,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 182.97000122070312
+      "close": 182.94000244140625
     },
     {
-      "timestamp": 1787684207,
-      "close": 182.98500061035156
+      "timestamp": 1787684400,
+      "close": 182.77499389648438
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 183.0800018310547
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 182.67999267578125
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 182.80499267578125
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 182.47999572753906
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 182.55999755859375
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 182.30999755859375
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 182.3699951171875
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 182.66009521484375
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 182.56500244140625
+    },
+    {
+      "timestamp": 1787687186,
+      "close": 182.66000366210938
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-25T14:50:00.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:52.470Z"
+  "generatedAt": "2026-08-25T19:46:28.291Z"
 }

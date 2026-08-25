@@ -5,12 +5,12 @@
     "displaySymbol": "$HSY"
   },
   "name": "THE HERSHEY COMPANY",
-  "price": 186.615,
+  "price": 186.75,
   "previousClose": 189.94,
   "dayHigh": 188.91,
   "dayLow": 186.01,
-  "change": -3.3249999999999886,
-  "changePercent": -1.7505528061493043,
+  "change": -3.1899999999999977,
+  "changePercent": -1.6794777298094123,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
-      "close": 186.61000061035156
+      "close": 186.69500732421875
     },
     {
-      "timestamp": 1787684189,
-      "close": 186.61500549316406
+      "timestamp": 1787684400,
+      "close": 186.77000427246094
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 186.94500732421875
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 187.19500732421875
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 187.1649932861328
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 186.77999877929688
+    },
+    {
+      "timestamp": 1787685900,
+      "close": 186.83999633789062
+    },
+    {
+      "timestamp": 1787686200,
+      "close": 186.88999938964844
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 186.6750030517578
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 186.75250244140625
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 186.72500610351562
+    },
+    {
+      "timestamp": 1787687165,
+      "close": 186.75
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Investing.com",
     "publishedAt": "2026-08-23T16:03:08.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:46.400Z"
+  "generatedAt": "2026-08-25T19:46:21.114Z"
 }

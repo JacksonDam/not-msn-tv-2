@@ -5,12 +5,12 @@
     "displaySymbol": "$HAL"
   },
   "name": "HALLIBURTON COMPANY",
-  "price": 33.945,
+  "price": 33.825,
   "previousClose": 34.63,
   "dayHigh": 34.65,
-  "dayLow": 33.87,
-  "change": -0.6850000000000023,
-  "changePercent": -1.9780537106555074,
+  "dayLow": 33.815,
+  "change": -0.8049999999999997,
+  "changePercent": -2.3245740687265366,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -277,11 +277,51 @@
     },
     {
       "timestamp": 1787684100,
+      "close": 33.94499969482422
+    },
+    {
+      "timestamp": 1787684400,
+      "close": 33.904998779296875
+    },
+    {
+      "timestamp": 1787684700,
+      "close": 33.875
+    },
+    {
+      "timestamp": 1787685000,
+      "close": 33.869998931884766
+    },
+    {
+      "timestamp": 1787685300,
+      "close": 33.81999969482422
+    },
+    {
+      "timestamp": 1787685600,
+      "close": 33.893455505371094
+    },
+    {
+      "timestamp": 1787685900,
       "close": 33.935001373291016
     },
     {
-      "timestamp": 1787684200,
-      "close": 33.94499969482422
+      "timestamp": 1787686200,
+      "close": 33.970001220703125
+    },
+    {
+      "timestamp": 1787686500,
+      "close": 33.900001525878906
+    },
+    {
+      "timestamp": 1787686800,
+      "close": 33.82500076293945
+    },
+    {
+      "timestamp": 1787687100,
+      "close": 33.83000183105469
+    },
+    {
+      "timestamp": 1787687176,
+      "close": 33.82500076293945
     }
   ],
   "news": {
@@ -289,5 +329,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-25T15:30:02.000Z"
   },
-  "generatedAt": "2026-08-25T18:56:43.811Z"
+  "generatedAt": "2026-08-25T19:46:17.895Z"
 }
