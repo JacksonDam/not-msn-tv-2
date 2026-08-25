@@ -5,12 +5,12 @@
     "displaySymbol": "$RJF"
   },
   "name": "RAYMOND JAMES FINANCIAL, INC.",
-  "price": 175.185,
+  "price": 174.76,
   "previousClose": 176.68,
   "dayHigh": 176.28,
   "dayLow": 174.7,
-  "change": -1.4950000000000045,
-  "changePercent": -0.8461625537695293,
+  "change": -1.920000000000016,
+  "changePercent": -1.086710436948164,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -169,15 +169,51 @@
     },
     {
       "timestamp": 1787676300,
-      "close": 175.1199951171875
+      "close": 175.22999572753906
     },
     {
       "timestamp": 1787676600,
+      "close": 175.18499755859375
+    },
+    {
+      "timestamp": 1787676900,
+      "close": 175.19000244140625
+    },
+    {
+      "timestamp": 1787677200,
       "close": 175.17999267578125
     },
     {
-      "timestamp": 1787676810,
-      "close": 175.18499755859375
+      "timestamp": 1787677500,
+      "close": 174.97999572753906
+    },
+    {
+      "timestamp": 1787677800,
+      "close": 174.83999633789062
+    },
+    {
+      "timestamp": 1787678100,
+      "close": 175.00999450683594
+    },
+    {
+      "timestamp": 1787678400,
+      "close": 175.0399932861328
+    },
+    {
+      "timestamp": 1787678700,
+      "close": 175.15499877929688
+    },
+    {
+      "timestamp": 1787679300,
+      "close": 175.0800018310547
+    },
+    {
+      "timestamp": 1787679600,
+      "close": 174.83999633789062
+    },
+    {
+      "timestamp": 1787679941,
+      "close": 174.75999450683594
     }
   ],
   "news": {
@@ -185,5 +221,5 @@
     "publisher": "InvestorsHub",
     "publishedAt": "2026-08-25T11:10:55.000Z"
   },
-  "generatedAt": "2026-08-25T16:55:57.096Z"
+  "generatedAt": "2026-08-25T17:46:32.656Z"
 }

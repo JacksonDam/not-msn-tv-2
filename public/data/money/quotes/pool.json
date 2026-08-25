@@ -5,12 +5,12 @@
     "displaySymbol": "$POOL"
   },
   "name": "POOL CORPORATION",
-  "price": 186.675,
+  "price": 185.925,
   "previousClose": 188.24,
   "dayHigh": 188.06,
   "dayLow": 184.7,
-  "change": -1.5649999999999977,
-  "changePercent": -0.8313854653633647,
+  "change": -2.3149999999999977,
+  "changePercent": -1.2298130046748819,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -177,11 +177,51 @@
     },
     {
       "timestamp": 1787676600,
-      "close": 186.7799072265625
+      "close": 186.6750030517578
     },
     {
-      "timestamp": 1787676885,
-      "close": 186.6750030517578
+      "timestamp": 1787676900,
+      "close": 186.44000244140625
+    },
+    {
+      "timestamp": 1787677200,
+      "close": 186.17999267578125
+    },
+    {
+      "timestamp": 1787677500,
+      "close": 186.1300048828125
+    },
+    {
+      "timestamp": 1787677800,
+      "close": 186.3249969482422
+    },
+    {
+      "timestamp": 1787678100,
+      "close": 186.39999389648438
+    },
+    {
+      "timestamp": 1787678400,
+      "close": 186.14999389648438
+    },
+    {
+      "timestamp": 1787678700,
+      "close": 185.97500610351562
+    },
+    {
+      "timestamp": 1787679000,
+      "close": 185.88999938964844
+    },
+    {
+      "timestamp": 1787679300,
+      "close": 186.1649932861328
+    },
+    {
+      "timestamp": 1787679600,
+      "close": 186.06500244140625
+    },
+    {
+      "timestamp": 1787679949,
+      "close": 185.9250030517578
     }
   ],
   "news": {
@@ -189,5 +229,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-25T08:46:44.000Z"
   },
-  "generatedAt": "2026-08-25T16:55:54.411Z"
+  "generatedAt": "2026-08-25T17:46:29.193Z"
 }
