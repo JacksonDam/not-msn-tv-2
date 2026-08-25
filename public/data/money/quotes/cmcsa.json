@@ -5,12 +5,12 @@
     "displaySymbol": "$CMCSA"
   },
   "name": "COMCAST CORPORATION",
-  "price": 27.255,
+  "price": 27.1,
   "previousClose": 27.02,
-  "dayHigh": 27.305,
+  "dayHigh": 27.35,
   "dayLow": 26.69,
-  "change": 0.23499999999999943,
-  "changePercent": 0.8697261287934842,
+  "change": 0.08000000000000185,
+  "changePercent": 0.2960769800148107,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 27.239999771118164
     },
     {
-      "timestamp": 1787687148,
+      "timestamp": 1787687100,
       "close": 27.2549991607666
+    },
+    {
+      "timestamp": 1787687400,
+      "close": 27.329999923706055
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 27.084999084472656
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 27.100000381469727
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-25T15:08:24.000Z"
   },
-  "generatedAt": "2026-08-25T19:45:52.007Z"
+  "generatedAt": "2026-08-25T20:45:15.964Z"
 }

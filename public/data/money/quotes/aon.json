@@ -5,12 +5,12 @@
     "displaySymbol": "$AON"
   },
   "name": "AON PLC",
-  "price": 355.155,
+  "price": 354.83,
   "previousClose": 359.1,
   "dayHigh": 360.3,
   "dayLow": 354.14,
-  "change": -3.94500000000005,
-  "changePercent": -1.098579782790323,
+  "change": -4.270000000000039,
+  "changePercent": -1.1890838206627787,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787686800,
+      "close": 355.0849914550781
+    },
+    {
+      "timestamp": 1787687100,
       "close": 355.0400085449219
     },
     {
-      "timestamp": 1787687137,
-      "close": 355.1549987792969
+      "timestamp": 1787687400,
+      "close": 355.04998779296875
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 354.80999755859375
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 354.8299865722656
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-08-25T19:03:00.000Z"
   },
-  "generatedAt": "2026-08-25T19:45:38.207Z"
+  "generatedAt": "2026-08-25T20:45:04.038Z"
 }

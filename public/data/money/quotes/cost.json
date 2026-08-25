@@ -5,12 +5,12 @@
     "displaySymbol": "$COST"
   },
   "name": "COSTCO WHOLESALE CORPORATION",
-  "price": 961.02,
+  "price": 960.01,
   "previousClose": 971.4,
   "dayHigh": 968.76,
   "dayLow": 959.89,
-  "change": -10.379999999999995,
-  "changePercent": -1.0685608400247062,
+  "change": -11.389999999999986,
+  "changePercent": -1.1725344863084195,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 961.2000122070312
     },
     {
-      "timestamp": 1787687152,
-      "close": 961.02001953125
+      "timestamp": 1787687100,
+      "close": 960.875
+    },
+    {
+      "timestamp": 1787687400,
+      "close": 961.760009765625
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 960.010009765625
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 960.010009765625
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-25T16:59:13.000Z"
   },
-  "generatedAt": "2026-08-25T19:45:54.813Z"
+  "generatedAt": "2026-08-25T20:45:18.287Z"
 }

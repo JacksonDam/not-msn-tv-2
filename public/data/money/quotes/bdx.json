@@ -5,12 +5,12 @@
     "displaySymbol": "$BDX"
   },
   "name": "BECTON, DICKINSON AND COMPANY",
-  "price": 189.8,
+  "price": 189.78,
   "previousClose": 190.74,
-  "dayHigh": 190,
+  "dayHigh": 190.07,
   "dayLow": 187.03,
-  "change": -0.9399999999999977,
-  "changePercent": -0.4928174478347477,
+  "change": -0.960000000000008,
+  "changePercent": -0.5033029254482583,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -316,8 +316,20 @@
       "close": 189.7899932861328
     },
     {
-      "timestamp": 1787687111,
-      "close": 189.8000030517578
+      "timestamp": 1787687100,
+      "close": 189.7050018310547
+    },
+    {
+      "timestamp": 1787687400,
+      "close": 189.89999389648438
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 189.77999877929688
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 189.77999877929688
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-08-25T16:05:37.000Z"
   },
-  "generatedAt": "2026-08-25T19:45:43.260Z"
+  "generatedAt": "2026-08-25T20:45:08.751Z"
 }

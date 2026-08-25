@@ -5,12 +5,12 @@
     "displaySymbol": "$EQT"
   },
   "name": "EQT CORPORATION",
-  "price": 54.25,
+  "price": 54,
   "previousClose": 53.79,
   "dayHigh": 54.51,
   "dayLow": 52.57,
-  "change": 0.46000000000000085,
-  "changePercent": 0.8551775422941083,
+  "change": 0.21000000000000085,
+  "changePercent": 0.3904071388733982,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787687100,
-      "close": 54.2599983215332
+      "close": 54.17499923706055
     },
     {
-      "timestamp": 1787687164,
-      "close": 54.25
+      "timestamp": 1787687400,
+      "close": 54.025001525878906
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 53.97999954223633
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 54
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-25T17:28:00.000Z"
   },
-  "generatedAt": "2026-08-25T19:46:07.150Z"
+  "generatedAt": "2026-08-25T20:45:28.382Z"
 }

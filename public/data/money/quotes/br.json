@@ -5,12 +5,12 @@
     "displaySymbol": "$BR"
   },
   "name": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
-  "price": 185.24,
+  "price": 184.82,
   "previousClose": 185.45,
   "dayHigh": 186.01,
   "dayLow": 182.01,
-  "change": -0.20999999999997954,
-  "changePercent": -0.11323806956051742,
+  "change": -0.6299999999999955,
+  "changePercent": -0.3397142086815829,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -313,11 +313,23 @@
     },
     {
       "timestamp": 1787686800,
-      "close": 185.18499755859375
+      "close": 185.17999267578125
     },
     {
-      "timestamp": 1787687108,
-      "close": 185.24000549316406
+      "timestamp": 1787687100,
+      "close": 185.375
+    },
+    {
+      "timestamp": 1787687400,
+      "close": 185.00100708007812
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 184.80999755859375
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 184.82000732421875
     }
   ],
   "news": {
@@ -325,5 +337,5 @@
     "publisher": "CFO.com",
     "publishedAt": "2026-08-21T09:23:07.000Z"
   },
-  "generatedAt": "2026-08-25T19:45:45.790Z"
+  "generatedAt": "2026-08-25T20:45:10.690Z"
 }

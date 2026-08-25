@@ -5,12 +5,12 @@
     "displaySymbol": "$ORLY"
   },
   "name": "O'REILLY AUTOMOTIVE, INC.",
-  "price": 90.44,
+  "price": 90.32,
   "previousClose": 90.68,
   "dayHigh": 91.43,
   "dayLow": 90.22,
-  "change": -0.2400000000000091,
-  "changePercent": -0.2646669607410775,
+  "change": -0.36000000000001364,
+  "changePercent": -0.3970004411116163,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787687100,
-      "close": 90.44499969482422
+      "close": 90.44999694824219
     },
     {
-      "timestamp": 1787687201,
-      "close": 90.44000244140625
+      "timestamp": 1787687400,
+      "close": 90.31500244140625
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 90.31999969482422
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 90.31999969482422
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-21T13:31:47.000Z"
   },
-  "generatedAt": "2026-08-25T19:46:45.106Z"
+  "generatedAt": "2026-08-25T20:46:00.136Z"
 }

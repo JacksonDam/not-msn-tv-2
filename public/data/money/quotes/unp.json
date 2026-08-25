@@ -5,12 +5,12 @@
     "displaySymbol": "$UNP"
   },
   "name": "UNION PACIFIC CORPORATION",
-  "price": 310.48,
+  "price": 309.59,
   "previousClose": 309.86,
   "dayHigh": 311.23,
   "dayLow": 306.81,
-  "change": 0.6200000000000045,
-  "changePercent": 0.20009036338991948,
+  "change": -0.27000000000003865,
+  "changePercent": -0.08713612599239612,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787687100,
-      "close": 310.3800048828125
+      "close": 310.70001220703125
     },
     {
-      "timestamp": 1787687201,
-      "close": 310.4800109863281
+      "timestamp": 1787687400,
+      "close": 310.6199951171875
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 309.5799865722656
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 309.5899963378906
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "FreightWaves",
     "publishedAt": "2026-08-25T16:56:33.000Z"
   },
-  "generatedAt": "2026-08-25T19:47:07.947Z"
+  "generatedAt": "2026-08-25T20:46:20.313Z"
 }

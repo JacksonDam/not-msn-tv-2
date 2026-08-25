@@ -5,12 +5,12 @@
     "displaySymbol": "$CINF"
   },
   "name": "CINCINNATI FINANCIAL CORPORATION",
-  "price": 171.58,
+  "price": 171.42,
   "previousClose": 171.21,
   "dayHigh": 171.91,
   "dayLow": 170.405,
-  "change": 0.37000000000000455,
-  "changePercent": 0.21610887214532126,
+  "change": 0.20999999999997954,
+  "changePercent": 0.12265638689327699,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -300,8 +300,20 @@
       "close": 171.60499572753906
     },
     {
-      "timestamp": 1787687134,
-      "close": 171.5800018310547
+      "timestamp": 1787687100,
+      "close": 171.50999450683594
+    },
+    {
+      "timestamp": 1787687400,
+      "close": 171.39999389648438
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 171.41000366210938
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 171.4199981689453
     }
   ],
   "news": {
@@ -309,5 +321,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-25T17:50:44.000Z"
   },
-  "generatedAt": "2026-08-25T19:45:51.424Z"
+  "generatedAt": "2026-08-25T20:45:15.581Z"
 }

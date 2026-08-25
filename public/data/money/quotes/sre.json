@@ -5,12 +5,12 @@
     "displaySymbol": "$SRE"
   },
   "name": "SEMPRA",
-  "price": 84.44,
+  "price": 84.03,
   "previousClose": 84.57,
   "dayHigh": 85,
   "dayLow": 83.99,
-  "change": -0.12999999999999545,
-  "changePercent": -0.15371881281777872,
+  "change": -0.539999999999992,
+  "changePercent": -0.6385242993969399,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1787687100,
-      "close": 84.45999908447266
+      "close": 84.44000244140625
     },
     {
-      "timestamp": 1787687216,
-      "close": 84.44000244140625
+      "timestamp": 1787687400,
+      "close": 84.24500274658203
+    },
+    {
+      "timestamp": 1787687700,
+      "close": 84.0199966430664
+    },
+    {
+      "timestamp": 1787688000,
+      "close": 84.02999877929688
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-08-24T21:34:00.000Z"
   },
-  "generatedAt": "2026-08-25T19:46:58.153Z"
+  "generatedAt": "2026-08-25T20:46:11.844Z"
 }
