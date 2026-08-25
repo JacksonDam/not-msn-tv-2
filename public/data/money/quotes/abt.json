@@ -5,12 +5,12 @@
     "displaySymbol": "$ABT"
   },
   "name": "ABBOTT LABORATORIES",
-  "price": 115.69,
+  "price": 116.045,
   "previousClose": 116.67,
   "dayHigh": 116.61,
   "dayLow": 115.035,
-  "change": -0.980000000000004,
-  "changePercent": -0.8399760006856981,
+  "change": -0.625,
+  "changePercent": -0.5356989800291421,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -217,11 +217,67 @@
     },
     {
       "timestamp": 1787679600,
-      "close": 115.68000030517578
+      "close": 115.69999694824219
     },
     {
-      "timestamp": 1787679903,
-      "close": 115.69000244140625
+      "timestamp": 1787679900,
+      "close": 115.75
+    },
+    {
+      "timestamp": 1787680200,
+      "close": 115.93499755859375
+    },
+    {
+      "timestamp": 1787680500,
+      "close": 115.9000015258789
+    },
+    {
+      "timestamp": 1787680800,
+      "close": 115.8499984741211
+    },
+    {
+      "timestamp": 1787681100,
+      "close": 115.9000015258789
+    },
+    {
+      "timestamp": 1787681400,
+      "close": 115.80999755859375
+    },
+    {
+      "timestamp": 1787681700,
+      "close": 115.7500991821289
+    },
+    {
+      "timestamp": 1787682000,
+      "close": 115.84500122070312
+    },
+    {
+      "timestamp": 1787682300,
+      "close": 116.3499984741211
+    },
+    {
+      "timestamp": 1787682600,
+      "close": 116.16999816894531
+    },
+    {
+      "timestamp": 1787682900,
+      "close": 115.94499969482422
+    },
+    {
+      "timestamp": 1787683200,
+      "close": 115.8949966430664
+    },
+    {
+      "timestamp": 1787683500,
+      "close": 115.88999938964844
+    },
+    {
+      "timestamp": 1787683800,
+      "close": 116.02989959716797
+    },
+    {
+      "timestamp": 1787684149,
+      "close": 116.04499816894531
     }
   ],
   "news": {
@@ -229,5 +285,5 @@
     "publisher": "TheStreet",
     "publishedAt": "2026-08-25T17:33:00.000Z"
   },
-  "generatedAt": "2026-08-25T17:45:09.831Z"
+  "generatedAt": "2026-08-25T18:56:03.524Z"
 }

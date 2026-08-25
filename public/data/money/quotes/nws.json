@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 34.92,
+  "price": 35.015,
   "previousClose": 35.05,
-  "dayHigh": 34.94,
+  "dayHigh": 35.03,
   "dayLow": 34.205,
-  "change": -0.12999999999999545,
-  "changePercent": -0.37089871611981584,
+  "change": -0.03499999999999659,
+  "changePercent": -0.09985734664763649,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -217,11 +217,71 @@
     },
     {
       "timestamp": 1787679600,
+      "close": 34.91999816894531
+    },
+    {
+      "timestamp": 1787679900,
+      "close": 34.91999816894531
+    },
+    {
+      "timestamp": 1787680200,
       "close": 34.93000030517578
     },
     {
-      "timestamp": 1787679888,
-      "close": 34.91999816894531
+      "timestamp": 1787680500,
+      "close": 34.900001525878906
+    },
+    {
+      "timestamp": 1787680800,
+      "close": 34.98500061035156
+    },
+    {
+      "timestamp": 1787681100,
+      "close": 34.98500061035156
+    },
+    {
+      "timestamp": 1787681400,
+      "close": 34.9901008605957
+    },
+    {
+      "timestamp": 1787681700,
+      "close": 34.970001220703125
+    },
+    {
+      "timestamp": 1787682000,
+      "close": 34.96500015258789
+    },
+    {
+      "timestamp": 1787682300,
+      "close": 34.970001220703125
+    },
+    {
+      "timestamp": 1787682600,
+      "close": 34.959999084472656
+    },
+    {
+      "timestamp": 1787682900,
+      "close": 34.970001220703125
+    },
+    {
+      "timestamp": 1787683200,
+      "close": 34.98500061035156
+    },
+    {
+      "timestamp": 1787683500,
+      "close": 35.02000045776367
+    },
+    {
+      "timestamp": 1787683800,
+      "close": 35.029998779296875
+    },
+    {
+      "timestamp": 1787684100,
+      "close": 35.02000045776367
+    },
+    {
+      "timestamp": 1787684222,
+      "close": 35.01499938964844
     }
   ],
   "news": {
@@ -229,5 +289,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-08-25T13:00:00.000Z"
   },
-  "generatedAt": "2026-08-25T17:46:22.561Z"
+  "generatedAt": "2026-08-25T18:57:04.648Z"
 }
