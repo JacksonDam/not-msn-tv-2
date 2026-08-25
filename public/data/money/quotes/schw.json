@@ -5,12 +5,12 @@
     "displaySymbol": "$SCHW"
   },
   "name": "THE CHARLES SCHWAB CORPORATION",
-  "price": 112.665,
+  "price": 112.65,
   "previousClose": 113.65,
   "dayHigh": 113.383,
   "dayLow": 112.081,
-  "change": -0.9849999999999994,
-  "changePercent": -0.8666959964804217,
+  "change": -1,
+  "changePercent": -0.8798944126704795,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -37,15 +37,67 @@
     },
     {
       "timestamp": 1787666100,
-      "close": 112.52999877929688
+      "close": 112.51000213623047
     },
     {
       "timestamp": 1787666400,
+      "close": 112.5999984741211
+    },
+    {
+      "timestamp": 1787666700,
+      "close": 112.77999877929688
+    },
+    {
+      "timestamp": 1787667000,
+      "close": 113
+    },
+    {
+      "timestamp": 1787667300,
+      "close": 112.98079681396484
+    },
+    {
+      "timestamp": 1787667600,
+      "close": 112.93000030517578
+    },
+    {
+      "timestamp": 1787667900,
+      "close": 112.69000244140625
+    },
+    {
+      "timestamp": 1787668200,
       "close": 112.72000122070312
     },
     {
-      "timestamp": 1787666661,
-      "close": 112.66500091552734
+      "timestamp": 1787668500,
+      "close": 112.63999938964844
+    },
+    {
+      "timestamp": 1787668800,
+      "close": 112.33999633789062
+    },
+    {
+      "timestamp": 1787669100,
+      "close": 112.36499786376953
+    },
+    {
+      "timestamp": 1787669400,
+      "close": 112.41999816894531
+    },
+    {
+      "timestamp": 1787669700,
+      "close": 112.62000274658203
+    },
+    {
+      "timestamp": 1787670000,
+      "close": 112.56500244140625
+    },
+    {
+      "timestamp": 1787670300,
+      "close": 112.66000366210938
+    },
+    {
+      "timestamp": 1787670362,
+      "close": 112.6500015258789
     }
   ],
   "news": {
@@ -53,5 +105,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-25T12:14:44.000Z"
   },
-  "generatedAt": "2026-08-25T14:04:27.046Z"
+  "generatedAt": "2026-08-25T15:06:07.567Z"
 }
