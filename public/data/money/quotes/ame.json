@@ -5,12 +5,12 @@
     "displaySymbol": "$AME"
   },
   "name": "AMETEK, INC.",
-  "price": 235.25,
+  "price": 235.17,
   "previousClose": 236.25,
   "dayHigh": 236.98,
   "dayLow": 234.39,
-  "change": -1,
-  "changePercent": -0.4232804232804233,
+  "change": -1.0800000000000125,
+  "changePercent": -0.45714285714286246,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,7 +321,11 @@
     },
     {
       "timestamp": 1788206100,
-      "close": 235.25
+      "close": 235.1699981689453
+    },
+    {
+      "timestamp": 1788206400,
+      "close": 235.1699981689453
     }
   ],
   "news": {
@@ -329,5 +333,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-08-26T20:58:39.000Z"
   },
-  "generatedAt": "2026-08-31T20:04:33.501Z"
+  "generatedAt": "2026-08-31T23:51:12.722Z"
 }

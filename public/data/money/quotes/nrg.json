@@ -5,12 +5,12 @@
     "displaySymbol": "$NRG"
   },
   "name": "NRG ENERGY, INC.",
-  "price": 110.086,
+  "price": 110.12,
   "previousClose": 111.12,
   "dayHigh": 110.815,
   "dayLow": 108.61,
-  "change": -1.034000000000006,
-  "changePercent": -0.930525557955369,
+  "change": -1,
+  "changePercent": -0.8999280057595392,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1788206100,
-      "close": 110.08550262451172
+      "close": 110.06999969482422
+    },
+    {
+      "timestamp": 1788206400,
+      "close": 110.12000274658203
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "24/7 Wall St.",
     "publishedAt": "2026-08-31T11:32:52.000Z"
   },
-  "generatedAt": "2026-08-31T20:05:26.192Z"
+  "generatedAt": "2026-08-31T23:51:58.482Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$ADM"
   },
   "name": "ARCHER-DANIELS-MIDLAND COMPANY",
-  "price": 81.3,
+  "price": 81.29,
   "previousClose": 81.54,
   "dayHigh": 82.956,
   "dayLow": 78.97,
-  "change": -0.2400000000000091,
-  "changePercent": -0.2943340691685174,
+  "change": -0.25,
+  "changePercent": -0.306597988717194,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1788206100,
-      "close": 81.30000305175781
+      "close": 81.30999755859375
+    },
+    {
+      "timestamp": 1788206400,
+      "close": 81.29000091552734
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-08-28T10:24:52.000Z"
   },
-  "generatedAt": "2026-08-31T20:04:30.597Z"
+  "generatedAt": "2026-08-31T23:51:10.027Z"
 }
