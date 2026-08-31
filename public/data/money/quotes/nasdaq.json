@@ -5,337 +5,41 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 26402.424,
-  "previousClose": 26541.4,
-  "dayHigh": 26700.678,
-  "dayLow": 26359.266,
-  "change": -138.9760000000024,
-  "changePercent": -0.5236197035574702,
+  "price": 26322.467,
+  "previousClose": 26402.424,
+  "dayHigh": 26380.543,
+  "dayLow": 26278.078,
+  "change": -79.95699999999852,
+  "changePercent": -0.3028396180593059,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1787923800,
-      "close": 26536.923828125
+      "timestamp": 1788183000,
+      "close": 26332.533203125
     },
     {
-      "timestamp": 1787924100,
-      "close": 26569.154296875
+      "timestamp": 1788183300,
+      "close": 26293.9921875
     },
     {
-      "timestamp": 1787924400,
-      "close": 26600.259765625
+      "timestamp": 1788183600,
+      "close": 26289.912109375
     },
     {
-      "timestamp": 1787924700,
-      "close": 26559.0625
+      "timestamp": 1788183900,
+      "close": 26322.169921875
     },
     {
-      "timestamp": 1787925000,
-      "close": 26534.513671875
-    },
-    {
-      "timestamp": 1787925300,
-      "close": 26555.4453125
-    },
-    {
-      "timestamp": 1787925600,
-      "close": 26522.08203125
-    },
-    {
-      "timestamp": 1787925900,
-      "close": 26497.369140625
-    },
-    {
-      "timestamp": 1787926200,
-      "close": 26441.212890625
-    },
-    {
-      "timestamp": 1787926500,
-      "close": 26509.970703125
-    },
-    {
-      "timestamp": 1787926800,
-      "close": 26526.564453125
-    },
-    {
-      "timestamp": 1787927100,
-      "close": 26523.5390625
-    },
-    {
-      "timestamp": 1787927400,
-      "close": 26545.1953125
-    },
-    {
-      "timestamp": 1787927700,
-      "close": 26565.255859375
-    },
-    {
-      "timestamp": 1787928000,
-      "close": 26618.73046875
-    },
-    {
-      "timestamp": 1787928300,
-      "close": 26635.505859375
-    },
-    {
-      "timestamp": 1787928600,
-      "close": 26666.25390625
-    },
-    {
-      "timestamp": 1787928900,
-      "close": 26687.1328125
-    },
-    {
-      "timestamp": 1787929200,
-      "close": 26692.4609375
-    },
-    {
-      "timestamp": 1787929500,
-      "close": 26649.4921875
-    },
-    {
-      "timestamp": 1787929800,
-      "close": 26639.537109375
-    },
-    {
-      "timestamp": 1787930100,
-      "close": 26634.986328125
-    },
-    {
-      "timestamp": 1787930400,
-      "close": 26655.681640625
-    },
-    {
-      "timestamp": 1787930700,
-      "close": 26669.09765625
-    },
-    {
-      "timestamp": 1787931000,
-      "close": 26662.435546875
-    },
-    {
-      "timestamp": 1787931300,
-      "close": 26624.7421875
-    },
-    {
-      "timestamp": 1787931600,
-      "close": 26581.853515625
-    },
-    {
-      "timestamp": 1787931900,
-      "close": 26552.341796875
-    },
-    {
-      "timestamp": 1787932200,
-      "close": 26531.9296875
-    },
-    {
-      "timestamp": 1787932500,
-      "close": 26483.146484375
-    },
-    {
-      "timestamp": 1787932800,
-      "close": 26458.990234375
-    },
-    {
-      "timestamp": 1787933100,
-      "close": 26503.91015625
-    },
-    {
-      "timestamp": 1787933400,
-      "close": 26489.30859375
-    },
-    {
-      "timestamp": 1787933700,
-      "close": 26444.9921875
-    },
-    {
-      "timestamp": 1787934000,
-      "close": 26418.46484375
-    },
-    {
-      "timestamp": 1787934300,
-      "close": 26425.083984375
-    },
-    {
-      "timestamp": 1787934600,
-      "close": 26422.33203125
-    },
-    {
-      "timestamp": 1787934900,
-      "close": 26444.984375
-    },
-    {
-      "timestamp": 1787935200,
-      "close": 26418.490234375
-    },
-    {
-      "timestamp": 1787935500,
-      "close": 26461.939453125
-    },
-    {
-      "timestamp": 1787935800,
-      "close": 26439.798828125
-    },
-    {
-      "timestamp": 1787936100,
-      "close": 26430.94140625
-    },
-    {
-      "timestamp": 1787936400,
-      "close": 26400.462890625
-    },
-    {
-      "timestamp": 1787936700,
-      "close": 26382.732421875
-    },
-    {
-      "timestamp": 1787937000,
-      "close": 26411.6015625
-    },
-    {
-      "timestamp": 1787937300,
-      "close": 26413.33984375
-    },
-    {
-      "timestamp": 1787937600,
-      "close": 26401.16015625
-    },
-    {
-      "timestamp": 1787937900,
-      "close": 26404.46484375
-    },
-    {
-      "timestamp": 1787938200,
-      "close": 26423.7421875
-    },
-    {
-      "timestamp": 1787938500,
-      "close": 26396.380859375
-    },
-    {
-      "timestamp": 1787938800,
-      "close": 26406.005859375
-    },
-    {
-      "timestamp": 1787939100,
-      "close": 26440.341796875
-    },
-    {
-      "timestamp": 1787939400,
-      "close": 26435.595703125
-    },
-    {
-      "timestamp": 1787939700,
-      "close": 26433.701171875
-    },
-    {
-      "timestamp": 1787940000,
-      "close": 26422.3046875
-    },
-    {
-      "timestamp": 1787940300,
-      "close": 26417.98046875
-    },
-    {
-      "timestamp": 1787940600,
-      "close": 26410.53515625
-    },
-    {
-      "timestamp": 1787940900,
-      "close": 26410.923828125
-    },
-    {
-      "timestamp": 1787941200,
-      "close": 26400.66015625
-    },
-    {
-      "timestamp": 1787941500,
-      "close": 26399.708984375
-    },
-    {
-      "timestamp": 1787941800,
-      "close": 26410.19140625
-    },
-    {
-      "timestamp": 1787942100,
-      "close": 26395.98828125
-    },
-    {
-      "timestamp": 1787942400,
-      "close": 26404.01953125
-    },
-    {
-      "timestamp": 1787942700,
-      "close": 26382.44921875
-    },
-    {
-      "timestamp": 1787943000,
-      "close": 26367.9921875
-    },
-    {
-      "timestamp": 1787943300,
-      "close": 26373.556640625
-    },
-    {
-      "timestamp": 1787943600,
-      "close": 26378.517578125
-    },
-    {
-      "timestamp": 1787943900,
-      "close": 26401.2109375
-    },
-    {
-      "timestamp": 1787944200,
-      "close": 26393.19140625
-    },
-    {
-      "timestamp": 1787944500,
-      "close": 26393.28515625
-    },
-    {
-      "timestamp": 1787944800,
-      "close": 26397.904296875
-    },
-    {
-      "timestamp": 1787945100,
-      "close": 26409.626953125
-    },
-    {
-      "timestamp": 1787945400,
-      "close": 26410.275390625
-    },
-    {
-      "timestamp": 1787945700,
-      "close": 26413.390625
-    },
-    {
-      "timestamp": 1787946000,
-      "close": 26412.828125
-    },
-    {
-      "timestamp": 1787946300,
-      "close": 26401.712890625
-    },
-    {
-      "timestamp": 1787946600,
-      "close": 26405.8125
-    },
-    {
-      "timestamp": 1787946900,
-      "close": 26398.08203125
-    },
-    {
-      "timestamp": 1787947200,
-      "close": 26402.423828125
+      "timestamp": 1788184119,
+      "close": 26322.466796875
     }
   ],
   "news": {
-    "title": "Aktsiaselts Infortar own share acquisition transactions",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-08-31T05:00:00.000Z"
+    "title": "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday as US, Iran Exchange Attacks",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-08-31T13:28:01.000Z"
   },
-  "generatedAt": "2026-08-31T05:33:53.223Z"
+  "generatedAt": "2026-08-31T13:48:40.180Z"
 }
