@@ -5,337 +5,93 @@
     "displaySymbol": "$BAC"
   },
   "name": "BANK OF AMERICA CORPORATION",
-  "price": 61.94,
-  "previousClose": 62.32,
-  "dayHigh": 62.48,
-  "dayLow": 61.9,
-  "change": -0.38000000000000256,
-  "changePercent": -0.6097560975609797,
+  "price": 62.23,
+  "previousClose": 61.94,
+  "dayHigh": 62.825,
+  "dayLow": 61.723,
+  "change": 0.28999999999999915,
+  "changePercent": 0.468195027445914,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1788183000,
-      "close": 62.16999816894531
-    },
-    {
-      "timestamp": 1788183300,
-      "close": 62.20500183105469
-    },
-    {
-      "timestamp": 1788183600,
-      "close": 62.345001220703125
-    },
-    {
-      "timestamp": 1788183900,
-      "close": 62.2599983215332
-    },
-    {
-      "timestamp": 1788184200,
-      "close": 62.255001068115234
-    },
-    {
-      "timestamp": 1788184500,
-      "close": 62.255001068115234
-    },
-    {
-      "timestamp": 1788184800,
-      "close": 62.33000183105469
-    },
-    {
-      "timestamp": 1788185100,
-      "close": 62.35969924926758
-    },
-    {
-      "timestamp": 1788185400,
-      "close": 62.34510040283203
-    },
-    {
-      "timestamp": 1788185700,
-      "close": 62.220001220703125
-    },
-    {
-      "timestamp": 1788186000,
-      "close": 62.14500045776367
-    },
-    {
-      "timestamp": 1788186300,
-      "close": 62.099998474121094
-    },
-    {
-      "timestamp": 1788186600,
-      "close": 62.084999084472656
-    },
-    {
-      "timestamp": 1788186900,
-      "close": 62.21500015258789
-    },
-    {
-      "timestamp": 1788187200,
-      "close": 62.1349983215332
-    },
-    {
-      "timestamp": 1788187500,
-      "close": 62.150001525878906
-    },
-    {
-      "timestamp": 1788187800,
-      "close": 62.119998931884766
-    },
-    {
-      "timestamp": 1788188100,
-      "close": 62.099998474121094
-    },
-    {
-      "timestamp": 1788188400,
-      "close": 62.05500030517578
-    },
-    {
-      "timestamp": 1788188700,
-      "close": 62.064998626708984
-    },
-    {
-      "timestamp": 1788189000,
-      "close": 62.07500076293945
-    },
-    {
-      "timestamp": 1788189300,
-      "close": 62.064998626708984
-    },
-    {
-      "timestamp": 1788189600,
-      "close": 62.084999084472656
-    },
-    {
-      "timestamp": 1788189900,
-      "close": 62.06990051269531
-    },
-    {
-      "timestamp": 1788190200,
-      "close": 62.1150016784668
-    },
-    {
-      "timestamp": 1788190500,
-      "close": 62.07500076293945
-    },
-    {
-      "timestamp": 1788190800,
-      "close": 62.10499954223633
-    },
-    {
-      "timestamp": 1788191100,
-      "close": 62.125
-    },
-    {
-      "timestamp": 1788191400,
-      "close": 62.17499923706055
-    },
-    {
-      "timestamp": 1788191700,
-      "close": 62.152198791503906
-    },
-    {
-      "timestamp": 1788192000,
-      "close": 62.1349983215332
-    },
-    {
-      "timestamp": 1788192300,
-      "close": 62.1239013671875
-    },
-    {
-      "timestamp": 1788192600,
-      "close": 62.14500045776367
-    },
-    {
-      "timestamp": 1788192900,
-      "close": 62.125
-    },
-    {
-      "timestamp": 1788193200,
-      "close": 62.09000015258789
-    },
-    {
-      "timestamp": 1788193500,
-      "close": 62.06999969482422
-    },
-    {
-      "timestamp": 1788193800,
-      "close": 62.1150016784668
-    },
-    {
-      "timestamp": 1788194100,
-      "close": 62.080101013183594
-    },
-    {
-      "timestamp": 1788194400,
-      "close": 62.11000061035156
-    },
-    {
-      "timestamp": 1788194700,
-      "close": 62.119998931884766
-    },
-    {
-      "timestamp": 1788195000,
-      "close": 62.099998474121094
-    },
-    {
-      "timestamp": 1788195300,
-      "close": 62.0900993347168
-    },
-    {
-      "timestamp": 1788195600,
-      "close": 62.11009979248047
-    },
-    {
-      "timestamp": 1788195900,
-      "close": 62.0900993347168
-    },
-    {
-      "timestamp": 1788196200,
-      "close": 62.084999084472656
-    },
-    {
-      "timestamp": 1788196500,
-      "close": 62.084999084472656
-    },
-    {
-      "timestamp": 1788196800,
-      "close": 62.07500076293945
-    },
-    {
-      "timestamp": 1788197100,
-      "close": 62.07500076293945
-    },
-    {
-      "timestamp": 1788197400,
-      "close": 62.064998626708984
-    },
-    {
-      "timestamp": 1788197700,
-      "close": 62.095001220703125
-    },
-    {
-      "timestamp": 1788198000,
-      "close": 62.125
-    },
-    {
-      "timestamp": 1788198300,
-      "close": 62.165000915527344
-    },
-    {
-      "timestamp": 1788198600,
-      "close": 62.20500183105469
-    },
-    {
-      "timestamp": 1788198900,
-      "close": 62.25
-    },
-    {
-      "timestamp": 1788199200,
-      "close": 62.185001373291016
-    },
-    {
-      "timestamp": 1788199500,
-      "close": 62.20500183105469
-    },
-    {
-      "timestamp": 1788199800,
-      "close": 62.2400016784668
-    },
-    {
-      "timestamp": 1788200100,
-      "close": 62.23500061035156
-    },
-    {
-      "timestamp": 1788200400,
-      "close": 62.22999954223633
-    },
-    {
-      "timestamp": 1788200700,
-      "close": 62.21500015258789
-    },
-    {
-      "timestamp": 1788201000,
-      "close": 62.21030044555664
-    },
-    {
-      "timestamp": 1788201300,
-      "close": 62.179901123046875
-    },
-    {
-      "timestamp": 1788201600,
-      "close": 62.1349983215332
-    },
-    {
-      "timestamp": 1788201900,
-      "close": 62.14500045776367
-    },
-    {
-      "timestamp": 1788202200,
-      "close": 62.12099838256836
-    },
-    {
-      "timestamp": 1788202500,
-      "close": 62.08000183105469
-    },
-    {
-      "timestamp": 1788202800,
-      "close": 62.07500076293945
-    },
-    {
-      "timestamp": 1788203100,
-      "close": 62.02000045776367
-    },
-    {
-      "timestamp": 1788203400,
-      "close": 62.03499984741211
-    },
-    {
-      "timestamp": 1788203700,
-      "close": 62.04499816894531
-    },
-    {
-      "timestamp": 1788204000,
-      "close": 62.08000183105469
-    },
-    {
-      "timestamp": 1788204300,
-      "close": 62.03499984741211
-    },
-    {
-      "timestamp": 1788204600,
-      "close": 61.95000076293945
-    },
-    {
-      "timestamp": 1788204900,
+      "timestamp": 1788269400,
       "close": 62
     },
     {
-      "timestamp": 1788205200,
-      "close": 62.005001068115234
+      "timestamp": 1788269700,
+      "close": 62.525001525878906
     },
     {
-      "timestamp": 1788205500,
-      "close": 61.994998931884766
+      "timestamp": 1788270000,
+      "close": 62.400001525878906
     },
     {
-      "timestamp": 1788205800,
-      "close": 61.974998474121094
+      "timestamp": 1788270300,
+      "close": 62.165000915527344
     },
     {
-      "timestamp": 1788206100,
-      "close": 61.939998626708984
+      "timestamp": 1788270600,
+      "close": 62.22999954223633
     },
     {
-      "timestamp": 1788206400,
-      "close": 61.939998626708984
+      "timestamp": 1788270900,
+      "close": 62.275001525878906
+    },
+    {
+      "timestamp": 1788271200,
+      "close": 62.19499969482422
+    },
+    {
+      "timestamp": 1788271500,
+      "close": 62.29499816894531
+    },
+    {
+      "timestamp": 1788271800,
+      "close": 62.56999969482422
+    },
+    {
+      "timestamp": 1788272100,
+      "close": 62.685001373291016
+    },
+    {
+      "timestamp": 1788272400,
+      "close": 62.73500061035156
+    },
+    {
+      "timestamp": 1788272700,
+      "close": 62.619998931884766
+    },
+    {
+      "timestamp": 1788273000,
+      "close": 62.720001220703125
+    },
+    {
+      "timestamp": 1788273300,
+      "close": 62.67499923706055
+    },
+    {
+      "timestamp": 1788273600,
+      "close": 62.40999984741211
+    },
+    {
+      "timestamp": 1788273900,
+      "close": 62.244998931884766
+    },
+    {
+      "timestamp": 1788274200,
+      "close": 62.21500015258789
+    },
+    {
+      "timestamp": 1788274388,
+      "close": 62.22999954223633
     }
   ],
   "news": {
-    "title": "Warren Buffett's Successor, Greg Abel, Started His Tenure With a Bang by Paring Down Bank of America and Making a Virtual Monopoly Berkshire's No. 3 Holding",
-    "publisher": "Motley Fool",
-    "publishedAt": "2026-09-01T09:26:00.000Z"
+    "title": "The Zacks Analyst Blog Highlights Microsoft, Intel, Bank of America, AMREP and United Bancorp",
+    "publisher": "Zacks",
+    "publishedAt": "2026-09-01T13:08:00.000Z"
   },
-  "generatedAt": "2026-09-01T10:05:50.136Z"
+  "generatedAt": "2026-09-01T14:53:12.866Z"
 }
