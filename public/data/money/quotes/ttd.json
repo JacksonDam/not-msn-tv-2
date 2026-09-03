@@ -5,12 +5,12 @@
     "displaySymbol": "$TTD"
   },
   "name": "THE TRADE DESK, INC.",
-  "price": 14.575,
+  "price": 15.139,
   "previousClose": 14.55,
-  "dayHigh": 15.05,
-  "dayLow": 14.57,
-  "change": 0.02499999999999858,
-  "changePercent": 0.17182130584191463,
+  "dayHigh": 15.165,
+  "dayLow": 14.375,
+  "change": 0.5889999999999986,
+  "changePercent": 4.04810996563573,
   "currency": "USD",
   "exchangeName": "NGM",
   "marketState": "",
@@ -69,17 +69,209 @@
     },
     {
       "timestamp": 1788446100,
-      "close": 14.579999923706055
+      "close": 14.475000381469727
     },
     {
-      "timestamp": 1788446162,
-      "close": 14.574999809265137
+      "timestamp": 1788446400,
+      "close": 14.499899864196777
+    },
+    {
+      "timestamp": 1788446700,
+      "close": 14.515000343322754
+    },
+    {
+      "timestamp": 1788447000,
+      "close": 14.425000190734863
+    },
+    {
+      "timestamp": 1788447300,
+      "close": 14.430000305175781
+    },
+    {
+      "timestamp": 1788447600,
+      "close": 14.460000038146973
+    },
+    {
+      "timestamp": 1788447900,
+      "close": 14.484999656677246
+    },
+    {
+      "timestamp": 1788448200,
+      "close": 14.515000343322754
+    },
+    {
+      "timestamp": 1788448500,
+      "close": 14.545000076293945
+    },
+    {
+      "timestamp": 1788448800,
+      "close": 14.619999885559082
+    },
+    {
+      "timestamp": 1788449100,
+      "close": 14.625
+    },
+    {
+      "timestamp": 1788449400,
+      "close": 14.677499771118164
+    },
+    {
+      "timestamp": 1788449700,
+      "close": 14.645000457763672
+    },
+    {
+      "timestamp": 1788450000,
+      "close": 14.630000114440918
+    },
+    {
+      "timestamp": 1788450300,
+      "close": 14.630000114440918
+    },
+    {
+      "timestamp": 1788450600,
+      "close": 14.6899995803833
+    },
+    {
+      "timestamp": 1788450900,
+      "close": 14.760000228881836
+    },
+    {
+      "timestamp": 1788451200,
+      "close": 14.675000190734863
+    },
+    {
+      "timestamp": 1788451500,
+      "close": 14.647899627685547
+    },
+    {
+      "timestamp": 1788451800,
+      "close": 14.609999656677246
+    },
+    {
+      "timestamp": 1788452100,
+      "close": 14.587599754333496
+    },
+    {
+      "timestamp": 1788452400,
+      "close": 14.625
+    },
+    {
+      "timestamp": 1788452700,
+      "close": 14.654999732971191
+    },
+    {
+      "timestamp": 1788453000,
+      "close": 14.654999732971191
+    },
+    {
+      "timestamp": 1788453300,
+      "close": 14.659899711608887
+    },
+    {
+      "timestamp": 1788453600,
+      "close": 14.645000457763672
+    },
+    {
+      "timestamp": 1788453900,
+      "close": 14.645000457763672
+    },
+    {
+      "timestamp": 1788454200,
+      "close": 14.649999618530273
+    },
+    {
+      "timestamp": 1788454500,
+      "close": 14.704999923706055
+    },
+    {
+      "timestamp": 1788454800,
+      "close": 14.694999694824219
+    },
+    {
+      "timestamp": 1788455100,
+      "close": 14.71500015258789
+    },
+    {
+      "timestamp": 1788455400,
+      "close": 14.744999885559082
+    },
+    {
+      "timestamp": 1788455700,
+      "close": 14.704999923706055
+    },
+    {
+      "timestamp": 1788456000,
+      "close": 14.864999771118164
+    },
+    {
+      "timestamp": 1788456300,
+      "close": 14.835000038146973
+    },
+    {
+      "timestamp": 1788456600,
+      "close": 14.904999732971191
+    },
+    {
+      "timestamp": 1788456900,
+      "close": 14.96500015258789
+    },
+    {
+      "timestamp": 1788457200,
+      "close": 15.013799667358398
+    },
+    {
+      "timestamp": 1788457500,
+      "close": 14.99899959564209
+    },
+    {
+      "timestamp": 1788457800,
+      "close": 15.069999694824219
+    },
+    {
+      "timestamp": 1788458100,
+      "close": 15.055000305175781
+    },
+    {
+      "timestamp": 1788458400,
+      "close": 15.045000076293945
+    },
+    {
+      "timestamp": 1788458700,
+      "close": 15.079999923706055
+    },
+    {
+      "timestamp": 1788459000,
+      "close": 15.114999771118164
+    },
+    {
+      "timestamp": 1788459300,
+      "close": 15.074999809265137
+    },
+    {
+      "timestamp": 1788459600,
+      "close": 15.059900283813477
+    },
+    {
+      "timestamp": 1788459900,
+      "close": 15.085000038146973
+    },
+    {
+      "timestamp": 1788460200,
+      "close": 15.104999542236328
+    },
+    {
+      "timestamp": 1788460500,
+      "close": 15.139900207519531
+    },
+    {
+      "timestamp": 1788460778,
+      "close": 15.138999938964844
     }
   ],
   "news": {
-    "title": "AppLovin’s Algorithmic Moat Is Vulnerable, Says Investor: Why $1.9B Quarterly Revenue Isn’t Enough to Justify a Buy",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-09-03T12:05:10.000Z"
+    "title": "Can The Trade Desk's JBPs Become Its Next Major Growth Engine?",
+    "publisher": "Zacks",
+    "publishedAt": "2026-09-03T15:10:00.000Z"
   },
-  "generatedAt": "2026-09-03T14:36:07.199Z"
+  "generatedAt": "2026-09-03T18:39:40.916Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$APP"
   },
   "name": "APPLOVIN CORPORATION",
-  "price": 321.7,
+  "price": 312.5,
   "previousClose": 319.05,
   "dayHigh": 331.81,
-  "dayLow": 321.7,
-  "change": 2.6499999999999773,
-  "changePercent": 0.830590816486437,
+  "dayLow": 309.408,
+  "change": -6.550000000000011,
+  "changePercent": -2.0529697539570635,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -65,17 +65,213 @@
     },
     {
       "timestamp": 1788445800,
-      "close": 322.6499938964844
+      "close": 321.70001220703125
     },
     {
-      "timestamp": 1788446096,
+      "timestamp": 1788446100,
+      "close": 319.4750061035156
+    },
+    {
+      "timestamp": 1788446400,
+      "close": 319.95001220703125
+    },
+    {
+      "timestamp": 1788446700,
+      "close": 319.8599853515625
+    },
+    {
+      "timestamp": 1788447000,
+      "close": 319.9800109863281
+    },
+    {
+      "timestamp": 1788447300,
+      "close": 320.0299987792969
+    },
+    {
+      "timestamp": 1788447600,
+      "close": 320.739990234375
+    },
+    {
+      "timestamp": 1788447900,
       "close": 321.70001220703125
+    },
+    {
+      "timestamp": 1788448200,
+      "close": 321.81500244140625
+    },
+    {
+      "timestamp": 1788448500,
+      "close": 323.06500244140625
+    },
+    {
+      "timestamp": 1788448800,
+      "close": 322.8299865722656
+    },
+    {
+      "timestamp": 1788449100,
+      "close": 323.8500061035156
+    },
+    {
+      "timestamp": 1788449400,
+      "close": 323.17999267578125
+    },
+    {
+      "timestamp": 1788449700,
+      "close": 322.7449951171875
+    },
+    {
+      "timestamp": 1788450000,
+      "close": 322.3599853515625
+    },
+    {
+      "timestamp": 1788450300,
+      "close": 322.0201110839844
+    },
+    {
+      "timestamp": 1788450600,
+      "close": 322.3999938964844
+    },
+    {
+      "timestamp": 1788450900,
+      "close": 323.5400085449219
+    },
+    {
+      "timestamp": 1788451200,
+      "close": 322.2799987792969
+    },
+    {
+      "timestamp": 1788451500,
+      "close": 321.45001220703125
+    },
+    {
+      "timestamp": 1788451800,
+      "close": 321.2250061035156
+    },
+    {
+      "timestamp": 1788452100,
+      "close": 320.0150146484375
+    },
+    {
+      "timestamp": 1788452400,
+      "close": 319.6099853515625
+    },
+    {
+      "timestamp": 1788452700,
+      "close": 319.79998779296875
+    },
+    {
+      "timestamp": 1788453000,
+      "close": 318.7449951171875
+    },
+    {
+      "timestamp": 1788453300,
+      "close": 318.2049865722656
+    },
+    {
+      "timestamp": 1788453600,
+      "close": 315.260009765625
+    },
+    {
+      "timestamp": 1788453900,
+      "close": 314.2349853515625
+    },
+    {
+      "timestamp": 1788454200,
+      "close": 313.4100036621094
+    },
+    {
+      "timestamp": 1788454500,
+      "close": 313.2099914550781
+    },
+    {
+      "timestamp": 1788454800,
+      "close": 314.1499938964844
+    },
+    {
+      "timestamp": 1788455100,
+      "close": 313
+    },
+    {
+      "timestamp": 1788455400,
+      "close": 313.3999938964844
+    },
+    {
+      "timestamp": 1788455700,
+      "close": 312.3500061035156
+    },
+    {
+      "timestamp": 1788456000,
+      "close": 313.44000244140625
+    },
+    {
+      "timestamp": 1788456300,
+      "close": 311.760009765625
+    },
+    {
+      "timestamp": 1788456600,
+      "close": 312.57000732421875
+    },
+    {
+      "timestamp": 1788456900,
+      "close": 312.3900146484375
+    },
+    {
+      "timestamp": 1788457200,
+      "close": 312.06500244140625
+    },
+    {
+      "timestamp": 1788457500,
+      "close": 310.8399963378906
+    },
+    {
+      "timestamp": 1788457800,
+      "close": 311.2950134277344
+    },
+    {
+      "timestamp": 1788458100,
+      "close": 311.7049865722656
+    },
+    {
+      "timestamp": 1788458400,
+      "close": 312.5400085449219
+    },
+    {
+      "timestamp": 1788458700,
+      "close": 314.1400146484375
+    },
+    {
+      "timestamp": 1788459000,
+      "close": 313.2300109863281
+    },
+    {
+      "timestamp": 1788459300,
+      "close": 312.8500061035156
+    },
+    {
+      "timestamp": 1788459600,
+      "close": 312.75
+    },
+    {
+      "timestamp": 1788459900,
+      "close": 312.3297119140625
+    },
+    {
+      "timestamp": 1788460200,
+      "close": 312.42999267578125
+    },
+    {
+      "timestamp": 1788460500,
+      "close": 312.69000244140625
+    },
+    {
+      "timestamp": 1788460695,
+      "close": 312.5000915527344
     }
   ],
   "news": {
-    "title": "AppLovin’s Algorithmic Moat Is Vulnerable, Says Investor: Why $1.9B Quarterly Revenue Isn’t Enough to Justify a Buy",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-09-03T12:05:10.000Z"
+    "title": "Can AppLovin's 53% Revenue Surge Keep Its Growth Streak Alive?",
+    "publisher": "Zacks",
+    "publishedAt": "2026-09-03T17:25:00.000Z"
   },
-  "generatedAt": "2026-09-03T14:34:57.895Z"
+  "generatedAt": "2026-09-03T18:38:22.114Z"
 }
