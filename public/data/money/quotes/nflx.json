@@ -5,12 +5,12 @@
     "displaySymbol": "$NFLX"
   },
   "name": "NETFLIX, INC.",
-  "price": 79.145,
+  "price": 78.25,
   "previousClose": 82.67,
   "dayHigh": 82.69,
-  "dayLow": 78.842,
-  "change": -3.5250000000000057,
-  "changePercent": -4.263940970122179,
+  "dayLow": 78.23,
+  "change": -4.420000000000002,
+  "changePercent": -5.346558606507804,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -253,11 +253,83 @@
     },
     {
       "timestamp": 1788546300,
+      "close": 79.00499725341797
+    },
+    {
+      "timestamp": 1788546600,
+      "close": 79.08000183105469
+    },
+    {
+      "timestamp": 1788546900,
+      "close": 78.97000122070312
+    },
+    {
+      "timestamp": 1788547200,
+      "close": 79.04000091552734
+    },
+    {
+      "timestamp": 1788547500,
+      "close": 78.97000122070312
+    },
+    {
+      "timestamp": 1788547800,
+      "close": 79.05500030517578
+    },
+    {
+      "timestamp": 1788548100,
       "close": 79.13500213623047
     },
     {
-      "timestamp": 1788546399,
+      "timestamp": 1788548400,
       "close": 79.1449966430664
+    },
+    {
+      "timestamp": 1788548700,
+      "close": 79.04010009765625
+    },
+    {
+      "timestamp": 1788549000,
+      "close": 79.00499725341797
+    },
+    {
+      "timestamp": 1788549300,
+      "close": 79.04499816894531
+    },
+    {
+      "timestamp": 1788549600,
+      "close": 78.92500305175781
+    },
+    {
+      "timestamp": 1788549900,
+      "close": 78.68499755859375
+    },
+    {
+      "timestamp": 1788550200,
+      "close": 78.65499877929688
+    },
+    {
+      "timestamp": 1788550500,
+      "close": 78.52999877929688
+    },
+    {
+      "timestamp": 1788550800,
+      "close": 78.56900024414062
+    },
+    {
+      "timestamp": 1788551100,
+      "close": 78.44000244140625
+    },
+    {
+      "timestamp": 1788551400,
+      "close": 78.3949966430664
+    },
+    {
+      "timestamp": 1788551700,
+      "close": 78.23999786376953
+    },
+    {
+      "timestamp": 1788552000,
+      "close": 78.25
     }
   ],
   "news": {
@@ -265,5 +337,5 @@
     "publisher": "Motley Fool",
     "publishedAt": "2026-09-04T17:40:02.000Z"
   },
-  "generatedAt": "2026-09-04T18:26:41.636Z"
+  "generatedAt": "2026-09-04T21:29:26.576Z"
 }

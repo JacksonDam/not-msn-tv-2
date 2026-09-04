@@ -5,12 +5,12 @@
     "displaySymbol": "$TAP"
   },
   "name": "MOLSON COORS BEVERAGE COMPANY",
-  "price": 40.52,
+  "price": 40.5,
   "previousClose": 40.57,
   "dayHigh": 41.04,
   "dayLow": 40.33,
-  "change": -0.04999999999999716,
-  "changePercent": -0.12324377618929544,
+  "change": -0.07000000000000028,
+  "changePercent": -0.1725412866650241,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -253,11 +253,83 @@
     },
     {
       "timestamp": 1788546300,
+      "close": 40.51499938964844
+    },
+    {
+      "timestamp": 1788546600,
+      "close": 40.529998779296875
+    },
+    {
+      "timestamp": 1788546900,
+      "close": 40.540000915527344
+    },
+    {
+      "timestamp": 1788547200,
+      "close": 40.560001373291016
+    },
+    {
+      "timestamp": 1788547500,
+      "close": 40.58000183105469
+    },
+    {
+      "timestamp": 1788547800,
+      "close": 40.564998626708984
+    },
+    {
+      "timestamp": 1788548100,
+      "close": 40.559898376464844
+    },
+    {
+      "timestamp": 1788548400,
+      "close": 40.542301177978516
+    },
+    {
+      "timestamp": 1788548700,
       "close": 40.5099983215332
     },
     {
-      "timestamp": 1788546394,
-      "close": 40.52000045776367
+      "timestamp": 1788549000,
+      "close": 40.55500030517578
+    },
+    {
+      "timestamp": 1788549300,
+      "close": 40.58000183105469
+    },
+    {
+      "timestamp": 1788549600,
+      "close": 40.625
+    },
+    {
+      "timestamp": 1788549900,
+      "close": 40.595001220703125
+    },
+    {
+      "timestamp": 1788550200,
+      "close": 40.60499954223633
+    },
+    {
+      "timestamp": 1788550500,
+      "close": 40.625
+    },
+    {
+      "timestamp": 1788550800,
+      "close": 40.67499923706055
+    },
+    {
+      "timestamp": 1788551100,
+      "close": 40.67499923706055
+    },
+    {
+      "timestamp": 1788551400,
+      "close": 40.56999969482422
+    },
+    {
+      "timestamp": 1788551700,
+      "close": 40.505001068115234
+    },
+    {
+      "timestamp": 1788552000,
+      "close": 40.5
     }
   ],
   "news": {
@@ -265,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-09-02T15:16:08.000Z"
   },
-  "generatedAt": "2026-09-04T18:26:56.485Z"
+  "generatedAt": "2026-09-04T21:29:41.864Z"
 }
