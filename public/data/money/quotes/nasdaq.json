@@ -5,12 +5,12 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 26559.486,
+  "price": 26474.154,
   "previousClose": 26584.06,
   "dayHigh": 26628.584,
-  "dayLow": 26542.06,
-  "change": -24.574000000000524,
-  "changePercent": -0.09243885245519504,
+  "dayLow": 26444.842,
+  "change": -109.90600000000268,
+  "changePercent": -0.41342819719787977,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
@@ -57,17 +57,209 @@
     },
     {
       "timestamp": 1788531600,
-      "close": 26558.173828125
+      "close": 26551.931640625
     },
     {
-      "timestamp": 1788531729,
-      "close": 26559.486328125
+      "timestamp": 1788531900,
+      "close": 26556.212890625
+    },
+    {
+      "timestamp": 1788532200,
+      "close": 26522.564453125
+    },
+    {
+      "timestamp": 1788532500,
+      "close": 26543
+    },
+    {
+      "timestamp": 1788532800,
+      "close": 26507.41796875
+    },
+    {
+      "timestamp": 1788533100,
+      "close": 26492.435546875
+    },
+    {
+      "timestamp": 1788533400,
+      "close": 26476.595703125
+    },
+    {
+      "timestamp": 1788533700,
+      "close": 26470.04296875
+    },
+    {
+      "timestamp": 1788534000,
+      "close": 26468.03515625
+    },
+    {
+      "timestamp": 1788534300,
+      "close": 26475.55078125
+    },
+    {
+      "timestamp": 1788534600,
+      "close": 26486.80078125
+    },
+    {
+      "timestamp": 1788534900,
+      "close": 26461.03125
+    },
+    {
+      "timestamp": 1788535200,
+      "close": 26466.140625
+    },
+    {
+      "timestamp": 1788535500,
+      "close": 26470.298828125
+    },
+    {
+      "timestamp": 1788535800,
+      "close": 26455.669921875
+    },
+    {
+      "timestamp": 1788536100,
+      "close": 26468.669921875
+    },
+    {
+      "timestamp": 1788536400,
+      "close": 26484.208984375
+    },
+    {
+      "timestamp": 1788536700,
+      "close": 26467.396484375
+    },
+    {
+      "timestamp": 1788537000,
+      "close": 26473.7578125
+    },
+    {
+      "timestamp": 1788537300,
+      "close": 26478.759765625
+    },
+    {
+      "timestamp": 1788537600,
+      "close": 26475.576171875
+    },
+    {
+      "timestamp": 1788537900,
+      "close": 26489.82421875
+    },
+    {
+      "timestamp": 1788538200,
+      "close": 26500.392578125
+    },
+    {
+      "timestamp": 1788538500,
+      "close": 26497.015625
+    },
+    {
+      "timestamp": 1788538800,
+      "close": 26504.125
+    },
+    {
+      "timestamp": 1788539100,
+      "close": 26500.763671875
+    },
+    {
+      "timestamp": 1788539400,
+      "close": 26514.25390625
+    },
+    {
+      "timestamp": 1788539700,
+      "close": 26511.35546875
+    },
+    {
+      "timestamp": 1788540000,
+      "close": 26513.80859375
+    },
+    {
+      "timestamp": 1788540300,
+      "close": 26529.9921875
+    },
+    {
+      "timestamp": 1788540600,
+      "close": 26526.978515625
+    },
+    {
+      "timestamp": 1788540900,
+      "close": 26518.474609375
+    },
+    {
+      "timestamp": 1788541200,
+      "close": 26503.189453125
+    },
+    {
+      "timestamp": 1788541500,
+      "close": 26494.58203125
+    },
+    {
+      "timestamp": 1788541800,
+      "close": 26493.56640625
+    },
+    {
+      "timestamp": 1788542100,
+      "close": 26489.1640625
+    },
+    {
+      "timestamp": 1788542400,
+      "close": 26481.771484375
+    },
+    {
+      "timestamp": 1788542700,
+      "close": 26477.900390625
+    },
+    {
+      "timestamp": 1788543000,
+      "close": 26459.37890625
+    },
+    {
+      "timestamp": 1788543300,
+      "close": 26464.83984375
+    },
+    {
+      "timestamp": 1788543600,
+      "close": 26451.35546875
+    },
+    {
+      "timestamp": 1788543900,
+      "close": 26456.298828125
+    },
+    {
+      "timestamp": 1788544200,
+      "close": 26453.17578125
+    },
+    {
+      "timestamp": 1788544500,
+      "close": 26459.30078125
+    },
+    {
+      "timestamp": 1788544800,
+      "close": 26448.984375
+    },
+    {
+      "timestamp": 1788545100,
+      "close": 26459.439453125
+    },
+    {
+      "timestamp": 1788545400,
+      "close": 26460.40234375
+    },
+    {
+      "timestamp": 1788545700,
+      "close": 26471.189453125
+    },
+    {
+      "timestamp": 1788546000,
+      "close": 26473.71484375
+    },
+    {
+      "timestamp": 1788546348,
+      "close": 26474.154296875
     }
   ],
   "news": {
-    "title": "Dow falls after August jobs report triples forecasts, boosts rate-hike bets",
-    "publisher": "Quartz",
-    "publishedAt": "2026-09-04T13:47:25.000Z"
+    "title": "Update: Equities Fall Intraday as Jobs Report Lifts Rate Hike Bets",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-09-04T17:40:19.000Z"
   },
-  "generatedAt": "2026-09-04T14:22:16.651Z"
+  "generatedAt": "2026-09-04T18:25:48.533Z"
 }
