@@ -5,12 +5,12 @@
     "displaySymbol": "$MA"
   },
   "name": "MASTERCARD INCORPORATED",
-  "price": 571,
+  "price": 569.01,
   "previousClose": 579.21,
   "dayHigh": 575.67,
-  "dayLow": 569.51,
-  "change": -8.210000000000036,
-  "changePercent": -1.4174479031784735,
+  "dayLow": 567.01,
+  "change": -10.200000000000045,
+  "changePercent": -1.7610193194178354,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -65,17 +65,213 @@
     },
     {
       "timestamp": 1788877800,
-      "close": 570.7899780273438
+      "close": 570.989990234375
     },
     {
-      "timestamp": 1788877951,
-      "close": 571
+      "timestamp": 1788878100,
+      "close": 570.5175170898438
+    },
+    {
+      "timestamp": 1788878400,
+      "close": 570.3499755859375
+    },
+    {
+      "timestamp": 1788878700,
+      "close": 570.2899780273438
+    },
+    {
+      "timestamp": 1788879000,
+      "close": 570.0999755859375
+    },
+    {
+      "timestamp": 1788879300,
+      "close": 569.8400268554688
+    },
+    {
+      "timestamp": 1788879600,
+      "close": 569.9099731445312
+    },
+    {
+      "timestamp": 1788879900,
+      "close": 570.469970703125
+    },
+    {
+      "timestamp": 1788880200,
+      "close": 570.0245971679688
+    },
+    {
+      "timestamp": 1788880500,
+      "close": 569.614990234375
+    },
+    {
+      "timestamp": 1788880800,
+      "close": 569.1799926757812
+    },
+    {
+      "timestamp": 1788881100,
+      "close": 568.6300048828125
+    },
+    {
+      "timestamp": 1788881400,
+      "close": 568.260009765625
+    },
+    {
+      "timestamp": 1788881700,
+      "close": 567.9000244140625
+    },
+    {
+      "timestamp": 1788882000,
+      "close": 568.0700073242188
+    },
+    {
+      "timestamp": 1788882300,
+      "close": 567.5651245117188
+    },
+    {
+      "timestamp": 1788882600,
+      "close": 567.8125
+    },
+    {
+      "timestamp": 1788882900,
+      "close": 567.6699829101562
+    },
+    {
+      "timestamp": 1788883200,
+      "close": 567.5900268554688
+    },
+    {
+      "timestamp": 1788883500,
+      "close": 568.3599853515625
+    },
+    {
+      "timestamp": 1788883800,
+      "close": 568.8699951171875
+    },
+    {
+      "timestamp": 1788884100,
+      "close": 568.5250244140625
+    },
+    {
+      "timestamp": 1788884400,
+      "close": 568.510009765625
+    },
+    {
+      "timestamp": 1788884700,
+      "close": 569.094970703125
+    },
+    {
+      "timestamp": 1788885000,
+      "close": 569.3200073242188
+    },
+    {
+      "timestamp": 1788885300,
+      "close": 568.655029296875
+    },
+    {
+      "timestamp": 1788885600,
+      "close": 568.719970703125
+    },
+    {
+      "timestamp": 1788885900,
+      "close": 568.889892578125
+    },
+    {
+      "timestamp": 1788886200,
+      "close": 568.5800170898438
+    },
+    {
+      "timestamp": 1788886500,
+      "close": 568.719970703125
+    },
+    {
+      "timestamp": 1788886800,
+      "close": 568.6300048828125
+    },
+    {
+      "timestamp": 1788887100,
+      "close": 568.3499755859375
+    },
+    {
+      "timestamp": 1788887400,
+      "close": 568.0900268554688
+    },
+    {
+      "timestamp": 1788887700,
+      "close": 568.10498046875
+    },
+    {
+      "timestamp": 1788888000,
+      "close": 567.5900268554688
+    },
+    {
+      "timestamp": 1788888300,
+      "close": 567.5250244140625
+    },
+    {
+      "timestamp": 1788888600,
+      "close": 567.8250122070312
+    },
+    {
+      "timestamp": 1788888900,
+      "close": 568.260009765625
+    },
+    {
+      "timestamp": 1788889200,
+      "close": 568.2050170898438
+    },
+    {
+      "timestamp": 1788889500,
+      "close": 568.5125122070312
+    },
+    {
+      "timestamp": 1788889800,
+      "close": 568.6099853515625
+    },
+    {
+      "timestamp": 1788890100,
+      "close": 568.8098754882812
+    },
+    {
+      "timestamp": 1788890400,
+      "close": 568.5900268554688
+    },
+    {
+      "timestamp": 1788890700,
+      "close": 568.5650024414062
+    },
+    {
+      "timestamp": 1788891000,
+      "close": 568.7899780273438
+    },
+    {
+      "timestamp": 1788891300,
+      "close": 569.3099975585938
+    },
+    {
+      "timestamp": 1788891600,
+      "close": 569.5999145507812
+    },
+    {
+      "timestamp": 1788891900,
+      "close": 569.302490234375
+    },
+    {
+      "timestamp": 1788892200,
+      "close": 569
+    },
+    {
+      "timestamp": 1788892500,
+      "close": 569.0700073242188
+    },
+    {
+      "timestamp": 1788892844,
+      "close": 569.010009765625
     }
   ],
   "news": {
-    "title": "Exclusive: Italy proposes no fees for digital euro payments under €10",
-    "publisher": "Euronews",
-    "publishedAt": "2026-09-08T11:55:17.000Z"
+    "title": "Visa Grows Stablecoin Card Network",
+    "publisher": "CryptoProwl",
+    "publishedAt": "2026-09-08T14:24:00.000Z"
   },
-  "generatedAt": "2026-09-08T14:32:34.255Z"
+  "generatedAt": "2026-09-08T18:40:53.104Z"
 }
