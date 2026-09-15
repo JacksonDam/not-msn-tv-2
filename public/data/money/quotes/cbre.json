@@ -5,29 +5,253 @@
     "displaySymbol": "$CBRE"
   },
   "name": "CBRE GROUP, INC.",
-  "price": 138.64,
-  "previousClose": 140.89,
+  "price": 140.42,
+  "previousClose": 140.9,
   "dayHigh": 140.89,
-  "dayLow": 138.64,
-  "change": -2.25,
-  "changePercent": -1.5969905600113565,
+  "dayLow": 138.53,
+  "change": -0.4800000000000182,
+  "changePercent": -0.34066713981548485,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 139.0500030517578
+      "close": 138.9499969482422
     },
     {
-      "timestamp": 1789479149,
-      "close": 138.63999938964844
+      "timestamp": 1789479300,
+      "close": 139.67999267578125
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 139.5050048828125
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 139.39500427246094
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 139.66000366210938
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 139.58999633789062
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 139.29490661621094
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 139.2100067138672
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 139.1649932861328
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 139.30999755859375
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 139.1199951171875
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 139.13999938964844
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 138.88999938964844
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 138.75
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 139.17999267578125
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 138.8800048828125
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 139.18499755859375
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 139.33999633789062
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 139.85499572753906
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 139.8300018310547
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 139.66000366210938
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 139.4199981689453
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 139.27000427246094
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 139.3699951171875
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 139.35499572753906
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 139.30999755859375
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 139.3800048828125
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 139.5399932861328
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 139.2899932861328
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 139.5500030517578
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 139.64500427246094
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 139.19000244140625
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 139.38999938964844
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 139.7449951171875
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 139.9199981689453
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 140.02000427246094
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 140.0399932861328
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 140.05999755859375
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 139.88499450683594
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 139.97000122070312
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 140.02999877929688
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 140.07000732421875
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 139.9250030517578
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 140.05999755859375
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 140.1300048828125
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 139.97999572753906
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 139.92999267578125
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 139.97500610351562
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 140.10499572753906
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 140.17999267578125
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 140.1199951171875
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 140.05999755859375
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 140.29989624023438
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 140.31500244140625
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 140.47999572753906
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 140.47999572753906
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 140.4199981689453
+    },
+    {
+      "timestamp": 1789495952,
+      "close": 140.4199981689453
     }
   ],
   "news": {
-    "title": "Market Chatter: Moody's London Head Office Building Up for Sale at $444.6 Million",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-09-15T09:29:09.000Z"
+    "title": "Dalfen Industrial Expands Florida Footprint with Acquisition of Miami Industrial Property",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-09-15T16:16:00.000Z"
   },
-  "generatedAt": "2026-09-15T13:32:57.620Z"
+  "generatedAt": "2026-09-15T18:12:50.033Z"
 }

@@ -5,29 +5,253 @@
     "displaySymbol": "$CPRT"
   },
   "name": "COPART, INC.",
-  "price": 31.527,
+  "price": 31.41,
   "previousClose": 31.73,
-  "dayHigh": 31.72,
-  "dayLow": 31.35,
-  "change": -0.2029999999999994,
-  "changePercent": -0.6397730854081293,
+  "dayHigh": 31.83,
+  "dayLow": 31.21,
+  "change": -0.3200000000000003,
+  "changePercent": -1.0085092971950844,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
+      "close": 31.270000457763672
+    },
+    {
+      "timestamp": 1789479300,
+      "close": 31.549999237060547
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 31.65999984741211
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 31.670000076293945
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 31.790000915527344
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 31.760000228881836
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 31.565000534057617
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 31.635000228881836
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 31.493900299072266
+    },
+    {
+      "timestamp": 1789481700,
       "close": 31.479999542236328
     },
     {
-      "timestamp": 1789479183,
-      "close": 31.52720069885254
+      "timestamp": 1789482000,
+      "close": 31.36549949645996
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 31.31999969482422
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 31.415000915527344
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 31.55500030517578
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 31.674999237060547
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 31.68000030517578
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 31.625
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 31.71500015258789
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 31.709999084472656
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 31.684999465942383
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 31.717300415039062
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 31.59000015258789
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 31.649999618530273
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 31.690000534057617
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 31.610000610351562
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 31.649999618530273
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 31.745500564575195
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 31.774999618530273
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 31.780000686645508
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 31.780000686645508
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 31.674999237060547
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 31.635000228881836
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 31.610000610351562
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 31.584999084472656
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 31.559999465942383
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 31.587099075317383
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 31.540000915527344
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 31.50819969177246
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 31.479999542236328
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 31.475000381469727
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 31.43000030517578
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 31.43000030517578
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 31.399999618530273
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 31.405000686645508
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 31.389999389648438
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 31.389999389648438
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 31.329999923706055
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 31.385000228881836
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 31.450000762939453
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 31.43000030517578
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 31.475000381469727
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 31.459999084472656
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 31.424999237060547
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 31.420000076293945
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 31.390100479125977
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 31.385000228881836
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 31.375
+    },
+    {
+      "timestamp": 1789495975,
+      "close": 31.40999984741211
     }
   ],
   "news": {
-    "title": "NWPG's NFI Empire Advances Project Reborn-001 Toward Auction Benefiting The Brett Boyer Foundation",
-    "publisher": "ACCESS Newswire",
-    "publishedAt": "2026-09-15T13:30:00.000Z"
+    "title": "Why Alluvium Bought Copart (CPRT) Despite the Long-Term Autonomous Driving Risk",
+    "publisher": "Insider Monkey",
+    "publishedAt": "2026-09-15T16:26:42.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:04.699Z"
+  "generatedAt": "2026-09-15T18:12:58.419Z"
 }

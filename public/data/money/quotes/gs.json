@@ -5,29 +5,253 @@
     "displaySymbol": "$GS"
   },
   "name": "THE GOLDMAN SACHS GROUP, INC.",
-  "price": 983.87,
-  "previousClose": 988.24,
+  "price": 964.8,
+  "previousClose": 988.45,
   "dayHigh": 988,
-  "dayLow": 978.75,
-  "change": -4.3700000000000045,
-  "changePercent": -0.44220027523678507,
+  "dayLow": 954.49,
+  "change": -23.65000000000009,
+  "changePercent": -2.3926349334817227,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 983.5349731445312
+      "close": 978.72998046875
     },
     {
-      "timestamp": 1789479204,
-      "close": 983.8699951171875
+      "timestamp": 1789479300,
+      "close": 973.8800048828125
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 974.010009765625
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 972.8699951171875
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 974.3699951171875
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 975.1599731445312
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 972.2000122070312
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 972.2150268554688
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 970.7100219726562
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 966.625
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 963.39501953125
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 963.1500244140625
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 962.6875
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 960.760009765625
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 963.3250122070312
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 961.6099853515625
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 963.4249877929688
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 961.6351928710938
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 962.4199829101562
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 960.6799926757812
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 956.1400146484375
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 959.0399780273438
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 963.5900268554688
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 961.6500244140625
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 960.510009765625
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 960.7100219726562
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 957.7999877929688
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 958.2000122070312
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 956.6400146484375
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 955.7100219726562
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 957.02001953125
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 956.080078125
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 955.969970703125
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 957.739990234375
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 958.5499877929688
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 959.6799926757812
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 961.1900024414062
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 960.625
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 960.9299926757812
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 961.875
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 962.219970703125
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 961.125
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 960.8800048828125
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 959.5
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 959.2100219726562
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 959.7249755859375
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 959.5750122070312
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 959
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 959.1599731445312
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 960.7449951171875
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 960.5401000976562
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 959.75
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 960.530029296875
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 959.8699951171875
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 960.2501220703125
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 962.9000244140625
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 964.6950073242188
+    },
+    {
+      "timestamp": 1789495981,
+      "close": 964.7999877929688
     }
   ],
   "news": {
-    "title": "Market Chatter: Goldman Sachs's Alternatives Unit Raises $11.7 Billion",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-09-15T12:07:27.000Z"
+    "title": "Stock Market Today: Dow Dives, This Loan Play Craters; Bitcoin Falls Ahead Of Clarity Act Vote (Live Coverage)",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-09-15T18:04:56.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:25.420Z"
+  "generatedAt": "2026-09-15T18:13:25.018Z"
 }

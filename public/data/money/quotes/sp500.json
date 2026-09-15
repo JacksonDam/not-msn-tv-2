@@ -5,29 +5,253 @@
     "displaySymbol": "$S&P"
   },
   "name": "S&P 500",
-  "price": 7604.62,
+  "price": 7589.27,
   "previousClose": 7619.98,
   "dayHigh": 7617.26,
-  "dayLow": 7603.91,
-  "change": -15.359999999999673,
-  "changePercent": -0.20157533221871546,
+  "dayLow": 7572.69,
+  "change": -30.709999999999127,
+  "changePercent": -0.40301943049718153,
   "currency": "USD",
   "exchangeName": "SNP",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 7604.33984375
+      "close": 7601.41015625
     },
     {
-      "timestamp": 1789479155,
-      "close": 7604.6201171875
+      "timestamp": 1789479300,
+      "close": 7610.81982421875
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 7612.02001953125
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 7605.830078125
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 7608.06982421875
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 7607.56982421875
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 7601.10009765625
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 7596.66015625
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 7591.16015625
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 7592.93994140625
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 7587.4501953125
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 7586.3701171875
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 7583.89990234375
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 7582.5
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 7582.7099609375
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 7580.68994140625
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 7576.56982421875
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 7575.580078125
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 7582.56005859375
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 7579.8701171875
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 7581.33984375
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 7583.93994140625
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 7585.97998046875
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 7585.25
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 7584.2001953125
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 7584.3798828125
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 7586.68017578125
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 7581.169921875
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 7582.9501953125
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 7582.58984375
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 7584.4599609375
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 7578.509765625
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 7578.81982421875
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 7581.7001953125
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 7587.8701171875
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 7587.06982421875
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 7588.08984375
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 7586.669921875
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 7587.06005859375
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 7585.5498046875
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 7590.830078125
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 7588.43017578125
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 7583.85009765625
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 7583.60009765625
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 7582.490234375
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 7581
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 7578.18994140625
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 7579.66015625
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 7582.169921875
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 7582.490234375
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 7582.64013671875
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 7581.16015625
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 7583.85986328125
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 7584.10986328125
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 7586.2900390625
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 7588.1201171875
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 7589.009765625
+    },
+    {
+      "timestamp": 1789495950,
+      "close": 7589.27001953125
     }
   ],
   "news": {
-    "title": "Stock Market News for Sep 15, 2026",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-15T13:14:00.000Z"
+    "title": "Stock Market Today: Dow Dives, This Loan Play Craters; Bitcoin Falls Ahead Of Clarity Act Vote (Live Coverage)",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-09-15T18:04:56.000Z"
   },
-  "generatedAt": "2026-09-15T13:32:36.801Z"
+  "generatedAt": "2026-09-15T18:12:31.346Z"
 }

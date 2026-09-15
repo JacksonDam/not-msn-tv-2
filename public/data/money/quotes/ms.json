@@ -5,29 +5,253 @@
     "displaySymbol": "$MS"
   },
   "name": "MORGAN STANLEY",
-  "price": 206.019,
-  "previousClose": 206.6,
+  "price": 203.15,
+  "previousClose": 206.58,
   "dayHigh": 207.139,
-  "dayLow": 204.51,
-  "change": -0.5809999999999889,
-  "changePercent": -0.28121974830589974,
+  "dayLow": 200.4,
+  "change": -3.430000000000007,
+  "changePercent": -1.6603737051021428,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 206.66000366210938
+      "close": 205.47500610351562
     },
     {
-      "timestamp": 1789479219,
-      "close": 206.01939392089844
+      "timestamp": 1789479300,
+      "close": 203.63999938964844
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 204.25999450683594
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 204.75999450683594
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 204.6074981689453
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 204.60000610351562
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 204.1649932861328
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 204.36000061035156
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 204.02000427246094
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 202.82000732421875
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 202.5800018310547
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 202.52499389648438
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 202.5399932861328
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 201.96209716796875
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 202.40499877929688
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 202.02000427246094
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 202.2700958251953
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 202.1199951171875
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 202.17999267578125
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 201.60000610351562
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 200.88499450683594
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 201.92999267578125
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 203.0500030517578
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 202.27000427246094
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 201.57000732421875
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 201.38999938964844
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 201
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 201.16000366210938
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 200.9199981689453
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 200.52000427246094
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 201.1300048828125
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 200.72500610351562
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 200.9199981689453
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 201.58999633789062
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 201.8699951171875
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 202.38499450683594
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 202.7050018310547
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 202.7449951171875
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 202.52999877929688
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 202.42999267578125
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 202.6199951171875
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 202.25
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 202.2100067138672
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 202.02999877929688
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 202.1999969482422
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 202.22999572753906
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 202.27999877929688
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 202.26019287109375
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 202.44000244140625
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 202.74000549316406
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 202.6699981689453
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 202.3925018310547
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 202.60000610351562
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 202.52000427246094
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 202.57000732421875
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 202.92050170898438
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 203.24000549316406
+    },
+    {
+      "timestamp": 1789496014,
+      "close": 203.14999389648438
     }
   ],
   "news": {
-    "title": "Morgan Stanley Partners to Lead Institutional Capital Conversation at NEXTPredict NYC",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-09-15T13:01:00.000Z"
+    "title": "TD Synnex Earnings Seen Reigniting Momentum as Hyve Growth Accelerates, Morgan Stanley Says",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-09-15T15:08:15.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:45.557Z"
+  "generatedAt": "2026-09-15T18:13:48.673Z"
 }

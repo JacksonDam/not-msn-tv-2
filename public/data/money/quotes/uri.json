@@ -5,29 +5,245 @@
     "displaySymbol": "$URI"
   },
   "name": "UNITED RENTALS, INC.",
-  "price": 994.005,
-  "previousClose": 993.795,
+  "price": 988.51,
+  "previousClose": 993.8,
   "dayHigh": 995.655,
-  "dayLow": 994.005,
-  "change": 0.21000000000003638,
-  "changePercent": 0.021131118590859924,
+  "dayLow": 981.345,
+  "change": -5.289999999999964,
+  "changePercent": -0.5323002616220531,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 995.655029296875
+      "close": 993.7999877929688
     },
     {
-      "timestamp": 1789479157,
-      "close": 994.0050048828125
+      "timestamp": 1789479300,
+      "close": 989.0449829101562
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 993.0599975585938
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 989.94482421875
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 989.3599853515625
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 987.5800170898438
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 985.0499877929688
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 987.2849731445312
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 985.4249877929688
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 988.1400146484375
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 985.1900024414062
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 987.039794921875
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 985.72998046875
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 986.0250244140625
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 986.6950073242188
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 984.7150268554688
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 984.6400146484375
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 984.1599731445312
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 983.530029296875
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 983.5399780273438
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 983.1599731445312
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 984.02001953125
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 985.1300048828125
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 985.8200073242188
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 984.0800170898438
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 983.8599853515625
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 983.3200073242188
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 982.6849975585938
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 981.9500122070312
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 982.328125
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 982.7449951171875
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 981.375
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 981.344970703125
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 981.5750122070312
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 983.5800170898438
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 985.3699951171875
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 986.1599731445312
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 985.5
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 986.72998046875
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 986.9600219726562
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 988.0700073242188
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 988.669921875
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 984.60498046875
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 985
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 984.52001953125
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 984.5499877929688
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 985.3900146484375
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 983.8800048828125
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 984.47998046875
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 983.02001953125
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 983.89501953125
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 984.3099975585938
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 985.4299926757812
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 987.8900146484375
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 989.1900024414062
+    },
+    {
+      "timestamp": 1789495787,
+      "close": 988.510009765625
     }
   ],
   "news": {
-    "title": "United Rentals Shares Fall After JPMorgan Downgrade",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-09-10T18:55:41.000Z"
+    "title": "2 Reasons to Watch URI and 1 to Stay Cautious",
+    "publisher": "StockStory",
+    "publishedAt": "2026-09-15T17:19:31.000Z"
   },
-  "generatedAt": "2026-09-15T13:34:13.393Z"
+  "generatedAt": "2026-09-15T18:14:24.192Z"
 }

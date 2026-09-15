@@ -5,29 +5,253 @@
     "displaySymbol": "$PSX"
   },
   "name": "PHILLIPS 66",
-  "price": 258.85,
-  "previousClose": 257.03,
-  "dayHigh": 260.9,
+  "price": 265.62,
+  "previousClose": 257.06,
+  "dayHigh": 266.699,
   "dayLow": 257.97,
-  "change": 1.82000000000005,
-  "changePercent": 0.7080885499747306,
+  "change": 8.560000000000002,
+  "changePercent": 3.329961876604685,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 259.7550048828125
+      "close": 260.3699951171875
     },
     {
-      "timestamp": 1789479228,
-      "close": 258.8500061035156
+      "timestamp": 1789479300,
+      "close": 262.6199951171875
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 261.8900146484375
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 262.3699951171875
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 261.760009765625
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 262.0899963378906
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 261.4849853515625
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 261.635009765625
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 261.7799987792969
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 262.0696105957031
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 262.25
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 259.3999938964844
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 258.3299865722656
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 260.1000061035156
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 259.3599853515625
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 260.29998779296875
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 260.25
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 261.1000061035156
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 261.6499938964844
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 261.7825012207031
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 262.69000244140625
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 262.5299987792969
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 263.1199951171875
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 262.79010009765625
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 263.0350036621094
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 263.3999938964844
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 263.6400146484375
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 263.55999755859375
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 264.0199890136719
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 263.7300109863281
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 263.6050109863281
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 263.94500732421875
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 263.82000732421875
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 264.0199890136719
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 264.0450134277344
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 264.18499755859375
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 265.1000061035156
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 265.7099914550781
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 265.69000244140625
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 265.6300048828125
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 265.9049987792969
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 265.8949890136719
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 264.9599914550781
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 264.75
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 265.0400085449219
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 265.0950012207031
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 265.4200134277344
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 265.5849914550781
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 265.8208923339844
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 266
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 266
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 266.2149963378906
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 266.4849853515625
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 265.8999938964844
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 265.3999938964844
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 265.57000732421875
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 265.6499938964844
+    },
+    {
+      "timestamp": 1789496042,
+      "close": 265.6199951171875
     }
   ],
   "news": {
-    "title": "PHILLIPS 66 TEAMSTERS TO RALLY FOR FAIR CONTRACT",
-    "publisher": "PR Newswire",
-    "publishedAt": "2026-09-15T13:00:00.000Z"
+    "title": "What Does the Future Hold for Valero Energy's Refining Business?",
+    "publisher": "Zacks",
+    "publishedAt": "2026-09-15T15:47:00.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:57.929Z"
+  "generatedAt": "2026-09-15T18:14:02.983Z"
 }

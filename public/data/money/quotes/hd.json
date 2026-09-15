@@ -5,29 +5,253 @@
     "displaySymbol": "$HD"
   },
   "name": "THE HOME DEPOT, INC.",
-  "price": 308.1,
-  "previousClose": 310.92,
+  "price": 307.12,
+  "previousClose": 310.87,
   "dayHigh": 311,
-  "dayLow": 308.1,
-  "change": -2.819999999999993,
-  "changePercent": -0.9069857197993031,
+  "dayLow": 304.59,
+  "change": -3.75,
+  "changePercent": -1.206292019172001,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 308.364990234375
+      "close": 308.07000732421875
     },
     {
-      "timestamp": 1789479204,
-      "close": 308.1000061035156
+      "timestamp": 1789479300,
+      "close": 307.68499755859375
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 308.04998779296875
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 307.1180114746094
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 307.4599914550781
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 307.31500244140625
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 307.17999267578125
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 306.42999267578125
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 306.4700012207031
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 307.25
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 307.32000732421875
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 307.19500732421875
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 306.85211181640625
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 307.06500244140625
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 306.6499938964844
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 306.92999267578125
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 306.6099853515625
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 306.3999938964844
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 306.2200012207031
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 306.05999755859375
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 305.9028015136719
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 306
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 306.4549865722656
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 306.1625061035156
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 306.2049865722656
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 306.1600036621094
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 306.6499938964844
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 306.1050109863281
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 306.1449890136719
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 305.9700012207031
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 305.7900085449219
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 305.4700012207031
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 305.17181396484375
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 304.8299865722656
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 305.6000061035156
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 305.6650085449219
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 305.93499755859375
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 306.1099853515625
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 306.3599853515625
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 306.6099853515625
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 307.1600036621094
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 307.2099914550781
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 306.9849853515625
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 307.0050048828125
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 306.7349853515625
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 306.8099060058594
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 307.07000732421875
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 307.42498779296875
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 307.2701110839844
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 307.43829345703125
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 307.4100036621094
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 307.32000732421875
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 307.5299987792969
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 307.3500061035156
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 307.0899963378906
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 306.9700012207031
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 307.010009765625
+    },
+    {
+      "timestamp": 1789496005,
+      "close": 307.1199951171875
     }
   ],
   "news": {
-    "title": "The Home Depot, Inc. (HD) is Attracting Investor Attention: Here is What You Should Know",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-15T13:00:04.000Z"
+    "title": "Home Depot Sees Broad Strength as Pro Sales, Delivery and AI Drive Share Gains",
+    "publisher": "MarketBeat",
+    "publishedAt": "2026-09-15T17:02:53.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:26.601Z"
+  "generatedAt": "2026-09-15T18:13:26.415Z"
 }

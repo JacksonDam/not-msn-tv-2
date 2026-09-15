@@ -5,29 +5,253 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 26117.19,
+  "price": 26003.816,
   "previousClose": 26186.414,
-  "dayHigh": 26162.086,
-  "dayLow": 26106.318,
-  "change": -69.22400000000198,
-  "changePercent": -0.26435081947456407,
+  "dayHigh": 26172.121,
+  "dayLow": 25949.479,
+  "change": -182.59800000000178,
+  "changePercent": -0.6973005162142544,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 26109.962890625
+      "close": 26107.43359375
     },
     {
-      "timestamp": 1789479154,
-      "close": 26117.189453125
+      "timestamp": 1789479300,
+      "close": 26159.75
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 26162.63671875
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 26141.74609375
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 26131.330078125
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 26133.244140625
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 26102.59375
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 26072.373046875
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 26053.263671875
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 26055.8125
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 26030.978515625
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 26039.619140625
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 26019.00390625
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 26010.4296875
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 26001.263671875
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 25987.861328125
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 25966.73046875
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 25969.765625
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 26004.484375
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 26002.755859375
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 26000.521484375
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 26013.70703125
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 26012.376953125
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 26002.91796875
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 25997.91796875
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 25990.484375
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 26004.791015625
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 25987.083984375
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 25999.513671875
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 26005.234375
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 26011.775390625
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 25985.9296875
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 25979.078125
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 25994.58203125
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 26019.029296875
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 26011.318359375
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 26015.978515625
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 26011.001953125
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 26005.1171875
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 26002.154296875
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 26022.400390625
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 26004.33984375
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 25986.556640625
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 25988.03515625
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 25980.771484375
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 25981.15625
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 25967.796875
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 25967.796875
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 25978.939453125
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 25974.673828125
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 25977.82421875
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 25972.07421875
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 25980.265625
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 25982.68359375
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 25990.390625
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 25995.083984375
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 26002.216796875
+    },
+    {
+      "timestamp": 1789495947,
+      "close": 26003.81640625
     }
   ],
   "news": {
-    "title": "Stock Market News for Sep 15, 2026",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-15T13:14:00.000Z"
+    "title": "Update: Equities Fall Intraday as Yields, Oil Surge Ahead of Fed Decision",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-09-15T17:50:48.000Z"
   },
-  "generatedAt": "2026-09-15T13:32:36.672Z"
+  "generatedAt": "2026-09-15T18:12:31.137Z"
 }

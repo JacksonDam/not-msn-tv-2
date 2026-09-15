@@ -5,29 +5,253 @@
     "displaySymbol": "$RCL"
   },
   "name": "ROYAL CARIBBEAN CRUISES LTD.",
-  "price": 255.31,
-  "previousClose": 255.37,
+  "price": 250.76,
+  "previousClose": 255.34,
   "dayHigh": 257.13,
-  "dayLow": 254.51,
-  "change": -0.060000000000002274,
-  "changePercent": -0.023495320515331587,
+  "dayLow": 250.13,
+  "change": -4.5800000000000125,
+  "changePercent": -1.7936868489073439,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 255.30999755859375
+      "close": 254.80999755859375
     },
     {
-      "timestamp": 1789479219,
-      "close": 255.30999755859375
+      "timestamp": 1789479300,
+      "close": 255.4600067138672
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 254.35000610351562
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 253.36000061035156
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 253.02999877929688
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 252.80999755859375
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 252.4250030517578
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 252.1199951171875
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 251.69000244140625
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 251.99000549316406
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 252.28500366210938
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 252.75999450683594
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 253.55999755859375
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 252.5449981689453
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 252.72999572753906
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 252.7100067138672
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 252.3000030517578
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 252.05999755859375
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 252.0800018310547
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 251.7100067138672
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 251.69000244140625
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 251.72000122070312
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 251.2899932861328
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 250.4949951171875
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 250.72500610351562
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 250.98500061035156
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 250.88999938964844
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 250.77999877929688
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 250.9550018310547
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 250.89999389648438
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 251.10499572753906
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 250.72500610351562
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 250.39500427246094
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 250.3300018310547
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 250.86500549316406
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 251.11000061035156
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 251.08999633789062
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 250.85499572753906
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 250.38999938964844
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 250.6999969482422
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 251.24000549316406
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 251.42999267578125
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 251.5500030517578
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 251.39999389648438
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 251.3000030517578
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 251.1750030517578
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 251.0749969482422
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 250.83999633789062
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 251.30499267578125
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 250.86500549316406
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 250.5050048828125
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 250.58999633789062
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 250.6649932861328
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 250.6999969482422
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 250.6999969482422
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 250.8800048828125
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 250.85000610351562
+    },
+    {
+      "timestamp": 1789496042,
+      "close": 250.75999450683594
     }
   ],
   "news": {
-    "title": "Can CCL's $7B+ EBITDA Outlook Withstand Geopolitical Headwinds?",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-14T13:56:00.000Z"
+    "title": "Norwegian Falls 3% as Wells Fargo Trims Carnival Target on Caribbean Pricing Pressure; Carnival Slips, Royal Caribbean Dips",
+    "publisher": "24/7 Wall St.",
+    "publishedAt": "2026-09-15T16:36:54.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:59.069Z"
+  "generatedAt": "2026-09-15T18:14:04.894Z"
 }

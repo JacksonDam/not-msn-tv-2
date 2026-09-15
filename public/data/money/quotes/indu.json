@@ -5,29 +5,253 @@
     "displaySymbol": "$INDU"
   },
   "name": "DOW JONES INDUSTRIAL AVERAGE",
-  "price": 52185.96,
+  "price": 52038.85,
   "previousClose": 52421.2,
   "dayHigh": 52336.61,
-  "dayLow": 52179.87,
-  "change": -235.23999999999796,
-  "changePercent": -0.4487497424705996,
+  "dayLow": 51875.65,
+  "change": -382.34999999999854,
+  "changePercent": -0.7293804796532674,
   "currency": "USD",
   "exchangeName": "DJI",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 52229.30078125
+      "close": 52132.12890625
     },
     {
-      "timestamp": 1789479155,
-      "close": 52185.9609375
+      "timestamp": 1789479300,
+      "close": 52131.140625
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 52135.51953125
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 52073.94921875
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 52106.78125
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 52089.80859375
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 52037.8203125
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 52009.2109375
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 51974.98046875
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 51965.28125
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 51917.75
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 51911.421875
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 51912.48828125
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 51903.69140625
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 51926.73046875
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 51931.41015625
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 51918.4609375
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 51878.51171875
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 51905.9296875
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 51895.0703125
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 51890.80859375
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 51922.9296875
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 51966.828125
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 51969.37890625
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 51949.6796875
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 51967.9609375
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 51979.8984375
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 51943.2890625
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 51945.48046875
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 51932.44140625
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 51941.83984375
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 51909.73046875
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 51922.44140625
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 51925.1015625
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 51982.23828125
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 51989.5390625
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 52003.421875
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 51989.19140625
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 52005.19140625
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 52009.26953125
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 52049.33984375
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 52054.30078125
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 52024.28125
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 52000.328125
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 51985.0390625
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 51966.78125
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 51957.51171875
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 51966.2109375
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 51988.62109375
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 52002.0703125
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 51999.62890625
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 51976.578125
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 51993.5
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 51992.5390625
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 52006.390625
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 52027
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 52035.5390625
+    },
+    {
+      "timestamp": 1789495950,
+      "close": 52038.8515625
     }
   ],
   "news": {
-    "title": "Stock Market News for Sep 15, 2026",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-15T13:14:00.000Z"
+    "title": "Stock Market Today: Dow Dives, This Loan Play Craters; Bitcoin Falls Ahead Of Clarity Act Vote (Live Coverage)",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-09-15T18:04:56.000Z"
   },
-  "generatedAt": "2026-09-15T13:32:36.296Z"
+  "generatedAt": "2026-09-15T18:12:30.897Z"
 }

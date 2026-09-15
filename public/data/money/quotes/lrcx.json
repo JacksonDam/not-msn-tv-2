@@ -5,29 +5,253 @@
     "displaySymbol": "$LRCX"
   },
   "name": "LAM RESEARCH CORPORATION",
-  "price": 274.4,
+  "price": 268.02,
   "previousClose": 273.49,
   "dayHigh": 278.5,
-  "dayLow": 273.17,
-  "change": 0.9099999999999682,
-  "changePercent": 0.33273611466597247,
+  "dayLow": 265.37,
+  "change": -5.470000000000027,
+  "changePercent": -2.00007312881642,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 274.3500061035156
+      "close": 274.0050048828125
     },
     {
-      "timestamp": 1789479215,
-      "close": 274.3999938964844
+      "timestamp": 1789479300,
+      "close": 271.7850036621094
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 271.5799865722656
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 271.4599914550781
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 271.7099914550781
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 270.62249755859375
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 271.1099853515625
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 271.2099914550781
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 270.135009765625
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 270.4150085449219
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 270.3299865722656
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 269.56500244140625
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 269.0950012207031
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 268
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 268.239990234375
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 267.739990234375
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 267.25
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 266.6400146484375
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 267.1099853515625
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 267.05999755859375
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 266.7300109863281
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 267.29998779296875
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 267.4800109863281
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 267.5450134277344
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 267.6499938964844
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 267.7900085449219
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 267.67999267578125
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 267.3399963378906
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 267.9200134277344
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 266.45001220703125
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 266.289306640625
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 265.8399963378906
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 265.4849853515625
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 265.90008544921875
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 266.4150085449219
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 266.30999755859375
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 266.2099914550781
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 266.9200134277344
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 267.3450012207031
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 267.3500061035156
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 267.5400085449219
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 267.42999267578125
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 267.0199890136719
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 266.9700012207031
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 267.0799865722656
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 267.4150085449219
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 267.1499938964844
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 267.4700012207031
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 267.2699890136719
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 267.1400146484375
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 267.0400085449219
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 267.07000732421875
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 267.375
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 267.6625061035156
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 268.04998779296875
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 268.2900085449219
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 268.17999267578125
+    },
+    {
+      "timestamp": 1789496018,
+      "close": 268.0199890136719
     }
   ],
   "news": {
-    "title": "Lam Research Vs. Applied Materials: Who Actually Helps ASML Share Prices Rise Higher?",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-09-15T11:00:49.000Z"
+    "title": "KLA Stock Jumps 40% Year to Date: 4 Reasons You Should Still Buy It",
+    "publisher": "Zacks",
+    "publishedAt": "2026-09-15T16:28:00.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:39.770Z"
+  "generatedAt": "2026-09-15T18:13:41.410Z"
 }

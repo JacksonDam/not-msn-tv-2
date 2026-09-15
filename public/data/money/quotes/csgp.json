@@ -5,29 +5,253 @@
     "displaySymbol": "$CSGP"
   },
   "name": "COSTAR GROUP, INC.",
-  "price": 31.01,
+  "price": 31.425,
   "previousClose": 31.52,
-  "dayHigh": 31.15,
-  "dayLow": 30.88,
-  "change": -0.509999999999998,
-  "changePercent": -1.6180203045685217,
+  "dayHigh": 31.45,
+  "dayLow": 30.7,
+  "change": -0.09499999999999886,
+  "changePercent": -0.3013959390862908,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
+      "close": 30.839000701904297
+    },
+    {
+      "timestamp": 1789479300,
+      "close": 31.045000076293945
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 31.155000686645508
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 31.010000228881836
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 31.020000457763672
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 30.959999084472656
+    },
+    {
+      "timestamp": 1789480800,
       "close": 30.940000534057617
     },
     {
-      "timestamp": 1789479162,
+      "timestamp": 1789481100,
+      "close": 30.875099182128906
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 30.850000381469727
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 30.940000534057617
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 30.892499923706055
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 30.760000228881836
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 30.822500228881836
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 30.84000015258789
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 30.979999542236328
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 31
+    },
+    {
+      "timestamp": 1789483800,
       "close": 31.010000228881836
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 31.139999389648438
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 31.264999389648438
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 31.264999389648438
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 31.25
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 31.110000610351562
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 31.010000228881836
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 30.959999084472656
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 31.010000228881836
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 31.06999969482422
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 31.18000030517578
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 31.170000076293945
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 31.21500015258789
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 31.25
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 31.209999084472656
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 31.155000686645508
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 31.15999984741211
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 31.190000534057617
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 31.209999084472656
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 31.290000915527344
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 31.190000534057617
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 31.190000534057617
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 31.1299991607666
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 31.110000610351562
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 31.1200008392334
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 31.075000762939453
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 31
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 31.149999618530273
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 31.139999389648438
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 31.125
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 31.229999542236328
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 31.25
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 31.280000686645508
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 31.280000686645508
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 31.34000015258789
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 31.3700008392334
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 31.350000381469727
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 31.31999969482422
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 31.440000534057617
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 31.434999465942383
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 31.434999465942383
+    },
+    {
+      "timestamp": 1789495975,
+      "close": 31.424999237060547
     }
   ],
   "news": {
-    "title": "CoStar Group Names Felix Kusch President of Homes.com",
-    "publisher": "Business Wire",
-    "publishedAt": "2026-09-14T20:35:00.000Z"
+    "title": "CoStar taps European home search veteran to lead Homes.com",
+    "publisher": "Inman",
+    "publishedAt": "2026-09-15T14:34:54.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:06.003Z"
+  "generatedAt": "2026-09-15T18:13:00.399Z"
 }

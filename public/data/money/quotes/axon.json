@@ -5,29 +5,253 @@
     "displaySymbol": "$AXON"
   },
   "name": "AXON ENTERPRISE, INC.",
-  "price": 453.39,
+  "price": 451.525,
   "previousClose": 490.18,
   "dayHigh": 471.41,
-  "dayLow": 450.555,
-  "change": -36.79000000000002,
-  "changePercent": -7.5054061773226195,
+  "dayLow": 434.46,
+  "change": -38.65500000000003,
+  "changePercent": -7.88587865681995,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 453.19000244140625
+      "close": 453.69500732421875
     },
     {
-      "timestamp": 1789479164,
-      "close": 453.3900146484375
+      "timestamp": 1789479300,
+      "close": 464.9150085449219
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 459.0400085449219
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 446.5
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 448.7650146484375
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 445.19000244140625
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 441.80499267578125
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 440.4200134277344
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 436.0050048828125
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 440.2099914550781
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 442.67999267578125
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 441.4599914550781
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 440.3699951171875
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 439.739990234375
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 438.2449951171875
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 439.9649963378906
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 435.7149963378906
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 434.96490478515625
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 440.82501220703125
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 439
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 437.29998779296875
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 437.239990234375
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 437.0350036621094
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 437.6499938964844
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 438.7349853515625
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 440.45001220703125
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 445.0299987792969
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 444.260009765625
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 444.5271911621094
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 445.92999267578125
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 442.6199951171875
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 444.260009765625
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 442.6400146484375
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 442.7650146484375
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 444.59429931640625
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 448.1499938964844
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 446.6650085449219
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 441.0450134277344
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 441.8399963378906
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 442.135009765625
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 443.1199951171875
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 441.7200012207031
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 438.3699951171875
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 438.3949890136719
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 438.6199951171875
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 436.44000244140625
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 437.3900146484375
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 436.57000732421875
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 436.80499267578125
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 437.5299987792969
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 438.8800048828125
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 444.1199951171875
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 444.44329833984375
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 447.4643859863281
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 447.3500061035156
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 450.4549865722656
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 449.80999755859375
+    },
+    {
+      "timestamp": 1789495958,
+      "close": 451.5249938964844
     }
   ],
   "news": {
-    "title": "Axon Enterprise Plans $1 Billion Offering of 0% Convertible Senior Notes Due 2031",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-09-15T12:04:28.000Z"
+    "title": "Axon Stock Falls On $1 Billion Convertible To Reload War Chest",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-09-15T17:56:52.000Z"
   },
-  "generatedAt": "2026-09-15T13:32:51.235Z"
+  "generatedAt": "2026-09-15T18:12:43.210Z"
 }

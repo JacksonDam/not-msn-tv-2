@@ -5,29 +5,253 @@
     "displaySymbol": "$IT"
   },
   "name": "GARTNER, INC.",
-  "price": 192.93,
-  "previousClose": 196.995,
-  "dayHigh": 194.5,
-  "dayLow": 192.925,
-  "change": -4.064999999999998,
-  "changePercent": -2.063504149851518,
+  "price": 200.665,
+  "previousClose": 197.07,
+  "dayHigh": 202.98,
+  "dayLow": 191.26,
+  "change": 3.594999999999999,
+  "changePercent": 1.824224894707464,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 193.60000610351562
+      "close": 191.25999450683594
     },
     {
-      "timestamp": 1789479195,
-      "close": 192.92999267578125
+      "timestamp": 1789479300,
+      "close": 192.9250030517578
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 192.13999938964844
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 192.89999389648438
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 192.91677856445312
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 193.19500732421875
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 192.8300018310547
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 192.51499938964844
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 193.03500366210938
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 193.65499877929688
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 193.86000061035156
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 193.6699981689453
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 193.97999572753906
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 194.63999938964844
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 194.80999755859375
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 195.36000061035156
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 195.3350067138672
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 195.5
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 196.5500030517578
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 196.80999755859375
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 197.44000244140625
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 197.0749969482422
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 196.97999572753906
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 196.8800048828125
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 198.17999267578125
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 199.33999633789062
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 200.5500030517578
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 201.1300048828125
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 202.13999938964844
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 202.89999389648438
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 202.2899932861328
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 201.88499450683594
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 202.60000610351562
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 202.71499633789062
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 202.69000244140625
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 202.14500427246094
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 201.92999267578125
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 201.13250732421875
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 201.0800018310547
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 201.11000061035156
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 201.1699981689453
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 201.0500030517578
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 201.00999450683594
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 200.9499969482422
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 201.2899932861328
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 201.27999877929688
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 201.27499389648438
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 200.94000244140625
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 201.25
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 200.82000732421875
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 201.19500732421875
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 201.00999450683594
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 201.52999877929688
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 201.50999450683594
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 200.9600067138672
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 201.13499450683594
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 200.7550048828125
+    },
+    {
+      "timestamp": 1789495983,
+      "close": 200.6649932861328
     }
   ],
   "news": {
-    "title": "Gartner® Names Kaltura the Company to Beat in the AI Race for Video Platform Services AI report, Published in August, 2026",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-09-15T12:00:00.000Z"
+    "title": "Qloo Recognized in the Set Diamonds Category in the 2026 Gartner® Emerging Tech: AI to Watch in Synthetic Popular Simulation Research",
+    "publisher": "PR Newswire",
+    "publishedAt": "2026-09-15T14:07:00.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:32.491Z"
+  "generatedAt": "2026-09-15T18:13:33.378Z"
 }

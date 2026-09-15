@@ -5,29 +5,253 @@
     "displaySymbol": "$COF"
   },
   "name": "CAPITAL ONE FINANCIAL CORPORATION",
-  "price": 205.61,
-  "previousClose": 206.725,
-  "dayHigh": 206.99,
-  "dayLow": 204.7,
-  "change": -1.1149999999999807,
-  "changePercent": -0.5393638892248063,
+  "price": 207.06,
+  "previousClose": 206.68,
+  "dayHigh": 208.785,
+  "dayLow": 203,
+  "change": 0.37999999999999545,
+  "changePercent": 0.1838591058641356,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
+      "close": 206.10000610351562
+    },
+    {
+      "timestamp": 1789479300,
+      "close": 208.5500030517578
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 207.88999938964844
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 207.30999755859375
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 206.91000366210938
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 207.82000732421875
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 208
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 207.00999450683594
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 206.92999267578125
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 206.5800018310547
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 206.3699951171875
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 206.10000610351562
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 205.77000427246094
+    },
+    {
+      "timestamp": 1789482900,
       "close": 205.4199981689453
     },
     {
-      "timestamp": 1789479180,
-      "close": 205.61000061035156
+      "timestamp": 1789483200,
+      "close": 205.43499755859375
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 204.75
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 204.3699951171875
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 203.84500122070312
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 203.44500732421875
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 203.4600067138672
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 203.19000244140625
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 203.36000061035156
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 203.55499267578125
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 203.63999938964844
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 203.72999572753906
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 204.24000549316406
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 204.27999877929688
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 203.74000549316406
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 203.4499969482422
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 203.4600067138672
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 203.80499267578125
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 203.7949981689453
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 203.99000549316406
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 204.41000366210938
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 204.74000549316406
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 204.7949981689453
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 204.7899932861328
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 204.8300018310547
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 204.94000244140625
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 205.22500610351562
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 205.52000427246094
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 205.75999450683594
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 205.76499938964844
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 206.0050048828125
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 206.25999450683594
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 206.13999938964844
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 205.8249969482422
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 205.97500610351562
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 206.0050048828125
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 206.22999572753906
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 206.35000610351562
+    },
+    {
+      "timestamp": 1789494300,
+      "close": 206.15499877929688
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 206.4250030517578
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 206.44500732421875
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 206.8699951171875
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 206.88999938964844
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 206.97999572753906
+    },
+    {
+      "timestamp": 1789495975,
+      "close": 207.05999755859375
     }
   ],
   "news": {
-    "title": "Liberty All-Star® Equity Fund August 2026 Monthly Update",
-    "publisher": "Business Wire",
-    "publishedAt": "2026-09-14T19:55:00.000Z"
+    "title": "How To Make $3,500 in Free Checking Account Bonuses — Reddit Found a Way",
+    "publisher": "MoneyLion",
+    "publishedAt": "2026-09-15T17:00:22.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:03.197Z"
+  "generatedAt": "2026-09-15T18:12:56.370Z"
 }

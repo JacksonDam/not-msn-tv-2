@@ -5,29 +5,253 @@
     "displaySymbol": "$NFLX"
   },
   "name": "NETFLIX, INC.",
-  "price": 78.345,
+  "price": 78.46,
   "previousClose": 80.32,
   "dayHigh": 79.481,
-  "dayLow": 78.17,
-  "change": -1.9749999999999943,
-  "changePercent": -2.458914342629475,
+  "dayLow": 77.46,
+  "change": -1.8599999999999994,
+  "changePercent": -2.315737051792828,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
       "timestamp": 1789479000,
-      "close": 78.4000015258789
+      "close": 78.2750015258789
     },
     {
-      "timestamp": 1789479226,
+      "timestamp": 1789479300,
+      "close": 78.8499984741211
+    },
+    {
+      "timestamp": 1789479600,
+      "close": 78.38500213623047
+    },
+    {
+      "timestamp": 1789479900,
+      "close": 78.12999725341797
+    },
+    {
+      "timestamp": 1789480200,
+      "close": 78.25499725341797
+    },
+    {
+      "timestamp": 1789480500,
+      "close": 78.1449966430664
+    },
+    {
+      "timestamp": 1789480800,
+      "close": 77.8550033569336
+    },
+    {
+      "timestamp": 1789481100,
+      "close": 77.84010314941406
+    },
+    {
+      "timestamp": 1789481400,
+      "close": 77.81999969482422
+    },
+    {
+      "timestamp": 1789481700,
+      "close": 77.84500122070312
+    },
+    {
+      "timestamp": 1789482000,
+      "close": 77.60559844970703
+    },
+    {
+      "timestamp": 1789482300,
+      "close": 77.63999938964844
+    },
+    {
+      "timestamp": 1789482600,
+      "close": 77.63999938964844
+    },
+    {
+      "timestamp": 1789482900,
+      "close": 77.86499786376953
+    },
+    {
+      "timestamp": 1789483200,
+      "close": 77.90499877929688
+    },
+    {
+      "timestamp": 1789483500,
+      "close": 77.93499755859375
+    },
+    {
+      "timestamp": 1789483800,
+      "close": 77.86499786376953
+    },
+    {
+      "timestamp": 1789484100,
+      "close": 78.04499816894531
+    },
+    {
+      "timestamp": 1789484400,
+      "close": 78.0250015258789
+    },
+    {
+      "timestamp": 1789484700,
+      "close": 78.15499877929688
+    },
+    {
+      "timestamp": 1789485000,
+      "close": 78.16500091552734
+    },
+    {
+      "timestamp": 1789485300,
+      "close": 78.1500015258789
+    },
+    {
+      "timestamp": 1789485600,
+      "close": 78.16500091552734
+    },
+    {
+      "timestamp": 1789485900,
+      "close": 77.84500122070312
+    },
+    {
+      "timestamp": 1789486200,
+      "close": 77.94999694824219
+    },
+    {
+      "timestamp": 1789486500,
+      "close": 77.9634017944336
+    },
+    {
+      "timestamp": 1789486800,
+      "close": 77.90499877929688
+    },
+    {
+      "timestamp": 1789487100,
+      "close": 77.8949966430664
+    },
+    {
+      "timestamp": 1789487400,
+      "close": 77.81999969482422
+    },
+    {
+      "timestamp": 1789487700,
+      "close": 77.91999816894531
+    },
+    {
+      "timestamp": 1789488000,
+      "close": 77.92500305175781
+    },
+    {
+      "timestamp": 1789488300,
+      "close": 77.8550033569336
+    },
+    {
+      "timestamp": 1789488600,
+      "close": 77.93000030517578
+    },
+    {
+      "timestamp": 1789488900,
+      "close": 77.94000244140625
+    },
+    {
+      "timestamp": 1789489200,
+      "close": 77.9749984741211
+    },
+    {
+      "timestamp": 1789489500,
+      "close": 78.0250015258789
+    },
+    {
+      "timestamp": 1789489800,
+      "close": 78.1050033569336
+    },
+    {
+      "timestamp": 1789490100,
+      "close": 78.09500122070312
+    },
+    {
+      "timestamp": 1789490400,
+      "close": 78.01499938964844
+    },
+    {
+      "timestamp": 1789490700,
+      "close": 78.03500366210938
+    },
+    {
+      "timestamp": 1789491000,
+      "close": 78.1449966430664
+    },
+    {
+      "timestamp": 1789491300,
+      "close": 78.27999877929688
+    },
+    {
+      "timestamp": 1789491600,
+      "close": 78.25499725341797
+    },
+    {
+      "timestamp": 1789491900,
+      "close": 78.32499694824219
+    },
+    {
+      "timestamp": 1789492200,
+      "close": 78.30500030517578
+    },
+    {
+      "timestamp": 1789492500,
+      "close": 78.29000091552734
+    },
+    {
+      "timestamp": 1789492800,
+      "close": 78.30500030517578
+    },
+    {
+      "timestamp": 1789493100,
+      "close": 78.25
+    },
+    {
+      "timestamp": 1789493400,
+      "close": 78.30940246582031
+    },
+    {
+      "timestamp": 1789493700,
+      "close": 78.33499908447266
+    },
+    {
+      "timestamp": 1789494000,
+      "close": 78.43499755859375
+    },
+    {
+      "timestamp": 1789494300,
       "close": 78.34500122070312
+    },
+    {
+      "timestamp": 1789494600,
+      "close": 78.37889862060547
+    },
+    {
+      "timestamp": 1789494900,
+      "close": 78.26499938964844
+    },
+    {
+      "timestamp": 1789495200,
+      "close": 78.38999938964844
+    },
+    {
+      "timestamp": 1789495500,
+      "close": 78.40499877929688
+    },
+    {
+      "timestamp": 1789495800,
+      "close": 78.43000030517578
+    },
+    {
+      "timestamp": 1789496019,
+      "close": 78.45999908447266
     }
   ],
   "news": {
-    "title": "2 Internet Stocks for Long-Term Investors and 1 We Question",
-    "publisher": "StockStory",
-    "publishedAt": "2026-09-15T08:04:30.000Z"
+    "title": "22 Prominent Investors Hold Netflix Stock, With 14 Increasing Their Stakes Recently -- Including Bill Ackman's Pershing Square. Should You Follow Their Example?",
+    "publisher": "Motley Fool",
+    "publishedAt": "2026-09-15T17:57:00.000Z"
   },
-  "generatedAt": "2026-09-15T13:33:48.063Z"
+  "generatedAt": "2026-09-15T18:13:50.904Z"
 }
