@@ -5,12 +5,12 @@
     "displaySymbol": "$KMB"
   },
   "name": "KIMBERLY-CLARK CORPORATION",
-  "price": 98.01,
+  "price": 98.675,
   "previousClose": 99.09,
-  "dayHigh": 98.7,
+  "dayHigh": 98.815,
   "dayLow": 97.2,
-  "change": -1.0799999999999983,
-  "changePercent": -1.0899182561307885,
+  "change": -0.41500000000000625,
+  "changePercent": -0.41881118175396737,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -241,11 +241,95 @@
     },
     {
       "timestamp": 1789495800,
-      "close": 98
+      "close": 97.875
     },
     {
-      "timestamp": 1789496008,
-      "close": 98.01000213623047
+      "timestamp": 1789496100,
+      "close": 97.9749984741211
+    },
+    {
+      "timestamp": 1789496400,
+      "close": 97.95999908447266
+    },
+    {
+      "timestamp": 1789496700,
+      "close": 98.1500015258789
+    },
+    {
+      "timestamp": 1789497000,
+      "close": 97.94499969482422
+    },
+    {
+      "timestamp": 1789497300,
+      "close": 98.02999877929688
+    },
+    {
+      "timestamp": 1789497600,
+      "close": 97.9000015258789
+    },
+    {
+      "timestamp": 1789497900,
+      "close": 98.04000091552734
+    },
+    {
+      "timestamp": 1789498200,
+      "close": 98.12000274658203
+    },
+    {
+      "timestamp": 1789498500,
+      "close": 98.1449966430664
+    },
+    {
+      "timestamp": 1789498800,
+      "close": 98.19000244140625
+    },
+    {
+      "timestamp": 1789499100,
+      "close": 98.2699966430664
+    },
+    {
+      "timestamp": 1789499400,
+      "close": 98.13999938964844
+    },
+    {
+      "timestamp": 1789499700,
+      "close": 98.02999877929688
+    },
+    {
+      "timestamp": 1789500000,
+      "close": 97.88500213623047
+    },
+    {
+      "timestamp": 1789500300,
+      "close": 98.2750015258789
+    },
+    {
+      "timestamp": 1789500600,
+      "close": 98.25499725341797
+    },
+    {
+      "timestamp": 1789500900,
+      "close": 98.5999984741211
+    },
+    {
+      "timestamp": 1789501200,
+      "close": 98.69000244140625
+    },
+    {
+      "timestamp": 1789501500,
+      "close": 98.70999908447266
+    },
+    {
+      "timestamp": 1789501800,
+      "close": 98.66000366210938
+    },
+    {
+      "timestamp": 1789502100,
+      "close": 98.68000030517578
+    },
+    {
+      "timestamp": 1789502400,
+      "close": 98.67500305175781
     }
   ],
   "news": {
@@ -253,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-09-15T14:32:06.000Z"
   },
-  "generatedAt": "2026-09-15T18:13:37.461Z"
+  "generatedAt": "2026-09-15T21:21:31.067Z"
 }
