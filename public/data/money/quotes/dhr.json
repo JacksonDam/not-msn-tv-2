@@ -5,12 +5,12 @@
     "displaySymbol": "$DHR"
   },
   "name": "DANAHER CORPORATION",
-  "price": 208.405,
+  "price": 208.36,
   "previousClose": 209.36,
   "dayHigh": 211.975,
   "dayLow": 206.675,
-  "change": -0.9550000000000125,
-  "changePercent": -0.4561520825372623,
+  "change": -1,
+  "changePercent": -0.47764615972487573,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1789588500,
-      "close": 208.40499877929688
+      "close": 208.42999267578125
+    },
+    {
+      "timestamp": 1789588800,
+      "close": 208.36000061035156
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-09-16T11:12:55.000Z"
   },
-  "generatedAt": "2026-09-16T20:07:57.031Z"
+  "generatedAt": "2026-09-16T22:56:34.714Z"
 }

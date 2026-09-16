@@ -5,12 +5,12 @@
     "displaySymbol": "$CBOE"
   },
   "name": "CBOE GLOBAL MARKETS, INC.",
-  "price": 270.72,
+  "price": 270.43,
   "previousClose": 270.44,
   "dayHigh": 276.2,
   "dayLow": 266.17,
-  "change": 0.28000000000002956,
-  "changePercent": 0.10353498003255049,
+  "change": -0.009999999999990905,
+  "changePercent": -0.0036976778583016215,
   "currency": "USD",
   "exchangeName": "BTS",
   "marketState": "",
@@ -326,6 +326,10 @@
     {
       "timestamp": 1789588500,
       "close": 270.7200012207031
+    },
+    {
+      "timestamp": 1789588800,
+      "close": 270.42999267578125
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-09-16T09:14:01.000Z"
   },
-  "generatedAt": "2026-09-16T20:07:43.216Z"
+  "generatedAt": "2026-09-16T22:56:20.647Z"
 }

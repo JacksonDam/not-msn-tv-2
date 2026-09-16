@@ -5,12 +5,12 @@
     "displaySymbol": "$ORCL"
   },
   "name": "ORACLE CORPORATION",
-  "price": 143.2,
+  "price": 143.16,
   "previousClose": 140.35,
   "dayHigh": 146.5,
   "dayLow": 139,
-  "change": 2.8499999999999943,
-  "changePercent": 2.030637691485568,
+  "change": 2.8100000000000023,
+  "changePercent": 2.00213751335946,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -326,8 +326,16 @@
     {
       "timestamp": 1789588500,
       "close": 143.1999969482422
+    },
+    {
+      "timestamp": 1789588800,
+      "close": 143.16000366210938
     }
   ],
-  "news": null,
-  "generatedAt": "2026-09-16T20:08:42.359Z"
+  "news": {
+    "title": "Why OpenAI’s $1.2 Trillion Valuation Can Lift Oracle, CoreWeave From AI Gloom",
+    "publisher": "Barrons.com",
+    "publishedAt": "2026-09-16T19:30:00.000Z"
+  },
+  "generatedAt": "2026-09-16T22:57:21.122Z"
 }

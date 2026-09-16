@@ -5,12 +5,12 @@
     "displaySymbol": "$TXT"
   },
   "name": "TEXTRON INC.",
-  "price": 80.73,
+  "price": 80.71,
   "previousClose": 80.72,
   "dayHigh": 81.89,
   "dayLow": 80.395,
-  "change": 0.010000000000005116,
-  "changePercent": 0.012388503468787308,
+  "change": -0.010000000000005116,
+  "changePercent": -0.012388503468787308,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -325,7 +325,11 @@
     },
     {
       "timestamp": 1789588500,
-      "close": 80.7300033569336
+      "close": 80.72000122070312
+    },
+    {
+      "timestamp": 1789588800,
+      "close": 80.70999908447266
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-09-16T16:39:00.000Z"
   },
-  "generatedAt": "2026-09-16T20:09:06.221Z"
+  "generatedAt": "2026-09-16T22:57:43.276Z"
 }
