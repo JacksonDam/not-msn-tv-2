@@ -5,337 +5,97 @@
     "displaySymbol": "$INDU"
   },
   "name": "DOW JONES INDUSTRIAL AVERAGE",
-  "price": 51778,
-  "previousClose": 51461.9,
-  "dayHigh": 51935.97,
-  "dayLow": 51607.65,
-  "change": 316.09999999999854,
-  "changePercent": 0.6142408267086884,
+  "price": 51585.89,
+  "previousClose": 51778.04,
+  "dayHigh": 51826.78,
+  "dayLow": 51508.51,
+  "change": -192.15000000000146,
+  "changePercent": -0.3711032708074726,
   "currency": "USD",
   "exchangeName": "DJI",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1789651800,
-      "close": 51760.8515625
+      "timestamp": 1789738200,
+      "close": 51685.2109375
     },
     {
-      "timestamp": 1789652100,
-      "close": 51759.51953125
+      "timestamp": 1789738500,
+      "close": 51641.46875
     },
     {
-      "timestamp": 1789652400,
-      "close": 51678.16015625
+      "timestamp": 1789738800,
+      "close": 51644.58984375
     },
     {
-      "timestamp": 1789652700,
-      "close": 51752.26953125
+      "timestamp": 1789739100,
+      "close": 51627.1484375
     },
     {
-      "timestamp": 1789653000,
-      "close": 51699.1484375
+      "timestamp": 1789739400,
+      "close": 51593.08984375
     },
     {
-      "timestamp": 1789653300,
-      "close": 51705.1484375
+      "timestamp": 1789739700,
+      "close": 51577.73828125
     },
     {
-      "timestamp": 1789653600,
-      "close": 51638.2890625
+      "timestamp": 1789740000,
+      "close": 51555.51171875
     },
     {
-      "timestamp": 1789653900,
-      "close": 51622.91015625
+      "timestamp": 1789740300,
+      "close": 51560.53125
     },
     {
-      "timestamp": 1789654200,
-      "close": 51681.7109375
+      "timestamp": 1789740600,
+      "close": 51565.05859375
     },
     {
-      "timestamp": 1789654500,
-      "close": 51742.03125
+      "timestamp": 1789740900,
+      "close": 51609.19921875
     },
     {
-      "timestamp": 1789654800,
-      "close": 51780.30859375
+      "timestamp": 1789741200,
+      "close": 51588.98828125
     },
     {
-      "timestamp": 1789655100,
-      "close": 51747.76953125
+      "timestamp": 1789741500,
+      "close": 51599.87890625
     },
     {
-      "timestamp": 1789655400,
-      "close": 51748.859375
+      "timestamp": 1789741800,
+      "close": 51569.140625
     },
     {
-      "timestamp": 1789655700,
-      "close": 51714.91015625
+      "timestamp": 1789742100,
+      "close": 51588.91015625
     },
     {
-      "timestamp": 1789656000,
-      "close": 51768.78125
+      "timestamp": 1789742400,
+      "close": 51517.98046875
     },
     {
-      "timestamp": 1789656300,
-      "close": 51718.640625
+      "timestamp": 1789742700,
+      "close": 51544.3515625
     },
     {
-      "timestamp": 1789656600,
-      "close": 51653.640625
+      "timestamp": 1789743000,
+      "close": 51580.8984375
     },
     {
-      "timestamp": 1789656900,
-      "close": 51662.75
+      "timestamp": 1789743300,
+      "close": 51581.328125
     },
     {
-      "timestamp": 1789657200,
-      "close": 51677.08984375
-    },
-    {
-      "timestamp": 1789657500,
-      "close": 51689.7890625
-    },
-    {
-      "timestamp": 1789657800,
-      "close": 51727.28125
-    },
-    {
-      "timestamp": 1789658100,
-      "close": 51761.6796875
-    },
-    {
-      "timestamp": 1789658400,
-      "close": 51729.87890625
-    },
-    {
-      "timestamp": 1789658700,
-      "close": 51736.30078125
-    },
-    {
-      "timestamp": 1789659000,
-      "close": 51763.76953125
-    },
-    {
-      "timestamp": 1789659300,
-      "close": 51773.91015625
-    },
-    {
-      "timestamp": 1789659600,
-      "close": 51793.51171875
-    },
-    {
-      "timestamp": 1789659900,
-      "close": 51776.53125
-    },
-    {
-      "timestamp": 1789660200,
-      "close": 51790.80078125
-    },
-    {
-      "timestamp": 1789660500,
-      "close": 51819.12109375
-    },
-    {
-      "timestamp": 1789660800,
-      "close": 51832.328125
-    },
-    {
-      "timestamp": 1789661100,
-      "close": 51841.21875
-    },
-    {
-      "timestamp": 1789661400,
-      "close": 51807.7890625
-    },
-    {
-      "timestamp": 1789661700,
-      "close": 51826.98828125
-    },
-    {
-      "timestamp": 1789662000,
-      "close": 51835.859375
-    },
-    {
-      "timestamp": 1789662300,
-      "close": 51846.078125
-    },
-    {
-      "timestamp": 1789662600,
-      "close": 51812.12109375
-    },
-    {
-      "timestamp": 1789662900,
-      "close": 51811.98828125
-    },
-    {
-      "timestamp": 1789663200,
-      "close": 51856.80859375
-    },
-    {
-      "timestamp": 1789663500,
-      "close": 51829.8984375
-    },
-    {
-      "timestamp": 1789663800,
-      "close": 51813.890625
-    },
-    {
-      "timestamp": 1789664100,
-      "close": 51811.25
-    },
-    {
-      "timestamp": 1789664400,
-      "close": 51827.26953125
-    },
-    {
-      "timestamp": 1789664700,
-      "close": 51809.05859375
-    },
-    {
-      "timestamp": 1789665000,
-      "close": 51809.2109375
-    },
-    {
-      "timestamp": 1789665300,
-      "close": 51790.3984375
-    },
-    {
-      "timestamp": 1789665600,
-      "close": 51777.7109375
-    },
-    {
-      "timestamp": 1789665900,
-      "close": 51783.73828125
-    },
-    {
-      "timestamp": 1789666200,
-      "close": 51793.73828125
-    },
-    {
-      "timestamp": 1789666500,
-      "close": 51799.6484375
-    },
-    {
-      "timestamp": 1789666800,
-      "close": 51802.98828125
-    },
-    {
-      "timestamp": 1789667100,
-      "close": 51796.859375
-    },
-    {
-      "timestamp": 1789667400,
-      "close": 51804.01171875
-    },
-    {
-      "timestamp": 1789667700,
-      "close": 51829.73828125
-    },
-    {
-      "timestamp": 1789668000,
-      "close": 51834.66015625
-    },
-    {
-      "timestamp": 1789668300,
-      "close": 51816.05859375
-    },
-    {
-      "timestamp": 1789668600,
-      "close": 51849.46875
-    },
-    {
-      "timestamp": 1789668900,
-      "close": 51850.19140625
-    },
-    {
-      "timestamp": 1789669200,
-      "close": 51817.609375
-    },
-    {
-      "timestamp": 1789669500,
-      "close": 51824.01953125
-    },
-    {
-      "timestamp": 1789669800,
-      "close": 51805.03125
-    },
-    {
-      "timestamp": 1789670100,
-      "close": 51792.51171875
-    },
-    {
-      "timestamp": 1789670400,
-      "close": 51803.73828125
-    },
-    {
-      "timestamp": 1789670700,
-      "close": 51808.76953125
-    },
-    {
-      "timestamp": 1789671000,
-      "close": 51790.48046875
-    },
-    {
-      "timestamp": 1789671300,
-      "close": 51808.1484375
-    },
-    {
-      "timestamp": 1789671600,
-      "close": 51839.96875
-    },
-    {
-      "timestamp": 1789671900,
-      "close": 51834.73046875
-    },
-    {
-      "timestamp": 1789672200,
-      "close": 51809.16015625
-    },
-    {
-      "timestamp": 1789672500,
-      "close": 51811.41015625
-    },
-    {
-      "timestamp": 1789672800,
-      "close": 51801.0703125
-    },
-    {
-      "timestamp": 1789673100,
-      "close": 51790.80859375
-    },
-    {
-      "timestamp": 1789673400,
-      "close": 51789.328125
-    },
-    {
-      "timestamp": 1789673700,
-      "close": 51786.87109375
-    },
-    {
-      "timestamp": 1789674000,
-      "close": 51796.8203125
-    },
-    {
-      "timestamp": 1789674300,
-      "close": 51780.328125
-    },
-    {
-      "timestamp": 1789674600,
-      "close": 51800.2109375
-    },
-    {
-      "timestamp": 1789674900,
-      "close": 51776.48046875
-    },
-    {
-      "timestamp": 1789675200,
-      "close": 51778
+      "timestamp": 1789743583,
+      "close": 51585.890625
     }
   ],
   "news": {
-    "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise as oil prices slip",
+    "title": "Stock market today: Dow, S&P 500, Nasdaq slip as oil prices rise",
     "publisher": "Yahoo Finance",
-    "publishedAt": "2026-09-18T11:00:02.000Z"
+    "publishedAt": "2026-09-18T14:30:40.000Z"
   },
-  "generatedAt": "2026-09-18T11:13:14.070Z"
+  "generatedAt": "2026-09-18T14:59:44.860Z"
 }
