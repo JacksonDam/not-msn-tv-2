@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 94.53,
+  "price": 94.5,
   "previousClose": 94.69,
   "dayHigh": 95.24,
   "dayLow": 93.47,
-  "change": -0.1599999999999966,
-  "changePercent": -0.16897243637131332,
+  "change": -0.18999999999999773,
+  "changePercent": -0.20065476819093644,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -273,11 +273,63 @@
     },
     {
       "timestamp": 1790103000,
+      "close": 94.52999877929688
+    },
+    {
+      "timestamp": 1790103300,
       "close": 94.55999755859375
     },
     {
-      "timestamp": 1790103271,
-      "close": 94.52999877929688
+      "timestamp": 1790103600,
+      "close": 94.63999938964844
+    },
+    {
+      "timestamp": 1790103900,
+      "close": 94.63999938964844
+    },
+    {
+      "timestamp": 1790104200,
+      "close": 94.59989929199219
+    },
+    {
+      "timestamp": 1790104500,
+      "close": 94.69000244140625
+    },
+    {
+      "timestamp": 1790104800,
+      "close": 94.63500213623047
+    },
+    {
+      "timestamp": 1790105100,
+      "close": 94.68000030517578
+    },
+    {
+      "timestamp": 1790105400,
+      "close": 94.63999938964844
+    },
+    {
+      "timestamp": 1790105700,
+      "close": 94.70999908447266
+    },
+    {
+      "timestamp": 1790106000,
+      "close": 94.73999786376953
+    },
+    {
+      "timestamp": 1790106300,
+      "close": 94.79000091552734
+    },
+    {
+      "timestamp": 1790106600,
+      "close": 94.66999816894531
+    },
+    {
+      "timestamp": 1790106900,
+      "close": 94.48999786376953
+    },
+    {
+      "timestamp": 1790107200,
+      "close": 94.5
     }
   ],
   "news": {
@@ -285,5 +337,5 @@
     "publisher": "MarketBeat",
     "publishedAt": "2026-09-22T02:02:06.000Z"
   },
-  "generatedAt": "2026-09-22T18:55:09.746Z"
+  "generatedAt": "2026-09-22T22:10:05.820Z"
 }
