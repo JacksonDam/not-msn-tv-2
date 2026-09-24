@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 28.75,
+  "price": 28.56,
   "previousClose": 28.65,
   "dayHigh": 29.125,
-  "dayLow": 28.565,
-  "change": 0.10000000000000142,
-  "changePercent": 0.34904013961606084,
+  "dayLow": 28.515,
+  "change": -0.08999999999999986,
+  "changePercent": -0.3141361256544498,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -281,15 +281,55 @@
     },
     {
       "timestamp": 1790276400,
-      "close": 28.690000534057617
+      "close": 28.69499969482422
     },
     {
       "timestamp": 1790276700,
       "close": 28.735000610351562
     },
     {
-      "timestamp": 1790277019,
-      "close": 28.75
+      "timestamp": 1790277000,
+      "close": 28.774999618530273
+    },
+    {
+      "timestamp": 1790277300,
+      "close": 28.735000610351562
+    },
+    {
+      "timestamp": 1790277600,
+      "close": 28.684999465942383
+    },
+    {
+      "timestamp": 1790277900,
+      "close": 28.665000915527344
+    },
+    {
+      "timestamp": 1790278200,
+      "close": 28.594999313354492
+    },
+    {
+      "timestamp": 1790278500,
+      "close": 28.645000457763672
+    },
+    {
+      "timestamp": 1790278800,
+      "close": 28.604999542236328
+    },
+    {
+      "timestamp": 1790279100,
+      "close": 28.604999542236328
+    },
+    {
+      "timestamp": 1790279400,
+      "close": 28.549999237060547
+    },
+    {
+      "timestamp": 1790279700,
+      "close": 28.55500030517578
+    },
+    {
+      "timestamp": 1790280000,
+      "close": 28.559999465942383
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-09-23T22:15:03.000Z"
   },
-  "generatedAt": "2026-09-24T19:10:22.459Z"
+  "generatedAt": "2026-09-24T22:24:16.444Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$EQIX"
   },
   "name": "EQUINIX, INC.",
-  "price": 1044.945,
+  "price": 1034.76,
   "previousClose": 1037.66,
-  "dayHigh": 1046.1,
+  "dayHigh": 1046.265,
   "dayLow": 1030.02,
-  "change": 7.2849999999998545,
-  "changePercent": 0.7020604051423254,
+  "change": -2.900000000000091,
+  "changePercent": -0.2794749725343649,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -288,8 +288,48 @@
       "close": 1044.81005859375
     },
     {
-      "timestamp": 1790277015,
-      "close": 1044.9449462890625
+      "timestamp": 1790277000,
+      "close": 1043.4649658203125
+    },
+    {
+      "timestamp": 1790277300,
+      "close": 1044.43994140625
+    },
+    {
+      "timestamp": 1790277600,
+      "close": 1045.35498046875
+    },
+    {
+      "timestamp": 1790277900,
+      "close": 1044.2950439453125
+    },
+    {
+      "timestamp": 1790278200,
+      "close": 1043.6300048828125
+    },
+    {
+      "timestamp": 1790278500,
+      "close": 1042.5150146484375
+    },
+    {
+      "timestamp": 1790278800,
+      "close": 1041.699951171875
+    },
+    {
+      "timestamp": 1790279100,
+      "close": 1041.175048828125
+    },
+    {
+      "timestamp": 1790279400,
+      "close": 1040.04248046875
+    },
+    {
+      "timestamp": 1790279700,
+      "close": 1034.989990234375
+    },
+    {
+      "timestamp": 1790280000,
+      "close": 1034.760009765625
     }
   ],
   "news": {
@@ -297,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-09-23T12:09:04.000Z"
   },
-  "generatedAt": "2026-09-24T19:10:28.069Z"
+  "generatedAt": "2026-09-24T22:24:21.806Z"
 }
