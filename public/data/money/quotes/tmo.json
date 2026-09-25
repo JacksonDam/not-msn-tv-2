@@ -5,19 +5,19 @@
     "displaySymbol": "$TMO"
   },
   "name": "THERMO FISHER SCIENTIFIC INC.",
-  "price": 669.64,
+  "price": 672.05,
   "previousClose": 678.39,
   "dayHigh": 677.94,
-  "dayLow": 669.45,
-  "change": -8.75,
-  "changePercent": -1.2898185409572664,
+  "dayLow": 664.66,
+  "change": -6.340000000000032,
+  "changePercent": -0.9345656628193268,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1790343000,
-      "close": 672.1400146484375
+      "close": 672.489990234375
     },
     {
       "timestamp": 1790343300,
@@ -25,21 +25,253 @@
     },
     {
       "timestamp": 1790343600,
-      "close": 671.0499877929688
+      "close": 671.030029296875
     },
     {
       "timestamp": 1790343900,
-      "close": 669.6849975585938
+      "close": 668.8699951171875
     },
     {
-      "timestamp": 1790344091,
-      "close": 669.6400146484375
+      "timestamp": 1790344200,
+      "close": 668.4400024414062
+    },
+    {
+      "timestamp": 1790344500,
+      "close": 666.97998046875
+    },
+    {
+      "timestamp": 1790344800,
+      "close": 666.2000122070312
+    },
+    {
+      "timestamp": 1790345100,
+      "close": 667.0999755859375
+    },
+    {
+      "timestamp": 1790345400,
+      "close": 667.3300170898438
+    },
+    {
+      "timestamp": 1790345700,
+      "close": 668.8350219726562
+    },
+    {
+      "timestamp": 1790346000,
+      "close": 669.7899780273438
+    },
+    {
+      "timestamp": 1790346300,
+      "close": 669.4650268554688
+    },
+    {
+      "timestamp": 1790346600,
+      "close": 668.3300170898438
+    },
+    {
+      "timestamp": 1790346900,
+      "close": 669.4199829101562
+    },
+    {
+      "timestamp": 1790347200,
+      "close": 668.6199951171875
+    },
+    {
+      "timestamp": 1790347500,
+      "close": 669.3200073242188
+    },
+    {
+      "timestamp": 1790347800,
+      "close": 669.8699951171875
+    },
+    {
+      "timestamp": 1790348100,
+      "close": 671.0650024414062
+    },
+    {
+      "timestamp": 1790348400,
+      "close": 672.6900024414062
+    },
+    {
+      "timestamp": 1790348700,
+      "close": 672.489990234375
+    },
+    {
+      "timestamp": 1790349000,
+      "close": 675.2750244140625
+    },
+    {
+      "timestamp": 1790349300,
+      "close": 674.344970703125
+    },
+    {
+      "timestamp": 1790349600,
+      "close": 673.3150024414062
+    },
+    {
+      "timestamp": 1790349900,
+      "close": 672.155029296875
+    },
+    {
+      "timestamp": 1790350200,
+      "close": 673.2236938476562
+    },
+    {
+      "timestamp": 1790350500,
+      "close": 672.85498046875
+    },
+    {
+      "timestamp": 1790350800,
+      "close": 672.0230102539062
+    },
+    {
+      "timestamp": 1790351100,
+      "close": 671.344970703125
+    },
+    {
+      "timestamp": 1790351400,
+      "close": 671.9349975585938
+    },
+    {
+      "timestamp": 1790351700,
+      "close": 670.6799926757812
+    },
+    {
+      "timestamp": 1790352000,
+      "close": 671.510009765625
+    },
+    {
+      "timestamp": 1790352300,
+      "close": 671.0150146484375
+    },
+    {
+      "timestamp": 1790352600,
+      "close": 670.9450073242188
+    },
+    {
+      "timestamp": 1790352900,
+      "close": 671.6900024414062
+    },
+    {
+      "timestamp": 1790353200,
+      "close": 670.9400024414062
+    },
+    {
+      "timestamp": 1790353500,
+      "close": 669.8300170898438
+    },
+    {
+      "timestamp": 1790353800,
+      "close": 668.2899780273438
+    },
+    {
+      "timestamp": 1790354100,
+      "close": 669.375
+    },
+    {
+      "timestamp": 1790354400,
+      "close": 669.2449951171875
+    },
+    {
+      "timestamp": 1790354700,
+      "close": 668.7899780273438
+    },
+    {
+      "timestamp": 1790355000,
+      "close": 669.135009765625
+    },
+    {
+      "timestamp": 1790355300,
+      "close": 669.3800048828125
+    },
+    {
+      "timestamp": 1790355600,
+      "close": 669.9000244140625
+    },
+    {
+      "timestamp": 1790355900,
+      "close": 670.7249755859375
+    },
+    {
+      "timestamp": 1790356200,
+      "close": 671.030029296875
+    },
+    {
+      "timestamp": 1790356500,
+      "close": 670.5399780273438
+    },
+    {
+      "timestamp": 1790356800,
+      "close": 671.1500244140625
+    },
+    {
+      "timestamp": 1790357100,
+      "close": 671.125
+    },
+    {
+      "timestamp": 1790357400,
+      "close": 671.1400146484375
+    },
+    {
+      "timestamp": 1790357700,
+      "close": 671.8018188476562
+    },
+    {
+      "timestamp": 1790358000,
+      "close": 671.1557006835938
+    },
+    {
+      "timestamp": 1790358300,
+      "close": 670.2000122070312
+    },
+    {
+      "timestamp": 1790358600,
+      "close": 670.3499755859375
+    },
+    {
+      "timestamp": 1790358900,
+      "close": 671.3499755859375
+    },
+    {
+      "timestamp": 1790359200,
+      "close": 671.2100219726562
+    },
+    {
+      "timestamp": 1790359500,
+      "close": 673.260009765625
+    },
+    {
+      "timestamp": 1790359800,
+      "close": 672.530029296875
+    },
+    {
+      "timestamp": 1790360100,
+      "close": 672.64501953125
+    },
+    {
+      "timestamp": 1790360400,
+      "close": 672.4000244140625
+    },
+    {
+      "timestamp": 1790360700,
+      "close": 672.7899780273438
+    },
+    {
+      "timestamp": 1790361000,
+      "close": 672.8200073242188
+    },
+    {
+      "timestamp": 1790361300,
+      "close": 672.6749877929688
+    },
+    {
+      "timestamp": 1790361466,
+      "close": 672.0499877929688
     }
   ],
   "news": {
-    "title": "Here's How Much a $1000 Investment in Thermo Fisher Scientific Made 10 Years Ago Would Be Worth Today",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-25T11:30:02.000Z"
+    "title": "Thermo Fisher Scientific's Building Blocks to 2028 Growth 'Fundamentally Sound,' Deutsche Bank Says",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-09-25T16:39:38.000Z"
   },
-  "generatedAt": "2026-09-25T13:48:21.090Z"
+  "generatedAt": "2026-09-25T18:37:52.731Z"
 }
