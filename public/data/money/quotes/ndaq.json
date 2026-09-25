@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 93.17,
+  "price": 93.55,
   "previousClose": 94.55,
   "dayHigh": 95.17,
   "dayLow": 92.02,
-  "change": -1.3799999999999955,
-  "changePercent": -1.4595452141723908,
+  "change": -1,
+  "changePercent": -1.0576414595452142,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -261,11 +261,75 @@
     },
     {
       "timestamp": 1790361300,
-      "close": 93.20999908447266
+      "close": 93.17500305175781
     },
     {
-      "timestamp": 1790361422,
-      "close": 93.16999816894531
+      "timestamp": 1790361600,
+      "close": 93.30000305175781
+    },
+    {
+      "timestamp": 1790361900,
+      "close": 93.28500366210938
+    },
+    {
+      "timestamp": 1790362200,
+      "close": 93.28500366210938
+    },
+    {
+      "timestamp": 1790362500,
+      "close": 93.3499984741211
+    },
+    {
+      "timestamp": 1790362800,
+      "close": 93.19999694824219
+    },
+    {
+      "timestamp": 1790363100,
+      "close": 93.18000030517578
+    },
+    {
+      "timestamp": 1790363400,
+      "close": 93.4197006225586
+    },
+    {
+      "timestamp": 1790363700,
+      "close": 93.48500061035156
+    },
+    {
+      "timestamp": 1790364000,
+      "close": 93.4000015258789
+    },
+    {
+      "timestamp": 1790364300,
+      "close": 93.45999908447266
+    },
+    {
+      "timestamp": 1790364600,
+      "close": 93.58000183105469
+    },
+    {
+      "timestamp": 1790364900,
+      "close": 93.69999694824219
+    },
+    {
+      "timestamp": 1790365200,
+      "close": 93.71499633789062
+    },
+    {
+      "timestamp": 1790365500,
+      "close": 93.72000122070312
+    },
+    {
+      "timestamp": 1790365800,
+      "close": 93.75
+    },
+    {
+      "timestamp": 1790366100,
+      "close": 93.55999755859375
+    },
+    {
+      "timestamp": 1790366400,
+      "close": 93.55000305175781
     }
   ],
   "news": {
@@ -273,5 +337,5 @@
     "publisher": "GlobeNewswire",
     "publishedAt": "2026-09-24T20:05:00.000Z"
   },
-  "generatedAt": "2026-09-25T18:37:25.268Z"
+  "generatedAt": "2026-09-25T22:20:36.457Z"
 }
