@@ -5,12 +5,12 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 26819,
+  "price": 26820.38,
   "previousClose": 27068.717,
-  "dayHigh": 26976.59,
+  "dayHigh": 26990.016,
   "dayLow": 26709.688,
-  "change": -249.71700000000055,
-  "changePercent": -0.9225298709207405,
+  "change": -248.33699999999953,
+  "changePercent": -0.9174317349433279,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
@@ -109,17 +109,233 @@
     },
     {
       "timestamp": 1790609100,
-      "close": 26816.724609375
+      "close": 26809.8671875
     },
     {
-      "timestamp": 1790609223,
-      "close": 26819
+      "timestamp": 1790609400,
+      "close": 26807.9921875
+    },
+    {
+      "timestamp": 1790609700,
+      "close": 26834.158203125
+    },
+    {
+      "timestamp": 1790610000,
+      "close": 26789.154296875
+    },
+    {
+      "timestamp": 1790610300,
+      "close": 26798.759765625
+    },
+    {
+      "timestamp": 1790610600,
+      "close": 26811.34375
+    },
+    {
+      "timestamp": 1790610900,
+      "close": 26830.208984375
+    },
+    {
+      "timestamp": 1790611200,
+      "close": 26818.744140625
+    },
+    {
+      "timestamp": 1790611500,
+      "close": 26824.197265625
+    },
+    {
+      "timestamp": 1790611800,
+      "close": 26820.66796875
+    },
+    {
+      "timestamp": 1790612100,
+      "close": 26873.21875
+    },
+    {
+      "timestamp": 1790612400,
+      "close": 26919.56640625
+    },
+    {
+      "timestamp": 1790612700,
+      "close": 26959.990234375
+    },
+    {
+      "timestamp": 1790613000,
+      "close": 26930.923828125
+    },
+    {
+      "timestamp": 1790613300,
+      "close": 26918.03125
+    },
+    {
+      "timestamp": 1790613600,
+      "close": 26886.578125
+    },
+    {
+      "timestamp": 1790613900,
+      "close": 26888.732421875
+    },
+    {
+      "timestamp": 1790614200,
+      "close": 26895.390625
+    },
+    {
+      "timestamp": 1790614500,
+      "close": 26892.02734375
+    },
+    {
+      "timestamp": 1790614800,
+      "close": 26875.75390625
+    },
+    {
+      "timestamp": 1790615100,
+      "close": 26864.3984375
+    },
+    {
+      "timestamp": 1790615400,
+      "close": 26962.61328125
+    },
+    {
+      "timestamp": 1790615700,
+      "close": 26902.103515625
+    },
+    {
+      "timestamp": 1790616000,
+      "close": 26906.484375
+    },
+    {
+      "timestamp": 1790616300,
+      "close": 26891.935546875
+    },
+    {
+      "timestamp": 1790616600,
+      "close": 26904.544921875
+    },
+    {
+      "timestamp": 1790616900,
+      "close": 26903.5
+    },
+    {
+      "timestamp": 1790617200,
+      "close": 26899.78125
+    },
+    {
+      "timestamp": 1790617500,
+      "close": 26906.380859375
+    },
+    {
+      "timestamp": 1790617800,
+      "close": 26906.724609375
+    },
+    {
+      "timestamp": 1790618100,
+      "close": 26899.876953125
+    },
+    {
+      "timestamp": 1790618400,
+      "close": 26909.333984375
+    },
+    {
+      "timestamp": 1790618700,
+      "close": 26904.5078125
+    },
+    {
+      "timestamp": 1790619000,
+      "close": 26909.88671875
+    },
+    {
+      "timestamp": 1790619300,
+      "close": 26901.685546875
+    },
+    {
+      "timestamp": 1790619600,
+      "close": 26888.8828125
+    },
+    {
+      "timestamp": 1790619900,
+      "close": 26891.880859375
+    },
+    {
+      "timestamp": 1790620200,
+      "close": 26889.849609375
+    },
+    {
+      "timestamp": 1790620500,
+      "close": 26869.361328125
+    },
+    {
+      "timestamp": 1790620800,
+      "close": 26900.490234375
+    },
+    {
+      "timestamp": 1790621100,
+      "close": 26904.26953125
+    },
+    {
+      "timestamp": 1790621400,
+      "close": 26904.953125
+    },
+    {
+      "timestamp": 1790621700,
+      "close": 26899.333984375
+    },
+    {
+      "timestamp": 1790622000,
+      "close": 26880.884765625
+    },
+    {
+      "timestamp": 1790622300,
+      "close": 26863.294921875
+    },
+    {
+      "timestamp": 1790622600,
+      "close": 26845.15234375
+    },
+    {
+      "timestamp": 1790622900,
+      "close": 26850.78515625
+    },
+    {
+      "timestamp": 1790623200,
+      "close": 26853.8671875
+    },
+    {
+      "timestamp": 1790623500,
+      "close": 26850.826171875
+    },
+    {
+      "timestamp": 1790623800,
+      "close": 26846.3828125
+    },
+    {
+      "timestamp": 1790624100,
+      "close": 26810.283203125
+    },
+    {
+      "timestamp": 1790624400,
+      "close": 26821.044921875
+    },
+    {
+      "timestamp": 1790624700,
+      "close": 26817.259765625
+    },
+    {
+      "timestamp": 1790625000,
+      "close": 26801.33984375
+    },
+    {
+      "timestamp": 1790625300,
+      "close": 26822.09375
+    },
+    {
+      "timestamp": 1790625600,
+      "close": 26820.380859375
     }
   ],
   "news": {
-    "title": "Stock market today: Dow, S&P 500, Nasdaq slip as US-Iran tensions resurface, Treasury yields jump",
-    "publisher": "Yahoo Finance",
-    "publishedAt": "2026-09-28T15:25:15.000Z"
+    "title": "BC-Select Stock Indices",
+    "publisher": "Associated Press",
+    "publishedAt": "2026-09-28T21:30:13.000Z"
   },
-  "generatedAt": "2026-09-28T15:27:09.985Z"
+  "generatedAt": "2026-09-28T22:00:23.516Z"
 }

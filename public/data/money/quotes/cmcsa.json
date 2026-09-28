@@ -5,12 +5,12 @@
     "displaySymbol": "$CMCSA"
   },
   "name": "COMCAST CORPORATION",
-  "price": 21.67,
+  "price": 21.79,
   "previousClose": 21.91,
   "dayHigh": 21.965,
   "dayLow": 21.495,
-  "change": -0.23999999999999844,
-  "changePercent": -1.0953902327704172,
+  "change": -0.120000000000001,
+  "changePercent": -0.5476951163852167,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -109,17 +109,233 @@
     },
     {
       "timestamp": 1790609100,
+      "close": 21.653400421142578
+    },
+    {
+      "timestamp": 1790609400,
+      "close": 21.657499313354492
+    },
+    {
+      "timestamp": 1790609700,
+      "close": 21.70949935913086
+    },
+    {
+      "timestamp": 1790610000,
+      "close": 21.704999923706055
+    },
+    {
+      "timestamp": 1790610300,
+      "close": 21.704999923706055
+    },
+    {
+      "timestamp": 1790610600,
       "close": 21.674999237060547
     },
     {
-      "timestamp": 1790609250,
-      "close": 21.670000076293945
+      "timestamp": 1790610900,
+      "close": 21.655000686645508
+    },
+    {
+      "timestamp": 1790611200,
+      "close": 21.709999084472656
+    },
+    {
+      "timestamp": 1790611500,
+      "close": 21.735000610351562
+    },
+    {
+      "timestamp": 1790611800,
+      "close": 21.69499969482422
+    },
+    {
+      "timestamp": 1790612100,
+      "close": 21.735000610351562
+    },
+    {
+      "timestamp": 1790612400,
+      "close": 21.780000686645508
+    },
+    {
+      "timestamp": 1790612700,
+      "close": 21.867599487304688
+    },
+    {
+      "timestamp": 1790613000,
+      "close": 21.81999969482422
+    },
+    {
+      "timestamp": 1790613300,
+      "close": 21.774999618530273
+    },
+    {
+      "timestamp": 1790613600,
+      "close": 21.7549991607666
+    },
+    {
+      "timestamp": 1790613900,
+      "close": 21.764999389648438
+    },
+    {
+      "timestamp": 1790614200,
+      "close": 21.795000076293945
+    },
+    {
+      "timestamp": 1790614500,
+      "close": 21.774999618530273
+    },
+    {
+      "timestamp": 1790614800,
+      "close": 21.749900817871094
+    },
+    {
+      "timestamp": 1790615100,
+      "close": 21.80500030517578
+    },
+    {
+      "timestamp": 1790615400,
+      "close": 21.875
+    },
+    {
+      "timestamp": 1790615700,
+      "close": 21.864999771118164
+    },
+    {
+      "timestamp": 1790616000,
+      "close": 21.885000228881836
+    },
+    {
+      "timestamp": 1790616300,
+      "close": 21.825000762939453
+    },
+    {
+      "timestamp": 1790616600,
+      "close": 21.815000534057617
+    },
+    {
+      "timestamp": 1790616900,
+      "close": 21.799999237060547
+    },
+    {
+      "timestamp": 1790617200,
+      "close": 21.81999969482422
+    },
+    {
+      "timestamp": 1790617500,
+      "close": 21.80500030517578
+    },
+    {
+      "timestamp": 1790617800,
+      "close": 21.815000534057617
+    },
+    {
+      "timestamp": 1790618100,
+      "close": 21.78499984741211
+    },
+    {
+      "timestamp": 1790618400,
+      "close": 21.809999465942383
+    },
+    {
+      "timestamp": 1790618700,
+      "close": 21.774999618530273
+    },
+    {
+      "timestamp": 1790619000,
+      "close": 21.77829933166504
+    },
+    {
+      "timestamp": 1790619300,
+      "close": 21.764999389648438
+    },
+    {
+      "timestamp": 1790619600,
+      "close": 21.76289939880371
+    },
+    {
+      "timestamp": 1790619900,
+      "close": 21.795000076293945
+    },
+    {
+      "timestamp": 1790620200,
+      "close": 21.770000457763672
+    },
+    {
+      "timestamp": 1790620500,
+      "close": 21.764999389648438
+    },
+    {
+      "timestamp": 1790620800,
+      "close": 21.795499801635742
+    },
+    {
+      "timestamp": 1790621100,
+      "close": 21.7549991607666
+    },
+    {
+      "timestamp": 1790621400,
+      "close": 21.71500015258789
+    },
+    {
+      "timestamp": 1790621700,
+      "close": 21.76650047302246
+    },
+    {
+      "timestamp": 1790622000,
+      "close": 21.774999618530273
+    },
+    {
+      "timestamp": 1790622300,
+      "close": 21.764999389648438
+    },
+    {
+      "timestamp": 1790622600,
+      "close": 21.71500015258789
+    },
+    {
+      "timestamp": 1790622900,
+      "close": 21.744199752807617
+    },
+    {
+      "timestamp": 1790623200,
+      "close": 21.725000381469727
+    },
+    {
+      "timestamp": 1790623500,
+      "close": 21.725000381469727
+    },
+    {
+      "timestamp": 1790623800,
+      "close": 21.739999771118164
+    },
+    {
+      "timestamp": 1790624100,
+      "close": 21.735000610351562
+    },
+    {
+      "timestamp": 1790624400,
+      "close": 21.764999389648438
+    },
+    {
+      "timestamp": 1790624700,
+      "close": 21.78499984741211
+    },
+    {
+      "timestamp": 1790625000,
+      "close": 21.825000762939453
+    },
+    {
+      "timestamp": 1790625300,
+      "close": 21.809999465942383
+    },
+    {
+      "timestamp": 1790625600,
+      "close": 21.790000915527344
     }
   ],
   "news": {
-    "title": "Xfinity and Comcast Business High-Speed Internet Now Available to More Than 2,300 Homes and Businesses in Clay County, Florida",
+    "title": "Comcast and Fastly’s New Content Delivery Model Powers Highest Quality Experience for Peacock’s Biggest Live Events",
     "publisher": "Business Wire",
-    "publishedAt": "2026-09-28T14:00:00.000Z"
+    "publishedAt": "2026-09-28T20:00:00.000Z"
   },
-  "generatedAt": "2026-09-28T15:27:33.564Z"
+  "generatedAt": "2026-09-28T22:00:44.865Z"
 }

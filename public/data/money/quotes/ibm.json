@@ -5,12 +5,12 @@
     "displaySymbol": "$IBM"
   },
   "name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
-  "price": 220.31,
+  "price": 220.67,
   "previousClose": 225.51,
   "dayHigh": 223.136,
-  "dayLow": 219.37,
-  "change": -5.199999999999989,
-  "changePercent": -2.3058844397144203,
+  "dayLow": 219.23,
+  "change": -4.840000000000003,
+  "changePercent": -2.1462462861957357,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -101,7 +101,7 @@
     },
     {
       "timestamp": 1790608500,
-      "close": 220.40499877929688
+      "close": 220.44000244140625
     },
     {
       "timestamp": 1790608800,
@@ -109,17 +109,233 @@
     },
     {
       "timestamp": 1790609100,
-      "close": 220.22000122070312
+      "close": 219.92999267578125
     },
     {
-      "timestamp": 1790609283,
-      "close": 220.30999755859375
+      "timestamp": 1790609400,
+      "close": 219.67999267578125
+    },
+    {
+      "timestamp": 1790609700,
+      "close": 220.10499572753906
+    },
+    {
+      "timestamp": 1790610000,
+      "close": 219.93499755859375
+    },
+    {
+      "timestamp": 1790610300,
+      "close": 219.92999267578125
+    },
+    {
+      "timestamp": 1790610600,
+      "close": 219.69000244140625
+    },
+    {
+      "timestamp": 1790610900,
+      "close": 219.6199951171875
+    },
+    {
+      "timestamp": 1790611200,
+      "close": 219.6999969482422
+    },
+    {
+      "timestamp": 1790611500,
+      "close": 219.5050048828125
+    },
+    {
+      "timestamp": 1790611800,
+      "close": 219.35000610351562
+    },
+    {
+      "timestamp": 1790612100,
+      "close": 219.97000122070312
+    },
+    {
+      "timestamp": 1790612400,
+      "close": 220.5800018310547
+    },
+    {
+      "timestamp": 1790612700,
+      "close": 220.92999267578125
+    },
+    {
+      "timestamp": 1790613000,
+      "close": 220.69000244140625
+    },
+    {
+      "timestamp": 1790613300,
+      "close": 220.54010009765625
+    },
+    {
+      "timestamp": 1790613600,
+      "close": 220.69000244140625
+    },
+    {
+      "timestamp": 1790613900,
+      "close": 220.8800048828125
+    },
+    {
+      "timestamp": 1790614200,
+      "close": 220.9250030517578
+    },
+    {
+      "timestamp": 1790614500,
+      "close": 220.80999755859375
+    },
+    {
+      "timestamp": 1790614800,
+      "close": 220.6699981689453
+    },
+    {
+      "timestamp": 1790615100,
+      "close": 220.9550018310547
+    },
+    {
+      "timestamp": 1790615400,
+      "close": 222.3699951171875
+    },
+    {
+      "timestamp": 1790615700,
+      "close": 222.00999450683594
+    },
+    {
+      "timestamp": 1790616000,
+      "close": 221.72000122070312
+    },
+    {
+      "timestamp": 1790616300,
+      "close": 221.60000610351562
+    },
+    {
+      "timestamp": 1790616600,
+      "close": 221.47999572753906
+    },
+    {
+      "timestamp": 1790616900,
+      "close": 221.2899932861328
+    },
+    {
+      "timestamp": 1790617200,
+      "close": 221.35499572753906
+    },
+    {
+      "timestamp": 1790617500,
+      "close": 221.44500732421875
+    },
+    {
+      "timestamp": 1790617800,
+      "close": 221.3699951171875
+    },
+    {
+      "timestamp": 1790618100,
+      "close": 221.19500732421875
+    },
+    {
+      "timestamp": 1790618400,
+      "close": 221.4949951171875
+    },
+    {
+      "timestamp": 1790618700,
+      "close": 221.05999755859375
+    },
+    {
+      "timestamp": 1790619000,
+      "close": 221
+    },
+    {
+      "timestamp": 1790619300,
+      "close": 220.89999389648438
+    },
+    {
+      "timestamp": 1790619600,
+      "close": 220.8699951171875
+    },
+    {
+      "timestamp": 1790619900,
+      "close": 221.1199951171875
+    },
+    {
+      "timestamp": 1790620200,
+      "close": 221.22500610351562
+    },
+    {
+      "timestamp": 1790620500,
+      "close": 220.9600067138672
+    },
+    {
+      "timestamp": 1790620800,
+      "close": 221.16000366210938
+    },
+    {
+      "timestamp": 1790621100,
+      "close": 221.43499755859375
+    },
+    {
+      "timestamp": 1790621400,
+      "close": 221.19000244140625
+    },
+    {
+      "timestamp": 1790621700,
+      "close": 221.00999450683594
+    },
+    {
+      "timestamp": 1790622000,
+      "close": 221.14999389648438
+    },
+    {
+      "timestamp": 1790622300,
+      "close": 221.0500030517578
+    },
+    {
+      "timestamp": 1790622600,
+      "close": 220.9199981689453
+    },
+    {
+      "timestamp": 1790622900,
+      "close": 220.97500610351562
+    },
+    {
+      "timestamp": 1790623200,
+      "close": 221.13580322265625
+    },
+    {
+      "timestamp": 1790623500,
+      "close": 221.38999938964844
+    },
+    {
+      "timestamp": 1790623800,
+      "close": 221.16000366210938
+    },
+    {
+      "timestamp": 1790624100,
+      "close": 221.17999267578125
+    },
+    {
+      "timestamp": 1790624400,
+      "close": 221.5500030517578
+    },
+    {
+      "timestamp": 1790624700,
+      "close": 221.1999969482422
+    },
+    {
+      "timestamp": 1790625000,
+      "close": 220.74000549316406
+    },
+    {
+      "timestamp": 1790625300,
+      "close": 220.69000244140625
+    },
+    {
+      "timestamp": 1790625600,
+      "close": 220.6699981689453
     }
   ],
   "news": {
-    "title": "Application Security Market Surges to $23.45 billion at a CAGR 11.5% by 2031 | Report by MarketsandMarkets™",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-09-28T14:30:00.000Z"
+    "title": "Stock Market Today: Dow Ends Lower But Nvidia Pops On This; Leisure Play Tests Entry, MongoDB Dives",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-09-28T20:34:25.000Z"
   },
-  "generatedAt": "2026-09-28T15:28:09.244Z"
+  "generatedAt": "2026-09-28T22:01:17.139Z"
 }
