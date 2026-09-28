@@ -5,337 +5,121 @@
     "displaySymbol": "$HON"
   },
   "name": "HONEYWELL INTERNATIONAL INC.",
-  "price": 212.55,
-  "previousClose": 211.79,
-  "dayHigh": 213.64,
-  "dayLow": 210.753,
-  "change": 0.7600000000000193,
-  "changePercent": 0.3588460267245948,
+  "price": 209.89,
+  "previousClose": 212.55,
+  "dayHigh": 212.27,
+  "dayLow": 209.727,
+  "change": -2.660000000000025,
+  "changePercent": -1.251470242295942,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1790343000,
-      "close": 211.45640563964844
+      "timestamp": 1790602200,
+      "close": 210.75
     },
     {
-      "timestamp": 1790343300,
-      "close": 212.69500732421875
+      "timestamp": 1790602500,
+      "close": 211.25999450683594
     },
     {
-      "timestamp": 1790343600,
-      "close": 212.72000122070312
+      "timestamp": 1790602800,
+      "close": 211.33999633789062
     },
     {
-      "timestamp": 1790343900,
-      "close": 212.2449951171875
-    },
-    {
-      "timestamp": 1790344200,
-      "close": 212.38999938964844
-    },
-    {
-      "timestamp": 1790344500,
-      "close": 212.1699981689453
-    },
-    {
-      "timestamp": 1790344800,
-      "close": 211.5
-    },
-    {
-      "timestamp": 1790345100,
-      "close": 211.0800018310547
-    },
-    {
-      "timestamp": 1790345400,
-      "close": 211.22000122070312
-    },
-    {
-      "timestamp": 1790345700,
-      "close": 211.00999450683594
-    },
-    {
-      "timestamp": 1790346000,
-      "close": 211.125
-    },
-    {
-      "timestamp": 1790346300,
-      "close": 211.51499938964844
-    },
-    {
-      "timestamp": 1790346600,
-      "close": 211.41000366210938
-    },
-    {
-      "timestamp": 1790346900,
-      "close": 211.69000244140625
-    },
-    {
-      "timestamp": 1790347200,
-      "close": 211.8699951171875
-    },
-    {
-      "timestamp": 1790347500,
-      "close": 211.77000427246094
-    },
-    {
-      "timestamp": 1790347800,
-      "close": 211.38999938964844
-    },
-    {
-      "timestamp": 1790348100,
-      "close": 211.4199981689453
-    },
-    {
-      "timestamp": 1790348400,
-      "close": 211.88999938964844
-    },
-    {
-      "timestamp": 1790348700,
-      "close": 211.66000366210938
-    },
-    {
-      "timestamp": 1790349000,
-      "close": 211.88250732421875
-    },
-    {
-      "timestamp": 1790349300,
-      "close": 211.6300048828125
-    },
-    {
-      "timestamp": 1790349600,
-      "close": 211.89999389648438
-    },
-    {
-      "timestamp": 1790349900,
-      "close": 211.41000366210938
-    },
-    {
-      "timestamp": 1790350200,
-      "close": 211.30999755859375
-    },
-    {
-      "timestamp": 1790350500,
-      "close": 211.10499572753906
-    },
-    {
-      "timestamp": 1790350800,
-      "close": 211.0399932861328
-    },
-    {
-      "timestamp": 1790351100,
-      "close": 210.97000122070312
-    },
-    {
-      "timestamp": 1790351400,
-      "close": 211.06500244140625
-    },
-    {
-      "timestamp": 1790351700,
-      "close": 211.63499450683594
-    },
-    {
-      "timestamp": 1790352000,
-      "close": 212.41000366210938
-    },
-    {
-      "timestamp": 1790352300,
-      "close": 212.6300048828125
-    },
-    {
-      "timestamp": 1790352600,
-      "close": 212.99000549316406
-    },
-    {
-      "timestamp": 1790352900,
-      "close": 213.10000610351562
-    },
-    {
-      "timestamp": 1790353200,
-      "close": 212.77999877929688
-    },
-    {
-      "timestamp": 1790353500,
-      "close": 213.16000366210938
-    },
-    {
-      "timestamp": 1790353800,
-      "close": 213.02999877929688
-    },
-    {
-      "timestamp": 1790354100,
-      "close": 213.27999877929688
-    },
-    {
-      "timestamp": 1790354400,
-      "close": 213.22999572753906
-    },
-    {
-      "timestamp": 1790354700,
-      "close": 213.05499267578125
-    },
-    {
-      "timestamp": 1790355000,
-      "close": 213.14999389648438
-    },
-    {
-      "timestamp": 1790355300,
-      "close": 212.9600067138672
-    },
-    {
-      "timestamp": 1790355600,
-      "close": 212.96499633789062
-    },
-    {
-      "timestamp": 1790355900,
-      "close": 212.97000122070312
-    },
-    {
-      "timestamp": 1790356200,
-      "close": 212.9149932861328
-    },
-    {
-      "timestamp": 1790356500,
-      "close": 212.69000244140625
-    },
-    {
-      "timestamp": 1790356800,
-      "close": 212.7100067138672
-    },
-    {
-      "timestamp": 1790357100,
-      "close": 212.5399932861328
-    },
-    {
-      "timestamp": 1790357400,
-      "close": 212.375
-    },
-    {
-      "timestamp": 1790357700,
-      "close": 212.52000427246094
-    },
-    {
-      "timestamp": 1790358000,
-      "close": 212.625
-    },
-    {
-      "timestamp": 1790358300,
-      "close": 212.35000610351562
-    },
-    {
-      "timestamp": 1790358600,
-      "close": 212.02999877929688
-    },
-    {
-      "timestamp": 1790358900,
-      "close": 212.24000549316406
-    },
-    {
-      "timestamp": 1790359200,
-      "close": 212.01499938964844
-    },
-    {
-      "timestamp": 1790359500,
-      "close": 211.86500549316406
-    },
-    {
-      "timestamp": 1790359800,
-      "close": 212.0500030517578
-    },
-    {
-      "timestamp": 1790360100,
-      "close": 211.94000244140625
-    },
-    {
-      "timestamp": 1790360400,
-      "close": 211.86000061035156
-    },
-    {
-      "timestamp": 1790360700,
-      "close": 211.9582061767578
-    },
-    {
-      "timestamp": 1790361000,
-      "close": 212.0800018310547
-    },
-    {
-      "timestamp": 1790361300,
-      "close": 211.7949981689453
-    },
-    {
-      "timestamp": 1790361600,
-      "close": 211.83999633789062
-    },
-    {
-      "timestamp": 1790361900,
+      "timestamp": 1790603100,
       "close": 212.14999389648438
     },
     {
-      "timestamp": 1790362200,
-      "close": 212.02999877929688
+      "timestamp": 1790603400,
+      "close": 211.7050018310547
     },
     {
-      "timestamp": 1790362500,
-      "close": 212.0399932861328
+      "timestamp": 1790603700,
+      "close": 211.5050048828125
     },
     {
-      "timestamp": 1790362800,
-      "close": 211.82000732421875
+      "timestamp": 1790604000,
+      "close": 210.52499389648438
     },
     {
-      "timestamp": 1790363100,
-      "close": 212.18899536132812
+      "timestamp": 1790604300,
+      "close": 211.05499267578125
     },
     {
-      "timestamp": 1790363400,
-      "close": 212.3249969482422
+      "timestamp": 1790604600,
+      "close": 210.84500122070312
     },
     {
-      "timestamp": 1790363700,
-      "close": 212.06500244140625
+      "timestamp": 1790604900,
+      "close": 211.1999969482422
     },
     {
-      "timestamp": 1790364000,
-      "close": 212.05999755859375
+      "timestamp": 1790605200,
+      "close": 211.3699951171875
     },
     {
-      "timestamp": 1790364300,
-      "close": 212.1999969482422
+      "timestamp": 1790605500,
+      "close": 211.07000732421875
     },
     {
-      "timestamp": 1790364600,
-      "close": 212.22999572753906
+      "timestamp": 1790605800,
+      "close": 210.9199981689453
     },
     {
-      "timestamp": 1790364900,
-      "close": 212.64500427246094
+      "timestamp": 1790606100,
+      "close": 211.0749969482422
     },
     {
-      "timestamp": 1790365200,
-      "close": 212.46499633789062
+      "timestamp": 1790606400,
+      "close": 211.16000366210938
     },
     {
-      "timestamp": 1790365500,
-      "close": 212.50999450683594
+      "timestamp": 1790606700,
+      "close": 211.0449981689453
     },
     {
-      "timestamp": 1790365800,
-      "close": 212.5749969482422
+      "timestamp": 1790607000,
+      "close": 210.7899932861328
     },
     {
-      "timestamp": 1790366100,
-      "close": 212.8699951171875
+      "timestamp": 1790607300,
+      "close": 210.47500610351562
     },
     {
-      "timestamp": 1790366400,
-      "close": 212.5500030517578
+      "timestamp": 1790607600,
+      "close": 210.4149932861328
+    },
+    {
+      "timestamp": 1790607900,
+      "close": 210.32000732421875
+    },
+    {
+      "timestamp": 1790608200,
+      "close": 210.1199951171875
+    },
+    {
+      "timestamp": 1790608500,
+      "close": 209.97000122070312
+    },
+    {
+      "timestamp": 1790608800,
+      "close": 209.83999633789062
+    },
+    {
+      "timestamp": 1790609100,
+      "close": 209.97999572753906
+    },
+    {
+      "timestamp": 1790609281,
+      "close": 209.88999938964844
     }
   ],
   "news": {
-    "title": "Is Itron’s (ITRI) High-Margin Software Transition Built to Last?",
-    "publisher": "Insider Monkey",
-    "publishedAt": "2026-09-28T03:10:13.000Z"
+    "title": "Space On-Board Computing Platform Market Report 2026: Capitalize on the $1.86B-to-$3.11B Surge by 2030 as AI Edge Processing and LEO Constellations Disrupt Revenue—Benchmark BAE Systems, Thales, L3Harris, Lockheed Martin and Honeywell",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-09-28T09:18:00.000Z"
   },
-  "generatedAt": "2026-09-28T06:53:50.102Z"
+  "generatedAt": "2026-09-28T15:28:05.791Z"
 }
