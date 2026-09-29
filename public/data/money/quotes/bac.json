@@ -5,12 +5,12 @@
     "displaySymbol": "$BAC"
   },
   "name": "BANK OF AMERICA CORPORATION",
-  "price": 54.845,
+  "price": 54.96,
   "previousClose": 55.47,
   "dayHigh": 55.55,
-  "dayLow": 54.81,
-  "change": -0.625,
-  "changePercent": -1.1267351721651342,
+  "dayLow": 54.734,
+  "change": -0.509999999999998,
+  "changePercent": -0.9194159004867462,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -129,17 +129,213 @@
     },
     {
       "timestamp": 1790697000,
-      "close": 54.849998474121094
+      "close": 54.78499984741211
     },
     {
-      "timestamp": 1790697060,
+      "timestamp": 1790697300,
+      "close": 54.755001068115234
+    },
+    {
+      "timestamp": 1790697600,
+      "close": 54.775001525878906
+    },
+    {
+      "timestamp": 1790697900,
+      "close": 54.814998626708984
+    },
+    {
+      "timestamp": 1790698200,
+      "close": 54.84000015258789
+    },
+    {
+      "timestamp": 1790698500,
       "close": 54.845001220703125
+    },
+    {
+      "timestamp": 1790698800,
+      "close": 54.834999084472656
+    },
+    {
+      "timestamp": 1790699100,
+      "close": 54.81999969482422
+    },
+    {
+      "timestamp": 1790699400,
+      "close": 54.89500045776367
+    },
+    {
+      "timestamp": 1790699700,
+      "close": 54.90999984741211
+    },
+    {
+      "timestamp": 1790700000,
+      "close": 54.95000076293945
+    },
+    {
+      "timestamp": 1790700300,
+      "close": 54.98849868774414
+    },
+    {
+      "timestamp": 1790700600,
+      "close": 54.9900016784668
+    },
+    {
+      "timestamp": 1790700900,
+      "close": 54.98500061035156
+    },
+    {
+      "timestamp": 1790701200,
+      "close": 54.915000915527344
+    },
+    {
+      "timestamp": 1790701500,
+      "close": 54.8849983215332
+    },
+    {
+      "timestamp": 1790701800,
+      "close": 54.935001373291016
+    },
+    {
+      "timestamp": 1790702100,
+      "close": 54.92499923706055
+    },
+    {
+      "timestamp": 1790702400,
+      "close": 54.875
+    },
+    {
+      "timestamp": 1790702700,
+      "close": 54.91999816894531
+    },
+    {
+      "timestamp": 1790703000,
+      "close": 54.95000076293945
+    },
+    {
+      "timestamp": 1790703300,
+      "close": 54.970001220703125
+    },
+    {
+      "timestamp": 1790703600,
+      "close": 55.02009963989258
+    },
+    {
+      "timestamp": 1790703900,
+      "close": 55.0077018737793
+    },
+    {
+      "timestamp": 1790704200,
+      "close": 54.96500015258789
+    },
+    {
+      "timestamp": 1790704500,
+      "close": 55.005001068115234
+    },
+    {
+      "timestamp": 1790704800,
+      "close": 55.064998626708984
+    },
+    {
+      "timestamp": 1790705100,
+      "close": 55.00019836425781
+    },
+    {
+      "timestamp": 1790705400,
+      "close": 55.04499816894531
+    },
+    {
+      "timestamp": 1790705700,
+      "close": 55.04499816894531
+    },
+    {
+      "timestamp": 1790706000,
+      "close": 55.05500030517578
+    },
+    {
+      "timestamp": 1790706300,
+      "close": 55.05500030517578
+    },
+    {
+      "timestamp": 1790706600,
+      "close": 55.084999084472656
+    },
+    {
+      "timestamp": 1790706900,
+      "close": 55.1150016784668
+    },
+    {
+      "timestamp": 1790707200,
+      "close": 55.095001220703125
+    },
+    {
+      "timestamp": 1790707500,
+      "close": 55.05500030517578
+    },
+    {
+      "timestamp": 1790707800,
+      "close": 55.060001373291016
+    },
+    {
+      "timestamp": 1790708100,
+      "close": 55.04499816894531
+    },
+    {
+      "timestamp": 1790708400,
+      "close": 55.05509948730469
+    },
+    {
+      "timestamp": 1790708700,
+      "close": 55.05500030517578
+    },
+    {
+      "timestamp": 1790709000,
+      "close": 55.084999084472656
+    },
+    {
+      "timestamp": 1790709300,
+      "close": 55.04999923706055
+    },
+    {
+      "timestamp": 1790709600,
+      "close": 54.9900016784668
+    },
+    {
+      "timestamp": 1790709900,
+      "close": 55.005001068115234
+    },
+    {
+      "timestamp": 1790710200,
+      "close": 54.959999084472656
+    },
+    {
+      "timestamp": 1790710500,
+      "close": 54.974998474121094
+    },
+    {
+      "timestamp": 1790710800,
+      "close": 55.025001525878906
+    },
+    {
+      "timestamp": 1790711100,
+      "close": 54.96500015258789
+    },
+    {
+      "timestamp": 1790711400,
+      "close": 54.994998931884766
+    },
+    {
+      "timestamp": 1790711700,
+      "close": 54.98500061035156
+    },
+    {
+      "timestamp": 1790712000,
+      "close": 54.959999084472656
     }
   ],
   "news": {
-    "title": "Paycom's Growth Outlook Constrained by Payroll-Heavy Revenue Mix, BofA Says",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-09-29T15:20:40.000Z"
+    "title": "Paylocity expansion beyond payroll backs Bank of America \"buy\"",
+    "publisher": "Proactive",
+    "publishedAt": "2026-09-29T19:12:00.000Z"
   },
-  "generatedAt": "2026-09-29T15:51:00.627Z"
+  "generatedAt": "2026-09-29T20:46:52.645Z"
 }

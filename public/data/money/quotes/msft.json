@@ -5,12 +5,12 @@
     "displaySymbol": "$MSFT"
   },
   "name": "MICROSOFT CORPORATION",
-  "price": 509.715,
+  "price": 508.96,
   "previousClose": 509.22,
   "dayHigh": 513.64,
   "dayLow": 502.4,
-  "change": 0.4949999999999477,
-  "changePercent": 0.0972074938140583,
+  "change": -0.26000000000004775,
+  "changePercent": -0.051058481599318126,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -129,17 +129,213 @@
     },
     {
       "timestamp": 1790697000,
-      "close": 509.739990234375
+      "close": 509.56500244140625
     },
     {
-      "timestamp": 1790697122,
-      "close": 509.7149963378906
+      "timestamp": 1790697300,
+      "close": 509.93499755859375
+    },
+    {
+      "timestamp": 1790697600,
+      "close": 508.489990234375
+    },
+    {
+      "timestamp": 1790697900,
+      "close": 508.79998779296875
+    },
+    {
+      "timestamp": 1790698200,
+      "close": 508.5299987792969
+    },
+    {
+      "timestamp": 1790698500,
+      "close": 508.9849853515625
+    },
+    {
+      "timestamp": 1790698800,
+      "close": 509.1300048828125
+    },
+    {
+      "timestamp": 1790699100,
+      "close": 508.7550048828125
+    },
+    {
+      "timestamp": 1790699400,
+      "close": 508.1300048828125
+    },
+    {
+      "timestamp": 1790699700,
+      "close": 508.5849914550781
+    },
+    {
+      "timestamp": 1790700000,
+      "close": 507.94500732421875
+    },
+    {
+      "timestamp": 1790700300,
+      "close": 509.05999755859375
+    },
+    {
+      "timestamp": 1790700600,
+      "close": 509.66461181640625
+    },
+    {
+      "timestamp": 1790700900,
+      "close": 508.7099914550781
+    },
+    {
+      "timestamp": 1790701200,
+      "close": 508.0400085449219
+    },
+    {
+      "timestamp": 1790701500,
+      "close": 507.30499267578125
+    },
+    {
+      "timestamp": 1790701800,
+      "close": 505.1700134277344
+    },
+    {
+      "timestamp": 1790702100,
+      "close": 505.8700866699219
+    },
+    {
+      "timestamp": 1790702400,
+      "close": 506.8699951171875
+    },
+    {
+      "timestamp": 1790702700,
+      "close": 506.19000244140625
+    },
+    {
+      "timestamp": 1790703000,
+      "close": 506.739990234375
+    },
+    {
+      "timestamp": 1790703300,
+      "close": 505.590087890625
+    },
+    {
+      "timestamp": 1790703600,
+      "close": 505.7485046386719
+    },
+    {
+      "timestamp": 1790703900,
+      "close": 506.2887878417969
+    },
+    {
+      "timestamp": 1790704200,
+      "close": 505.9700012207031
+    },
+    {
+      "timestamp": 1790704500,
+      "close": 506.0198974609375
+    },
+    {
+      "timestamp": 1790704800,
+      "close": 506.17999267578125
+    },
+    {
+      "timestamp": 1790705100,
+      "close": 505.6499938964844
+    },
+    {
+      "timestamp": 1790705400,
+      "close": 506.4549865722656
+    },
+    {
+      "timestamp": 1790705700,
+      "close": 506.69000244140625
+    },
+    {
+      "timestamp": 1790706000,
+      "close": 507.0199890136719
+    },
+    {
+      "timestamp": 1790706300,
+      "close": 507.1099853515625
+    },
+    {
+      "timestamp": 1790706600,
+      "close": 507.6476135253906
+    },
+    {
+      "timestamp": 1790706900,
+      "close": 510.2300109863281
+    },
+    {
+      "timestamp": 1790707200,
+      "close": 510.5199890136719
+    },
+    {
+      "timestamp": 1790707500,
+      "close": 510.7650146484375
+    },
+    {
+      "timestamp": 1790707800,
+      "close": 510.69000244140625
+    },
+    {
+      "timestamp": 1790708100,
+      "close": 510.8999938964844
+    },
+    {
+      "timestamp": 1790708400,
+      "close": 510.9049987792969
+    },
+    {
+      "timestamp": 1790708700,
+      "close": 510.69500732421875
+    },
+    {
+      "timestamp": 1790709000,
+      "close": 510.6499938964844
+    },
+    {
+      "timestamp": 1790709300,
+      "close": 511.17498779296875
+    },
+    {
+      "timestamp": 1790709600,
+      "close": 511.510009765625
+    },
+    {
+      "timestamp": 1790709900,
+      "close": 511.39068603515625
+    },
+    {
+      "timestamp": 1790710200,
+      "close": 511.239990234375
+    },
+    {
+      "timestamp": 1790710500,
+      "close": 511.2550048828125
+    },
+    {
+      "timestamp": 1790710800,
+      "close": 510.1449890136719
+    },
+    {
+      "timestamp": 1790711100,
+      "close": 510.2300109863281
+    },
+    {
+      "timestamp": 1790711400,
+      "close": 509.7749938964844
+    },
+    {
+      "timestamp": 1790711700,
+      "close": 509.0400085449219
+    },
+    {
+      "timestamp": 1790712000,
+      "close": 508.9599914550781
     }
   ],
   "news": {
-    "title": "ProSearch Appoints Donovan Bell as Director of AI Delivery Transformation",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-09-29T15:44:00.000Z"
+    "title": "Microsoft Brings OpenAI’s Autonomous ‘Dots’ AI Workers Into the Enterprise",
+    "publisher": "Benzinga Prediction Markets",
+    "publishedAt": "2026-09-29T20:32:54.000Z"
   },
-  "generatedAt": "2026-09-29T15:52:04.270Z"
+  "generatedAt": "2026-09-29T20:48:00.383Z"
 }
