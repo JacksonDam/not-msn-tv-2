@@ -5,337 +5,37 @@
     "displaySymbol": "$HSY"
   },
   "name": "THE HERSHEY COMPANY",
-  "price": 161.41,
-  "previousClose": 164.41,
-  "dayHigh": 163.68,
-  "dayLow": 160.61,
-  "change": -3,
-  "changePercent": -1.8247065263670093,
+  "price": 161.8,
+  "previousClose": 161.42,
+  "dayHigh": 163.135,
+  "dayLow": 161.288,
+  "change": 0.3800000000000239,
+  "changePercent": 0.2354107297732771,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1790688600,
-      "close": 162.84500122070312
+      "timestamp": 1790775000,
+      "close": 161.88999938964844
     },
     {
-      "timestamp": 1790688900,
-      "close": 162.9001007080078
-    },
-    {
-      "timestamp": 1790689200,
-      "close": 163.33999633789062
-    },
-    {
-      "timestamp": 1790689500,
-      "close": 163.55999755859375
-    },
-    {
-      "timestamp": 1790689800,
-      "close": 163.5
-    },
-    {
-      "timestamp": 1790690100,
-      "close": 163.22000122070312
-    },
-    {
-      "timestamp": 1790690400,
-      "close": 163.27000427246094
-    },
-    {
-      "timestamp": 1790690700,
-      "close": 163.11000061035156
-    },
-    {
-      "timestamp": 1790691000,
-      "close": 163.1699981689453
-    },
-    {
-      "timestamp": 1790691300,
-      "close": 163.05999755859375
-    },
-    {
-      "timestamp": 1790691600,
-      "close": 162.80999755859375
-    },
-    {
-      "timestamp": 1790691900,
-      "close": 162.875
-    },
-    {
-      "timestamp": 1790692200,
-      "close": 162.58999633789062
-    },
-    {
-      "timestamp": 1790692500,
-      "close": 162.4199981689453
-    },
-    {
-      "timestamp": 1790692800,
-      "close": 162.52999877929688
-    },
-    {
-      "timestamp": 1790693100,
-      "close": 162.4801025390625
-    },
-    {
-      "timestamp": 1790693400,
-      "close": 162.61180114746094
-    },
-    {
-      "timestamp": 1790693700,
-      "close": 162.4250030517578
-    },
-    {
-      "timestamp": 1790694000,
-      "close": 162.0574951171875
-    },
-    {
-      "timestamp": 1790694300,
-      "close": 161.8000030517578
-    },
-    {
-      "timestamp": 1790694600,
-      "close": 161.7449951171875
-    },
-    {
-      "timestamp": 1790694900,
-      "close": 161.67999267578125
-    },
-    {
-      "timestamp": 1790695200,
-      "close": 161.42999267578125
-    },
-    {
-      "timestamp": 1790695500,
-      "close": 161.54400634765625
-    },
-    {
-      "timestamp": 1790695800,
-      "close": 161.57000732421875
-    },
-    {
-      "timestamp": 1790696100,
-      "close": 161.5500030517578
-    },
-    {
-      "timestamp": 1790696400,
-      "close": 161.17999267578125
-    },
-    {
-      "timestamp": 1790696700,
-      "close": 161.0908966064453
-    },
-    {
-      "timestamp": 1790697000,
-      "close": 161.07000732421875
-    },
-    {
-      "timestamp": 1790697300,
-      "close": 161.09249877929688
-    },
-    {
-      "timestamp": 1790697600,
-      "close": 161.24000549316406
-    },
-    {
-      "timestamp": 1790697900,
-      "close": 161.27999877929688
-    },
-    {
-      "timestamp": 1790698200,
-      "close": 161.2949981689453
-    },
-    {
-      "timestamp": 1790698500,
-      "close": 161.25999450683594
-    },
-    {
-      "timestamp": 1790698800,
-      "close": 161.1699981689453
-    },
-    {
-      "timestamp": 1790699100,
-      "close": 161.19749450683594
-    },
-    {
-      "timestamp": 1790699400,
-      "close": 161.1300048828125
-    },
-    {
-      "timestamp": 1790699700,
-      "close": 161.25010681152344
-    },
-    {
-      "timestamp": 1790700000,
-      "close": 160.8699951171875
-    },
-    {
-      "timestamp": 1790700300,
-      "close": 160.7100067138672
-    },
-    {
-      "timestamp": 1790700600,
-      "close": 160.61000061035156
-    },
-    {
-      "timestamp": 1790700900,
-      "close": 160.7899932861328
-    },
-    {
-      "timestamp": 1790701200,
-      "close": 160.6717071533203
-    },
-    {
-      "timestamp": 1790701500,
-      "close": 160.85000610351562
-    },
-    {
-      "timestamp": 1790701800,
-      "close": 161.11000061035156
-    },
-    {
-      "timestamp": 1790702100,
-      "close": 161.02000427246094
-    },
-    {
-      "timestamp": 1790702400,
-      "close": 160.93499755859375
-    },
-    {
-      "timestamp": 1790702700,
-      "close": 160.9149932861328
-    },
-    {
-      "timestamp": 1790703000,
-      "close": 161.07000732421875
-    },
-    {
-      "timestamp": 1790703300,
-      "close": 161.10000610351562
-    },
-    {
-      "timestamp": 1790703600,
-      "close": 161.11399841308594
-    },
-    {
-      "timestamp": 1790703900,
-      "close": 161.14999389648438
-    },
-    {
-      "timestamp": 1790704200,
-      "close": 160.69000244140625
-    },
-    {
-      "timestamp": 1790704500,
-      "close": 160.9199981689453
-    },
-    {
-      "timestamp": 1790704800,
-      "close": 160.93499755859375
-    },
-    {
-      "timestamp": 1790705100,
-      "close": 161.22000122070312
-    },
-    {
-      "timestamp": 1790705400,
-      "close": 161.1999969482422
-    },
-    {
-      "timestamp": 1790705700,
-      "close": 161.3000030517578
-    },
-    {
-      "timestamp": 1790706000,
+      "timestamp": 1790775300,
       "close": 161.74000549316406
     },
     {
-      "timestamp": 1790706300,
-      "close": 161.8699951171875
-    },
-    {
-      "timestamp": 1790706600,
+      "timestamp": 1790775600,
       "close": 161.8800048828125
     },
     {
-      "timestamp": 1790706900,
-      "close": 161.92999267578125
-    },
-    {
-      "timestamp": 1790707200,
-      "close": 161.7899932861328
-    },
-    {
-      "timestamp": 1790707500,
-      "close": 161.7949981689453
-    },
-    {
-      "timestamp": 1790707800,
-      "close": 161.8800048828125
-    },
-    {
-      "timestamp": 1790708100,
-      "close": 161.91000366210938
-    },
-    {
-      "timestamp": 1790708400,
-      "close": 161.6750030517578
-    },
-    {
-      "timestamp": 1790708700,
-      "close": 161.57000732421875
-    },
-    {
-      "timestamp": 1790709000,
-      "close": 161.30999755859375
-    },
-    {
-      "timestamp": 1790709300,
-      "close": 161.33999633789062
-    },
-    {
-      "timestamp": 1790709600,
-      "close": 161.38999938964844
-    },
-    {
-      "timestamp": 1790709900,
-      "close": 161.34500122070312
-    },
-    {
-      "timestamp": 1790710200,
-      "close": 161.19000244140625
-    },
-    {
-      "timestamp": 1790710500,
-      "close": 161.5
-    },
-    {
-      "timestamp": 1790710800,
-      "close": 161.27499389648438
-    },
-    {
-      "timestamp": 1790711100,
-      "close": 161.25999450683594
-    },
-    {
-      "timestamp": 1790711400,
-      "close": 161.39999389648438
-    },
-    {
-      "timestamp": 1790711700,
-      "close": 161.41000366210938
-    },
-    {
-      "timestamp": 1790712000,
-      "close": 161.41000366210938
+      "timestamp": 1790775775,
+      "close": 161.8000030517578
     }
   ],
   "news": {
-    "title": "Hershey (HSY) Suffers a Larger Drop Than the General Market: Key Insights",
-    "publisher": "Zacks",
-    "publishedAt": "2026-09-29T21:00:03.000Z"
+    "title": "Alliance for America's Skilled Trades Expands with New Companies, Unveils New Research - The State of America’s Skilled Trades: A National Report",
+    "publisher": "Business Wire",
+    "publishedAt": "2026-09-30T10:00:00.000Z"
   },
-  "generatedAt": "2026-09-30T06:43:27.322Z"
+  "generatedAt": "2026-09-30T13:43:30.691Z"
 }
