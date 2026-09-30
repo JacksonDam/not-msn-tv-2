@@ -5,12 +5,12 @@
     "displaySymbol": "$DOW"
   },
   "name": "DOW INC.",
-  "price": 27.54,
-  "previousClose": 27.6,
-  "dayHigh": 27.6,
+  "price": 27.595,
+  "previousClose": 27.61,
+  "dayHigh": 27.845,
   "dayLow": 27.39,
-  "change": -0.060000000000002274,
-  "changePercent": -0.21739130434783432,
+  "change": -0.015000000000000568,
+  "changePercent": -0.05432814197754642,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -25,17 +25,285 @@
     },
     {
       "timestamp": 1790775600,
-      "close": 27.575000762939453
+      "close": 27.649999618530273
     },
     {
-      "timestamp": 1790775786,
-      "close": 27.540000915527344
+      "timestamp": 1790775900,
+      "close": 27.649999618530273
+    },
+    {
+      "timestamp": 1790776200,
+      "close": 27.56999969482422
+    },
+    {
+      "timestamp": 1790776500,
+      "close": 27.510000228881836
+    },
+    {
+      "timestamp": 1790776800,
+      "close": 27.7450008392334
+    },
+    {
+      "timestamp": 1790777100,
+      "close": 27.71500015258789
+    },
+    {
+      "timestamp": 1790777400,
+      "close": 27.815000534057617
+    },
+    {
+      "timestamp": 1790777700,
+      "close": 27.80500030517578
+    },
+    {
+      "timestamp": 1790778000,
+      "close": 27.774999618530273
+    },
+    {
+      "timestamp": 1790778300,
+      "close": 27.731000900268555
+    },
+    {
+      "timestamp": 1790778600,
+      "close": 27.7450008392334
+    },
+    {
+      "timestamp": 1790778900,
+      "close": 27.735000610351562
+    },
+    {
+      "timestamp": 1790779200,
+      "close": 27.6200008392334
+    },
+    {
+      "timestamp": 1790779500,
+      "close": 27.739999771118164
+    },
+    {
+      "timestamp": 1790779800,
+      "close": 27.75
+    },
+    {
+      "timestamp": 1790780100,
+      "close": 27.71500015258789
+    },
+    {
+      "timestamp": 1790780400,
+      "close": 27.7549991607666
+    },
+    {
+      "timestamp": 1790780700,
+      "close": 27.739999771118164
+    },
+    {
+      "timestamp": 1790781000,
+      "close": 27.674999237060547
+    },
+    {
+      "timestamp": 1790781300,
+      "close": 27.721200942993164
+    },
+    {
+      "timestamp": 1790781600,
+      "close": 27.665000915527344
+    },
+    {
+      "timestamp": 1790781900,
+      "close": 27.684999465942383
+    },
+    {
+      "timestamp": 1790782200,
+      "close": 27.709999084472656
+    },
+    {
+      "timestamp": 1790782500,
+      "close": 27.655000686645508
+    },
+    {
+      "timestamp": 1790782800,
+      "close": 27.65999984741211
+    },
+    {
+      "timestamp": 1790783100,
+      "close": 27.69499969482422
+    },
+    {
+      "timestamp": 1790783400,
+      "close": 27.684999465942383
+    },
+    {
+      "timestamp": 1790783700,
+      "close": 27.684999465942383
+    },
+    {
+      "timestamp": 1790784000,
+      "close": 27.639999389648438
+    },
+    {
+      "timestamp": 1790784300,
+      "close": 27.635000228881836
+    },
+    {
+      "timestamp": 1790784600,
+      "close": 27.684999465942383
+    },
+    {
+      "timestamp": 1790784900,
+      "close": 27.65999984741211
+    },
+    {
+      "timestamp": 1790785200,
+      "close": 27.600000381469727
+    },
+    {
+      "timestamp": 1790785500,
+      "close": 27.620100021362305
+    },
+    {
+      "timestamp": 1790785800,
+      "close": 27.645000457763672
+    },
+    {
+      "timestamp": 1790786100,
+      "close": 27.690000534057617
+    },
+    {
+      "timestamp": 1790786400,
+      "close": 27.71500015258789
+    },
+    {
+      "timestamp": 1790786700,
+      "close": 27.658899307250977
+    },
+    {
+      "timestamp": 1790787000,
+      "close": 27.65999984741211
+    },
+    {
+      "timestamp": 1790787300,
+      "close": 27.665000915527344
+    },
+    {
+      "timestamp": 1790787600,
+      "close": 27.665000915527344
+    },
+    {
+      "timestamp": 1790787900,
+      "close": 27.655000686645508
+    },
+    {
+      "timestamp": 1790788200,
+      "close": 27.594999313354492
+    },
+    {
+      "timestamp": 1790788500,
+      "close": 27.579999923706055
+    },
+    {
+      "timestamp": 1790788800,
+      "close": 27.6200008392334
+    },
+    {
+      "timestamp": 1790789100,
+      "close": 27.635000228881836
+    },
+    {
+      "timestamp": 1790789400,
+      "close": 27.674999237060547
+    },
+    {
+      "timestamp": 1790789700,
+      "close": 27.655000686645508
+    },
+    {
+      "timestamp": 1790790000,
+      "close": 27.670000076293945
+    },
+    {
+      "timestamp": 1790790300,
+      "close": 27.655000686645508
+    },
+    {
+      "timestamp": 1790790600,
+      "close": 27.649999618530273
+    },
+    {
+      "timestamp": 1790790900,
+      "close": 27.625
+    },
+    {
+      "timestamp": 1790791200,
+      "close": 27.604999542236328
+    },
+    {
+      "timestamp": 1790791500,
+      "close": 27.55500030517578
+    },
+    {
+      "timestamp": 1790791800,
+      "close": 27.545000076293945
+    },
+    {
+      "timestamp": 1790792100,
+      "close": 27.584999084472656
+    },
+    {
+      "timestamp": 1790792400,
+      "close": 27.549999237060547
+    },
+    {
+      "timestamp": 1790792700,
+      "close": 27.55500030517578
+    },
+    {
+      "timestamp": 1790793000,
+      "close": 27.584999084472656
+    },
+    {
+      "timestamp": 1790793300,
+      "close": 27.614999771118164
+    },
+    {
+      "timestamp": 1790793600,
+      "close": 27.59000015258789
+    },
+    {
+      "timestamp": 1790793900,
+      "close": 27.59000015258789
+    },
+    {
+      "timestamp": 1790794200,
+      "close": 27.604999542236328
+    },
+    {
+      "timestamp": 1790794500,
+      "close": 27.594999313354492
+    },
+    {
+      "timestamp": 1790794800,
+      "close": 27.545000076293945
+    },
+    {
+      "timestamp": 1790795100,
+      "close": 27.53499984741211
+    },
+    {
+      "timestamp": 1790795400,
+      "close": 27.565000534057617
+    },
+    {
+      "timestamp": 1790795700,
+      "close": 27.584999084472656
+    },
+    {
+      "timestamp": 1790795968,
+      "close": 27.594999313354492
     }
   ],
   "news": {
-    "title": "Here Are Wednesday’s Top Wall Street Analyst Research Calls: Ally Financial, BankUnited, Ciena Corporation, CoreWeave, Dow, FormFactor, Lumentum Holdings, Moderna, Target, and More",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-09-30T12:02:52.000Z"
+    "title": "Citi cautious on Dow and LyondellBasell: demand weakness caps polyethylene upside",
+    "publisher": "Investing.com",
+    "publishedAt": "2026-09-30T14:54:35.000Z"
   },
-  "generatedAt": "2026-09-30T13:43:10.250Z"
+  "generatedAt": "2026-09-30T19:19:43.333Z"
 }

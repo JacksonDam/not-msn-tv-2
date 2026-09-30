@@ -5,12 +5,12 @@
     "displaySymbol": "$COST"
   },
   "name": "COSTCO WHOLESALE CORPORATION",
-  "price": 921.62,
+  "price": 915.135,
   "previousClose": 924.59,
   "dayHigh": 925.56,
-  "dayLow": 919.46,
-  "change": -2.9700000000000273,
-  "changePercent": -0.3212234612098365,
+  "dayLow": 913,
+  "change": -9.455000000000041,
+  "changePercent": -1.0226154295417473,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -25,17 +25,285 @@
     },
     {
       "timestamp": 1790775600,
-      "close": 921.2249755859375
+      "close": 922.375
     },
     {
-      "timestamp": 1790775770,
+      "timestamp": 1790775900,
+      "close": 921.5850219726562
+    },
+    {
+      "timestamp": 1790776200,
+      "close": 920.5549926757812
+    },
+    {
+      "timestamp": 1790776500,
+      "close": 921.6749877929688
+    },
+    {
+      "timestamp": 1790776800,
       "close": 921.6199951171875
+    },
+    {
+      "timestamp": 1790777100,
+      "close": 921.1300048828125
+    },
+    {
+      "timestamp": 1790777400,
+      "close": 920.9000244140625
+    },
+    {
+      "timestamp": 1790777700,
+      "close": 919.8300170898438
+    },
+    {
+      "timestamp": 1790778000,
+      "close": 920.0850219726562
+    },
+    {
+      "timestamp": 1790778300,
+      "close": 919.6300048828125
+    },
+    {
+      "timestamp": 1790778600,
+      "close": 920.2349853515625
+    },
+    {
+      "timestamp": 1790778900,
+      "close": 919.2100219726562
+    },
+    {
+      "timestamp": 1790779200,
+      "close": 919
+    },
+    {
+      "timestamp": 1790779500,
+      "close": 920.469970703125
+    },
+    {
+      "timestamp": 1790779800,
+      "close": 919.8599853515625
+    },
+    {
+      "timestamp": 1790780100,
+      "close": 918.8800048828125
+    },
+    {
+      "timestamp": 1790780400,
+      "close": 917.9349975585938
+    },
+    {
+      "timestamp": 1790780700,
+      "close": 916.510009765625
+    },
+    {
+      "timestamp": 1790781000,
+      "close": 916.1060180664062
+    },
+    {
+      "timestamp": 1790781300,
+      "close": 916.7100219726562
+    },
+    {
+      "timestamp": 1790781600,
+      "close": 916.6300048828125
+    },
+    {
+      "timestamp": 1790781900,
+      "close": 915.5599975585938
+    },
+    {
+      "timestamp": 1790782200,
+      "close": 917.1199951171875
+    },
+    {
+      "timestamp": 1790782500,
+      "close": 917.8200073242188
+    },
+    {
+      "timestamp": 1790782800,
+      "close": 917.3800048828125
+    },
+    {
+      "timestamp": 1790783100,
+      "close": 918.4550170898438
+    },
+    {
+      "timestamp": 1790783400,
+      "close": 918.7849731445312
+    },
+    {
+      "timestamp": 1790783700,
+      "close": 919.0050048828125
+    },
+    {
+      "timestamp": 1790784000,
+      "close": 919.8975219726562
+    },
+    {
+      "timestamp": 1790784300,
+      "close": 920.5
+    },
+    {
+      "timestamp": 1790784600,
+      "close": 920.2100219726562
+    },
+    {
+      "timestamp": 1790784900,
+      "close": 919.510009765625
+    },
+    {
+      "timestamp": 1790785200,
+      "close": 918.9000244140625
+    },
+    {
+      "timestamp": 1790785500,
+      "close": 918.755615234375
+    },
+    {
+      "timestamp": 1790785800,
+      "close": 919.510009765625
+    },
+    {
+      "timestamp": 1790786100,
+      "close": 918.7999877929688
+    },
+    {
+      "timestamp": 1790786400,
+      "close": 919.5800170898438
+    },
+    {
+      "timestamp": 1790786700,
+      "close": 919.625
+    },
+    {
+      "timestamp": 1790787000,
+      "close": 919.9130859375
+    },
+    {
+      "timestamp": 1790787300,
+      "close": 919.52001953125
+    },
+    {
+      "timestamp": 1790787600,
+      "close": 920.0900268554688
+    },
+    {
+      "timestamp": 1790787900,
+      "close": 919.8499755859375
+    },
+    {
+      "timestamp": 1790788200,
+      "close": 919.2000732421875
+    },
+    {
+      "timestamp": 1790788500,
+      "close": 918.5399780273438
+    },
+    {
+      "timestamp": 1790788800,
+      "close": 918.4000244140625
+    },
+    {
+      "timestamp": 1790789100,
+      "close": 918.8200073242188
+    },
+    {
+      "timestamp": 1790789400,
+      "close": 918.969970703125
+    },
+    {
+      "timestamp": 1790789700,
+      "close": 919.37939453125
+    },
+    {
+      "timestamp": 1790790000,
+      "close": 918.989990234375
+    },
+    {
+      "timestamp": 1790790300,
+      "close": 918.967529296875
+    },
+    {
+      "timestamp": 1790790600,
+      "close": 918.9099731445312
+    },
+    {
+      "timestamp": 1790790900,
+      "close": 919.0349731445312
+    },
+    {
+      "timestamp": 1790791200,
+      "close": 917.8499755859375
+    },
+    {
+      "timestamp": 1790791500,
+      "close": 917.47998046875
+    },
+    {
+      "timestamp": 1790791800,
+      "close": 916.8699951171875
+    },
+    {
+      "timestamp": 1790792100,
+      "close": 915.7000122070312
+    },
+    {
+      "timestamp": 1790792400,
+      "close": 914.3200073242188
+    },
+    {
+      "timestamp": 1790792700,
+      "close": 914.6950073242188
+    },
+    {
+      "timestamp": 1790793000,
+      "close": 914.343994140625
+    },
+    {
+      "timestamp": 1790793300,
+      "close": 913.719970703125
+    },
+    {
+      "timestamp": 1790793600,
+      "close": 913.090087890625
+    },
+    {
+      "timestamp": 1790793900,
+      "close": 914.110107421875
+    },
+    {
+      "timestamp": 1790794200,
+      "close": 913.77001953125
+    },
+    {
+      "timestamp": 1790794500,
+      "close": 913.0999755859375
+    },
+    {
+      "timestamp": 1790794800,
+      "close": 913.3499755859375
+    },
+    {
+      "timestamp": 1790795100,
+      "close": 913.6099853515625
+    },
+    {
+      "timestamp": 1790795400,
+      "close": 914.4749755859375
+    },
+    {
+      "timestamp": 1790795700,
+      "close": 915.0999755859375
+    },
+    {
+      "timestamp": 1790795962,
+      "close": 915.135009765625
     }
   ],
   "news": {
-    "title": "Costco Has One of Retail’s Strongest Businesses. Here’s What That Could Mean for the Stock",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-09-30T13:00:52.000Z"
+    "title": "What Should Costco Stock Holders Take From Its Fiscal Fourth Quarter?",
+    "publisher": "Trefis",
+    "publishedAt": "2026-09-30T15:55:41.000Z"
   },
-  "generatedAt": "2026-09-30T13:43:01.502Z"
+  "generatedAt": "2026-09-30T19:19:35.142Z"
 }

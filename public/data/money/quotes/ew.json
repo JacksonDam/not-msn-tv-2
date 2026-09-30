@@ -5,19 +5,19 @@
     "displaySymbol": "$EW"
   },
   "name": "EDWARDS LIFESCIENCES CORPORATION",
-  "price": 86.29,
-  "previousClose": 88.11,
+  "price": 86.31,
+  "previousClose": 88.08,
   "dayHigh": 87.49,
-  "dayLow": 86.25,
-  "change": -1.8199999999999932,
-  "changePercent": -2.065599818408799,
+  "dayLow": 85.72,
+  "change": -1.769999999999996,
+  "changePercent": -2.0095367847411403,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1790775000,
-      "close": 86.5999984741211
+      "close": 86.55500030517578
     },
     {
       "timestamp": 1790775300,
@@ -25,17 +25,285 @@
     },
     {
       "timestamp": 1790775600,
-      "close": 86.31999969482422
+      "close": 86.32499694824219
     },
     {
-      "timestamp": 1790775784,
-      "close": 86.29000091552734
+      "timestamp": 1790775900,
+      "close": 86.31500244140625
+    },
+    {
+      "timestamp": 1790776200,
+      "close": 86.13999938964844
+    },
+    {
+      "timestamp": 1790776500,
+      "close": 85.7699966430664
+    },
+    {
+      "timestamp": 1790776800,
+      "close": 86.1050033569336
+    },
+    {
+      "timestamp": 1790777100,
+      "close": 86.2300033569336
+    },
+    {
+      "timestamp": 1790777400,
+      "close": 86.51000213623047
+    },
+    {
+      "timestamp": 1790777700,
+      "close": 86.4749984741211
+    },
+    {
+      "timestamp": 1790778000,
+      "close": 86.61000061035156
+    },
+    {
+      "timestamp": 1790778300,
+      "close": 86.51000213623047
+    },
+    {
+      "timestamp": 1790778600,
+      "close": 86.70999908447266
+    },
+    {
+      "timestamp": 1790778900,
+      "close": 86.72000122070312
+    },
+    {
+      "timestamp": 1790779200,
+      "close": 86.88999938964844
+    },
+    {
+      "timestamp": 1790779500,
+      "close": 87.16000366210938
+    },
+    {
+      "timestamp": 1790779800,
+      "close": 87.17500305175781
+    },
+    {
+      "timestamp": 1790780100,
+      "close": 86.93499755859375
+    },
+    {
+      "timestamp": 1790780400,
+      "close": 86.875
+    },
+    {
+      "timestamp": 1790780700,
+      "close": 86.95999908447266
+    },
+    {
+      "timestamp": 1790781000,
+      "close": 86.97000122070312
+    },
+    {
+      "timestamp": 1790781300,
+      "close": 86.97000122070312
+    },
+    {
+      "timestamp": 1790781600,
+      "close": 87.1449966430664
+    },
+    {
+      "timestamp": 1790781900,
+      "close": 87.11000061035156
+    },
+    {
+      "timestamp": 1790782200,
+      "close": 86.91000366210938
+    },
+    {
+      "timestamp": 1790782500,
+      "close": 86.875
+    },
+    {
+      "timestamp": 1790782800,
+      "close": 86.9000015258789
+    },
+    {
+      "timestamp": 1790783100,
+      "close": 86.93000030517578
+    },
+    {
+      "timestamp": 1790783400,
+      "close": 86.91999816894531
+    },
+    {
+      "timestamp": 1790783700,
+      "close": 86.95500183105469
+    },
+    {
+      "timestamp": 1790784000,
+      "close": 87
+    },
+    {
+      "timestamp": 1790784300,
+      "close": 86.95999908447266
+    },
+    {
+      "timestamp": 1790784600,
+      "close": 86.97000122070312
+    },
+    {
+      "timestamp": 1790784900,
+      "close": 86.81999969482422
+    },
+    {
+      "timestamp": 1790785200,
+      "close": 86.75
+    },
+    {
+      "timestamp": 1790785500,
+      "close": 86.8499984741211
+    },
+    {
+      "timestamp": 1790785800,
+      "close": 86.84500122070312
+    },
+    {
+      "timestamp": 1790786100,
+      "close": 86.92500305175781
+    },
+    {
+      "timestamp": 1790786400,
+      "close": 86.91999816894531
+    },
+    {
+      "timestamp": 1790786700,
+      "close": 86.63999938964844
+    },
+    {
+      "timestamp": 1790787000,
+      "close": 86.66000366210938
+    },
+    {
+      "timestamp": 1790787300,
+      "close": 86.53500366210938
+    },
+    {
+      "timestamp": 1790787600,
+      "close": 86.4800033569336
+    },
+    {
+      "timestamp": 1790787900,
+      "close": 86.54000091552734
+    },
+    {
+      "timestamp": 1790788200,
+      "close": 86.45999908447266
+    },
+    {
+      "timestamp": 1790788500,
+      "close": 86.38999938964844
+    },
+    {
+      "timestamp": 1790788800,
+      "close": 86.38999938964844
+    },
+    {
+      "timestamp": 1790789100,
+      "close": 86.32499694824219
+    },
+    {
+      "timestamp": 1790789400,
+      "close": 86.30999755859375
+    },
+    {
+      "timestamp": 1790789700,
+      "close": 86.41999816894531
+    },
+    {
+      "timestamp": 1790790000,
+      "close": 86.38999938964844
+    },
+    {
+      "timestamp": 1790790300,
+      "close": 86.42500305175781
+    },
+    {
+      "timestamp": 1790790600,
+      "close": 86.4000015258789
+    },
+    {
+      "timestamp": 1790790900,
+      "close": 86.3949966430664
+    },
+    {
+      "timestamp": 1790791200,
+      "close": 86.3550033569336
+    },
+    {
+      "timestamp": 1790791500,
+      "close": 86.33999633789062
+    },
+    {
+      "timestamp": 1790791800,
+      "close": 86.33999633789062
+    },
+    {
+      "timestamp": 1790792100,
+      "close": 86.37999725341797
+    },
+    {
+      "timestamp": 1790792400,
+      "close": 86.30999755859375
+    },
+    {
+      "timestamp": 1790792700,
+      "close": 86.18060302734375
+    },
+    {
+      "timestamp": 1790793000,
+      "close": 86.07499694824219
+    },
+    {
+      "timestamp": 1790793300,
+      "close": 86.02999877929688
+    },
+    {
+      "timestamp": 1790793600,
+      "close": 86.0999984741211
+    },
+    {
+      "timestamp": 1790793900,
+      "close": 86.1449966430664
+    },
+    {
+      "timestamp": 1790794200,
+      "close": 86.08999633789062
+    },
+    {
+      "timestamp": 1790794500,
+      "close": 86.26000213623047
+    },
+    {
+      "timestamp": 1790794800,
+      "close": 86.15499877929688
+    },
+    {
+      "timestamp": 1790795100,
+      "close": 86.20500183105469
+    },
+    {
+      "timestamp": 1790795400,
+      "close": 86.26499938964844
+    },
+    {
+      "timestamp": 1790795700,
+      "close": 86.3499984741211
+    },
+    {
+      "timestamp": 1790795979,
+      "close": 86.30999755859375
     }
   ],
   "news": {
-    "title": "How Investors May Respond To Edwards Lifesciences (EW) Expanded TAVR Access And Transcatheter Valve Ambitions",
-    "publisher": "Simply Wall St.",
-    "publishedAt": "2026-09-18T22:15:13.000Z"
+    "title": "Edwards Lifesciences' TAVR Evaluation in Moderate Aortic Stenosis Among Most Awaited Clinical Trial Readouts, Oppenheimer Says",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-09-30T15:46:06.000Z"
   },
-  "generatedAt": "2026-09-30T13:43:16.601Z"
+  "generatedAt": "2026-09-30T19:19:50.533Z"
 }

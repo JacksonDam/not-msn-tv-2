@@ -5,12 +5,12 @@
     "displaySymbol": "$INDU"
   },
   "name": "DOW JONES INDUSTRIAL AVERAGE",
-  "price": 51408.85,
+  "price": 51140.16,
   "previousClose": 51349.92,
   "dayHigh": 51473.93,
-  "dayLow": 51361.43,
-  "change": 58.93000000000029,
-  "changePercent": 0.11476161988178421,
+  "dayLow": 51105.8,
+  "change": -209.75999999999476,
+  "changePercent": -0.40849138615989034,
   "currency": "USD",
   "exchangeName": "DJI",
   "marketState": "",
@@ -25,17 +25,285 @@
     },
     {
       "timestamp": 1790775600,
-      "close": 51418.140625
+      "close": 51348.44921875
     },
     {
-      "timestamp": 1790775753,
-      "close": 51408.8515625
+      "timestamp": 1790775900,
+      "close": 51393.4609375
+    },
+    {
+      "timestamp": 1790776200,
+      "close": 51394.9296875
+    },
+    {
+      "timestamp": 1790776500,
+      "close": 51380.23828125
+    },
+    {
+      "timestamp": 1790776800,
+      "close": 51398.12109375
+    },
+    {
+      "timestamp": 1790777100,
+      "close": 51406.9609375
+    },
+    {
+      "timestamp": 1790777400,
+      "close": 51423.6484375
+    },
+    {
+      "timestamp": 1790777700,
+      "close": 51426.3515625
+    },
+    {
+      "timestamp": 1790778000,
+      "close": 51416.2109375
+    },
+    {
+      "timestamp": 1790778300,
+      "close": 51340.28125
+    },
+    {
+      "timestamp": 1790778600,
+      "close": 51339.8515625
+    },
+    {
+      "timestamp": 1790778900,
+      "close": 51343.05859375
+    },
+    {
+      "timestamp": 1790779200,
+      "close": 51356.30078125
+    },
+    {
+      "timestamp": 1790779500,
+      "close": 51394.05078125
+    },
+    {
+      "timestamp": 1790779800,
+      "close": 51440.6015625
+    },
+    {
+      "timestamp": 1790780100,
+      "close": 51398.46875
+    },
+    {
+      "timestamp": 1790780400,
+      "close": 51413.76953125
+    },
+    {
+      "timestamp": 1790780700,
+      "close": 51399.66015625
+    },
+    {
+      "timestamp": 1790781000,
+      "close": 51381.91015625
+    },
+    {
+      "timestamp": 1790781300,
+      "close": 51399.28125
+    },
+    {
+      "timestamp": 1790781600,
+      "close": 51361.48046875
+    },
+    {
+      "timestamp": 1790781900,
+      "close": 51389.1484375
+    },
+    {
+      "timestamp": 1790782200,
+      "close": 51370.25
+    },
+    {
+      "timestamp": 1790782500,
+      "close": 51356.33984375
+    },
+    {
+      "timestamp": 1790782800,
+      "close": 51299.33984375
+    },
+    {
+      "timestamp": 1790783100,
+      "close": 51351.73046875
+    },
+    {
+      "timestamp": 1790783400,
+      "close": 51314.55859375
+    },
+    {
+      "timestamp": 1790783700,
+      "close": 51328.98046875
+    },
+    {
+      "timestamp": 1790784000,
+      "close": 51351.1484375
+    },
+    {
+      "timestamp": 1790784300,
+      "close": 51341.1796875
+    },
+    {
+      "timestamp": 1790784600,
+      "close": 51343.078125
+    },
+    {
+      "timestamp": 1790784900,
+      "close": 51328.21875
+    },
+    {
+      "timestamp": 1790785200,
+      "close": 51312.390625
+    },
+    {
+      "timestamp": 1790785500,
+      "close": 51297.9296875
+    },
+    {
+      "timestamp": 1790785800,
+      "close": 51310.48046875
+    },
+    {
+      "timestamp": 1790786100,
+      "close": 51298.80078125
+    },
+    {
+      "timestamp": 1790786400,
+      "close": 51327.51171875
+    },
+    {
+      "timestamp": 1790786700,
+      "close": 51285.94921875
+    },
+    {
+      "timestamp": 1790787000,
+      "close": 51294.94921875
+    },
+    {
+      "timestamp": 1790787300,
+      "close": 51311.44140625
+    },
+    {
+      "timestamp": 1790787600,
+      "close": 51306.359375
+    },
+    {
+      "timestamp": 1790787900,
+      "close": 51299.62109375
+    },
+    {
+      "timestamp": 1790788200,
+      "close": 51263.21875
+    },
+    {
+      "timestamp": 1790788500,
+      "close": 51210.921875
+    },
+    {
+      "timestamp": 1790788800,
+      "close": 51212.859375
+    },
+    {
+      "timestamp": 1790789100,
+      "close": 51211.75
+    },
+    {
+      "timestamp": 1790789400,
+      "close": 51238.83984375
+    },
+    {
+      "timestamp": 1790789700,
+      "close": 51262.51171875
+    },
+    {
+      "timestamp": 1790790000,
+      "close": 51278.16015625
+    },
+    {
+      "timestamp": 1790790300,
+      "close": 51270.5703125
+    },
+    {
+      "timestamp": 1790790600,
+      "close": 51265.33984375
+    },
+    {
+      "timestamp": 1790790900,
+      "close": 51262.578125
+    },
+    {
+      "timestamp": 1790791200,
+      "close": 51231.87890625
+    },
+    {
+      "timestamp": 1790791500,
+      "close": 51216.8984375
+    },
+    {
+      "timestamp": 1790791800,
+      "close": 51214.2109375
+    },
+    {
+      "timestamp": 1790792100,
+      "close": 51185.1015625
+    },
+    {
+      "timestamp": 1790792400,
+      "close": 51155.76171875
+    },
+    {
+      "timestamp": 1790792700,
+      "close": 51160.37890625
+    },
+    {
+      "timestamp": 1790793000,
+      "close": 51135.96875
+    },
+    {
+      "timestamp": 1790793300,
+      "close": 51168.78125
+    },
+    {
+      "timestamp": 1790793600,
+      "close": 51168.58984375
+    },
+    {
+      "timestamp": 1790793900,
+      "close": 51128.4296875
+    },
+    {
+      "timestamp": 1790794200,
+      "close": 51118.23828125
+    },
+    {
+      "timestamp": 1790794500,
+      "close": 51132.94140625
+    },
+    {
+      "timestamp": 1790794800,
+      "close": 51128.9296875
+    },
+    {
+      "timestamp": 1790795100,
+      "close": 51122.48046875
+    },
+    {
+      "timestamp": 1790795400,
+      "close": 51143.83984375
+    },
+    {
+      "timestamp": 1790795700,
+      "close": 51136.26171875
+    },
+    {
+      "timestamp": 1790795949,
+      "close": 51140.16015625
     }
   ],
   "news": {
-    "title": "Stock market today: Dow, S&P 500, Nasdaq bounce as PCE inflation data comes in cool",
-    "publisher": "Yahoo Finance",
-    "publishedAt": "2026-09-30T13:36:29.000Z"
+    "title": "Stock Market Today: Nasdaq Up, Dow Struggles; Palo Alto Networks Breaks Out (Live Coverage)",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-09-30T18:28:12.000Z"
   },
-  "generatedAt": "2026-09-30T13:42:34.082Z"
+  "generatedAt": "2026-09-30T19:19:10.929Z"
 }
