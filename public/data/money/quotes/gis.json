@@ -5,12 +5,12 @@
     "displaySymbol": "$GIS"
   },
   "name": "GENERAL MILLS, INC.",
-  "price": 32.535,
+  "price": 32.16,
   "previousClose": 33.82,
   "dayHigh": 33.89,
-  "dayLow": 32.44,
-  "change": -1.2850000000000037,
-  "changePercent": -3.7995269071555398,
+  "dayLow": 32,
+  "change": -1.6600000000000037,
+  "changePercent": -4.908338261383808,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,17 +293,49 @@
     },
     {
       "timestamp": 1790795700,
-      "close": 32.52000045776367
+      "close": 32.540000915527344
     },
     {
-      "timestamp": 1790795992,
+      "timestamp": 1790796000,
+      "close": 32.505001068115234
+    },
+    {
+      "timestamp": 1790796300,
       "close": 32.53499984741211
+    },
+    {
+      "timestamp": 1790796600,
+      "close": 32.345001220703125
+    },
+    {
+      "timestamp": 1790796900,
+      "close": 32.21500015258789
+    },
+    {
+      "timestamp": 1790797200,
+      "close": 32.14500045776367
+    },
+    {
+      "timestamp": 1790797500,
+      "close": 32.04990005493164
+    },
+    {
+      "timestamp": 1790797800,
+      "close": 32.03499984741211
+    },
+    {
+      "timestamp": 1790798100,
+      "close": 32.16999816894531
+    },
+    {
+      "timestamp": 1790798400,
+      "close": 32.15999984741211
     }
   ],
   "news": {
-    "title": "Sector Update: Consumer Stocks Mixed in Afternoon Trading",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-09-30T17:46:48.000Z"
+    "title": "General Mills Taps COO to Helm Its Turnaround",
+    "publisher": "The Wall Street Journal",
+    "publishedAt": "2026-09-30T19:20:00.000Z"
   },
-  "generatedAt": "2026-09-30T19:19:58.122Z"
+  "generatedAt": "2026-09-30T23:49:04.666Z"
 }

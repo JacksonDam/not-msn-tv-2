@@ -5,12 +5,12 @@
     "displaySymbol": "$NWSA"
   },
   "name": "NEWS CORPORATION",
-  "price": 28.91,
+  "price": 28.65,
   "previousClose": 28.52,
   "dayHigh": 28.96,
   "dayLow": 28.495,
-  "change": 0.39000000000000057,
-  "changePercent": 1.367461430575037,
+  "change": 0.129999999999999,
+  "changePercent": 0.45582047685834154,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -296,8 +296,40 @@
       "close": 28.915000915527344
     },
     {
-      "timestamp": 1790796021,
+      "timestamp": 1790796000,
+      "close": 28.885000228881836
+    },
+    {
+      "timestamp": 1790796300,
+      "close": 28.93000030517578
+    },
+    {
+      "timestamp": 1790796600,
+      "close": 28.920000076293945
+    },
+    {
+      "timestamp": 1790796900,
+      "close": 28.905000686645508
+    },
+    {
+      "timestamp": 1790797200,
       "close": 28.90999984741211
+    },
+    {
+      "timestamp": 1790797500,
+      "close": 28.825000762939453
+    },
+    {
+      "timestamp": 1790797800,
+      "close": 28.719999313354492
+    },
+    {
+      "timestamp": 1790798100,
+      "close": 28.649999618530273
+    },
+    {
+      "timestamp": 1790798400,
+      "close": 28.649999618530273
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-09-30T11:54:14.000Z"
   },
-  "generatedAt": "2026-09-30T19:20:32.140Z"
+  "generatedAt": "2026-09-30T23:49:34.499Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$CMG"
   },
   "name": "CHIPOTLE MEXICAN GRILL, INC.",
-  "price": 31.885,
+  "price": 31.95,
   "previousClose": 31.88,
   "dayHigh": 32.115,
   "dayLow": 31.54,
-  "change": 0.005000000000002558,
-  "changePercent": 0.01568381430364667,
+  "change": 0.07000000000000028,
+  "changePercent": 0.21957340025094194,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -281,7 +281,7 @@
     },
     {
       "timestamp": 1790794800,
-      "close": 31.88599967956543
+      "close": 31.885000228881836
     },
     {
       "timestamp": 1790795100,
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1790795700,
+      "close": 31.895000457763672
+    },
+    {
+      "timestamp": 1790796000,
+      "close": 31.825000762939453
+    },
+    {
+      "timestamp": 1790796300,
+      "close": 31.84000015258789
+    },
+    {
+      "timestamp": 1790796600,
       "close": 31.905000686645508
     },
     {
-      "timestamp": 1790795964,
-      "close": 31.885000228881836
+      "timestamp": 1790796900,
+      "close": 31.905000686645508
+    },
+    {
+      "timestamp": 1790797200,
+      "close": 31.954999923706055
+    },
+    {
+      "timestamp": 1790797500,
+      "close": 31.975000381469727
+    },
+    {
+      "timestamp": 1790797800,
+      "close": 31.96500015258789
+    },
+    {
+      "timestamp": 1790798100,
+      "close": 31.94499969482422
+    },
+    {
+      "timestamp": 1790798400,
+      "close": 31.950000762939453
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Axios",
     "publishedAt": "2026-09-30T16:00:07.000Z"
   },
-  "generatedAt": "2026-09-30T19:19:32.635Z"
+  "generatedAt": "2026-09-30T23:48:41.323Z"
 }
