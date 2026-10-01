@@ -5,12 +5,12 @@
     "displaySymbol": "$REG"
   },
   "name": "REGENCY CENTERS CORPORATION",
-  "price": 71.71,
+  "price": 71.8,
   "previousClose": 71.88,
-  "dayHigh": 71.86,
+  "dayHigh": 71.96,
   "dayLow": 70.93,
-  "change": -0.1700000000000017,
-  "changePercent": -0.23650528658876147,
+  "change": -0.0799999999999983,
+  "changePercent": -0.1112966054535313,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -273,13 +273,69 @@
     },
     {
       "timestamp": 1790880600,
+      "close": 71.69499969482422
+    },
+    {
+      "timestamp": 1790880900,
+      "close": 71.69000244140625
+    },
+    {
+      "timestamp": 1790881200,
+      "close": 71.72000122070312
+    },
+    {
+      "timestamp": 1790881500,
       "close": 71.70999908447266
     },
     {
-      "timestamp": 1790880881,
-      "close": 71.70999908447266
+      "timestamp": 1790881800,
+      "close": 71.73999786376953
+    },
+    {
+      "timestamp": 1790882100,
+      "close": 71.75
+    },
+    {
+      "timestamp": 1790882400,
+      "close": 71.76000213623047
+    },
+    {
+      "timestamp": 1790882700,
+      "close": 71.8499984741211
+    },
+    {
+      "timestamp": 1790883000,
+      "close": 71.76000213623047
+    },
+    {
+      "timestamp": 1790883300,
+      "close": 71.75499725341797
+    },
+    {
+      "timestamp": 1790883600,
+      "close": 71.87999725341797
+    },
+    {
+      "timestamp": 1790883900,
+      "close": 71.77999877929688
+    },
+    {
+      "timestamp": 1790884200,
+      "close": 71.88999938964844
+    },
+    {
+      "timestamp": 1790884500,
+      "close": 71.81999969482422
+    },
+    {
+      "timestamp": 1790884800,
+      "close": 71.80000305175781
     }
   ],
-  "news": null,
-  "generatedAt": "2026-10-01T18:54:46.196Z"
+  "news": {
+    "title": "Regency Centers Invites You to Join Its Third Quarter 2026 Earnings Conference Call",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-09-30T12:15:00.000Z"
+  },
+  "generatedAt": "2026-10-01T23:13:23.710Z"
 }
