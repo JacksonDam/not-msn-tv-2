@@ -5,12 +5,12 @@
     "displaySymbol": "$CMCSA"
   },
   "name": "COMCAST CORPORATION",
-  "price": 21.412,
+  "price": 21.57,
   "previousClose": 21.57,
   "dayHigh": 21.625,
   "dayLow": 21.311,
-  "change": -0.15800000000000125,
-  "changePercent": -0.7324988409828523,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -253,11 +253,83 @@
     },
     {
       "timestamp": 1791224700,
-      "close": 21.415000915527344
+      "close": 21.475000381469727
     },
     {
-      "timestamp": 1791224842,
-      "close": 21.41200065612793
+      "timestamp": 1791225000,
+      "close": 21.489999771118164
+    },
+    {
+      "timestamp": 1791225300,
+      "close": 21.545000076293945
+    },
+    {
+      "timestamp": 1791225600,
+      "close": 21.53499984741211
+    },
+    {
+      "timestamp": 1791225900,
+      "close": 21.549999237060547
+    },
+    {
+      "timestamp": 1791226200,
+      "close": 21.571800231933594
+    },
+    {
+      "timestamp": 1791226500,
+      "close": 21.584999084472656
+    },
+    {
+      "timestamp": 1791226800,
+      "close": 21.579999923706055
+    },
+    {
+      "timestamp": 1791227100,
+      "close": 21.559999465942383
+    },
+    {
+      "timestamp": 1791227400,
+      "close": 21.579999923706055
+    },
+    {
+      "timestamp": 1791227700,
+      "close": 21.600000381469727
+    },
+    {
+      "timestamp": 1791228000,
+      "close": 21.579999923706055
+    },
+    {
+      "timestamp": 1791228300,
+      "close": 21.575000762939453
+    },
+    {
+      "timestamp": 1791228600,
+      "close": 21.514999389648438
+    },
+    {
+      "timestamp": 1791228900,
+      "close": 21.5
+    },
+    {
+      "timestamp": 1791229200,
+      "close": 21.514999389648438
+    },
+    {
+      "timestamp": 1791229500,
+      "close": 21.479999542236328
+    },
+    {
+      "timestamp": 1791229800,
+      "close": 21.5049991607666
+    },
+    {
+      "timestamp": 1791230100,
+      "close": 21.56999969482422
+    },
+    {
+      "timestamp": 1791230400,
+      "close": 21.56999969482422
     }
   ],
   "news": {
@@ -265,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-10-05T14:00:00.000Z"
   },
-  "generatedAt": "2026-10-05T18:27:26.798Z"
+  "generatedAt": "2026-10-06T00:49:06.498Z"
 }
