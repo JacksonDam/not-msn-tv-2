@@ -5,12 +5,12 @@
     "displaySymbol": "$INDU"
   },
   "name": "DOW JONES INDUSTRIAL AVERAGE",
-  "price": 51576.39,
+  "price": 51521.28,
   "previousClose": 51267.9,
-  "dayHigh": 51653.29,
+  "dayHigh": 51672.25,
   "dayLow": 51422.9,
-  "change": 308.48999999999796,
-  "changePercent": 0.6017215450603554,
+  "change": 253.37999999999738,
+  "changePercent": 0.49422738204607053,
   "currency": "USD",
   "exchangeName": "DJI",
   "marketState": "",
@@ -97,17 +97,245 @@
     },
     {
       "timestamp": 1791299400,
-      "close": 51569.359375
+      "close": 51632.421875
     },
     {
-      "timestamp": 1791299500,
-      "close": 51576.390625
+      "timestamp": 1791299700,
+      "close": 51648.58984375
+    },
+    {
+      "timestamp": 1791300000,
+      "close": 51659.96875
+    },
+    {
+      "timestamp": 1791300300,
+      "close": 51650.4296875
+    },
+    {
+      "timestamp": 1791300600,
+      "close": 51629.76171875
+    },
+    {
+      "timestamp": 1791300900,
+      "close": 51622.73828125
+    },
+    {
+      "timestamp": 1791301200,
+      "close": 51622.19140625
+    },
+    {
+      "timestamp": 1791301500,
+      "close": 51616.05078125
+    },
+    {
+      "timestamp": 1791301800,
+      "close": 51610
+    },
+    {
+      "timestamp": 1791302100,
+      "close": 51612.9296875
+    },
+    {
+      "timestamp": 1791302400,
+      "close": 51627.83984375
+    },
+    {
+      "timestamp": 1791302700,
+      "close": 51607.859375
+    },
+    {
+      "timestamp": 1791303000,
+      "close": 51639.2890625
+    },
+    {
+      "timestamp": 1791303300,
+      "close": 51614.921875
+    },
+    {
+      "timestamp": 1791303600,
+      "close": 51611.08984375
+    },
+    {
+      "timestamp": 1791303900,
+      "close": 51592.16015625
+    },
+    {
+      "timestamp": 1791304200,
+      "close": 51592.51953125
+    },
+    {
+      "timestamp": 1791304500,
+      "close": 51569.69921875
+    },
+    {
+      "timestamp": 1791304800,
+      "close": 51578.69140625
+    },
+    {
+      "timestamp": 1791305100,
+      "close": 51547.6796875
+    },
+    {
+      "timestamp": 1791305400,
+      "close": 51545.76953125
+    },
+    {
+      "timestamp": 1791305700,
+      "close": 51544.390625
+    },
+    {
+      "timestamp": 1791306000,
+      "close": 51541.21875
+    },
+    {
+      "timestamp": 1791306300,
+      "close": 51544.3515625
+    },
+    {
+      "timestamp": 1791306600,
+      "close": 51521.30859375
+    },
+    {
+      "timestamp": 1791306900,
+      "close": 51504.5703125
+    },
+    {
+      "timestamp": 1791307200,
+      "close": 51491.76953125
+    },
+    {
+      "timestamp": 1791307500,
+      "close": 51508.6796875
+    },
+    {
+      "timestamp": 1791307800,
+      "close": 51512.5390625
+    },
+    {
+      "timestamp": 1791308100,
+      "close": 51511.171875
+    },
+    {
+      "timestamp": 1791308400,
+      "close": 51499.8203125
+    },
+    {
+      "timestamp": 1791308700,
+      "close": 51505.640625
+    },
+    {
+      "timestamp": 1791309000,
+      "close": 51495.5703125
+    },
+    {
+      "timestamp": 1791309300,
+      "close": 51507.41015625
+    },
+    {
+      "timestamp": 1791309600,
+      "close": 51526.7109375
+    },
+    {
+      "timestamp": 1791309900,
+      "close": 51530
+    },
+    {
+      "timestamp": 1791310200,
+      "close": 51544.53125
+    },
+    {
+      "timestamp": 1791310500,
+      "close": 51530.2109375
+    },
+    {
+      "timestamp": 1791310800,
+      "close": 51524.03125
+    },
+    {
+      "timestamp": 1791311100,
+      "close": 51512.2109375
+    },
+    {
+      "timestamp": 1791311400,
+      "close": 51542.19140625
+    },
+    {
+      "timestamp": 1791311700,
+      "close": 51527.25
+    },
+    {
+      "timestamp": 1791312000,
+      "close": 51534.28125
+    },
+    {
+      "timestamp": 1791312300,
+      "close": 51541.46875
+    },
+    {
+      "timestamp": 1791312600,
+      "close": 51537.1484375
+    },
+    {
+      "timestamp": 1791312900,
+      "close": 51549.41015625
+    },
+    {
+      "timestamp": 1791313200,
+      "close": 51562.51953125
+    },
+    {
+      "timestamp": 1791313500,
+      "close": 51549.7109375
+    },
+    {
+      "timestamp": 1791313800,
+      "close": 51532.328125
+    },
+    {
+      "timestamp": 1791314100,
+      "close": 51532.71875
+    },
+    {
+      "timestamp": 1791314400,
+      "close": 51537.80078125
+    },
+    {
+      "timestamp": 1791314700,
+      "close": 51520.73828125
+    },
+    {
+      "timestamp": 1791315000,
+      "close": 51529.80078125
+    },
+    {
+      "timestamp": 1791315300,
+      "close": 51541.80078125
+    },
+    {
+      "timestamp": 1791315600,
+      "close": 51537.578125
+    },
+    {
+      "timestamp": 1791315900,
+      "close": 51524.28125
+    },
+    {
+      "timestamp": 1791316200,
+      "close": 51510.109375
+    },
+    {
+      "timestamp": 1791316500,
+      "close": 51525.2890625
+    },
+    {
+      "timestamp": 1791316800,
+      "close": 51521.28125
     }
   ],
   "news": {
-    "title": "Stock market today: S&P 500, Nasdaq touch all-time highs as stocks power higher, bond yields retreat",
+    "title": "Stock market today: S&P 500, Nasdaq hit record highs as Nvidia, AMD lead tech higher",
     "publisher": "Yahoo Finance",
-    "publishedAt": "2026-10-06T15:02:46.000Z"
+    "publishedAt": "2026-10-06T20:01:30.000Z"
   },
-  "generatedAt": "2026-10-06T15:11:41.179Z"
+  "generatedAt": "2026-10-06T20:19:37.641Z"
 }
