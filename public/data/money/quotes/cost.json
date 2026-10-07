@@ -5,12 +5,12 @@
     "displaySymbol": "$COST"
   },
   "name": "COSTCO WHOLESALE CORPORATION",
-  "price": 943.035,
+  "price": 942.25,
   "previousClose": 935.68,
-  "dayHigh": 944.74,
+  "dayHigh": 948.72,
   "dayLow": 937.99,
-  "change": 7.355000000000018,
-  "changePercent": 0.7860593365253098,
+  "change": 6.57000000000005,
+  "changePercent": 0.7021631326949438,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -65,17 +65,277 @@
     },
     {
       "timestamp": 1791383400,
-      "close": 943.280029296875
+      "close": 944.1300048828125
     },
     {
-      "timestamp": 1791383470,
-      "close": 943.0349731445312
+      "timestamp": 1791383700,
+      "close": 943.4650268554688
+    },
+    {
+      "timestamp": 1791384000,
+      "close": 943.1074829101562
+    },
+    {
+      "timestamp": 1791384300,
+      "close": 943.3125
+    },
+    {
+      "timestamp": 1791384600,
+      "close": 945.3599853515625
+    },
+    {
+      "timestamp": 1791384900,
+      "close": 945.010009765625
+    },
+    {
+      "timestamp": 1791385200,
+      "close": 945.72998046875
+    },
+    {
+      "timestamp": 1791385500,
+      "close": 945.1799926757812
+    },
+    {
+      "timestamp": 1791385800,
+      "close": 946.27001953125
+    },
+    {
+      "timestamp": 1791386100,
+      "close": 946.4149780273438
+    },
+    {
+      "timestamp": 1791386400,
+      "close": 946.5599975585938
+    },
+    {
+      "timestamp": 1791386700,
+      "close": 946.8074951171875
+    },
+    {
+      "timestamp": 1791387000,
+      "close": 945.9450073242188
+    },
+    {
+      "timestamp": 1791387300,
+      "close": 946.8900146484375
+    },
+    {
+      "timestamp": 1791387600,
+      "close": 947.1900024414062
+    },
+    {
+      "timestamp": 1791387900,
+      "close": 947.0059814453125
+    },
+    {
+      "timestamp": 1791388200,
+      "close": 947.9199829101562
+    },
+    {
+      "timestamp": 1791388500,
+      "close": 948.2000122070312
+    },
+    {
+      "timestamp": 1791388800,
+      "close": 948.2219848632812
+    },
+    {
+      "timestamp": 1791389100,
+      "close": 947.3900146484375
+    },
+    {
+      "timestamp": 1791389400,
+      "close": 947.8300170898438
+    },
+    {
+      "timestamp": 1791389700,
+      "close": 946.4400024414062
+    },
+    {
+      "timestamp": 1791390000,
+      "close": 946.75
+    },
+    {
+      "timestamp": 1791390300,
+      "close": 947.6500244140625
+    },
+    {
+      "timestamp": 1791390600,
+      "close": 947.5499877929688
+    },
+    {
+      "timestamp": 1791390900,
+      "close": 947.3200073242188
+    },
+    {
+      "timestamp": 1791391200,
+      "close": 947.52001953125
+    },
+    {
+      "timestamp": 1791391500,
+      "close": 945.9656982421875
+    },
+    {
+      "timestamp": 1791391800,
+      "close": 945.72998046875
+    },
+    {
+      "timestamp": 1791392100,
+      "close": 945.760009765625
+    },
+    {
+      "timestamp": 1791392400,
+      "close": 946.1900024414062
+    },
+    {
+      "timestamp": 1791392700,
+      "close": 945.7119750976562
+    },
+    {
+      "timestamp": 1791393000,
+      "close": 945.6400146484375
+    },
+    {
+      "timestamp": 1791393300,
+      "close": 945.1099853515625
+    },
+    {
+      "timestamp": 1791393600,
+      "close": 944.5
+    },
+    {
+      "timestamp": 1791393900,
+      "close": 944.094970703125
+    },
+    {
+      "timestamp": 1791394200,
+      "close": 944.8499755859375
+    },
+    {
+      "timestamp": 1791394500,
+      "close": 944.9000244140625
+    },
+    {
+      "timestamp": 1791394800,
+      "close": 945.780029296875
+    },
+    {
+      "timestamp": 1791395100,
+      "close": 946.2050170898438
+    },
+    {
+      "timestamp": 1791395400,
+      "close": 945.97998046875
+    },
+    {
+      "timestamp": 1791395700,
+      "close": 946.60498046875
+    },
+    {
+      "timestamp": 1791396000,
+      "close": 947.5
+    },
+    {
+      "timestamp": 1791396300,
+      "close": 946.90478515625
+    },
+    {
+      "timestamp": 1791396600,
+      "close": 946.845703125
+    },
+    {
+      "timestamp": 1791396900,
+      "close": 947.3499755859375
+    },
+    {
+      "timestamp": 1791397200,
+      "close": 946.9099731445312
+    },
+    {
+      "timestamp": 1791397500,
+      "close": 946.8250732421875
+    },
+    {
+      "timestamp": 1791397800,
+      "close": 946.510009765625
+    },
+    {
+      "timestamp": 1791398100,
+      "close": 946.5549926757812
+    },
+    {
+      "timestamp": 1791398400,
+      "close": 945.5599975585938
+    },
+    {
+      "timestamp": 1791398700,
+      "close": 945.5599975585938
+    },
+    {
+      "timestamp": 1791399000,
+      "close": 944.7999877929688
+    },
+    {
+      "timestamp": 1791399300,
+      "close": 944.5399780273438
+    },
+    {
+      "timestamp": 1791399600,
+      "close": 944.614990234375
+    },
+    {
+      "timestamp": 1791399900,
+      "close": 944.1599731445312
+    },
+    {
+      "timestamp": 1791400200,
+      "close": 943.6099853515625
+    },
+    {
+      "timestamp": 1791400500,
+      "close": 943.155029296875
+    },
+    {
+      "timestamp": 1791400800,
+      "close": 942.7750244140625
+    },
+    {
+      "timestamp": 1791401100,
+      "close": 941.655029296875
+    },
+    {
+      "timestamp": 1791401400,
+      "close": 941.3150024414062
+    },
+    {
+      "timestamp": 1791401700,
+      "close": 940.5850219726562
+    },
+    {
+      "timestamp": 1791402000,
+      "close": 941.6099853515625
+    },
+    {
+      "timestamp": 1791402300,
+      "close": 941.7449951171875
+    },
+    {
+      "timestamp": 1791402600,
+      "close": 942.0399780273438
+    },
+    {
+      "timestamp": 1791402900,
+      "close": 942.010009765625
+    },
+    {
+      "timestamp": 1791403200,
+      "close": 942.25
     }
   ],
   "news": {
-    "title": "How Kroger and Costco help you beat record gas prices",
-    "publisher": "TheStreet",
-    "publishedAt": "2026-10-07T14:07:00.000Z"
+    "title": "Costco Wholesale Corporation Reports September Sales Results",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-10-07T20:15:00.000Z"
   },
-  "generatedAt": "2026-10-07T14:31:35.885Z"
+  "generatedAt": "2026-10-07T20:37:42.468Z"
 }
