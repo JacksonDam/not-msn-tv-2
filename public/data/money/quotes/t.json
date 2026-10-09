@@ -5,12 +5,12 @@
     "displaySymbol": "$T"
   },
   "name": "AT&T INC.",
-  "price": 22.1695,
+  "price": 22.18,
   "previousClose": 24.5925,
   "dayHigh": 23.1,
   "dayLow": 21.96,
-  "change": -2.423000000000002,
-  "changePercent": -9.852597336586365,
+  "change": -2.4125000000000014,
+  "changePercent": -9.80990139270103,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -133,11 +133,11 @@
     },
     {
       "timestamp": 1791561300,
-      "close": 22.075000762939453
+      "close": 22.06999969482422
     },
     {
       "timestamp": 1791561600,
-      "close": 21.9950008392334
+      "close": 22
     },
     {
       "timestamp": 1791561900,
@@ -145,17 +145,197 @@
     },
     {
       "timestamp": 1791562200,
+      "close": 22.155000686645508
+    },
+    {
+      "timestamp": 1791562500,
+      "close": 22.200000762939453
+    },
+    {
+      "timestamp": 1791562800,
+      "close": 22.206100463867188
+    },
+    {
+      "timestamp": 1791563100,
       "close": 22.165000915527344
     },
     {
-      "timestamp": 1791562442,
-      "close": 22.16950035095215
+      "timestamp": 1791563400,
+      "close": 22.155000686645508
+    },
+    {
+      "timestamp": 1791563700,
+      "close": 22.094999313354492
+    },
+    {
+      "timestamp": 1791564000,
+      "close": 22.094999313354492
+    },
+    {
+      "timestamp": 1791564300,
+      "close": 22.030000686645508
+    },
+    {
+      "timestamp": 1791564600,
+      "close": 22.065000534057617
+    },
+    {
+      "timestamp": 1791564900,
+      "close": 22.104999542236328
+    },
+    {
+      "timestamp": 1791565200,
+      "close": 22.19499969482422
+    },
+    {
+      "timestamp": 1791565500,
+      "close": 22.165000915527344
+    },
+    {
+      "timestamp": 1791565800,
+      "close": 22.161300659179688
+    },
+    {
+      "timestamp": 1791566100,
+      "close": 22.190000534057617
+    },
+    {
+      "timestamp": 1791566400,
+      "close": 22.15999984741211
+    },
+    {
+      "timestamp": 1791566700,
+      "close": 22.280099868774414
+    },
+    {
+      "timestamp": 1791567000,
+      "close": 22.19499969482422
+    },
+    {
+      "timestamp": 1791567300,
+      "close": 22.145000457763672
+    },
+    {
+      "timestamp": 1791567600,
+      "close": 22.100000381469727
+    },
+    {
+      "timestamp": 1791567900,
+      "close": 22.104999542236328
+    },
+    {
+      "timestamp": 1791568200,
+      "close": 22.145000457763672
+    },
+    {
+      "timestamp": 1791568500,
+      "close": 22.145000457763672
+    },
+    {
+      "timestamp": 1791568800,
+      "close": 22.138599395751953
+    },
+    {
+      "timestamp": 1791569100,
+      "close": 22.199899673461914
+    },
+    {
+      "timestamp": 1791569400,
+      "close": 22.184999465942383
+    },
+    {
+      "timestamp": 1791569700,
+      "close": 22.065000534057617
+    },
+    {
+      "timestamp": 1791570000,
+      "close": 22.065000534057617
+    },
+    {
+      "timestamp": 1791570300,
+      "close": 22.05500030517578
+    },
+    {
+      "timestamp": 1791570600,
+      "close": 22.075000762939453
+    },
+    {
+      "timestamp": 1791570900,
+      "close": 22.125
+    },
+    {
+      "timestamp": 1791571200,
+      "close": 22.125
+    },
+    {
+      "timestamp": 1791571500,
+      "close": 22.145000457763672
+    },
+    {
+      "timestamp": 1791571800,
+      "close": 22.165000915527344
+    },
+    {
+      "timestamp": 1791572100,
+      "close": 22.139999389648438
+    },
+    {
+      "timestamp": 1791572400,
+      "close": 22.094999313354492
+    },
+    {
+      "timestamp": 1791572700,
+      "close": 22.079999923706055
+    },
+    {
+      "timestamp": 1791573000,
+      "close": 22.05500030517578
+    },
+    {
+      "timestamp": 1791573300,
+      "close": 22.058500289916992
+    },
+    {
+      "timestamp": 1791573600,
+      "close": 22.084999084472656
+    },
+    {
+      "timestamp": 1791573900,
+      "close": 22.104999542236328
+    },
+    {
+      "timestamp": 1791574200,
+      "close": 22.155000686645508
+    },
+    {
+      "timestamp": 1791574500,
+      "close": 22.145000457763672
+    },
+    {
+      "timestamp": 1791574800,
+      "close": 22.165000915527344
+    },
+    {
+      "timestamp": 1791575100,
+      "close": 22.15999984741211
+    },
+    {
+      "timestamp": 1791575400,
+      "close": 22.149499893188477
+    },
+    {
+      "timestamp": 1791575700,
+      "close": 22.15999984741211
+    },
+    {
+      "timestamp": 1791576000,
+      "close": 22.18000030517578
     }
   ],
   "news": {
-    "title": "SpaceX makes big move to be a mobile carrier: Wall Street analysts weigh in",
-    "publisher": "Yahoo Finance",
-    "publishedAt": "2026-10-09T16:11:54.000Z"
+    "title": "Dow Jones Futures: AI Stocks Rebound From OpenAI Slide; SpaceX, Verizon, Delta, Apple Early Movers",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-10-09T20:47:11.000Z"
   },
-  "generatedAt": "2026-10-09T16:14:04.090Z"
+  "generatedAt": "2026-10-09T20:55:26.641Z"
 }
