@@ -5,12 +5,12 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 27277.154,
+  "price": 27245.902,
   "previousClose": 27366.17,
   "dayHigh": 27376.66,
-  "dayLow": 27240.475,
-  "change": -89.01599999999962,
-  "changePercent": -0.3252775233070599,
+  "dayLow": 27219.42,
+  "change": -120.26800000000003,
+  "changePercent": -0.43947691620712737,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
@@ -105,17 +105,237 @@
     },
     {
       "timestamp": 1791818400,
-      "close": 27278.583984375
+      "close": 27272.28515625
     },
     {
-      "timestamp": 1791818598,
-      "close": 27277.154296875
+      "timestamp": 1791818700,
+      "close": 27268.189453125
+    },
+    {
+      "timestamp": 1791819000,
+      "close": 27271.447265625
+    },
+    {
+      "timestamp": 1791819300,
+      "close": 27278.783203125
+    },
+    {
+      "timestamp": 1791819600,
+      "close": 27294.87890625
+    },
+    {
+      "timestamp": 1791819900,
+      "close": 27307.865234375
+    },
+    {
+      "timestamp": 1791820200,
+      "close": 27315.369140625
+    },
+    {
+      "timestamp": 1791820500,
+      "close": 27312.705078125
+    },
+    {
+      "timestamp": 1791820800,
+      "close": 27315.58984375
+    },
+    {
+      "timestamp": 1791821100,
+      "close": 27306.15625
+    },
+    {
+      "timestamp": 1791821400,
+      "close": 27305.61328125
+    },
+    {
+      "timestamp": 1791821700,
+      "close": 27306.658203125
+    },
+    {
+      "timestamp": 1791822000,
+      "close": 27284.845703125
+    },
+    {
+      "timestamp": 1791822300,
+      "close": 27283.93359375
+    },
+    {
+      "timestamp": 1791822600,
+      "close": 27290.203125
+    },
+    {
+      "timestamp": 1791822900,
+      "close": 27293.513671875
+    },
+    {
+      "timestamp": 1791823200,
+      "close": 27276.47265625
+    },
+    {
+      "timestamp": 1791823500,
+      "close": 27266.181640625
+    },
+    {
+      "timestamp": 1791823800,
+      "close": 27256.69921875
+    },
+    {
+      "timestamp": 1791824100,
+      "close": 27239.103515625
+    },
+    {
+      "timestamp": 1791824400,
+      "close": 27251.21875
+    },
+    {
+      "timestamp": 1791824700,
+      "close": 27247.552734375
+    },
+    {
+      "timestamp": 1791825000,
+      "close": 27245.322265625
+    },
+    {
+      "timestamp": 1791825300,
+      "close": 27249.455078125
+    },
+    {
+      "timestamp": 1791825600,
+      "close": 27240.130859375
+    },
+    {
+      "timestamp": 1791825900,
+      "close": 27241.71484375
+    },
+    {
+      "timestamp": 1791826200,
+      "close": 27237.939453125
+    },
+    {
+      "timestamp": 1791826500,
+      "close": 27247.619140625
+    },
+    {
+      "timestamp": 1791826800,
+      "close": 27245.708984375
+    },
+    {
+      "timestamp": 1791827100,
+      "close": 27255.580078125
+    },
+    {
+      "timestamp": 1791827400,
+      "close": 27250.43359375
+    },
+    {
+      "timestamp": 1791827700,
+      "close": 27242.890625
+    },
+    {
+      "timestamp": 1791828000,
+      "close": 27241.4921875
+    },
+    {
+      "timestamp": 1791828300,
+      "close": 27239.513671875
+    },
+    {
+      "timestamp": 1791828600,
+      "close": 27246.41796875
+    },
+    {
+      "timestamp": 1791828900,
+      "close": 27237.2109375
+    },
+    {
+      "timestamp": 1791829200,
+      "close": 27234.25390625
+    },
+    {
+      "timestamp": 1791829500,
+      "close": 27241.23046875
+    },
+    {
+      "timestamp": 1791829800,
+      "close": 27235.5703125
+    },
+    {
+      "timestamp": 1791830100,
+      "close": 27236.9375
+    },
+    {
+      "timestamp": 1791830400,
+      "close": 27245.013671875
+    },
+    {
+      "timestamp": 1791830700,
+      "close": 27233.859375
+    },
+    {
+      "timestamp": 1791831000,
+      "close": 27229.87890625
+    },
+    {
+      "timestamp": 1791831300,
+      "close": 27227.384765625
+    },
+    {
+      "timestamp": 1791831600,
+      "close": 27231.947265625
+    },
+    {
+      "timestamp": 1791831900,
+      "close": 27224.541015625
+    },
+    {
+      "timestamp": 1791832200,
+      "close": 27227.677734375
+    },
+    {
+      "timestamp": 1791832500,
+      "close": 27233.787109375
+    },
+    {
+      "timestamp": 1791832800,
+      "close": 27233.333984375
+    },
+    {
+      "timestamp": 1791833100,
+      "close": 27232.693359375
+    },
+    {
+      "timestamp": 1791833400,
+      "close": 27249.654296875
+    },
+    {
+      "timestamp": 1791833700,
+      "close": 27252.419921875
+    },
+    {
+      "timestamp": 1791834000,
+      "close": 27249.294921875
+    },
+    {
+      "timestamp": 1791834300,
+      "close": 27251.8359375
+    },
+    {
+      "timestamp": 1791834600,
+      "close": 27242.22265625
+    },
+    {
+      "timestamp": 1791834900,
+      "close": 27250.02734375
+    },
+    {
+      "timestamp": 1791835200,
+      "close": 27245.90234375
     }
   ],
   "news": {
-    "title": "Stock market today: Dow gains, Nasdaq slips as oil prices rise",
-    "publisher": "Yahoo Finance",
-    "publishedAt": "2026-10-12T15:07:13.000Z"
+    "title": "Stock Market Today, Oct. 12: CCC Intelligent Solutions Surges 8% on Advanced Buyout Talks",
+    "publisher": "Motley Fool",
+    "publishedAt": "2026-10-12T21:31:35.000Z"
   },
-  "generatedAt": "2026-10-12T15:23:20.689Z"
+  "generatedAt": "2026-10-12T22:58:44.884Z"
 }
