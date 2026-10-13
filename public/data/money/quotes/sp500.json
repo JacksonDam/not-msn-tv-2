@@ -5,12 +5,12 @@
     "displaySymbol": "$S&P"
   },
   "name": "S&P 500",
-  "price": 7811.08,
-  "previousClose": 7807.24,
+  "price": 7807.24,
+  "previousClose": 7811.54,
   "dayHigh": 7814.15,
   "dayLow": 7786.11,
-  "change": 3.8400000000001455,
-  "changePercent": 0.049185115354467714,
+  "change": -4.300000000000182,
+  "changePercent": -0.055046764146380635,
   "currency": "USD",
   "exchangeName": "SNP",
   "marketState": "",
@@ -293,17 +293,45 @@
     },
     {
       "timestamp": 1791918900,
-      "close": 7810.580078125
+      "close": 7809.52001953125
     },
     {
-      "timestamp": 1791918986,
+      "timestamp": 1791919200,
+      "close": 7809.490234375
+    },
+    {
+      "timestamp": 1791919500,
+      "close": 7809.35009765625
+    },
+    {
+      "timestamp": 1791919800,
+      "close": 7812.5
+    },
+    {
+      "timestamp": 1791920100,
       "close": 7811.080078125
+    },
+    {
+      "timestamp": 1791920400,
+      "close": 7809.77001953125
+    },
+    {
+      "timestamp": 1791920700,
+      "close": 7810.3798828125
+    },
+    {
+      "timestamp": 1791921000,
+      "close": 7807.1201171875
+    },
+    {
+      "timestamp": 1791921300,
+      "close": 7805.58984375
     }
   ],
   "news": {
-    "title": "VULCAN ANNOUNCES THIRD QUARTER 2026 CONFERENCE CALL",
-    "publisher": "PR Newswire",
-    "publishedAt": "2026-10-13T19:00:00.000Z"
+    "title": "Dow Jones Futures: Stock Market Holds Up As Meta, AMD Lead Buys; ASML, CPI Inflation Due",
+    "publisher": "Investor's Business Daily",
+    "publishedAt": "2026-10-13T23:05:04.000Z"
   },
-  "generatedAt": "2026-10-13T19:16:27.351Z"
+  "generatedAt": "2026-10-13T23:18:08.520Z"
 }
