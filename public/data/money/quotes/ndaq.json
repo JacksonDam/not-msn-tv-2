@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 92.12,
+  "price": 91.96,
   "previousClose": 93.48,
   "dayHigh": 94.2,
-  "dayLow": 91.87,
-  "change": -1.3599999999999994,
-  "changePercent": -1.4548566538296954,
+  "dayLow": 91.73,
+  "change": -1.5200000000000102,
+  "changePercent": -1.6260162601626125,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -297,11 +297,39 @@
     },
     {
       "timestamp": 1792005600,
-      "close": 92.17500305175781
+      "close": 92.12000274658203
     },
     {
-      "timestamp": 1792005870,
-      "close": 92.12000274658203
+      "timestamp": 1792005900,
+      "close": 92.19999694824219
+    },
+    {
+      "timestamp": 1792006200,
+      "close": 92.16999816894531
+    },
+    {
+      "timestamp": 1792006500,
+      "close": 92.08999633789062
+    },
+    {
+      "timestamp": 1792006800,
+      "close": 91.95999908447266
+    },
+    {
+      "timestamp": 1792007100,
+      "close": 91.95999908447266
+    },
+    {
+      "timestamp": 1792007400,
+      "close": 91.81999969482422
+    },
+    {
+      "timestamp": 1792007700,
+      "close": 92
+    },
+    {
+      "timestamp": 1792008000,
+      "close": 91.95999908447266
     }
   ],
   "news": {
@@ -309,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-10-14T14:00:48.000Z"
   },
-  "generatedAt": "2026-10-14T19:24:38.784Z"
+  "generatedAt": "2026-10-14T23:14:43.759Z"
 }

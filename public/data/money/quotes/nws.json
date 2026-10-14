@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 32.27,
+  "price": 32.45,
   "previousClose": 32.58,
   "dayHigh": 32.58,
   "dayLow": 31.95,
-  "change": -0.30999999999999517,
-  "changePercent": -0.9515039901780086,
+  "change": -0.12999999999999545,
+  "changePercent": -0.3990178023327055,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -297,11 +297,39 @@
     },
     {
       "timestamp": 1792005600,
-      "close": 32.275001525878906
+      "close": 32.27000045776367
     },
     {
-      "timestamp": 1792005867,
-      "close": 32.27000045776367
+      "timestamp": 1792005900,
+      "close": 32.2599983215332
+    },
+    {
+      "timestamp": 1792006200,
+      "close": 32.25
+    },
+    {
+      "timestamp": 1792006500,
+      "close": 32.244998931884766
+    },
+    {
+      "timestamp": 1792006800,
+      "close": 32.29499816894531
+    },
+    {
+      "timestamp": 1792007100,
+      "close": 32.29999923706055
+    },
+    {
+      "timestamp": 1792007400,
+      "close": 32.369998931884766
+    },
+    {
+      "timestamp": 1792007700,
+      "close": 32.45000076293945
+    },
+    {
+      "timestamp": 1792008000,
+      "close": 32.45000076293945
     }
   ],
   "news": {
@@ -309,5 +337,5 @@
     "publisher": "PR Newswire",
     "publishedAt": "2026-10-14T10:00:00.000Z"
   },
-  "generatedAt": "2026-10-14T19:24:43.276Z"
+  "generatedAt": "2026-10-14T23:14:47.109Z"
 }
