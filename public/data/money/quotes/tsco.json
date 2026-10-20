@@ -5,12 +5,12 @@
     "displaySymbol": "$TSCO"
   },
   "name": "TRACTOR SUPPLY COMPANY",
-  "price": 32.84,
+  "price": 32.91,
   "previousClose": 32.81,
   "dayHigh": 33.23,
-  "dayLow": 32.7,
-  "change": 0.030000000000001137,
-  "changePercent": 0.09143553794575171,
+  "dayLow": 32.665,
+  "change": 0.09999999999999432,
+  "changePercent": 0.30478512648581013,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1792523700,
+      "close": 32.89500045776367
+    },
+    {
+      "timestamp": 1792524000,
+      "close": 32.904998779296875
+    },
+    {
+      "timestamp": 1792524300,
       "close": 32.85499954223633
     },
     {
-      "timestamp": 1792523872,
-      "close": 32.84000015258789
+      "timestamp": 1792524600,
+      "close": 32.85499954223633
+    },
+    {
+      "timestamp": 1792524900,
+      "close": 32.73500061035156
+    },
+    {
+      "timestamp": 1792525200,
+      "close": 32.685001373291016
+    },
+    {
+      "timestamp": 1792525500,
+      "close": 32.72999954223633
+    },
+    {
+      "timestamp": 1792525800,
+      "close": 32.869998931884766
+    },
+    {
+      "timestamp": 1792526100,
+      "close": 32.900001525878906
+    },
+    {
+      "timestamp": 1792526400,
+      "close": 32.90999984741211
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-10-20T17:15:46.000Z"
   },
-  "generatedAt": "2026-10-20T19:17:54.369Z"
+  "generatedAt": "2026-10-20T22:21:47.567Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 33.32,
+  "price": 33.4,
   "previousClose": 32.9,
   "dayHigh": 33.72,
   "dayLow": 33.12,
-  "change": 0.4200000000000017,
-  "changePercent": 1.2765957446808565,
+  "change": 0.5,
+  "changePercent": 1.5197568389057752,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -296,8 +296,40 @@
       "close": 33.31999969482422
     },
     {
-      "timestamp": 1792523842,
+      "timestamp": 1792524000,
+      "close": 33.314998626708984
+    },
+    {
+      "timestamp": 1792524300,
       "close": 33.31999969482422
+    },
+    {
+      "timestamp": 1792524600,
+      "close": 33.31999969482422
+    },
+    {
+      "timestamp": 1792524900,
+      "close": 33.290000915527344
+    },
+    {
+      "timestamp": 1792525200,
+      "close": 33.310001373291016
+    },
+    {
+      "timestamp": 1792525500,
+      "close": 33.279998779296875
+    },
+    {
+      "timestamp": 1792525800,
+      "close": 33.31999969482422
+    },
+    {
+      "timestamp": 1792526100,
+      "close": 33.400001525878906
+    },
+    {
+      "timestamp": 1792526400,
+      "close": 33.400001525878906
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "The Fly",
     "publishedAt": "2026-10-20T13:35:15.000Z"
   },
-  "generatedAt": "2026-10-20T19:17:27.424Z"
+  "generatedAt": "2026-10-20T22:21:22.032Z"
 }

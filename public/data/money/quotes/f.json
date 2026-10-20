@@ -5,12 +5,12 @@
     "displaySymbol": "$F"
   },
   "name": "FORD MOTOR COMPANY",
-  "price": 12.131,
+  "price": 12.15,
   "previousClose": 12.18,
   "dayHigh": 12.25,
   "dayLow": 11.81,
-  "change": -0.04899999999999949,
-  "changePercent": -0.4022988505747085,
+  "change": -0.02999999999999936,
+  "changePercent": -0.24630541871920658,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -289,15 +289,47 @@
     },
     {
       "timestamp": 1792523400,
-      "close": 12.135199546813965
+      "close": 12.135000228881836
     },
     {
       "timestamp": 1792523700,
+      "close": 12.135000228881836
+    },
+    {
+      "timestamp": 1792524000,
+      "close": 12.114999771118164
+    },
+    {
+      "timestamp": 1792524300,
+      "close": 12.119999885559082
+    },
+    {
+      "timestamp": 1792524600,
+      "close": 12.135000228881836
+    },
+    {
+      "timestamp": 1792524900,
+      "close": 12.125
+    },
+    {
+      "timestamp": 1792525200,
       "close": 12.130000114440918
     },
     {
-      "timestamp": 1792523805,
-      "close": 12.131099700927734
+      "timestamp": 1792525500,
+      "close": 12.145000457763672
+    },
+    {
+      "timestamp": 1792525800,
+      "close": 12.125
+    },
+    {
+      "timestamp": 1792526100,
+      "close": 12.149999618530273
+    },
+    {
+      "timestamp": 1792526400,
+      "close": 12.149999618530273
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-10-20T16:21:30.000Z"
   },
-  "generatedAt": "2026-10-20T19:16:45.581Z"
+  "generatedAt": "2026-10-20T22:20:41.978Z"
 }
