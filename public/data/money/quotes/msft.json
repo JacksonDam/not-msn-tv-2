@@ -5,12 +5,12 @@
     "displaySymbol": "$MSFT"
   },
   "name": "MICROSOFT CORPORATION",
-  "price": 531.357,
+  "price": 531.615,
   "previousClose": 533.52,
   "dayHigh": 534.21,
-  "dayLow": 525.9,
-  "change": -2.163000000000011,
-  "changePercent": -0.4054206027890259,
+  "dayLow": 525.86,
+  "change": -1.9049999999999727,
+  "changePercent": -0.3570625281151546,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -92,14 +92,218 @@
       "close": 531.0650024414062
     },
     {
-      "timestamp": 1792508759,
-      "close": 531.3574829101562
+      "timestamp": 1792508700,
+      "close": 531.2999877929688
+    },
+    {
+      "timestamp": 1792509000,
+      "close": 530.1099853515625
+    },
+    {
+      "timestamp": 1792509300,
+      "close": 530.8599853515625
+    },
+    {
+      "timestamp": 1792509600,
+      "close": 530.469970703125
+    },
+    {
+      "timestamp": 1792509900,
+      "close": 531.103515625
+    },
+    {
+      "timestamp": 1792510200,
+      "close": 531.02001953125
+    },
+    {
+      "timestamp": 1792510500,
+      "close": 531.0800170898438
+    },
+    {
+      "timestamp": 1792510800,
+      "close": 531.5
+    },
+    {
+      "timestamp": 1792511100,
+      "close": 531.4600219726562
+    },
+    {
+      "timestamp": 1792511400,
+      "close": 531.60498046875
+    },
+    {
+      "timestamp": 1792511700,
+      "close": 531.8400268554688
+    },
+    {
+      "timestamp": 1792512000,
+      "close": 531.8001098632812
+    },
+    {
+      "timestamp": 1792512300,
+      "close": 531.2999877929688
+    },
+    {
+      "timestamp": 1792512600,
+      "close": 531.7994995117188
+    },
+    {
+      "timestamp": 1792512900,
+      "close": 531.7349853515625
+    },
+    {
+      "timestamp": 1792513200,
+      "close": 530.9749755859375
+    },
+    {
+      "timestamp": 1792513500,
+      "close": 532.1500244140625
+    },
+    {
+      "timestamp": 1792513800,
+      "close": 531.9199829101562
+    },
+    {
+      "timestamp": 1792514100,
+      "close": 531.7399291992188
+    },
+    {
+      "timestamp": 1792514400,
+      "close": 531.844970703125
+    },
+    {
+      "timestamp": 1792514700,
+      "close": 531.5999755859375
+    },
+    {
+      "timestamp": 1792515000,
+      "close": 531.2249755859375
+    },
+    {
+      "timestamp": 1792515300,
+      "close": 531.97998046875
+    },
+    {
+      "timestamp": 1792515600,
+      "close": 532.280029296875
+    },
+    {
+      "timestamp": 1792515900,
+      "close": 532.6201171875
+    },
+    {
+      "timestamp": 1792516200,
+      "close": 532.8499755859375
+    },
+    {
+      "timestamp": 1792516500,
+      "close": 533.0599975585938
+    },
+    {
+      "timestamp": 1792516800,
+      "close": 533.5150146484375
+    },
+    {
+      "timestamp": 1792517100,
+      "close": 533.717529296875
+    },
+    {
+      "timestamp": 1792517400,
+      "close": 533.5150146484375
+    },
+    {
+      "timestamp": 1792517700,
+      "close": 534.0795288085938
+    },
+    {
+      "timestamp": 1792518000,
+      "close": 533.52001953125
+    },
+    {
+      "timestamp": 1792518300,
+      "close": 533.6799926757812
+    },
+    {
+      "timestamp": 1792518600,
+      "close": 532.4749755859375
+    },
+    {
+      "timestamp": 1792518900,
+      "close": 532.2700805664062
+    },
+    {
+      "timestamp": 1792519200,
+      "close": 532.280029296875
+    },
+    {
+      "timestamp": 1792519500,
+      "close": 532.6749877929688
+    },
+    {
+      "timestamp": 1792519800,
+      "close": 532.8150024414062
+    },
+    {
+      "timestamp": 1792520100,
+      "close": 532.6849975585938
+    },
+    {
+      "timestamp": 1792520400,
+      "close": 532.2999877929688
+    },
+    {
+      "timestamp": 1792520700,
+      "close": 532.2100219726562
+    },
+    {
+      "timestamp": 1792521000,
+      "close": 531.530029296875
+    },
+    {
+      "timestamp": 1792521300,
+      "close": 531.3909912109375
+    },
+    {
+      "timestamp": 1792521600,
+      "close": 531.638427734375
+    },
+    {
+      "timestamp": 1792521900,
+      "close": 531.8150024414062
+    },
+    {
+      "timestamp": 1792522200,
+      "close": 532.010009765625
+    },
+    {
+      "timestamp": 1792522500,
+      "close": 531.8300170898438
+    },
+    {
+      "timestamp": 1792522800,
+      "close": 532.0750122070312
+    },
+    {
+      "timestamp": 1792523100,
+      "close": 531.6099853515625
+    },
+    {
+      "timestamp": 1792523400,
+      "close": 531.719970703125
+    },
+    {
+      "timestamp": 1792523700,
+      "close": 531.5700073242188
+    },
+    {
+      "timestamp": 1792523839,
+      "close": 531.614990234375
     }
   ],
   "news": {
-    "title": "Splashtop Agentic Packr Automates App Packaging for Microsoft Intune",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-10-20T15:00:00.000Z"
+    "title": "OpenAI Acquires Orchestra Bio",
+    "publisher": "MT Newswires",
+    "publishedAt": "2026-10-20T18:49:50.000Z"
   },
-  "generatedAt": "2026-10-20T15:06:00.194Z"
+  "generatedAt": "2026-10-20T19:17:21.867Z"
 }
