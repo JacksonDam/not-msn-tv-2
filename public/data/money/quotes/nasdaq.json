@@ -5,337 +5,101 @@
     "displaySymbol": "$NASDAQ"
   },
   "name": "NASDAQ COMPOSITE",
-  "price": 26430.887,
-  "previousClose": 26140.033,
-  "dayHigh": 26613.146,
-  "dayLow": 26344.666,
-  "change": 290.85399999999936,
-  "changePercent": 1.1126764836142302,
+  "price": 26552.002,
+  "previousClose": 26430.887,
+  "dayHigh": 26601.715,
+  "dayLow": 26179.736,
+  "change": 121.1150000000016,
+  "changePercent": 0.45823282434676366,
   "currency": "USD",
   "exchangeName": "NIM",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1792416600,
-      "close": 26422.1953125
+      "timestamp": 1792503000,
+      "close": 26294.947265625
     },
     {
-      "timestamp": 1792416900,
-      "close": 26388.099609375
+      "timestamp": 1792503300,
+      "close": 26275.4140625
     },
     {
-      "timestamp": 1792417200,
-      "close": 26401.0625
+      "timestamp": 1792503600,
+      "close": 26192.20703125
     },
     {
-      "timestamp": 1792417500,
-      "close": 26388.4453125
+      "timestamp": 1792503900,
+      "close": 26281.7734375
     },
     {
-      "timestamp": 1792417800,
-      "close": 26378.623046875
+      "timestamp": 1792504200,
+      "close": 26295.91796875
     },
     {
-      "timestamp": 1792418100,
-      "close": 26365.30859375
+      "timestamp": 1792504500,
+      "close": 26370.25390625
     },
     {
-      "timestamp": 1792418400,
-      "close": 26363.08203125
+      "timestamp": 1792504800,
+      "close": 26389.396484375
     },
     {
-      "timestamp": 1792418700,
-      "close": 26380.982421875
+      "timestamp": 1792505100,
+      "close": 26449.52734375
     },
     {
-      "timestamp": 1792419000,
-      "close": 26466.359375
+      "timestamp": 1792505400,
+      "close": 26463.529296875
     },
     {
-      "timestamp": 1792419300,
-      "close": 26495.880859375
+      "timestamp": 1792505700,
+      "close": 26495.169921875
     },
     {
-      "timestamp": 1792419600,
-      "close": 26516.361328125
+      "timestamp": 1792506000,
+      "close": 26518.53515625
     },
     {
-      "timestamp": 1792419900,
-      "close": 26498.2421875
+      "timestamp": 1792506300,
+      "close": 26580.1640625
     },
     {
-      "timestamp": 1792420200,
-      "close": 26457.271484375
+      "timestamp": 1792506600,
+      "close": 26550.23046875
     },
     {
-      "timestamp": 1792420500,
-      "close": 26454.53515625
+      "timestamp": 1792506900,
+      "close": 26552.642578125
     },
     {
-      "timestamp": 1792420800,
-      "close": 26473.240234375
+      "timestamp": 1792507200,
+      "close": 26567.380859375
     },
     {
-      "timestamp": 1792421100,
-      "close": 26493.060546875
+      "timestamp": 1792507500,
+      "close": 26549.119140625
     },
     {
-      "timestamp": 1792421400,
-      "close": 26507.21484375
+      "timestamp": 1792507800,
+      "close": 26573.38671875
     },
     {
-      "timestamp": 1792421700,
-      "close": 26507.923828125
+      "timestamp": 1792508100,
+      "close": 26577.419921875
     },
     {
-      "timestamp": 1792422000,
-      "close": 26527.67578125
+      "timestamp": 1792508400,
+      "close": 26553.564453125
     },
     {
-      "timestamp": 1792422300,
-      "close": 26536.998046875
-    },
-    {
-      "timestamp": 1792422600,
-      "close": 26530.275390625
-    },
-    {
-      "timestamp": 1792422900,
-      "close": 26544.6953125
-    },
-    {
-      "timestamp": 1792423200,
-      "close": 26574.662109375
-    },
-    {
-      "timestamp": 1792423500,
-      "close": 26585.939453125
-    },
-    {
-      "timestamp": 1792423800,
-      "close": 26589.431640625
-    },
-    {
-      "timestamp": 1792424100,
-      "close": 26600.267578125
-    },
-    {
-      "timestamp": 1792424400,
-      "close": 26600.888671875
-    },
-    {
-      "timestamp": 1792424700,
-      "close": 26594.55078125
-    },
-    {
-      "timestamp": 1792425000,
-      "close": 26589.7421875
-    },
-    {
-      "timestamp": 1792425300,
-      "close": 26575.451171875
-    },
-    {
-      "timestamp": 1792425600,
-      "close": 26541.14453125
-    },
-    {
-      "timestamp": 1792425900,
-      "close": 26535.69140625
-    },
-    {
-      "timestamp": 1792426200,
-      "close": 26550.66796875
-    },
-    {
-      "timestamp": 1792426500,
-      "close": 26540.66796875
-    },
-    {
-      "timestamp": 1792426800,
-      "close": 26527.388671875
-    },
-    {
-      "timestamp": 1792427100,
-      "close": 26521.677734375
-    },
-    {
-      "timestamp": 1792427400,
-      "close": 26520.34375
-    },
-    {
-      "timestamp": 1792427700,
-      "close": 26508.923828125
-    },
-    {
-      "timestamp": 1792428000,
-      "close": 26522.201171875
-    },
-    {
-      "timestamp": 1792428300,
-      "close": 26498.16796875
-    },
-    {
-      "timestamp": 1792428600,
-      "close": 26482.21484375
-    },
-    {
-      "timestamp": 1792428900,
-      "close": 26476.15234375
-    },
-    {
-      "timestamp": 1792429200,
-      "close": 26478.388671875
-    },
-    {
-      "timestamp": 1792429500,
-      "close": 26454.6015625
-    },
-    {
-      "timestamp": 1792429800,
-      "close": 26468.69140625
-    },
-    {
-      "timestamp": 1792430100,
-      "close": 26470.69921875
-    },
-    {
-      "timestamp": 1792430400,
-      "close": 26461.1875
-    },
-    {
-      "timestamp": 1792430700,
-      "close": 26468.46875
-    },
-    {
-      "timestamp": 1792431000,
-      "close": 26460.41015625
-    },
-    {
-      "timestamp": 1792431300,
-      "close": 26462.1875
-    },
-    {
-      "timestamp": 1792431600,
-      "close": 26461.25390625
-    },
-    {
-      "timestamp": 1792431900,
-      "close": 26434.08984375
-    },
-    {
-      "timestamp": 1792432200,
-      "close": 26442.080078125
-    },
-    {
-      "timestamp": 1792432500,
-      "close": 26461.767578125
-    },
-    {
-      "timestamp": 1792432800,
-      "close": 26443.525390625
-    },
-    {
-      "timestamp": 1792433100,
-      "close": 26456.373046875
-    },
-    {
-      "timestamp": 1792433400,
-      "close": 26458.80859375
-    },
-    {
-      "timestamp": 1792433700,
-      "close": 26463.58203125
-    },
-    {
-      "timestamp": 1792434000,
-      "close": 26440.640625
-    },
-    {
-      "timestamp": 1792434300,
-      "close": 26433.970703125
-    },
-    {
-      "timestamp": 1792434600,
-      "close": 26425.1484375
-    },
-    {
-      "timestamp": 1792434900,
-      "close": 26448.595703125
-    },
-    {
-      "timestamp": 1792435200,
-      "close": 26455.453125
-    },
-    {
-      "timestamp": 1792435500,
-      "close": 26461.2265625
-    },
-    {
-      "timestamp": 1792435800,
-      "close": 26455.783203125
-    },
-    {
-      "timestamp": 1792436100,
-      "close": 26462.61328125
-    },
-    {
-      "timestamp": 1792436400,
-      "close": 26481.103515625
-    },
-    {
-      "timestamp": 1792436700,
-      "close": 26462.6171875
-    },
-    {
-      "timestamp": 1792437000,
-      "close": 26469.470703125
-    },
-    {
-      "timestamp": 1792437300,
-      "close": 26491.5390625
-    },
-    {
-      "timestamp": 1792437600,
-      "close": 26519.724609375
-    },
-    {
-      "timestamp": 1792437900,
-      "close": 26497.07421875
-    },
-    {
-      "timestamp": 1792438200,
-      "close": 26501.203125
-    },
-    {
-      "timestamp": 1792438500,
-      "close": 26512.119140625
-    },
-    {
-      "timestamp": 1792438800,
-      "close": 26502.890625
-    },
-    {
-      "timestamp": 1792439100,
-      "close": 26490.3828125
-    },
-    {
-      "timestamp": 1792439400,
-      "close": 26446.9375
-    },
-    {
-      "timestamp": 1792439700,
-      "close": 26438.333984375
-    },
-    {
-      "timestamp": 1792440000,
-      "close": 26430.88671875
+      "timestamp": 1792508698,
+      "close": 26552.001953125
     }
   ],
   "news": {
-    "title": "The Public Debut of This XRP Treasury Company Was Supposed to Send XRP Soaring. It Didn't. Here's an Updated Timeline For the Next XRP Rally.",
-    "publisher": "Motley Fool",
-    "publishedAt": "2026-10-20T09:22:00.000Z"
+    "title": "Stock market today: Dow rises, S&P 500, Nasdaq turn green as dip buying resumes",
+    "publisher": "Yahoo Finance",
+    "publishedAt": "2026-10-20T14:59:32.000Z"
   },
-  "generatedAt": "2026-10-20T10:03:41.630Z"
+  "generatedAt": "2026-10-20T15:04:59.938Z"
 }
