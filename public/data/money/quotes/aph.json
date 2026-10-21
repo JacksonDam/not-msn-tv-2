@@ -5,337 +5,41 @@
     "displaySymbol": "$APH"
   },
   "name": "AMPHENOL CORPORATION",
-  "price": 79.32,
-  "previousClose": 80.28,
-  "dayHigh": 80.79,
-  "dayLow": 77.88,
-  "change": -0.960000000000008,
-  "changePercent": -1.1958146487294568,
+  "price": 80.27,
+  "previousClose": 79.32,
+  "dayHigh": 80.87,
+  "dayLow": 79.93,
+  "change": 0.9500000000000028,
+  "changePercent": 1.1976802824004071,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1792503000,
-      "close": 78.23999786376953
+      "timestamp": 1792589400,
+      "close": 80.41000366210938
     },
     {
-      "timestamp": 1792503300,
-      "close": 78.51499938964844
+      "timestamp": 1792589700,
+      "close": 80.26499938964844
     },
     {
-      "timestamp": 1792503600,
-      "close": 78.05000305175781
+      "timestamp": 1792590000,
+      "close": 80.01000213623047
     },
     {
-      "timestamp": 1792503900,
-      "close": 78.36000061035156
+      "timestamp": 1792590300,
+      "close": 80.27999877929688
     },
     {
-      "timestamp": 1792504200,
-      "close": 78.69999694824219
-    },
-    {
-      "timestamp": 1792504500,
-      "close": 78.95999908447266
-    },
-    {
-      "timestamp": 1792504800,
-      "close": 79.42500305175781
-    },
-    {
-      "timestamp": 1792505100,
-      "close": 79.55999755859375
-    },
-    {
-      "timestamp": 1792505400,
-      "close": 79.61499786376953
-    },
-    {
-      "timestamp": 1792505700,
-      "close": 79.86499786376953
-    },
-    {
-      "timestamp": 1792506000,
-      "close": 80.16500091552734
-    },
-    {
-      "timestamp": 1792506300,
-      "close": 80.5115966796875
-    },
-    {
-      "timestamp": 1792506600,
-      "close": 80.06410217285156
-    },
-    {
-      "timestamp": 1792506900,
-      "close": 80.08999633789062
-    },
-    {
-      "timestamp": 1792507200,
-      "close": 80.30500030517578
-    },
-    {
-      "timestamp": 1792507500,
-      "close": 80.12000274658203
-    },
-    {
-      "timestamp": 1792507800,
-      "close": 80.19000244140625
-    },
-    {
-      "timestamp": 1792508100,
-      "close": 80.0199966430664
-    },
-    {
-      "timestamp": 1792508400,
-      "close": 79.9749984741211
-    },
-    {
-      "timestamp": 1792508700,
-      "close": 79.68000030517578
-    },
-    {
-      "timestamp": 1792509000,
-      "close": 79.1500015258789
-    },
-    {
-      "timestamp": 1792509300,
-      "close": 79.27999877929688
-    },
-    {
-      "timestamp": 1792509600,
-      "close": 79.3499984741211
-    },
-    {
-      "timestamp": 1792509900,
-      "close": 79.21499633789062
-    },
-    {
-      "timestamp": 1792510200,
-      "close": 79.07499694824219
-    },
-    {
-      "timestamp": 1792510500,
-      "close": 79.0199966430664
-    },
-    {
-      "timestamp": 1792510800,
-      "close": 79.13999938964844
-    },
-    {
-      "timestamp": 1792511100,
-      "close": 79.16000366210938
-    },
-    {
-      "timestamp": 1792511400,
-      "close": 79.23500061035156
-    },
-    {
-      "timestamp": 1792511700,
-      "close": 79.2249984741211
-    },
-    {
-      "timestamp": 1792512000,
-      "close": 79.2249984741211
-    },
-    {
-      "timestamp": 1792512300,
-      "close": 79.22000122070312
-    },
-    {
-      "timestamp": 1792512600,
-      "close": 79.1050033569336
-    },
-    {
-      "timestamp": 1792512900,
-      "close": 78.91500091552734
-    },
-    {
-      "timestamp": 1792513200,
-      "close": 79.01000213623047
-    },
-    {
-      "timestamp": 1792513500,
-      "close": 79.06999969482422
-    },
-    {
-      "timestamp": 1792513800,
-      "close": 79.11000061035156
-    },
-    {
-      "timestamp": 1792514100,
-      "close": 79.12999725341797
-    },
-    {
-      "timestamp": 1792514400,
-      "close": 79.05999755859375
-    },
-    {
-      "timestamp": 1792514700,
-      "close": 79.08000183105469
-    },
-    {
-      "timestamp": 1792515000,
-      "close": 78.87000274658203
-    },
-    {
-      "timestamp": 1792515300,
-      "close": 78.83999633789062
-    },
-    {
-      "timestamp": 1792515600,
-      "close": 78.84010314941406
-    },
-    {
-      "timestamp": 1792515900,
-      "close": 78.77999877929688
-    },
-    {
-      "timestamp": 1792516200,
-      "close": 78.83999633789062
-    },
-    {
-      "timestamp": 1792516500,
-      "close": 78.9000015258789
-    },
-    {
-      "timestamp": 1792516800,
-      "close": 78.91999816894531
-    },
-    {
-      "timestamp": 1792517100,
-      "close": 79.08000183105469
-    },
-    {
-      "timestamp": 1792517400,
-      "close": 79.06500244140625
-    },
-    {
-      "timestamp": 1792517700,
-      "close": 78.95999908447266
-    },
-    {
-      "timestamp": 1792518000,
-      "close": 78.96949768066406
-    },
-    {
-      "timestamp": 1792518300,
-      "close": 78.96009826660156
-    },
-    {
-      "timestamp": 1792518600,
-      "close": 79.06999969482422
-    },
-    {
-      "timestamp": 1792518900,
-      "close": 79.09500122070312
-    },
-    {
-      "timestamp": 1792519200,
-      "close": 79.08000183105469
-    },
-    {
-      "timestamp": 1792519500,
-      "close": 79.1729965209961
-    },
-    {
-      "timestamp": 1792519800,
-      "close": 79.20890045166016
-    },
-    {
-      "timestamp": 1792520100,
-      "close": 79.2300033569336
-    },
-    {
-      "timestamp": 1792520400,
-      "close": 79.2699966430664
-    },
-    {
-      "timestamp": 1792520700,
-      "close": 79.4000015258789
-    },
-    {
-      "timestamp": 1792521000,
-      "close": 79.18499755859375
-    },
-    {
-      "timestamp": 1792521300,
-      "close": 79.27010345458984
-    },
-    {
-      "timestamp": 1792521600,
-      "close": 79.26000213623047
-    },
-    {
-      "timestamp": 1792521900,
-      "close": 79.3550033569336
-    },
-    {
-      "timestamp": 1792522200,
-      "close": 79.30999755859375
-    },
-    {
-      "timestamp": 1792522500,
-      "close": 79.26000213623047
-    },
-    {
-      "timestamp": 1792522800,
-      "close": 79.36000061035156
-    },
-    {
-      "timestamp": 1792523100,
-      "close": 79.44000244140625
-    },
-    {
-      "timestamp": 1792523400,
-      "close": 79.56999969482422
-    },
-    {
-      "timestamp": 1792523700,
-      "close": 79.53500366210938
-    },
-    {
-      "timestamp": 1792524000,
-      "close": 79.4000015258789
-    },
-    {
-      "timestamp": 1792524300,
-      "close": 79.50499725341797
-    },
-    {
-      "timestamp": 1792524600,
-      "close": 79.47000122070312
-    },
-    {
-      "timestamp": 1792524900,
-      "close": 79.33000183105469
-    },
-    {
-      "timestamp": 1792525200,
-      "close": 79.56999969482422
-    },
-    {
-      "timestamp": 1792525500,
-      "close": 79.4749984741211
-    },
-    {
-      "timestamp": 1792525800,
-      "close": 79.5
-    },
-    {
-      "timestamp": 1792526100,
-      "close": 79.3499984741211
-    },
-    {
-      "timestamp": 1792526400,
-      "close": 79.31999969482422
+      "timestamp": 1792590453,
+      "close": 80.2699966430664
     }
   ],
   "news": {
-    "title": "3 US AI Infrastructure Stocks Riding The Data Centre Buildout",
-    "publisher": "Simply Wall St.",
-    "publishedAt": "2026-10-20T18:15:02.000Z"
+    "title": "Molded Interconnect Device (MID) - Global Strategic Business Report 2026 | Secure Share as Market Surges 141% to $5.3B by 2032; Benchmark Amphenol, HARTING, KYOCERA, Molex and TE Connectivity",
+    "publisher": "GlobeNewswire",
+    "publishedAt": "2026-10-21T08:01:00.000Z"
   },
-  "generatedAt": "2026-10-21T07:38:30.010Z"
+  "generatedAt": "2026-10-21T13:47:35.883Z"
 }
