@@ -5,337 +5,41 @@
     "displaySymbol": "$KEY"
   },
   "name": "KEYCORP",
-  "price": 21.03,
-  "previousClose": 20.81,
-  "dayHigh": 21.185,
-  "dayLow": 20.885,
-  "change": 0.22000000000000242,
-  "changePercent": 1.057184046131679,
+  "price": 21.19,
+  "previousClose": 21.03,
+  "dayHigh": 21.19,
+  "dayLow": 20.85,
+  "change": 0.16000000000000014,
+  "changePercent": 0.7608178792201623,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1792589400,
-      "close": 20.924999237060547
-    },
-    {
-      "timestamp": 1792589700,
-      "close": 20.899999618530273
-    },
-    {
-      "timestamp": 1792590000,
-      "close": 20.975000381469727
-    },
-    {
-      "timestamp": 1792590300,
-      "close": 21.0049991607666
-    },
-    {
-      "timestamp": 1792590600,
-      "close": 21.049999237060547
-    },
-    {
-      "timestamp": 1792590900,
-      "close": 20.985000610351562
-    },
-    {
-      "timestamp": 1792591200,
-      "close": 20.954999923706055
-    },
-    {
-      "timestamp": 1792591500,
-      "close": 20.95989990234375
-    },
-    {
-      "timestamp": 1792591800,
-      "close": 21
-    },
-    {
-      "timestamp": 1792592100,
-      "close": 21
-    },
-    {
-      "timestamp": 1792592400,
-      "close": 21.045000076293945
-    },
-    {
-      "timestamp": 1792592700,
-      "close": 21.110000610351562
-    },
-    {
-      "timestamp": 1792593000,
-      "close": 21.09000015258789
-    },
-    {
-      "timestamp": 1792593300,
-      "close": 21.135000228881836
-    },
-    {
-      "timestamp": 1792593600,
-      "close": 21.145000457763672
-    },
-    {
-      "timestamp": 1792593900,
-      "close": 21.1299991607666
-    },
-    {
-      "timestamp": 1792594200,
-      "close": 21.084999084472656
-    },
-    {
-      "timestamp": 1792594500,
-      "close": 21.024999618530273
-    },
-    {
-      "timestamp": 1792594800,
-      "close": 21.065000534057617
-    },
-    {
-      "timestamp": 1792595100,
-      "close": 21.030000686645508
-    },
-    {
-      "timestamp": 1792595400,
-      "close": 21.030000686645508
-    },
-    {
-      "timestamp": 1792595700,
-      "close": 21.049999237060547
-    },
-    {
-      "timestamp": 1792596000,
+      "timestamp": 1792675800,
       "close": 21.03499984741211
     },
     {
-      "timestamp": 1792596300,
-      "close": 21.080400466918945
-    },
-    {
-      "timestamp": 1792596600,
-      "close": 21.06999969482422
-    },
-    {
-      "timestamp": 1792596900,
-      "close": 21.06999969482422
-    },
-    {
-      "timestamp": 1792597200,
-      "close": 21.059999465942383
-    },
-    {
-      "timestamp": 1792597500,
-      "close": 21.049999237060547
-    },
-    {
-      "timestamp": 1792597800,
-      "close": 21.05500030517578
-    },
-    {
-      "timestamp": 1792598100,
-      "close": 21.07990074157715
-    },
-    {
-      "timestamp": 1792598400,
-      "close": 21.065000534057617
-    },
-    {
-      "timestamp": 1792598700,
-      "close": 21.047000885009766
-    },
-    {
-      "timestamp": 1792599000,
-      "close": 21.05500030517578
-    },
-    {
-      "timestamp": 1792599300,
-      "close": 21.070100784301758
-    },
-    {
-      "timestamp": 1792599600,
-      "close": 21.084999084472656
-    },
-    {
-      "timestamp": 1792599900,
-      "close": 21.100099563598633
-    },
-    {
-      "timestamp": 1792600200,
-      "close": 21.114999771118164
-    },
-    {
-      "timestamp": 1792600500,
-      "close": 21.170000076293945
-    },
-    {
-      "timestamp": 1792600800,
-      "close": 21.104999542236328
-    },
-    {
-      "timestamp": 1792601100,
-      "close": 21.084999084472656
-    },
-    {
-      "timestamp": 1792601400,
-      "close": 21.094999313354492
-    },
-    {
-      "timestamp": 1792601700,
-      "close": 21.09000015258789
-    },
-    {
-      "timestamp": 1792602000,
-      "close": 21.065000534057617
-    },
-    {
-      "timestamp": 1792602300,
-      "close": 21.075000762939453
-    },
-    {
-      "timestamp": 1792602600,
-      "close": 21.065000534057617
-    },
-    {
-      "timestamp": 1792602900,
-      "close": 21.075000762939453
-    },
-    {
-      "timestamp": 1792603200,
-      "close": 21.100000381469727
-    },
-    {
-      "timestamp": 1792603500,
-      "close": 21.100299835205078
-    },
-    {
-      "timestamp": 1792603800,
-      "close": 21.094999313354492
-    },
-    {
-      "timestamp": 1792604100,
-      "close": 21.075000762939453
-    },
-    {
-      "timestamp": 1792604400,
-      "close": 21.09000015258789
-    },
-    {
-      "timestamp": 1792604700,
-      "close": 21.104999542236328
-    },
-    {
-      "timestamp": 1792605000,
-      "close": 21.110000610351562
-    },
-    {
-      "timestamp": 1792605300,
-      "close": 21.090099334716797
-    },
-    {
-      "timestamp": 1792605600,
-      "close": 21.079999923706055
-    },
-    {
-      "timestamp": 1792605900,
-      "close": 21.075000762939453
-    },
-    {
-      "timestamp": 1792606200,
-      "close": 21.08049964904785
-    },
-    {
-      "timestamp": 1792606500,
-      "close": 21.09000015258789
-    },
-    {
-      "timestamp": 1792606800,
-      "close": 21.075000762939453
-    },
-    {
-      "timestamp": 1792607100,
-      "close": 21.084999084472656
-    },
-    {
-      "timestamp": 1792607400,
-      "close": 21.075000762939453
-    },
-    {
-      "timestamp": 1792607700,
-      "close": 21.084999084472656
-    },
-    {
-      "timestamp": 1792608000,
-      "close": 21.094999313354492
-    },
-    {
-      "timestamp": 1792608300,
-      "close": 21.057199478149414
-    },
-    {
-      "timestamp": 1792608600,
+      "timestamp": 1792676100,
       "close": 21.045000076293945
     },
     {
-      "timestamp": 1792608900,
-      "close": 20.9950008392334
+      "timestamp": 1792676400,
+      "close": 21.065000534057617
     },
     {
-      "timestamp": 1792609200,
-      "close": 20.934999465942383
+      "timestamp": 1792676700,
+      "close": 21.139999389648438
     },
     {
-      "timestamp": 1792609500,
-      "close": 20.900100708007812
-    },
-    {
-      "timestamp": 1792609800,
-      "close": 20.92020034790039
-    },
-    {
-      "timestamp": 1792610100,
-      "close": 20.954999923706055
-    },
-    {
-      "timestamp": 1792610400,
-      "close": 20.96500015258789
-    },
-    {
-      "timestamp": 1792610700,
-      "close": 21.03499984741211
-    },
-    {
-      "timestamp": 1792611000,
-      "close": 21.010000228881836
-    },
-    {
-      "timestamp": 1792611300,
-      "close": 21.0049991607666
-    },
-    {
-      "timestamp": 1792611600,
-      "close": 21.03499984741211
-    },
-    {
-      "timestamp": 1792611900,
-      "close": 21.05500030517578
-    },
-    {
-      "timestamp": 1792612200,
-      "close": 21.084999084472656
-    },
-    {
-      "timestamp": 1792612500,
-      "close": 21.045000076293945
-    },
-    {
-      "timestamp": 1792612800,
-      "close": 21.030000686645508
+      "timestamp": 1792676875,
+      "close": 21.190000534057617
     }
   ],
   "news": {
-    "title": "Scotiabank Expects Q4 Adjusted Earnings Contribution of CA$104 Million From KeyCorp",
-    "publisher": "MT Newswires",
-    "publishedAt": "2026-10-21T16:41:39.000Z"
+    "title": "AI Deepfake Threats Put Businesses of Every Size at Risk: Tips From KeyBank That Can Help Companies Strengthen Fraud Defenses",
+    "publisher": "ACCESS Newswire",
+    "publishedAt": "2026-10-22T13:30:00.000Z"
   },
-  "generatedAt": "2026-10-22T07:35:13.985Z"
+  "generatedAt": "2026-10-22T13:47:59.671Z"
 }
