@@ -5,19 +5,19 @@
     "displaySymbol": "$MS"
   },
   "name": "MORGAN STANLEY",
-  "price": 186.374,
-  "previousClose": 187.11,
-  "dayHigh": 186.45,
-  "dayLow": 183.38,
-  "change": -0.7360000000000184,
-  "changePercent": -0.39335150446262535,
+  "price": 183.575,
+  "previousClose": 187.01,
+  "dayHigh": 187,
+  "dayLow": 182.22,
+  "change": -3.4350000000000023,
+  "changePercent": -1.8368001711138455,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
       "timestamp": 1792675800,
-      "close": 185.0876007080078
+      "close": 185.05999755859375
     },
     {
       "timestamp": 1792676100,
@@ -29,17 +29,245 @@
     },
     {
       "timestamp": 1792676700,
-      "close": 186.4499969482422
+      "close": 186.13499450683594
     },
     {
-      "timestamp": 1792676887,
-      "close": 186.37420654296875
+      "timestamp": 1792677000,
+      "close": 186.3800048828125
+    },
+    {
+      "timestamp": 1792677300,
+      "close": 186.5449981689453
+    },
+    {
+      "timestamp": 1792677600,
+      "close": 186.10386657714844
+    },
+    {
+      "timestamp": 1792677900,
+      "close": 185.33999633789062
+    },
+    {
+      "timestamp": 1792678200,
+      "close": 185.17999267578125
+    },
+    {
+      "timestamp": 1792678500,
+      "close": 184.4499969482422
+    },
+    {
+      "timestamp": 1792678800,
+      "close": 183.7100067138672
+    },
+    {
+      "timestamp": 1792679100,
+      "close": 183.22999572753906
+    },
+    {
+      "timestamp": 1792679400,
+      "close": 183.1999969482422
+    },
+    {
+      "timestamp": 1792679700,
+      "close": 182.52000427246094
+    },
+    {
+      "timestamp": 1792680000,
+      "close": 183.125
+    },
+    {
+      "timestamp": 1792680300,
+      "close": 182.38999938964844
+    },
+    {
+      "timestamp": 1792680600,
+      "close": 182.72500610351562
+    },
+    {
+      "timestamp": 1792680900,
+      "close": 182.7949981689453
+    },
+    {
+      "timestamp": 1792681200,
+      "close": 182.44000244140625
+    },
+    {
+      "timestamp": 1792681500,
+      "close": 182.6999969482422
+    },
+    {
+      "timestamp": 1792681800,
+      "close": 182.51499938964844
+    },
+    {
+      "timestamp": 1792682100,
+      "close": 183.24000549316406
+    },
+    {
+      "timestamp": 1792682400,
+      "close": 183.27000427246094
+    },
+    {
+      "timestamp": 1792682700,
+      "close": 182.92999267578125
+    },
+    {
+      "timestamp": 1792683000,
+      "close": 183.22000122070312
+    },
+    {
+      "timestamp": 1792683300,
+      "close": 183.3800048828125
+    },
+    {
+      "timestamp": 1792683600,
+      "close": 183.1999969482422
+    },
+    {
+      "timestamp": 1792683900,
+      "close": 183.3699951171875
+    },
+    {
+      "timestamp": 1792684200,
+      "close": 183.49000549316406
+    },
+    {
+      "timestamp": 1792684500,
+      "close": 183.64999389648438
+    },
+    {
+      "timestamp": 1792684800,
+      "close": 183.67999267578125
+    },
+    {
+      "timestamp": 1792685100,
+      "close": 183.7949981689453
+    },
+    {
+      "timestamp": 1792685400,
+      "close": 183.85000610351562
+    },
+    {
+      "timestamp": 1792685700,
+      "close": 184.1999969482422
+    },
+    {
+      "timestamp": 1792686000,
+      "close": 184.1999969482422
+    },
+    {
+      "timestamp": 1792686300,
+      "close": 184.24000549316406
+    },
+    {
+      "timestamp": 1792686600,
+      "close": 184.00999450683594
+    },
+    {
+      "timestamp": 1792686900,
+      "close": 184.19949340820312
+    },
+    {
+      "timestamp": 1792687200,
+      "close": 183.52999877929688
+    },
+    {
+      "timestamp": 1792687500,
+      "close": 183.89999389648438
+    },
+    {
+      "timestamp": 1792687800,
+      "close": 184.02000427246094
+    },
+    {
+      "timestamp": 1792688100,
+      "close": 184.23500061035156
+    },
+    {
+      "timestamp": 1792688400,
+      "close": 184.0800018310547
+    },
+    {
+      "timestamp": 1792688700,
+      "close": 183.55999755859375
+    },
+    {
+      "timestamp": 1792689000,
+      "close": 183.50999450683594
+    },
+    {
+      "timestamp": 1792689300,
+      "close": 183.74000549316406
+    },
+    {
+      "timestamp": 1792689600,
+      "close": 183.7550048828125
+    },
+    {
+      "timestamp": 1792689900,
+      "close": 183.80499267578125
+    },
+    {
+      "timestamp": 1792690200,
+      "close": 184.02000427246094
+    },
+    {
+      "timestamp": 1792690500,
+      "close": 183.77999877929688
+    },
+    {
+      "timestamp": 1792690800,
+      "close": 183.6999969482422
+    },
+    {
+      "timestamp": 1792691100,
+      "close": 183.67999267578125
+    },
+    {
+      "timestamp": 1792691400,
+      "close": 183.65499877929688
+    },
+    {
+      "timestamp": 1792691700,
+      "close": 183.72999572753906
+    },
+    {
+      "timestamp": 1792692000,
+      "close": 183.23500061035156
+    },
+    {
+      "timestamp": 1792692300,
+      "close": 183.52000427246094
+    },
+    {
+      "timestamp": 1792692600,
+      "close": 183.3350067138672
+    },
+    {
+      "timestamp": 1792692900,
+      "close": 183.55499267578125
+    },
+    {
+      "timestamp": 1792693200,
+      "close": 183.4600067138672
+    },
+    {
+      "timestamp": 1792693500,
+      "close": 183.5050048828125
+    },
+    {
+      "timestamp": 1792693800,
+      "close": 183.5
+    },
+    {
+      "timestamp": 1792694012,
+      "close": 183.5749969482422
     }
   ],
   "news": {
-    "title": "Is It Time for a New CEO at Bank of America?",
-    "publisher": "Barrons.com",
-    "publishedAt": "2026-10-22T09:00:00.000Z"
+    "title": "Morgan Stanley Sustainable Signals: Global Survey Shows Institutional Investors Expect Modest Growth in Sustainable Investment Allocations",
+    "publisher": "Business Wire",
+    "publishedAt": "2026-10-22T16:00:00.000Z"
   },
-  "generatedAt": "2026-10-22T13:48:10.065Z"
+  "generatedAt": "2026-10-22T18:33:39.890Z"
 }
