@@ -5,12 +5,12 @@
     "displaySymbol": "$CMCSA"
   },
   "name": "COMCAST CORPORATION",
-  "price": 22.045,
+  "price": 22.05,
   "previousClose": 22.69,
   "dayHigh": 22.45,
   "dayLow": 21.9,
-  "change": -0.6449999999999996,
-  "changePercent": -2.8426619656236207,
+  "change": -0.6400000000000006,
+  "changePercent": -2.820625826355225,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1793042100,
+      "close": 22.069900512695312
+    },
+    {
+      "timestamp": 1793042400,
+      "close": 22.03499984741211
+    },
+    {
+      "timestamp": 1793042700,
+      "close": 22.075000762939453
+    },
+    {
+      "timestamp": 1793043000,
+      "close": 22.100000381469727
+    },
+    {
+      "timestamp": 1793043300,
       "close": 22.045000076293945
     },
     {
-      "timestamp": 1793042318,
+      "timestamp": 1793043600,
+      "close": 22.05500030517578
+    },
+    {
+      "timestamp": 1793043900,
+      "close": 22.024999618530273
+    },
+    {
+      "timestamp": 1793044200,
       "close": 22.045000076293945
+    },
+    {
+      "timestamp": 1793044500,
+      "close": 22.065000534057617
+    },
+    {
+      "timestamp": 1793044800,
+      "close": 22.049999237060547
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-10-26T16:00:00.000Z"
   },
-  "generatedAt": "2026-10-26T19:18:40.201Z"
+  "generatedAt": "2026-10-26T23:52:42.645Z"
 }

@@ -5,12 +5,12 @@
     "displaySymbol": "$PPL"
   },
   "name": "PPL CORPORATION",
-  "price": 35.015,
+  "price": 34.92,
   "previousClose": 34.98,
   "dayHigh": 35.18,
-  "dayLow": 34.955,
-  "change": 0.035000000000003695,
-  "changePercent": 0.10005717552888421,
+  "dayLow": 34.9,
+  "change": -0.05999999999999517,
+  "changePercent": -0.17152658662091244,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -293,11 +293,43 @@
     },
     {
       "timestamp": 1793042100,
+      "close": 35.01499938964844
+    },
+    {
+      "timestamp": 1793042400,
+      "close": 35.064998626708984
+    },
+    {
+      "timestamp": 1793042700,
+      "close": 35.095001220703125
+    },
+    {
+      "timestamp": 1793043000,
+      "close": 35.064998626708984
+    },
+    {
+      "timestamp": 1793043300,
+      "close": 35.05500030517578
+    },
+    {
+      "timestamp": 1793043600,
       "close": 35.005001068115234
     },
     {
-      "timestamp": 1793042371,
-      "close": 35.01499938964844
+      "timestamp": 1793043900,
+      "close": 34.935001373291016
+    },
+    {
+      "timestamp": 1793044200,
+      "close": 34.95000076293945
+    },
+    {
+      "timestamp": 1793044500,
+      "close": 34.92499923706055
+    },
+    {
+      "timestamp": 1793044800,
+      "close": 34.91999816894531
     }
   ],
   "news": {
@@ -305,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-10-26T15:05:00.000Z"
   },
-  "generatedAt": "2026-10-26T19:19:40.335Z"
+  "generatedAt": "2026-10-26T23:53:48.279Z"
 }
