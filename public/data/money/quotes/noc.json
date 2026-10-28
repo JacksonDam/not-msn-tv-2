@@ -5,337 +5,149 @@
     "displaySymbol": "$NOC"
   },
   "name": "NORTHROP GRUMMAN CORPORATION",
-  "price": 551.23,
-  "previousClose": 565.41,
-  "dayHigh": 566.56,
-  "dayLow": 550.36,
-  "change": -14.17999999999995,
-  "changePercent": -2.5079146106365204,
+  "price": 552.745,
+  "previousClose": 551.23,
+  "dayHigh": 553.89,
+  "dayLow": 545,
+  "change": 1.5149999999999864,
+  "changePercent": 0.27483990348855947,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1793107800,
-      "close": 563.10498046875
+      "timestamp": 1793194200,
+      "close": 550.1599731445312
     },
     {
-      "timestamp": 1793108100,
-      "close": 563.2050170898438
-    },
-    {
-      "timestamp": 1793108400,
-      "close": 562.7899780273438
-    },
-    {
-      "timestamp": 1793108700,
-      "close": 563.1500244140625
-    },
-    {
-      "timestamp": 1793109000,
-      "close": 563.9349975585938
-    },
-    {
-      "timestamp": 1793109300,
-      "close": 564
-    },
-    {
-      "timestamp": 1793109600,
-      "close": 563.9000244140625
-    },
-    {
-      "timestamp": 1793109900,
-      "close": 562.885009765625
-    },
-    {
-      "timestamp": 1793110200,
-      "close": 562.6099853515625
-    },
-    {
-      "timestamp": 1793110500,
-      "close": 562.7850952148438
-    },
-    {
-      "timestamp": 1793110800,
-      "close": 562.0449829101562
-    },
-    {
-      "timestamp": 1793111100,
-      "close": 560
-    },
-    {
-      "timestamp": 1793111400,
-      "close": 558.760009765625
-    },
-    {
-      "timestamp": 1793111700,
-      "close": 557.7000122070312
-    },
-    {
-      "timestamp": 1793112000,
-      "close": 557.114990234375
-    },
-    {
-      "timestamp": 1793112300,
-      "close": 557.6500244140625
-    },
-    {
-      "timestamp": 1793112600,
-      "close": 559.0399780273438
-    },
-    {
-      "timestamp": 1793112900,
-      "close": 559.4899291992188
-    },
-    {
-      "timestamp": 1793113200,
-      "close": 559.7999877929688
-    },
-    {
-      "timestamp": 1793113500,
-      "close": 559.625
-    },
-    {
-      "timestamp": 1793113800,
-      "close": 560.7899780273438
-    },
-    {
-      "timestamp": 1793114100,
-      "close": 562.6500244140625
-    },
-    {
-      "timestamp": 1793114400,
-      "close": 561.9099731445312
-    },
-    {
-      "timestamp": 1793114700,
-      "close": 561.6448364257812
-    },
-    {
-      "timestamp": 1793115000,
-      "close": 561.9600219726562
-    },
-    {
-      "timestamp": 1793115300,
-      "close": 561.3599853515625
-    },
-    {
-      "timestamp": 1793115600,
-      "close": 561.010009765625
-    },
-    {
-      "timestamp": 1793115900,
-      "close": 560.6849975585938
-    },
-    {
-      "timestamp": 1793116200,
-      "close": 560.6599731445312
-    },
-    {
-      "timestamp": 1793116500,
-      "close": 560.0499877929688
-    },
-    {
-      "timestamp": 1793116800,
-      "close": 559.4199829101562
-    },
-    {
-      "timestamp": 1793117100,
-      "close": 558.22998046875
-    },
-    {
-      "timestamp": 1793117400,
-      "close": 557.6275024414062
-    },
-    {
-      "timestamp": 1793117700,
-      "close": 557.4749755859375
-    },
-    {
-      "timestamp": 1793118000,
-      "close": 556.8300170898438
-    },
-    {
-      "timestamp": 1793118300,
-      "close": 555.135009765625
-    },
-    {
-      "timestamp": 1793118600,
-      "close": 555.760009765625
-    },
-    {
-      "timestamp": 1793118900,
-      "close": 555.864990234375
-    },
-    {
-      "timestamp": 1793119200,
-      "close": 555.9349975585938
-    },
-    {
-      "timestamp": 1793119500,
-      "close": 556.6950073242188
-    },
-    {
-      "timestamp": 1793119800,
-      "close": 556.4099731445312
-    },
-    {
-      "timestamp": 1793120100,
-      "close": 556.594970703125
-    },
-    {
-      "timestamp": 1793120400,
-      "close": 556.4517822265625
-    },
-    {
-      "timestamp": 1793120700,
-      "close": 556.22998046875
-    },
-    {
-      "timestamp": 1793121000,
-      "close": 556.9749755859375
-    },
-    {
-      "timestamp": 1793121300,
-      "close": 557.5050048828125
-    },
-    {
-      "timestamp": 1793121600,
-      "close": 557.1500244140625
-    },
-    {
-      "timestamp": 1793121900,
-      "close": 557.0800170898438
-    },
-    {
-      "timestamp": 1793122200,
-      "close": 556.5850219726562
-    },
-    {
-      "timestamp": 1793122500,
-      "close": 555.22998046875
-    },
-    {
-      "timestamp": 1793122800,
-      "close": 555.8200073242188
-    },
-    {
-      "timestamp": 1793123100,
-      "close": 555.4199829101562
-    },
-    {
-      "timestamp": 1793123400,
-      "close": 555.4949951171875
-    },
-    {
-      "timestamp": 1793123700,
-      "close": 554.2899780273438
-    },
-    {
-      "timestamp": 1793124000,
-      "close": 554.5499877929688
-    },
-    {
-      "timestamp": 1793124300,
-      "close": 553
-    },
-    {
-      "timestamp": 1793124600,
-      "close": 553.3900146484375
-    },
-    {
-      "timestamp": 1793124900,
-      "close": 552.9348754882812
-    },
-    {
-      "timestamp": 1793125200,
-      "close": 553.3049926757812
-    },
-    {
-      "timestamp": 1793125500,
-      "close": 553.4600219726562
-    },
-    {
-      "timestamp": 1793125800,
-      "close": 553.1400146484375
-    },
-    {
-      "timestamp": 1793126100,
-      "close": 552.5800170898438
-    },
-    {
-      "timestamp": 1793126400,
-      "close": 553.97998046875
-    },
-    {
-      "timestamp": 1793126700,
-      "close": 553.27001953125
-    },
-    {
-      "timestamp": 1793127000,
-      "close": 553.5
-    },
-    {
-      "timestamp": 1793127300,
-      "close": 552.9849853515625
-    },
-    {
-      "timestamp": 1793127600,
-      "close": 552.6649780273438
-    },
-    {
-      "timestamp": 1793127900,
-      "close": 552.5349731445312
-    },
-    {
-      "timestamp": 1793128200,
-      "close": 552.35498046875
-    },
-    {
-      "timestamp": 1793128500,
-      "close": 552.280029296875
-    },
-    {
-      "timestamp": 1793128800,
-      "close": 552.7899780273438
-    },
-    {
-      "timestamp": 1793129100,
-      "close": 552.5
-    },
-    {
-      "timestamp": 1793129400,
-      "close": 553.719970703125
-    },
-    {
-      "timestamp": 1793129700,
-      "close": 552.719970703125
-    },
-    {
-      "timestamp": 1793130000,
-      "close": 552.52001953125
-    },
-    {
-      "timestamp": 1793130300,
-      "close": 551.780029296875
-    },
-    {
-      "timestamp": 1793130600,
-      "close": 551.9099731445312
-    },
-    {
-      "timestamp": 1793130900,
-      "close": 550.969970703125
-    },
-    {
-      "timestamp": 1793131200,
+      "timestamp": 1793194500,
       "close": 551.22998046875
+    },
+    {
+      "timestamp": 1793194800,
+      "close": 549.8099975585938
+    },
+    {
+      "timestamp": 1793195100,
+      "close": 551.2550048828125
+    },
+    {
+      "timestamp": 1793195400,
+      "close": 550.4500122070312
+    },
+    {
+      "timestamp": 1793195700,
+      "close": 549.7849731445312
+    },
+    {
+      "timestamp": 1793196000,
+      "close": 549.4000244140625
+    },
+    {
+      "timestamp": 1793196300,
+      "close": 549.9736328125
+    },
+    {
+      "timestamp": 1793196600,
+      "close": 550.125
+    },
+    {
+      "timestamp": 1793196900,
+      "close": 549.719970703125
+    },
+    {
+      "timestamp": 1793197200,
+      "close": 549.8068237304688
+    },
+    {
+      "timestamp": 1793197500,
+      "close": 549.3499755859375
+    },
+    {
+      "timestamp": 1793197800,
+      "close": 551.219970703125
+    },
+    {
+      "timestamp": 1793198100,
+      "close": 550.739990234375
+    },
+    {
+      "timestamp": 1793198400,
+      "close": 551.635009765625
+    },
+    {
+      "timestamp": 1793198700,
+      "close": 551.565673828125
+    },
+    {
+      "timestamp": 1793199000,
+      "close": 551.219970703125
+    },
+    {
+      "timestamp": 1793199300,
+      "close": 551.6400146484375
+    },
+    {
+      "timestamp": 1793199600,
+      "close": 552.010009765625
+    },
+    {
+      "timestamp": 1793199900,
+      "close": 552.9400024414062
+    },
+    {
+      "timestamp": 1793200200,
+      "close": 552.72998046875
+    },
+    {
+      "timestamp": 1793200500,
+      "close": 552.8800048828125
+    },
+    {
+      "timestamp": 1793200800,
+      "close": 552.5888061523438
+    },
+    {
+      "timestamp": 1793201100,
+      "close": 551.10498046875
+    },
+    {
+      "timestamp": 1793201400,
+      "close": 551.9650268554688
+    },
+    {
+      "timestamp": 1793201700,
+      "close": 552.9099731445312
+    },
+    {
+      "timestamp": 1793202000,
+      "close": 553.5349731445312
+    },
+    {
+      "timestamp": 1793202300,
+      "close": 553.8900146484375
+    },
+    {
+      "timestamp": 1793202600,
+      "close": 552.75
+    },
+    {
+      "timestamp": 1793202900,
+      "close": 552.7150268554688
+    },
+    {
+      "timestamp": 1793203200,
+      "close": 552.7150268554688
+    },
+    {
+      "timestamp": 1793203313,
+      "close": 552.7449951171875
     }
   ],
   "news": {
-    "title": "Global Drone Defense System Market Report 2026 | Capture 30.6% CAGR Through 2030 as Raytheon Technologies, Lockheed Martin, BAE Systems and DroneShield Scale AI Counter-UAS",
+    "title": "Unmanned Combat Aerial Vehicles (UCAVs) - A $4.8 Billion Market by 2032 as AeroVironment, BAE Systems, Baykar, CASC, and Northrop Grumman Disrupt Warfare",
     "publisher": "GlobeNewswire",
-    "publishedAt": "2026-10-27T21:00:00.000Z"
+    "publishedAt": "2026-10-28T14:46:00.000Z"
   },
-  "generatedAt": "2026-10-28T08:31:11.710Z"
+  "generatedAt": "2026-10-28T16:03:17.982Z"
 }
