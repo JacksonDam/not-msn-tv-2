@@ -5,12 +5,12 @@
     "displaySymbol": "$C"
   },
   "name": "CITIGROUP INC.",
-  "price": 123.33,
+  "price": 123.1,
   "previousClose": 121.97,
   "dayHigh": 124.44,
   "dayLow": 122.72,
-  "change": 1.3599999999999994,
-  "changePercent": 1.1150282856440104,
+  "change": 1.1299999999999955,
+  "changePercent": 0.9264573255718581,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 123.33000183105469
+      "close": 123.25
     },
     {
-      "timestamp": 1793652420,
-      "close": 123.33000183105469
+      "timestamp": 1793652600,
+      "close": 123.19999694824219
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 123.0999984741211
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 123.0999984741211
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Business Wire",
     "publishedAt": "2026-11-02T17:51:00.000Z"
   },
-  "generatedAt": "2026-11-02T20:47:02.362Z"
+  "generatedAt": "2026-11-03T02:55:09.271Z"
 }

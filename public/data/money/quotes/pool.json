@@ -5,12 +5,12 @@
     "displaySymbol": "$POOL"
   },
   "name": "POOL CORPORATION",
-  "price": 214.33,
+  "price": 214.76,
   "previousClose": 205.95,
   "dayHigh": 217,
   "dayLow": 206.99,
-  "change": 8.380000000000024,
-  "changePercent": 4.068948773974277,
+  "change": 8.810000000000002,
+  "changePercent": 4.277737314882255,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 214.0449981689453
+      "close": 214.3000030517578
     },
     {
-      "timestamp": 1793652433,
-      "close": 214.3300018310547
+      "timestamp": 1793652600,
+      "close": 214.44000244140625
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 214.82000732421875
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 214.75999450683594
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-10-31T13:42:50.000Z"
   },
-  "generatedAt": "2026-11-02T20:48:23.949Z"
+  "generatedAt": "2026-11-03T02:56:07.004Z"
 }

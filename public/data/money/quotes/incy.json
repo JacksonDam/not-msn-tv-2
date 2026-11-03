@@ -5,12 +5,12 @@
     "displaySymbol": "$INCY"
   },
   "name": "INCYTE CORPORATION",
-  "price": 120.62,
+  "price": 120.04,
   "previousClose": 120.39,
   "dayHigh": 121.52,
   "dayLow": 118.25,
-  "change": 0.23000000000000398,
-  "changePercent": 0.19104576792092698,
+  "change": -0.3499999999999943,
+  "changePercent": -0.2907218207492269,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 120.61000061035156
+      "close": 120.69000244140625
     },
     {
-      "timestamp": 1793652455,
-      "close": 120.62000274658203
+      "timestamp": 1793652600,
+      "close": 120.94999694824219
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 120.05999755859375
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 120.04000091552734
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-10-31T22:09:57.000Z"
   },
-  "generatedAt": "2026-11-02T20:47:48.962Z"
+  "generatedAt": "2026-11-03T02:55:41.768Z"
 }

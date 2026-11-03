@@ -5,12 +5,12 @@
     "displaySymbol": "$AMGN"
   },
   "name": "AMGEN INC.",
-  "price": 468,
+  "price": 465.45,
   "previousClose": 466.01,
   "dayHigh": 469,
-  "dayLow": 461.06,
-  "change": 1.990000000000009,
-  "changePercent": 0.4270294628870645,
+  "dayLow": 461,
+  "change": -0.5600000000000023,
+  "changePercent": -0.12016909508379699,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 467.7850036621094
+      "close": 468.5299987792969
     },
     {
-      "timestamp": 1793652406,
-      "close": 468
+      "timestamp": 1793652600,
+      "close": 467.1199951171875
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 465.5199890136719
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 465.45001220703125
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-11-02T20:21:06.000Z"
   },
-  "generatedAt": "2026-11-02T20:46:50.321Z"
+  "generatedAt": "2026-11-03T02:55:01.331Z"
 }

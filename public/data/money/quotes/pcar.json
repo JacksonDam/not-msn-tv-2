@@ -5,12 +5,12 @@
     "displaySymbol": "$PCAR"
   },
   "name": "PACCAR INC",
-  "price": 103.085,
+  "price": 102.74,
   "previousClose": 101.91,
   "dayHigh": 104.37,
   "dayLow": 102.39,
-  "change": 1.1749999999999972,
-  "changePercent": 1.1529781179472056,
+  "change": 0.8299999999999983,
+  "changePercent": 0.8144441173584519,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 103.06999969482422
+      "close": 102.95999908447266
     },
     {
-      "timestamp": 1793652491,
-      "close": 103.08499908447266
+      "timestamp": 1793652600,
+      "close": 102.7699966430664
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 102.83000183105469
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 102.73999786376953
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "StockStory",
     "publishedAt": "2026-10-31T06:35:29.000Z"
   },
-  "generatedAt": "2026-11-02T20:48:18.750Z"
+  "generatedAt": "2026-11-03T02:56:03.477Z"
 }

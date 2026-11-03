@@ -5,12 +5,12 @@
     "displaySymbol": "$DDOG"
   },
   "name": "DATADOG, INC.",
-  "price": 217.1,
+  "price": 216.1,
   "previousClose": 235.27,
   "dayHigh": 236.391,
-  "dayLow": 216.48,
-  "change": -18.170000000000016,
-  "changePercent": -7.723041611765212,
+  "dayLow": 215.73,
+  "change": -19.170000000000016,
+  "changePercent": -8.148085178730827,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 217.42999267578125
+      "close": 217.3249969482422
     },
     {
-      "timestamp": 1793652435,
-      "close": 217.10000610351562
+      "timestamp": 1793652600,
+      "close": 217.06500244140625
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 216.1300048828125
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 216.10000610351562
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Zacks",
     "publishedAt": "2026-11-02T17:03:00.000Z"
   },
-  "generatedAt": "2026-11-02T20:47:18.700Z"
+  "generatedAt": "2026-11-03T02:55:20.285Z"
 }

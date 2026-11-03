@@ -5,12 +5,12 @@
     "displaySymbol": "$APTV"
   },
   "name": "APTIV PLC",
-  "price": 44.26,
+  "price": 44.23,
   "previousClose": 43.93,
   "dayHigh": 45.22,
-  "dayLow": 44.09,
-  "change": 0.3299999999999983,
-  "changePercent": 0.751195083086725,
+  "dayLow": 44,
+  "change": 0.29999999999999716,
+  "changePercent": 0.6829046209879288,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 44.28499984741211
+      "close": 44.185001373291016
     },
     {
-      "timestamp": 1793652405,
-      "close": 44.2599983215332
+      "timestamp": 1793652600,
+      "close": 44.119998931884766
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 44.209999084472656
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 44.22999954223633
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-11-02T20:10:54.000Z"
   },
-  "generatedAt": "2026-11-02T20:46:54.004Z"
+  "generatedAt": "2026-11-03T02:55:03.606Z"
 }

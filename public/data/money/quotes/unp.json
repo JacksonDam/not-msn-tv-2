@@ -5,12 +5,12 @@
     "displaySymbol": "$UNP"
   },
   "name": "UNION PACIFIC CORPORATION",
-  "price": 307.45,
+  "price": 307,
   "previousClose": 304,
   "dayHigh": 307.885,
   "dayLow": 304.06,
-  "change": 3.4499999999999886,
-  "changePercent": 1.1348684210526279,
+  "change": 3,
+  "changePercent": 0.9868421052631579,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -305,7 +305,7 @@
     },
     {
       "timestamp": 1793651400,
-      "close": 307.1600036621094
+      "close": 307.2300109863281
     },
     {
       "timestamp": 1793651700,
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 307.6700134277344
+      "close": 307.1600036621094
     },
     {
-      "timestamp": 1793652523,
-      "close": 307.45001220703125
+      "timestamp": 1793652600,
+      "close": 306.6099853515625
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 307.07000732421875
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 307
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Insider Monkey",
     "publishedAt": "2026-11-01T19:35:09.000Z"
   },
-  "generatedAt": "2026-11-02T20:48:46.135Z"
+  "generatedAt": "2026-11-03T02:56:23.945Z"
 }

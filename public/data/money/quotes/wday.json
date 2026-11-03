@@ -5,12 +5,12 @@
     "displaySymbol": "$WDAY"
   },
   "name": "WORKDAY, INC.",
-  "price": 198.33,
+  "price": 198.13,
   "previousClose": 197.82,
   "dayHigh": 203.21,
   "dayLow": 197.17,
-  "change": 0.5100000000000193,
-  "changePercent": 0.25781013042160517,
+  "change": 0.3100000000000023,
+  "changePercent": 0.15670811849155913,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 198.10000610351562
+      "close": 198.13999938964844
     },
     {
-      "timestamp": 1793652522,
-      "close": 198.3300018310547
+      "timestamp": 1793652600,
+      "close": 198.30499267578125
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 198.1699981689453
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 198.1300048828125
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-11-02T19:37:03.000Z"
   },
-  "generatedAt": "2026-11-02T20:48:50.756Z"
+  "generatedAt": "2026-11-03T02:56:27.782Z"
 }

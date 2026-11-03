@@ -5,12 +5,12 @@
     "displaySymbol": "$NTRS"
   },
   "name": "NORTHERN TRUST CORPORATION",
-  "price": 170.73,
+  "price": 170.66,
   "previousClose": 169.16,
   "dayHigh": 173.94,
   "dayLow": 170.07,
-  "change": 1.5699999999999932,
-  "changePercent": 0.928115393710093,
+  "change": 1.5,
+  "changePercent": 0.8867344525892646,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -317,11 +317,19 @@
     },
     {
       "timestamp": 1793652300,
-      "close": 170.69000244140625
+      "close": 170.6649932861328
     },
     {
-      "timestamp": 1793652459,
-      "close": 170.72999572753906
+      "timestamp": 1793652600,
+      "close": 170.9499969482422
+    },
+    {
+      "timestamp": 1793652900,
+      "close": 170.67999267578125
+    },
+    {
+      "timestamp": 1793653200,
+      "close": 170.66000366210938
     }
   ],
   "news": {
@@ -329,5 +337,5 @@
     "publisher": "MT Newswires",
     "publishedAt": "2026-10-30T10:32:09.000Z"
   },
-  "generatedAt": "2026-11-02T20:48:13.844Z"
+  "generatedAt": "2026-11-03T02:55:59.058Z"
 }
