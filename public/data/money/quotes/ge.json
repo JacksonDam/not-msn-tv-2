@@ -5,12 +5,12 @@
     "displaySymbol": "$GE"
   },
   "name": "GE AEROSPACE",
-  "price": 319.81,
+  "price": 329.45,
   "previousClose": 320.67,
-  "dayHigh": 330.7,
+  "dayHigh": 333.75,
   "dayLow": 318.03,
-  "change": -0.8600000000000136,
-  "changePercent": -0.26818848036923115,
+  "change": 8.779999999999973,
+  "changePercent": 2.7380172763276804,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -57,21 +57,285 @@
     },
     {
       "timestamp": 1793805600,
-      "close": 319.1099853515625
+      "close": 319.2322082519531
     },
     {
       "timestamp": 1793805900,
-      "close": 319.3900146484375
+      "close": 320.6650085449219
     },
     {
-      "timestamp": 1793806005,
-      "close": 319.80999755859375
+      "timestamp": 1793806200,
+      "close": 320.4599914550781
+    },
+    {
+      "timestamp": 1793806500,
+      "close": 321.6549987792969
+    },
+    {
+      "timestamp": 1793806800,
+      "close": 321.94000244140625
+    },
+    {
+      "timestamp": 1793807100,
+      "close": 322.6300048828125
+    },
+    {
+      "timestamp": 1793807400,
+      "close": 322.82000732421875
+    },
+    {
+      "timestamp": 1793807700,
+      "close": 323.260009765625
+    },
+    {
+      "timestamp": 1793808000,
+      "close": 322.810302734375
+    },
+    {
+      "timestamp": 1793808300,
+      "close": 322.29998779296875
+    },
+    {
+      "timestamp": 1793808600,
+      "close": 323.3699951171875
+    },
+    {
+      "timestamp": 1793808900,
+      "close": 324.19000244140625
+    },
+    {
+      "timestamp": 1793809200,
+      "close": 323.9200134277344
+    },
+    {
+      "timestamp": 1793809500,
+      "close": 326.04998779296875
+    },
+    {
+      "timestamp": 1793809800,
+      "close": 327.0799865722656
+    },
+    {
+      "timestamp": 1793810100,
+      "close": 327.6000061035156
+    },
+    {
+      "timestamp": 1793810400,
+      "close": 329.5050048828125
+    },
+    {
+      "timestamp": 1793810700,
+      "close": 332.4599914550781
+    },
+    {
+      "timestamp": 1793811000,
+      "close": 333.2900085449219
+    },
+    {
+      "timestamp": 1793811300,
+      "close": 331.2768859863281
+    },
+    {
+      "timestamp": 1793811600,
+      "close": 330.989990234375
+    },
+    {
+      "timestamp": 1793811900,
+      "close": 331.8999938964844
+    },
+    {
+      "timestamp": 1793812200,
+      "close": 331.6499938964844
+    },
+    {
+      "timestamp": 1793812500,
+      "close": 331.8800048828125
+    },
+    {
+      "timestamp": 1793812800,
+      "close": 331.07501220703125
+    },
+    {
+      "timestamp": 1793813100,
+      "close": 331.3399963378906
+    },
+    {
+      "timestamp": 1793813400,
+      "close": 331.6050109863281
+    },
+    {
+      "timestamp": 1793813700,
+      "close": 331.6000061035156
+    },
+    {
+      "timestamp": 1793814000,
+      "close": 331.6700134277344
+    },
+    {
+      "timestamp": 1793814300,
+      "close": 332.3800048828125
+    },
+    {
+      "timestamp": 1793814600,
+      "close": 332.7200012207031
+    },
+    {
+      "timestamp": 1793814900,
+      "close": 333.07000732421875
+    },
+    {
+      "timestamp": 1793815200,
+      "close": 332.45001220703125
+    },
+    {
+      "timestamp": 1793815500,
+      "close": 331.5775146484375
+    },
+    {
+      "timestamp": 1793815800,
+      "close": 331.3900146484375
+    },
+    {
+      "timestamp": 1793816100,
+      "close": 332.0450134277344
+    },
+    {
+      "timestamp": 1793816400,
+      "close": 332.70001220703125
+    },
+    {
+      "timestamp": 1793816700,
+      "close": 331.8999938964844
+    },
+    {
+      "timestamp": 1793817000,
+      "close": 332.510009765625
+    },
+    {
+      "timestamp": 1793817300,
+      "close": 331.8599853515625
+    },
+    {
+      "timestamp": 1793817600,
+      "close": 331.4049987792969
+    },
+    {
+      "timestamp": 1793817900,
+      "close": 330.8599853515625
+    },
+    {
+      "timestamp": 1793818200,
+      "close": 330.7723083496094
+    },
+    {
+      "timestamp": 1793818500,
+      "close": 330.7950134277344
+    },
+    {
+      "timestamp": 1793818800,
+      "close": 331.0899963378906
+    },
+    {
+      "timestamp": 1793819100,
+      "close": 331.17999267578125
+    },
+    {
+      "timestamp": 1793819400,
+      "close": 330.8599853515625
+    },
+    {
+      "timestamp": 1793819700,
+      "close": 330.8900146484375
+    },
+    {
+      "timestamp": 1793820000,
+      "close": 331.20001220703125
+    },
+    {
+      "timestamp": 1793820300,
+      "close": 331.12750244140625
+    },
+    {
+      "timestamp": 1793820600,
+      "close": 330.625
+    },
+    {
+      "timestamp": 1793820900,
+      "close": 331.05999755859375
+    },
+    {
+      "timestamp": 1793821200,
+      "close": 330.95001220703125
+    },
+    {
+      "timestamp": 1793821500,
+      "close": 330.92999267578125
+    },
+    {
+      "timestamp": 1793821800,
+      "close": 330.8550109863281
+    },
+    {
+      "timestamp": 1793822100,
+      "close": 330.375
+    },
+    {
+      "timestamp": 1793822400,
+      "close": 330.19000244140625
+    },
+    {
+      "timestamp": 1793822700,
+      "close": 329.5
+    },
+    {
+      "timestamp": 1793823000,
+      "close": 329.4800109863281
+    },
+    {
+      "timestamp": 1793823300,
+      "close": 328.3800048828125
+    },
+    {
+      "timestamp": 1793823600,
+      "close": 327.8550109863281
+    },
+    {
+      "timestamp": 1793823900,
+      "close": 328.239990234375
+    },
+    {
+      "timestamp": 1793824200,
+      "close": 328.2099914550781
+    },
+    {
+      "timestamp": 1793824500,
+      "close": 327.82000732421875
+    },
+    {
+      "timestamp": 1793824800,
+      "close": 327.739990234375
+    },
+    {
+      "timestamp": 1793825100,
+      "close": 328.2099914550781
+    },
+    {
+      "timestamp": 1793825400,
+      "close": 329.44000244140625
+    },
+    {
+      "timestamp": 1793825700,
+      "close": 329.5
+    },
+    {
+      "timestamp": 1793826000,
+      "close": 329.45001220703125
     }
   ],
   "news": {
-    "title": "Global Helicopter Turboshaft Engines Market Report 2026 | Capitalize on Defense Modernization as Safran, GE Aerospace, Honeywell, and Rolls-Royce Drive $6.94 Billion Market by 2030",
-    "publisher": "GlobeNewswire",
-    "publishedAt": "2026-11-04T15:10:00.000Z"
+    "title": "Has GE Aerospace Stock Become A Different Bet?",
+    "publisher": "Trefis",
+    "publishedAt": "2026-11-04T20:09:13.000Z"
   },
-  "generatedAt": "2026-11-04T15:26:47.018Z"
+  "generatedAt": "2026-11-04T21:53:21.048Z"
 }
