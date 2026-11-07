@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 107.14,
+  "price": 107.12,
   "previousClose": 106.83,
   "dayHigh": 107.75,
   "dayLow": 105.001,
-  "change": 0.3100000000000023,
-  "changePercent": 0.2901806608630556,
+  "change": 0.29000000000000625,
+  "changePercent": 0.2714593279041526,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1793998200,
-      "close": 107.18000030517578
+      "close": 107.05000305175781
     },
     {
-      "timestamp": 1793998483,
-      "close": 107.13999938964844
+      "timestamp": 1793998500,
+      "close": 107.11000061035156
+    },
+    {
+      "timestamp": 1793998800,
+      "close": 107.12000274658203
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Trefis",
     "publishedAt": "2026-11-06T14:41:58.000Z"
   },
-  "generatedAt": "2026-11-06T20:54:48.786Z"
+  "generatedAt": "2026-11-07T00:57:23.747Z"
 }

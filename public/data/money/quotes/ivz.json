@@ -5,12 +5,12 @@
     "displaySymbol": "$IVZ"
   },
   "name": "INVESCO LTD.",
-  "price": 27.095,
+  "price": 27.08,
   "previousClose": 27.08,
   "dayHigh": 27.67,
   "dayLow": 27.03,
-  "change": 0.015000000000000568,
-  "changePercent": 0.05539143279173032,
+  "change": 0,
+  "changePercent": 0,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
@@ -321,11 +321,15 @@
     },
     {
       "timestamp": 1793998200,
-      "close": 27.075000762939453
+      "close": 27.09000015258789
     },
     {
-      "timestamp": 1793998471,
-      "close": 27.094999313354492
+      "timestamp": 1793998500,
+      "close": 27.06999969482422
+    },
+    {
+      "timestamp": 1793998800,
+      "close": 27.079999923706055
     }
   ],
   "news": {
@@ -333,5 +337,5 @@
     "publisher": "Simply Wall St.",
     "publishedAt": "2026-11-06T16:14:13.000Z"
   },
-  "generatedAt": "2026-11-06T20:54:33.834Z"
+  "generatedAt": "2026-11-07T00:57:08.658Z"
 }
