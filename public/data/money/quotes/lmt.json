@@ -5,25 +5,337 @@
     "displaySymbol": "$LMT"
   },
   "name": "LOCKHEED MARTIN CORPORATION",
-  "price": 597.97,
-  "previousClose": 603.04,
-  "dayHigh": 597.97,
+  "price": 610.05,
+  "previousClose": 603.12,
+  "dayHigh": 610.08,
   "dayLow": 597.49,
-  "change": -5.069999999999936,
-  "changePercent": -0.8407402494030141,
+  "change": 6.92999999999995,
+  "changePercent": 1.1490250696378748,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1794407414,
-      "close": 597.969970703125
+      "timestamp": 1794407400,
+      "close": 601.760009765625
+    },
+    {
+      "timestamp": 1794407700,
+      "close": 599.8300170898438
+    },
+    {
+      "timestamp": 1794408000,
+      "close": 603.3800048828125
+    },
+    {
+      "timestamp": 1794408300,
+      "close": 604.4199829101562
+    },
+    {
+      "timestamp": 1794408600,
+      "close": 605.3900146484375
+    },
+    {
+      "timestamp": 1794408900,
+      "close": 605.3400268554688
+    },
+    {
+      "timestamp": 1794409200,
+      "close": 605.4199829101562
+    },
+    {
+      "timestamp": 1794409500,
+      "close": 604.3300170898438
+    },
+    {
+      "timestamp": 1794409800,
+      "close": 606
+    },
+    {
+      "timestamp": 1794410100,
+      "close": 607.5499877929688
+    },
+    {
+      "timestamp": 1794410400,
+      "close": 607.85498046875
+    },
+    {
+      "timestamp": 1794410700,
+      "close": 607.75
+    },
+    {
+      "timestamp": 1794411000,
+      "close": 607.8150024414062
+    },
+    {
+      "timestamp": 1794411300,
+      "close": 608.1199951171875
+    },
+    {
+      "timestamp": 1794411600,
+      "close": 607.85498046875
+    },
+    {
+      "timestamp": 1794411900,
+      "close": 606.5499877929688
+    },
+    {
+      "timestamp": 1794412200,
+      "close": 606.2000122070312
+    },
+    {
+      "timestamp": 1794412500,
+      "close": 606.010009765625
+    },
+    {
+      "timestamp": 1794412800,
+      "close": 606.2550048828125
+    },
+    {
+      "timestamp": 1794413100,
+      "close": 605.469970703125
+    },
+    {
+      "timestamp": 1794413400,
+      "close": 606.0700073242188
+    },
+    {
+      "timestamp": 1794413700,
+      "close": 606.385009765625
+    },
+    {
+      "timestamp": 1794414000,
+      "close": 605.9849853515625
+    },
+    {
+      "timestamp": 1794414300,
+      "close": 605.1699829101562
+    },
+    {
+      "timestamp": 1794414600,
+      "close": 606.0999755859375
+    },
+    {
+      "timestamp": 1794414900,
+      "close": 606.239990234375
+    },
+    {
+      "timestamp": 1794415200,
+      "close": 607.260009765625
+    },
+    {
+      "timestamp": 1794415500,
+      "close": 607.02001953125
+    },
+    {
+      "timestamp": 1794415800,
+      "close": 606.5999755859375
+    },
+    {
+      "timestamp": 1794416100,
+      "close": 607.0800170898438
+    },
+    {
+      "timestamp": 1794416400,
+      "close": 607.25
+    },
+    {
+      "timestamp": 1794416700,
+      "close": 607.530029296875
+    },
+    {
+      "timestamp": 1794417000,
+      "close": 607.27001953125
+    },
+    {
+      "timestamp": 1794417300,
+      "close": 607.6799926757812
+    },
+    {
+      "timestamp": 1794417600,
+      "close": 607.3250122070312
+    },
+    {
+      "timestamp": 1794417900,
+      "close": 607.469970703125
+    },
+    {
+      "timestamp": 1794418200,
+      "close": 607.5050048828125
+    },
+    {
+      "timestamp": 1794418500,
+      "close": 607.5499877929688
+    },
+    {
+      "timestamp": 1794418800,
+      "close": 608.0750122070312
+    },
+    {
+      "timestamp": 1794419100,
+      "close": 607.989990234375
+    },
+    {
+      "timestamp": 1794419400,
+      "close": 607.9149780273438
+    },
+    {
+      "timestamp": 1794419700,
+      "close": 607.510009765625
+    },
+    {
+      "timestamp": 1794420000,
+      "close": 607.155029296875
+    },
+    {
+      "timestamp": 1794420300,
+      "close": 606.989990234375
+    },
+    {
+      "timestamp": 1794420600,
+      "close": 605.8909912109375
+    },
+    {
+      "timestamp": 1794420900,
+      "close": 606.6500244140625
+    },
+    {
+      "timestamp": 1794421200,
+      "close": 606.6099853515625
+    },
+    {
+      "timestamp": 1794421500,
+      "close": 606.5700073242188
+    },
+    {
+      "timestamp": 1794421800,
+      "close": 606.1500244140625
+    },
+    {
+      "timestamp": 1794422100,
+      "close": 606.2249755859375
+    },
+    {
+      "timestamp": 1794422400,
+      "close": 606.6799926757812
+    },
+    {
+      "timestamp": 1794422700,
+      "close": 607.2550048828125
+    },
+    {
+      "timestamp": 1794423000,
+      "close": 606.8099975585938
+    },
+    {
+      "timestamp": 1794423300,
+      "close": 607.030029296875
+    },
+    {
+      "timestamp": 1794423600,
+      "close": 606.9299926757812
+    },
+    {
+      "timestamp": 1794423900,
+      "close": 606.77001953125
+    },
+    {
+      "timestamp": 1794424200,
+      "close": 607.155029296875
+    },
+    {
+      "timestamp": 1794424500,
+      "close": 607.3300170898438
+    },
+    {
+      "timestamp": 1794424800,
+      "close": 607.3099975585938
+    },
+    {
+      "timestamp": 1794425100,
+      "close": 607.3098754882812
+    },
+    {
+      "timestamp": 1794425400,
+      "close": 607.6300048828125
+    },
+    {
+      "timestamp": 1794425700,
+      "close": 607.885009765625
+    },
+    {
+      "timestamp": 1794426000,
+      "close": 608.010009765625
+    },
+    {
+      "timestamp": 1794426300,
+      "close": 607.719970703125
+    },
+    {
+      "timestamp": 1794426600,
+      "close": 608.2000122070312
+    },
+    {
+      "timestamp": 1794426900,
+      "close": 608.0399780273438
+    },
+    {
+      "timestamp": 1794427200,
+      "close": 608.7000122070312
+    },
+    {
+      "timestamp": 1794427500,
+      "close": 608.5599975585938
+    },
+    {
+      "timestamp": 1794427800,
+      "close": 608.6875
+    },
+    {
+      "timestamp": 1794428100,
+      "close": 608.6749877929688
+    },
+    {
+      "timestamp": 1794428400,
+      "close": 608.6400146484375
+    },
+    {
+      "timestamp": 1794428700,
+      "close": 608.6199951171875
+    },
+    {
+      "timestamp": 1794429000,
+      "close": 609.3099975585938
+    },
+    {
+      "timestamp": 1794429300,
+      "close": 609.3099975585938
+    },
+    {
+      "timestamp": 1794429600,
+      "close": 608.739990234375
+    },
+    {
+      "timestamp": 1794429900,
+      "close": 608.969970703125
+    },
+    {
+      "timestamp": 1794430200,
+      "close": 609.5449829101562
+    },
+    {
+      "timestamp": 1794430500,
+      "close": 609.9249877929688
+    },
+    {
+      "timestamp": 1794430800,
+      "close": 610.0499877929688
     }
   ],
   "news": {
-    "title": "CesiumAstro tees up $7M makeover for business park once at center of Velocis dispute",
-    "publisher": "The Real Deal",
-    "publishedAt": "2026-11-10T22:00:00.000Z"
+    "title": "Lockheed Martin Stock (LMT) Looks Attractive Despite the Budget Debate",
+    "publisher": "TipRanks",
+    "publishedAt": "2026-11-11T21:37:00.000Z"
   },
-  "generatedAt": "2026-11-11T14:30:17.346Z"
+  "generatedAt": "2026-11-11T21:58:09.512Z"
 }

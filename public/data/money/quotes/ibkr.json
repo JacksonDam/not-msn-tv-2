@@ -5,20 +5,337 @@
     "displaySymbol": "$IBKR"
   },
   "name": "INTERACTIVE BROKERS GROUP, INC.",
-  "price": 77.59,
-  "previousClose": 77.57,
-  "dayHigh": 78.53,
-  "dayLow": 76.715,
-  "change": 0.020000000000010232,
-  "changePercent": 0.025783163594186198,
+  "price": 82.49,
+  "previousClose": 77.59,
+  "dayHigh": 83.78,
+  "dayLow": 79.68,
+  "change": 4.8999999999999915,
+  "changePercent": 6.315246810155936,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
-  "series": [],
+  "series": [
+    {
+      "timestamp": 1794407400,
+      "close": 80.45500183105469
+    },
+    {
+      "timestamp": 1794407700,
+      "close": 80.44999694824219
+    },
+    {
+      "timestamp": 1794408000,
+      "close": 81.17500305175781
+    },
+    {
+      "timestamp": 1794408300,
+      "close": 81.58499908447266
+    },
+    {
+      "timestamp": 1794408600,
+      "close": 81.73999786376953
+    },
+    {
+      "timestamp": 1794408900,
+      "close": 81.58000183105469
+    },
+    {
+      "timestamp": 1794409200,
+      "close": 81.86499786376953
+    },
+    {
+      "timestamp": 1794409500,
+      "close": 82.18000030517578
+    },
+    {
+      "timestamp": 1794409800,
+      "close": 82.01000213623047
+    },
+    {
+      "timestamp": 1794410100,
+      "close": 82.33999633789062
+    },
+    {
+      "timestamp": 1794410400,
+      "close": 82.38999938964844
+    },
+    {
+      "timestamp": 1794410700,
+      "close": 82.5999984741211
+    },
+    {
+      "timestamp": 1794411000,
+      "close": 82.55999755859375
+    },
+    {
+      "timestamp": 1794411300,
+      "close": 82.68499755859375
+    },
+    {
+      "timestamp": 1794411600,
+      "close": 82.76000213623047
+    },
+    {
+      "timestamp": 1794411900,
+      "close": 82.75
+    },
+    {
+      "timestamp": 1794412200,
+      "close": 82.8550033569336
+    },
+    {
+      "timestamp": 1794412500,
+      "close": 82.87999725341797
+    },
+    {
+      "timestamp": 1794412800,
+      "close": 82.75
+    },
+    {
+      "timestamp": 1794413100,
+      "close": 82.52999877929688
+    },
+    {
+      "timestamp": 1794413400,
+      "close": 82.79499816894531
+    },
+    {
+      "timestamp": 1794413700,
+      "close": 82.83000183105469
+    },
+    {
+      "timestamp": 1794414000,
+      "close": 82.91999816894531
+    },
+    {
+      "timestamp": 1794414300,
+      "close": 83.09500122070312
+    },
+    {
+      "timestamp": 1794414600,
+      "close": 82.9749984741211
+    },
+    {
+      "timestamp": 1794414900,
+      "close": 82.91000366210938
+    },
+    {
+      "timestamp": 1794415200,
+      "close": 82.98999786376953
+    },
+    {
+      "timestamp": 1794415500,
+      "close": 83.16000366210938
+    },
+    {
+      "timestamp": 1794415800,
+      "close": 83.27999877929688
+    },
+    {
+      "timestamp": 1794416100,
+      "close": 83.41000366210938
+    },
+    {
+      "timestamp": 1794416400,
+      "close": 83.55999755859375
+    },
+    {
+      "timestamp": 1794416700,
+      "close": 83.41999816894531
+    },
+    {
+      "timestamp": 1794417000,
+      "close": 83.55500030517578
+    },
+    {
+      "timestamp": 1794417300,
+      "close": 83.66000366210938
+    },
+    {
+      "timestamp": 1794417600,
+      "close": 83.69999694824219
+    },
+    {
+      "timestamp": 1794417900,
+      "close": 83.62000274658203
+    },
+    {
+      "timestamp": 1794418200,
+      "close": 83.69999694824219
+    },
+    {
+      "timestamp": 1794418500,
+      "close": 83.6500015258789
+    },
+    {
+      "timestamp": 1794418800,
+      "close": 83.5999984741211
+    },
+    {
+      "timestamp": 1794419100,
+      "close": 83.5999984741211
+    },
+    {
+      "timestamp": 1794419400,
+      "close": 83.56510162353516
+    },
+    {
+      "timestamp": 1794419700,
+      "close": 83.55999755859375
+    },
+    {
+      "timestamp": 1794420000,
+      "close": 83.30999755859375
+    },
+    {
+      "timestamp": 1794420300,
+      "close": 83.27999877929688
+    },
+    {
+      "timestamp": 1794420600,
+      "close": 83.19999694824219
+    },
+    {
+      "timestamp": 1794420900,
+      "close": 83.30770111083984
+    },
+    {
+      "timestamp": 1794421200,
+      "close": 83.23999786376953
+    },
+    {
+      "timestamp": 1794421500,
+      "close": 83.42500305175781
+    },
+    {
+      "timestamp": 1794421800,
+      "close": 83.45950317382812
+    },
+    {
+      "timestamp": 1794422100,
+      "close": 83.41999816894531
+    },
+    {
+      "timestamp": 1794422400,
+      "close": 83.38999938964844
+    },
+    {
+      "timestamp": 1794422700,
+      "close": 83.20999908447266
+    },
+    {
+      "timestamp": 1794423000,
+      "close": 83.18000030517578
+    },
+    {
+      "timestamp": 1794423300,
+      "close": 83.18000030517578
+    },
+    {
+      "timestamp": 1794423600,
+      "close": 83.01000213623047
+    },
+    {
+      "timestamp": 1794423900,
+      "close": 82.75
+    },
+    {
+      "timestamp": 1794424200,
+      "close": 82.8499984741211
+    },
+    {
+      "timestamp": 1794424500,
+      "close": 82.76000213623047
+    },
+    {
+      "timestamp": 1794424800,
+      "close": 82.81999969482422
+    },
+    {
+      "timestamp": 1794425100,
+      "close": 82.95999908447266
+    },
+    {
+      "timestamp": 1794425400,
+      "close": 82.87000274658203
+    },
+    {
+      "timestamp": 1794425700,
+      "close": 83.0250015258789
+    },
+    {
+      "timestamp": 1794426000,
+      "close": 83.08000183105469
+    },
+    {
+      "timestamp": 1794426300,
+      "close": 83.19000244140625
+    },
+    {
+      "timestamp": 1794426600,
+      "close": 82.9800033569336
+    },
+    {
+      "timestamp": 1794426900,
+      "close": 83.01499938964844
+    },
+    {
+      "timestamp": 1794427200,
+      "close": 82.90499877929688
+    },
+    {
+      "timestamp": 1794427500,
+      "close": 82.80500030517578
+    },
+    {
+      "timestamp": 1794427800,
+      "close": 82.94000244140625
+    },
+    {
+      "timestamp": 1794428100,
+      "close": 82.72000122070312
+    },
+    {
+      "timestamp": 1794428400,
+      "close": 82.65499877929688
+    },
+    {
+      "timestamp": 1794428700,
+      "close": 82.6500015258789
+    },
+    {
+      "timestamp": 1794429000,
+      "close": 82.61000061035156
+    },
+    {
+      "timestamp": 1794429300,
+      "close": 82.69499969482422
+    },
+    {
+      "timestamp": 1794429600,
+      "close": 82.48999786376953
+    },
+    {
+      "timestamp": 1794429900,
+      "close": 82.80000305175781
+    },
+    {
+      "timestamp": 1794430200,
+      "close": 82.48999786376953
+    },
+    {
+      "timestamp": 1794430500,
+      "close": 82.51000213623047
+    },
+    {
+      "timestamp": 1794430800,
+      "close": 82.48999786376953
+    }
+  ],
   "news": {
-    "title": "Interactive Brokers Group vs. Mastercard: Which Financial Stock Is a Better Buy for 2027?",
-    "publisher": "Motley Fool",
-    "publishedAt": "2026-11-11T12:45:02.000Z"
+    "title": "Robinhood Rises 5% as Record Trading Day Shows “Cautiously Aggressive” Customers Buying the Dip",
+    "publisher": "TIKR",
+    "publishedAt": "2026-11-11T19:20:01.000Z"
   },
-  "generatedAt": "2026-11-11T14:30:06.764Z"
+  "generatedAt": "2026-11-11T21:57:59.023Z"
 }

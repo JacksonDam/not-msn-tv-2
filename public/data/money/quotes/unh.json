@@ -5,25 +5,337 @@
     "displaySymbol": "$UNH"
   },
   "name": "UNITEDHEALTH GROUP INCORPORATED",
-  "price": 401.56,
-  "previousClose": 405.06,
+  "price": 402.94,
+  "previousClose": 405.12,
   "dayHigh": 404.74,
-  "dayLow": 401.56,
-  "change": -3.5,
-  "changePercent": -0.8640695205648545,
+  "dayLow": 396.94,
+  "change": -2.180000000000007,
+  "changePercent": -0.5381121642970002,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1794407447,
-      "close": 401.5596008300781
+      "timestamp": 1794407400,
+      "close": 402.3599853515625
+    },
+    {
+      "timestamp": 1794407700,
+      "close": 399.9005126953125
+    },
+    {
+      "timestamp": 1794408000,
+      "close": 397.95001220703125
+    },
+    {
+      "timestamp": 1794408300,
+      "close": 399.2799987792969
+    },
+    {
+      "timestamp": 1794408600,
+      "close": 397.1099853515625
+    },
+    {
+      "timestamp": 1794408900,
+      "close": 397.30999755859375
+    },
+    {
+      "timestamp": 1794409200,
+      "close": 398.3550109863281
+    },
+    {
+      "timestamp": 1794409500,
+      "close": 397.25
+    },
+    {
+      "timestamp": 1794409800,
+      "close": 398.89208984375
+    },
+    {
+      "timestamp": 1794410100,
+      "close": 398.4599914550781
+    },
+    {
+      "timestamp": 1794410400,
+      "close": 398.260009765625
+    },
+    {
+      "timestamp": 1794410700,
+      "close": 399.07000732421875
+    },
+    {
+      "timestamp": 1794411000,
+      "close": 399.1400146484375
+    },
+    {
+      "timestamp": 1794411300,
+      "close": 398.75
+    },
+    {
+      "timestamp": 1794411600,
+      "close": 399.3999938964844
+    },
+    {
+      "timestamp": 1794411900,
+      "close": 398.09649658203125
+    },
+    {
+      "timestamp": 1794412200,
+      "close": 397.42999267578125
+    },
+    {
+      "timestamp": 1794412500,
+      "close": 397.6499938964844
+    },
+    {
+      "timestamp": 1794412800,
+      "close": 397.8299865722656
+    },
+    {
+      "timestamp": 1794413100,
+      "close": 398.0849914550781
+    },
+    {
+      "timestamp": 1794413400,
+      "close": 398.489990234375
+    },
+    {
+      "timestamp": 1794413700,
+      "close": 398.7099914550781
+    },
+    {
+      "timestamp": 1794414000,
+      "close": 399.07501220703125
+    },
+    {
+      "timestamp": 1794414300,
+      "close": 398.9800109863281
+    },
+    {
+      "timestamp": 1794414600,
+      "close": 399.2950134277344
+    },
+    {
+      "timestamp": 1794414900,
+      "close": 399.5199890136719
+    },
+    {
+      "timestamp": 1794415200,
+      "close": 399.760009765625
+    },
+    {
+      "timestamp": 1794415500,
+      "close": 399.67498779296875
+    },
+    {
+      "timestamp": 1794415800,
+      "close": 398.9649963378906
+    },
+    {
+      "timestamp": 1794416100,
+      "close": 397.80499267578125
+    },
+    {
+      "timestamp": 1794416400,
+      "close": 398.2349853515625
+    },
+    {
+      "timestamp": 1794416700,
+      "close": 398.4100036621094
+    },
+    {
+      "timestamp": 1794417000,
+      "close": 399.0599060058594
+    },
+    {
+      "timestamp": 1794417300,
+      "close": 398.75
+    },
+    {
+      "timestamp": 1794417600,
+      "close": 398.8900146484375
+    },
+    {
+      "timestamp": 1794417900,
+      "close": 398.260009765625
+    },
+    {
+      "timestamp": 1794418200,
+      "close": 398.3266906738281
+    },
+    {
+      "timestamp": 1794418500,
+      "close": 398.5950012207031
+    },
+    {
+      "timestamp": 1794418800,
+      "close": 398.6199951171875
+    },
+    {
+      "timestamp": 1794419100,
+      "close": 398.3900146484375
+    },
+    {
+      "timestamp": 1794419400,
+      "close": 398.92999267578125
+    },
+    {
+      "timestamp": 1794419700,
+      "close": 399.18499755859375
+    },
+    {
+      "timestamp": 1794420000,
+      "close": 399.1000061035156
+    },
+    {
+      "timestamp": 1794420300,
+      "close": 399.1650085449219
+    },
+    {
+      "timestamp": 1794420600,
+      "close": 399.1499938964844
+    },
+    {
+      "timestamp": 1794420900,
+      "close": 399.739990234375
+    },
+    {
+      "timestamp": 1794421200,
+      "close": 399.0325012207031
+    },
+    {
+      "timestamp": 1794421500,
+      "close": 398.947509765625
+    },
+    {
+      "timestamp": 1794421800,
+      "close": 399.1700134277344
+    },
+    {
+      "timestamp": 1794422100,
+      "close": 398.8291015625
+    },
+    {
+      "timestamp": 1794422400,
+      "close": 398.95001220703125
+    },
+    {
+      "timestamp": 1794422700,
+      "close": 399.54998779296875
+    },
+    {
+      "timestamp": 1794423000,
+      "close": 399.427490234375
+    },
+    {
+      "timestamp": 1794423300,
+      "close": 399.6650085449219
+    },
+    {
+      "timestamp": 1794423600,
+      "close": 399.5224914550781
+    },
+    {
+      "timestamp": 1794423900,
+      "close": 399.3900146484375
+    },
+    {
+      "timestamp": 1794424200,
+      "close": 399.25
+    },
+    {
+      "timestamp": 1794424500,
+      "close": 399.80499267578125
+    },
+    {
+      "timestamp": 1794424800,
+      "close": 399.6650085449219
+    },
+    {
+      "timestamp": 1794425100,
+      "close": 400.6700134277344
+    },
+    {
+      "timestamp": 1794425400,
+      "close": 401.6549987792969
+    },
+    {
+      "timestamp": 1794425700,
+      "close": 401.8500061035156
+    },
+    {
+      "timestamp": 1794426000,
+      "close": 401.9700012207031
+    },
+    {
+      "timestamp": 1794426300,
+      "close": 402.20001220703125
+    },
+    {
+      "timestamp": 1794426600,
+      "close": 401.710205078125
+    },
+    {
+      "timestamp": 1794426900,
+      "close": 401.57501220703125
+    },
+    {
+      "timestamp": 1794427200,
+      "close": 401.19390869140625
+    },
+    {
+      "timestamp": 1794427500,
+      "close": 401.3999938964844
+    },
+    {
+      "timestamp": 1794427800,
+      "close": 401.70001220703125
+    },
+    {
+      "timestamp": 1794428100,
+      "close": 401.69000244140625
+    },
+    {
+      "timestamp": 1794428400,
+      "close": 402.0899963378906
+    },
+    {
+      "timestamp": 1794428700,
+      "close": 402.3299865722656
+    },
+    {
+      "timestamp": 1794429000,
+      "close": 402.0899963378906
+    },
+    {
+      "timestamp": 1794429300,
+      "close": 402.67999267578125
+    },
+    {
+      "timestamp": 1794429600,
+      "close": 402.885009765625
+    },
+    {
+      "timestamp": 1794429900,
+      "close": 402.7349853515625
+    },
+    {
+      "timestamp": 1794430200,
+      "close": 403.19500732421875
+    },
+    {
+      "timestamp": 1794430500,
+      "close": 402.94000244140625
+    },
+    {
+      "timestamp": 1794430800,
+      "close": 402.94000244140625
     }
   ],
   "news": {
-    "title": "UnitedHealth Just Raised Guidance for the Third Time This Year. Where Will the Stock Be in 3 Years?",
-    "publisher": "Motley Fool",
-    "publishedAt": "2026-11-11T13:05:00.000Z"
+    "title": "Bosses Have a New Plan to Boost Morale at the Office: Desk Plants",
+    "publisher": "The Wall Street Journal",
+    "publishedAt": "2026-11-11T20:23:00.000Z"
   },
-  "generatedAt": "2026-11-11T14:30:55.435Z"
+  "generatedAt": "2026-11-11T21:58:49.851Z"
 }

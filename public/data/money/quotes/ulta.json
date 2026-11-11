@@ -5,25 +5,337 @@
     "displaySymbol": "$ULTA"
   },
   "name": "ULTA BEAUTY, INC.",
-  "price": 656.23,
+  "price": 659.08,
   "previousClose": 664.41,
-  "dayHigh": 656.23,
-  "dayLow": 653.4,
-  "change": -8.17999999999995,
-  "changePercent": -1.2311675019942432,
+  "dayHigh": 664.8,
+  "dayLow": 649.52,
+  "change": -5.329999999999927,
+  "changePercent": -0.8022154994656805,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1794407405,
-      "close": 656.22998046875
+      "timestamp": 1794407400,
+      "close": 659.0449829101562
+    },
+    {
+      "timestamp": 1794407700,
+      "close": 660.9450073242188
+    },
+    {
+      "timestamp": 1794408000,
+      "close": 661.8099975585938
+    },
+    {
+      "timestamp": 1794408300,
+      "close": 663.3900146484375
+    },
+    {
+      "timestamp": 1794408600,
+      "close": 660.5
+    },
+    {
+      "timestamp": 1794408900,
+      "close": 660.510009765625
+    },
+    {
+      "timestamp": 1794409200,
+      "close": 659.5449829101562
+    },
+    {
+      "timestamp": 1794409500,
+      "close": 657.2999877929688
+    },
+    {
+      "timestamp": 1794409800,
+      "close": 659.1500244140625
+    },
+    {
+      "timestamp": 1794410100,
+      "close": 658.030029296875
+    },
+    {
+      "timestamp": 1794410400,
+      "close": 655.469970703125
+    },
+    {
+      "timestamp": 1794410700,
+      "close": 653.6500244140625
+    },
+    {
+      "timestamp": 1794411000,
+      "close": 651.6500244140625
+    },
+    {
+      "timestamp": 1794411300,
+      "close": 650.8150024414062
+    },
+    {
+      "timestamp": 1794411600,
+      "close": 651.5599975585938
+    },
+    {
+      "timestamp": 1794411900,
+      "close": 651.0499877929688
+    },
+    {
+      "timestamp": 1794412200,
+      "close": 650.7750244140625
+    },
+    {
+      "timestamp": 1794412500,
+      "close": 650.210205078125
+    },
+    {
+      "timestamp": 1794412800,
+      "close": 650.85498046875
+    },
+    {
+      "timestamp": 1794413100,
+      "close": 650.5800170898438
+    },
+    {
+      "timestamp": 1794413400,
+      "close": 650.6699829101562
+    },
+    {
+      "timestamp": 1794413700,
+      "close": 650.72998046875
+    },
+    {
+      "timestamp": 1794414000,
+      "close": 651.3200073242188
+    },
+    {
+      "timestamp": 1794414300,
+      "close": 650.719970703125
+    },
+    {
+      "timestamp": 1794414600,
+      "close": 651.0800170898438
+    },
+    {
+      "timestamp": 1794414900,
+      "close": 651.4600219726562
+    },
+    {
+      "timestamp": 1794415200,
+      "close": 652.4000244140625
+    },
+    {
+      "timestamp": 1794415500,
+      "close": 652.5
+    },
+    {
+      "timestamp": 1794415800,
+      "close": 652.5999755859375
+    },
+    {
+      "timestamp": 1794416100,
+      "close": 652.4550170898438
+    },
+    {
+      "timestamp": 1794416400,
+      "close": 653.2949829101562
+    },
+    {
+      "timestamp": 1794416700,
+      "close": 652.6599731445312
+    },
+    {
+      "timestamp": 1794417000,
+      "close": 654
+    },
+    {
+      "timestamp": 1794417300,
+      "close": 654.030029296875
+    },
+    {
+      "timestamp": 1794417600,
+      "close": 653.8400268554688
+    },
+    {
+      "timestamp": 1794417900,
+      "close": 653.6300048828125
+    },
+    {
+      "timestamp": 1794418200,
+      "close": 653.719970703125
+    },
+    {
+      "timestamp": 1794418500,
+      "close": 653.3599853515625
+    },
+    {
+      "timestamp": 1794418800,
+      "close": 653.9600219726562
+    },
+    {
+      "timestamp": 1794419100,
+      "close": 653.9199829101562
+    },
+    {
+      "timestamp": 1794419400,
+      "close": 654.75
+    },
+    {
+      "timestamp": 1794419700,
+      "close": 654.3099975585938
+    },
+    {
+      "timestamp": 1794420000,
+      "close": 654.260009765625
+    },
+    {
+      "timestamp": 1794420300,
+      "close": 654
+    },
+    {
+      "timestamp": 1794420600,
+      "close": 654.8699951171875
+    },
+    {
+      "timestamp": 1794420900,
+      "close": 655.5499877929688
+    },
+    {
+      "timestamp": 1794421200,
+      "close": 655.864990234375
+    },
+    {
+      "timestamp": 1794421500,
+      "close": 656.4249877929688
+    },
+    {
+      "timestamp": 1794421800,
+      "close": 656.52001953125
+    },
+    {
+      "timestamp": 1794422100,
+      "close": 655.9650268554688
+    },
+    {
+      "timestamp": 1794422400,
+      "close": 655.2150268554688
+    },
+    {
+      "timestamp": 1794422700,
+      "close": 654.8699951171875
+    },
+    {
+      "timestamp": 1794423000,
+      "close": 655.1400146484375
+    },
+    {
+      "timestamp": 1794423300,
+      "close": 655.3400268554688
+    },
+    {
+      "timestamp": 1794423600,
+      "close": 655.280029296875
+    },
+    {
+      "timestamp": 1794423900,
+      "close": 655.7550048828125
+    },
+    {
+      "timestamp": 1794424200,
+      "close": 655.3250122070312
+    },
+    {
+      "timestamp": 1794424500,
+      "close": 653.8099975585938
+    },
+    {
+      "timestamp": 1794424800,
+      "close": 654.447509765625
+    },
+    {
+      "timestamp": 1794425100,
+      "close": 655.72998046875
+    },
+    {
+      "timestamp": 1794425400,
+      "close": 656.3499755859375
+    },
+    {
+      "timestamp": 1794425700,
+      "close": 656.280029296875
+    },
+    {
+      "timestamp": 1794426000,
+      "close": 656.719970703125
+    },
+    {
+      "timestamp": 1794426300,
+      "close": 656.239990234375
+    },
+    {
+      "timestamp": 1794426600,
+      "close": 655.8200073242188
+    },
+    {
+      "timestamp": 1794426900,
+      "close": 656.1599731445312
+    },
+    {
+      "timestamp": 1794427200,
+      "close": 656.1699829101562
+    },
+    {
+      "timestamp": 1794427500,
+      "close": 658.0999755859375
+    },
+    {
+      "timestamp": 1794427800,
+      "close": 658.3900146484375
+    },
+    {
+      "timestamp": 1794428100,
+      "close": 659.1099853515625
+    },
+    {
+      "timestamp": 1794428400,
+      "close": 658.4099731445312
+    },
+    {
+      "timestamp": 1794428700,
+      "close": 658.4400024414062
+    },
+    {
+      "timestamp": 1794429000,
+      "close": 659.2000122070312
+    },
+    {
+      "timestamp": 1794429300,
+      "close": 658.5999755859375
+    },
+    {
+      "timestamp": 1794429600,
+      "close": 659.5
+    },
+    {
+      "timestamp": 1794429900,
+      "close": 658.7996215820312
+    },
+    {
+      "timestamp": 1794430200,
+      "close": 658.97998046875
+    },
+    {
+      "timestamp": 1794430500,
+      "close": 659.385009765625
+    },
+    {
+      "timestamp": 1794430800,
+      "close": 659.0800170898438
     }
   ],
   "news": {
-    "title": "This Founder Went From ‘Kitchen Chemist’ to 9-Figure Business Owner Whose Products Are Sold at Target, Ulta and CVS",
-    "publisher": "Entrepreneur",
-    "publishedAt": "2026-11-10T17:17:12.000Z"
+    "title": "Sally Beauty Q4 Earnings Beat Estimates on Sales Growth & Cost Control",
+    "publisher": "Zacks",
+    "publishedAt": "2026-11-11T17:07:00.000Z"
   },
-  "generatedAt": "2026-11-11T14:30:55.157Z"
+  "generatedAt": "2026-11-11T21:58:49.638Z"
 }

@@ -5,25 +5,337 @@
     "displaySymbol": "$SCHW"
   },
   "name": "THE CHARLES SCHWAB CORPORATION",
-  "price": 93.52,
+  "price": 92.78,
   "previousClose": 93.03,
-  "dayHigh": 93.52,
-  "dayLow": 93.12,
-  "change": 0.4899999999999949,
-  "changePercent": 0.5267118133935235,
+  "dayHigh": 93.65,
+  "dayLow": 91.83,
+  "change": -0.25,
+  "changePercent": -0.26873051703751477,
   "currency": "USD",
   "exchangeName": "NYQ",
   "marketState": "",
   "series": [
     {
-      "timestamp": 1794407440,
-      "close": 93.52010345458984
+      "timestamp": 1794407400,
+      "close": 92.20999908447266
+    },
+    {
+      "timestamp": 1794407700,
+      "close": 92.19999694824219
+    },
+    {
+      "timestamp": 1794408000,
+      "close": 92.38999938964844
+    },
+    {
+      "timestamp": 1794408300,
+      "close": 92.44999694824219
+    },
+    {
+      "timestamp": 1794408600,
+      "close": 92.56500244140625
+    },
+    {
+      "timestamp": 1794408900,
+      "close": 92.51000213623047
+    },
+    {
+      "timestamp": 1794409200,
+      "close": 92.21499633789062
+    },
+    {
+      "timestamp": 1794409500,
+      "close": 92.18000030517578
+    },
+    {
+      "timestamp": 1794409800,
+      "close": 92.01000213623047
+    },
+    {
+      "timestamp": 1794410100,
+      "close": 92.02999877929688
+    },
+    {
+      "timestamp": 1794410400,
+      "close": 92.16500091552734
+    },
+    {
+      "timestamp": 1794410700,
+      "close": 92.23999786376953
+    },
+    {
+      "timestamp": 1794411000,
+      "close": 92.25
+    },
+    {
+      "timestamp": 1794411300,
+      "close": 92.29499816894531
+    },
+    {
+      "timestamp": 1794411600,
+      "close": 92.38500213623047
+    },
+    {
+      "timestamp": 1794411900,
+      "close": 92.19499969482422
+    },
+    {
+      "timestamp": 1794412200,
+      "close": 92.16999816894531
+    },
+    {
+      "timestamp": 1794412500,
+      "close": 92.3550033569336
+    },
+    {
+      "timestamp": 1794412800,
+      "close": 92.43000030517578
+    },
+    {
+      "timestamp": 1794413100,
+      "close": 92.44000244140625
+    },
+    {
+      "timestamp": 1794413400,
+      "close": 92.33999633789062
+    },
+    {
+      "timestamp": 1794413700,
+      "close": 92.4800033569336
+    },
+    {
+      "timestamp": 1794414000,
+      "close": 92.5
+    },
+    {
+      "timestamp": 1794414300,
+      "close": 92.41500091552734
+    },
+    {
+      "timestamp": 1794414600,
+      "close": 92.36499786376953
+    },
+    {
+      "timestamp": 1794414900,
+      "close": 92.33999633789062
+    },
+    {
+      "timestamp": 1794415200,
+      "close": 92.37000274658203
+    },
+    {
+      "timestamp": 1794415500,
+      "close": 92.44499969482422
+    },
+    {
+      "timestamp": 1794415800,
+      "close": 92.4000015258789
+    },
+    {
+      "timestamp": 1794416100,
+      "close": 92.43009948730469
+    },
+    {
+      "timestamp": 1794416400,
+      "close": 92.55000305175781
+    },
+    {
+      "timestamp": 1794416700,
+      "close": 92.58499908447266
+    },
+    {
+      "timestamp": 1794417000,
+      "close": 92.45999908447266
+    },
+    {
+      "timestamp": 1794417300,
+      "close": 92.47000122070312
+    },
+    {
+      "timestamp": 1794417600,
+      "close": 92.49500274658203
+    },
+    {
+      "timestamp": 1794417900,
+      "close": 92.43000030517578
+    },
+    {
+      "timestamp": 1794418200,
+      "close": 92.43000030517578
+    },
+    {
+      "timestamp": 1794418500,
+      "close": 92.30999755859375
+    },
+    {
+      "timestamp": 1794418800,
+      "close": 92.31999969482422
+    },
+    {
+      "timestamp": 1794419100,
+      "close": 92.33000183105469
+    },
+    {
+      "timestamp": 1794419400,
+      "close": 92.41000366210938
+    },
+    {
+      "timestamp": 1794419700,
+      "close": 92.4800033569336
+    },
+    {
+      "timestamp": 1794420000,
+      "close": 92.44000244140625
+    },
+    {
+      "timestamp": 1794420300,
+      "close": 92.44000244140625
+    },
+    {
+      "timestamp": 1794420600,
+      "close": 92.37999725341797
+    },
+    {
+      "timestamp": 1794420900,
+      "close": 92.37000274658203
+    },
+    {
+      "timestamp": 1794421200,
+      "close": 92.43499755859375
+    },
+    {
+      "timestamp": 1794421500,
+      "close": 92.54499816894531
+    },
+    {
+      "timestamp": 1794421800,
+      "close": 92.61499786376953
+    },
+    {
+      "timestamp": 1794422100,
+      "close": 92.52999877929688
+    },
+    {
+      "timestamp": 1794422400,
+      "close": 92.52999877929688
+    },
+    {
+      "timestamp": 1794422700,
+      "close": 92.5
+    },
+    {
+      "timestamp": 1794423000,
+      "close": 92.5199966430664
+    },
+    {
+      "timestamp": 1794423300,
+      "close": 92.4800033569336
+    },
+    {
+      "timestamp": 1794423600,
+      "close": 92.41000366210938
+    },
+    {
+      "timestamp": 1794423900,
+      "close": 92.18000030517578
+    },
+    {
+      "timestamp": 1794424200,
+      "close": 92.24690246582031
+    },
+    {
+      "timestamp": 1794424500,
+      "close": 92.26499938964844
+    },
+    {
+      "timestamp": 1794424800,
+      "close": 92.29499816894531
+    },
+    {
+      "timestamp": 1794425100,
+      "close": 92.32499694824219
+    },
+    {
+      "timestamp": 1794425400,
+      "close": 92.34500122070312
+    },
+    {
+      "timestamp": 1794425700,
+      "close": 92.33000183105469
+    },
+    {
+      "timestamp": 1794426000,
+      "close": 92.47000122070312
+    },
+    {
+      "timestamp": 1794426300,
+      "close": 92.33999633789062
+    },
+    {
+      "timestamp": 1794426600,
+      "close": 92.26499938964844
+    },
+    {
+      "timestamp": 1794426900,
+      "close": 92.38999938964844
+    },
+    {
+      "timestamp": 1794427200,
+      "close": 92.44000244140625
+    },
+    {
+      "timestamp": 1794427500,
+      "close": 92.33000183105469
+    },
+    {
+      "timestamp": 1794427800,
+      "close": 92.3499984741211
+    },
+    {
+      "timestamp": 1794428100,
+      "close": 92.3499984741211
+    },
+    {
+      "timestamp": 1794428400,
+      "close": 92.20999908447266
+    },
+    {
+      "timestamp": 1794428700,
+      "close": 92.2300033569336
+    },
+    {
+      "timestamp": 1794429000,
+      "close": 92.37999725341797
+    },
+    {
+      "timestamp": 1794429300,
+      "close": 92.34500122070312
+    },
+    {
+      "timestamp": 1794429600,
+      "close": 92.31999969482422
+    },
+    {
+      "timestamp": 1794429900,
+      "close": 92.31999969482422
+    },
+    {
+      "timestamp": 1794430200,
+      "close": 92.44999694824219
+    },
+    {
+      "timestamp": 1794430500,
+      "close": 92.79000091552734
+    },
+    {
+      "timestamp": 1794430800,
+      "close": 92.77999877929688
     }
   ],
   "news": {
-    "title": "Schwab and Fidelity Need a Death Certificate, a Court Letter, and an EIN Before an Heir Can Sell a Single Share. The Weeks In Between Belong to the Estate, Taxed at 37% Above $15,650, and a Transfer-on-Death Form Skips All of It",
-    "publisher": "24/7 Wall St.",
-    "publishedAt": "2026-11-11T11:13:38.000Z"
+    "title": "United Is the Latest to Block AI Agents Like Muse. These Stocks Have a Mini Relief Rally.",
+    "publisher": "Barrons.com",
+    "publishedAt": "2026-11-11T20:12:00.000Z"
   },
-  "generatedAt": "2026-11-11T14:30:43.911Z"
+  "generatedAt": "2026-11-11T21:58:36.821Z"
 }
