@@ -5,12 +5,12 @@
     "displaySymbol": "$S&P"
   },
   "name": "S&P 500",
-  "price": 7526.47,
+  "price": 7561.67,
   "previousClose": 7592.4,
   "dayHigh": 7621.78,
   "dayLow": 7499.4,
-  "change": -65.92999999999938,
-  "changePercent": -0.8683683683683602,
+  "change": -30.729999999999563,
+  "changePercent": -0.4047468521152674,
   "currency": "USD",
   "exchangeName": "SNP",
   "marketState": "",
@@ -109,17 +109,233 @@
     },
     {
       "timestamp": 1794587100,
-      "close": 7526.5498046875
+      "close": 7529.52001953125
     },
     {
-      "timestamp": 1794587284,
-      "close": 7526.47021484375
+      "timestamp": 1794587400,
+      "close": 7527.919921875
+    },
+    {
+      "timestamp": 1794587700,
+      "close": 7519.2001953125
+    },
+    {
+      "timestamp": 1794588000,
+      "close": 7518.16015625
+    },
+    {
+      "timestamp": 1794588300,
+      "close": 7515.759765625
+    },
+    {
+      "timestamp": 1794588600,
+      "close": 7521.52001953125
+    },
+    {
+      "timestamp": 1794588900,
+      "close": 7521.52978515625
+    },
+    {
+      "timestamp": 1794589200,
+      "close": 7521.7099609375
+    },
+    {
+      "timestamp": 1794589500,
+      "close": 7541.14013671875
+    },
+    {
+      "timestamp": 1794589800,
+      "close": 7532.4501953125
+    },
+    {
+      "timestamp": 1794590100,
+      "close": 7532.8798828125
+    },
+    {
+      "timestamp": 1794590400,
+      "close": 7530.89990234375
+    },
+    {
+      "timestamp": 1794590700,
+      "close": 7537.77978515625
+    },
+    {
+      "timestamp": 1794591000,
+      "close": 7538.60986328125
+    },
+    {
+      "timestamp": 1794591300,
+      "close": 7534.68994140625
+    },
+    {
+      "timestamp": 1794591600,
+      "close": 7541.97998046875
+    },
+    {
+      "timestamp": 1794591900,
+      "close": 7541.14013671875
+    },
+    {
+      "timestamp": 1794592200,
+      "close": 7542.93994140625
+    },
+    {
+      "timestamp": 1794592500,
+      "close": 7538.81005859375
+    },
+    {
+      "timestamp": 1794592800,
+      "close": 7532.41015625
+    },
+    {
+      "timestamp": 1794593100,
+      "close": 7534.0498046875
+    },
+    {
+      "timestamp": 1794593400,
+      "close": 7533.009765625
+    },
+    {
+      "timestamp": 1794593700,
+      "close": 7536.35986328125
+    },
+    {
+      "timestamp": 1794594000,
+      "close": 7536.1201171875
+    },
+    {
+      "timestamp": 1794594300,
+      "close": 7544.080078125
+    },
+    {
+      "timestamp": 1794594600,
+      "close": 7544.10009765625
+    },
+    {
+      "timestamp": 1794594900,
+      "close": 7545.89013671875
+    },
+    {
+      "timestamp": 1794595200,
+      "close": 7549.83984375
+    },
+    {
+      "timestamp": 1794595500,
+      "close": 7549.3798828125
+    },
+    {
+      "timestamp": 1794595800,
+      "close": 7554.4501953125
+    },
+    {
+      "timestamp": 1794596100,
+      "close": 7553.97021484375
+    },
+    {
+      "timestamp": 1794596400,
+      "close": 7555.06982421875
+    },
+    {
+      "timestamp": 1794596700,
+      "close": 7558.8701171875
+    },
+    {
+      "timestamp": 1794597000,
+      "close": 7551.66015625
+    },
+    {
+      "timestamp": 1794597300,
+      "close": 7557.77001953125
+    },
+    {
+      "timestamp": 1794597600,
+      "close": 7553.85009765625
+    },
+    {
+      "timestamp": 1794597900,
+      "close": 7557.0498046875
+    },
+    {
+      "timestamp": 1794598200,
+      "close": 7552.2099609375
+    },
+    {
+      "timestamp": 1794598500,
+      "close": 7554.43994140625
+    },
+    {
+      "timestamp": 1794598800,
+      "close": 7550.89990234375
+    },
+    {
+      "timestamp": 1794599100,
+      "close": 7548.4599609375
+    },
+    {
+      "timestamp": 1794599400,
+      "close": 7546.169921875
+    },
+    {
+      "timestamp": 1794599700,
+      "close": 7557.509765625
+    },
+    {
+      "timestamp": 1794600000,
+      "close": 7554.990234375
+    },
+    {
+      "timestamp": 1794600300,
+      "close": 7555.509765625
+    },
+    {
+      "timestamp": 1794600600,
+      "close": 7556.58984375
+    },
+    {
+      "timestamp": 1794600900,
+      "close": 7553.39990234375
+    },
+    {
+      "timestamp": 1794601200,
+      "close": 7553.22998046875
+    },
+    {
+      "timestamp": 1794601500,
+      "close": 7550.02001953125
+    },
+    {
+      "timestamp": 1794601800,
+      "close": 7546.4501953125
+    },
+    {
+      "timestamp": 1794602100,
+      "close": 7546.64013671875
+    },
+    {
+      "timestamp": 1794602400,
+      "close": 7546.89990234375
+    },
+    {
+      "timestamp": 1794602700,
+      "close": 7555.02001953125
+    },
+    {
+      "timestamp": 1794603000,
+      "close": 7566.72021484375
+    },
+    {
+      "timestamp": 1794603300,
+      "close": 7560.8701171875
+    },
+    {
+      "timestamp": 1794603600,
+      "close": 7561.669921875
     }
   ],
   "news": {
-    "title": "Stock market today: S&P 500, Nasdaq turn lower as wholesale inflation rises, Nvidia stock falls",
-    "publisher": "Yahoo Finance",
-    "publishedAt": "2026-11-13T16:15:06.000Z"
+    "title": "Stock Market Today, Nov. 13: Nvidia Slides After HSBC Downgrades Stock to Hold on CEO Uncertainty",
+    "publisher": "Motley Fool",
+    "publishedAt": "2026-11-13T22:20:02.000Z"
   },
-  "generatedAt": "2026-11-13T16:28:06.343Z"
+  "generatedAt": "2026-11-13T22:37:41.707Z"
 }
