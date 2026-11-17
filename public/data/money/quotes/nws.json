@@ -5,12 +5,12 @@
     "displaySymbol": "$NWS"
   },
   "name": "NEWS CORPORATION",
-  "price": 29.5,
+  "price": 29.57,
   "previousClose": 29.885,
   "dayHigh": 30.32,
   "dayLow": 29.37,
-  "change": -0.38500000000000156,
-  "changePercent": -1.2882717082148287,
+  "change": -0.3150000000000013,
+  "changePercent": -1.0540404885394052,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -301,11 +301,35 @@
     },
     {
       "timestamp": 1794860700,
-      "close": 29.4950008392334
+      "close": 29.5
     },
     {
-      "timestamp": 1794860928,
-      "close": 29.5
+      "timestamp": 1794861000,
+      "close": 29.459999084472656
+    },
+    {
+      "timestamp": 1794861300,
+      "close": 29.415000915527344
+    },
+    {
+      "timestamp": 1794861600,
+      "close": 29.420000076293945
+    },
+    {
+      "timestamp": 1794861900,
+      "close": 29.415000915527344
+    },
+    {
+      "timestamp": 1794862200,
+      "close": 29.524999618530273
+    },
+    {
+      "timestamp": 1794862500,
+      "close": 29.56999969482422
+    },
+    {
+      "timestamp": 1794862800,
+      "close": 29.56999969482422
     }
   ],
   "news": {
@@ -313,5 +337,5 @@
     "publisher": "Barchart",
     "publishedAt": "2026-11-13T11:02:37.000Z"
   },
-  "generatedAt": "2026-11-16T20:28:59.710Z"
+  "generatedAt": "2026-11-17T03:53:54.046Z"
 }
