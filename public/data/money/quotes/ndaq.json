@@ -5,12 +5,12 @@
     "displaySymbol": "$NDAQ"
   },
   "name": "NASDAQ, INC.",
-  "price": 103.68,
+  "price": 102.92,
   "previousClose": 103.95,
   "dayHigh": 106.22,
   "dayLow": 102.61,
-  "change": -0.269999999999996,
-  "changePercent": -0.25974025974025594,
+  "change": -1.0300000000000011,
+  "changePercent": -0.9908609908609919,
   "currency": "USD",
   "exchangeName": "NMS",
   "marketState": "",
@@ -293,17 +293,49 @@
     },
     {
       "timestamp": 1795205700,
-      "close": 103.69000244140625
+      "close": 103.66999816894531
     },
     {
-      "timestamp": 1795205875,
-      "close": 103.68000030517578
+      "timestamp": 1795206000,
+      "close": 103.5
+    },
+    {
+      "timestamp": 1795206300,
+      "close": 103.49500274658203
+    },
+    {
+      "timestamp": 1795206600,
+      "close": 103.16999816894531
+    },
+    {
+      "timestamp": 1795206900,
+      "close": 103.5199966430664
+    },
+    {
+      "timestamp": 1795207200,
+      "close": 103.18000030517578
+    },
+    {
+      "timestamp": 1795207500,
+      "close": 103.59500122070312
+    },
+    {
+      "timestamp": 1795207800,
+      "close": 103.05500030517578
+    },
+    {
+      "timestamp": 1795208100,
+      "close": 102.9800033569336
+    },
+    {
+      "timestamp": 1795208400,
+      "close": 102.91999816894531
     }
   ],
   "news": {
-    "title": "The NYSE and Texas Stock Exchange Are Already Exchanging Blows",
-    "publisher": "Barrons.com",
-    "publishedAt": "2026-11-19T17:44:00.000Z"
+    "title": "Nasdaq Rises on Record Recurring Revenue",
+    "publisher": "FX Empire",
+    "publishedAt": "2026-11-20T16:35:45.000Z"
   },
-  "generatedAt": "2026-11-20T20:17:58.743Z"
+  "generatedAt": "2026-11-21T01:35:27.239Z"
 }
